@@ -12,7 +12,7 @@ tbd
 
 ## Credits
 
-tbd
+This course is funded by the German Academic Exchange Service (DAAD) and the German Federal Ministry of Education and Research (BMBF) as part of the project Digital Mobil @ FH Bielefeld.
 
 
 ## License
