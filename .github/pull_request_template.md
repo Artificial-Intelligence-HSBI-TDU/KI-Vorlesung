@@ -5,4 +5,4 @@ Description of the changes proposed in the pull request:
 - .
 - .
 
-@cagix
+@KI-Vorlesung/core 
