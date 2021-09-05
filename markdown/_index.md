@@ -19,8 +19,8 @@ Hier würde ein kurzer Begrüßungstext erscheinen ...
 
 ## Wichtige Seiten
 
-* [Fahrplan]({{<ref "/orga/fahrplan" >}})
-* [Praktikum]({{<ref "/praktikum" >}})
-* [Note und Credits]({{<ref "/orga/note_und_credits" >}})
-* [Syllabus]({{<ref "/orga/syllabus" >}})
-* [Readings]({{<ref "/orga/readings" >}})
+*   [Fahrplan]({{<ref "/misc/schedule" >}})
+*   [Praktikum]({{<ref "/assignments" >}})
+*   [Note und Credits]({{<ref "/misc/grading" >}})
+*   [Syllabus]({{<ref "/misc/syllabus" >}})
+*   [Ressourcen]({{<ref "/misc/resources" >}})
