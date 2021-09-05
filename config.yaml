@@ -1,0 +1,61 @@
+baseURL: "https://ki-vorlesung.github.io/lecture/"
+
+languageCode: "de-DE"
+metaDataFormat: "yaml"
+theme: "hugo-theme-learn"
+
+contentDir: content
+publishDir: docs
+
+params:
+  editURL: "https://github.com/KI-Vorlesung/Lecture/edit/master/markdown/"
+  author: "cagix"
+  themeVariant: "green"
+  titleSeparator: " "
+  showVisitedLinks: true
+  disableBreadcrumb: false
+  disableInlineCopyToClipBoard: true
+  disableNextPrev: true
+  disableSearch: true
+  disableLandingPageButton: true
+  disableMermaid: true
+
+menu:
+  shortcuts:
+  - name: "<i class='fas fa-bookmark'></i> Fahrplan"
+    url: "/misc/schedule"
+    weight: 10
+  - name: "<i class='fas fa-bookmark'></i> Praktikum"
+    url: "/assignments"
+    weight: 10
+  - name: "<i class='fas fa-bookmark'></i> Note/Credits"
+    url: "/misc/grading"
+    weight: 20
+  - name: "<i class='fas fa-bookmark'></i> Syllabus"
+    url: "/misc/syllabus"
+    weight: 30
+  - name: "<i class='fas fa-bookmark'></i> Ressourcen"
+    url: "/misc/resources"
+    weight: 40
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: false
+    privacyEnhanced: true
