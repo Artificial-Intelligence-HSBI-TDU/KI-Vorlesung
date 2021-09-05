@@ -1,0 +1,26 @@
+name: HUGO
+on:
+  # push on master branch: build gh-page
+  push:
+    branches: [master]
+  # manually triggered: build gh-page
+  workflow_dispatch:
+
+
+jobs:
+  # build gh-page
+  gh-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: ./.github/actions/alpine-pandoc-hugo
+        with:
+          make-target: 'make web'
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: docs/
+          force_orphan: true

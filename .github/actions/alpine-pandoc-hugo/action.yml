@@ -1,0 +1,12 @@
+name: 'alpine-pandoc-hugo'
+description: 'Alpine Linux with Pandoc and Hugo'
+inputs:
+  make-target:
+    description: 'makefile target to run'
+    required: true
+    default: 'make'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - export DOCKER=false; ${{ inputs.make-target }}
