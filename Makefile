@@ -112,9 +112,6 @@ new_chapter:
 PHONY: new_lecture-cy
 new_lecture-cy:
 	$(HUGO) new -c "$(ORIG_CONTENT)/" -k lecture-cy $(TOPIC)
-PHONY: new_lecture-bc
-new_lecture-bc:
-	$(HUGO) new -c "$(ORIG_CONTENT)/" -k lecture-bc $(TOPIC)
 PHONY: new_lecture-cg
 new_lecture-cg:
 	$(HUGO) new -c "$(ORIG_CONTENT)/" -k lecture-cg $(TOPIC)
