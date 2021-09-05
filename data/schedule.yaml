@@ -1,0 +1,20 @@
+---
+- week: "KW40"
+  lecture:
+    - topic: "/orga/syllabus"
+  misc:
+    - page: "/dtl/cal2"
+      notes: "Vortrag Thema I"
+    - notes: "Coden mit Edmonton"
+    - page: "/suche/informiert/astar"
+
+- week: "KW41"
+  lecture:
+    - topic: "/suche/intro"
+      leader: "cagi"
+      notes: "Classes go all-virtual"
+    - topic: "/suche/informiert/astar"
+  assignment:
+    - topic: "blatt01"
+      due: "14.10."
+---
