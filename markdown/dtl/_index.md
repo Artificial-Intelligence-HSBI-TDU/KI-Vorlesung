@@ -1,12 +1,11 @@
 ---
 chapter: true
-title: "Constraintsolving"
-menuTitle: "CSP"
-weight: 4
+title: "Entscheidungsbäume"
+weight: 5
 ---
 
 
-# Constraintsolving
+# Entscheidungsbäume
 
 allgemeine einleitende Worte ...
 
