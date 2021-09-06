@@ -2,6 +2,7 @@
 title: "Blatt 09: XYZ"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
+weight: 9
 ---
 
 
