@@ -1,12 +1,12 @@
 ---
-title: "Blatt 01: Problemlösen"
+title: "Blatt 03: Spiele"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
-weight: 1
+weight: 3
 ---
 
 
-Hier kommt der Inhalt für Blatt 01 hin ... allgemeine einleitende Worte ...
+Hier kommt der Inhalt für Blatt XYZ hin ... allgemeine einleitende Worte ...
 
 ## Aufgabe 1: XYZ (2P)
 

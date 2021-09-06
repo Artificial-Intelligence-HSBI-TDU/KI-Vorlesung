@@ -1,13 +1,13 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Lokale Suche"
+weight: 4
 ---
 
 
-# Praktikum
+# Lokale Suche
 
-allgemeine einleitende Worte ...
+... das Ziel ist im Weg ...
 
 
 {{< children description="true" showhidden="true" >}}

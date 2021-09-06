@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Spiele"
+weight: 4
 ---
 
 
-# Praktikum
+# Spiele
 
 allgemeine einleitende Worte ...
 

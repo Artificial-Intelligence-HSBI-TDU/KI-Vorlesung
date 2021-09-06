@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Naive Bayes"
+weight: 7
 ---
 
 
-# Praktikum
+# Naive Bayes
 
 allgemeine einleitende Worte ...
 

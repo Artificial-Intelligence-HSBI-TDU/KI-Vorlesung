@@ -1,13 +1,13 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Informierte Suche"
+weight: 3
 ---
 
 
-# Praktikum
+# Informierte Suche
 
-allgemeine einleitende Worte ...
+... Kostenfunktion ...
 
 
 {{< children description="true" showhidden="true" >}}

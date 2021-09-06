@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Genetische Algorithmen"
+weight: 3
 ---
 
 
-# Praktikum
+# Genetische Algorithmen
 
 allgemeine einleitende Worte ...
 

@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Einführung KI"
+weight: 1
 ---
 
 
-# Praktikum
+# Einführung KI
 
 allgemeine einleitende Worte ...
 

@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Suche"
+weight: 2
 ---
 
 
-# Praktikum
+# Suche
 
 allgemeine einleitende Worte ...
 

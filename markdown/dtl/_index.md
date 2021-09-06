@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Entscheidungsbäume"
+weight: 6
 ---
 
 
-# Praktikum
+# Entscheidungsbäume
 
 allgemeine einleitende Worte ...
 

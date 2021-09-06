@@ -1,11 +1,12 @@
 ---
 chapter: true
-title: "Praktikum"
-hidden: true
+title: "Constraintsolving"
+menuTitle: "CSP"
+weight: 5
 ---
 
 
-# Praktikum
+# Constraintsolving
 
 allgemeine einleitende Worte ...
 
