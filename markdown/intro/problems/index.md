@@ -1,8 +1,8 @@
 ---
 type: lecture-cg
-title: "Basisvarianten Suche"
+title: "Problemlösen"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 1
+weight: 2
 readings:
   - key: "Russell2020"
     comment: "Kapitel 2 und 3"
