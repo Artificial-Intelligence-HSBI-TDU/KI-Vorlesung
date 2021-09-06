@@ -1,6 +1,6 @@
 ---
 type: lecture-cg
-title: "Einführung"
+title: "Problemlösen"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:

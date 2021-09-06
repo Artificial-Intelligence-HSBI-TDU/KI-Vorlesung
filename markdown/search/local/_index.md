@@ -1,7 +1,7 @@
 ---
 chapter: true
 title: "Lokale Suche"
-weight: 5
+weight: 4
 ---
 
 

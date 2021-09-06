@@ -1,8 +1,8 @@
 ---
 type: lecture-cg
-title: "Modellierung"
+title: "Einführung KI"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 2
+weight: 1
 readings:
   - key: "Russell2020"
     comment: "Kapitel 2 und 3"

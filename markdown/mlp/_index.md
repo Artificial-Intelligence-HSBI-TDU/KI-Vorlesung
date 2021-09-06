@@ -2,7 +2,7 @@
 chapter: true
 title: "ML: Perzeptron und MLP"
 menuTitle: "Perzeptron und MLP"
-weight: 7
+weight: 8
 ---
 
 

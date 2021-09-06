@@ -2,7 +2,7 @@
 chapter: true
 title: "Constraintsolving"
 menuTitle: "CSP"
-weight: 4
+weight: 5
 ---
 
 

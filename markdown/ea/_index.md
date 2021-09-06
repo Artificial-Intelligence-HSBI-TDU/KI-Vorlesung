@@ -1,7 +1,7 @@
 ---
 chapter: true
 title: "Genetische Algorithmen"
-weight: 2
+weight: 3
 ---
 
 

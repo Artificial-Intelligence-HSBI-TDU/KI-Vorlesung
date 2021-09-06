@@ -1,7 +1,7 @@
 ---
 chapter: true
 title: "Uninformierte Suche"
-weight: 3
+weight: 2
 ---
 
 

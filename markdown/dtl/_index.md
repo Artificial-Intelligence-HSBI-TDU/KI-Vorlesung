@@ -1,7 +1,7 @@
 ---
 chapter: true
 title: "Entscheidungsbäume"
-weight: 5
+weight: 6
 ---
 
 

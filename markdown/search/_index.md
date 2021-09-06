@@ -1,7 +1,7 @@
 ---
 chapter: true
 title: "Suche"
-weight: 1
+weight: 2
 ---
 
 
