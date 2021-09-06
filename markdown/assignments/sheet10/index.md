@@ -1,6 +1,6 @@
 ---
-title: "Sheet10"
-author: "NAME (INSTITUT)"
+title: "Blatt 10: XYZ"
+author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 ---
 

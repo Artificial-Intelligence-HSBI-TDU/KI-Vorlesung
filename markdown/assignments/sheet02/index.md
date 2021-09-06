@@ -1,6 +1,6 @@
 ---
-title: "Sheet02"
-author: "NAME (INSTITUT)"
+title: "Blatt 02: Suche"
+author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 ---
 

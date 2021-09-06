@@ -1,6 +1,6 @@
 ---
-title: "Sheet04"
-author: "NAME (INSTITUT)"
+title: "Blatt04: Spiele"
+author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 ---
 

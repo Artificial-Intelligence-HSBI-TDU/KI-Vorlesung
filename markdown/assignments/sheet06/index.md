@@ -1,6 +1,6 @@
 ---
-title: "Sheet06"
-author: "NAME (INSTITUT)"
+title: "Blatt 06: Entscheidungsbäume"
+author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 ---
 
