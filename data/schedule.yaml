@@ -2,19 +2,210 @@
 - week: "KW40"
   lecture:
     - topic: "/misc/syllabus"
+      leader: "Canan, cagi"
+      notes: "Kick-Off"
+    - topic: "/intro/intro-ai"
+      leader: "cagi"
+    - topic: "/intro/problems"
+      leader: "cagi"
   misc:
-    - page: "/misc/resources"
-      notes: "Vortrag Thema I"
-    - notes: "Coden mit Edmonton"
-    - page: "/misc/schedule"
+    - notes: "[KI, Carsten+Canan]: Kick-Off, Einführung KI, Problemlösen"
 
 - week: "KW41"
   lecture:
-    - topic: "/misc/syllabus"
+    - topic: "/search/intro"
       leader: "cagi"
-      notes: "Classes go all-virtual"
-    - topic: "/misc/syllabus"
+    - topic: "/search/uninformed/dfs"
+      leader: "cagi"
+    - topic: "/search/uninformed/bfs"
+      leader: "cagi"
+    - topic: "/search/informed/branchandbound"
+      leader: "cagi"
+    - topic: "/search/informed/bestfirst"
+      leader: "cagi"
+    - topic: "/search/informed/astar"
+      leader: "cagi"
   assignment:
     - topic: "sheet01"
-      due: "14.10."
+      due: "XX.XX."
+  misc:
+    - notes: "[KI, Carsten]: Suche (TF, BS, BB, BF, A-Star)"
+
+- week: "KW42"
+  lecture:
+    - topic: "/search/local/gradient"
+      leader: "cagi"
+    - topic: "/search/local/annealing"
+      leader: "cagi"
+    - topic: "/search/ea/intro"
+      leader: "cagi"
+    - topic: "/search/ea/ga"
+      leader: "cagi"
+  assignment:
+    - topic: "sheet02"
+      due: "XX.XX."
+  misc:
+    - notes: "[KI, Carsten]: Lokale Suche (Gradientenabstieg, Simulated Annealing), Genetische Algorithmen"
+
+- week: "KW43"
+  lecture:
+    - topic: "/games/intro"
+      leader: "cagi"
+    - topic: "/games/minimax"
+      leader: "cagi"
+    - topic: "/games/heuristics"
+      leader: "cagi"
+    - topic: "/games/alphabeta"
+      leader: "cagi"
+  assignment:
+    - topic: "sheet03"
+      due: "XX.XX."
+  misc:
+    - notes: "[KI, Carsten]: Spiele (Minimax, alpha-beta-Pruning, Heuristiken)"
+
+- week: "KW44"
+  lecture:
+    - topic: "/csp/intro"
+      leader: "cagi"
+    - topic: "/csp/backtrackingsearch"
+      leader: "cagi"
+    - topic: "/csp/heuristics"
+      leader: "cagi"
+    - topic: "/csp/ac3"
+      leader: "cagi"
+  assignment:
+    - topic: "sheet04"
+      due: "XX.XX."
+  misc:
+    - notes: "[KI, Carsten]: CSP (Backtracking, Heuristiken, Kantenkonsistenz, AC-3)"
+
+- week: "KW45"
+  lecture:
+    - topic: "/dtl/mlbasics"
+      leader: "cagi"
+    - topic: "/dtl/cal2"
+      leader: "cagi"
+    - topic: "/dtl/pruning"
+      leader: "cagi"
+    - topic: "/dtl/cal3"
+      leader: "cagi"
+    - topic: "/dtl/entropy"
+      leader: "cagi"
+    - topic: "/dtl/id3"
+      leader: "cagi"
+  assignment:
+    - topic: "sheet05"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Carsten]: Einführung ML, Entscheidungsbäume (CAL2/CAL3, ID3 und C4.5)"
+
+- week: "KW46"
+  lecture:
+    - topic: "/naivebayes/probability"
+      leader: "cagi"
+    - topic: "/naivebayes/nb"
+      leader: "cagi"
+  assignment:
+    - topic: "sheet06"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Carsten]: Naive Bayes"
+
+- week: "KW47"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: (Nur FHB)
+  misc:
+    - notes: "TDU: Zwischenprüfung"
+    - notes: "[ML, Canan]: FHB: Einführung ML, Perzeptron ; TDU: Zwischenprüfung "
+
+- week: "KW48"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: (Nur TDU)
+  assignment:
+    - topic: "sheet07"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Canan]: Lineare Regression; TDU += Einführung ML, Perzeptron (Nachtrag aus KW39)"
+
+- week: "KW49"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+  assignment:
+    - topic: "sheet08"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Canan]: Logistische Regression, Fehlerfunktion, Mean Square Error (MSE)"
+
+- week: "KW50"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+  assignment:
+    - topic: "sheet09"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Canan]: Nichtlineare Modelle, Overfitting, Bias/Variance, Regularisierung"
+
+- week: "KW51"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+  assignment:
+    - topic: "sheet10"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Canan]: MLP, Neuronale Netze"
+
+- week: "KW52"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: "(Nur TDU)"
+  misc:
+    - notes: "FHB: Xmas; TDU-Topic13: Backpropagation"
+    - notes: "[ML, Canan]: FHB: Xmas; TDU-Topic13: Backpropagation"
+
+- week: "KW01"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: (nur TDU)
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: (nur FHB)
+  assignment:
+    - topic: "sheet10"
+      due: "XX.XX."
+  misc:
+    - notes: "[ML, Canan]: FHB-Topic13: Backpropagation; TDU-Topic14: Crossvalidation (Train-Dev-Test Sets), Performanzanalyse
+asynchron (zwei Sprechstunden am selben Tag)"
+
+- week: "KW02"
+  lecture:
+    - topic: "/mlp"
+      leader: "Canan"
+      notes: "(Nur FHB)"
+  assignment:
+    - topic: "sheet10"
+      due: "XX.XX."
+  misc:
+    - notes: "Nur noch FHB; TDU Prüfungsphase"
+    - notes: "[ML, Canan]: FHB-Topic13: Backpropagation; TDU-Topic14: Crossvalidation (Train-Dev-Test Sets), Performanzanalyse
+asynchron (zwei Sprechstunden am selben Tag)"
+
+- week: "KW03"
+  lecture:
+    - topic: "/misc/syllabus"
+      leader: "cagix"
+      notes: "(Nur FHB)"
+  misc:
+    - notes: "Nur noch FHB; TDU Prüfungsphase"
+    - notes: "[FHB, Carsten] Rückblick+Prüfungsvorbereitung"
 ---
