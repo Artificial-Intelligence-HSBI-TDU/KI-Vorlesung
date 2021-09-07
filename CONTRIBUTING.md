@@ -177,6 +177,14 @@ as a PDF file**. These are then automatically linked in the generated web page.
 
 This new lecture is now automatically processed when the web page is generated.
 
+If you also want to create PDF slides for the new lecture, you need to add the
+entry **`SRC += wuppie/fluppie/foo`** to the [`Makefile`](Makefile) (around
+line 65). This also applies if you need pre-processing by Pandoc for the website.
+
+You would probably also like to add the new lecture to the schedule
+**`data/schedule.yaml`**. If `foo` is unique, you can just use `foo` as
+"`topic`", otherwise use the full path `wuppie/fluppie/foo`.
+
 In the YAML header of your file `index.md`, you can delete the fields you do
 not need, e.g. `youtube`, `fhmedia`, `quizzes`, `assignments`, `attachments`,
 `menuTitle` ...
