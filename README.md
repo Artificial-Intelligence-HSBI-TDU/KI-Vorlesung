@@ -7,7 +7,9 @@ tbd
 
 ## Contributing
 
-tbd
+Questions, bug reports, feature requests and pull requests are very welcome.
+Please be sure to read the [contributor guidelines](CONTRIBUTING.md) before
+opening a new issue.
 
 
 ## Credits
