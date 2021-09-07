@@ -63,7 +63,34 @@ RESOURCES    = resources
 ## The "topic/subtopic/lecture" is also a make target for creating the lecture slides
 ## for this page.
 SRC    =
-SRC   +=
+SRC   += intro/intro-ai
+SRC   += intro/problems
+SRC   += search/intro
+SRC   += search/uninformed/dfs
+SRC   += search/uninformed/bfs
+SRC   += search/informed/branchandbound
+SRC   += search/informed/bestfirst
+SRC   += search/informed/astar
+SRC   += search/local/gradient
+SRC   += search/local/annealing
+SRC   += ea/intro
+SRC   += ea/ga
+SRC   += games/intro
+SRC   += games/minimax
+SRC   += games/heuristics
+SRC   += games/alphabeta
+SRC   += csp/intro
+SRC   += csp/backtrackingsearch
+SRC   += csp/heuristics
+SRC   += csp/ac3
+SRC   += dtl/mlbasics
+SRC   += dtl/cal2
+SRC   += dtl/pruning
+SRC   += dtl/cal3
+SRC   += dtl/entropy
+SRC   += dtl/id3
+SRC   += naivebayes/probability
+SRC   += naivebayes/nb
 
 ## Use different file extensions so Make can distinguish these targets
 SLIDES = $(patsubst %,$(TMP_CONTENT)/%/$(PAGE_PDF),$(SRC))
