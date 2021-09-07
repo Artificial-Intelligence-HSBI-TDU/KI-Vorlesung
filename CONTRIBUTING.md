@@ -172,7 +172,7 @@ The file **`index.md`** is the main file of the lecture, in addition there is
 a file `outcomes.md` (for the learning objectives) and the subfolders
 **`images/`** (for local images) and the subfolder **`files/`**.
 
-In the sub-folder **'files/'** you can place the **slides drawn on your iPad
+In the sub-folder **'files/'** you can place the **slides sketched on your iPad
 as a PDF file**. These are then automatically linked in the generated web page.
 
 This new lecture is now automatically processed when the web page is generated.
