@@ -8,7 +8,7 @@
       leader: "cagi"
     - topic: "/intro/problems"
       leader: "cagi"
-  misc:
+  misc_lecture:
     - notes: "[KI, Carsten+Canan]: Kick-Off, Einführung KI, Problemlösen"
 
 - week: "KW41"
@@ -28,7 +28,7 @@
   assignment:
     - topic: "sheet01"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[KI, Carsten]: Suche (TF, BS, BB, BF, A-Star)"
 
 - week: "KW42"
@@ -44,7 +44,7 @@
   assignment:
     - topic: "sheet02"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[KI, Carsten]: Lokale Suche (Gradientenabstieg, Simulated Annealing), Genetische Algorithmen"
 
 - week: "KW43"
@@ -60,7 +60,7 @@
   assignment:
     - topic: "sheet03"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[KI, Carsten]: Spiele (Minimax, alpha-beta-Pruning, Heuristiken)"
 
 - week: "KW44"
@@ -76,7 +76,7 @@
   assignment:
     - topic: "sheet04"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[KI, Carsten]: CSP (Backtracking, Heuristiken, Kantenkonsistenz, AC-3)"
 
 - week: "KW45"
@@ -96,7 +96,7 @@
   assignment:
     - topic: "sheet05"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Carsten]: Einführung ML, Entscheidungsbäume (CAL2/CAL3, ID3 und C4.5)"
 
 - week: "KW46"
@@ -108,7 +108,7 @@
   assignment:
     - topic: "sheet06"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Carsten]: Naive Bayes"
 
 - week: "KW47"
@@ -116,7 +116,7 @@
     - topic: "/mlp"
       leader: "Canan"
       notes: (Nur FHB)
-  misc:
+  misc_lecture:
     - notes: "TDU: Zwischenprüfung"
     - notes: "[ML, Canan]: FHB: Einführung ML, Perzeptron ; TDU: Zwischenprüfung "
 
@@ -130,7 +130,7 @@
   assignment:
     - topic: "sheet07"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Canan]: Lineare Regression; TDU += Einführung ML, Perzeptron (Nachtrag aus KW39)"
 
 - week: "KW49"
@@ -140,7 +140,7 @@
   assignment:
     - topic: "sheet08"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Canan]: Logistische Regression, Fehlerfunktion, Mean Square Error (MSE)"
 
 - week: "KW50"
@@ -150,7 +150,7 @@
   assignment:
     - topic: "sheet09"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Canan]: Nichtlineare Modelle, Overfitting, Bias/Variance, Regularisierung"
 
 - week: "KW51"
@@ -160,7 +160,7 @@
   assignment:
     - topic: "sheet10"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Canan]: MLP, Neuronale Netze"
 
 - week: "KW52"
@@ -168,7 +168,7 @@
     - topic: "/mlp"
       leader: "Canan"
       notes: "(Nur TDU)"
-  misc:
+  misc_lecture:
     - notes: "FHB: Xmas; TDU-Topic13: Backpropagation"
     - notes: "[ML, Canan]: FHB: Xmas; TDU-Topic13: Backpropagation"
 
@@ -183,7 +183,7 @@
   assignment:
     - topic: "sheet10"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "[ML, Canan]: FHB-Topic13: Backpropagation; TDU-Topic14: Crossvalidation (Train-Dev-Test Sets), Performanzanalyse
 asynchron (zwei Sprechstunden am selben Tag)"
 
@@ -195,7 +195,7 @@ asynchron (zwei Sprechstunden am selben Tag)"
   assignment:
     - topic: "sheet10"
       due: "XX.XX."
-  misc:
+  misc_lecture:
     - notes: "Nur noch FHB; TDU Prüfungsphase"
     - notes: "[ML, Canan]: FHB-Topic13: Backpropagation; TDU-Topic14: Crossvalidation (Train-Dev-Test Sets), Performanzanalyse
 asynchron (zwei Sprechstunden am selben Tag)"
@@ -205,7 +205,7 @@ asynchron (zwei Sprechstunden am selben Tag)"
     - topic: "/misc/syllabus"
       leader: "cagix"
       notes: "(Nur FHB)"
-  misc:
+  misc_lecture:
     - notes: "Nur noch FHB; TDU Prüfungsphase"
     - notes: "[FHB, Carsten] Rückblick+Prüfungsvorbereitung"
 ---
