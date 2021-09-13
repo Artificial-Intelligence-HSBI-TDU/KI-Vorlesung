@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "Problemlösen: Kapitel 3.1 -- 3.3"
+    comment: "Problemlösen: Kapitel 3.1 - 3.3"
 quizzes:
   - link: TODO
     name: "TODO"
@@ -146,6 +146,7 @@ Ein Problem besteht aus:
 :   Menge aller Zustände $S$, die durch (wiederholte) Anwendung von Aktionen
     von den Startzuständen aus erreichbar sind
 
+\bigskip
 
 **Zieltest**
 :   Funktion $\operatorname{goal}: S \to \{0,1\}$
@@ -153,6 +154,7 @@ Ein Problem besteht aus:
 **Zielzustände**
 :   Menge $S_E \subseteq S$ mit $\forall x \in S_E : \operatorname{goal}(x)=1$
 
+\bigskip
 
 **Kosten**
 :   **Gesamtkosten**: $f(n) = g(n) + h(n)$
@@ -189,6 +191,7 @@ Problemlösen
 
     *   Spannt den **Suchbaum** auf
 
+\bigskip
 
 **Lösung**
 :   Folge von Aktionen, die Start- in Zielzustand überführen
@@ -279,9 +282,9 @@ Lehrveranstaltung kurz als "Graph-Search"-Algorithmus bezeichnet.
 :   Wieviel Speicher benötigt die Suche?
 
 \bigskip
+\bigskip
 
 **Größen zur Bewertung:**
-
 *   **b**: Verzweigungsfaktor
 *   **d**: Ebene (Tiefe) des höchsten Lösungsknotens
 *   **m**: Länge des längsten Pfades
@@ -291,6 +294,7 @@ Lehrveranstaltung kurz als "Graph-Search"-Algorithmus bezeichnet.
 
 *   Begriffe "Problem", "Zustand", "Aktion", "Zustandsraum", "Problemgraph", "Suchbaum"
 
+\bigskip
 
 *   Problemlösen: Suche in Graphen nach Weg vom Start zum Ziel
     *   Suche spannt einen Suchbaum auf
