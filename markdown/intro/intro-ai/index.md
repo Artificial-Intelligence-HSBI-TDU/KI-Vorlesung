@@ -188,7 +188,7 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 ## Typische Ansätze in der KI
 
 ::: center
-![](images/dimensionen-ki.png){width="65%"}
+![](images/dimensionen-ki.png){width="60%"}
 :::
 
 \bigskip
@@ -281,7 +281,7 @@ Beispiel:
 
 \bigskip
 
-Siehe auch Abbildung 1.3 in [@Ertel2017, S.8]
+Siehe auch Abbildung 1.3 in [@Ertel2017, S.8] ...
 
 ## Wrap-Up
 
