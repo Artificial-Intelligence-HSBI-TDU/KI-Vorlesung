@@ -15,11 +15,10 @@ quizzes:
 assignments:
   - topic: sheet01
 youtube:
-  - id: TODO
+  - id: ENclDk8-AD8
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: https://www.fh-bielefeld.de/medienportal/m/d1af81af48ecb6da40cc80202ed810c79a49d5c8aefd7c97f8b7cb4e9e0819baaf886f54f00df729879fd3ccba68bcab763efefacd44416726c799651ab664dd
+    name: "Direktlink FH-Medienportal: KI Einführung"
 ---
 
 
