@@ -12,11 +12,10 @@ quizzes:
 assignments:
   - topic: sheet01
 youtube:
-  - id: TODO
+  - id: SHuw6uMJs6I
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: https://www.fh-bielefeld.de/medienportal/m/14b8089d408f5ba308e5dd8af7260ecdddc5fdc7cacfe963e053409dd7986036970df1060a4e78aa7c0331cf9e29845f54605d15d4311c8d72cc9d06e5c0daa6
+    name: "Direktlink FH-Medienportal: KI Problemlösen"
 ---
 
 
