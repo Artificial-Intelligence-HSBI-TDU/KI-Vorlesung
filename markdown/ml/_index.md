@@ -1,12 +1,12 @@
 ---
 chapter: true
-title: "ML1 Perzeptron"
-menuTitle: "ML1 Perzeptron"
+title: "Machine Learning"
+menuTitle: "Machine Learning"
 weight: 8
 #hidden: true
 ---
 
-# ML1 - Perzeptron
+# Machine Learning
 
 Inhalt befindet sich im Aufbau<br>
 und wird rechtzeitig bereitgetellt.
