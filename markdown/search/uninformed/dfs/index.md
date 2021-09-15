@@ -6,45 +6,173 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
+    comment: "Tiefensuche: Abschnitt 3.4.3"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: TODO
+    name: "TODO"
 assignments:
   - topic: blatt01
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - link: TODO
+    name: "TODO"
 sketch: true
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Finde einen Weg von Rimnicu Vilcea nach Bucharest
 
-## Folie 2
-...
+:::center
+![Wegesuche in Rumänien](figs/search/fig-3-1-romania){height="90%"}\
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 3.1, S. 10][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+:::
 
-## Folie 3
-...
+::: notes
+=> [**Problemlösen == Suche im Graphen**]{.alert}
+:::
 
-## Folie 4
-...
+**Uninformierte ("blinde") Suche**:
 
-## Folie 5
-...
+Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} zählt.
 
-## Folie 6
-...
+::: notes
+Varianten:
+
+*   **Tiefensuche**
+*   Breitensuche
+:::
+
+::: notes
+## Anmerkungen Wegesuche
+
+Bei der Wegesuche hat man den Problemgraphen bereits durch die Orte und die Verbindungen (Straßen)
+zwischen ihnen gegeben. Es gibt nur eine ausführbare Aktion: "*fahre nach*".
+
+Dabei können nur die Anzahl der Zwischenstationen auf dem Weg gezählt werden ("uninformierte
+Suche"), oder man ordnet den Kanten Kosten zu (bei der Wegesuche wären dies die Entfernungen
+zwischen den Orten oder die Zeit, die man von A nach B braucht) und landet damit bei der
+"informierten Suche".
+
+Normalerweise hat man eine Ordnung auf den Aktionen, d.h. für einen Knoten ergibt sich daraus
+eine Reihenfolge, in der die Aktionen angewendet werden und die Nachfolger expandiert werden.
+Bei der Wegesuche hat man dies nicht, insofern muss man willkürlich eine Ordnung festlegen.
+In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte).
+:::
+
+
+## Tiefensuche (*TS*, *DFS*)
+
+::: notes
+**Erinnerung Tree-Search**
+:::
+
+1.  Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein
+2.  Entnehme Knoten aus der Datenstruktur:
+    a)  Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
+    b)  Expandiere alle Nachfolger des Knotens und füge diese in die
+        Datenstruktur ein
+3.  Falls die Datenstruktur leer ist: Abbruch, melde "*nicht gefunden*"
+4.  Gehe zu Schritt 2
+
+\bigskip
+=> Was passiert, wenn wir einen [**Stack**]{.alert} einsetzen?
+
+:::::: notes
+:::center
+![](images/tafelbeispiel.png){width="90%"}
+:::
+::::::
+
+[Tafelbeispiel Tiefensuche (Stack, Suchbaum, Backtracking, Zyklen)]{.bsp}
+
+<!-- XXX
+* Beispiel mit *gerichteten* Kanten, um lange Zyklen an Tafelbeispiel zu vermeiden
+* Sackgasse möglichst "früh" (A-B-C (C: Sackgasse), A-B-D, und von D geht's weiter ...)
+* Diskussion: Zyklen sind normalerweise möglich (wenn eine Aktion den Vorgängerzustand "erreicht")
+-->
+
+::: notes
+## Bemerkungen TS
+
+*   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
+
+*   Suchalgorithmus mit [**Stack**]{.alert} als Datenstruktur => **Tiefensuche**
+    *   Zu betrachtender Knoten in Schritt 2 wird *oben* vom Stack genommen
+    *   Expandierte Knoten werden in Schritt 2.a *oben* auf den Stack gelegt
+        -   Dabei i.A. definierte Reihenfolge der Nachfolgeknoten beachten!
+
+    Auswirkung: Weg wird in die **Tiefe** verfolgt (deshalb "Tiefensuche")
+
+*   Im [@Russell2020] wird die Datenstruktur zum Halten der zu expandierenden Knoten (also
+    hier im Fall der Tiefensuche der Stack) auch "**Frontier**" genannt.
+
+*   **Backtracking**: Wenn der Weg in eine Sackgasse führt, d.h. ein Knoten
+    keine Nachfolger hat, werden bei der Expansion des Knotens keine Nachfolger
+    auf den Stack gelegt. Die Evaluation des nächsten Knotens auf dem Stack
+    bewirkt deshalb ein *Zurückspringen* im Suchbaum zum letzten Knoten auf dem
+    aktuellen Weg mit noch offenen Alternativen ...
+
+
+## Konventionen TS
+
+Die Algorithmen im [@Russell2020] führen nur die letzten Knoten der partiellen Wege in den
+Datenstrukturen mit. Dies erschwert die Lesbarkeit, deshalb wird für diese Veranstaltung
+die Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+
+Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
+sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
+soll aber natürlich die Reihenfolge der ursprünglich in der Datenstruktur enthaltenen Knoten
+nicht modifiziert werden. (Bei "echten" Problemen wird die Reihenfolge der expandierten
+Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)
+
+
+## Weitere Hinweise
+
+*   Im [@Russell2020] wird der Begriff "Backtracking" für den rekursiven Tiefensuche-Algorithmus
+    verwendet. Dies steht im Gegensatz zum üblichen Sprachgebrauch in der KI!
+
+*   Bei Tree-Search werden bereits besuchte Knoten u.U. immer wieder besucht. Zyklen im aktuell
+    entwickelten Pfad sind also möglich! Außerdem sind mehrere Wege zum selben (Zwischen-/End-)
+    Knoten in der Datenstruktur möglich!
+
+*   Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
+    einsetzen. Wichtig ist nur, dass als Datenstruktur ein **Stack** genutzt wird.
+:::
+
+
+## Tiefensuche (rekursive Variante)
+
+1.  Startknoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
+2.  Für jeden Nachfolger des Startknotens:
+    a)  Rufe Tiefensuche für aktuellen (Nachfolger-) Knoten auf
+    b)  Ergebnis "*gefunden*": Abbruch, melde "*gefunden*"
+3.  Abbruch, melde "*nicht gefunden*"
+
+::: notes
+### Bemerkungen
+
+*   Eigenschaften wie "normale" Tiefensuche
+*   Einfacher zu implementieren: Nutzung des Stacks wird auf den Compiler
+    verlagert (Funktionsaufruf, Stack des Prozesses ...)
+*   Speicherbedarf: Für jeden Knoten wird nur der nächste Knoten expandiert,
+    plus Speicher für die Funktion
+:::
+
+
+::: notes
+## Eigenschaften von Tiefensuche
+
+Siehe `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
+:::
+
 
 ## Wrap-Up
-...
+
+*   Uninformierte Suchverfahren
+    *   Keine weiteren Pfadkosten (nur Anzahl der Schritte)
+    *   Tiefensuche: Verfolge einen Pfad zuerst in die Tiefe
+    *   Backtracking bei Sackgassen (automatisch durch den Stack)
 
 
 
