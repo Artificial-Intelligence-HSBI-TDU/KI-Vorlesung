@@ -3,7 +3,7 @@ type: lecture-cy
 title: "Training & Testing"
 menuTitle: "Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 1
+weight: 7
 outcomes: false
 # readings:
 #   - key: "Russell2020"
