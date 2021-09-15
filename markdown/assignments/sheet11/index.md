@@ -1,8 +1,8 @@
 ---
-title: "Blatt 08: Logistische Regression, Gradientenabstieg"
+title: "Blatt 11: Backprop"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
-weight: 8
+weight: 11
 ---
 
 

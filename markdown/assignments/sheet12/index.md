@@ -1,8 +1,8 @@
 ---
-title: "Blatt 08: Logistische Regression, Gradientenabstieg"
+title: "Blatt 12: Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
-weight: 8
+weight: 5
 ---
 
 

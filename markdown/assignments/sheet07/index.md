@@ -1,5 +1,5 @@
 ---
-title: "Blatt 07: XYZ"
+title: "Blatt 07: Perzeptron, Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 7
