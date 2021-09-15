@@ -8,17 +8,15 @@ readings:
     comment: "Kapitel 2 und 3"
   - key: "Ertel2017"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: TODO
+    name: "TODO"
 assignments:
   - topic: blatt01
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - link: TODO
+    name: "TODO"
 sketch: true
 ---
 
