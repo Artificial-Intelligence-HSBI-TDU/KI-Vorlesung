@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "Backpropagation"
-menuTitle: "Backpropagation"
+title: "ML6 - Backpropagation"
+menuTitle: "ML6 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 6
 outcomes: false

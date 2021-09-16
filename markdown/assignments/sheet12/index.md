@@ -1,5 +1,5 @@
 ---
-title: "Blatt 12: Performanzanalyse"
+title: "Blatt 12: Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 5

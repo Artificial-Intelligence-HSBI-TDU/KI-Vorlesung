@@ -1,5 +1,5 @@
 ---
-title: "Blatt 11: Backprop"
+title: "Blatt 11: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 11

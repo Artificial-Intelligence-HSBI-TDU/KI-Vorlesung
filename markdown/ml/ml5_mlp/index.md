@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "Multilayerperzeptron"
-menuTitle: "Multilayerperzeptron"
+title: "ML5 - Multilayerperzeptron"
+menuTitle: "ML5 - Multilayerperzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 5
 outcomes: false

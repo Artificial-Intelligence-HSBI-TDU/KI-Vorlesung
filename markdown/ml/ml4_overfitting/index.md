@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "Overfitting, Bias & Variance"
-menuTitle: "Overfitting Bias & Variance"
+title: "ML4 - Overfitting"
+menuTitle: "ML4 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 4
 outcomes: false

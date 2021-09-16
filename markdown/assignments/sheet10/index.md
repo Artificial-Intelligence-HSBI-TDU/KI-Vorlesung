@@ -1,5 +1,5 @@
 ---
-title: "Blatt 10: XYZ"
+title: "Blatt 10: MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 10

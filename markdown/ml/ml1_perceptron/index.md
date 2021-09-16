@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "Das Perzeptron"
-menuTitle: "Das Perzeptron"
+title: "ML1 - Das Perzeptron"
+menuTitle: "ML1 - Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 1
 outcomes: false
