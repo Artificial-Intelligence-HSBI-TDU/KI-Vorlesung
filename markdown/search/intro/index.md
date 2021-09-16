@@ -6,12 +6,11 @@ weight: 1
 readings:
   - key: "Russell2020"
     comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
 quizzes:
   - link: TODO
     name: "TODO"
 assignments:
-  - topic: blatt01
+  - topic: sheet02
 youtube:
   - id: TODO
 fhmedia:
