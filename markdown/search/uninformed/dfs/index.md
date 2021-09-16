@@ -27,6 +27,20 @@ sketch: true
 ![](images/scene.png){width="60%"}
 :::
 
+::: notes
+Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek
+und einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für
+den Roboter lautet: Hole das Buch aus der Bibliothek (und bringe es zum Kopier).
+(Damit das Beispiel und der sich daraus ergebende Problemgraph nicht zu groß und zu
+unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch
+in der Bibliothek aufnimmt.)
+
+Es stehen zwei Aktionen zur Verfügung:
+1.  Der Roboter kann von einem in den nächsten Raum wechseln (Kosten siehe Pfeile)
+2.  Der Roboter kann das Buch aufnehmen (Kosten: 3)
+
+Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilrichtung).
+:::
 
 ## Problemgraph zum Kopiererbeispiel
 
@@ -38,14 +52,17 @@ sketch: true
 => [**Problemlösen == Suche im Graphen**]{.alert}
 :::
 
+\bigskip
+\bigskip
+
 **Uninformierte ("blinde") Suche**:
 
-Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} zählt.
+Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} (Anzahl der Schritte) zählt.
 
 ::: notes
 Varianten:
 *   **Tiefensuche**
-*   Breitensuche
+*   `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
 :::
 
 ::: notes
@@ -98,7 +115,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 -->
 
 ::::::::: notes
-## Bemerkungen TS
+## Bemerkungen
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
 
@@ -119,7 +136,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
     aktuellen Weg mit noch offenen Alternativen ...
 
 
-## Konventionen TS
+## Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -168,7 +185,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 
 
 ::: notes
-## Eigenschaften von Tiefensuche
+## Eigenschaften der Tiefensuche
 
 Siehe `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
 :::
