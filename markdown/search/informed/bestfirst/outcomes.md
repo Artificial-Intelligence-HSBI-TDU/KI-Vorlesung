@@ -5,20 +5,13 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Best-First:
+    *   Verwendete Datenstrukturen
+    *   Algorithmische Abläufe, Terminierung
+    *   Optimalität, Vollständigkeit und Komplexität
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Informierte Suchverfahren Best-First
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
