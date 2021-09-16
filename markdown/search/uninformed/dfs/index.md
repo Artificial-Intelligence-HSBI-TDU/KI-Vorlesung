@@ -153,15 +153,15 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 
 ## Weitere Hinweise
 
-*   Im [@Russell2020] wird der Begriff "Backtracking" für den rekursiven Tiefensuche-Algorithmus
-    verwendet. Dies steht im Gegensatz zum üblichen Sprachgebrauch in der KI!
+*   Die Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
+    einsetzen. Wichtig ist nur, dass als Datenstruktur ein **Stack** genutzt wird.
 
 *   Bei Tree-Search werden bereits besuchte Knoten u.U. immer wieder besucht. Zyklen im aktuell
     entwickelten Pfad sind also möglich! Außerdem sind mehrere Wege zum selben (Zwischen-/End-)
     Knoten in der Datenstruktur möglich!
 
-*   Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
-    einsetzen. Wichtig ist nur, dass als Datenstruktur ein **Stack** genutzt wird.
+*   Im [@Russell2020] wird der Begriff "Backtracking" für den rekursiven Tiefensuche-Algorithmus
+    verwendet. Dies steht im Gegensatz zum üblichen Sprachgebrauch in der KI!
 :::::::::
 
 
