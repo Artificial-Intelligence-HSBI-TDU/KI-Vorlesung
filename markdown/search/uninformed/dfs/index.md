@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "TODO"
 assignments:
-  - topic: blatt01
+  - topic: sheet02
 youtube:
   - id: TODO
 fhmedia:
