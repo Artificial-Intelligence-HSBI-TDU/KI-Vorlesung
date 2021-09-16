@@ -5,20 +5,12 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Verwendete Datenstrukturen
+*   Algorithmische Abläufe, Terminierung
+*   Optimalität, Vollständigkeit und Komplexität
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Uninformierte Suchverfahren: Breitensuche
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
