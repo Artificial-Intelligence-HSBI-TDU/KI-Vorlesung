@@ -21,11 +21,17 @@ sketch: true
 ---
 
 
-## Finde einen Weg von Rimnicu Vilcea nach Bucharest
+## Hole das Buch
 
 :::center
-![Wegesuche in Rumänien](figs/search/fig-3-1-romania){height="90%"}\
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 3.1, S. 10][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+![](images/scene.png){width="60%"}
+:::
+
+
+## Problemgraph zum Kopiererbeispiel
+
+:::center
+![](images/graph.png){width="60%"}
 :::
 
 ::: notes
@@ -38,13 +44,12 @@ Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} 
 
 ::: notes
 Varianten:
-
 *   **Tiefensuche**
 *   Breitensuche
 :::
 
 ::: notes
-## Anmerkungen Wegesuche
+## Anmerkungen Wegesuche (Landkarte)
 
 Bei der Wegesuche hat man den Problemgraphen bereits durch die Orte und die Verbindungen (Straßen)
 zwischen ihnen gegeben. Es gibt nur eine ausführbare Aktion: "*fahre nach*".
@@ -69,8 +74,8 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 
 1.  Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein
 2.  Entnehme Knoten aus der Datenstruktur:
-    a)  Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
-    b)  Expandiere alle Nachfolger des Knotens und füge diese in die
+    -   Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
+    -   Expandiere alle Nachfolger des Knotens und füge diese in die
         Datenstruktur ein
 3.  Falls die Datenstruktur leer ist: Abbruch, melde "*nicht gefunden*"
 4.  Gehe zu Schritt 2
@@ -92,7 +97,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 * Diskussion: Zyklen sind normalerweise möglich (wenn eine Aktion den Vorgängerzustand "erreicht")
 -->
 
-::: notes
+::::::::: notes
 ## Bemerkungen TS
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
@@ -100,7 +105,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 *   Suchalgorithmus mit [**Stack**]{.alert} als Datenstruktur => **Tiefensuche**
     *   Zu betrachtender Knoten in Schritt 2 wird *oben* vom Stack genommen
     *   Expandierte Knoten werden in Schritt 2.a *oben* auf den Stack gelegt
-        -   Dabei i.A. definierte Reihenfolge der Nachfolgeknoten beachten!
+        Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!
 
     Auswirkung: Weg wird in die **Tiefe** verfolgt (deshalb "Tiefensuche")
 
@@ -116,9 +121,11 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 
 ## Konventionen TS
 
-Die Algorithmen im [@Russell2020] führen nur die letzten Knoten der partiellen Wege in den
-Datenstrukturen mit. Dies erschwert die Lesbarkeit, deshalb wird für diese Veranstaltung
-die Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
 sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
@@ -138,15 +145,15 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 
 *   Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
     einsetzen. Wichtig ist nur, dass als Datenstruktur ein **Stack** genutzt wird.
-:::
+:::::::::
 
 
 ## Tiefensuche (rekursive Variante)
 
 1.  Startknoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
 2.  Für jeden Nachfolger des Startknotens:
-    a)  Rufe Tiefensuche für aktuellen (Nachfolger-) Knoten auf
-    b)  Ergebnis "*gefunden*": Abbruch, melde "*gefunden*"
+    -   Rufe Tiefensuche für aktuellen (Nachfolger-) Knoten auf
+    -   Ergebnis "*gefunden*": Abbruch, melde "*gefunden*"
 3.  Abbruch, melde "*nicht gefunden*"
 
 ::: notes
@@ -186,7 +193,4 @@ Siehe `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
