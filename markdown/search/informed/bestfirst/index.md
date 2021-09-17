@@ -13,11 +13,10 @@ quizzes:
 assignments:
   - topic: sheet02
 youtube:
-  - id: TODO
+  - id: 6LRjrlSy07Q
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: https://www.fh-bielefeld.de/medienportal/m/bf905b140b247e9fa87ee698adec011c9a1688f329b3cf68dea7756f040c43414270c111e4e360d3921afe390b25db8799ad6f6b4d6c204c8e5b97350602de8b
+    name: "Direktlink FH-Medienportal: Best First"
 ---
 
 
