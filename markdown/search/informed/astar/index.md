@@ -13,11 +13,10 @@ quizzes:
 assignments:
   - topic: sheet02
 youtube:
-  - id: TODO
+  - id: mj-MoBAt0SE
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: https://www.fh-bielefeld.de/medienportal/m/47f51df7fc6191d835e01d4fe58271a09236f4da3ca6e9479761af0375bc65c7904c50c894409627c20ae5c01b0b91246dd7465fa4057b9a6b7da4bfce4db240
+    name: "Direktlink FH-Medienportal: A*"
 ---
 
 
@@ -206,7 +205,7 @@ Außerdem muss gelten:
 
 *   Informierte Suchverfahren
     *   Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten
-    *   A-Stern: komplette Kostenfunktion $f(n) = g(n)+h(n)$ \newline
+    *   A*: komplette Kostenfunktion $f(n) = g(n)+h(n)$ \newline
         => besondere Anforderungen an die Heuristik!
         [(Tree-Search: *zulässige* Heuristik; Graph-Search: *konsistente* Heuristik)]{.notes}
 
