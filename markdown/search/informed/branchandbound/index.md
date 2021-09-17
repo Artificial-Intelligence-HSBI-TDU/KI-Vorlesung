@@ -13,11 +13,10 @@ quizzes:
 assignments:
   - topic: sheet02
 youtube:
-  - id: TODO
+  - id: fq4i7a3RR9E
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: https://www.fh-bielefeld.de/medienportal/m/6abd1012d031afe7fa1467f264f9846c820eccbdba54fd684fb8bea5e5d2afb7522755ea9db083945c85acd82e907977880f928d5a8c06b09d7fa9fef04b111a
+    name: "Direktlink FH-Medienportal: Branch-and-Bound"
 ---
 
 
