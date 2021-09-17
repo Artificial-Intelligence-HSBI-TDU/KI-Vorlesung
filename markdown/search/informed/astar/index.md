@@ -6,7 +6,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 3
 readings:
   - key: "Russell2020"
-    comment: "A*: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
+    comment: "`A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
 quizzes:
   - link: TODO
     name: "TODO"
