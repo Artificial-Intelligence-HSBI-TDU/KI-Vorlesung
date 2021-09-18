@@ -1,10 +1,9 @@
 ---
 chapter: true
 title: "Machine Learning"
-menuTitle: "Machine Learning"
 weight: 8
-#hidden: true
 ---
+
 
 # Machine Learning
 
