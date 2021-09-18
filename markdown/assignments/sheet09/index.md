@@ -1,5 +1,5 @@
 ---
-title: "Blatt 09: XYZ"
+title: "Blatt 09: Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 9

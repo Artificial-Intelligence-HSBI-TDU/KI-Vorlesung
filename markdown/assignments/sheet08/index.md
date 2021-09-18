@@ -1,5 +1,5 @@
 ---
-title: "Blatt 08: XYZ"
+title: "Blatt 08: Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 8
