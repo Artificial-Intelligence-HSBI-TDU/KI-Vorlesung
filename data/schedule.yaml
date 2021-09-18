@@ -1,3 +1,4 @@
+---
 #- week: "KW39"
 #  date: "(27 Sep - 1 Okt)"
 #  lecture:
@@ -13,7 +14,7 @@
     - topic: "/intro/problems"
   misc_lecture:
     - notes: ">> KW41 freigeschaltet. Blatt 1 bearbeiten!"
-  
+
 - week: "KW41"
   date: "11.10.21 (Sprechstunde: cagix)"
   lecture:
@@ -187,3 +188,4 @@
   lecture:
     - topic: "/misc/syllabus"
       notes: " nur @FHB"
+---
