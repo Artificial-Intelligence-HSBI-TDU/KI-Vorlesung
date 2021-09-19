@@ -1,49 +1,164 @@
 ---
 type: lecture-cg
-title: "Gradientensuche"
+title: "Lokale Suche: Gradientensuche"
+menuTitle: "Gradientensuche"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
+    comment: "Gradientenabstieg: Abschnitte 4.1.1 und 4.1.2"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: TODO
+    name: "TODO"
 assignments:
-  - topic: blatt01
+  - topic: sheet03
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - link: TODO
+    name: "TODO"
 sketch: true
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Unterschiede in den Suchproblemen?
 
-## Folie 2
-...
+::::: columns
+::: {.column width="46%"}
+![](images/graph.png){width="90%"}
+:::
+::: {.column width="46%"}
+![](images/screenshot_stundenplan.png)
+:::
+::::::
 
-## Folie 3
-...
 
-## Folie 4
-...
+::: notes
+Bisher betrachtete Suchverfahren:
 
-## Folie 5
-...
+*   Systematische Erkundung des Suchraums
+*   [**Weg**]{.alert} zur Lösung wichtig
 
-## Folie 6
-...
+\smallskip
+
+=> Oft aber nur das [**Ziel**]{.alert} **an sich** interessant! \newline
+(Und nicht, wie man dort hin gelangt.)
+
+\bigskip
+Beispiel: Stundenplan
+:::
+
+
+## Analogie: Bergsteigen ohne Karte und Pfade
+
+::: center
+![](images/hill-climbing.png){width="60%"}
+:::
+
+\bigskip
+\bigskip
+
+**Gradienten-Suche**:
+"Gehe in Richtung des [steilsten Anstiegs]{.alert} der [Zielfunktion]{.alert}."
+
+=> Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)
+
+::: notes
+*   Verschiedene Namen: "Hill-climbing", "Greedy local search"
+*   Kann auch als Minimierung angewendet werden
+:::
+
+
+## Pseudoalgorithmus Gradientensuche
+
+::: cbox
+"*Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust*"
+:::
+
+\bigskip
+\bigskip
+
+1.  Setze `currNode` auf den Startknoten
+2.  `currNode` ist gesuchtes Element: Abbruch, melde "*gefunden*"
+    -   Expandiere alle Nachfolger von `currNode`
+    -   Setze `nextNode` auf Nachfolger mit höchster Bewertung
+    -   Falls Bewertung von `nextNode` $\leq$ Bewertung von `currNode`: \newline
+        Abbruch, melde "*nicht gefunden*"
+    -   Setze `currNode` auf `nextNode`
+3.  Gehe zu Schritt 2
+
+:::::: notes
+:::center
+![](images/tafelbeispiel.png){width="90%"}
+:::
+::::::
+
+[Tafelbeispiel Gradientensuche, Bewertung: Restkostenschätzung]{.bsp}
+
+
+::: notes
+## Beispiel Gradientensuche: $n$-Damen
+
+*   **Ziel**: Setze $n$ Damen auf ein $n \times n$-Spielfeld ohne Konflikte
+*   **Start**: Setze $n$ Damen auf ein $n \times n$-Spielfeld (mit Konflikten)
+*   **Suche**: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert wird
+
+![](images/4queens.png)
+
+*Hinweis*: Alle Damen von Anfang an auf dem Brett, werden nur verschoben
+=> "[vollständige Zustandsformulierung]{.alert}"
+
+Eigenschaften 8-Damen-Problem ($n=8$)
+
+*   Zustandsraum: $8^8 \approx 17$ Millionen Zustände! (Quelle: @Russell2014)
+*   Beginnend mit zufällig erzeugtem Startzustand:
+    *   bleibt in 86% der Fälle stecken, d.h.
+    *   findet Lösung nur in 14% der Fälle.
+*   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach durchschnittlich 3 Schritten stecken.
+:::
+
+
+## Eigenschaften Gradientensuche
+
+::: notes
+*   Vollständigkeit: nein
+*   Optimalität: nein
+*   Komplexität: linear in der Anzahl der zu expandierenden Knoten
+
+\smallskip
+
+[**Zielfunktion (Bewertung) nötig!**]{.alert}
+:::
+
+::: center
+![](images/hill-climbing.png){width="60%"}
+:::
+
+\bigskip
+
+[**Problem**]{.alert}: lokale Maxima und Plateaus
+
+::: notes
+*   Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung
+*   Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren
+
+
+Mögliche Lösungen:
+
+*   Neustart des Algorithmus, wenn kein Fortschritt erzielt wird
+*   Rauschen "injizieren"
+:::
 
 ## Wrap-Up
-...
+
+Lokale Suchverfahren: Nur das Ergebnis zählt!
+
+\smallskip
+
+*   Gradientenverfahren
+
+    Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
+    Kostenfunktion => **Hill-Climbing**
 
 
 
