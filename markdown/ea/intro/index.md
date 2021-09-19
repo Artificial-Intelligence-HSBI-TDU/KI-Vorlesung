@@ -31,6 +31,10 @@ sketch: true
 ::: center
 ![](images/Human_evolution_scheme){width="80%"}
 [[Human_evolution_scheme.svg](https://lizenzhinweisgenerator.de/wiki/File:Human_evolution_scheme.svg): [M. Garde](https://commons.wikimedia.org/wiki/User:Mgarde) derivative work: [Gerbil](https://commons.wikimedia.org/wiki/User:Gerbil) [(talk)](https://lizenzhinweisgenerator.de/wiki/User_talk:Gerbil), [Human evolution scheme (2)](https://commons.wikimedia.org/wiki/File:Human_evolution_scheme_(2).jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
+
+https://search.creativecommons.org/photos/c29654d7-7460-459f-973e-cfed5079fa64
+https://search.creativecommons.org/photos/4262fc52-693c-4e3f-9fc5-27f938c034fc
+
 :::
 
 ::: cbox
