@@ -52,7 +52,7 @@ Beispiel: Stundenplan
 ## Analogie: Bergsteigen ohne Karte und Pfade
 
 ::: center
-![](images/hill-climbing.png){width="60%"}
+![](images/hill-climbing.png){width="50%"}
 :::
 
 \bigskip
