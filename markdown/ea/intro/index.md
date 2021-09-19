@@ -1,50 +1,141 @@
 ---
 type: lecture-cg
-title: "Einführung"
-menuTitle: "Intro"
+title: "Einführung Evolutionäre Algorithmen"
+menuTitle: "Intro EA/GA"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
+    comment: "GA: Abschnitt 4.1.4"
+  - key: "Schwefel1995"
+    comment: "Originalarbeit zu Evolutionsstrategien"
+  - key: "Michalewicz1996"
+  - key: "Baeck1996"
+  - key: "Nissen1997"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: TODO
+    name: "TODO"
 assignments:
-  - topic: blatt01
+  - topic: sheet03
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - link: TODO
+    name: "TODO"
 sketch: true
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Evolution sehr erfolgreich bei Anpassung
 
-## Folie 2
-...
+::: center
+![Wie funktioniert Evolution?](figs/ea/Human_evolution_scheme){width="80%"}\
+[[Human_evolution_scheme.svg](https://lizenzhinweisgenerator.de/wiki/File:Human_evolution_scheme.svg): [M. Garde](https://commons.wikimedia.org/wiki/User:Mgarde) derivative work: [Gerbil](https://commons.wikimedia.org/wiki/User:Gerbil) [(talk)](https://lizenzhinweisgenerator.de/wiki/User_talk:Gerbil), [Human evolution scheme (2)](https://commons.wikimedia.org/wiki/File:Human_evolution_scheme_(2).jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
+:::
 
-## Folie 3
-...
+::: cbox
+[**Wie funktioniert's?**]{.alert}
+:::
 
-## Folie 4
-...
+[kurze Diskussion]{.bsp}
 
-## Folie 5
-...
 
-## Folie 6
-...
+## EA -- Zutaten und Mechanismen
+
+*   Zutaten:
+    *   **Individuen**: Kodierung möglicher Lösungen
+    *   **Population** von Individuen
+    *   **Fitnessfunktion**: Bewertung der Angepasstheit
+
+\smallskip
+
+*   Mechanismen ("Operatoren"):
+    *   Selektion
+    *   Rekombination (Crossover)
+    *   Mutation
+
+
+## EA -- Allgemeiner Ablauf
+
+::: center
+![Prinzipieller Ablauf](figs/ea/ea_prinz)\
+:::
+
+
+## EA -- Beispiel
+
+::: center
+![Beispiel: Anwendung von EA auf 4-Queens](figs/ea/genetic){width="70%"}\
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.5, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+:::
+
+::: notes
+Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**
+Königinnen \blueArrow\ **Vollständige Zustandsbeschreibung**.
+
+Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen
+Spalte des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher
+Zeile in dieser Spalte eine Königin ist.
+:::
+
+::: center
+![Wirkung des Crossover-Operators](figs/ea/8queens-crossover){width="70%"}\
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.6, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+:::
+
+::: notes
+Crossover: Die ausgewählten Individuen werden an der selben Stelle aufgetrennt
+und die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehen
+zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
+:::
+
+
+## EA -- Strömungen
+
+1.  **Genetische Algorithmen** (GA)
+    *   Holland und Goldberg (ab 1960)
+    *   Binäre Lösungsrepräsentation (Bitstring): $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
+    *   Fitnessbasierte stochastische Selektion
+    *   $\mu$ Eltern erzeugen $\mu$ Kinder
+
+\smallskip
+
+2.  **Evolutionsstrategien** (ES)
+    *   Rechenberg und Schwefel (ab 1960)
+    *   Kodierung reellwertiger Parameter: $\mathbf{g} = (\mathbf{x}, \sigma)$
+        mit $\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n$       <!-- XXX eigentlich $\mathbf{\sigma}$, aber das erkennt die Übersetzung nach HTML nicht -->
+    *   $\mu$ Eltern erzeugen $\lambda$ Kinder mit $\mu \le \lambda$
+
+\smallskip
+
+3.  **Evolutionäre Programmierung** (EP)
+
+::: notes
+*Hinweis*: Häufig finden sich Mischformen, beispielsweise GA mit reellwertigen Parametern
+
+*Hinweis*: Im Folgenden werden **Genetische Algorithmen** (GA) betrachtet. Sie
+finden jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
+:::
+
+
+### Anwendungsbeispiele für Evolutionäre Algorithmen
+
+*   Berechnung und Konstruktion komplexer Bauteile: beispielsweise
+    Tragflächenprofile (Flugzeuge), Brücken oder Fahrzeugteile unter
+    Berücksichtigung bestimmter Nebenbedingungen
+*   Scheduling-Probleme: Erstellung von Stunden- und Raumplänen oder Fahrplänen
+*   Berechnung verteilter Netzwerktopologien: Wasserversorgung, Stromversorgung,
+    Mobilfunk
+*   Layout elektronischer Schaltkreise
+
 
 ## Wrap-Up
-...
+
+Lokale Suchverfahren: Nur das Ergebnis zählt!
+
+\bigskip
+
+*   Evolutionäre Algorithmen: Unterschied GA und ES (grober Überblick)
 
 
 
