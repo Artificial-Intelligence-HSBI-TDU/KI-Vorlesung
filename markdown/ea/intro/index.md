@@ -29,7 +29,7 @@ sketch: true
 ## Evolution sehr erfolgreich bei Anpassung
 
 ::: center
-![Wie funktioniert Evolution?](figs/ea/Human_evolution_scheme){width="80%"}\
+![](images/Human_evolution_scheme){width="80%"}
 [[Human_evolution_scheme.svg](https://lizenzhinweisgenerator.de/wiki/File:Human_evolution_scheme.svg): [M. Garde](https://commons.wikimedia.org/wiki/User:Mgarde) derivative work: [Gerbil](https://commons.wikimedia.org/wiki/User:Gerbil) [(talk)](https://lizenzhinweisgenerator.de/wiki/User_talk:Gerbil), [Human evolution scheme (2)](https://commons.wikimedia.org/wiki/File:Human_evolution_scheme_(2).jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
 :::
 
@@ -58,20 +58,20 @@ sketch: true
 ## EA -- Allgemeiner Ablauf
 
 ::: center
-![Prinzipieller Ablauf](figs/ea/ea_prinz)\
+![](images/ea_prinz.png)
 :::
 
 
 ## EA -- Beispiel
 
 ::: center
-![Beispiel: Anwendung von EA auf 4-Queens](figs/ea/genetic){width="70%"}\
+![](images/genetic){width="70%"}
 [Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.5, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
 :::
 
 ::: notes
 Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**
-Königinnen \blueArrow\ **Vollständige Zustandsbeschreibung**.
+Königinnen => **Vollständige Zustandsbeschreibung**.
 
 Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen
 Spalte des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher
@@ -79,7 +79,7 @@ Zeile in dieser Spalte eine Königin ist.
 :::
 
 ::: center
-![Wirkung des Crossover-Operators](figs/ea/8queens-crossover){width="70%"}\
+![](images/8queens-crossover){width="70%"}
 [Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.6, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
 :::
 
