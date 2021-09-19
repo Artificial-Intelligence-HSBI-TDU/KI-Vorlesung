@@ -6,7 +6,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Gradientenabstieg: Abschnitte 4.1.1 und 4.1.2"
+    comment: "Gradientenabstieg: Abschnitt 4.1.1"
 quizzes:
   - link: TODO
     name: "TODO"
@@ -25,10 +25,10 @@ sketch: true
 
 ::::: columns
 ::: {.column width="46%"}
-![](images/graph.png){width="90%"}
+![](images/graph.png){width="80%"}
 :::
 ::: {.column width="46%"}
-![](images/screenshot_stundenplan.png)
+![](images/screenshot_stundenplan.png){width="80%"}
 :::
 ::::::
 
@@ -103,18 +103,21 @@ Beispiel: Stundenplan
 *   **Start**: Setze $n$ Damen auf ein $n \times n$-Spielfeld (mit Konflikten)
 *   **Suche**: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert wird
 
-![](images/4queens.png)
+Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 
-*Hinweis*: Alle Damen von Anfang an auf dem Brett, werden nur verschoben
+**Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
 => "[vollständige Zustandsformulierung]{.alert}"
 
-Eigenschaften 8-Damen-Problem ($n=8$)
+### Eigenschaften 8-Damen-Problem ($n=8$) (nach [@Russell2020, S.131])
 
-*   Zustandsraum: $8^8 \approx 17$ Millionen Zustände! (Quelle: @Russell2014)
+*   Zustandsraum: $8^8 \approx 17$ Millionen Zustände!
 *   Beginnend mit zufällig erzeugtem Startzustand:
     *   bleibt in 86% der Fälle stecken, d.h.
     *   findet Lösung nur in 14% der Fälle.
-*   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach durchschnittlich 3 Schritten stecken.
+*   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
+    nach durchschnittlich 3 Schritten stecken.
+
+[Quelle: [@Russell2020, S.131]]{.origin}
 :::
 
 
@@ -141,24 +144,17 @@ Eigenschaften 8-Damen-Problem ($n=8$)
 ::: notes
 *   Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung
 *   Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren
-
-
-Mögliche Lösungen:
-
-*   Neustart des Algorithmus, wenn kein Fortschritt erzielt wird
-*   Rauschen "injizieren"
 :::
+
 
 ## Wrap-Up
 
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 
-\smallskip
+\bigskip
 
-*   Gradientenverfahren
-
-    Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
-    Kostenfunktion => **Hill-Climbing**
+*   Gradientenverfahren: Gehe in Richtung des stärksten Anstiegs der
+    Kostenfunktion
 
 
 
@@ -172,7 +168,4 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
