@@ -1,4 +1,3 @@
----
 #- week: "KW39"
 #  date: "(27 Sep - 1 Okt)"
 #  lecture:
@@ -18,7 +17,6 @@
 - week: "KW41"
   date: "11.10.21 (Sprechstunde: cagix)"
   lecture:
-    - topic: "/search/intro"
     - topic: "/search/uninformed/dfs"
     - topic: "/search/uninformed/bfs"
     - topic: "/search/informed/branchandbound"
@@ -188,4 +186,3 @@
   lecture:
     - topic: "/misc/syllabus"
       notes: " nur @FHB"
----
