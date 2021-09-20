@@ -7,41 +7,25 @@ hidden: true
 
 ## Worum geht's hier?
 
-<!-- XXX ggf. mit Modulvorstellung und Rückblick abgleichen -->
+![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%"}
 
-:::::: columns
-::: {.column width="40%"}
+[Quelle: [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605), by [RoboCup2013](https://www.flickr.com/photos/80267257@N05), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
 
-![Humanoider Roboter beim RoboCup 2013](figs/orga/robocup)\
-[Quelle: ["AvB - RoboCup 2013 - Eindhoven"](https://www.flickr.com/photos/80267257@N05/10151827605) by [RoboCup2013](https://www.flickr.com/photos/80267257@N05), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
-
-:::
-::: {.column width="58%"}
-
-\bigskip
-
-*   Was ist *Intelligenz*? Was ist *künstliche Intelligenz*?
-
-\bigskip
+### Was ist *Intelligenz*? Was ist *künstliche Intelligenz*?
 
 *   Wie baut man intelligente Systeme?
-    *   Was braucht man für "Cmdr. Data"?
-    *   Welche Teilgebiete existieren?
-    *   Welche Methoden und Algorithmen gibt es?
-    *   Wie funktionieren die?
+*   Was braucht man für "Cmdr. Data"?
+*   Welche Teilgebiete existieren?
+*   Welche Methoden und Algorithmen gibt es?
+*   Wie funktionieren die?
 
-:::
-::::::
-
-::: notes
-**Ziele**
+### Ziele
 
 *   Hineinschnuppern in fast alle Fächer des "Apothekenschranks":
     Wie funktioniert's, wozu ist es gut?
 *   **Methoden-Baukasten** zur Lösung unterschiedlichster Probleme
 *   Grundlegendes Verständnis für Anwendungen in Spielen, Navigation, Planung,
     smarten Assistenten, autonomen Fahrzeuge
-:::
 
 
 ## Überblick Modulinhalte
@@ -54,7 +38,7 @@ hidden: true
     *   Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken
     *   Constraints: Backtracking, Heuristiken, Propagation, AC-3
 
-\smallskip
+<!--  -->
 
 2)  Maschinelles Lernen
     *   Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung
@@ -67,16 +51,15 @@ hidden: true
         -   Ausblick: Support-Vektor-Maschinen
     *   Naive Bayes Klassifikator
 
-\smallskip
+<!--  -->
 
-::: notes
-3)  ~~Inferenz, Logik~~ [(entfällt im W20 wg. der Corona-Verkürzung des Semesters)]{.alert}
+3)  ~~Inferenz, Logik~~ [(entfällt im W21)]{.alert}
     *   Prädikatenlogik: Modellierung, semantische und formale Beweise,
         Unifikation, Resolution
     *   Ausblick: Anwendung in Prolog
-:::
 
-::: notes
+<!--  -->
+
 Weitere relevante KI-/ML-Themen werden in weiteren Modulen behandelt:
 
 *   Bilderkennung und unüberwachte Lernverfahren sind Gegenstand im Wahlfach
@@ -85,20 +68,15 @@ Weitere relevante KI-/ML-Themen werden in weiteren Modulen behandelt:
     Spracherkennung, Textmatching, probabilistisches Schließen, Reinforcement
     Learning und unüberwachte Lernverfahren sind u.a. Gegenstand der
     Wahlmodule "MML" (Prof. Gips / Prof. König) und "IR & NLP" im Master (Prof. Gips)
-:::
-
-[[Anmerkung Logik/Inferenz, unüberwachtes Lernen]{.bsp}]{.slides}
-
-## Erwartungen an Sie {.challenges}
-
-![Auszug Modulbeschreibung](figs/orga/modulbeschreibung)\
 
 
-::: notes
-*   90h Selbststudium \blueArrow ca. 6h Arbeitszeit pro Woche!
+## Erwartungen an Sie
+
+![](images/modulbeschreibung.png)
+
+*   90h Selbststudium => ca. 6h Arbeitszeit pro Woche!
 
 Zeiten sind Richtwerte! -- Manche brauchen länger, manche sind schneller ...
-
 
 Die Praktikumsaufgaben sollen Ihnen helfen, sich mit den Inhalten der
 Vorlesung auseinander zu setzen. Die Abgabeform und die Bedingungen an das
@@ -118,12 +96,8 @@ interessant sein können!
 Prüfungsrelevant sind selbstverständlich nur die besprochenen Inhalte. Der
 Fokus liegt aber auf dem "Können", also dem **Beherrschen** der jeweiligen
 Themen.
-:::
-
-[[Anmerkung: Studium]{.bsp}]{.slides}
 
 
-::: notes
 ## Kognitive Stufen -- Einordnung Lernziele {.challenges}
 
 Kennen (K1)
@@ -141,4 +115,3 @@ Anwenden (K3)
 Nach *Anderson, Krathwohl (eds)*: "A Taxonomy for Learning, Teaching, and
 Assessing: A Revision of Bloom's Taxonomy of Educational Objectives",
 Allyn & Bacon, 2001
-:::
