@@ -38,9 +38,9 @@ Studierenden (TDU und FHB) teil.
 Die Übungsaufgaben werden ebenfalls abwechselnd bereit gestellt, aber jeweils für die Hochschulen
 getrennt durchgeführt.
 
-Siehe auch [Fahrplan]({{<ref "/misc/schedule" >}}). Die Unterrichtssprache ist Deutsch. Wegen der
-Kooperation werden die Unterlagen über [Github](https://ki-vorlesung.github.io/Lecture/) bereit
-gestellt.
+Zur Verteilung der Themen siehe auch den ["Fahrplan"]({{<ref "/misc/schedule" >}}).
+Die Unterrichtssprache ist Deutsch. Wegen der Kooperation werden die Unterlagen über
+[Github](https://ki-vorlesung.github.io/Lecture/) bereit gestellt.
 
 
 ## Kursformat
@@ -63,7 +63,7 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 *   G1: Mi, 14:45 -- 16:15 Uhr, per Zoom
 *   G2: Mi, 16:30 -- 18:00 Uhr, per Zoom
 
-Ablauf:
+#### Ablauf:
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
@@ -75,7 +75,7 @@ Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
 *   G1: Mi, 14:45 -- 16:15 Uhr, per Zoom
 *   G2: Mi, 16:30 -- 18:00 Uhr, per Zoom
 
-Ablauf:
+#### Ablauf:
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
