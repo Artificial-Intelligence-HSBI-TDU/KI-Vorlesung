@@ -63,8 +63,10 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 
 ### Praktikum FHB: 2 SWS
 
-*   G1/2: Mi, 08:00 -- 09:30 Uhr, D320
-*   G3: Mi, 09:45 -- 11:15, D320
+| Gruppe | Zeit                   | Raum |
+|--------|------------------------|------|
+| G1/G2  | Mi, 08:00 -- 09:30 Uhr | D320 |
+| G3     | Mi, 09:45 -- 11:15 Uhr | D320 |
 
 #### Ablauf:
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
@@ -75,13 +77,17 @@ Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
 
 ### Übung TDU: 2 SWS
 
-*   G1: Mi, 14:45 -- 16:15 Uhr, per Zoom
-*   G2: Mi, 16:30 -- 18:00 Uhr, per Zoom
+| Gruppe | Zeit                   | Raum |
+|--------|------------------------|------|
+| G1     | Mi, 08:00 -- 09:30 Uhr | D320 |
+| G2     | Mi, 09:45 -- 11:15 Uhr | D320 |
+| G3     | Mi, 09:45 -- 11:15 Uhr | D320 |
+| G4     | Mi, 09:45 -- 11:15 Uhr | D320 |
+| G5     | Mi, 09:45 -- 11:15 Uhr | D320 |
 
 #### Ablauf:
--   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
--   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
--   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
+
+TODO
 
 Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading" >}})
 
