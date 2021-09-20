@@ -91,6 +91,7 @@ SRC   += dtl/entropy
 SRC   += dtl/id3
 SRC   += naivebayes/probability
 SRC   += naivebayes/nb
+SRC   += misc/resources
 
 ## Use different file extensions so Make can distinguish these targets
 SLIDES = $(patsubst %,$(TMP_CONTENT)/%/$(PAGE_PDF),$(SRC))

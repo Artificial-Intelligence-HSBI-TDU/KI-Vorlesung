@@ -7,19 +7,12 @@ hidden: true
 
 ## Was brauche ich? Literatur ...
 
-::: notes
 ### Basics ("Must Have"!)
-:::
 
-*   "**Artificial Intelligence: A Modern Approach**" (*AIMA*): @Russell2020
+1.  "**Artificial Intelligence: A Modern Approach**" (*AIMA*): @Russell2020
+2.  "Introduction to Artificial Intelligence": @Ertel2017
+3.  "Machine Learning": @Mitchell2010
 
-\bigskip
-
-*   "Introduction to Artificial Intelligence": @Ertel2017
-*   "Machine Learning": @Mitchell2010
-
-
-::: notes
 ### Weitere empfohlene Literatur
 
 Falls der @Russell2020 noch nicht erhältlich ist, kann auch eine ältere Ausgabe (etwa @Russell2014)
@@ -37,26 +30,18 @@ verschiedenen Datensätzen und Aufgaben den Code aus dem Buch als Frameworks in 
 Als wichtige Tools zum *Machine Learning* seien das Java-basierte [WEKA](https://www.cs.waikato.ac.nz/ml/weka/)
 [@Witten2011] sowie das Python-Framework [scikit-learn](https://scikit-learn.org) [@Pedregosa2011] genannt.
 
-
 **Hinweis**: Am Ende einer Vorlesung wird noch einmal spezifisch zum Thema passende Literatur empfohlen.
-
 
 ### Bibliographie {.bib}
 
-<div id="refs" class="references">
-<!-- XXX Platzhalter für Literaturliste (References/Bibliography) -->
-</div>
-:::
+`{{< bib />}}`{=markdown}
 
 
-## Was brauche ich noch? Tools ... {#tools}
+## Was brauche ich noch? Tools ...
 
 *   Zugänge (über den FH-Account):
     *   [ILIAS](https://www.fh-bielefeld.de/elearning/goto.php?target=crs_719028&client_id=FH-Bielefeld)
+        (Zugriff für Studierende der TDU über den Moodle-Kurs an der TDU)
     *   [VPN](https://www.fh-bielefeld.de/dvz/it-services/vpn)
     *   [Zoom](https://www.fh-bielefeld.de/dvz/zoom)
-
-\bigskip
-
-*   Rechner mit
-    -   Java, Python, ...
+*   Rechner mit Java, Python, ...
