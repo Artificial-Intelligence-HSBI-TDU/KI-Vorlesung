@@ -5,44 +5,44 @@ hidden: true
 ---
 
 
-## **Prüfungsform**: **Testat plus Klausur**, 5 ECTS
+## Prüfung TDU
+
+tbd
+
+
+## Prüfung FHB
+## Prüfungsform: Testat plus Klausur, 5 ECTS
 
 -   Mind. 5 der 9 Aufgabenblätter *jeweils* ausreichend (mind. 60%) bearbeitet
-    \blueArrow\ **Testat**
--   E-Klausur am Ende des Semesters \blueArrow\ **Note**
-
-\smallskip
-
+    => **Testat**
+-   E-Klausur am Ende des Semesters => **Note**
 -   **Gesamtnote: Klausurnote**
 
+### Hinweise zur Modulprüfung FHB
 
-::::::::: notes
-## Hinweise zur Modulprüfung
+Die Modulprüfung erfolgt in Form einer schriftlichen Prüfung ("Klausur"). Diese
+wird in beiden Prüfungszeiträumen in Form eines E-Assessments über eine spezielle
+ILIAS-Instanz durchgeführt. Nähere Informationen zu gegebener Zeit.
 
-Die Modulprüfung erfolgt in Form einer schriftlichen Prüfung ("Klausur"). Durch die
-Corona-Beschränkungen wird die Klausur in beiden Prüfungszeiträumen in Form eines
-E-Assessments (nach Corona-PO §2b) über eine spezielle ILIAS-Instanz im Home-Office
-durchgeführt. Nähere Informationen zu gegebener Zeit.
+Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilnahme
+am Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt
+wird.
 
-Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilnahme am
-Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt wird.
+### Hinweise zum Praktikum FHB {#praktikum}
 
+Geben Sie im ILIAS pro Blatt an, welche Aufgaben Sie bearbeitet haben. Laden Sie
+hier **nicht** Ihre Lösungen o.ä. hoch! Beachten Sie dabei die jeweilige Deadline.
 
-## Hinweise zum Praktikum {#praktikum}
-
-Geben Sie im ILIAS pro Blatt an, welche Aufgaben Sie bearbeitet haben. Laden Sie hier
-**nicht** Ihre Lösungen o.ä. hoch! Beachten Sie dabei die jeweilige Deadline.
-
-Sie müssen in der Lage sein, Ihre Lösungen zu diesen Aufgaben im Praktikum der Gruppe
-vorzustellen.
+Sie müssen in der Lage sein, Ihre Lösungen zu diesen Aufgaben im Praktikum der
+Gruppe vorzustellen.
 
 Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
 Beschäftigung mit der jeweiligen Aufgabe erkennen lassen.
 
-*   Beispiel: Wenn Sie auf dem Blatt die ersten beiden und die vierte
-    Aufgabe komplett gelöst haben und die fünfte Teilaufgabe zu 20 Prozent
-    (d.h. Sie haben sich zumindest ernsthaft Gedanken gemacht), dann tragen
-    Sie im ILIAS "a, b, d und f (20%)" ein.
+*   *Beispiel*: Wenn Sie auf dem Blatt die ersten beiden und die vierte Aufgabe
+    komplett gelöst haben und die fünfte Teilaufgabe zu 20 Prozent (d.h. Sie
+    haben sich zumindest ernsthaft Gedanken gemacht), dann tragen Sie im ILIAS
+    "a, b, d und f (20%)" ein.
 
 Die Vorstellung Ihrer Lösungen im Praktikum kann mit einem Medium Ihrer Wahl
 stattfinden.
