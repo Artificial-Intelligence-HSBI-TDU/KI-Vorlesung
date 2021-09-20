@@ -123,11 +123,15 @@ Erklären Sie kurz, wie und wofür die Suchalgorithmen jeweils genutzt werden.
 ## Bonus (2P)
 Finden Sie einen Weg vom Kopierer zur Bibliothek:
 
+![](images/graph.png){width="60%"}
+
 -   mit Tiefensuche
 -   mit Breitensuche
 -   mit Branch-and-Bound
 -   mit Best First
 -   mit A\*
+
+Vergleichen Sie die Ergebnisse!
 
 {{% /challenges %}}
 
