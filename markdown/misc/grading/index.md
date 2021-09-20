@@ -11,7 +11,7 @@ tbd
 
 
 ## Prüfung FHB
-## Prüfungsform: Testat plus Klausur, 5 ECTS
+### Prüfungsform FHB: Testat plus Klausur, 5 ECTS
 
 -   Mind. 5 der 9 Aufgabenblätter *jeweils* ausreichend (mind. 60%) bearbeitet
     => **Testat**
@@ -28,7 +28,7 @@ Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilna
 am Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt
 wird.
 
-### Hinweise zum Praktikum FHB {#praktikum}
+### Hinweise zum Praktikum FHB
 
 Geben Sie im ILIAS pro Blatt an, welche Aufgaben Sie bearbeitet haben. Laden Sie
 hier **nicht** Ihre Lösungen o.ä. hoch! Beachten Sie dabei die jeweilige Deadline.
