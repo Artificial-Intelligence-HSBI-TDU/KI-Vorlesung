@@ -1,6 +1,5 @@
 ---
 title: "Ressourcen"
-disableToc: true
 hidden: true
 ---
 

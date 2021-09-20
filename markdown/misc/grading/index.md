@@ -1,6 +1,5 @@
 ---
 title: "Note und Credits"
-disableToc: true
 hidden: true
 ---
 
