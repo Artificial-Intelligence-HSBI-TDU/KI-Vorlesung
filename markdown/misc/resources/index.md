@@ -37,7 +37,7 @@ Als wichtige Tools zum *Machine Learning* seien das Java-basierte [WEKA](https:/
 ## Was brauche ich noch? Tools ...
 
 *   Zugänge (über den FH-Account):
-    *   [ILIAS](https://www.fh-bielefeld.de/elearning/goto.php?target=crs_719028&client_id=FH-Bielefeld)
+    *   [ILIAS](https://www.fh-bielefeld.de/elearning/goto.php?target=crs_912642&client_id=FH-Bielefeld)
         (Zugriff für Studierende der TDU über den Moodle-Kurs an der TDU)
     *   [VPN](https://www.fh-bielefeld.de/dvz/it-services/vpn)
     *   [Zoom](https://www.fh-bielefeld.de/dvz/zoom)
