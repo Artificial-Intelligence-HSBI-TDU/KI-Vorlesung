@@ -17,7 +17,7 @@ hidden: true
 
 ### Sprechstunde ("Flipped"-Teil der Vorlesung)
 
-Wir nutzen den Vorlesungsslot für als Sprechstunde für den "Flipped"-Teil der Vorlesung.
+Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorlesung.
 
 ### Kommunikation
 
