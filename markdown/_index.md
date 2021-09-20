@@ -17,11 +17,11 @@ hidden: true
 
 ### Sprechstunde ("Flipped"-Teil der Vorlesung)
 
-Montag, 09:00 -- 11:30 Uhr per Zoom (Zugangsdaten siehe ILIAS)
+Wir nutzen den Vorlesungsslot für als Sprechstunde für den "Flipped"-Teil der Vorlesung.
 
 ### Kommunikation
 
--   **Sie-an-uns**: Praktikum (per Zoom), Sprechstunde (per Zoom), E-Mail
+-   **Sie-an-uns**: Praktikum (per Zoom), Sprechstunde (per Zoom), E-Mail, Issue im Github
 -   **Wir-an-Sie**: "News" im ILIAS
 
 ### Hinweis zur Kooperation zw. FHB und TDU
@@ -50,9 +50,12 @@ Die Unterrichtssprache ist Deutsch. Wegen der Kooperation werden die Unterlagen 
 Durchführung als **Flipped Classroom**:
 *   Vorbereitung individuell \@home mit ausführlich kommentierten Skripten plus Screencasts
     (**Selbststudium**)
-*   Sprechstunde ("Flipped"-Teil der Vorlesung): Mo, 09:00 -- 10:30 Uhr, per Zoom
+*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (Zugangsdaten siehe ILIAS)
+    *   FHB: bis 31.10.21: Mo, 10:30 - 12:00 Uhr (DE)
+    *   FHB: ab 01.11.21: Mo, 09:30 - 11:00 Uhr (DE)
+    *   TDU: Mo, 11:30 - 13:00 Uhr (TR)
 
-**Achtung**: Es gibt keine Präsenzvorlesung im W21 wg. der internationalen Kooperation.
+**Achtung**: Es gibt keine Präsenzvorlesung in KI im W21 wg. der internationalen Kooperation.
 
 Arbeiten Sie das bereitgestellte Material (Skripte, Screencasts, Selbststudiumsaufgaben,
 Literaturhinweise) **selbstständig zu Hause vor der Sprechstunde** durch. Während des
@@ -60,8 +63,8 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 
 ### Praktikum FHB: 2 SWS
 
-*   G1: Mi, 14:45 -- 16:15 Uhr, per Zoom
-*   G2: Mi, 16:30 -- 18:00 Uhr, per Zoom
+*   G1/2: Mi, 08:00 -- 09:30 Uhr, D320
+*   G3: Mi, 09:45 -- 11:15, D320
 
 #### Ablauf:
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
