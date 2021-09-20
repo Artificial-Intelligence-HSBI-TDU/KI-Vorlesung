@@ -8,7 +8,7 @@ sketch: true
 ---
 
 
-# Möglichkeiten und Grenzen der KI {punkte=2}
+## Möglichkeiten und Grenzen der KI (2P)
 
 Inwiefern können folgende Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden:
@@ -27,7 +27,7 @@ gelöst werden:
 
 
 
-# Auswirkungen der KI {punkte=2}
+## Auswirkungen der KI (2P)
 
 Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa
 durch autonomes Fahren.
@@ -36,7 +36,7 @@ durch autonomes Fahren.
 
 
 
-# Turing Test {punkte=2}
+## Turing Test (2P)
 
 Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
 Notieren Sie sich eine Startfrage und messen Sie die Zeit, die Sie bei den
@@ -55,7 +55,7 @@ oder [github.com/alice-bot](https://github.com/alice-bot).
 
 
 
-# Problemformalisierung, Zustandsraum {punkte=4}
+## Problemformalisierung, Zustandsraum (4P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen
 diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei
