@@ -31,8 +31,6 @@ Als wichtige Tools zum *Machine Learning* seien das Java-basierte [WEKA](https:/
 
 **Hinweis**: Am Ende einer Vorlesung wird noch einmal spezifisch zum Thema passende Literatur empfohlen.
 
-### Bibliographie {.bib}
-
 `{{< bib />}}`{=markdown}
 
 
