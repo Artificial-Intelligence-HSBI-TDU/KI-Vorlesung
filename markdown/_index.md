@@ -21,7 +21,7 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 ### Kommunikation
 
--   **Sie-an-uns**: Praktikum (per Zoom), Sprechstunde (per Zoom), E-Mail, Issue im Github
+-   **Sie-an-uns**: Praktikum (per Zoom), Sprechstunde (per Zoom), E-Mail, Issue im [Github](https://github.com/KI-Vorlesung/Lecture)
 -   **Wir-an-Sie**: "News" im ILIAS
 
 ### Hinweis zur Kooperation zw. FHB und TDU
