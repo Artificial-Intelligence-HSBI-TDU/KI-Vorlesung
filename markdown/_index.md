@@ -52,7 +52,7 @@ Durchführung als **Flipped Classroom**:
     (**Selbststudium**)
 *   Sprechstunde ("Flipped"-Teil der Vorlesung): Mo, 09:00 -- 10:30 Uhr, per Zoom
 
-[Achtung:]{.alert} Es gibt keine Präsenzvorlesung im W20.
+**Achtung**: Es gibt keine Präsenzvorlesung im W21 wg. der internationalen Kooperation.
 
 Arbeiten Sie das bereitgestellte Material (Skripte, Screencasts, Selbststudiumsaufgaben,
 Literaturhinweise) **selbstständig zu Hause vor der Sprechstunde** durch. Während des
@@ -68,7 +68,7 @@ Ablauf:
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
 
-Siehe auch ["Hinweise zum Praktikum"]({{<ref "/misc/grading#praktikum" >}})
+Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
 
 ### Übung TDU: 2 SWS
 
@@ -80,7 +80,7 @@ Ablauf:
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
 
-Siehe auch ["Hinweise zum Praktikum"]({{<ref "/misc/grading#praktikum" >}})
+Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading" >}})
 
 
 ## Wichtige Seiten
