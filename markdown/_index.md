@@ -7,7 +7,6 @@ hidden: true
 
 # Willkommen zur Lehrveranstaltung Künstliche Intelligenz im Winter 2021/22
 
-
 ## Team, Kontakt und Kommunikation
 
 ### Dozenten
@@ -43,6 +42,7 @@ Die Unterrichtssprache ist Deutsch. Wegen der Kooperation werden die Unterlagen 
 [Github](https://ki-vorlesung.github.io/Lecture/) bereit gestellt.
 
 
+
 ## Kursformat
 
 ### Vorlesung: 2 SWS
@@ -50,7 +50,7 @@ Die Unterrichtssprache ist Deutsch. Wegen der Kooperation werden die Unterlagen 
 Durchführung als **Flipped Classroom**:
 *   Vorbereitung individuell \@home mit ausführlich kommentierten Skripten plus Screencasts
     (**Selbststudium**)
-*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (Zugangsdaten siehe ILIAS)
+*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (**Zugangsdaten siehe ILIAS**)
     *   FHB: bis 31.10.21: Mo, 10:30 - 12:00 Uhr (DE)
     *   FHB: ab 01.11.21: Mo, 09:30 - 11:00 Uhr (DE)
     *   TDU: Mo, 11:30 - 13:00 Uhr (TR)
@@ -68,7 +68,6 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 | G1/G2  | Mi, 08:00 -- 09:30 Uhr | D320 |
 | G3     | Mi, 09:45 -- 11:15 Uhr | D320 |
 
-#### Ablauf:
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
@@ -85,11 +84,12 @@ Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
 | G4     | Mi, 09:45 -- 11:15 Uhr | D320 |
 | G5     | Mi, 09:45 -- 11:15 Uhr | D320 |
 
-#### Ablauf:
-
-TODO
+-   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
+-   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf Google Colaboratory
+-   Vorstellung und Diskussion der Lösung **in** der Übungsstunde (Zoom)
 
 Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading" >}})
+
 
 
 ## Wichtige Seiten
