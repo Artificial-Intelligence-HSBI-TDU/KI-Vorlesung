@@ -20,26 +20,24 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 ### Kommunikation
 
--   **Sie-an-uns**: Praktikum (per Zoom), Sprechstunde (per Zoom), E-Mail, Issue im [Github](https://github.com/KI-Vorlesung/Lecture)
--   **Wir-an-Sie**: "News" im ILIAS
+-   **Sie-an-uns**: Praktikum, Sprechstunde (per Zoom), E-Mail, Issue im
+    [Github](https://github.com/KI-Vorlesung/Lecture)
+-   **Wir-an-Sie**: "News" im ILIAS, Antwort auf Issues
 
 ### Hinweis zur Kooperation zw. FHB und TDU
 
 Über das Projekt "Digital @ FH Bielefeld" der FHB ist im Sommer 2020 eine Kooperation mit der
 Türkisch-Deutschen Universität in Istanbul (*TDU*) im Modul "Künstliche Intelligenz" gestartet.
 
-Wir werden in diesem Semester die Vorlesungen abwechselnd halten. Dabei werden die Vorlesungen
-zur klassischen KI von der FH Bielefeld bereit gestellt und gemeinsam für die FHB und die TDU
-durchgeführt, die Vorlesungen zum Maschinellen Lernen (Perzeptron, MLP, Backpropagation) werden
-von der TDU bereit gestellt und durchgeführt. In den Zoom-Sprechstunden nehmen deshalb alle
-Studierenden (TDU und FHB) teil.
+Wir werden in diesem Semester die Vorlesungen gemeinsam für beide Hochschulen durchführen. In
+den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
 
-Die Übungsaufgaben werden ebenfalls abwechselnd bereit gestellt, aber jeweils für die Hochschulen
-getrennt durchgeführt.
+Die Übungen bzw. Praktika werden wg. unterschiedlicher Prüfungsordnungen jeweils für beide
+Hochschulen getrennt durchgeführt.
 
-Zur Verteilung der Themen siehe auch den ["Fahrplan"]({{<ref "/misc/schedule" >}}).
-Die Unterrichtssprache ist Deutsch. Wegen der Kooperation werden die Unterlagen über
-[Github](https://ki-vorlesung.github.io/Lecture/) bereit gestellt.
+Zur Verteilung der Themen siehe auch den ["Fahrplan"]({{<ref "/misc/schedule" >}}). Die
+Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
+[Github](https://ki-vorlesung.github.io/Lecture/) entwickelt und bereitgestellt.
 
 
 
