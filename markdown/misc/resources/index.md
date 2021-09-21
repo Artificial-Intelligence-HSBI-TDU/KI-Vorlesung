@@ -20,7 +20,10 @@ verwendet werden.
 Ergänzend zum @Russell2020 empfiehlt sich ein Blick in @Ertel2017 (bzw. @Ertel2016, als etwas ältere
 deutschsprachige Ausgabe), wo ebenfalls beinahe alle Themen besprochen werden.
 
-Speziell zum Thema *Machine Learning* seien @Kubat2017 und @Mitchell2010 empfohlen.
+Speziell zum Thema *Machine Learning* seien @Kubat2017 und @Mitchell2010 empfohlen. Darüber hinaus
+können [*Mathematics for Machine Learning*](https://mml-book.github.io/) und
+[*The DeepLearningBook*](http://www.deeplearningbook.org/) (Goodfellow, Bengio, Courville) interessant
+sein, gehen aber über die Inhalte dieser Lehrveranstaltung deutlich hinaus.
 
 Die Online-Repos zum @Russell2020 ([github.com/aimacode](https://github.com/aimacode)) bieten neben
 verschiedenen Datensätzen und Aufgaben den Code aus dem Buch als Frameworks in verschiedenen Sprachen
