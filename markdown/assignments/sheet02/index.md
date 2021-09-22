@@ -2,6 +2,7 @@
 type: assignment
 title: "Blatt 02: Lokale Suche, EA/GA"
 author: "Carsten Gips (FH Bielefeld)"
+points: 10
 hidden: true
 weight: 2
 sketch: true
