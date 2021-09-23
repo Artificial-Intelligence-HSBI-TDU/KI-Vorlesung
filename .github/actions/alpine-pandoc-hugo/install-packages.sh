@@ -1,5 +1,8 @@
 #!/bin/sh
 
+## Update TeX Live Manager
+tlmgr update --self || exit 1
+
 ## Install extra packages for Beamer/Metropolis
 tlmgr install beamertheme-metropolis pgfopts tcolorbox environ || exit 1
 
