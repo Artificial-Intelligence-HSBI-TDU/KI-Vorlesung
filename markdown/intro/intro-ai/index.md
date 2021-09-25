@@ -308,6 +308,4 @@ Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 *   Citation "Kognition": [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
 *   Citations "Definitionsversuche KI": nach "Introduction to Artificial Intelligence" 2nd ed. [@Ertel2017, S.1-3]
 *   Figure "Turing Test": [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)
-
-
 :::
