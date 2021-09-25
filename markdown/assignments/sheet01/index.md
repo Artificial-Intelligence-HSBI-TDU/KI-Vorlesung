@@ -9,7 +9,8 @@ sketch: true
 ---
 
 
-## Möglichkeiten und Grenzen der KI (2P)
+
+## Möglichkeiten und Grenzen der KI (1P)
 
 Inwiefern können folgende Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden:
@@ -28,7 +29,7 @@ gelöst werden:
 
 
 
-## Auswirkungen der KI (2P)
+## Auswirkungen der KI (1P)
 
 Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa
 durch autonomes Fahren.
@@ -37,26 +38,7 @@ durch autonomes Fahren.
 
 
 
-## Turing Test (2P)
-
-Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
-Notieren Sie sich eine Startfrage und messen Sie die Zeit, die Sie bei den
-verschiedenen Programmen benötigen, bis Sie sicher sagen können, dass es kein
-Mensch ist. Speichern Sie jeweils ein Protokoll der Dialoge. Können Sie selbst
-einen Bot erstellen?
-
-*Thema*: Turing-Test selbst erfahren
-
-[^Links]: Starten Sie zum Beispiel auf
-[github.com/DopplerHQ/awesome-bots](https://github.com/DopplerHQ/awesome-bots#popular-examples-of-bots)
-oder [simonlaven.com](https://www.simonlaven.com/)
-oder [cleverbot.com/](https://www.cleverbot.com/)
-oder [home.pandorabots.com](https://home.pandorabots.com/en/)
-oder [github.com/alice-bot](https://github.com/alice-bot).
-
-
-
-## Problemformalisierung, Zustandsraum (4P)
+## Problemformalisierung, Zustandsraum (2P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen
 diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei
@@ -74,20 +56,101 @@ zwischen beiden Gruppen kommt.
 
 
 
-{{% challenges %}}
-## Bonus (2P)
+## Uninformierte Suchverfahren (2P)
 
-*   Was bedeutet der Turing-Test? Wie ist er aufgebaut?
-*   Warum hat der Turing-Test die Gebiete der modernen KI begründet?
-*   Was ist die Kritik am Turing-Test?
-*   Wie würden Sie "Intelligenz" definieren?
-*   Welche Gebiete gibt es in der KI? Womit beschäftigen sich diese?
-    Können Sie die Gebiete zeitlich einordnen?
-*   Was ist eigentlich ein Problem?
-*   Worin liegt der Unterschied zwischen einem Knoten und einem Zustand?
-*   Was ist ein Suchbaum? Wo liegt der Unterschied zum Problemgraphen?
-*   Muss der Suchbaum über eine eigene Datenstruktur realisiert werden?
-*   Was ist mit dem "Verzweigungsfaktor" gemeint?
-*   Was bedeutet "optimal" und "vollständig" im Zusammenhang mit einem
-    Suchalgorithmus?
+Betrachten Sie folgende Landkarte und Restwegschätzungen:
+
+::: center
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png){width="40%"}
+
+[Quelle: ["MapGermanyGraph.svg"](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr), licensed under [*public domain*](https://en.wikipedia.org/wiki/en:public_domain)]{.origin}
+:::
+
+![](images/MapGermanyGraph-Kosten.png){width="40%"}
+
+
+1.  Finden Sie mit **Tiefensuche** einen Weg von Würzburg nach München. Führen
+    Sie eine Handsimulation (Notation analog zur Vorlesung) durch und zeichnen
+    Sie den Suchbaum. An welchen Stellen findet Backtracking statt?
+
+2.  Führen Sie die Wegesuche mit **Breitensuche** durch (Handsimulation). Wird
+    die optimale Lösung gefunden?
+
+*Hinweis*: Nutzen Sie für beide Algorithmen die **Graph-Search-Variante**.
+
+*Hinweis*: Tiefensuche/Breitensuche: Expandierte Nachfolgeknoten werden in
+alphabetischer Reihenfolge in die Datenstruktur eingefügt.
+Beispiel: Mannheim kommt vor München, Karlsruhe vor Kassel, ...
+
+*Thema*: Ablauf von Tiefensuche, Breitensuche, Handsimulation und Notation
+
+
+
+## Informierte Suchverfahren (2P)
+
+Betrachten Sie erneut die in der vorigen Aufgabe gegebene Landkarte samt
+Restwegschätzungen.
+
+1.  Finden Sie einen Weg von Würzburg nach München mit dem A\*-Algorithmus
+    (**Tree-Search-Variante** mit Verbesserung "keine Zyklen", siehe Vorlesung).
+    Führen Sie dazu eine Handsimulation unter Nutzung der oben gegebenen
+    Restkostenabschätzungen durch. Wird dabei eine optimale Lösung gefunden?
+
+2.  Können die oben gegebenen Restkostenabschätzungen in A\* und
+    Best-First-Suche verwendet werden?
+    *   Falls ja, warum?
+    *   Falls nein, warum? Wie müssten die Abschätzungen ggf. korrigiert werden?
+
+3.  Falls Sie der Meinung waren, die Abschätzungen sind nicht korrekt,
+    korrigieren Sie die Abschätzungen nun und führen Sie erneut eine Suche mit
+    A\* durch.
+
+*Hinweis*: Reihenfolge bei gleichen $f(n)$-Kosten: alphabetische Reihenfolge, d.h.
+Mannheim käme vor München, Karlsruhe vor Kassel etc.
+
+*Thema*: A\*-Algorithmus, Handsimulation und Notation
+
+
+
+## Dominanz (1P)
+
+Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
+
+Wie wirkt sich die Nutzung einer dominierenden Heuristik $h_1(n)$ in A\*
+aus (im Vergleich zur Nutzung einer Heuristik $h_2$, die von $h_1$ dominiert
+wird)?
+
+Geben Sie selbstgewählte Beispiele an.
+
+*Thema*: Begriff der dominierenden Heuristik (Selbststudium)
+
+
+
+## Beweis der Optimalität von A* (1P)
+
+Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
+zulässigen Heuristik optimal ist.
+
+*Thema*: Bedeutung einer zulässigen Heuristik (Selbststudium)
+
+
+
+{{% challenges %}}
+## Bonus: Turing Test (1P)
+
+Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
+Notieren Sie sich eine Startfrage und messen Sie die Zeit, die Sie bei den
+verschiedenen Programmen benötigen, bis Sie sicher sagen können, dass es kein
+Mensch ist. Speichern Sie jeweils ein Protokoll der Dialoge. Können Sie selbst
+einen Bot erstellen?
+
+*Thema*: Turing-Test selbst erfahren
+
+[^Links]: Starten Sie zum Beispiel auf
+[github.com/DopplerHQ/awesome-bots](https://github.com/DopplerHQ/awesome-bots#popular-examples-of-bots)
+oder [simonlaven.com](https://www.simonlaven.com/)
+oder [cleverbot.com/](https://www.cleverbot.com/)
+oder [home.pandorabots.com](https://home.pandorabots.com/en/)
+oder [github.com/alice-bot](https://github.com/alice-bot).
+
 {{% /challenges %}}
