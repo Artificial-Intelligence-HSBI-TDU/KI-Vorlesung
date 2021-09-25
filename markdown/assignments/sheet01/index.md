@@ -12,18 +12,8 @@ sketch: true
 
 ## Möglichkeiten und Grenzen der KI (1P)
 
-Inwiefern können folgende Probleme bereits mittels Computer- bzw. Robotereinsatz
-gelöst werden:
-
-*   Spielen der Brettspiele Dame und Go
-*   Echtzeit-Übersetzungen von Sprache aus dem Englischen ins Deutsche
-*   Autonomie unbemannter Fahr- und Flugzeuge
-*   Ausräumen des Geschirrspülers
-*   Automatische Gesichtserkennung
-*   Tischfußballspielen durch einen Roboter
-*   Komponieren von Musik
-*   Erstellen von Texten
-*   Erstellen von Bildern
+Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
+gelöst werden können und welche aktuell noch ungelöst sind.
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben
 
