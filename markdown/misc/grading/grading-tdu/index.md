@@ -5,32 +5,31 @@ hidden: true
 
 
 ## Notenzusammensetzung TDU
-### Endprüfung
+### Zwischen- und Endprüfung
 
-Zwischenprüfung und Endprüfung finden zusammen am Ende des Semesters als **eine Klausur** statt.
+Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus vorgesehen.
 
-Die Klausur ist als schriftliche Prüfung auf dem Campus vorgesehen.
+| Prüfung              | Gewicht |
+|----------------------|---------|
+| Zwischenprüfung (ZP) | 40 %    |
+| Endprüfung (EP)      | 60 %    |
 
-**Gesamtnote = Klausurnote**  (mit 100% Gewichtung)
-
-[Sınav - Bilgilendirme](https://www.notion.so/S-nav-Bilgilendirme-904e6eb5399f420eb6e2bda5c84b63cc)
 
 ### Bonuspunkte für Aktive Teilnahme an der Übung
 
-Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für Klausur,
-**nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
+Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für die Endprüfung, allerdings **nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
 
-Das heisst, nur wenn die Klausurnote ≥40 Punkte ist, werden 20 % der Übungsnote als
-Bonus-Punkte zu der Klausurnote hinzugefügt.
+Das heisst, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20 % der Übungsnote als
+Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
 
+<br>
 
 
 ## Hinweise zur Übung TDU
 ### Bearbeitung der Aufgaben
 
-Die Bearbeitung der Aufgaben erfolgt individuell.
-
-Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
+- Die Bearbeitung der Aufgaben erfolgt individuell.
+- Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
 
 ### Abgabe der Lösungen
 
@@ -52,16 +51,10 @@ richtig benannte Dateien hochgeladen, werden diese ausnahmslos mit 0 bewertet un
 
 ### Punktevergabe
 
-Sie erhalten Ihre Übungsnote, indem Sie im jeweiligen Google-Formular angeben, welche Aufgaben Sie
-bearbeitet/gelöst haben. Sie müssen in der Lage sein, diese Aufgaben in der Übungsstunde der Gruppe
-vorzustellen. Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive Beschäftigung
-mit dem vorliegenden Problem erkennen lassen.
+Sie erhalten Ihre Übungsnote, indem Sie im jeweiligen Google-Formular angeben, welche Aufgaben Sie bearbeitet/gelöst haben. Sie müssen in der Lage sein, diese Aufgaben in der Übungsstunde der Gruppe vorzustellen. Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive Beschäftigung mit dem vorliegenden Problem erkennen lassen.
 
 ### Vorstellung der Lösung in der Übungsstunde
 
-Die Vorstellung der Lösung in der Übungsstunde kann mit einem Medium Ihrer Wahl stattfinden. Sie können
-zum Beispiel Ihren Bildschirm teilen und Ihre Lösung erklären.
+Die Vorstellung der Lösung in der Übungsstunde kann mit einem Medium Ihrer Wahl stattfinden. Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung erklären.
 
-**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber in der Übungsstunde nicht (oder zu spät)
-erscheint oder die Lösung nicht vorstellen kann, bekommt das gesamte Übungsblatt als "nicht bestanden"
-testiert!
+**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber in der Übungsstunde nicht (oder zu spät) erscheint oder die Lösung nicht vorstellen kann, bekommt das gesamte Übungsblatt als "nicht bestanden" testiert!
