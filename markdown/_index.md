@@ -22,7 +22,7 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 -   **Sie-an-uns**: Praktikum, Sprechstunde (per Zoom), E-Mail, Issue im
     [Github](https://github.com/KI-Vorlesung/Lecture)
--   **Wir-an-Sie**: "News" im ILIAS, Antwort auf Issues
+-   **Wir-an-Sie**: "News" im ILIAS (@FHB) bzw. im Google Classroom (@TDU), Antwort auf Issues
 
 ### Hinweis zur Kooperation zw. FHB und TDU
 
@@ -78,17 +78,16 @@ Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
 
 | Gruppe | Zeit                   | Raum |
 |--------|------------------------|------|
-| G1     | Mi, 08:00 -- 09:30 Uhr | D320 |
-| G2     | Mi, 09:45 -- 11:15 Uhr | D320 |
-| G3     | Mi, 09:45 -- 11:15 Uhr | D320 |
-| G4     | Mi, 09:45 -- 11:15 Uhr | D320 |
-| G5     | Mi, 09:45 -- 11:15 Uhr | D320 |
+| G1     | tbd                    | tbd  |
+| G2     | tbd                    | tbd  |
+| G3     | tbd                    | tbd  |
+
 
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
--   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf Google Colaboratory
+-   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf Google Classroom
 -   Vorstellung und Diskussion der Lösung **in** der Übungsstunde (Zoom)
 
-Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading" >}})
+Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading/grading-tdu" >}})
 
 
 
