@@ -1,6 +1,6 @@
 ---
 type: assignment
-title: "Blatt 02: Lokale Suche, EA/GA"
+title: "Blatt 02: Lokale Suche, GA"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
 hidden: true
@@ -9,133 +9,64 @@ sketch: true
 ---
 
 
-## Uninformierte Suchverfahren (4P)
 
-Betrachten Sie folgende Landkarte und Restwegschätzungen:
+## Modellierung von GA (2P)
 
-::: center
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png){width="40%"}
+Folgende Probleme sollen mit einem GA gelöst werden:
 
-[Quelle: ["MapGermanyGraph.svg"](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr), licensed under [*public domain*](https://en.wikipedia.org/wiki/en:public_domain)]{.origin}
-:::
+1.  das *Travelling Salesman Problem* für 10 Städte, d.h. das Finden der
+    kürzesten Route zwischen 10 Städten,
 
-![](images/MapGermanyGraph-Kosten.png){width="40%"}
+2.  ein $9 \times 9$-*Sudoku*-Rätsel,
 
+3.  das $n$-Queens-Problem (für ein beliebiges, aber festes $n$).
 
-1.  Finden Sie mit **Tiefensuche** einen Weg von Würzburg nach München. Führen
-    Sie eine Handsimulation (Notation analog zur Vorlesung) durch und zeichnen
-    Sie den Suchbaum. An welchen Stellen findet Backtracking statt?
+Geben Sie für diese Probleme jeweils eine geeignete **Kodierung** der
+Individuen, passende Operatoren (**Crossover**, **Mutation**) und eine
+geeignete **Fitnessfunktion** an, damit das Problem mit einem GA gelöst
+werden kann. Begründen Sie Ihre Wahl!
 
-2.  Führen Sie die Wegesuche mit **Breitensuche** durch (Handsimulation). Wird
-    die optimale Lösung gefunden?
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit
+Simulated Annealing lösen zu können?
 
-*Hinweis*: Nutzen Sie für beide Algorithmen die **Graph-Search-Variante**.
-
-*Hinweis*: Tiefensuche/Breitensuche: Nachfolgeknoten werden in alphabetischer Reihenfolge
-expandiert. Beispiel: Mannheim kommt vor München, Karlsruhe vor Kassel, ...
-
-*Thema*: Ablauf von Tiefensuche, Breitensuche, Handsimulation und Notation
+*Thema*: Modellierung für GA und Gradientensuche
 
 
 
-## Informierte Suchverfahren (6P)
+## Implementierung (5P)
 
-Betrachten Sie erneut die in der vorigen Aufgabe gegebene Landkarte samt
-Restwegschätzungen.
+Suchen Sie sich ein geeignetes Problem und implementieren Sie den in der
+Vorlesung besprochenen GA.
 
-1.  Finden Sie einen Weg von Würzburg nach München mit dem A\*-Algorithmus
-    (**Tree-Search-Variante** mit Verbesserung "keine Zyklen", siehe Vorlesung).
-    Führen Sie dazu eine Handsimulation unter Nutzung der oben gegebenen
-    Restkostenabschätzungen durch. Wird dabei eine optimale Lösung gefunden?
+Wenn Sie den Algorithmus nicht komplett selbst schreiben wollen, können Sie
+beispielsweise die Java-Klassen im Paket `aima.core.search.local` als
+Ausgangspunkt nutzen.[^code]
 
-2.  Können die oben gegebenen Restkostenabschätzungen in A\* und
-    Best-First-Suche verwendet werden?
-    *   Falls ja, warum?
-    *   Falls nein, warum? Wie müssten die Abschätzungen ggf. korrigiert werden?
+Untersuchen Sie **systematisch** unterschiedliche Varianten/Einstellungen der
+in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
+100 Läufe durch und messen Sie die besprochenen Kennzahlen.
 
-3.  Falls Sie der Meinung waren, die Abschätzungen sind nicht korrekt,
-    korrigieren Sie die Abschätzungen nun und führen Sie erneut eine Suche mit
-    A\* durch.
+Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
-*Hinweis*: Reihenfolge bei gleichen $f(n)$-Kosten: alphabetische Reihenfolge, d.h. Mannheim
-käme vor München, Karlsruhe vor Kassel etc.
+*Thema*: Implementierung von GA und Auswertung der Ergebnisse, wissenschaftliche Untersuchung
 
-*Thema*: A\*-Algorithmus, Handsimulation und Notation
+[^code]: Sie finden das Repository unter
+[github.com/aimacode/aima-java](https://github.com/aimacode/aima-java).
 
 
 
-## Schiebepuzzle (1P)
+## Anwendungen (3P)
 
-Betrachten Sie das Schiebepuzzle-Problem ([@Russell2020, Fig. 3.27, S. 119]).
+Analysieren Sie die Implementierung von [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)^[Direktlink: [github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects](https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects)].
 
-Geben Sie zwei zulässige Heuristiken an, die Sie mit A\* nutzen könnten.
-Erklären Sie jeweils die Idee hinter der Heuristik und begründen Sie, warum
-diese zulässig ist.
+Schauen Sie sich nun den ["Evolution Simulator"](https://www.openprocessing.org/sketch/205807) an.
+Wie ist dort die Modellierung erfolgt (Kodierung, Operatoren, Fitnessfunktion)?
 
-*Thema*: Heuristiken für A\*-Algorithmus
+Wie werden EA/GA konkret im ["american fuzzy lop" (*afl*)](https://lcamtuf.coredump.cx/afl/) eingesetzt?
 
+Welche Fitnessfunktion wurden jeweils genutzt, wie die Individuen und die Operatoren codiert?
 
+Recherchieren Sie, in welchen anderen Anwendungen Evolutionäre Algorithmen eingesetzt
+werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt werden.
 
-## Dominanz (1P)
-
-Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
-
-Wie wirkt sich die Nutzung einer dominierenden Heuristik $h_1(n)$ in A\*
-aus (im Vergleich zur Nutzung einer Heuristik $h_2$, die von $h_1$ dominiert
-wird)?
-
-*Thema*: Begriff der dominierenden Heuristik (Selbststudium)
-
-
-
-## Beweis der Optimalität von A* (2P)
-
-Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
-zulässigen Heuristik optimal ist.
-
-*Thema*: Bedeutung einer zulässigen Heuristik (Selbststudium)
-
-
-
-## Anwendungen (2P)
-
-Recherchieren Sie, in welchen Anwendungen Suchalgorithmen eingesetzt werden.
-Erklären Sie kurz, wie und wofür die Suchalgorithmen jeweils genutzt werden.
-
-*Thema*: Anwendungen von Suchalgorithmen
-
-
-
-{{% challenges %}}
-## Bonus (2P)
-*   Was bedeutet "optimal" im Zusammenhang mit der Suche? Ist Tiefensuche
-    optimal? Was ist der Unterschied zu "vollständig"?
-*   Wie kann man mit Tiefensuche den optimalen Weg finden?
-*   Was bedeutet Backtracking? Wie wird das implementiert?
-*   Was bedeutet "optimal" im Zusammenhang mit der Suche? Ist Breitensuche
-    optimal? Was ist der Unterschied zu "vollständig"?
-*   Findet Breitensuche immer eine Lösung, wenn es eine gibt? Ist  die erste
-    gefundene Lösung auch immer die optimale?
-*   Was ist das Problem an Breitensuche?
-*   Breitensuche ist ein Spezialfall von Branch-and-Bound?
-*   Tiefensuche ist ein Spezialfall von Best-First (Tree-Search-Variante)?
-*   Branch-and-Bound ist ein Spezialfall von A\*?
-
-## Bonus (2P)
-Finden Sie einen Weg vom Kopierer zur Bibliothek:
-
-![](images/graph.png){width="60%"}
-
--   mit Tiefensuche
--   mit Breitensuche
--   mit Branch-and-Bound
--   mit Best First
--   mit A\*
-
-Vergleichen Sie die Ergebnisse!
-
-{{% /challenges %}}
-
-
-
-`{{< bib />}}`{=markdown}
+*Thema*: Analyse von GA-Implementierungen
