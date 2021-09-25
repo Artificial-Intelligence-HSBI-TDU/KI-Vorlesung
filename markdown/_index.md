@@ -43,6 +43,8 @@ Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Reso
 
 ## Kursformat
 
+{{< img src="images/fahrplan.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="100%" >}}
+
 ### Vorlesung: 2 SWS
 
 Durchführung als **Flipped Classroom**:
