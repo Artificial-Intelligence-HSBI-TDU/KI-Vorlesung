@@ -57,16 +57,22 @@ Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
 ## Anwendungen (3P)
 
-Analysieren Sie die Implementierung von [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)^[Direktlink: [github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects](https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects)].
+1.  Analysieren Sie die Implementierung von
+    [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)
+    ([Direktlink](https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects)).
 
-Schauen Sie sich nun den ["Evolution Simulator"](https://www.openprocessing.org/sketch/205807) an.
-Wie ist dort die Modellierung erfolgt (Kodierung, Operatoren, Fitnessfunktion)?
+2.  Schauen Sie sich nun den ["Evolution Simulator"](https://www.openprocessing.org/sketch/205807)
+    an. Wie ist dort die Modellierung erfolgt (Kodierung, Operatoren, Fitnessfunktion)?
 
-Wie werden EA/GA konkret im ["american fuzzy lop" (*afl*)](https://lcamtuf.coredump.cx/afl/) eingesetzt?
+3.  Wie werden EA/GA konkret im ["american fuzzy lop"](https://lcamtuf.coredump.cx/afl/)
+    eingesetzt?
 
-Welche Fitnessfunktion wurden jeweils genutzt, wie die Individuen und die Operatoren codiert?
+Welche Fitnessfunktion wurden in den drei Beispielen jeweils genutzt, wie die
+Individuen und die Operatoren codiert?
 
-Recherchieren Sie, in welchen anderen Anwendungen Evolutionäre Algorithmen eingesetzt
-werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt werden.
+
+Recherchieren Sie, in welchen *anderen* Anwendungen Evolutionäre Algorithmen
+eingesetzt werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt
+werden.
 
 *Thema*: Analyse von GA-Implementierungen
