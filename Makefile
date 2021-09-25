@@ -65,7 +65,6 @@ RESOURCES    = resources
 SRC    =
 SRC   += intro/intro-ai
 SRC   += intro/problems
-SRC   += search/intro
 SRC   += search/uninformed/dfs
 SRC   += search/uninformed/bfs
 SRC   += search/informed/branchandbound
