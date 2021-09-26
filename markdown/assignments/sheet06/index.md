@@ -1,6 +1,7 @@
 ---
 type: assignment
-title: "Blatt 06: tbd"
+title: "Blatt 06: Perzeptron, Lineare Regression"
+author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 6
 sketch: true

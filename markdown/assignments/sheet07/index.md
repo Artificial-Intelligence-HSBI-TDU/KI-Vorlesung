@@ -1,6 +1,6 @@
 ---
 type: assignment
-title: "Blatt 07: Perzeptron, Lineare Regression"
+title: "Blatt 07: Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 7
