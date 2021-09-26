@@ -50,19 +50,18 @@ fhmedia:
 > \hfill\ [Quelle: [de.wikipedia.org/wiki/Intelligenz](https://de.wikipedia.org/wiki/Intelligenz), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
 
 ::: notes
-TODO
+Das ist spannend: Es gibt keine allgemeingültige Definition für den Begriff "Intelligenz".
+Damit wird es schwierig, auch "Künstliche Intelligenz" zu definieren ...
+
+Aber wir können aus dieser Definition auf Wikipedia mitnehmen, dass es um kognitive
+Fähigkeiten geht. Verstehen und im weiteren Sinne Denken sind bereits im Begriff enthalten
+und damit auch Teil der kognitiven Fähigkeiten.
+
+Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an.
 :::
 
 \bigskip
 \bigskip
-
-::: notes
-TODO
-
-> Kognition ist ein uneinheitlich verwendeter Begriff, mit dem auf die
-> Informationsverarbeitung von Menschen und anderen Systemen Bezug genommen
-> wird. Oft ist mit "Kognition" das Denken in einem umfassenden Sinne gemeint.
-:::
 
 > Zu den **kognitiven Fähigkeiten** eines Menschen zählen die
 > **Wahrnehmung**, die Aufmerksamkeit, die Erinnerung, das **Lernen**, das
@@ -74,13 +73,17 @@ TODO
 > \hfill\ [Quelle: [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
 
 ::: notes
-TODO
-
-> Kognitive Fähigkeiten werden von verschiedenen Wissenschaften untersucht,
-> z.B. der Psychologie, der Biologie, den Neurowissenschaften, der Psychiatrie,
-> der Philosophie und der Forschung zur Künstlichen-Intelligenz. Die
-> wissenschaftliche Erforschung der Kognition wird unter dem Begriff der
-> Kognitionswissenschaft zusammengefasst.
+Zu den kognitiven Fähigkeiten und damit zur Intelligenz zählen also eine Reihe von
+Fähigkeiten, die man Menschen im allgemeinen zuschreibt. Lernen und Problemlösen
+und Planen sind Dinge, die vermutlich jeder direkt mit dem Begriff Intelligenz
+verbindet. Interessanterweise gehören auf auch Aufmerksamkeit und Wahrnehmung und
+Orientierung mit dazu -- Fähigkeiten, die beispielsweise in der Robotik sehr
+wichtig sind. Kreativität und Vorstellung zählen aber auch mit in den Bereich der
+kognitiven Fähigkeiten und damit zum Begriff Intelligenz. In der KI werden diese
+Gebiete zunehmend interessant, etwa beim Komponieren von Musik und beim Erzeugen
+von Bildern oder Texten. Mit Emotionen beschäftigt sich die KI-Forschung aktuell
+nur am Rande, etwa bei der Erkennung von Emotionen in Texten. Andere Gebiete der
+kognitiven Fähigkeiten wie Glaube und Wille spielen derzeit keine Rolle in der KI.
 :::
 
 
