@@ -10,4 +10,4 @@ weight: 3
 allgemeine einleitende Worte ...
 
 
-{{< children description="true" showhidden="true" >}}
+{{< children showhidden="true" >}}

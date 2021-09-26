@@ -10,4 +10,4 @@ weight: 3
 ... Kostenfunktion ...
 
 
-{{< children description="true" showhidden="true" >}}
+{{< children showhidden="true" >}}

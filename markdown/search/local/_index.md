@@ -10,4 +10,4 @@ weight: 4
 ... das Ziel ist im Weg ...
 
 
-{{< children description="true" showhidden="true" >}}
+{{< children showhidden="true" >}}
