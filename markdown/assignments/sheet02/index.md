@@ -1,4 +1,5 @@
 ---
+type: assignment
 title: "Blatt 02: Suche"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true

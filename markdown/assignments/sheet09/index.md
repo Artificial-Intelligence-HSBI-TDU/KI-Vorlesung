@@ -1,4 +1,5 @@
 ---
+type: assignment
 title: "Blatt 09: Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
