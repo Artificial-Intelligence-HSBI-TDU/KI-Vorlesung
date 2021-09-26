@@ -1,4 +1,5 @@
 ---
+type: assignment
 title: "Blatt 06: Entscheidungsbäume"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true

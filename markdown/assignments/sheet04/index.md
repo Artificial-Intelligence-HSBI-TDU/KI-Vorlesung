@@ -1,4 +1,5 @@
 ---
+type: assignment
 title: "Blatt04: Spiele"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
