@@ -104,7 +104,7 @@
     - topic: "ml/ml2_linear_regression"
   assignment:
     - topic: "sheet06"
-      due: "01.12."
+      due: "01.12.2021"
   misc_lecture:
     - notes: ">> KW49 freigeschaltet. Blatt 7 bearbeiten!"
 
@@ -114,7 +114,7 @@
     - topic: "ml/ml3_logistic_regression"
   assignment:
     - topic: "sheet07"
-      due: "08.12."
+      due: "08.12.2021"
   misc_lecture:
     - notes: ">> KW50 freigeschaltet. Blatt 8 bearbeiten!"
 
@@ -124,7 +124,7 @@
     - topic: "ml/ml4_overfitting"
   assignment:
     - topic: "sheet08"
-      due: "15.12."
+      due: "15.12.2021"
   misc_lecture:
     - notes: ">> KW51 freigeschaltet. Blatt 09 bearbeiten!"
 
@@ -134,7 +134,7 @@
     - topic: "ml/ml5_mlp"
   assignment:
     - topic: "sheet09"
-      due: "22.12."
+      due: "22.12.2021"
   misc_lecture:
     - notes: ">> @TDU: KW52 freigeschaltet."
     - notes: ">> @FHB: Frohe Weihnachten!"
@@ -157,7 +157,7 @@
       notes: "nur @FHB"
   assignment:
     - topic: "sheet10"
-      due: "05.01."
+      due: "05.01.2022"
   misc_lecture:
     - notes: ">> @FHB: KW02 freigeschaltet."
     - notes: ">> Alles Gute im neuen Jahr!"
