@@ -4,7 +4,8 @@ title: "Blatt 10: MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 10
----
+sketch: true
+--
 
 
 Hier kommt der Inhalt für Blatt XYZ hin ... allgemeine einleitende Worte ...
