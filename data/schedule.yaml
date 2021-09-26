@@ -65,7 +65,7 @@
     - topic: "sheet04"
       due: "03.11.2021"
   misc_lecture:
-    - notes: "KW45 freigeschaltet. Blatt 5 bearbeiten!"
+    - notes: ">> KW45 freigeschaltet. Blatt 5 bearbeiten!"
 
 - week: "KW45"
   date: "08.11.21 (Sprechstunde: cagix)"
@@ -80,16 +80,13 @@
     - topic: "sheet05"
       due: "10.11.2021"
   misc_lecture:
-    - notes: ">> KW46 freigeschaltet. Blatt 6 bearbeiten!"
+    - notes: ">> KW46 freigeschaltet."
 
 - week: "KW46"
   date: "15.11.21 (Sprechstunde: cagix)"
   lecture:
     - topic: "/naivebayes/probability"
     - topic: "/naivebayes/nb"
-  assignment:
-    - topic: "sheet06"
-      due: "17.11."
   misc_lecture:
     - notes: ">> KW47 freigeschaltet."
 
@@ -98,7 +95,7 @@
   lecture:
     - topic: "ml/ml1_perceptron"
   misc_lecture:
-    - notes: ">> KW48 freigeschaltet. Blatt 7 bearbeiten!"
+    - notes: ">> KW48 freigeschaltet. Blatt 6 bearbeiten!"
     - notes: ">> @TDU: Zwischenprüfung!"
 
 - week: "KW48"
@@ -106,83 +103,73 @@
   lecture:
     - topic: "ml/ml2_linear_regression"
   assignment:
-    - topic: "sheet07"
+    - topic: "sheet06"
       due: "01.12."
   misc_lecture:
-    - notes: ">> KW49 freigeschaltet. Blatt 8 bearbeiten!"
+    - notes: ">> KW49 freigeschaltet. Blatt 7 bearbeiten!"
 
 - week: "KW49"
   date: "06.12.21 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml3_logistic_regression"
   assignment:
-    - topic: "sheet08"
+    - topic: "sheet07"
       due: "08.12."
   misc_lecture:
-    - notes: ">> KW50 freigeschaltet. Blatt 9 bearbeiten!"
+    - notes: ">> KW50 freigeschaltet. Blatt 8 bearbeiten!"
 
 - week: "KW50"
   date: "13.12.21 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml4_overfitting"
   assignment:
-    - topic: "sheet09"
+    - topic: "sheet08"
       due: "15.12."
   misc_lecture:
-    - notes: ">> KW51 freigeschaltet. Blatt 10 bearbeiten!"
+    - notes: ">> KW51 freigeschaltet. Blatt 09 bearbeiten!"
 
 - week: "KW51"
   date: "20.12.21 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml5_mlp"
   assignment:
-    - topic: "sheet10"
+    - topic: "sheet09"
       due: "22.12."
   misc_lecture:
-    - notes: "@TDU: KW52 freigeschaltet. Blatt 11 bearbeiten!"
-    - notes: "@FHB: Frohe Weihnachten!"
+    - notes: ">> @TDU: KW52 freigeschaltet."
+    - notes: ">> @FHB: Frohe Weihnachten!"
 
 - week: "KW52"
   date: "27.12.21 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml6_backprop"
-      notes: " nur @TDU"
-  assignment:
-    - topic: "sheet11"
-      due: "22.12."
-      notes: " nur @TDU"
+      notes: "nur @TDU"
   misc_lecture:
+    - notes: ">> KW01 freigeschaltet. Blatt 10 bearbeiten!"
     - notes: ">> @FHB: Weihnachtsferien!"
 
 - week: "KW01"
   date: "03.01.22 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml7_training_testing"
-      notes: " nur @TDU"
+      notes: "nur @TDU"
     - topic: "ml/ml6_backprop"
-      notes: " nur @FHB"
+      notes: "nur @FHB"
   assignment:
-    - topic: "sheet12"
-      due: "22.12."
-      notes: " nur @TDU"
-    - topic: "sheet11"
-      due: "22.12."
-      notes: " nur @FHB"
+    - topic: "sheet10"
+      due: "05.01."
   misc_lecture:
+    - notes: ">> @FHB: KW02 freigeschaltet."
     - notes: ">> Alles Gute im neuen Jahr!"
 
 - week: "KW02"
   date: "10.01.22 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml7_training_testing"
-      notes: " nur @FHB"
-  assignment:
-    - topic: "sheet12"
-      due: "12.01."
-      notes: " nur @FHB"
+      notes: "nur @FHB"
 
 - week: "KW03"
   date: "17.01.22 (Sprechstunde: cagix)"
   lecture:
     - topic: "/misc/syllabus"
-      notes: " nur @FHB"
+      notes: "nur @FHB"

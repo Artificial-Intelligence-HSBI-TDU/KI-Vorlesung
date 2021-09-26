@@ -1,6 +1,6 @@
 ---
 type: assignment
-title: "Blatt 10: MLP"
+title: "Blatt 10: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 10
