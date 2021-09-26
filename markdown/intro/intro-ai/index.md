@@ -10,8 +10,8 @@ readings:
   - key: "Ertel2017"
     comment: "Kapitel 1: Introduction"
 quizzes:
-  - link: TODO
-    name: "TODO"
+  - link: https://kahoot.it/challenge/05395894?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673036201
+    name: "Selbsttest KI Einführung (Kahoot)"
 assignments:
   - topic: sheet01
 youtube:
