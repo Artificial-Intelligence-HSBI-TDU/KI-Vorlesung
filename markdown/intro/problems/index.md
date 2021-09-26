@@ -7,8 +7,8 @@ readings:
   - key: "Russell2020"
     comment: "Problemlösen: Kapitel 3.1 - 3.3"
 quizzes:
-  - link: TODO
-    name: "TODO"
+  - link: https://kahoot.it/challenge/04943631?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673930856
+    name: "Selbsttest Problemlösen (Kahoot)"
 assignments:
   - topic: sheet01
 youtube:
