@@ -1,8 +1,10 @@
 ---
-title: "Blatt 09: Overfitting"
+type: assignment
+title: "Blatt 09: MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 9
+sketch: true
 ---
 
 

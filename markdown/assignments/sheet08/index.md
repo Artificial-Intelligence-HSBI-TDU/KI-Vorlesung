@@ -1,8 +1,10 @@
 ---
-title: "Blatt 08: Logistische Regression"
+type: assignment
+title: "Blatt 08: Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 8
+sketch: true
 ---
 
 

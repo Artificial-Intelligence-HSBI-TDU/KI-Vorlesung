@@ -1,8 +1,10 @@
 ---
-title: "Blatt04: Spiele"
+type: assignment
+title: "Blatt04: Constraints"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 4
+sketch: true
 ---
 
 

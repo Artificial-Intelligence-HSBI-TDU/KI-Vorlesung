@@ -1,8 +1,10 @@
 ---
-title: "Blatt 06: Entscheidungsbäume"
-author: "Carsten Gips (FH Bielefeld)"
+type: assignment
+title: "Blatt 06: Perzeptron, Lineare Regression"
+author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 6
+sketch: true
 ---
 
 

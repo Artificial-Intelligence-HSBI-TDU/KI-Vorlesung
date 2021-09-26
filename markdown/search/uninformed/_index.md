@@ -10,4 +10,4 @@ weight: 2
 ... jeder Schritt "kostet" gleich viel: die Anzahl der Schritte zählt ...
 
 
-{{< children description="true" showhidden="true" >}}
+{{< children showhidden="true" >}}

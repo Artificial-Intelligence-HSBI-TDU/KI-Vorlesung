@@ -1,8 +1,10 @@
 ---
-title: "Blatt 05: Constraints"
+type: assignment
+title: "Blatt 05: Entscheidungsbäume"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 5
+sketch: true
 ---
 
 
