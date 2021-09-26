@@ -19,6 +19,7 @@ youtube:
 fhmedia:
   - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
     name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+sketch: true
 ---
 
 
