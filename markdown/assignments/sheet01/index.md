@@ -4,6 +4,7 @@ title: "Blatt 01: Problemlösen"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 1
+sketch: true
 ---
 
 

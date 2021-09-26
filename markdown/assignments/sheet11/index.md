@@ -4,6 +4,7 @@ title: "Blatt 11: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 hidden: true
 weight: 11
+sketch: true
 ---
 
 

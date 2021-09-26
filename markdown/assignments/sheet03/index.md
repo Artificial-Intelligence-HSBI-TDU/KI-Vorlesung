@@ -4,6 +4,7 @@ title: "Blatt 03: Spiele"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 3
+sketch: true
 ---
 
 
