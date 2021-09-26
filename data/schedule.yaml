@@ -143,11 +143,11 @@
   date: "27.12.21 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml6_backprop"
-      notes: " nur @TDU"
+      notes: "nur @TDU"
   assignment:
     - topic: "sheet10"
       due: "29.12. (nur @TDU)"
-      notes: " nur @TDU"
+      notes: "nur @TDU"
   misc_lecture:
     - notes: ">> @FHB: Weihnachtsferien!"
 
@@ -155,13 +155,13 @@
   date: "03.01.22 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml7_training_testing"
-      notes: " nur @TDU"
+      notes: "nur @TDU"
     - topic: "ml/ml6_backprop"
-      notes: " nur @FHB"
+      notes: "nur @FHB"
   assignment:
     - topic: "sheet10"
       due: "05.01. (nur @FHB)"
-      notes: " nur @FHB"
+      notes: "nur @FHB"
   misc_lecture:
     - notes: ">> Alles Gute im neuen Jahr!"
 
@@ -169,10 +169,10 @@
   date: "10.01.22 (Sprechstunde: Canan)"
   lecture:
     - topic: "ml/ml7_training_testing"
-      notes: " nur @FHB"
+      notes: "nur @FHB"
 
 - week: "KW03"
   date: "17.01.22 (Sprechstunde: cagix)"
   lecture:
     - topic: "/misc/syllabus"
-      notes: " nur @FHB"
+      notes: "nur @FHB"
