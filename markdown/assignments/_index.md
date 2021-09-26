@@ -10,4 +10,4 @@ hidden: true
 allgemeine einleitende Worte ...
 
 
-{{< children description="true" showhidden="true" >}}
+{{< children showhidden="true" >}}
