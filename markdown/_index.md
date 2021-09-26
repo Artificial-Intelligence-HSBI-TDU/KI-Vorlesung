@@ -20,7 +20,8 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 ### Kommunikation
 
--   **Sie-an-uns**: Praktikum, Sprechstunde (per Zoom), E-Mail, Issue im
+-   **Sie-an-uns**: Praktikum/Übung, Sprechstunde (per Zoom), E-Mail,
+    [Issue](https://github.com/KI-Vorlesung/Lecture/issues/new/choose) im
     [Github](https://github.com/KI-Vorlesung/Lecture)
 -   **Wir-an-Sie**: "News" im ILIAS (@FHB) bzw. im Google Classroom (@TDU), Antwort auf Issues
 
@@ -43,7 +44,7 @@ Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Reso
 
 ## Kursformat
 
-{{< img src="images/fahrplan_v2.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="100%" >}}
+{{< img src="images/fahrplan_v2.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="90%" >}}
 
 ### Vorlesung: 2 SWS
 
@@ -72,7 +73,7 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
 
-Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading" >}})
+Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}})
 
 ### Übung TDU: 2 SWS
 
