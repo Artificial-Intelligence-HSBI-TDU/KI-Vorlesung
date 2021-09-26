@@ -7,7 +7,7 @@ hidden: true
 
 # Praktikum
 
-allgemeine einleitende Worte ...
+Hier finden Sie die Übungsblätter.
 
 
 {{< children showhidden="true" >}}
