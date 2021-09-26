@@ -146,7 +146,7 @@
       notes: " nur @TDU"
   assignment:
     - topic: "sheet10"
-      due: "29.12."
+      due: "29.12. (nur @TDU)"
       notes: " nur @TDU"
   misc_lecture:
     - notes: ">> @FHB: Weihnachtsferien!"
@@ -160,7 +160,7 @@
       notes: " nur @FHB"
   assignment:
     - topic: "sheet10"
-      due: "05.01."
+      due: "05.01. (nur @FHB)"
       notes: " nur @FHB"
   misc_lecture:
     - notes: ">> Alles Gute im neuen Jahr!"
