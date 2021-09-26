@@ -6,19 +6,9 @@ hidden: true
 
 
 {{% k1 %}}
--   Wuppie
--   Fluppie
+*   Aspekte, die zur Intelligenz gerechnet werden
+*   Turing-Test: Aufbau, Gebiete, Kritik
+*   Gebiete der KI sowie deren Zielsetzung
+*   Starke vs. schwache KI
+*   Wichtige Strömungen in der KI und ihre zeitliche Einordnung
 {{% /k1 %}}
-
-{{% k2 %}}
--   foo
--   bar
-{{% /k2 %}}
-
-{{% k3 %}}
-hammwanich
-{{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
