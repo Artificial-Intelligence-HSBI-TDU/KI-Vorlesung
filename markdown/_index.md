@@ -27,11 +27,12 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 ### Hinweis zur Kooperation zw. FHB und TDU
 
-Über das Projekt "Digital @ FH Bielefeld" der FHB ist im Sommer 2020 eine Kooperation mit der
-Türkisch-Deutschen Universität in Istanbul (*TDU*) im Modul "Künstliche Intelligenz" gestartet.
+Über das Projekt "Digital @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im Sommer 2020
+eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im Modul "Künstliche
+Intelligenz" gestartet.
 
-Wir werden in diesem Semester die Vorlesungen gemeinsam für beide Hochschulen durchführen. In
-den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
+Wir werden in diesem Semester die Vorlesungen wieder gemeinsam für beide Hochschulen durchführen.
+In den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
 
 Die Übungen bzw. Praktika werden wg. unterschiedlicher Prüfungsordnungen jeweils für beide
 Hochschulen getrennt durchgeführt.
@@ -51,7 +52,7 @@ Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Reso
 Durchführung als **Flipped Classroom**:
 *   Vorbereitung individuell \@home mit ausführlich kommentierten Skripten plus Screencasts
     (**Selbststudium**)
-*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (**Zugangsdaten siehe ILIAS**)
+*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (**Zugangsdaten siehe ILIAS/Google Classroom**)
     *   FHB: bis 31.10.21: Mo, 10:30 - 12:00 Uhr (DE)
     *   FHB: ab 01.11.21: Mo, 09:30 - 11:00 Uhr (DE)
     *   TDU: Mo, 11:30 - 13:00 Uhr (TR)
