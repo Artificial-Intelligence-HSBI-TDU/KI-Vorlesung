@@ -1,6 +1,6 @@
 ---
 type: assignment
-title: "Blatt 02: Suche"
+title: "Blatt 02: Lokale Suche, EA/GA"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 2

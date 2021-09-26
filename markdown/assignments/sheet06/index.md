@@ -1,7 +1,6 @@
 ---
 type: assignment
-title: "Blatt 06: Entscheidungsbäume"
-author: "Carsten Gips (FH Bielefeld)"
+title: "Blatt 06: tbd"
 hidden: true
 weight: 6
 sketch: true
