@@ -5,6 +5,7 @@ hidden: true
 
 
 ## Notenzusammensetzung TDU
+
 ### Zwischen- und Endprüfung
 
 Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus vorgesehen.
@@ -26,6 +27,7 @@ Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
 
 
 ## Hinweise zur Übung TDU
+
 ### Bearbeitung der Aufgaben
 
 - Die Bearbeitung der Aufgaben erfolgt individuell.
