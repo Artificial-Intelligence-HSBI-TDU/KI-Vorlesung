@@ -6,7 +6,7 @@ hidden: true
 
 ## Prüfungsform FHB: Testat plus Klausur, 5 ECTS
 
--   Mind. 7 der 12 Aufgabenblätter *jeweils* ausreichend (mind. 60% der Punkte des
+-   Mind. 6 der 10 Aufgabenblätter *jeweils* ausreichend (mind. 60% der Punkte des
     jeweiligen Blattes) bearbeitet => **Testat**
 -   E-Klausur am Ende des Semesters => **Note**
 -   **Gesamtnote: Klausurnote**
