@@ -65,7 +65,7 @@
     - topic: "sheet04"
       due: "03.11.2021"
   misc_lecture:
-    - notes: "KW45 freigeschaltet. Blatt 5 bearbeiten!"
+    - notes: ">> KW45 freigeschaltet. Blatt 5 bearbeiten!"
 
 - week: "KW45"
   date: "08.11.21 (Sprechstunde: cagix)"
@@ -136,8 +136,8 @@
     - topic: "sheet09"
       due: "22.12."
   misc_lecture:
-    - notes: "@TDU: KW52 freigeschaltet."
-    - notes: "@FHB: Frohe Weihnachten!"
+    - notes: ">> @TDU: KW52 freigeschaltet."
+    - notes: ">> @FHB: Frohe Weihnachten!"
 
 - week: "KW52"
   date: "27.12.21 (Sprechstunde: Canan)"
@@ -145,7 +145,7 @@
     - topic: "ml/ml6_backprop"
       notes: "nur @TDU"
   misc_lecture:
-    - notes: "KW01 freigeschaltet. Blatt 10 bearbeiten!"
+    - notes: ">> KW01 freigeschaltet. Blatt 10 bearbeiten!"
     - notes: ">> @FHB: Weihnachtsferien!"
 
 - week: "KW01"
@@ -159,7 +159,7 @@
     - topic: "sheet10"
       due: "05.01."
   misc_lecture:
-    - notes: "@FHB: KW02 freigeschaltet."
+    - notes: ">> @FHB: KW02 freigeschaltet."
     - notes: ">> Alles Gute im neuen Jahr!"
 
 - week: "KW02"
@@ -167,8 +167,6 @@
   lecture:
     - topic: "ml/ml7_training_testing"
       notes: "nur @FHB"
-  misc_lecture:
-    - notes: "@FHB: KW03 freigeschaltet."
 
 - week: "KW03"
   date: "17.01.22 (Sprechstunde: cagix)"
