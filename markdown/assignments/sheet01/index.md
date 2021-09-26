@@ -1,6 +1,6 @@
 ---
 type: assignment
-title: "Blatt 01: Problemlösen"
+title: "Blatt 01: Problemlösen, Suche"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 weight: 1
