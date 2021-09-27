@@ -57,7 +57,7 @@ Durchführung als **Flipped Classroom**:
     *   FHB: ab 01.11.21: Mo, 09:30 - 11:00 Uhr (DE)
     *   TDU: Mo, 11:30 - 13:00 Uhr (TR)
 
-**Achtung**: Es gibt keine Präsenzvorlesung in KI im W21 wg. der internationalen Kooperation.
+**Achtung**: Es gibt keine Präsenzvorlesung in KI im Wintersemester 2021/22 wg. der internationalen Kooperation.
 
 Arbeiten Sie das bereitgestellte Material (Skripte, Screencasts, Selbststudiumsaufgaben,
 Literaturhinweise) **selbstständig zu Hause vor der Sprechstunde** durch. Während des
