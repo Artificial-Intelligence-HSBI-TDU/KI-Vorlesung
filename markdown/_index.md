@@ -27,7 +27,7 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 
 ### Hinweis zur Kooperation zw. FHB und TDU
 
-Über das Projekt "Digital @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im Sommer 2020
+Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im Sommer 2020
 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im Modul "Künstliche
 Intelligenz" gestartet.
 
