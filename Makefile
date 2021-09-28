@@ -16,10 +16,12 @@ ifneq ($(DOCKER), false)
 PANDOC = docker run --rm -i -v "$(shell pwd):/data" -w "/data"          -u "$(shell id -u):$(shell id -g)" --entrypoint="pandoc" alpine-pandoc-hugo
 HUGO   = docker run --rm -i -v "$(shell pwd):/data" -w "/data"          -u "$(shell id -u):$(shell id -g)" --entrypoint="hugo"   alpine-pandoc-hugo
 LATEX  = docker run --rm -i -v "$(dir $(realpath $<)):/data" -w "/data" -u "$(shell id -u):$(shell id -g)" --entrypoint="latex"  alpine-pandoc-hugo
+DOT    = docker run --rm -i -v "$(dir $(realpath $<)):/data" -w "/data" -u "$(shell id -u):$(shell id -g)" --entrypoint="dot"    alpine-pandoc-hugo
 else
 PANDOC = pandoc
 HUGO   = hugo
 LATEX  = cd $(dir $<) && latex
+DOT    = cd $(dir $<) && dot
 endif
 
 
@@ -34,8 +36,12 @@ endif
 PANDOC_DIRS = --data-dir=pandoc --resource-path=".:pandoc"
 
 
-## Define options for generating image from ".tex" file
+## Define options for generating images from ".tex" files
 LATEX_ARGS = -shell-escape
+
+
+## Define options for generating images from ".dot" files
+DOT_ARGS = -Tpng
 
 
 ## Define options to be used by Hugo
@@ -108,6 +114,11 @@ BIBTEX   = ki.bib
 ALGORITHM = $(patsubst $(ORIG_CONTENT)/%.tex,$(TMP_CONTENT)/%.png,$(shell find $(ORIG_CONTENT) -type f -name '*.tex'))
 
 
+## DOT files
+## Find all ".dot" files and translate them with Dot/Graphviz to ".png"
+GRAPHS = $(patsubst $(ORIG_CONTENT)/%.dot,$(TMP_CONTENT)/%.png,$(shell find $(ORIG_CONTENT) -type f -name '*.dot'))
+
+
 
 ## Targets
 
@@ -117,15 +128,15 @@ all: slides web
 
 ## Create all slides
 .PHONY: slides
-slides: copy_content $(ALGORITHM) $(PDF_FOLDER) $(SLIDES)
+slides: copy_content $(ALGORITHM) $(GRAPHS) $(PDF_FOLDER) $(SLIDES)
 
 ## Create single slide set
-$(SRC): copy_content $(ALGORITHM) $(PDF_FOLDER)
+$(SRC): copy_content $(ALGORITHM) $(GRAPHS) $(PDF_FOLDER)
 $(SRC): %: $(TMP_CONTENT)/%/$(PAGE_PDF)
 
 ## Create web page
 .PHONY: web
-web: copy_content $(ALGORITHM) $(READINGS) $(HTML) hugo
+web: copy_content $(ALGORITHM) $(GRAPHS) $(READINGS) $(HTML) hugo
 
 ## Create new lecture stub based on archetype
 ## Use all sections and the page name, but leave out "content/" and "index.md".
@@ -174,6 +185,10 @@ $(SLIDES): %.pdf: %.md $(PDF_FOLDER)
 ## Process stand-alone LaTeX files
 $(ALGORITHM): %.png: %.tex
 	$(LATEX) $(LATEX_ARGS) $(notdir $<)
+
+## Process stand-alone Dot files
+$(GRAPHS): %.png: %.dot
+	$(DOT) $(DOT_ARGS) $(notdir $<) -o $(notdir $@)
 
 ## Create folder "$(PDF_FOLDER)"
 $(PDF_FOLDER):
