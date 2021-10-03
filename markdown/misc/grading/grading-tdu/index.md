@@ -18,9 +18,10 @@ Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus
 
 ### Bonuspunkte für Aktive Teilnahme an der Übung
 
-Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für die Endprüfung, allerdings **nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
+Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für die Endprüfung,
+allerdings **nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
 
-Das heisst, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20 % der Übungsnote als
+Das heisst, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20% der Übungsnote als
 Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
 
 <br>
@@ -35,8 +36,8 @@ Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
 
 ### Abgabe der Lösungen
 
-Lösen Sie die Aufgaben auf Papier und laden Sie Ihre Lösungen als **eine PDF-Datei** hoch.
-Sie können dazu eine App wie zum Beispiel CamScanner benutzen.
+Lösen Sie die Aufgaben auf Papier und laden Sie Ihre Lösungen als **eine PDF-Datei** im ILIAS
+hoch. Sie können dazu eine App wie zum Beispiel CamScanner benutzen.
 
 Lösen Sie Programmieraufgaben in einem Jupyter Notebook auf Google Colaboratory und laden
 Sie dieses als **eine .jpnyb Datei** hoch.  Es gibt reichlich Einführungsmaterial für Jupyter
@@ -53,10 +54,16 @@ richtig benannte Dateien hochgeladen, werden diese ausnahmslos mit 0 bewertet un
 
 ### Punktevergabe
 
-Sie erhalten Ihre Übungsnote, indem Sie im jeweiligen Google-Formular angeben, welche Aufgaben Sie bearbeitet/gelöst haben. Sie müssen in der Lage sein, diese Aufgaben in der Übungsstunde der Gruppe vorzustellen. Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive Beschäftigung mit dem vorliegenden Problem erkennen lassen.
+Sie erhalten Ihre Übungsnote, indem Sie im jeweiligen ILIAS-Formular angeben, welche Aufgaben
+Sie bearbeitet/gelöst haben. Sie müssen in der Lage sein, diese Aufgaben in der Übungsstunde
+der Gruppe vorzustellen. Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine
+intensive Beschäftigung mit dem vorliegenden Problem erkennen lassen.
 
 ### Vorstellung der Lösung in der Übungsstunde
 
-Die Vorstellung der Lösung in der Übungsstunde kann mit einem Medium Ihrer Wahl stattfinden. Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung erklären.
+Die Vorstellung der Lösung in der Übungsstunde kann mit einem Medium Ihrer Wahl stattfinden.
+Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung erklären.
 
-**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber in der Übungsstunde nicht (oder zu spät) erscheint oder die Lösung nicht vorstellen kann, bekommt das gesamte Übungsblatt als "nicht bestanden" testiert!
+**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber in der Übungsstunde nicht (oder
+zu spät) erscheint oder die Lösung nicht vorstellen kann, bekommt das gesamte Übungsblatt
+als "nicht bestanden" testiert!
