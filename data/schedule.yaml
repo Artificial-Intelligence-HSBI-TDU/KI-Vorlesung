@@ -2,13 +2,13 @@
 #  date: "(27 Sep - 1 Okt)"
 #  lecture:
 #    - topic: "/misc/syllabus"
-#      notes: "Kick-Off TDU (cagix und canan)"
+#      notes: "Kick-Off TDU (cagix und Canan)"
 
 - week: "KW40"
   date: "04.10.21 (Sprechstunde: cagix)"
   lecture:
     - topic: "/misc/syllabus"
-      notes: "Kick-Off FHB (cagix und canan)"
+      notes: "Kick-Off FHB (cagix und Canan)"
     - topic: "/intro/intro-ai"
     - topic: "/intro/problems"
   misc_lecture:
@@ -172,4 +172,4 @@
   date: "17.01.22 (Sprechstunde: cagix)"
   lecture:
     - topic: "/misc/syllabus"
-      notes: "nur @FHB"
+      notes: "nur @FHB: Klausurvorbereitung"
