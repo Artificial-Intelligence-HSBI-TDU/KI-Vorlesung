@@ -7,7 +7,7 @@ weight: 3
 
 # Informierte Suche
 
-... Kostenfunktion ...
+... Einsatz einer Kostenfunktion ...
 
 
 {{< children showhidden="true" >}}
