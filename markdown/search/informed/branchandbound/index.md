@@ -9,13 +9,13 @@ readings:
     comment: "Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Branch-and-Bound (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
-  - id: fq4i7a3RR9E
+  - id: cKaLMKyZtkI
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/6abd1012d031afe7fa1467f264f9846c820eccbdba54fd684fb8bea5e5d2afb7522755ea9db083945c85acd82e907977880f928d5a8c06b09d7fa9fef04b111a
+  - link: "https://www.fh-bielefeld.de/medienportal/m/6fe88bfae95d9531e649a6baf4e4eb770fcdb8186af6169b19dd092ec42754981ef8b4fa3b129a6966958841a181375702450fdbcae4e4b555f5ccd0a441de10"
     name: "Direktlink FH-Medienportal: Branch-and-Bound"
 ---
 
