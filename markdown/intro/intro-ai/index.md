@@ -10,14 +10,14 @@ readings:
   - key: "Ertel2017"
     comment: "Kapitel 1: Introduction"
 quizzes:
-  - link: https://kahoot.it/challenge/05395894?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673036201
+  - link: "https://kahoot.it/challenge/05395894?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673036201"
     name: "Selbsttest KI Einführung (Kahoot)"
 assignments:
   - topic: sheet01
 youtube:
-  - id: ENclDk8-AD8
+  - id: oETxokgYdDk
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/d1af81af48ecb6da40cc80202ed810c79a49d5c8aefd7c97f8b7cb4e9e0819baaf886f54f00df729879fd3ccba68bcab763efefacd44416726c799651ab664dd
+  - link: "https://www.fh-bielefeld.de/medienportal/m/80e8eaac54e2b4bb11488efc73672cccbec3bb9660187613385cf34e0428a82048d6371cebec02a2bb678882fb53fab49d9bab56ed6fcfe8ac6ddbad6a740bfc"
     name: "Direktlink FH-Medienportal: KI Einführung"
 ---
 
