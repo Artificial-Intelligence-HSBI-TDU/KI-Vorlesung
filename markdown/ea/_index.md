@@ -7,7 +7,7 @@ weight: 3
 
 # Genetische Algorithmen
 
-allgemeine einleitende Worte ...
+Lokale Suche mit Methoden, die der biologischen Evolution abgeschaut bzw. nachempfunden sind.
 
 
 {{< children showhidden="true" >}}
