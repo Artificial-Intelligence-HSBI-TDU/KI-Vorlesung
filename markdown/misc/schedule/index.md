@@ -15,7 +15,7 @@ hidden: true
     *   KW40 bis KW46: FHB (Carsten Gips)
     *   KW47 bis KW02: TDU (Canan Yıldız)
     *   Rückblick und Klausurvorbereitung in KW03 für FHB durch FHB (Carsten Gips)
-*   Praktika/Übungen: Durchführung jeweils getrennt nach FHB und TDU; Bereitstellung der Aufgabenblätter:
+*   Praktika/Übungen: Durchführung gemischt für FHB und TDU; Bereitstellung der Aufgabenblätter:
     *   KW41 bis KW46: FHB (Carsten Gips)
     *   KW47 bis KW02: TDU (Canan Yıldız)
 
