@@ -18,7 +18,7 @@ hidden: true
 ### Mitarbeiter/Lehrbeauftragte
 
 -   Jonas Posselt (FHB)
--   N.N. (TDU)
+-   Zehra Melce Hüsünbeyi (TDU)
 
 ### Sprechstunde ("Flipped"-Teil der Vorlesung)
 
