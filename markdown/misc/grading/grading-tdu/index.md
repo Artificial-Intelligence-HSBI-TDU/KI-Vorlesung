@@ -37,7 +37,7 @@ Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
 ### Abgabe der Lösungen
 
 Lösen Sie die Aufgaben auf Papier und laden Sie Ihre Lösungen als **eine PDF-Datei** im ILIAS
-hoch. Sie können dazu eine App wie zum Beispiel CamScanner benutzen.
+(Zugriff via Moodle) hoch. Sie können dazu eine App wie zum Beispiel CamScanner benutzen.
 
 Lösen Sie Programmieraufgaben in einem Jupyter Notebook auf Google Colaboratory und laden
 Sie dieses als **eine .jpnyb Datei** hoch.  Es gibt reichlich Einführungsmaterial für Jupyter
