@@ -9,15 +9,14 @@ readings:
     comment: "Simulated Annealing: Abschnitt 4.1.2"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Simulated Annealing (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
-  - id: TODO
+  - id: vPg7PWuY2bM
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: "https://www.fh-bielefeld.de/medienportal/m/5abd7e34f28bedb07ac3c4d9665a493bbf5b5cedfb97e91f9f2d8be0a3bace4e628a0b0ac2530e146ccbb0fd2de2fc99b48604d15c8b864b3f58825e8ca99260"
+    name: "Direktlink FH-Medienportal: KI Simulated Annealing"
 ---
 
 
