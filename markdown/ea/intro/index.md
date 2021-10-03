@@ -13,15 +13,15 @@ readings:
   - key: "Baeck1996"
   - key: "Nissen1997"
 quizzes:
-  - link: TODO
-    name: "TODO"
+  - link: "TODO"
+    name: "Selbsttest Evolutionäre Algorithmen (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
   - id: TODO
 fhmedia:
-  - link: TODO
-    name: "TODO"
+  - link: "TODO"
+    name: "Direktlink FH-Medienportal: KI Evolutionäre Algorithmen"
 sketch: true
 ---
 
