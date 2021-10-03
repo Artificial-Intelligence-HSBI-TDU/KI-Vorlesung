@@ -14,7 +14,6 @@ hidden: true
 -   [Canan Yıldız](mailto:canan.yildiz@tau.edu.tr)
 -   [Carsten Gips](https://www.fh-bielefeld.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
 
-
 ### Mitarbeiter/Lehrbeauftragte
 
 -   Jonas Posselt (FHB)
