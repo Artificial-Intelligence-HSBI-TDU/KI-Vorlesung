@@ -9,15 +9,14 @@ readings:
     comment: "Gradientenabstieg: Abschnitt 4.1.1"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Gradientensuche (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
-  - id: TODO
+  - id: TcTF9xdW3WU
 fhmedia:
-  - link: TODO
-    name: "TODO"
-sketch: true
+  - link: "https://www.fh-bielefeld.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed"
+    name: "Direktlink FH-Medienportal: Gradientensuche"
 ---
 
 
