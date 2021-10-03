@@ -6,16 +6,16 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "Best-First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"
+    comment: "Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Best First (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
-  - id: 6LRjrlSy07Q
+  - id: dNyLOQuD_aI
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/bf905b140b247e9fa87ee698adec011c9a1688f329b3cf68dea7756f040c43414270c111e4e360d3921afe390b25db8799ad6f6b4d6c204c8e5b97350602de8b
+  - link: "https://www.fh-bielefeld.de/medienportal/m/4c065b44bafcd006400d7ae3ccdc25e04577d164e1aa0e118e29fa643b53bfbcaaa14dd12b93fa89105abc6f782947f7c04c849fb673a92c710da5c6b8c99083"
     name: "Direktlink FH-Medienportal: Best First"
 ---
 
