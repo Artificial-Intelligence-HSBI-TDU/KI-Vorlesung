@@ -9,13 +9,13 @@ readings:
     comment: "Breitensuche: Abschnitt 3.4.1"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Breitensuche (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
-  - id: eRX0IpUOnvY
+  - id: WLhXt6ZpyD8
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/3496d633d4dfc355d225fdd0f2087c153a17bd283cfaabfcc388d6ff0d56e2aa1c86a7ac3da8ab868fb5374ba57341bf2236c912b6c9849a76c4430db90334f7
+  - link: "https://www.fh-bielefeld.de/medienportal/m/2b90123c48bc56189a083a0c9131281307f860481a17fe3dadd3bd4891d01ef157d6c12a39b5255dd39ab36fe8fd36c714ca6873277ce98667094a3f91359a2e"
     name: "Direktlink FH-Medienportal: Breitensuche"
 ---
 
