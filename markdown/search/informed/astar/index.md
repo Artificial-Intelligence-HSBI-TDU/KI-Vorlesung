@@ -9,13 +9,13 @@ readings:
     comment: "`A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Problemlösen (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
-  - id: mj-MoBAt0SE
+  - id: eMkEN-HtEs8
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/47f51df7fc6191d835e01d4fe58271a09236f4da3ca6e9479761af0375bc65c7904c50c894409627c20ae5c01b0b91246dd7465fa4057b9a6b7da4bfce4db240
+  - link: "https://www.fh-bielefeld.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509"
     name: "Direktlink FH-Medienportal: `A*`{=markdown}"
 ---
 
