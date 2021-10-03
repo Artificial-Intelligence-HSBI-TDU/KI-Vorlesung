@@ -10,7 +10,7 @@ sketch: true
 
 
 
-## A2.1 Modellierung von GA (2P)
+## A2.1: Modellierung von GA (2P)
 
 Folgende Probleme sollen mit einem GA gelöst werden:
 
@@ -33,7 +33,7 @@ Simulated Annealing lösen zu können?
 
 
 
-## A2.2 Implementierung (5P)
+## A2.2: Implementierung (5P)
 
 Suchen Sie sich ein geeignetes Problem und implementieren Sie den in der
 Vorlesung besprochenen GA.
@@ -55,7 +55,7 @@ Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
 
 
-## A2.3 Anwendungen (3P)
+## A2.3: Anwendungen (3P)
 
 1.  Analysieren Sie die Implementierung von
     [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)
