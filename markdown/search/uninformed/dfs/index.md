@@ -9,13 +9,13 @@ readings:
     comment: "Tiefensuche: Abschnitt 3.4.3"
 quizzes:
   - link: TODO
-    name: "TODO"
+    name: "Selbsttest Tiefensuche (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
-  - id: vYtJ5auy7g0
+  - id: NzTugnuHSZ8
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/b741f2073132544f4eeb4fae18eeda88db78247c4a74cc08cb44a38d97e23e9ca47b9a9fb76dcfd80025551f871532a509c29f0a6a219d64fbdadb89f5f90f5f
+  - link: "https://www.fh-bielefeld.de/medienportal/m/01a264be691d64ecb2ca389006177bec25cc3d31a750c648e0d7450d07cbf907dd98e0248ef97d40999f7fb06355f5235827bf05f3a087b8e2511bbd68d2d5da"
     name: "Direktlink FH-Medienportal: Tiefensuche"
 ---
 
