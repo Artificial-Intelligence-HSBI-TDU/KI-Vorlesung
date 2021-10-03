@@ -7,14 +7,14 @@ readings:
   - key: "Russell2020"
     comment: "Problemlösen: Kapitel 3.1 - 3.3"
 quizzes:
-  - link: https://kahoot.it/challenge/04943631?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673930856
+  - link: "https://kahoot.it/challenge/04943631?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673930856"
     name: "Selbsttest Problemlösen (Kahoot)"
 assignments:
   - topic: sheet01
 youtube:
-  - id: SHuw6uMJs6I
+  - id: IhUmUUzR9lQ
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/14b8089d408f5ba308e5dd8af7260ecdddc5fdc7cacfe963e053409dd7986036970df1060a4e78aa7c0331cf9e29845f54605d15d4311c8d72cc9d06e5c0daa6
+  - link: "https://www.fh-bielefeld.de/medienportal/m/6754160d1977fb73c1d7f2052a1153fd073dc151853d4143c6f84622ffdb785baa6205e877ad448e1ba00fddd1c6528615c9dcb83528d32015e30a04201028f9"
     name: "Direktlink FH-Medienportal: KI Problemlösen"
 ---
 
