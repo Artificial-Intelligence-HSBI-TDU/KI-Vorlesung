@@ -97,6 +97,7 @@ SRC   += dtl/id3
 SRC   += naivebayes/probability
 SRC   += naivebayes/nb
 SRC   += misc/resources
+SRC   += misc/syllabus
 SRC   += assignments/sheet01
 
 ## Use different file extensions so Make can distinguish these targets

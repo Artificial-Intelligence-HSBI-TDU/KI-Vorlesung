@@ -37,7 +37,7 @@ hidden: true
     *   Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken
     *   Constraints: Backtracking, Heuristiken, Propagation, AC-3
 
-<!--  -->
+`<!--  -->`{=markdown}
 
 2)  Maschinelles Lernen
     *   Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung
@@ -50,14 +50,14 @@ hidden: true
         -   Ausblick: Support-Vektor-Maschinen
     *   Naive Bayes Klassifikator
 
-<!--  -->
+`<!--  -->`{=markdown}
 
 3)  ~~Inferenz, Logik~~ (**entfällt im W21**)
     *   Prädikatenlogik: Modellierung, semantische und formale Beweise,
         Unifikation, Resolution
     *   Ausblick: Anwendung in Prolog
 
-<!--  -->
+`<!--  -->`{=markdown}
 
 Weitere relevante KI-/ML-Themen werden in weiteren Modulen behandelt:
 
