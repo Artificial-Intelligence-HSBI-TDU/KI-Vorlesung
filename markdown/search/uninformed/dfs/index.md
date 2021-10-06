@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "Selbsttest Tiefensuche (Kahoot)"
 assignments:
-  - topic: sheet02
+  - topic: sheet01
 youtube:
   - id: NzTugnuHSZ8
 fhmedia:
