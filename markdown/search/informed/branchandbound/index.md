@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/03121135?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581228326"
     name: "Selbsttest Branch-and-Bound (Kahoot)"
 assignments:
   - topic: sheet01
