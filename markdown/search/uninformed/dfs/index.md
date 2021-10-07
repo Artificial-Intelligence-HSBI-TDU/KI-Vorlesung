@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "Tiefensuche: Abschnitt 3.4.3"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/09751845?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633580993690"
     name: "Selbsttest Tiefensuche (Kahoot)"
 assignments:
   - topic: sheet01
