@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "Selbsttest Best First (Kahoot)"
 assignments:
-  - topic: sheet02
+  - topic: sheet01
 youtube:
   - id: dNyLOQuD_aI
 fhmedia:
