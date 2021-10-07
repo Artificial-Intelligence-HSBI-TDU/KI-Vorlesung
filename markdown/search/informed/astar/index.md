@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "`A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/07359960?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581428956"
     name: "Selbsttest Problemlösen (Kahoot)"
 assignments:
   - topic: sheet01
