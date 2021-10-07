@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "Breitensuche: Abschnitt 3.4.1"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/04678523?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581115820"
     name: "Selbsttest Breitensuche (Kahoot)"
 assignments:
   - topic: sheet01
