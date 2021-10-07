@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "Selbsttest Branch-and-Bound (Kahoot)"
 assignments:
-  - topic: sheet02
+  - topic: sheet01
 youtube:
   - id: cKaLMKyZtkI
 fhmedia:
