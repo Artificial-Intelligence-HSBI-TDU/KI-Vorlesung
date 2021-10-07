@@ -13,9 +13,9 @@ quizzes:
 assignments:
   - topic: sheet01
 youtube:
-  - id: cKaLMKyZtkI
+  - id: WBL-sihpbaM
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/6fe88bfae95d9531e649a6baf4e4eb770fcdb8186af6169b19dd092ec42754981ef8b4fa3b129a6966958841a181375702450fdbcae4e4b555f5ccd0a441de10"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/a9df47470cf25d0f57646f04280a04e6ff323f142151641b95c76b47ba0bcd10cca5d53d287842e551e119a6b9ba21609f7ddc05c38aca416115e14f9104810a"
     name: "Direktlink FH-Medienportal: Branch-and-Bound"
 ---
 
