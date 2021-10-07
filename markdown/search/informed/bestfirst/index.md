@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/01308905?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581334220"
     name: "Selbsttest Best First (Kahoot)"
 assignments:
   - topic: sheet01
