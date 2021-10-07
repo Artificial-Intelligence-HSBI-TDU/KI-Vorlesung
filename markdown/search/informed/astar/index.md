@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "Selbsttest Problemlösen (Kahoot)"
 assignments:
-  - topic: sheet02
+  - topic: sheet01
 youtube:
   - id: eMkEN-HtEs8
 fhmedia:
