@@ -33,8 +33,8 @@
   lecture:
     - topic: "/search/local/gradient"
     - topic: "/search/local/annealing"
-    - topic: "/search/ea/intro"
-    - topic: "/search/ea/ga"
+    - topic: "/ea/intro"
+    - topic: "/ea/ga"
   assignment:
     - topic: "sheet02"
       due: "20.10.2021"
