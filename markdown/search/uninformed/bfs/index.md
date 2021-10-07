@@ -11,7 +11,7 @@ quizzes:
   - link: TODO
     name: "Selbsttest Breitensuche (Kahoot)"
 assignments:
-  - topic: sheet02
+  - topic: sheet01
 youtube:
   - id: WLhXt6ZpyD8
 fhmedia:
