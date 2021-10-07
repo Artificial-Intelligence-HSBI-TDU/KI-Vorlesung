@@ -127,11 +127,11 @@ A\* (Tree-Search-Variante) mit zulässiger Heuristik ist optimal.
 \bigskip
 
 ::: slides
-Beweis siehe Übungsblatt "Blatt 02" :-)
+Beweis siehe Übungsblatt "Blatt 01" :-)
 :::
 
 ::: notes
-Beweis siehe Übungsblatt `[Blatt 02]({{<ref "sheet02" >}})`{=markdown} :-)
+Beweis siehe Übungsblatt `[Blatt 01]({{<ref "sheet01" >}})`{=markdown} :-)
 :::
 
 ## Einfache Verbesserungen A\* (Tree-Search)
