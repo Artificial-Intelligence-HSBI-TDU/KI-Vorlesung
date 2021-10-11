@@ -16,7 +16,7 @@ quizzes:
   - link: "TODO"
     name: "Selbsttest Evolutionäre Algorithmen (Kahoot)"
 assignments:
-  - topic: sheet03
+  - topic: sheet02
 youtube:
   - id: TODO
 fhmedia:
