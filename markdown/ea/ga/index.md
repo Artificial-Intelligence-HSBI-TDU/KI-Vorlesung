@@ -28,7 +28,7 @@ fhmedia:
 ## EA -- Allgemeiner Ablauf
 
 ::: center
-![](images/ea_prinz.png)
+![](images/ea_prinz.png){width="80%"}
 :::
 
 
@@ -262,7 +262,4 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
