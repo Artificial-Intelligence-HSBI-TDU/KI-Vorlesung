@@ -28,13 +28,13 @@ fhmedia:
 ## Evolution sehr erfolgreich bei Anpassung
 
 ::: center
-![](images/Human_evolution_scheme){width="80%"}
-[[Human_evolution_scheme.svg](https://lizenzhinweisgenerator.de/wiki/File:Human_evolution_scheme.svg): [M. Garde](https://commons.wikimedia.org/wiki/User:Mgarde) derivative work: [Gerbil](https://commons.wikimedia.org/wiki/User:Gerbil) [(talk)](https://lizenzhinweisgenerator.de/wiki/User_talk:Gerbil), [Human evolution scheme (2)](https://commons.wikimedia.org/wiki/File:Human_evolution_scheme_(2).jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
+![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
 
-https://search.creativecommons.org/photos/c29654d7-7460-459f-973e-cfed5079fa64
-https://search.creativecommons.org/photos/4262fc52-693c-4e3f-9fc5-27f938c034fc
-
+[Quelle: [Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on [Unsplash](https://unsplash.com/) ([Unsplash License](https://unsplash.com/license))]{.origin}
 :::
+
+\bigskip
+\bigskip
 
 ::: cbox
 [**Wie funktioniert's?**]{.alert}
@@ -50,7 +50,7 @@ https://search.creativecommons.org/photos/4262fc52-693c-4e3f-9fc5-27f938c034fc
     *   **Population** von Individuen
     *   **Fitnessfunktion**: Bewertung der Angepasstheit
 
-\smallskip
+\bigskip
 
 *   Mechanismen ("Operatoren"):
     *   Selektion
@@ -61,15 +61,14 @@ https://search.creativecommons.org/photos/4262fc52-693c-4e3f-9fc5-27f938c034fc
 ## EA -- Allgemeiner Ablauf
 
 ::: center
-![](images/ea_prinz.png)
+![](images/ea_prinz.png){width="80%"}
 :::
 
 
 ## EA -- Beispiel
 
 ::: center
-![](images/genetic){width="70%"}
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.5, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+![](images/queens.png){width="70%"}
 :::
 
 ::: notes
@@ -79,14 +78,7 @@ Königinnen => **Vollständige Zustandsbeschreibung**.
 Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen
 Spalte des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher
 Zeile in dieser Spalte eine Königin ist.
-:::
 
-::: center
-![](images/8queens-crossover){width="70%"}
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 4.6, S. 30][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
-:::
-
-::: notes
 Crossover: Die ausgewählten Individuen werden an der selben Stelle aufgetrennt
 und die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehen
 zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
@@ -121,7 +113,7 @@ finden jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
 :::
 
 
-### Anwendungsbeispiele für Evolutionäre Algorithmen
+## Anwendungsbeispiele für Evolutionäre Algorithmen
 
 *   Berechnung und Konstruktion komplexer Bauteile: beispielsweise
     Tragflächenprofile (Flugzeuge), Brücken oder Fahrzeugteile unter
@@ -154,5 +146,5 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   TODO (what, where, license)
+*   [Photo "Evolution Walk"](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on [Unsplash](https://unsplash.com/), licensed under [Unsplash License](https://unsplash.com/license)
 :::
