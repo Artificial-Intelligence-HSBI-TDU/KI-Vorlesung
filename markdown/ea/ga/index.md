@@ -165,7 +165,6 @@ Mitteln) der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft
         \end{array}
         \right.
         $$
-        <!-- XXX eigentlich $\phantom{\neg}$ statt $\;\:\,$, aber das erkennt die Übersetzung nach HTML nicht -->
 
         =>$\chi_i$ gleichverteilte Zufallsvariable (Intervall $[0,1]$),
         für jedes Bit $g_i$ neu bestimmen
@@ -212,10 +211,10 @@ Die SR liegt im Intervall $[0, 1]$.
 
 :::::: columns
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_fail.png)
+![](images/typischerLauf_ritterIII_mG500M15L100_fail.png){width="80%"}
 :::
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_success.png)
+![](images/typischerLauf_ritterIII_mG500M15L100_success.png){width="80%"}
 :::
 ::::::
 
