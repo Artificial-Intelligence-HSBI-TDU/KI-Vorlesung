@@ -161,7 +161,7 @@ Mitteln) der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft
         g_i^{(t+1)} = \left\{
         \begin{array}{ll}
             \neg g_i^{(t)} & \mbox{ falls } \chi_i \le p_{mut}\\[5pt]
-            \;\:\, g_i^{(t)} & \mbox{ sonst }
+            \phantom{\neg} g_i^{(t)} & \mbox{ sonst }
         \end{array}
         \right.
         $$
