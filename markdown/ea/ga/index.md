@@ -16,7 +16,7 @@ quizzes:
   - link: "TODO"
     name: "Selbsttest EA/GA (Kahoot)"
 assignments:
-  - topic: sheet03
+  - topic: sheet02
 youtube:
   - id: TODO
 fhmedia:
