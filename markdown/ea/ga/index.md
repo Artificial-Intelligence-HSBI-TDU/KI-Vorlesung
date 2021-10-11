@@ -22,7 +22,6 @@ youtube:
 fhmedia:
   - link: "TODO"
     name: "Direktlink FH-Medienportal: KI EA/GA"
-sketch: true
 ---
 
 
