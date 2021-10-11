@@ -68,7 +68,7 @@ fhmedia:
 ## EA -- Beispiel
 
 ::: center
-![](images/queens.png){width="70%"}
+![](images/4-queens-example.png){width="40%"}
 :::
 
 ::: notes
@@ -83,6 +83,8 @@ Crossover: Die ausgewählten Individuen werden an der selben Stelle aufgetrennt
 und die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehen
 zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
 :::
+
+[Beispiel mit 4-Queens-Puzzle]{.bsp}
 
 
 ## EA -- Strömungen
