@@ -70,7 +70,8 @@ fhmedia:
 
 *   Fitnessproportionale Selektion (*Roulette Wheel Selection*):\newline
     Auswahlwahrscheinlichkeit für Individuum
-    $\mathbf{g}_k$ $$p_{sel}(\mathbf{g}_k) = \frac{\Phi(\mathbf{g}_k)}{\sum_j \Phi(\mathbf{g}_j)}$$
+    $\mathbf{g}_k$:
+    $$p_{sel}(\mathbf{g}_k) = \frac{\Phi(\mathbf{g}_k)}{\sum_j \Phi(\mathbf{g}_j)}$$
     => Voraussetzung: positive Fitnesswerte
 
 \bigskip
@@ -115,10 +116,10 @@ Festlegung der Crossover-Wahrscheinlichkeit $p_{cross}$
     *   mit $1-p_{cross}$: Kinder identisch zu Eltern (kein Crossover)
     *   mit $p_{cross}$: Crossover mit $\mathbf{g}_a$ und $\mathbf{g}_b$
         *   Ziehe $i$ gleichverteilt mit $1 < i < m$
-        *   Kinder aus $\mathbf{g}_a$ und $\mathbf{g}_b$ zusammenbauen:\newline
-            $\mathbf{g}_c = (g_{a,1}, \dots, g_{a,i}, \; g_{b,{i+1}}, \dots, g_{b,m})$
+        *   Kinder aus $\mathbf{g}_a$ und $\mathbf{g}_b$ zusammenbauen:
+            $$\mathbf{g}_c = (g_{a,1}, \dots, g_{a,i}, \; g_{b,{i+1}}, \dots, g_{b,m})$$
             und
-            $\mathbf{g}_d = (g_{b,1}, \dots, g_{b,i}, \; g_{a,{i+1}}, \dots, g_{a,m})$
+            $$\mathbf{g}_d = (g_{b,1}, \dots, g_{b,i}, \; g_{a,{i+1}}, \dots, g_{a,m})$$
 
         ::: notes
         => Trenne Eltern an gleicher Stelle auf, vertausche Bestandteile
