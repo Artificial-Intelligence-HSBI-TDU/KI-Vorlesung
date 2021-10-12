@@ -18,10 +18,10 @@ quizzes:
 assignments:
   - topic: sheet02
 youtube:
-  - id: TODO
+  - id: Sd5AA6LIEOc
 fhmedia:
-  - link: "TODO"
-    name: "Direktlink FH-Medienportal: KI EA/GA"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/ccdf3f05e3eb4e19644f8505b53eeeb0219cddca7902d5840fae19a0816feebfc2c3800b54f3e95bd2a8f26405ea7c40385303a98f6d7d3c94c34c10f4be43d0"
+    name: "Direktlink FH-Medienportal: KI Modellierung mit EA/GA"
 ---
 
 
