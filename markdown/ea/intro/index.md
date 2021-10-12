@@ -99,8 +99,8 @@ zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
 
 2.  **Evolutionsstrategien** (ES)
     *   Rechenberg und Schwefel (ab 1960)
-    *   Kodierung reellwertiger Parameter: $\mathbf{g} = (\mathbf{x}, \sigma)$
-        mit $\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n$       <!-- XXX eigentlich $\mathbf{\sigma}$, aber das erkennt die Übersetzung nach HTML nicht -->
+    *   Kodierung reellwertiger Parameter: $\mathbf{g} = (\mathbf{x}, \mathbf{\sigma})$
+        mit $\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n$
     *   $\mu$ Eltern erzeugen $\lambda$ Kinder mit $\mu \le \lambda$
 
 \smallskip
