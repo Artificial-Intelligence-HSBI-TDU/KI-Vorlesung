@@ -18,10 +18,10 @@ quizzes:
 assignments:
   - topic: sheet02
 youtube:
-  - id: TODO
+  - id: pKdKcPLI7V4
 fhmedia:
-  - link: "TODO"
-    name: "Direktlink FH-Medienportal: KI Evolutionäre Algorithmen"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/7804b1839761e3ca43478cbd5eea342fc6f61539fe481d34efe0d3d64747ef4fe2a6de4c9f079ce806f6ac7194b48b0c4324bd17c3483dd318d027d94242d8f9"
+    name: "Direktlink FH-Medienportal: KI Einführung Evolutionäre Algorithmen"
 ---
 
 
