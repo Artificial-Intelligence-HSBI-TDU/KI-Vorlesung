@@ -8,7 +8,7 @@ readings:
   - key: "Russell2020"
     comment: "Simulated Annealing: Abschnitt 4.1.2"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/05934871?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634138238676"
     name: "Selbsttest Simulated Annealing (Kahoot)"
 assignments:
   - topic: sheet03
