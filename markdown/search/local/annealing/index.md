@@ -11,7 +11,7 @@ quizzes:
   - link: "https://kahoot.it/challenge/05934871?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634138238676"
     name: "Selbsttest Simulated Annealing (Kahoot)"
 assignments:
-  - topic: sheet03
+  - topic: sheet02
 youtube:
   - id: vPg7PWuY2bM
 fhmedia:
