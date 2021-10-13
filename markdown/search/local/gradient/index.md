@@ -11,7 +11,7 @@ quizzes:
   - link: "https://kahoot.it/challenge/05840170?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634138181107"
     name: "Selbsttest Gradientensuche (Kahoot)"
 assignments:
-  - topic: sheet03
+  - topic: sheet02
 youtube:
   - id: TcTF9xdW3WU
 fhmedia:
