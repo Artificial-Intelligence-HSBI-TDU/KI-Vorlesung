@@ -12,6 +12,9 @@ readings:
   - key: "Michalewicz1996"
   - key: "Baeck1996"
   - key: "Nissen1997"
+quizzes:
+  - link: "TODO"
+    name: "Selbsttest Evolutionäre Algorithmen (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
