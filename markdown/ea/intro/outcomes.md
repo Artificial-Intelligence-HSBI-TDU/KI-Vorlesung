@@ -5,20 +5,8 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Problematik der lokalen Minima bei Gradientenverfahren
+*   Überblick über die verschiedenen Strömungen
+*   Prinzipieller Ablauf von Genetischen Algorithmen
 {{% /k2 %}}
-
-{{% k3 %}}
-hammwanich
-{{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
