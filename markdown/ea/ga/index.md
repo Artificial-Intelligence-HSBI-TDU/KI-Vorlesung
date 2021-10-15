@@ -12,6 +12,9 @@ readings:
   - key: "Michalewicz1996"
   - key: "Baeck1996"
   - key: "Nissen1997"
+quizzes:
+  - link: "https://kahoot.it/challenge/0296740?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634289572227"
+    name: "Selbsttest EA/GA (Kahoot)"
 assignments:
   - topic: sheet02
 youtube:
