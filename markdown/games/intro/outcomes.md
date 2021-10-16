@@ -5,6 +5,7 @@ hidden: true
 ---
 
 
-{{% k3 %}}
-*   Minimax-Algorithmus
-{{% /k3 %}}
+{{% k2 %}}
+*   Spiele als Suchproblem
+*   Eigenschaften guter Spielalgorithmen
+{{% /k2 %}}
