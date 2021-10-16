@@ -5,20 +5,13 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Optimierungsmöglichkeiten für Minimax/alpha-beta-Pruning:
+    *   Sortierung der Nachfolger => Heuristik
+    *   Suchtiefe beschränken => Übergang zu Bewertungsfunktion
+    *   Bewertung über Spieldatenbanken
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   alpha-beta-Pruning
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
