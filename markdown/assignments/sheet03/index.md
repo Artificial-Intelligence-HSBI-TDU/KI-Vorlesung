@@ -31,9 +31,9 @@ links nach rechts.
 
 
 
-## A3.2: Optimale Spiele: Minimax und alpha-beta-Pruning (3P)
+## A3.2: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
 
-1.  (1P) Implementieren Sie den Minimax-Algorithmus (wie in der VL
+1.  (2P) Implementieren Sie den Minimax-Algorithmus (wie in der VL
     besprochen) am Beispiel *Tic Tac Toe* in einer Sprache Ihrer Wahl.
 
 2.  (1P) Ergänzen Sie Ihre Implementierung um alpha-beta-Pruning.
@@ -45,7 +45,7 @@ links nach rechts.
 
 
 
-## A3.3: Minimax vereinfachen (2P)
+## A3.3: Minimax vereinfachen (1P)
 
 Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die
 Eigenschaft *Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value`
@@ -63,31 +63,15 @@ Algorithmus.
 ## A3.4: Suchtiefe begrenzen (1P)
 
 Die Verwendung der Suchtiefenbeschränkung erfordert den Einsatz einer
-Evaluierungsfunktion. Betrachten Sie die folgende Definition einer
-Evaluierungsfunktion für *Tic-Tac-Toe*:^[Quelle: [AIMA 3rd ed.](http://aima.cs.berkeley.edu)]
+Evaluierungsfunktion.
 
-> Sei $X_n$ die Anzahl der Zeilen, Spalten und Diagonalen mit genau $n$
-> $X$-Symbolen. Analog sei $O_n$ die Anzahl der Zeilen, Spalten und Diagonalen
-> mit genau $n$ $O$-Symbolen. Die Evaluierungsfunktion $\operatorname{Eval}(s)$
-> für einen Spielzustand $s$ ist dann wie folgt definiert:
-> $$
->    \operatorname{Eval}(s) = \left\{
->    \begin{array}{l@{\qquad}l}
->    +1 & \text{falls } X_3(s)=1\\
->    -1 & \text{falls } O_3(s)=1\\
->    3X_2(s) + X_1(s) - (3O_2(s) + O_1(s)) & \text{sonst}
->    \end{array}
->    \right.
->$$
+Betrachten Sie die auf
+[https://github.com/aimacode/aima-exercises/blob/master/markdown/5-Adversarial-Search/exercises/ex_9/question.md](https://aimacode.github.io/aima-exercises/game-playing-exercises/ex_9/)
+dargestellte Definition einer Evaluierungsfunktion für *Tic-Tac-Toe*.
 
 Geben Sie die Werte der Evaluierungsfunktion für sechs verschiedene
 Spielzustände an (3 Endzustände, 3 Zwischenzustände). Begründen Sie, warum
 diese Evaluierungsfunktion im Zusammenhang mit *Tic-Tac-Toe* sinnvoll sein kann.
-
-<!-- XXX
-Lesart: "genau" ein X/O, d.h. die 2er-Wertung nur, wenn nicht noch ein anderes
-Symbol dazwischen; dito die 1er-Wertung keine anderen Symbole in der Zeile ...
--->
 
 *Thema*: Suchtiefenbegrenzung und Evaluierungsfunktion
 
