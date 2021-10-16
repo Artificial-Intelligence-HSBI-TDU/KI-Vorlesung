@@ -2,38 +2,31 @@
 type: assignment
 title: "Blatt 03: Spiele"
 author: "Carsten Gips (FH Bielefeld)"
+points: 10
 hidden: true
 weight: 3
-sketch: true
 ---
 
 
 
-## XXX (3P)
+## A3.1: XXX (3P)
 
 ...
 
 
 
-## XXX (3P)
+## A3.2: XXX (3P)
 
 ...
 
 
 
-## XXX (3P)
+## A3.3: XXX (3P)
 
 ...
 
 
 
-## XXX (1P)
+## A3.4: XXX (1P)
 
 ...
-
-
-
-{{% challenges %}}
-## Bonus: Wuppie (2P)
-Erstellen Sie ...
-{{% /challenges %}}
