@@ -11,9 +11,8 @@ Wenn `Max` gewonnen hat, wird der Spielausgang mit +1 bewertet, wenn `Min` gewon
 mit -1, und mit 0 sonst. Damit hat man ein sogenanntes "Nullsummenspiel" (der Gewinn des
 einen Spielers ist der Verlust des anderen) und kann den Algorithmus so gestalten, dass
 `Max` stets den Zug wählt, der das Spielergebnis maximiert und `Min` entsprechend den
-Zug wählt, der das Spielergebnis minimiert.
+Zug wählt, der das Spielergebnis minimiert (daher auch die Namen der Spieler).
 
 Minimax baut den gesamten Spielbaum bis zu den Blättern auf. Die Blätter (Spielausgang)
 werden mit einer `Utility`-Funktion bewertet, und diese Bewertung wird dann im Spielbaum
 nach oben gereicht.
-
