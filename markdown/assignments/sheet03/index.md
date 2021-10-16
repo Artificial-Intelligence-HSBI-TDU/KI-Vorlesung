@@ -67,7 +67,7 @@ Evaluierungsfunktion.
 
 Betrachten Sie die auf
 [https://github.com/aimacode/aima-exercises/blob/master/markdown/5-Adversarial-Search/exercises/ex_9/question.md](https://aimacode.github.io/aima-exercises/game-playing-exercises/ex_9/)
-dargestellte Definition einer Evaluierungsfunktion für *Tic-Tac-Toe*.
+gegebene Evaluierungsfunktion für *Tic-Tac-Toe*.
 
 Geben Sie die Werte der Evaluierungsfunktion für sechs verschiedene
 Spielzustände an (3 Endzustände, 3 Zwischenzustände). Begründen Sie, warum
