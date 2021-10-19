@@ -69,18 +69,13 @@ fhmedia:
 
 \medskip
 
-*   **Problem**: Suchbäume werden in Praxis riesig
+*   **Problem**: Suchbäume werden in Praxis riesig: **Schach**:
+    -   Im Mittel 35 Aktionen (*branching factor*) von jeder Position
+    -   Oft mehr als 40 Züge pro Spieler => Suchbäume mit mehr als 80 Ebenen
+    -   $35^{80} \approx 10^{123}$ mögliche Knoten!
+    -   (Aber "nur" rund $10^{40} _verschiedene_ Zustände)
 
-    *   **Schach**: Im Mittel 35 Aktionen von jeder Position; oft mehr als
-        50 Züge pro Spieler \newline (Suchbäume mit mehr als 100 Ebenen):
-        $35^{100} \approx 10^{154}$ mögliche Knoten!
-
-        \smallskip
-
-    *   **Go**: Im Mittel 200 Aktionen; mehr als 300 Züge:
-        $200^{300} \approx 10^{700}$ Knoten im Suchbaum!
-
-    [Quelle: [@Russell2020]]{.origin}
+    [Quelle: [@Russell2020, S. 193/196]]{.origin}
 
 
 ## Eigenschaften guter Spielalgorithmen
