@@ -80,12 +80,12 @@ ist.
 ## Zufallsspiele
 
 ::: center
-![](images/backgammon-position.png){width="50%"}
+![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 5.12, S. 47], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+[Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
 :::
 
-Backgammon: Weiss hat 6+5 gewürfelt und hat 4 legale Züge.
+Backgammon: Was ist in dieser Situation der optimale Zug?
 
 
 ## Minimax mit Zufallsspielen: ZUFALLS-Knoten
@@ -143,5 +143,5 @@ $$
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   TODO (what, where, license)
+*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 :::
