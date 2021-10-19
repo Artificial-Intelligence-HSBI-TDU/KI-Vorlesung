@@ -10,7 +10,7 @@ readings:
   - key: "Ertel2017"
 quizzes:
   - link: TODO
-    name: "Selbsttest Intro Spiele (Kahoot)
+    name: "Selbsttest Intro Spiele (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
