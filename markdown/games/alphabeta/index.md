@@ -131,7 +131,7 @@ Punkte bringt) überschrieben werden!!!!
 **Achtung**: Es kursieren Varianten von diesem Algorithmus, bei denen auf die
 Hilfsvariable `v` verzichtet wird und stattdessen `alpha` bzw. `beta` direkt
 modifiziert werden und als Rückgabewert dienen. Das *kann* zu anderen oder falschen
-Ergebnissen führen! Sie können das in der Aufgabe auf B04 gut sehen.
+Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut sehen.
 :::
 
 [Tafelbeispiel Handsimulation]{.bsp}
@@ -139,11 +139,11 @@ Ergebnissen führen! Sie können das in der Aufgabe auf B04 gut sehen.
 
 ## alpha-beta-Pruning -- Eigenschaften
 
-*   Pruning beeinflusst nicht das Endergebnis!
+1.  Pruning beeinflusst nicht das Endergebnis!
 
-*   Sortierung der Nachfolger spielt große Rolle
+2.  Sortierung der Nachfolger spielt große Rolle
 
-*   Perfekte Sortierung: $O(b^{d/2})$ => Verdopplung der Suchtiefe möglich
+3.  Perfekte Sortierung: $O(b^{d/2})$ => Verdopplung der Suchtiefe möglich
 
 \bigskip
 Für Schach immer noch zu aufwändig ...
