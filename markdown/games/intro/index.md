@@ -29,9 +29,9 @@ fhmedia:
 [Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
 :::
 
-\bigskip
-
-[**Was ist der beste Zug?!**]{.alert}
+::: notes
+Zwei Spieler, ein Spielstand und ein Würfelergebnis: [**Was ist jetzt der beste Zug?!**]{.alert}
+:::
 
 
 ## Motivation: Unterschied zu Suche?!
@@ -67,13 +67,15 @@ fhmedia:
     *   Aktionen wohldefiniert (und i.d.R. sehr einfach)
     *   Realisierung als Suchproblem möglich
 
-\medskip
+\bigskip
 
-*   **Problem**: Suchbäume werden in Praxis riesig: **Schach**:
+*   **Problem**: Suchbäume werden in Praxis riesig
+
+    Beispiel **Schach**:
     -   Im Mittel 35 Aktionen (*branching factor*) von jeder Position
     -   Oft mehr als 40 Züge pro Spieler => Suchbäume mit mehr als 80 Ebenen
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
-    -   (Aber "nur" rund $10^{40} _verschiedene_ Zustände)
+    -   (Aber "nur" rund $10^{40}$ _verschiedene_ Zustände)
 
     [Quelle: [@Russell2020, S. 193/196]]{.origin}
 
@@ -96,7 +98,14 @@ fhmedia:
 
 ## Wrap-Up
 
-TODO
+*   Spiele kann man als Suchproblem betrachten
+*   Merkmale:
+    -   Mehrere Agenten beteiligt
+    -   Beobachtbarkeit der Umgebung
+    -   Zufallskomponente
+    -   Spielstrategie
+*   Problem: Riesige Spielbäume
+*   Umgang mit begrenzten Ressourcen (Zeit, Speicher)
 
 
 
@@ -112,5 +121,5 @@ TODO
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   TODO (what, where, license)
+*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 :::
