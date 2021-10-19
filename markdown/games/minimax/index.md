@@ -47,7 +47,8 @@ fhmedia:
     zu kommen *(unabhängig von den Entscheidungen des Gegenspielers)*
     => einfacher Pfad von Start zu Ziel reicht nicht
 
-*Hinweis*: Nullsummenspiel!
+*Hinweis*: Nullsummenspiel! (Der Gewinn des einen Spielers ist der Verlust des
+anderen Spielers.)
 
 Eine mit dem Minimax-Algorithmus berechnete Strategie wird auch
 *Minimax-Strategie* genannt. Sie sichert dem betreffenden Spieler den
@@ -64,7 +65,7 @@ nicht unbedingt eine optimale Strategie.
 :::
 
 ::: center
-![](images/tttSpielbaum.png){width="70%"}
+![](images/tttSpielbaum.png){width="50%"}
 :::
 
 
@@ -110,12 +111,21 @@ def Min-Value(state):
 ```
 
 ::: notes
-*Hinweis*: In der Literatur finden Sie auch eine Variante mit einem
-zusätzlichen Tiefenparameter, um bei einer bestimmten Suchtiefe abbrechen
-zu können.
+**Hinweis I**: Auf [wikipedia.org/wiki/Minimax](https://en.wikipedia.org/wiki/Minimax#Pseudocode)
+finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
+Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
+Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine `Eval()`-Funktion
+braucht (vgl. `["Minimax: Heuristiken"]({{<ref "/games/heuristics" >}})`{=markdown}).
 
 Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen
 Parameter nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!
+
+
+**Hinweis II**: Im [@Russell2020, S. 196, Abb. 6.3] findet sich eine Variante, die die
+auf der nächsten Folien gezeigte Startfunktion mit den hier gezeigten `Min-Value()`-
+und `Max-Value()`-Funktionen verschmilzt. Dabei wird in den beiden Hilfsfunktionen
+nicht nur der `min`- bzw. `max`-Wert optimiert, sondern auch der jeweils beste Zug
+gespeichert und als Rückgabe zurückgeliefert.
 :::
 
 
@@ -131,8 +141,6 @@ def Minimax(state):
     return action
 ```
 
-\vfill
-
 ::: notes
 *   Startknoten ist ein MAX-Knoten
 *   Nicht nur Kosten, sondern auch die zugehörige Aktion speichern
@@ -141,7 +149,7 @@ def Minimax(state):
 
 ## Minimax Beispiel
 
-![](images/minimaxBeispiel.png)
+![](images/minimaxBeispiel.png){width="60%"}
 
 [Tafelbeispiel Handsimulation]{.bsp}
 
@@ -154,11 +162,13 @@ def Minimax(state):
 *   => Zeitkomplexität $O(b^m)$
 
 \bigskip
-erster Zug: $b$ Möglichkeiten \newline
-zweiter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b*b = b^2$ \newline
-dritter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b*(b*b) = b^3$ \newline
-... \newline
-$m$. Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b^m$
+
+Gedankenexperiment:
+-   erster Zug: $b$ Möglichkeiten,
+-   zweiter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b \star b = b^2$,
+-   dritter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b \star (b \star b) = b^3$,
+-   ...,
+-   $m$. Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b^m$
 :::
 
 
@@ -182,7 +192,4 @@ $m$. Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b^m$
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
