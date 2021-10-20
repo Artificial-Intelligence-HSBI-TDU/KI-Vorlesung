@@ -14,9 +14,9 @@ quizzes:
 assignments:
   - topic: sheet03
 youtube:
-  - id: TODO
+  - id: wVYhbgtzxhs
 fhmedia:
-  - link: TODO
+  - link: "https://www.fh-bielefeld.de/medienportal/m/6d02dc45505b838df7eaa0a5d8c4a65d608a2898f699716db3576caa9abf421debb61c3d5fc4c5effb0b5213b76c573df50d6aff203199eba8d66548c3238ba3"
     name: "Direktlink FH-Medienportal: KI Einführung Optimale Spiele"
 ---
 
