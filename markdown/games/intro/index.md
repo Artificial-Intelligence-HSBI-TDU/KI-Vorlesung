@@ -6,50 +6,103 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
+    comment: "Einführung Spiele: Abschnitt 6.1"
   - key: "Ertel2017"
-quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
 assignments:
-  - topic: blatt01
+  - topic: sheet03
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: wVYhbgtzxhs
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
-sketch: true
+  - link: "https://www.fh-bielefeld.de/medienportal/m/6d02dc45505b838df7eaa0a5d8c4a65d608a2898f699716db3576caa9abf421debb61c3d5fc4c5effb0b5213b76c573df50d6aff203199eba8d66548c3238ba3"
+    name: "Direktlink FH-Medienportal: KI Einführung Optimale Spiele"
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Backgammon: Zwei Spieler, was ist der beste Zug?
 
-## Backgammon: Weiss hat 6+5 gewürfelt und hat 4 legale Züge
+::: center
+![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
-...
+[Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
+:::
+
+::: notes
+Zwei Spieler, ein Spielstand und ein Würfelergebnis: [**Was ist jetzt der beste Zug?!**]{.alert}
+:::
+
 
 ## Motivation: Unterschied zu Suche?!
 
-...
+::: center
+![](images/tttEnd.png){width="30%"}
+:::
+
+\pause
+
+\bigskip
+=> Mehrere [**konkurrierende**]{.alert} Agenten an Suche beteiligt!
+
+=> (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
+
 
 ## Spiele und Umgebungen
 
-...
+|                      | Deterministisch   | Zufallskomponente        |
+|:---------------------|:------------------|:-------------------------|
+| Voll beobachtbar     | Schach, Go, ...   | Backgammon, Monopoly     |
+| Partiell beobachtbar | Schiffe-versenken | Bridge, Poker, Skat, ... |
+
+
+\bigskip
+=> Bis auf Roboterfußball in KI traditionell keine physischen Spiele!
+
 
 ## Brettspiele sind interessant für KI
 
-...
+*   Brettspiele gut abstrakt darstellbar:
+    *   Zustände einfach repräsentierbar
+    *   Aktionen wohldefiniert (und i.d.R. sehr einfach)
+    *   Realisierung als Suchproblem möglich
+
+\bigskip
+
+*   **Problem**: Suchbäume werden in Praxis riesig
+
+    Beispiel **Schach**:
+    -   Im Mittel 35 Aktionen (*branching factor*) von jeder Position
+    -   Oft mehr als 40 Züge pro Spieler => Suchbäume mit mehr als 80 Ebenen
+    -   $35^{80} \approx 10^{123}$ mögliche Knoten!
+    -   (Aber "nur" rund $10^{40}$ _verschiedene_ Zustände)
+
+    [Quelle: [@Russell2020, S. 193/196]]{.origin}
+
 
 ## Eigenschaften guter Spielalgorithmen
 
-...
+*   Zeit begrenzt
+    *   Irgendeine gute Entscheidung treffen! => Bewertungsfunktion [(auch für Zwischenzustände)]{.notes}
+
+\smallskip
+
+*   Speicher begrenzt
+    *   Evaluierungsfunktion für Zwischenzustände
+    *   Löschen von irrelevanten Zweigen
+
+\smallskip
+
+*   Strategien nötig
+    *   Vorausschauend spielen (Züge "vorhersehen")
 
 ## Wrap-Up
-...
+
+*   Spiele kann man als Suchproblem betrachten
+*   Merkmale:
+    -   Mehrere Agenten beteiligt
+    -   Beobachtbarkeit der Umgebung
+    -   Zufallskomponente
+    -   Spielstrategie
+*   Problem: Riesige Spielbäume
+*   Umgang mit begrenzten Ressourcen (Zeit, Speicher)
 
 
 
@@ -65,5 +118,5 @@ Lorem Ipsum. Starte mit H2-Level.
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   TODO (what, where, license)
+*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 :::
