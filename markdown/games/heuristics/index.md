@@ -7,9 +7,6 @@ readings:
   - key: "Russell2020"
     comment: "Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5"
   - key: "Ertel2017"
-quizzes:
-  - link: TODO
-    name: "Selbsttest Heuristiken (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
