@@ -13,7 +13,7 @@ quizzes:
 assignments:
   - topic: sheet03
 youtube:
-  - id: _Hq-GCl__bU
+  - id: "`_Hq-GCl__bU`{=markdown}"
 fhmedia:
   - link: "https://www.fh-bielefeld.de/medienportal/m/f7c9b90ff9732933c8899548d0f89eb320b59efeee015383a765494b60b29578aae796e92bf7df5a621ed1f8a6dc50649e3820fcc74c698cd3f25e6987882a53"
     name: "Direktlink FH-Medienportal: KI Alpha-Beta-Pruning"

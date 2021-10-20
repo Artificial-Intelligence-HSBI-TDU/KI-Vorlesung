@@ -13,7 +13,7 @@ quizzes:
 assignments:
   - topic: sheet03
 youtube:
-  - id: aKtF__lMMsw
+  - id: "`aKtF__lMMsw`{=markdown}"
 fhmedia:
   - link: "https://www.fh-bielefeld.de/medienportal/m/1d5286179490be0627b5a19793b423753cba79388b4966b654bde224a31af81c9481e85a30057276826b3d8f7836a042d0f9e15c2cb82613a4374050b62ca6d2"
     name: "Direktlink FH-Medienportal: KI Minimax"
