@@ -13,7 +13,7 @@ quizzes:
 assignments:
   - topic: sheet01
 youtube:
-  - id: dNyLOQuD_aI
+  - id: "`dNyLOQuD_aI`{=markdown}"
 fhmedia:
   - link: "https://www.fh-bielefeld.de/medienportal/m/4c065b44bafcd006400d7ae3ccdc25e04577d164e1aa0e118e29fa643b53bfbcaaa14dd12b93fa89105abc6f782947f7c04c849fb673a92c710da5c6b8c99083"
     name: "Direktlink FH-Medienportal: Best First"
