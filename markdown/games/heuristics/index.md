@@ -13,9 +13,9 @@ quizzes:
 assignments:
   - topic: sheet03
 youtube:
-  - id: TODO
+  - id: rKqNqYBXuK8
 fhmedia:
-  - link: TODO
+  - link: "https://www.fh-bielefeld.de/medienportal/m/e5d279fef94d9a37e3b5d15fe9f807e024152e4c65a5a1110bab7871aff45828dba25d086e6a24f6a3a14111304b15f31c9844ff04473788595054d406790a59"
     name: "Direktlink FH-Medienportal: KI Heuristiken"
 ---
 
