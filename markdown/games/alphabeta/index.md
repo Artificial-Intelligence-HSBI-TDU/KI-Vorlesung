@@ -8,7 +8,7 @@ readings:
     comment: "Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3"
   - key: "Ertel2017"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/08046335?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634752873510"
     name: "Selbsttest Alpha-Beta-Pruning (Kahoot)"
 assignments:
   - topic: sheet03
