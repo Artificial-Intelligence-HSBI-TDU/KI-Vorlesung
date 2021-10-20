@@ -64,11 +64,16 @@ fhmedia:
 
 \pause
 
-::: center
+::: slides
+\bigskip
 ![](images/minimax3.png){width="90%"}
-
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 5.4, S. 42], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
 :::
+
+::: notes
+![](images/minimax3.png){width="50%"}
+:::
+
+[Tafelbeispiel]{.bsp}
 
 ::: notes
 Hier maximiert jeder Spieler sein eigenes Ergebnis. Wenn es an einer Stelle im Suchbaum mehrere gleich gute (beste) Züge
