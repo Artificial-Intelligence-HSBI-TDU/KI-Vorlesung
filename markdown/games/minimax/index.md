@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "Minimax: Abschnitte 5.1 und 5.2"
+    comment: "Minimax: Abschnitt 6.2"
   - key: "Ertel2017"
 quizzes:
   - link: TODO
