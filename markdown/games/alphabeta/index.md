@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 4
 readings:
   - key: "Russell2020"
-    comment: "Alpha-beta-Pruning: Abschnitt 5.3, Erweiterungen: Abschnitte 5.3 -- 5.8"
+    comment: "Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3"
   - key: "Ertel2017"
 quizzes:
   - link: TODO
