@@ -77,7 +77,7 @@ diese Evaluierungsfunktion im Zusammenhang mit *Tic-Tac-Toe* sinnvoll sein kann.
 
 
 
-## A3.4: Minimax generalisiert (1P)
+## A3.5: Minimax generalisiert (1P)
 
 Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu
 evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.
