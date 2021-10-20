@@ -62,8 +62,6 @@ fhmedia:
 
 ## Minimax mit mehreren Spielern
 
-\pause
-
 ::: slides
 \bigskip
 ![](images/minimax3.png){width="90%"}
@@ -76,9 +74,12 @@ fhmedia:
 [Tafelbeispiel]{.bsp}
 
 ::: notes
-Hier maximiert jeder Spieler sein eigenes Ergebnis. Wenn es an einer Stelle im Suchbaum mehrere gleich gute (beste) Züge
-geben sollte, kann der Spieler Allianzen bilden: Er könnte dann einen Zug auswählen, der für einen der Mitspieler günstiger
-ist.
+Hier maximiert jeder Spieler sein eigenes Ergebnis.  Im Grunde müsste diese
+Variante dann besser "Maximax" heissen ...
+
+Wenn es an einer Stelle im Suchbaum mehrere gleich gute (beste) Züge geben
+sollte, kann der Spieler Allianzen bilden: Er könnte dann einen Zug auswählen,
+der für einen der Mitspieler günstiger ist.
 :::
 
 
@@ -95,36 +96,57 @@ Backgammon: Was ist in dieser Situation der optimale Zug?
 
 ## Minimax mit Zufallsspielen: ZUFALLS-Knoten
 
-::: center
-![](images/backgammon-tree.png){width="80%"}
+::: slides
+\bigskip
+![](images/expectimax.png){width="90%"}
+:::
 
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 5.13, S. 48], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+::: notes
+![](images/expectimax.png){width="50%"}
 :::
 
 ::: notes
 Zusätzlich zu den MIN- und MAX-Knoten führt man noch Zufalls-Knoten ein, um
-das Würfelergebnis repräsentieren zu können. Je möglichem Würfelergebnis $d_i$
-gibt es einen Ausgang, an dem die Wahrscheinlichkeit $P(d_i)$ dieses Ausgangs
+das Würfelergebnis repräsentieren zu können. Je möglichem Würfelergebnis $i$
+gibt es einen Ausgang, an dem die Wahrscheinlichkeit $P(i)$ dieses Ausgangs
 annotiert wird.
 :::
 
-=> Für Zufallsknoten *erwarteten* Minimax-Wert (*Expectimax*) nutzen
+=> Für Zufallsknoten **erwarteten** Minimax-Wert (*Expectimax*) nutzen
+
+[Tafelbeispiel]{.bsp}
 
 
 ## Minimax mit Zufall: Expectimax
 
-Expectimax-Wert für Zufallsknoten $C$ (für `Max`-Spieler):
+Expectimax-Wert für Zufallsknoten $C$:
 
 $$
-    \operatorname{Expectimax}(C) = \sum_i P(d_i) \max_{s \in S(C,d_i)} \operatorname{Utility}(s)
+    \operatorname{Expectimax}(C) = \sum_i P(i) \operatorname{Expectimax}(s_i)
 $$
 
 \bigskip
 
-*   $d_i$ mögliches Würfelergebnis
-*   $P(d_i)$ Wahrscheinlichkeit für Würfelergebnis
-*   $S(C,d_i)$ Erreichbare Spielzustände von $C$ aus (gegeben $d_i$)
-*   $\operatorname{Utility}(s)$ Bewertung von Spielzustand $s$
+*   $i$ mögliches Würfelergebnis
+*   $P(i)$ Wahrscheinlichkeit für Würfelergebnis
+*   $s_i$ Nachfolgezustand von $C$ gegeben Würfelergebnis $i$
+
+::: notes
+Für die normalen Min- und Max-Knoten liefert `Expectimax()` die üblichen
+Aufrufe von `Min-Value()` bwz. `Max-Value()`.
+
+Auf [wikipedia.org/wiki/Expectiminimax](https://en.wikipedia.org/wiki/Expectiminimax)
+finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
+Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
+Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine `Eval()`-Funktion
+braucht. Zusätzlich kombiniert der dort gezeigte Algorithmus die Funktionen
+`Expectimax()`, `Min-Value()` und `Max-Value()` in eine einzige Funktion.
+
+Eine ähnliche geschlossene Darstellung finden Sie im [@Russell2020, S. 212].
+
+**Hinweis**: Üblicherweise sind die Nachfolger der Zufallsknoten gleich wahrscheinlich.
+Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger arbeiten.
+:::
 
 
 ## Wrap-Up
