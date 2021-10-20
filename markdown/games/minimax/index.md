@@ -8,7 +8,7 @@ readings:
     comment: "Minimax: Abschnitt 6.2"
   - key: "Ertel2017"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/04050682?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634752921630"
     name: "Selbsttest Minimax (Kahoot)"
 assignments:
   - topic: sheet03
