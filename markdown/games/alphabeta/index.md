@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 4
 readings:
   - key: "Russell2020"
-    comment: "alpha-beta-Pruning: Abschnitt 5.3, Erweiterungen: Abschnitte 5.3 -- 5.8"
+    comment: "Alpha-beta-Pruning: Abschnitt 5.3, Erweiterungen: Abschnitte 5.3 -- 5.8"
   - key: "Ertel2017"
 quizzes:
   - link: TODO
@@ -22,10 +22,14 @@ fhmedia:
 
 ## Verbesserung Minimax-Algorithmus
 
-::: center
+::: slides
+\bigskip
+\bigskip
 ![](images/minimax.png){width="80%"}
+:::
 
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 5.2, S. 41], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+::: notes
+![](images/minimax.png){width="40%"}
 :::
 
 \bigskip
@@ -34,7 +38,7 @@ fhmedia:
 [Tafelbeispiel: Baum und Verbesserungen]{.bsp}
 
 
-## alpha-beta-Pruning
+## Alpha-beta-Pruning
 
 Minimax-Algorithmus mit zusätzlichen Informationen:
 
@@ -46,7 +50,6 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 \pause
 
 => Beobachtungen:
-
 1.  $\alpha$ für MAX-Knoten wird nie kleiner
 2.  $\beta$ für MIN-Knoten wird nie größer
 
@@ -71,7 +74,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 :::
 
 
-## alpha-beta-Pruning -- Der Algorithmus (Skizze)
+## Alpha-beta-Pruning -- Der Algorithmus (Skizze)
 
 ```python
 def Max-Value(state, alpha, beta):
@@ -104,40 +107,17 @@ def Min-Value(state, alpha, beta):
 
 Initialer Aufruf von `Max-Value()` mit $\alpha = -\infty$ und $\beta = +\infty$
 
-<!-- XXX
-In Wikipedia (https://de.wikipedia.org/wiki/Alpha-Beta-Suche) ist eine
-alternative Darstellung: Tiefenbegrenzung und Verzicht auf die Hilfsvariable
-`v`, d.h. es wird direkt Alpha bzw. Beta modifiziert.
-
-Der Originalalgorithmus im AIMA gibt das Alpha/Beta nach unten und ändert es,
-wenn von den Kindern etwas Besseres zurück kommt. Der Rückgabewert ist entweder
-die Hilfsvariable `v`, sofern die Kinder schlechter sind als die Werte, die von
-oben kommen, oder Alpha/Beta, wenn die Kinder besser sind.
-
-Die vereinfachte Version führt im Beispiel auf B04 zu einem Problem: In Knoten
-`C` hat man nach Besuch von `E` die Werte $[3, 9]$ und gibt diese nach `F`
-runter. Die Hilfsvariable `v` bekommt dort den Wert $2$. Der AIMA-Algorithmus
-würde die $2$ (`v`) zurückliefern, der vereinfachte Algorithmus $3$ (Alpha).
-Damit wird im AIMA-Algorithmus in `C` die Bewertung $[3, 2]$ und es wird ganz
-deutlich abgebrochen und eine $2$ nach oben zu `A` geschickt, wodurch sich dort
-nichts ändert. Der vereinfachte Algorithmus bricht in `C` ebenfalls ab, aber
-nur knapp ($[3, 3]$) und reicht eine $3$ nach `A` hoch. Je nach Implementierung
-der `MAX()`-Funktion könnte u.U. dadurch der bisherige $3$-Punkte-Zug nach `B`
-von einem angeblichen $3$-Punkte-Zug nach `C` (der in Wirklichkeit nur $2$
-Punkte bringt) überschrieben werden!!!!
--->
-
 ::: notes
 **Achtung**: Es kursieren Varianten von diesem Algorithmus, bei denen auf die
 Hilfsvariable `v` verzichtet wird und stattdessen `alpha` bzw. `beta` direkt
 modifiziert werden und als Rückgabewert dienen. Das *kann* zu anderen oder falschen
-Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut sehen.
+Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 :::
 
 [Tafelbeispiel Handsimulation]{.bsp}
 
 
-## alpha-beta-Pruning -- Eigenschaften
+## Alpha-beta-Pruning -- Eigenschaften
 
 1.  Pruning beeinflusst nicht das Endergebnis!
 
@@ -149,7 +129,7 @@ Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut sehen.
 Für Schach immer noch zu aufwändig ...
 
 
-## Verbesserungen für alpha-beta-Pruning
+## Verbesserungen für Alpha-beta-Pruning
 
 *   "Killer-Move": Maximale Effizienz nur wenn **optimaler Zug immer zuerst** [untersucht]{.notes} \newline
     => Zu untersuchende Züge **sortieren/priorisieren**, zb. Schach:
@@ -174,15 +154,15 @@ Für Schach immer noch zu aufwändig ...
 
 ## Beispiel DeepBlue (IBM, 1997)
 
-*   alpha-beta-Pruning mit Tiefenbeschränkung: ca. 14 Halbzüge
+*   Alpha-beta-Pruning mit Tiefenbeschränkung: ca. 14 Halbzüge
 *   Dynamische Tiefenbeschränkung (stellungsabhängig, max. ca. 40 Züge)
 *   Heuristische Stellungsbewertung `Eval`:
     *   mehr als 8.000 Features
     *   ca. 4.000 Eröffnungsstellungen
-    *   ca. 700.000 Spielsituationen
+    *   ca. 700.000 Spielsituationen (von Experten bewertet)
     *   Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen
 
-[Quelle: [@Russell2020]]{.origin}
+[Quelle: [@Russell2014, S. 185]]{.origin}
 
 
 ## Beispiel AlphaGo (Google, 2016)
@@ -203,7 +183,7 @@ Für Schach immer noch zu aufwändig ...
 
 ## Wrap-Up
 
-*   alpha-beta-Pruning:
+*   Alpha-beta-Pruning:
     *   Mitführen der bisher besten Werte für MAX und MIN: $\alpha$ und $\beta$
     *   Abschneiden von Pfaden, die Verschlechterung bewirken würden
     *   Endergebnis bleibt erhalten
@@ -228,7 +208,4 @@ Für Schach immer noch zu aufwändig ...
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
