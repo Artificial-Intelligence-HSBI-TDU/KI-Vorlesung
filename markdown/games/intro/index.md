@@ -8,9 +8,6 @@ readings:
   - key: "Russell2020"
     comment: "Einführung Spiele: Abschnitt 6.1"
   - key: "Ertel2017"
-quizzes:
-  - link: TODO
-    name: "Selbsttest Intro Spiele (Kahoot)"
 assignments:
   - topic: sheet03
 youtube:
