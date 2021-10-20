@@ -5,20 +5,16 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Minimax für mehr als zwei Spieler
+*   Minimax mit Zufallskomponente
+*   Optimierungsmöglichkeiten für Minimax:
+    *   Sortierung der Nachfolger => Heuristik
+    *   Suchtiefe beschränken => Übergang zu Bewertungsfunktion
+    *   Bewertung über Spieldatenbanken
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Minimax-Algorithmus
+*   Tiefenbeschränkung und Bewertungsfunktion bei Minimax
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
