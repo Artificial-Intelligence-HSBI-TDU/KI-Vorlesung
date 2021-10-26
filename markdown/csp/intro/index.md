@@ -6,21 +6,19 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
+    comment: "CSP, AC3: Abschnitte 6.1 und 6.2"
+  - key: "Kumar1992"
+  - key: "Bartak2001"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: "TODO"
+    name: "Selbsttest Intro CSP (Kahoot)"
 assignments:
-  - topic: blatt01
+  - topic: sheet04
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
-sketch: true
+  - link: "TODO"
+    name: "Direktlink FH-Medienportal: KI Intro CSP"
 ---
 
 
@@ -28,35 +26,145 @@ sketch: true
 
 ... Beispiel Map-Coloring-Problem
 
-## Problem
-...
+![](https://upload.wikimedia.org/wikipedia/commons/0/0d/Germany_location_map.svg)
 
-## Lösung
+NordNordWest, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+https://commons.wikimedia.org/wiki/File:Germany_location_map.svg
 
-...
+## Motivation: Einfärben von Landkarten
 
-## Formalisierung
+::: center
+![](images/australia.png){width="60%"}
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1 (a), S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::
 
-...
+
+## Einfärben von Landkarten: Formalisierung
+
+:::::: slides
+::: center
+![](images/australia.png){width="35%"}
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1 (a), S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::
+::::::
+
+\bigskip
+\bigskip
+
+*   **Variablen**: WA, NT, SA, Q, NSW, V, T
+*   **Werte**: $\lbrace red, green, blue \rbrace$
+*   **Constraints**: Benachbarte Regionen müssen unterschiedliche Farben haben
+
+\smallskip
+
+*   **Mögliche Lösung**: Zuweisung an Variablen ("Belegung")
+    $\lbrace \operatorname{WA} = red , \operatorname{NT} = green, \operatorname{Q} = red ,
+    \operatorname{NSW} = green, \operatorname{V} = red , \operatorname{SA} = blue,
+    \operatorname{T} = green \rbrace$
+
 
 ## Definition: Constraint Satisfaction Problem (CSP)
 
-...
+*   Ein CSP $\langle V, D, C \rangle$ besteht aus:
+    *   Menge von **Variablen** $V = \lbrace V_1, V_2, \ldots, V_n \rbrace$
+    *   Je $V_i$ nicht leere **Domäne** $D_i = \lbrace d_{i,1}, d_{i,2}, \ldots, d_{i,m_i} \rbrace$
+    *   Menge von **Constraints** $C = \lbrace C_1, C_2, \ldots, C_p \rbrace$ \newline
+        (Randbedingungen, Abhängigkeiten zwischen Variablen)
+
+\smallskip
+
+*   Zuweisung/Belegung (*Assignment*) $\alpha$:
+    *   Zuweisung von Werten an (einige/alle) Variablen:
+        $\alpha = \lbrace X=a, Y=b, \ldots \rbrace$ \newline
+        (aus den jeweiligen Wertebereichen)
+    *   **Konsistente Belegung**: Randbedingungen sind nicht verletzt
+    *   **Vollständige Belegung**: Alle Variablen sind belegt
+
+\smallskip
+
+*   **Lösung** eines CSP: Vollständige und konsistente Belegung
+
 
 ## Constraint-Graph
 
-...
+::: center
+![](images/australia-csp.png)
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1, S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::
 
-## Constraints und Arität
+::: notes
+Ein CSP kann man auch als Constraint-Graph darstellen. Die Variablen werden zu Knoten im
+Graph, die Constraints zu Kanten zwischen den Knoten. Dadurch kann man die aus dem Problemlösen
+bekannten Algorithmen anwenden ...
+:::
 
-...
 
-## Unterscheidung Wertebereiche
+## Constraints -- Arität
 
-...
+*   **unär**: betrifft einzelne Variablen \newline
+    Beispiel: $\operatorname{WA} \neq red$
+
+\smallskip
+
+*   **binär**: betrifft Paare von Variablen \newline
+    Beispiel: $\operatorname{WA} \neq \operatorname{NT}$
+
+\smallskip
+
+*   **höhere Ordnung**: betrifft 3 oder mehr Variablen
+
+\bigskip
+
+*   **Präferenzen**: "soft constraints" \newline
+    Beispiel: "rot ist besser als grün"
+
+    Abbildung über Gewichtung => Constraint-Optimierungsproblem (COP)
+
+
+## Constraints -- Wertebereiche
+
+*   **Endliche Domänen**: $d$ Werte => $O(d^n)$ mögliche Zuweisungen \newline
+    (exponentiell in der Zahl der Variablen)
+
+\smallskip
+
+*   **Unendliche Domänen**: reelle Zahlen, natürliche Zahlen \newline
+    => Keine Auflistung der erlaubten Wertekombinationen mehr möglich \newline
+    => Übergang zu Gleichungen/Ungleichungen: $job_1+5<job_2$
+    *   lineare Constraints
+    *   nichtlineare Constraints
+
+\bigskip
+
+**Historische Unterscheidung**:
+
+*   **Constraint Satisfaction**: endliche Domänen, kombinatorische Methoden
+*   **Constraint Solving**: unendliche Domänen
+
+
+## CSP sind überall ...
+
+\pause
+
+*   Stundenpläne (Klassen, Räume, Zeiten)
+
+*   Konfiguration (Computer, Autos, ...)
+
+*   Fahrpläne (Zug, Flug, ...)
+
+*   Planung von komplexen Projekten
+
+*   Sudoku :-)
+
+*   ...
+
 
 ## Wrap-Up
-...
+
+*   Definitionen und Begriffe:
+    *   Variable, (un-) endliche Domänen, Wertemenge
+    *   Constraint, Arität, CSP
+    *   Zuweisung, Lösung, ...
 
 
 
