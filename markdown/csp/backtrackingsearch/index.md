@@ -5,34 +5,96 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
+    comment: "CSP, AC3: Abschnitte 6.1 und 6.2"
+  - key: "Kumar1992"
+  - key: "Bartak2001"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+  - link: "TODO"
+    name: "Selbsttest BT-Suche für CSP (Kahoot)"
 assignments:
-  - topic: blatt01
+  - topic: sheet04
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
-sketch: true
+  - link: "TODO"
+    name: "Direktlink FH-Medienportal: KI BT-Suche für CSP"
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Einfärben von Landkarten als CSP
 
-## Suche mit TS und Backtracking
+::: center
+![](images/australia-csp.png)
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1, S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::
 
-... Tiefensuche angewendet
+
+## Endliche Domänen: Formulierung als Suchproblem
+
+```python
+def Backtrack(assignment, csp):
+    if complete(assignment): return assignment
+
+    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
+
+    for value in ORDER-DOMAIN-VALUES(csp, var):
+        if consistent(value, var, assignment, csp):
+            assignment += {var = value}
+
+            if INFERENCE(csp, assignment, var) != failure:
+                result = Backtrack(assignment, csp)
+                if result != failure: return result
+
+            assignment -= {var = value}
+
+    return failure
+```
+
+::: notes
+Start mit leerem Assignment, schrittweise Variablen Werte zuweisen, notfalls Backtracking
+:::
+
+
+## BT-Suche für CSP am Beispiel Landkartenfärbeproblem
+
+::::::::: slides
+:::::: columns
+::: {.column width="40%"}
+``` {.python size="tiny"}
+def Backtrack(assignment, csp):
+    if complete(assignment): return assignment
+
+    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
+
+    for value in ORDER-DOMAIN-VALUES(csp, var):
+        if consistent(value, var, assignment, csp):
+            assignment += {var = value}
+
+            if INFERENCE(csp, assignment, var) != failure:
+                result = Backtrack(assignment, csp)
+                if result != failure: return result
+
+            assignment -= {var = value}
+
+    return failure
+```
+:::
+::: {.column width="60%"}
+![](images/backtrack-progress.png)
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.6, S. 53], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::
+::::::
+:::::::::
+
+::::::::: notes
+![](images/backtrack-progress.png)
+[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.6, S. 53], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+:::::::::
+
 
 ## Wrap-Up
-...
+
+*   Lösung von CSP mit endlichen Domänen mit Hilfe der BT-Suche
 
 
 
