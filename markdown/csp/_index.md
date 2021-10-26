@@ -15,9 +15,9 @@ Was haben [Typ-Inferenz](https://en.wikipedia.org/wiki/Type_inference),
 das [Erstellen von Stundenplänen](https://en.wikipedia.org/wiki/Resource_allocation)
 gemeinsam?
 
-Es sind eine bestimmte Art von Suchproblemen, wobei den Parametern (Variablen)
-Werte zugewiesen werden müssen, so dass Einschränkungen bzw. Relationen zwischen
-den Variablen gelten.
+Es handelt sich um eine bestimmte Art von Suchproblemen, wobei den Parametern
+(Variablen) Werte so zugewiesen werden müssen, dass Einschränkungen bzw.
+Relationen zwischen den Variablen gelten.
 
 
 {{< children showhidden="true" >}}
