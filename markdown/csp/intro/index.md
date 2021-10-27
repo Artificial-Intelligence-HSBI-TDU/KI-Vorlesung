@@ -6,7 +6,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "CSP, AC3: Abschnitte 6.1 und 6.2"
+    comment: "CSP: Abschnitt 5.1"
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
