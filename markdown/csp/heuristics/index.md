@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 3
 readings:
   - key: "Russell2020"
-    comment: "CSP, AC3: Abschnitte 6.1 und 6.2"
+    comment: "CSP, Backtracking: Abschnitt 5.3"
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
