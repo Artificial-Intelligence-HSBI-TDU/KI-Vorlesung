@@ -32,34 +32,19 @@ Zuweisung eines Wertes an Variable $X$:
 
 \bigskip
 
-**Lösung**: Nach Zuweisung alle nicht zugewiesenen Nachbarvariablen prüfen
+**Lösung**: Nach Zuweisung alle *nicht zugewiesenen Nachbarvariablen* prüfen
 
 
 ## INFERENCE: Vorab-Prüfung (Forward Checking)
 
-``` {.python size="tiny"}
-def Backtrack(assignment, csp):
-    if complete(assignment): return assignment
-
-    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
-
-    for value in ORDER-DOMAIN-VALUES(csp, var):
-        if consistent(value, var, assignment, csp):
-            assignment += {var = value}
-
-            if INFERENCE(csp, assignment, var) != failure:
-                result = Backtrack(assignment, csp)
-                if result != failure: return result
-
-            assignment -= {var = value}
-
-    return failure
-```
+::: center
+![](images/bt_search_inference.png){width="65%"}
+:::
 
 \bigskip
 
 ::: notes
-[**Inference**]{.alert}: Frühzeitiges Erkennen von Fehlschlägen!
+[**Inference**]{.alert}: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [@Russell2020, S. 178])
 :::
 
 Nach Zuweisung eines Wertes an Variable $X$:
@@ -68,28 +53,28 @@ Nach Zuweisung eines Wertes an Variable $X$:
     *   Falls Constraints zw. $X$ und $Y$, dann ...
     *   ... entferne alle inkonsistenten Werte aus dem Wertebereich von $Y$.
 
-[Tafelbeispiel:  Forward Checking (WA=red, Q=green)]{.bsp}
+[Tafelbeispiel:  Forward Checking (A=red, D=green)]{.bsp}
 
 ::: notes
-1.  Sei WA auf rot gesetzt => entferne rot in NT und SA
-2.  Sei Q auf grün gesetzt => entferne grün in NT und SA und NSW
+Beispiel:
+1.  Sei A auf rot gesetzt => entferne rot in B und C
+2.  Sei D auf grün gesetzt => entferne grün in B und C und E
 
-Problem: Für NT und SA bleibt nur noch blau; sind aber benachbart!
+Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 :::
 
 
 ## Forward Checking findet nicht alle Inkonsistenzen!
 
 ::: center
-![](images/forward-checking-progress.png){width="60%"}
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.7, S. 53], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+![](images/forward_checking.png){width="55%"}
 :::
 
 \bigskip
 \bigskip
 
-*   Nach $\lbrace WA=red, Q=green \rbrace$ bleibt für $NT$ und $SA$ nur noch $blue$
-*   $NT$ und $SA$ sind aber benachbart
+*   Nach $\lbrace A=red, D=green \rbrace$ bleibt für B und C nur noch blue
+*   B und C sind aber benachbart
 
 
 ## Übergang von Forward Checking zu Kantenkonsistenz
@@ -142,31 +127,25 @@ $\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$
 
 ## AC-3 Algorithmus: Herstellen von Kantenkonsistenz
 
-```python
-def AC-3(csp):
-    queue = new Queue(csp.arcs)
+``` python
+def AC3(csp):
+    queue = Queue(csp.arcs)
     while not queue.isEmpty():
         (x,y) = queue.dequeue()
-        if Revise(csp,x,y):
+        if ARC_Reduce(csp,x,y):
             if D_x.isEmpty(): return false
-            for z in x.neighbors():
-                queue.enqueue(z,x)
+            for z in x.neighbors(): queue.enqueue(z,x)
     return true
-```
 
-\bigskip
-
-```python
-def Revise(csp, x, y):
-    revised = false
+def ARC_Reduce(csp, x, y):
+    change = false
     for v in D_x:
         if not (any w in D_y and csp.C_xy(v,w)):
-            D_x.remove(v)
-            revised = true
-    return revised
+            D_x.remove(v);  change = true
+    return change
 ```
 
-https://en.wikipedia.org/wiki/AC-3_algorithm
+[Quelle: Eigener Code basierend auf einer Idee nach [@Russell2020, S. 171, Fig. 5.3]]{.origin}
 
 ::: notes
 *Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten: Jedes Element
@@ -185,12 +164,12 @@ Herstellung von Kantenkonsistenz interpretieren.
 
 ## Einsatz des AC-3 Algorithmus
 
-a)  Vorverarbeitung: Reduktion der Wertemengen *vor* BT-Suche
+1.  Vorverarbeitung: Reduktion der Wertemengen *vor* BT-Suche
     *   Nach AC-3 evtl. bereits Lösung gefunden (oder ausgeschlossen)
 
-\smallskip
+\bigskip
 
-b)  Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche \newline
+2.  Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche \newline
     (**MAC** -- Maintaining Arc Consistency)
     *   Nach jeder Zuweisung an $X_i$ Aufruf von AC-3-Variante:
         *   Initial nur Kanten von $X_i$ zu allen noch nicht zugewiesenen Nachbarvariablen
@@ -214,7 +193,4 @@ b)  Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche \newline
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
