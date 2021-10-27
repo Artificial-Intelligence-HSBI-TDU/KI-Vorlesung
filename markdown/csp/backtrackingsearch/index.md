@@ -65,26 +65,7 @@ Backtracking.
 ::::::::: slides
 :::::: columns
 ::: {.column width="40%"}
-``` {.python size="tiny"}
-def BT_Search(assignment, csp):
-    if complete(assignment): return assignment
-
-    var = VARIABLES(csp, assignment)
-
-    for value in VALUES(csp, var):
-        if consistent(value, var, assignment, csp):
-            assignment += {var = value}
-
-            if INFERENCE(csp, assignment, var) != failure:
-                result = BT_Search(assignment, csp)
-                if result != failure: return result
-
-            assignment -= {var = value}
-
-    return failure
-```
-
-[Quelle: Eigener Code basierend auf einer Idee nach [@Russell2020, S. 176, Fig. 5.5]]{.origin}
+![](images/bt_search.png)
 :::
 ::: {.column width="60%"}
 ![](images/map_progress_empty.png)
