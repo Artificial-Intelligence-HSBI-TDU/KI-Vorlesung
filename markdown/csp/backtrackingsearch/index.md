@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "CSP, AC3: Abschnitte 6.1 und 6.2"
+    comment: "CSP, AC3: Abschnitt 5.3"
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
@@ -24,25 +24,24 @@ fhmedia:
 ## Einfärben von Landkarten als CSP
 
 ::: center
-![](images/australia-csp.png)
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1, S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+![](images/map_graph.png){width="80%"}
 :::
 
 
 ## Endliche Domänen: Formulierung als Suchproblem
 
-```python
-def Backtrack(assignment, csp):
+``` python
+def BT-Search(assignment, csp):
     if complete(assignment): return assignment
 
-    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
+    var = VARIABLE(csp, assignment)
 
-    for value in ORDER-DOMAIN-VALUES(csp, var):
+    for value in VALUES(csp, var):
         if consistent(value, var, assignment, csp):
             assignment += {var = value}
 
             if INFERENCE(csp, assignment, var) != failure:
-                result = Backtrack(assignment, csp)
+                result = BT-Search(assignment, csp)
                 if result != failure: return result
 
             assignment -= {var = value}
@@ -51,7 +50,9 @@ def Backtrack(assignment, csp):
 ```
 
 ::: notes
-Start mit leerem Assignment, schrittweise Variablen Werte zuweisen, notfalls Backtracking
+Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem
+Assignment und weise schrittweise Variablen passende Werte zu und mache notfalls
+Backtracking.
 :::
 
 
