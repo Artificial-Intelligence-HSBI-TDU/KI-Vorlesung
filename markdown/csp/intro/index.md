@@ -24,18 +24,15 @@ fhmedia:
 
 ## Motivation: Einfärben von Landkarten
 
-... Beispiel Map-Coloring-Problem
-
-![](https://upload.wikimedia.org/wikipedia/commons/0/0d/Germany_location_map.svg)
-
-NordNordWest, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
-https://commons.wikimedia.org/wiki/File:Germany_location_map.svg
-
-## Motivation: Einfärben von Landkarten
-
 ::: center
-![](images/australia.png){width="60%"}
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1 (a), S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+![](images/map.png){width="50%"}
+:::
+
+::: notes
+Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe
+lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu
+erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander
+grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
 :::
 
 
@@ -43,24 +40,22 @@ https://commons.wikimedia.org/wiki/File:Germany_location_map.svg
 
 :::::: slides
 ::: center
-![](images/australia.png){width="35%"}
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1 (a), S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+![](images/map_numbered.png){width="30%"}
 :::
 ::::::
 
 \bigskip
 \bigskip
 
-*   **Variablen**: WA, NT, SA, Q, NSW, V, T
+*   **Variablen**: A, B, C, D, E, F
 *   **Werte**: $\lbrace red, green, blue \rbrace$
 *   **Constraints**: Benachbarte Regionen müssen unterschiedliche Farben haben
 
 \smallskip
 
 *   **Mögliche Lösung**: Zuweisung an Variablen ("Belegung")
-    $\lbrace \operatorname{WA} = red , \operatorname{NT} = green, \operatorname{Q} = red ,
-    \operatorname{NSW} = green, \operatorname{V} = red , \operatorname{SA} = blue,
-    \operatorname{T} = green \rbrace$
+    $\lbrace \operatorname{A} = red, \operatorname{B} = blue, \operatorname{C} = green,
+    \operatorname{D} = red, \operatorname{E} = blue, \operatorname{F} = blue \rbrace$
 
 
 ## Definition: Constraint Satisfaction Problem (CSP)
@@ -88,8 +83,7 @@ https://commons.wikimedia.org/wiki/File:Germany_location_map.svg
 ## Constraint-Graph
 
 ::: center
-![](images/australia-csp.png)
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 6.1, S. 50], Wiedergabe mit freundlicher Erlaubnis der Autoren]{.origin}
+![](images/map_graph.png){width="80%"}
 :::
 
 ::: notes
@@ -100,6 +94,12 @@ bekannten Algorithmen anwenden ...
 
 
 ## Constraints -- Arität
+
+::: notes
+Die *Arität* betrifft hier die "Stelligkeit": Wieviele Variablen stehen in
+einem Constraint miteinander in Beziehung? (Also wieviele Parameter hat
+ein Constraint?)
+:::
 
 *   **unär**: betrifft einzelne Variablen \newline
     Beispiel: $\operatorname{WA} \neq red$
@@ -137,25 +137,17 @@ bekannten Algorithmen anwenden ...
 \bigskip
 
 **Historische Unterscheidung**:
-
 *   **Constraint Satisfaction**: endliche Domänen, kombinatorische Methoden
 *   **Constraint Solving**: unendliche Domänen
 
 
 ## CSP sind überall ...
 
-\pause
-
 *   Stundenpläne (Klassen, Räume, Zeiten)
-
 *   Konfiguration (Computer, Autos, ...)
-
 *   Fahrpläne (Zug, Flug, ...)
-
 *   Planung von komplexen Projekten
-
 *   Sudoku :-)
-
 *   ...
 
 
@@ -178,7 +170,4 @@ bekannten Algorithmen anwenden ...
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
