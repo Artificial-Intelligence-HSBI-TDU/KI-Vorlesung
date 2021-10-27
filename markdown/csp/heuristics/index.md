@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 3
 readings:
   - key: "Russell2020"
-    comment: "CSP, Backtracking: Abschnitt 5.3"
+    comment: "CSP, Backtracking/Heuristiken: Abschnitt 5.3"
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
@@ -21,36 +21,19 @@ fhmedia:
 ---
 
 
-## SELECT-UNASSIGNED-VARIABLE: Variablen-Sortierung
+## VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?
 
-::: slides
-``` {.python size="tiny"}
-def Backtrack(assignment, csp):
-    if complete(assignment): return assignment
-
-    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
-
-    for value in ORDER-DOMAIN-VALUES(csp, var):
-        if consistent(value, var, assignment, csp):
-            assignment += {var = value}
-
-            if INFERENCE(csp, assignment, var) != failure:
-                result = Backtrack(assignment, csp)
-                if result != failure: return result
-
-            assignment -= {var = value}
-
-    return failure
-```
+::: center
+![](images/bt_search_mrv.png){width="65%"}
 :::
 
 \bigskip
 
 ::: notes
-[**Select-Unassigned-Variable**]{.alert}: Welche Variable zuerst ausprobieren?
+[**VARIABLES**]{.alert}: Welche Variable zuerst ausprobieren?
 :::
 
-**Minimum Remaining Values (MRV)**:
+**Minimum Remaining Values (MRV)**: (vgl. [@Russell2020, S. 177])
 
 *   Wähle Variable mit wenigsten freien Werten  [(die am meisten eingeschränkte Variable)]{.notes}
 
@@ -61,42 +44,26 @@ def Backtrack(assignment, csp):
 [Tafelbeispiel]{.bsp}
 
 ::: notes
-1.  Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) => wähle WA
-2.  NT und SA haben nur noch zwei freie Werte => wähle NT (oder SA)
-3.  SA hat nur noch einen Wert, Q noch zwei, der Rest drei => wähle SA
+Beispiel:
+1.  Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) => wähle A
+2.  B und C haben nur noch zwei freie Werte => wähle B (oder C)
+3.  C hat nur noch einen Wert, D noch zwei, der Rest drei => wähle C
 :::
 
 
-## SELECT-UNASSIGNED-VARIABLE: Gleichstand bei MRV
+## VARIABLES: Gleichstand bei MRV
 
-::: slides
-``` {.python size="tiny"}
-def Backtrack(assignment, csp):
-    if complete(assignment): return assignment
-
-    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
-
-    for value in ORDER-DOMAIN-VALUES(csp, var):
-        if consistent(value, var, assignment, csp):
-            assignment += {var = value}
-
-            if INFERENCE(csp, assignment, var) != failure:
-                result = Backtrack(assignment, csp)
-                if result != failure: return result
-
-            assignment -= {var = value}
-
-    return failure
-```
+::: center
+![](images/bt_search_mrv.png){width="65%"}
 :::
 
 \bigskip
 
 ::: notes
-[**Select-Unassigned-Variable**]{.alert}: Welche Variable zuerst ausprobieren?
+[**VARIABLES**]{.alert}: Welche Variable zuerst ausprobieren?
 :::
 
-**Gradheuristik**: Erweiterung von *MRV* bei Gleichstand
+**Gradheuristik**: Erweiterung von *MRV* bei *Gleichstand* (vgl. [@Russell2020, S. 177])
 
 *   Wähle Variable mit meisten Constraints auf offene  [(noch nicht zugewiesene)]{.notes}  Variablen
 
@@ -107,45 +74,29 @@ def Backtrack(assignment, csp):
 [Tafelbeispiel]{.bsp}
 
 ::: notes
-1.  MRV: Alle haben gleich viele freie Werte (jeweils 3) => Gradheuristik: SA hat
-    die meisten Verbindungen (Constraints) auf offene Variablen => wähle SA
-2.  MRV: Alle haben nur noch zwei freie Werte => Gradheuristik: NT, Q und NSW haben
-    je zwei Constraints auf noch offene Variablen => wähle NT (oder Q oder NSW)
-3.  MRV: WA und Q haben beide nur noch einen Wert => Gradheuristik: Q hat
-    die meisten Verbindungen (Constraints) auf offene Variablen => wähle Q
+Beispiel:
+1.  MRV: Alle haben gleich viele freie Werte (jeweils 3) => Gradheuristik: B, C und D haben
+    die meisten Verbindungen (Constraints) auf offene Variablen => wähle B (oder C oder D)
+2.  MRV: A, C und D haben nur noch zwei freie Werte => Gradheuristik: C und D haben
+    je zwei Constraints auf noch offene Variablen => wähle C (oder D)
+3.  MRV: A und D haben beide nur noch einen Wert => Gradheuristik: D hat
+    die meisten Verbindungen (Constraints) auf offene Variablen => wähle D
 :::
 
 
-## ORDER-DOMAIN-VALUES: Werte-Sortierung
+## VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?
 
-::: slides
-``` {.python size="tiny"}
-def Backtrack(assignment, csp):
-    if complete(assignment): return assignment
-
-    var = SELECT-UNASSIGNED-VARIABLE(csp, assignment)
-
-    for value in ORDER-DOMAIN-VALUES(csp, var):
-        if consistent(value, var, assignment, csp):
-            assignment += {var = value}
-
-            if INFERENCE(csp, assignment, var) != failure:
-                result = Backtrack(assignment, csp)
-                if result != failure: return result
-
-            assignment -= {var = value}
-
-    return failure
-```
+::: center
+![](images/bt_search_lcv.png){width="65%"}
 :::
 
 \bigskip
 
 ::: notes
-[**Order-Domain-Values**]{.alert}: Welchen Wert zuerst ausprobieren?
+[**VALUES**]{.alert}: Welchen Wert zuerst ausprobieren?
 :::
 
-**Least Constraining Value (LCV)**
+**Least Constraining Value (LCV)**: (vgl. [@Russell2020, S. 177])
 
 *   Wähle Wert, der für verbleibende Variablen die wenigsten Werte
     ungültig macht
@@ -157,18 +108,19 @@ def Backtrack(assignment, csp):
 [Tafelbeispiel]{.bsp}
 
 ::: notes
-1.  Sei WA gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
+Beispiel:
+1.  Sei A gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
     => freie Wahl des Wertes => wähle beispielsweise rot
-2.  Sei NT gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
+2.  Sei B gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
     => freie Wahl des Wertes => wähle beispielsweise grün
-3.  Sei Q gewählt: Verbleibende Werte rot und blau
-    -   Wahl von rot würde für SA einen Wert übrig lassen (blau)
-    -   Wahl von blau würde für SA **keinen** Wert übrig lassen
+3.  Sei D gewählt: Verbleibende Werte rot und blau
+    -   Wahl von rot würde für C einen Wert übrig lassen (blau)
+    -   Wahl von blau würde für C **keinen** Wert übrig lassen
     => LCV: Wahl von rot!
 
 
 **Hinweis**: Diese Heuristik ist in der Praxis sehr aufwändig zu berechnen! Man müsste für
-jeden Wert die noch offenen Constraints anschauen und berechnen, wieviele Werte damit jeweils
+jeden Wert die noch offenen Constraints anschauen und berechnen, wie viele Werte damit jeweils
 ungültig gemacht werden. Die Idee ist aber dennoch interessant, und möglicherweise kann man
 sie für ein reales Problem so adaptieren, dass bei der Umsetzung nur wenig zusätzlicher
 Aufwand entsteht.
@@ -191,7 +143,4 @@ Aufwand entsteht.
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
