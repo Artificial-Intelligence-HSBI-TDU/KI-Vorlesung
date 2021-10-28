@@ -14,9 +14,9 @@ quizzes:
 assignments:
   - topic: sheet04
 youtube:
-  - id: TODO
+  - id: pgXf0oV8lhE
 fhmedia:
-  - link: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/66689545e201ad90f6f2007f472f3b430ec37ebaa5321315764ae687983bbcb049bc217a1b0852e2d5364eae1223153d567558533246bd58b0db5cc1fa3278c5"
     name: "Direktlink FH-Medienportal: KI CSP, Heuristiken"
 ---
 
