@@ -26,14 +26,13 @@ sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
 
 ## A4.2: Framework für Constraint Satisfaction (2P)
 
-Checken Sie das AIMA-Repository^[Sie finden das Repository unter
-[github.com/aimacode/aima-java](https://github.com/aimacode/aima-java).]
+Checken Sie das AIMA-Repository [github.com/aimacode/aima-java](https://github.com/aimacode/aima-java)
 aus. Im Paket `aima.core.search.csp` finden Sie Java-Klassen zum Umgang mit
 CSPs sowie einige der in der VL besprochenen Algorithmen und Heuristiken.
 
 Nutzen Sie das Framework, um eine Lösung für das Problem aus der vorigen
-Aufgabe zu finden.^[Falls Sie die vorige Aufgabe nicht gelöst haben, können
-Sie hier gern ein anderes Problem modellieren und lösen.]
+Aufgabe zu finden. (Falls Sie die vorige Aufgabe nicht gelöst haben, können
+Sie hier gern ein anderes Problem modellieren und lösen.)
 
 Beantworten Sie mit Ihrem Programm die folgende Frage:
 
