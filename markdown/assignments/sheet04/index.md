@@ -55,10 +55,10 @@ $$\langle
 \rangle$$
 mit
 
-*   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 \;|\; x+y = 3 \rbrace\right)$,
-*   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 \;|\; x+y \le 3 \rbrace\right)$,
-*   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 \;|\; x \le y \rbrace\right)$ und
-*   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 \;|\; x \ne y \rbrace\right)$.
+*   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
+*   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
+*   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
+*   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
 
 1.  (1P) Zeichen Sie den Constraint-Graph
 2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
