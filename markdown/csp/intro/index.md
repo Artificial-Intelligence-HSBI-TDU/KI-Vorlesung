@@ -102,12 +102,12 @@ ein Constraint?)
 :::
 
 *   **unär**: betrifft einzelne Variablen \newline
-    Beispiel: $\operatorname{WA} \neq red$
+    Beispiel: $\operatorname{A} \neq red$
 
 \smallskip
 
 *   **binär**: betrifft Paare von Variablen \newline
-    Beispiel: $\operatorname{WA} \neq \operatorname{NT}$
+    Beispiel: $\operatorname{A} \neq \operatorname{B}$
 
 \smallskip
 
