@@ -15,9 +15,9 @@ quizzes:
 assignments:
   - topic: sheet04
 youtube:
-  - id: TODO
+  - id: eFyo4Xh59ns
 fhmedia:
-  - link: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/a269f53bff001a84bec4435261543b846ccca4290f211cf1634f9007d1285513c8bae4f89a0225a489e1ffda6cac455e264e022c35f46e8ffe80b4ddcd86d137"
     name: "Direktlink FH-Medienportal: KI Intro CSP"
 ---
 
