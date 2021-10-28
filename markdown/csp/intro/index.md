@@ -96,8 +96,8 @@ bekannten Algorithmen anwenden ...
 ## Constraints -- Arität
 
 ::: notes
-Die *Arität* betrifft hier die "Stelligkeit": Wieviele Variablen stehen in
-einem Constraint miteinander in Beziehung? (Also wieviele Parameter hat
+Die *Arität* betrifft hier die "Stelligkeit": Wie viele Variablen stehen in
+einem Constraint miteinander in Beziehung? (Also wie viele Parameter hat
 ein Constraint?)
 :::
 
