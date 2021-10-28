@@ -14,9 +14,9 @@ quizzes:
 assignments:
   - topic: sheet04
 youtube:
-  - id: TODO
+  - id: DIY7F2ycyqA
 fhmedia:
-  - link: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/34f066985dfe7258c153bce523c3f876b94959c8a31bbf316d7c57d4253d45f9fbde7045b99b1ec25d9e459eae84124405d76cc5cd3a32bd6f7c14206651816e"
     name: "Direktlink FH-Medienportal: KI BT-Suche für CSP"
 ---
 
