@@ -47,18 +47,18 @@ Beantworten Sie mit Ihrem Programm die folgende Frage:
 
 ## A4.3: Kantenkonsistenz mit AC-3 (3P)
 
-Sei $D=\{0, \ldots, 5\}$, und ein Constraintproblem definiert durch
+Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 $$\langle
-    \{v_1, v_2, v_3, v_4\},
-    \{D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D\},
-    \{c_1, c_2, c_3, c_4\}
+    \lbrace v_1, v_2, v_3, v_4 \rbrace,
+    \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+    \lbrace c_1, c_2, c_3, c_4 \rbrace
 \rangle$$
 mit
 
-*   $c_1=\left((v_1,v_2), \{(x,y) \in D^2 \;|\; x+y = 3\}\right)$,
-*   $c_2=\left((v_2,v_3), \{(x,y) \in D^2 \;|\; x+y \le 3\}\right)$,
-*   $c_3=\left((v_1,v_3), \{(x,y) \in D^2 \;|\; x \le y\}\right)$ und
-*   $c_4=\left((v_3,v_4), \{(x,y) \in D^2 \;|\; x \ne y\}\right)$.
+*   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 \;|\; x+y = 3 \rbrace\right)$,
+*   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 \;|\; x+y \le 3 \rbrace\right)$,
+*   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 \;|\; x \le y \rbrace\right)$ und
+*   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 \;|\; x \ne y \rbrace\right)$.
 
 1.  (1P) Zeichen Sie den Constraint-Graph
 2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
@@ -73,7 +73,7 @@ mit
 ## A4.4: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
-$\alpha = \{v_1\to  2\}$.
+$\alpha = \lbrace v_1\to  2 \rbrace$.
 
 1.  (1P) Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die
     Wertebereiche der Variablen vor und nach dem Erzeugen der
