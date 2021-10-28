@@ -61,7 +61,7 @@ mit
 
 1.  (1P) Zeichen Sie den Constraint-Graph
 2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
-    der Queue und das Ergebnis von $Revise$, d.h. den Ergebniszustand des aktuellen
+    der Queue und das Ergebnis von $ARC_Reduce$, d.h. den Ergebniszustand des aktuellen
     $D_i$, für jede Iteration des Algorithmus an.
 
 *Thema*: Handsimulation des AC-3-Algorithmus
