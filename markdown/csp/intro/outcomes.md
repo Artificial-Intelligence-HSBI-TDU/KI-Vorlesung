@@ -6,19 +6,9 @@ hidden: true
 
 
 {{% k1 %}}
--   Wuppie
--   Fluppie
+*   Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung
 {{% /k1 %}}
 
-{{% k2 %}}
--   foo
--   bar
-{{% /k2 %}}
-
 {{% k3 %}}
-hammwanich
+*   Formulierung von CSP
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
