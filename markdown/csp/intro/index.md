@@ -1,6 +1,6 @@
 ---
 type: lecture-cg
-title: "Einführung"
+title: "Einführung Constraints"
 menuTitle: "Intro"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
