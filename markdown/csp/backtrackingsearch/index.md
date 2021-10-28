@@ -5,34 +5,79 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
-  - key: "Ertel2017"
-quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
+    comment: "CSP, Backtracking: Abschnitt 5.3"
+  - key: "Kumar1992"
+  - key: "Bartak2001"
 assignments:
-  - topic: blatt01
+  - topic: sheet04
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: DIY7F2ycyqA
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
-sketch: true
+  - link: "https://www.fh-bielefeld.de/medienportal/m/34f066985dfe7258c153bce523c3f876b94959c8a31bbf316d7c57d4253d45f9fbde7045b99b1ec25d9e459eae84124405d76cc5cd3a32bd6f7c14206651816e"
+    name: "Direktlink FH-Medienportal: KI BT-Suche für CSP"
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Einfärben von Landkarten als CSP
 
-## Suche mit TS und Backtracking
+::: center
+![](images/map_graph.png){width="80%"}
+:::
 
-... Tiefensuche angewendet
+[Tafelbeispiel: Suche nach Lösung]{.bsp}
+
+
+## Endliche Domänen: Formulierung als Suchproblem
+
+``` python
+def BT_Search(assignment, csp):
+    if complete(assignment): return assignment
+
+    var = VARIABLES(csp, assignment)
+
+    for value in VALUES(csp, var):
+        if consistent(value, var, assignment, csp):
+            assignment += {var = value}
+
+            if INFERENCE(csp, assignment, var) != failure:
+                result = BT_Search(assignment, csp)
+                if result != failure: return result
+
+            assignment -= {var = value}
+
+    return failure
+```
+
+[Quelle: Eigener Code basierend auf einer Idee nach [@Russell2020, S. 176, Fig. 5.5]]{.origin}
+
+::: notes
+Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem
+Assignment und weise schrittweise Variablen passende Werte zu und mache notfalls
+Backtracking.
+:::
+
+
+## BT-Suche für CSP am Beispiel Landkartenfärbeproblem
+
+::::::::: slides
+:::::: columns
+::: {.column width="40%"}
+![](images/bt_search.png)
+:::
+::: {.column width="60%"}
+![](images/map_progress_empty.png)
+:::
+::::::
+:::::::::
+
+::::::::: notes
+![](images/map_progress.png){width="80%"}
+:::::::::
+
 
 ## Wrap-Up
-...
+
+*   Lösung von CSP mit endlichen Domänen mit Hilfe der Backtracking-Suche
 
 
 
@@ -46,7 +91,4 @@ Lorem Ipsum. Starte mit H2-Level.
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
