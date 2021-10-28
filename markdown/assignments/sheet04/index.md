@@ -61,7 +61,7 @@ mit
 
 1.  (1P) Zeichen Sie den Constraint-Graph
 2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
-    der Queue und das Ergebnis von $ARC_Reduce$, d.h. den Ergebniszustand des aktuellen
+    der Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen
     $D_i$, für jede Iteration des Algorithmus an.
 
 *Thema*: Handsimulation des AC-3-Algorithmus
@@ -72,7 +72,7 @@ mit
 ## A4.4: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
-$\alpha = \lbrace v_1\to  2 \rbrace$.
+$\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 1.  (1P) Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die
     Wertebereiche der Variablen vor und nach dem Erzeugen der
