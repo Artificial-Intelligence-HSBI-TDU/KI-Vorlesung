@@ -9,7 +9,7 @@ readings:
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
-  - link: "TODO"
+  - link: "https://kahoot.it/challenge/08306596?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635412547692"
     name: "Selbsttest CSP, Heuristiken (Kahoot)"
 assignments:
   - topic: sheet04
