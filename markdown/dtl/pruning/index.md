@@ -5,8 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 3
 readings:
   - key: "Russell2020"
-    comment: "Lernen, Entscheidungsbäume: Abschnitt 19.1, 19.2 und 19.3"
-  - key: "Ertel2017"
+    comment: "Entscheidungsbäume: Abschnitt 19.3"
 quizzes:
   - link: TODO
     name: "TODO"
@@ -20,28 +19,75 @@ fhmedia:
 ---
 
 
-## Motivation
-Lorem Ipsum. Starte mit H2-Level.
-...
+## Pruning: Bedingt irrelevante Attribute
 
-## Folie 2
-...
+**Baum**: $\alpha = x_1(x_2(A, B),  x_2(A, B),  x_2(A, B))$
 
-## Folie 3
-...
+\smallskip
+\pause
+$x_1$ ist [bedingt irrelevant]{.alert}
+=> Vereinfachung: $\alpha = x_2(A, B)$
 
-## Folie 4
-...
+\pause
+\bigskip
+\medskip
 
-## Folie 5
-...
+**Allgemein**:
 
-## Folie 6
-...
+*   Sei $\tilde{x}$ Weg zu Nichtendknoten $x_t$
+*   Baum dort $\alpha/\tilde{x} = x_t(\alpha_1, \ldots, \alpha_{m_t})$
+*   $x_t$ ist [**bedingt irrelevant**]{.alert} unter der Bedingung
+    $\tilde{x}$, wenn $\alpha_1 = \alpha_2 = \ldots = \alpha_{m_t}$
+*   **Vereinfachung**: Ersetze in $\alpha/\tilde{x}$ den Test $x_t$ durch $\alpha_1$
+
+::: notes
+*Anmerkung*:
+Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum
+hat exakt die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
+:::
+
+
+## Pruning: Bedingt redundante Attribute
+
+**Baum**: $\alpha = x_1(\ast,  \ast,  x_2(A, B))$
+
+\smallskip
+\pause
+$x_1$ ist [bedingt redundant]{.alert}
+=> Vereinfachung: $\alpha = x_2(A, B)$
+
+\pause
+\bigskip
+\medskip
+
+**Allgemein**:
+
+*   Sei $\tilde{x}$ Weg zu Nichtendknoten $x_t$
+*   Baum dort $\alpha/\tilde{x} = x_t(\ast, \ldots, \ast, \alpha_i, \ast, \ldots, \ast)$ \quad (mit $\alpha_i \neq \ast$)
+*   $x_t$ ist [**bedingt redundant**]{.alert} unter der Bedingung $\tilde{x}$
+*   **Vereinfachung**: Ersetze in $\alpha/\tilde{x}$ den Test $x_t$ durch $\alpha_i$
+
+::: notes
+*Anmerkung*:
+Der durch das Entfernen von bedingt redundanten Attributen entstandene Baum
+hat eine etwas andere Klassifikation als der Baum vor dem Pruning. Wo vorher
+ein `*` ausgegeben wurde, wird nach dem Pruning u.U. ein Klassensymbol
+ausgegeben. Der Klassifikationsfehler erhöht sich nicht, da hier ein `*` wie
+ein falsches Klassensymbol zu werten ist.
+:::
+
+
+## Allgemeine Transformationsregel
+
+$$
+    x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))
+$$
+
 
 ## Wrap-Up
-...
 
+*   Pruning: Entfernen redundanter und irrelevanter Tests
+*   Transformationsregel zum Umbauen von Entscheidungsbäumen
 
 
 
