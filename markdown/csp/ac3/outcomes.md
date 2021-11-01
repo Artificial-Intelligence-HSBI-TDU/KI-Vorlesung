@@ -5,20 +5,12 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Forward Checking (*FC*)
+*   Erweiterung von *FC* auf alle Kanten: *Kantenkonsistenz*
+*   Kantenkonsistenz bedeutet nicht globale Konsistenz
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   AC-3 Algorithmus
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
