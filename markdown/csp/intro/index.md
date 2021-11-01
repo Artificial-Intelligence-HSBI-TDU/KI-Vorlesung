@@ -10,7 +10,7 @@ readings:
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
-  - link: "https://kahoot.it/challenge/04606438?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635412507200"
+  - link: "https://kahoot.it/challenge/06611821?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765219155"
     name: "Selbsttest Intro CSP (Kahoot)"
 assignments:
   - topic: sheet04

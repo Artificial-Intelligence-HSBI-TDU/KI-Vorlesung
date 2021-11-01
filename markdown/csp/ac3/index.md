@@ -10,7 +10,7 @@ readings:
   - key: "Kumar1992"
   - key: "Bartak2001"
 quizzes:
-  - link: "TODO"
+  - link: "https://kahoot.it/challenge/0862548?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765265778"
     name: "Selbsttest CSP, AC-3 (Kahoot)"
 assignments:
   - topic: sheet04
