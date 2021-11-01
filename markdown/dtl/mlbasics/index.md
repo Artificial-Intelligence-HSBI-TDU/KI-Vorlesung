@@ -5,7 +5,7 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Lernen, Entscheidungsbäume: Abschnitt 19.1, 19.2 und 19.3"
+    comment: "Lernen: Abschnitte 19.1 und 19.2"
   - key: "Ertel2017"
 quizzes:
   - link: TODO
