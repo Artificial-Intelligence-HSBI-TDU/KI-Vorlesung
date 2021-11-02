@@ -6,7 +6,6 @@ weight: 1
 readings:
   - key: "Russell2020"
     comment: "Lernen: Abschnitte 19.1 und 19.2"
-  - key: "Ertel2017"
 quizzes:
   - link: TODO
     name: "TODO"
@@ -83,7 +82,7 @@ TODO => Umwelt/Agent/Feedback-Schleife
 ::: notes
 **Beispiel Kleinkind**: Lernen von Klassen/Konzepten durch Beispiele
 
-*   zuerst ist alles "Katze" (Übergeneralisierung)
+*   Zuerst ist alles "Katze" (Übergeneralisierung)
 *   Differenzierung durch Feedback der Umwelt; Erkennung unterschiedlicher Ausprägungen
 :::
 
@@ -106,15 +105,6 @@ TODO => Umwelt/Agent/Feedback-Schleife
     *   **Klassifikation**: Guter oder schlechter Kunde  [(Binäre Entscheidung: 2 Klassen)]{.notes}
     *   **Regression**: Vorhersage Gewinn/Verlust für die Bank  [(Höhe des Gewinns/Verlusts interessant)]{.notes}
 
-::: notes
-*   Bewertung soll verbessert/angepasst werden:
-    *   Vorgabe von Kundenbeschreibungen und Bewertung aus der Vergangenheit
-    *   Lernen: Anpassung der internen Regeln, Bewertungen, ...
-    *   Anwendung: Bessere Vorhersage für neue Kunden
-:::
-
-[[Anpassung/Verbesserung der Bewertung]{.bsp}]{.slides}
-
 
 ## Beispiel: Autoreparatur
 
@@ -135,12 +125,14 @@ TODO => Umwelt/Agent/Feedback-Schleife
 Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beispielen
 :::
 
-*   Ein Beispiel ist ein Tupel $\left(\mathbf{x}, \operatorname{f}(\mathbf{x})\right)$, etwa
-    $\left(\begin{array}{ccc}
-        \text{O}&\text{O}&\text{X} \\
-        \text{.}&\text{X}&\text{.} \\
-        \text{X}&\text{.}&\text{.}
-    \end{array}, +1\right)$
+*   Ein Beispiel ist ein Tupel $(\mathbf{x}, \operatorname{f}(\mathbf{x}))$, etwa
+    $$
+    (\mathbf{x}, \operatorname{f}(\mathbf{x})) = \left(\begin{array}{ccc}
+    O & O & X \\
+    . & X & . \\
+    X & . & .
+    \end{array}, +1\right)
+    $$
 
 \bigskip
 
@@ -163,12 +155,11 @@ Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beis
 
 ::: center
 ![](images/occams1.png){width="60%"}
-
-[Quelle: nach [@Russell2014]]{.origin}
 :::
 
 ::: notes
 Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ...
+Wir haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
 :::
 
 
@@ -176,8 +167,6 @@ Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ..
 
 ::: center
 ![](images/occams2.png){width="60%"}
-
-[Quelle: nach [@Russell2014]]{.origin}
 :::
 
 ::: notes
@@ -191,8 +180,6 @@ relativ hohen (Trainings-) Fehler.
 
 ::: center
 ![](images/occams3.png){width="60%"}
-
-[Quelle: nach [@Russell2014]]{.origin}
 :::
 
 ::: notes
@@ -206,8 +193,6 @@ oder ein Ausreißer ist, den man gefahrlos ignorieren kann?
 
 ::: center
 ![](images/occams4.png){width="60%"}
-
-[Quelle: nach [@Russell2014]]{.origin}
 :::
 
 ::: notes
@@ -225,8 +210,6 @@ keine Ausreißer o.ä. gibt.)
 
 ::: center
 ![](images/occams5.png){width="60%"}
-
-[Quelle: nach [@Russell2014]]{.origin}
 :::
 
 ::: notes
@@ -283,23 +266,33 @@ Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe $\operatorn
 
 ## Beispiel: Schwimmen im See
 
-| Beispiel | Himmel  | Lufttemp. | Wassertemp. | Wind      | Schwimmen? |
-|:---------|:--------|:----------|:------------|:----------|:-----------|
-| 1        | sonnig  | warm      | warm        | windstill | ja         |
-| 2        | sonnig  | kalt      | warm        | stürmisch | nein       |
-| 3        | sonnig  | warm      | warm        | brise     | ja         |
-| 4        | bewölkt | kalt      | kalt        | windstill | nein       |
-| 5        | regen   | kalt      | warm        | windstill | ja         |
+Beschreibung der Faktoren, wann ich im See schwimmen möchte:
 
-TODO
-
-[Quelle: nach [@Mitchell2010]]{.origin}
+1.  Scheint die Sonne?
+2.  Wie warm ist das Wasser?
+3.  Wie warm ist die Luft?
 
 \bigskip
 
-*   Trainingsbeispiel 1:
-    *   Eingabe: Merkmalsvektor `(sonnig, warm, warm, windstill)`
+*   Trainingsbeispiel:
+    *   Eingabe: Merkmalsvektor `(sonnig, warm, warm)`
     *   Ausgabe: Klasse `ja`
+
+::: notes
+Dabei wird davon ausgegangen, dass jeder Faktor (jedes Merkmal) an einer bestimmten
+Stelle im Merkmalsvektor aufgeführt ist. Beispielsweise gehört das `sonnig` zur
+Frage "Scheint die Sonne", `warm` jeweils zur Wasser- und zur Lufttemperatur.
+
+Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen Zustand
+der Welt mit den relevanten Dingen beschrieben. Diesem Zustand kann man beispielsweise
+ein Label (Klasse) verpassen, hier in diesem Fall "ja, in dieser Welt möchte ich
+schwimmen".
+
+Die Trainingsmenge baut sich dann beim überwachten Lernen aus vielen solcher Paare
+(Merkmalsvektor, Klasse) auf, und die Algorithmen sollen diese Zuordnung lernen, d.h.
+ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und darüber hinaus
+für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
+:::
 
 
 ## Trainingsdaten -- Merkmalsvektoren
@@ -354,7 +347,4 @@ Attribute hat einen Typ und damit eine bestimmte Anzahl erlaubter Werte
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
