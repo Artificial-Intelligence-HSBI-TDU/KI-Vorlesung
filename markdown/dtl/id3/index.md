@@ -4,6 +4,8 @@ title: "ID3 und C4.5"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 6
 readings:
+  - key: "Ertel2017"
+    comment: "Entscheidungsbäume: Abschnitt 8.4"
   - key: "Russell2020"
     comment: "Entscheidungsbäume: Abschnitt 19.3"
   - key: "Mitchell2010"
