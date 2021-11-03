@@ -4,7 +4,7 @@ title: "CAL2"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 2
 readings:
-  - key: "@Unger1981"
+  - key: "Unger1981"
     comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
 quizzes:
   - link: TODO
@@ -37,7 +37,7 @@ Erinnern Sie sich an das Beispiel mit der Auto-Reparatur aus der letzten Sitzung
 Die relevanten Eigenschaften (Merkmale) eines Autos würden als Knoten im Baum
 repräsentiert. Beispiel: "Motor startet" oder "Farbe".
 
-Jedes Merkmal hat eine Anzahl von möglichen Ausprägungen, diese ensprechen den
+Jedes Merkmal hat eine Anzahl von möglichen Ausprägungen, diese entsprechen den
 Verzweigungen am Knoten. Beispiel: "startet", "startet nicht" oder "rot", "weiß", "silber", ... .
 
 Entsprechend kann man durch Abarbeiten des Entscheidungsbaumes am Ende zu einer
@@ -98,9 +98,9 @@ Damit werden die Unterbäume beim Erzeugen des Knotens übergeben.
 
 2)  $n$-ter Lernschritt: Objekt $v$ mit Klasse $k$, Baum $\alpha^{(n-1)}$
     gibt $\kappa$ aus
-    a)  $\kappa = *$: ersetze $*$ durch $k$
-    b)  $\kappa = k$: keine Aktion nötig
-    c)  $\kappa \neq k$: Fehler
+    -   $\kappa = \ast$: ersetze $\ast$ durch $k$
+    -   $\kappa = k$: keine Aktion nötig
+    -   $\kappa \neq k$: Fehler
         *   Ersetze $\kappa$ mit neuem Test: $\kappa \gets x_{t+1}(\ast, \ldots, \ast, k, \ast, \ldots, \ast)$
         *   $x_{t+1}$: nächstes Attribut, auf dem aktuellen Pfad noch nicht verwendet
         *   Symbol $k$ an Position $i$ wenn $x_{t+1}(v) = i$
@@ -150,7 +150,6 @@ Referenzen vom Typ `Baum` sein).
 \smallskip
 
 *   Zyklischer Durchlauf durch Trainingsmenge
-
 *   Abbruch:
     *   Alle Trainingsobjekte richtig klassifiziert \newline
         => Kein Fehler in einem kompletten Durchlauf
@@ -175,7 +174,4 @@ Referenzen vom Typ `Baum` sein).
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
