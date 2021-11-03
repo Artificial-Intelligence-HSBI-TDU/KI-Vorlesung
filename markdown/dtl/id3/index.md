@@ -29,9 +29,9 @@ Erinnerung: CAL2/CAL3
 
 *   Zyklische Iteration durch die Trainingsmenge
 *   Ausschließlich aktuelles Objekt betrachtet
-*   [Reihenfolge]{.alert} der Attributwahl bei Verzweigung unklar
+*   [Reihenfolge]{.alert} der "richtigen" Attributwahl bei Verzweigung unklar
 
-\blueArrow Betrachte die **komplette** Trainingsmenge!
+=> Betrachte stattdessen die **komplette** Trainingsmenge!
 
 
 
@@ -57,13 +57,13 @@ Erinnerung: CAL2/CAL3
     $$
 
 ::: notes
-*   $R(S,A)$: Unsicherheit/nötige Bits nach Auswahl von Attribut A
-*   Je kleiner $R(S,A)$, um so kleiner die **verbleibende Unsicherheit** bzw. \newline
-    um so kleiner die Anzahl der nötigen Bits zur Darstellung der
-    partitionierten Trainingsmenge **nach** Betrachtung von Attribut $A$
+$R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A.
+Je kleiner $R(S,A)$, um so kleiner die **verbleibende Unsicherheit** bzw.
+um so kleiner die Anzahl der nötigen Bits zur Darstellung der
+partitionierten Trainingsmenge **nach** Betrachtung von Attribut $A$ ...
 :::
 
-\blueArrow Je kleiner $R(S,A)$, um so größer der Informationsgewinn
+=> Je kleiner $R(S,A)$, um so größer der Informationsgewinn
 
 
 ## Informationsgewinn: Kriterium zur Auswahl von Attributen
@@ -109,7 +109,7 @@ $$
 
 \bigskip
 
-Informationsgewinn für $x_2$ am höchsten \blueArrow wähle $x_2$ als nächsten Test
+Informationsgewinn für $x_2$ am höchsten => wähle $x_2$ als nächsten Test
 
 
 ## Entscheidungsbaumlerner ID3 (Quinlan, 1986)
@@ -120,7 +120,7 @@ Informationsgewinn für $x_2$ am höchsten \blueArrow wähle $x_2$ als nächsten
 def ID3(examples, attr, default):
     # Abbruchbedingungen
     if examples.isEmpty():  return default
-    if examples.each(class == A):  return A
+    if examples.each(class == A):  return A  # all examples have same class
     if attr.isEmpty():  return examples.MajorityValue()
 
     # Baum mit neuem Test erweitern
@@ -135,18 +135,15 @@ def ID3(examples, attr, default):
 ```
 
 ::: notes
-@Russell2014: Man erhält aus dem "Decision Tree Learner" (*DTL*) den hier vorgestellten
-ID3-Algorithmus, wenn man die Funktion $\operatorname{ChooseAttribut}(examples, attr)$
+@Russell2020: Man erhält aus dem "Learn-Decision-Tree"-Algorithmus [@Russell2020, S. 678, Fig. 19.5]
+den hier vorgestellten ID3-Algorithmus, wenn man die Funktion $\operatorname{Importance}(a, examples)$
 als $\operatorname{InformationGain}(examples, attr)$ implementiert/nutzt.
 
-**Hinweis**: Mit der Zeile `if examples.each(class == A):  return A` soll ausgedrückt werden,
-dass alle ankommenden Trainingsbeispiele die selbe Klasse haben und dass diese dann als Ergebnis
-zurückgeliefert wird. Das "`A`" steht im obigen Algorithmus nur symbolisch für die selbe Klasse!
-Es kann also auch ein anderes Klassensymbol sein ...
+**Hinweis**: Mit der Zeile `if examples.each(class == A):  return A` soll ausgedrückt werden, dass alle
+ankommenden Trainingsbeispiele die selbe Klasse haben und dass diese dann als Ergebnis zurückgeliefert
+wird. Das "`A`" steht im obigen Algorithmus nur symbolisch für die selbe Klasse! Es kann also auch ein
+anderes Klassensymbol als "`A`" sein ...
 :::
-
-[Tafelbeispiel Anfang ID3]{.bsp}
-
 
 ::: notes
 ### Beispiel ID3
@@ -161,9 +158,35 @@ Es kann also auch ein anderes Klassensymbol sein ...
 | 6   | 0     | 1     | 0     | A   |
 
 *   $x2$ höchsten Information Gain
-*   $x2=0$ \blueArrow Beispiele 1,2 \blueArrow A
-*   $x2=1$ \blueArrow Beispiele 3,4,5,6 \blueArrow Information Gain berechnen,
+*   $x2=0$ => Beispiele 1,2 => A
+*   $x2=1$ => Beispiele 3,4,5,6 => Information Gain berechnen,
     weiter teilen und verzweigen
+:::
+
+[Tafelbeispiel Anfang ID3]{.bsp}
+
+
+## Beobachtung: $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+
+*   Faire Münze:
+    *   Entropie = $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
+
+\smallskip
+
+*   4-seitiger Würfel:
+    *   Entropie = $H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
+
+\bigskip
+
+=> $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+
+::: notes
+Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben als andere.
+
+*Anmerkung*: Im obigen Beispiel wurde einfach die Entropie für zwei "Attribute" mit unterschiedlich
+vielen Ausprägungen betrachtet, das ist natürlich kein $\operatorname{Gain}(S, A)$. Aber es sollte
+deutlich machen, dass Merkmale mit mehr Ausprägungen bei der Berechnung des Gain für eine Trainingsmenge
+einfach wegen der größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.
 :::
 
 
@@ -177,24 +200,44 @@ $$
     }
 $$
 
+::: notes
+C4.5 kann zusätzlich u.a. auch noch mit kontinuierlichen Attributen umgehen, vgl.
+[en.wikipedia.org/wiki/C4.5_algorithm](https://en.wikipedia.org/wiki/C4.5_algorithm).
+
+In einem [Paper](http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf)
+([DOI 10.1007/s10115-007-0114-2](https://doi.org/10.1007/s10115-007-0114-2)) wurde
+der Algorithmus zu den "Top 10 algorithms in data mining" ausgewählt.
+
+Ein anderer, relativ ähnlich arbeitender Entscheidungsbaumlerner ist der
+[CART (Classification And Regression Tree)](https://en.wikipedia.org/wiki/Decision_tree_learning)-Algorithmus,
+wobei der Begriff "CART" allerdings oft auch einfach allgemein für "Entscheidungsbaumlerner"
+genutzt wird.
+:::
+
 
 ## Beispiele zur Normierung bei C4.5
 
 *   Faire Münze:
     *   Entropie = $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
     *   Normierung: $1/(0.5 \log_2 (1/0.5) + 0.5 \log_2 (1/0.5)) = 1/(0.5 \cdot 1 + 0.5 \cdot 1) = 1$
+    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$
 
 \smallskip
 
 *   4-seitiger Würfel:
     *   Entropie = $H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
     *   Normierung: $1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$
+    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$
 
 \bigskip
 
-\blueArrow $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+=> Normierung sorgt für fairen Vergleich der Attribute
 
-\blueArrow Normierung sorgt für fairen Vergleich der Attribute
+::: notes
+*Anmerkung*: Auch hier ist die Entropie natürlich kein $\operatorname{Gain}(S, A)$. Das Beispiel soll
+nur übersichtlich deutlich machen, dass der "Vorteil" von Attributen mit mehr Ausprägungen durch die
+Normierung in C4.5 aufgehoben wird.
+:::
 
 
 ## Wrap-Up
@@ -216,7 +259,4 @@ $$
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
