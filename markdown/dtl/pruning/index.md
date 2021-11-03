@@ -4,6 +4,8 @@ title: "Pruning"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 3
 readings:
+  - key: "Ertel2017"
+    comment: "Entscheidungsbäume: Abschnitt 8.4"
   - key: "Russell2020"
     comment: "Entscheidungsbäume: Abschnitt 19.3"
 quizzes:
@@ -43,7 +45,7 @@ $x_1$ ist [bedingt irrelevant]{.alert}
 ::: notes
 *Anmerkung*:
 Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum
-hat exakt die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
+hat **exakt** die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
 :::
 
 
@@ -72,8 +74,8 @@ $x_1$ ist [bedingt redundant]{.alert}
 Der durch das Entfernen von bedingt redundanten Attributen entstandene Baum
 hat eine etwas andere Klassifikation als der Baum vor dem Pruning. Wo vorher
 ein `*` ausgegeben wurde, wird nach dem Pruning u.U. ein Klassensymbol
-ausgegeben. Der Klassifikationsfehler erhöht sich nicht, da hier ein `*` wie
-ein falsches Klassensymbol zu werten ist.
+ausgegeben. Der Klassifikationsfehler erhöht sich aber **nicht**, da hier ein
+`*` wie ein falsches Klassensymbol zu werten ist.
 :::
 
 
@@ -100,7 +102,4 @@ $$
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
