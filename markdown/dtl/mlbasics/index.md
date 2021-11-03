@@ -51,9 +51,7 @@ fhmedia:
 ## Learning Agent
 
 ::: center
-![](images/learning-agent.png){height="80%"}
-
-TODO => Umwelt/Agent/Feedback-Schleife
+![](images/learning.png){width="80%"}
 :::
 
 
