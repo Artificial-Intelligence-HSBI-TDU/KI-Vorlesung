@@ -30,12 +30,12 @@ fhmedia:
 
 *   Zyklische Iteration durch die Trainingsmenge
 *   Ausschließlich aktuelles Objekt betrachtet
-*   [Reihenfolge]{.alert} der Attributwahl bei Verzweigung unklar
+*   [Reihenfolge]{.alert} der "richtigen" Attributwahl bei Verzweigung unklar
 
-=> Betrachte die komplette Trainingsmenge!
+=> Betrachte stattdessen die komplette Trainingsmenge!
 :::
 
-**Relevanz** => **Informationsgehalt**
+### Relevanz => Informationsgehalt
 
 *   Shannon/Weaver (1949): [**Entropie**]{.alert}
     *   Maß für die Unsicherheit einer Zufallsvariablen
@@ -43,7 +43,7 @@ fhmedia:
 
 \bigskip
 
-**Beispiele**:
+### Beispiele
 
 *   Münze, die immer auf dem Rand landet: keine Unsicherheit, 0 Bit
 *   Faire Münze: Kopf oder Zahl: Entropie 1 Bit
@@ -225,8 +225,8 @@ $$
 \normalsize
 
 ::: notes
-*   Auswahl von Attribut $A$ partitioniert die Trainingsmenge:
-    *   Je Ausprägung $v$ von $A$ erhält man eine Submenge $S_v$
+*   Auswahl von Attribut $A$ partitioniert die Trainingsmenge: \newline
+    Je Ausprägung $v$ von $A$ erhält man eine Submenge $S_v$
 
 *   $R(S, A)$ berechnet die mittlere Entropie der Trainingsmenge, nachdem
     Attribut $A$ ausgewählt wurde: Unsicherheit/nötige Bits nach Auswahl von
@@ -297,7 +297,4 @@ $$
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
