@@ -12,10 +12,10 @@ quizzes:
 assignments:
   - topic: sheet05
 youtube:
-  - id: TODO
+  - id: FliWEXQZhsw
 fhmedia:
-  - link: "TODO"
-    name: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/c871a589c1e95782173b9a3c1efbb79ac38dfb4d871df8b39fd5851562036619df4d6b31cec0b630c1c88ff928bbcb2429ea194e2cc795720fce214367009242"
+    name: "Direktlink FH-Medienportal: KI Machine Learning 101"
 ---
 
 
