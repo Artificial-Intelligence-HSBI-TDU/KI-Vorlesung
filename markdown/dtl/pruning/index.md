@@ -48,8 +48,9 @@ Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum
 hat **exakt** die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
 
 **Anmerkung**:
-$x_1$ im obigen Beispiel ist sogar [global irrelevant]{.alert}, da es sich hier um die
-Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere Weg ...
+$x_1$ im obigen Beispiel ist sogar [**global** irrelevant]{.alert}, da es sich hier
+um die Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere
+Weg ...
 :::
 
 
@@ -82,8 +83,9 @@ ausgegeben. Der Klassifikationsfehler erhöht sich aber **nicht**, da hier ein
 `*` wie ein falsches Klassensymbol zu werten ist.
 
 **Anmerkung**:
-$x_1$ im obigen Beispiel ist sogar [global redundant]{.alert}, da es sich hier um die
-Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere Weg ...
+$x_1$ im obigen Beispiel ist sogar [**global** redundant]{.alert}, da es sich
+hier um die Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall
+der leere Weg ...
 :::
 
 
