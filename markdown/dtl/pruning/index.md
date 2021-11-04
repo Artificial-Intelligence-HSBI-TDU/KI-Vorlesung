@@ -14,10 +14,10 @@ quizzes:
 assignments:
   - topic: sheet05
 youtube:
-  - id: TODO
+  - id: LKt9F2kGYdk
 fhmedia:
-  - link: "TODO"
-    name: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/badf517191aa92377bf6ca9e63f90e8083d64de43f85b230b336cbf2b56e805d45063cf0974a6292ee39cf010aef11e87d3cf7ff9c9bd7e7c0a64f61128504e2"
+    name: "Direktlink FH-Medienportal: KI Pruning"
 ---
 
 
