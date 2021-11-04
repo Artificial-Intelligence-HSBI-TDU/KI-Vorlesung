@@ -46,6 +46,10 @@ $x_1$ ist [bedingt irrelevant]{.alert}
 *Anmerkung*:
 Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum
 hat **exakt** die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
+
+**Anmerkung**:
+$x_1$ im obigen Beispiel ist sogar [global irrelevant]{.alert}, da es sich hier um die
+Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere Weg ...
 :::
 
 
@@ -76,6 +80,10 @@ hat eine etwas andere Klassifikation als der Baum vor dem Pruning. Wo vorher
 ein `*` ausgegeben wurde, wird nach dem Pruning u.U. ein Klassensymbol
 ausgegeben. Der Klassifikationsfehler erhöht sich aber **nicht**, da hier ein
 `*` wie ein falsches Klassensymbol zu werten ist.
+
+**Anmerkung**:
+$x_1$ im obigen Beispiel ist sogar [global redundant]{.alert}, da es sich hier um die
+Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere Weg ...
 :::
 
 
@@ -88,7 +96,7 @@ $$
 
 ## Wrap-Up
 
-*   Pruning: Entfernen redundanter und irrelevanter Tests
+*   Pruning: Entfernen bedingt redundanter und irrelevanter Tests
 *   Transformationsregel zum Umbauen von Entscheidungsbäumen
 
 
