@@ -16,10 +16,10 @@ quizzes:
 assignments:
   - topic: sheet05
 youtube:
-  - id: TODO
+  - id: 4IZYA5EWO1k
 fhmedia:
-  - link: "TODO"
-    name: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/6c84f8e181911aa89818cac70de40087fcab1209f4e0264f77da811289a5420fd284bc89464822690ff7906a735c778bda490949bf69091a5420885cc5cdad69"
+    name: "Direktlink FH-Medienportal: KI Entropie"
 ---
 
 
