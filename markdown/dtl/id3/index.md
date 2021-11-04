@@ -16,10 +16,10 @@ quizzes:
 assignments:
   - topic: sheet05
 youtube:
-  - id: TODO
+  - id: Yo1cmeS6BK8
 fhmedia:
-  - link: "TODO"
-    name: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/aa69406cfdf0ce8b2b614dd475926b56c8025239c5b4458ec7741c7733c6077fd192e4db6f58c8a3e39b7b895c2ddedf83327640326bfbedc2617c4f75bc59bd"
+    name: "Direktlink FH-Medienportal: KI ID3 und C4.5"
 ---
 
 
