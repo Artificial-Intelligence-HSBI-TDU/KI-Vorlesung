@@ -8,7 +8,7 @@ readings:
     comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
 quizzes:
   - link: "https://kahoot.it/challenge/04633746?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636210513945"
-    name: "Selbsttest CAL2" (Kahoot)"
+    name: "Selbsttest CAL2 (Kahoot)"
 assignments:
   - topic: sheet05
 youtube:
