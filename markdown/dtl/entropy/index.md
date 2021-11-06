@@ -11,8 +11,8 @@ readings:
   - key: "Mitchell2010"
     comment: "ID3: Kapitel 3"
 quizzes:
-  - link: TODO
-    name: "TODO"
+  - link: "https://kahoot.it/challenge/04850187?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636211801830"
+    name: "Selbsttest Entropie (Kahoot)"
 assignments:
   - topic: sheet05
 youtube:
