@@ -10,9 +10,6 @@ readings:
     comment: "Entscheidungsbäume: Abschnitt 19.3"
   - key: "Mitchell2010"
     comment: "ID3: Kapitel 3"
-quizzes:
-  - link: TODO
-    name: "TODO"
 assignments:
   - topic: sheet05
 youtube:
