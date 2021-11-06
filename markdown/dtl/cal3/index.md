@@ -7,7 +7,7 @@ readings:
   - key: "Unger1981"
     comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
 quizzes:
-  - link: https://kahoot.it/challenge/02355374?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636211482929
+  - link: "https://kahoot.it/challenge/02355374?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636211482929"
     name: "Selbsttest CAL3 (Kahoot)"
 assignments:
   - topic: sheet05
