@@ -6,19 +6,10 @@ hidden: true
 
 
 {{% k1 %}}
--   Wuppie
--   Fluppie
+*   Definition und Arten des Lernens
 {{% /k1 %}}
 
 {{% k2 %}}
--   foo
--   bar
+*   Überwachtes Lernen: Lernen durch Beobachten (mit Lehrer)
+*   Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge
 {{% /k2 %}}
-
-{{% k3 %}}
-hammwanich
-{{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
