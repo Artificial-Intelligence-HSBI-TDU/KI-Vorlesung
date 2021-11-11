@@ -22,15 +22,13 @@ fhmedia:
 
 ## Medizinische Diagnostik mit NB
 
-*   Bei Meningitis wird oft ein steifer Hals beobachtet: $P(S|M) = 0.8$
-*   Eine von 10000 Personen hat Meningitis: $P(M) = 0.0001$
-*   Eine von 10 Personen hat einen steifen Hals: $P(S) = 0.1$
+*   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet: $P(S|A) = 0.8$
+*   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
+*   Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$
 
 \bigskip
 
-=> Ich habe einen steifen Hals. Habe ich Meningitis?
-
-<!-- TODO -->
+=> Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 
 ## Textklassifikation mit NB
@@ -57,12 +55,12 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 
 *   Verallgemeinerte Bayes Regel
     $$
-    P(H|D_1, \ldots, D_n) = \frac{P(D_1, \ldots, D_n|H)P(H)}{P(D_1, \ldots, D_n)}
+    P(H|D_1, \ldots, D_n) = \frac{P(D_1, \ldots, D_n | H)P(H)}{P(D_1, \ldots, D_n)}
     $$
 
 *   Annahme: $D_i$ sind bedingt unabhängig
     $$
-    P(D_1, \ldots, D_n|H) = P(D_1|H) \cdot \ldots \cdot P(D_n|H) = \prod_i P(D_i|H)
+    P(D_1, \ldots, D_n | H) = P(D_1 | H) \cdot \ldots \cdot P(D_n | H) = \prod_i P(D_i | H)
     $$
 
 *   Beobachtung: $P(D_1, \ldots, D_n)$ für alle Hypothesen $h \in H$ gleich
@@ -72,8 +70,8 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 
 *   **Naive Bayes Klassifikator** bzw. **MAP**  [("Maximum a Posteriori")]{.notes}
     $$
-    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
-    = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
+    h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
+    = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h)
     $$
 
     ::: notes
@@ -85,8 +83,8 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 ## Bayes'sches Lernen
 
 $$
-h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
-= \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
+h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
+= \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h)
 $$
 
 \bigskip
@@ -96,13 +94,13 @@ $$
 *   Für jede Klasse $h$:
     *   Schätze $P(h) = \dfrac{|S(h)|}{|S|}$
     *   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: \newline
-        Schätze $P(D_i=x|h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+        Schätze $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
 
 \bigskip
 
 **Klassifikation**: Wähle wahrscheinlichste Klasse $h_{MAP}$ für Vektor $\mathbf{x}$
 
-*   $h_{MAP} = \operatorname{argmax}_{h \in H} P(h) \prod_{x \in \mathbf{x}} P(x|h)$
+*   $h_{MAP} = \operatorname{argmax}_{h \in H} P(h) \prod_{x \in \mathbf{x}} P(x | h)$
 
 
 ## Beispiel Klassifikation mit NB
@@ -204,7 +202,7 @@ h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
 
 *   Unabhängigkeit der Attribute oft nicht gegeben
 
-    => $P(D_1, \ldots, D_n|H) \ne \prod_i P(D_i|H)$
+    => $P(D_1, \ldots, D_n | H) \ne \prod_i P(D_i | H)$
 
 *   A-posteriori-Wahrscheinlichkeiten oft unrealistisch nah an 1 oder 0
 
@@ -232,7 +230,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 *   Lösung: "Laplace-Schätzer" (auch "Laplace-Glättung")
 
-    Statt $P(D_i=x|h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+    Statt $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
 
     \smallskip
 
@@ -266,8 +264,8 @@ in der Trainingsmenge zu hoch gewichtet werden.
     $$
     \begin{array}{rcl}
     h_{MAP} &=& \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n) \\[5pt]
-            &=& \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h) \\[5pt]
-            &=& \operatorname{argmax}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i|h))]
+            &=& \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h) \\[5pt]
+            &=& \operatorname{argmax}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i | h))]
     \end{array}
     $$
 :::
@@ -278,8 +276,8 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 *   **Maximum a Posteriori**
     $$
-    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
-    = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
+    h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
+    = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h)
     $$
 
 \bigskip
@@ -288,7 +286,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
     **Maximum Likelihood**
     $$
-    h_{ML} = \operatorname{argmax}_{h \in H} \prod_i P(D_i|h)
+    h_{ML} = \operatorname{argmax}_{h \in H} \prod_i P(D_i | h)
     $$
 
     => Maximiere die Likelihood der Daten
@@ -315,7 +313,7 @@ Attributen hat man zwei Möglichkeiten:
 ::: notes
 ## Hinweis zum Sprachgebrauch
 
-In Abhängigkeit von der Verteilung der $P(D_i|h)$ spricht man von
+In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 
 *   "multinominalem" NB: Attribute umfassen mehrere Kategorien (verschiedene
     Ausprägungen, wie im "Soll ich schwimmen gehen"-Beispiel oben)
