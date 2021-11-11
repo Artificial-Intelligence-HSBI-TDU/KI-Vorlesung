@@ -5,20 +5,14 @@ hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Annahme von Unabhängigkeit => "Naive" Bayes Klassifikation
+*   Probleme und Verbesserungen mit/bei Naive Bayes:
+    *   Naivität der Annahme, dennoch sehr gute Erfolge in Praxis
+    *   Probleme mit niedrigen Wahrscheinlichkeiten
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten
+*   Klassifikation mit Naive Bayes durch Nutzung der geschätzten Wahrscheinlichkeiten
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}}
