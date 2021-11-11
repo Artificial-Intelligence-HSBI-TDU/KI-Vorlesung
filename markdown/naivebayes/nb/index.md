@@ -120,8 +120,8 @@ $$
 \pause
 \bigskip
 
-Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=1}|\text{krank})$,
-$P(\text{Nase=1}|\text{gesund})$, ...
+Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$,
+$P(\text{Nase=0}|\text{gesund})$, ...
 
 Wähle Klasse
 $$
