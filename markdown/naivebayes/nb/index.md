@@ -107,56 +107,55 @@ $$
 
 \bigskip
 
-| Beispiel | Himmel  | Lufttemp. | Wassertemp. | Wind      | Schwimmen? |
-|----------|---------|-----------|-------------|-----------|------------|
-| 1        | sonnig  | warm      | warm        | windstill | ja         |
-| 2        | sonnig  | kalt      | warm        | stürmisch | nein       |
-| 3        | sonnig  | warm      | warm        | brise     | ja         |
-| 4        | bewölkt | kalt      | kalt        | windstill | nein       |
-| 5        | regen   | kalt      | warm        | windstill | ja         |
+| Nase läuft | Husten | Gerötete Haut | Fieber | Klasse |
+|------------|--------|---------------|--------|--------|
+| 1          | 1      | 1             | 0      | krank  |
+| 1          | 1      | 0             | 0      | krank  |
+| 0          | 0      | 1             | 1      | krank  |
+| 1          | 0      | 0             | 0      | gesund |
+| 0          | 0      | 0             | 0      | gesund |
 
-*   Eingabe: Merkmalsvektor `(sonnig, kalt, warm, windstill)`
-
-<!-- TODO -->
+*   Eingabe: Person mit Husten und Fieber
 
 \pause
 \bigskip
 
-Gesucht: $P(\text{ja})$, $P(\text{nein})$, $P(\text{Himmel=sonnig}|\text{ja})$,
-$P(\text{Himmel=sonnig}|\text{nein})$, ...
+Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=1}|\text{krank})$,
+$P(\text{Nase=1}|\text{gesund})$, ...
 
 Wähle Klasse
 $$
 \begin{array}{rl}
-h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{ja, nein} \rbrace} & P(h) \cdot P(\text{Himmel=sonnig}|h) \cdot P(\text{Luft=kalt}|h) \\
-    & \cdot P(\text{Wasser=warm}|h) \cdot P(\text{Wind=windstill}|h)
+h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0}|h) \cdot P(\text{Husten=1}|h) \\
+    & \cdot P(\text{Haut=0}|h) \cdot P(\text{Fieber=1}|h)
 \end{array}
 $$
 
 ::: notes
-**Ergebnis**:
+**Ergebnis**: (nur die für den zu klassifizierenden Beispiel-Vektor nötigen
+Werte, die restlichen müssten aber auch beim "Training" berechnet werden!)
 
 ```
-P(ja)   = 3/5 = 0.6
-P(nein) = 2/5 = 0.4
+P(gesund) = 2/5 = 0.4
+P(krank)  = 3/5 = 0.6
 
-P(Himmel=sonnig | ja)   = 2/3 = 0.667
-P(Himmel=sonnig | nein) = 1/2 = 0.5
+P(Nase=0 | gesund) = 1/2 = 0.5
+P(Nase=0 | krank)  = 1/3 = 0.333
 
-P(Luft=kalt | ja)   = 1/3 = 0.333
-P(Luft=kalt | nein) = 2/2 = 1
+P(Husten=1 | gesund) = 0/2 = 0
+P(Husten=1 | krank)  = 2/3 = 0.667
 
-P(Wasser=warm | ja)   = 3/3 = 1
-P(Wasser=warm | nein) = 1/2 = 0.5
+P(Haut=0 | gesund) = 2/2 = 1
+P(Haut=0 | krank)  = 1/3 = 0.333
 
-P(Wind=windstill | ja)   = 2/3 = 0.667
-P(Wind=windstill | nein) = 1/2 = 0.5
+P(Fieber=1 | gesund) = 0/2 = 0
+P(Fieber=1 | krank)  = 1/3 = 0.333
 
-h = ja  : 0.6*0.667*0.333*1*0.667 = 0.089
-h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
+h = gesund: P(gesund) * P(Nase=0 | gesund) * P(Husten=1 | gesund) * P(Haut=0 | gesund) * P(Fieber=1 | gesund) = 0.4*0.5*0*1*0              = 0
+h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | krank)  * P(Fieber=1 | krank)  = 0.6*0.333*0.667*0.33*0.333 = 0.015
 ```
 
-=> Klasse "ja" gewinnt ...
+=> Klasse "krank" gewinnt ...
 :::
 
 [Tafelbeispiel]{.bsp}
@@ -344,7 +343,4 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
