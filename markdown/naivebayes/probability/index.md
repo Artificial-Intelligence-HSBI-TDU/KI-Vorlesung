@@ -287,78 +287,59 @@ gegeben bestimmte Symptome berechnen.
 :::
 
 
-## Beispiel Bayes I
+## Beispiel Bayes
 
-*   Bei Arthrose wird oft ein steifes Gelenk beobachtet: $P(S|A) = 0.8$
-*   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
-*   Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$
-
-\bigskip
+*   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet
+*   Eine von 10.000 Personen hat Arthrose
+*   Eine von 10 Personen hat ein steifes Gelenk
 
 => Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 \pause
-\bigskip
+
+*   Gegeben: $P(A) = 0.0001,   P(S) = 0.1,   P(S|A) = 0.8$
+*   Gesucht: $P(A|S)$
+
+\pause
 
 $$
 P(A|S) = \frac{P(S|A)P(A)}{P(S)} = \frac{0.8 \times 0.0001}{0.1} = 0.0008 = 0.08\%
 $$
 
 ::: notes
-Bei einem steifen Gelenk liegt die Wahrscheinlichkeit, an Arthrose erkrankt zu
-sein, bei nur 0.08\%. Kein Grund zur Sorge in diesem Fall :-)
+Wenn ein steifes Gelenk vorliegt, ist die Wahrscheinlichkeit, dann an Arthrose
+erkrankt zu sein, bei nur 0.08\%. Kein Grund zur Sorge in diesem Fall :-)
+:::
 
+\pause
 
+=> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also $P(S|\neg A$)?
+
+\pause
+
+Mit Marginalisierung: $P(S) = P(S|A)P(A) + P(S|\neg A)P(\neg A)$, \newline
+d.h. $0.1 = 0.8 \times 0.0001 + P(S|\neg A) \times (1-0.0001)$,
+d.h. $P(S|\neg A) = 0.0999$
+
+::: notes
+In knapp 10 Prozent der Fälle würde man im obigen Beispiel bei der Diagnose
+"keine Arthrose" ein steifes Gelenk beobachten.
+:::
+
+::: notes
 **Hinweis**: Die genannten Zahlen und Zusammenhänge sind rein fiktional und sollen
 lediglich zur Veranschaulichung der Bayes-Regel dienen!
 :::
 
-
-## Beispiel Bayes II
-
-*   Alarmanlage meldet jeden Einbruch mit einer Sicherheit von 99\%
-*   Wahrscheinlichkeit für Einbruch: 0.1\%
-*   Wird auch von Tieren o.ä. ausgelöst, Alarm-Wahrscheinlichkeit 10\%
-
-=> Wie wahrscheinlich ist ein Einbruch, wenn der Alarm ertönt?
-
-[Quelle: Beispiel nach [@Ertel2017, Ex. 7.9, S. 135]]{.origin}
-
-\pause
-
-*   Gegeben: $P(A) = 0.1, \; P(E) = 0.001, \; P(A|E) = 0.99$
-*   Gesucht: $P(E|A)$
-
-\pause
-
-$$
-P(E|A) = \frac{P(A|E)P(E)}{P(A)} = \frac{0.99 \times 0.001}{0.1} = 0.0099 = 0.99\%
-$$
-
 ::: notes
-Bei Ertönen des Alarms liegt die Wahrscheinlichkeit für einen Einbruch bei nur
-knapp 1 Prozent. Diese Alarmanlage ist vielleicht nicht sehr hilfreich ...
-:::
-
-\pause
-
-=> Wie wahrscheinlich ist ein Alarm ohne Einbruch, also $P(A|\neg E$)?
-
-\pause
-
-Mit Marginalisierung: $P(A) = P(A|E)P(E) + P(A|\neg E)P(\neg E)$, \newline
-d.h. $0.1 = 0.99 \times 0.001 + P(A|\neg E) \times (1-0.001) = 0.00099 + P(A|\neg E) \times 0.999$, \newline
-d.h. $P(A|\neg E) = 0,0991$
-
-::: notes
-In knapp 10 Prozent der Fälle wird der Alarm ohne Einbruch ausgelöst ...
+Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2017, Ex. 7.9, S. 135] an!
 :::
 
 
 ## Unabhängige Ereignisse
 
-*   $P(\text{ Halsschmerzen},\text{Regen}) = P(\text{Regen}|\text{ Halsschmerzen})P(\text{ Halsschmerzen})$
-*   $P(\text{Regen}|\text{ Halsschmerzen}) = \text{ ? }$ \pause $= P(\text{Regen})$
+*   $P(\text Halsschmerzen},\text{Regen}) = P(\text{Regen }|\text{ Halsschmerzen})P(\text{ Halsschmerzen})$
+*   $P(\text{Regen }|\text{ Halsschmerzen}) = \text{ ?? }$ \pause $= P(\text{Regen})$
 
 \pause
 \bigskip
@@ -404,7 +385,4 @@ $$ P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z) $$
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   TODO (what, where, license)
 :::
