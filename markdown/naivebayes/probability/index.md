@@ -29,6 +29,10 @@ Klassifikationsalgorithmus und ist teilweise eher oberflächlich gehalten.
 Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 :::
 
+::: notes
+### Ereignisse
+:::
+
 *   **Ereignisse** $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$:
     [endliche Menge der]{.notes}  Ausgänge eines Zufallsexperiments
 
@@ -37,19 +41,24 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
     *   schließen sich gegenseitig aus
 
 ::: notes
-**Regeln**:
+### Regeln
 
 *   Wenn $A$ und $B$ Ereignisse sind, dann auch $A \cup B$
 *   $\Omega$ wird als **sicheres Ereignis** bezeichnet: Enthält
     definitionsgemäß **alle** Versuchsausgänge, d.h. *ein* in der Menge
     enthaltenes Ereignis *muss* auftreten
 *   Die leere Menge $\emptyset$ wird als **unmögliches Ereignis** bezeichnet.
-*   Die Variablen $A$ und $B$ heißen auch **Zufallsvariablen**. Im Rahmen
-    dieser Veranstaltung betrachten wir nur diskrete Zufallsvariablen mit
-    endlichem Wertebereich!
+*   Die Variablen $A$ und $B$ heißen auch **Zufallsvariablen**.
+
+Im Rahmen dieser Veranstaltung betrachten wir nur diskrete Zufallsvariablen mit
+endlichem Wertebereich!
 :::
 
 \bigskip
+
+::: notes
+### Wahrscheinlichkeit
+:::
 
 *   **Wahrscheinlichkeit**:
 
@@ -67,14 +76,15 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
     ::: notes
     Man könnte auch schreiben: $P(A) = \sum_{\omega \in A} P(\omega)$
 
-    *Hinweis*: Diese Definition von Wahrscheinlichkeit geht von
-    gleichwahrscheinlichen Elementarereignissen aus! Die allgemeine Definition
+    *Hinweis*: Diese Definition von Wahrscheinlichkeit geht von gleich
+    wahrscheinlichen Elementarereignissen aus! Die allgemeine Definition
     geht über einen entsprechenden Grenzwert.
     :::
 
-
 ::: notes
-**Verteilung**: Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
+### Verteilung
+
+Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
 nennt man auch *Verteilung*.
 
 Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), \ldots, P(A=6)) = (1/6, 1/6, \ldots, 1/6)$
@@ -83,7 +93,6 @@ Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), \ldots, P(A=6)) = (1/6, 1/6, \ldots,
 kontinuierliche Variablen wird die Verteilung mit Hilfe einer
 **Dichtefunktion** dargestellt, beispielsweise der Gauss'schen Funktion.
 :::
-
 
 ::: notes
 ### Beispiel
@@ -99,7 +108,7 @@ kontinuierliche Variablen wird die Verteilung mit Hilfe einer
     $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{|\lbrace 2,4,6 \rbrace|}{|\lbrace 1,2,3,4,5,6 \rbrace|} = \frac{3}{6} = 0.5$
 :::
 
-[Tafel: Würfeln]{.bsp}
+[[Tafel: Würfeln]{.bsp}]{.slides}
 
 
 ## Rechenregeln: Kolmogorov Axiome
@@ -120,21 +129,19 @@ Sei $A$ ein Ereignis, also $A \subseteq \Omega$:
 \bigskip
 \bigskip
 
-Daraus folgt u.a.:
+Daraus folgt (u.a.):
 
 *   $P(\Omega) = 1$
-
 *   $P(\emptyset) = 0$
-
 *   $P(A) = 1- P(\neg A)$
 
+\smallskip
+
+::: notes
 *   $A$ und $B$ *unabhängig*:  $P(A \cup B) = P(A) + P(B)$
-
-    ::: notes
-    $P(A \cap B)$ ist leer, wenn $A$ und $B$ sich nicht überlappen
-    :::
-
+*   $P(A \cap B)$ ist leer, wenn $A$ und $B$ sich nicht überlappen
 *   $A \subseteq B$: $P(A) \le P(B)$
+:::
 
 [Tafel: Würfeln: Elementar, gerade Zahl]{.bsp}
 
@@ -272,7 +279,7 @@ gegeben bestimmte Symptome berechnen.
 :::
 
 
-## Beispiel Bayes
+## Beispiel Bayes I
 
 *   Bei Meningitis wird oft ein steifer Hals beobachtet: $P(S|M) = 0.8$
 *   Eine von 10000 Personen hat Meningitis: $P(M) = 0.0001$
@@ -297,20 +304,13 @@ sein, bei nur 0.08\%. Kein Grund zur Sorge in diesem Fall :-)
 
 ## Beispiel Bayes II
 
-::: notes
-Beispiel aus @Ertel2017, Seite 148
-
-<!-- TODO -->
-
-:::
-
 *   Alarmanlage meldet jeden Einbruch mit einer Sicherheit von 99\%
 *   Wahrscheinlichkeit für Einbruch: 0.1\%
 *   Wird auch von Tieren o.ä. ausgelöst, Alarm-Wahrscheinlichkeit 10\%
 
 => Wie wahrscheinlich ist ein Einbruch, wenn der Alarm ertönt?
 
-<!-- TODO -->
+[Quelle: Beispiel nach [@Ertel2017, Ex. 7.9, S. 135]]{.origin}
 
 \pause
 
@@ -332,7 +332,7 @@ knapp 1 Prozent. Diese Alarmanlage ist vielleicht nicht sehr hilfreich ...
 
 => Wie wahrscheinlich ist ein Alarm ohne Einbruch, also $P(A|\neg E$)?
 
-\pause‚
+\pause
 
 Mit Marginalisierung: $P(A) = P(A|E)P(E) + P(A|\neg E)P(\neg E)$, \newline
 d.h. $0.1 = 0.99 \times 0.001 + P(A|\neg E) \times (1-0.001) = 0.00099 + P(A|\neg E) \times 0.999$, \newline
