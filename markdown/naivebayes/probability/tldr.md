@@ -22,9 +22,20 @@ Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A|B)$ und berechnet sich
 $P(A|B) = \frac{P(A,B)}{P(B)}$.
 
 Daraus kann man die **Bayes-Regel** ableiten: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$.
-Dabei nennt man $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
-Wahrscheinlichkeit für $A$ ohne weiteres Wissen), $P(B|A)$ **"Likelihood"** (Wie
-wahrscheinlich ist das Auftreten von $B$, gegeben $A$?), $P(A|B)$ **"Posterior"**
-oder **"A-posteriori-Wahrscheinlichkeit"** (Wie wahrscheinlich ist $A$, wenn $B$
-eingetreten ist?), und $P(B)$ ist ein Normierungsfaktor (Wie wahrscheinlich ist
-$B$ an sich?).
+Dabei nennt man
+
+-   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"**
+
+    (die Wahrscheinlichkeit für $A$ ohne weiteres Wissen),
+
+-   $P(B|A)$ **"Likelihood"**
+
+    (Wie wahrscheinlich ist das Auftreten von $B$, gegeben $A$?),
+
+-   $P(A|B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"**
+
+    (Wie wahrscheinlich ist $A$, wenn $B$ eingetreten ist?), und
+
+-   $P(B)$ ist ein Normierungsfaktor
+
+    (Wie wahrscheinlich ist $B$ an sich?).

@@ -64,22 +64,24 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
     \frac{\text{Anzahl der für A günstigen Fälle}}{\text{Anzahl der möglichen Fälle}}
     $$
 
-::: notes
-*   Man könnte auch schreiben: $P(A) = \sum_{\omega \in A} P(\omega)$
+    ::: notes
+    Man könnte auch schreiben: $P(A) = \sum_{\omega \in A} P(\omega)$
 
     *Hinweis*: Diese Definition von Wahrscheinlichkeit geht von
     gleichwahrscheinlichen Elementarereignissen aus! Die allgemeine Definition
     geht über einen entsprechenden Grenzwert.
+    :::
 
 
-*   Verteilung: Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
-    nennt man auch **Verteilung**
+::: notes
+**Verteilung**: Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
+nennt man auch *Verteilung*.
 
-    Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), \ldots, P(A=6)) = (1/6, 1/6, \ldots, 1/6)$
+Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), \ldots, P(A=6)) = (1/6, 1/6, \ldots, 1/6)$
 
-    *Hinweis*: Wir betrachten hier nur diskrete Zufallsvariablen. Für
-    kontinuierliche Variablen wird die Verteilung mit Hilfe einer
-    **Dichtefunktion** dargestellt, beispielsweise der Gauss'schen Funktion.
+*Hinweis*: Wir betrachten hier nur diskrete Zufallsvariablen. Für
+kontinuierliche Variablen wird die Verteilung mit Hilfe einer
+**Dichtefunktion** dargestellt, beispielsweise der Gauss'schen Funktion.
 :::
 
 
@@ -296,7 +298,7 @@ sein, bei nur 0.08\%. Kein Grund zur Sorge in diesem Fall :-)
 ## Beispiel Bayes II
 
 ::: notes
-Beispiel aus @Ertel2016, Seite 148
+Beispiel aus @Ertel2017, Seite 148
 
 <!-- TODO -->
 
@@ -357,14 +359,14 @@ In knapp 10 Prozent der Fälle wird der Alarm ohne Einbruch ausgelöst ...
     => $P(A,B) = P(A|B)P(B) = P(A)P(B)$
 
 ::: notes
-*   Allgemein (**bedingte Unabhängigkeit**):
+Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):
 
-    $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$),
-    wenn $P(X|Y,Z) = P(X|Z)$ bzw. $P(Y|X,Z) = P(Y|Z)$
+> $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$),
+> wenn $P(X|Y,Z) = P(X|Z)$ bzw. $P(Y|X,Z) = P(Y|Z)$
 
-    Daraus folgt:
+Daraus folgt:
 
-    $$ P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z) $$
+$$ P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z) $$
 :::
 
 
