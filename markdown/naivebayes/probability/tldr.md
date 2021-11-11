@@ -17,11 +17,12 @@ Ausgänge. Über die Kolmogorov Axiome bekommt man die typischen Rechenregel fü
 die Wahrscheinlichkeit.
 
 Man kann eine **Verbundwahrscheinlichkeit** $P(A,B) = P(B,A)$ angeben, das ist
-die Wahrscheinlichkeit, dass $A$ und $B$ gleichzeitig auftreten. Die **bedingte**
-Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A|B)$ und berechnet sich
-$P(A|B) = \frac{P(A,B)}{P(B)}$.
+die Wahrscheinlichkeit, dass $A$ und $B$ gleichzeitig auftreten.
 
-Daraus kann man die **Bayes-Regel** ableiten: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$.
+Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A|B)$ und berechnet
+sich $P(A|B) = \frac{P(A,B)}{P(B)}$.
+
+Daraus kann man die **Bayes-Regel** ableiten: $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 Dabei nennt man
 
 -   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"**
