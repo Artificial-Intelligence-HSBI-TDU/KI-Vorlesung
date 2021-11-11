@@ -29,7 +29,7 @@ Klassifikationsalgorithmus und ist teilweise eher oberflächlich gehalten.
 Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 :::
 
-*   **Ereignisse** $\Omega = \lbrace \omega_1, \omega_2, ..., \omega_n \rbrace$:
+*   **Ereignisse** $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$:
     [endliche Menge der]{.notes}  Ausgänge eines Zufallsexperiments
 
 *   **Elementarereignis**: Die $\omega_i \in \Omega$
@@ -54,7 +54,7 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 *   **Wahrscheinlichkeit**:
 
     ::: notes
-    Sei $\Omega = \lbrace \omega_1, \omega_2, ..., \omega_n \rbrace$ endlich.
+    Sei $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$ endlich.
     Die Wahrscheinlichkeit $P(A)$ für ein Ereignis $A$ ist dann
     definiert als
     :::
@@ -75,7 +75,7 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 *   Verteilung: Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
     nennt man auch **Verteilung**
 
-    Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), ..., P(A=6)) = (1/6, 1/6, ..., 1/6)$
+    Beispiel: $\mathbf{P}(A) = (P(A=1), P(A=2), \ldots, P(A=6)) = (1/6, 1/6, \ldots, 1/6)$
 
     *Hinweis*: Wir betrachten hier nur diskrete Zufallsvariablen. Für
     kontinuierliche Variablen wird die Verteilung mit Hilfe einer
@@ -110,7 +110,7 @@ Sei $A$ ein Ereignis, also $A \subseteq \Omega$:
 
 *   $0 \le P(A) \le 1$
 
-*   $\Omega = \lbrace \omega_1, \omega_2, ..., \omega_n \rbrace$: $\sum_{i} P(\omega_i) = 1$
+*   $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$: $\sum_{i} P(\omega_i) = 1$
     [(Normierungsbedingung: Summe über die Wahrscheinlichkeiten aller Elementarereignisse ist immer 1)]{.notes}
 
 *   $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
@@ -196,7 +196,7 @@ $P(K) = P(K,Z) + P(K, \neg Z)$
 \pause
 
 [Allgemein:]{.notes}
-Seien $B_1, ..., B_n$ Elementarereignisse mit $\bigcup_i B_i = \Omega$.
+Seien $B_1, \ldots, B_n$ Elementarereignisse mit $\bigcup_i B_i = \Omega$.
 Dann ist $$P(A) = \sum_i P(A,B_i) = \sum_i P(A|B_i)P(B_i)$$
 
 ::: notes
@@ -216,12 +216,12 @@ Quaders auf eine Seitenfläche vergleichbar ist.
 *   Verallgemeinerung (**Kettenregel**):
     $$
     \begin{array}{rcl}
-    P(A_1,A_2,...,A_n) &=& P(A_n,...,A_2,A_1)\\
-        & = & P(A_n|A_{n-1},...,A_1)P(A_{n-1},...,A_1)\\
-        & = & P(A_n|A_{n-1},...,A_1)P(A_{n-1}|A_{n-2},...,A_1)P(A_{n-2},...,A_1)\\
-        & = & \text{ ... }\\
-        & = & P(A_n|A_{n-1},...,A_1)\text{ ... }P(A_2|A_1)P(A_1)\\
-        & = & \prod_i P(A_i|A_1,...,A_{i-1})
+    P(A_1,A_2,\ldots,A_n) &=& P(A_n,\ldots,A_2,A_1)\\
+        & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1},\ldots,A_1)\\
+        & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1}|A_{n-2},\ldots,A_1)P(A_{n-2},\ldots,A_1)\\
+        & = & \ldots\\
+        & = & P(A_n|A_{n-1},\ldots,A_1) \ldots P(A_2|A_1)P(A_1)\\
+        & = & \prod_i P(A_i|A_1,\ldots,A_{i-1})
     \end{array}
     $$
 
@@ -330,7 +330,7 @@ knapp 1 Prozent. Diese Alarmanlage ist vielleicht nicht sehr hilfreich ...
 
 => Wie wahrscheinlich ist ein Alarm ohne Einbruch, also $P(A|\neg E$)?
 
-\pause
+\pause‚
 
 Mit Marginalisierung: $P(A) = P(A|E)P(E) + P(A|\neg E)P(\neg E)$, \newline
 d.h. $0.1 = 0.99 \times 0.001 + P(A|\neg E) \times (1-0.001) = 0.00099 + P(A|\neg E) \times 0.999$, \newline
