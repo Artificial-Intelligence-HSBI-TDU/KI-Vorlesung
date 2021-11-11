@@ -152,14 +152,25 @@ $$P(A,B) = P(B,A) = \text{ Wahrscheinlichkeit, dass A und B gleichzeitig auftret
 
 \bigskip
 
-|               | Zahnschmerzen | $\neg$ Zahnschmerzen |
-|---------------|---------------|----------------------|
-| Karies        | 0.04          | 0.06                 |
-| $\neg$ Karies | 0.01          | 0.89                 |
+|                   | Halsschmerzen | $\neg$  Halsschmerzen |
+|-------------------|---------------|-----------------------|
+| Schnupfen         | 0.04          | 0.06                  |
+| $\neg$  Schnupfen | 0.01          | 0.89                  |
 
-<!-- TODO -->
+*   $P(S,H) = 0.04$
 
-*   $P(K,Z) = 0.04$
+::: notes
+Die Tabelle kann man so lesen: In 4 von 100 Fällen tritt das Ereignis "Schnupfen"
+gleichzeitig mit dem Ereignis "Halsschmerzen" auf, in 6 von 100 Fällen tritt
+"Schupfen" ohne Halsschmerzen auf. ... In Summe kommt man wieder auf 100 Fälle
+(100 Prozent).
+
+Nach diesen Zahlen liegt also die Verbundwahrscheinlichkeit für die Ereignisse
+"Schnupfen" und "Husten", d.h. $P(S,H)$, bei 4 Prozent.
+
+**Hinweis**: Die gezeigten Zahlen und Zusammenhänge sind **fiktiv**
+und dienen lediglich zur Verdeutlichung der Wahrscheinlichkeitsbegriffe!
+:::
 
 
 ## Bedingte Wahrscheinlichkeit
@@ -173,15 +184,13 @@ $$P(A|B) = \frac{P(A,B)}{P(B)}$$
 
 \bigskip
 
-|               | Zahnschmerzen | $\neg$ Zahnschmerzen |
-|---------------|---------------|----------------------|
-| Karies        | 0.04          | 0.06                 |
-| $\neg$ Karies | 0.01          | 0.89                 |
+|                   | Halsschmerzen | $\neg$  Halsschmerzen |
+|-------------------|---------------|-----------------------|
+| Schnupfen         | 0.04          | 0.06                  |
+| $\neg$  Schnupfen | 0.01          | 0.89                  |
 
-<!-- TODO -->
-
-*   $P(\text{Karies} | \text{Zahnschmerzen}) = \frac{P(K,Z)}{P(Z)} = \frac{0.04}{0.04+0.01} = 0.8$
-*   $P(\text{Zahnschmerzen} | \text{Karies}) = \frac{P(Z,K)}{P(K)} = \frac{0.04}{0.04+0.06} = 0.4$
+*   $P(\text{ Schnupfen } | \text{ Halsschmerzen}) = \frac{P(S,H)}{P(H)} = \frac{0.04}{0.04+0.01} = 0.8$
+*   $P(\text{ Halsschmerzen } | \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
 
 ::: notes
 Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
@@ -191,16 +200,15 @@ Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
 
 ## Marginalisierung
 
-|               | Zahnschmerzen | $\neg$ Zahnschmerzen | *Summe* |
-|---------------|---------------|----------------------|---------|
-| Karies        | 0.04          | 0.06                 | *0.1*   |
-| $\neg$ Karies | 0.01          | 0.89                 | *0.9*   |
-| *Summe*       | *0.05*        | *0.95*               | *1*     |
+|                   | Halsschmerzen | $\neg$  Halsschmerzen | $\sum$ |
+|-------------------|---------------|-----------------------|--------|
+| Schnupfen         | 0.04          | 0.06                  | *0.1*  |
+| $\neg$  Schnupfen | 0.01          | 0.89                  | *0.9*  |
+| $\sum$            | *0.05*        | *0.95*                | *1*    |
 
-<!-- TODO -->
+$P(S) = P(S,H) + P(S, \neg H)$
 
-$P(K) = P(K,Z) + P(K, \neg Z)$
-
+\bigskip
 \bigskip
 \pause
 
@@ -281,24 +289,28 @@ gegeben bestimmte Symptome berechnen.
 
 ## Beispiel Bayes I
 
-*   Bei Meningitis wird oft ein steifer Hals beobachtet: $P(S|M) = 0.8$
-*   Eine von 10000 Personen hat Meningitis: $P(M) = 0.0001$
-*   Eine von 10 Personen hat einen steifen Hals: $P(S) = 0.1$
+*   Bei Arthrose wird oft ein steifes Gelenk beobachtet: $P(S|A) = 0.8$
+*   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
+*   Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$
 
 \bigskip
 
-=> Ich habe einen steifen Hals. Habe ich Meningitis?
+=> Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 \pause
 \bigskip
 
 $$
-P(M|S) = \frac{P(S|M)P(M)}{P(S)} = \frac{0.8 \times 0.0001}{0.1} = 0.0008 = 0.08\%
+P(A|S) = \frac{P(S|A)P(A)}{P(S)} = \frac{0.8 \times 0.0001}{0.1} = 0.0008 = 0.08\%
 $$
 
 ::: notes
-Bei einem steifen Hals liegt die Wahrscheinlichkeit, an Meningitis erkrankt zu
+Bei einem steifen Gelenk liegt die Wahrscheinlichkeit, an Arthrose erkrankt zu
 sein, bei nur 0.08\%. Kein Grund zur Sorge in diesem Fall :-)
+
+
+**Hinweis**: Die genannten Zahlen und Zusammenhänge sind rein fiktional und sollen
+lediglich zur Veranschaulichung der Bayes-Regel dienen!
 :::
 
 
@@ -345,8 +357,8 @@ In knapp 10 Prozent der Fälle wird der Alarm ohne Einbruch ausgelöst ...
 
 ## Unabhängige Ereignisse
 
-*   $P(\text{Zahnschmerzen},\text{Regen}) = P(\text{Regen}|\text{Zahnschmerzen})P(\text{Zahnschmerzen})$
-*   $P(\text{Regen}|\text{Zahnschmerzen}) = \text{ ? }$ \pause $= P(\text{Regen})$
+*   $P(\text{ Halsschmerzen},\text{Regen}) = P(\text{Regen}|\text{ Halsschmerzen})P(\text{ Halsschmerzen})$
+*   $P(\text{Regen}|\text{ Halsschmerzen}) = \text{ ? }$ \pause $= P(\text{Regen})$
 
 \pause
 \bigskip
