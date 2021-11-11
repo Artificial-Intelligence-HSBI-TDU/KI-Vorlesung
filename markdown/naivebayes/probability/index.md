@@ -6,21 +6,17 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 readings:
   - key: "Russell2020"
-    comment: "Kapitel 2 und 3"
+    comment: "Kapitel 12"
   - key: "Ertel2017"
+    comment: "Abschnitt 7.1"
 quizzes:
-  - link: XYZ
-    name: "Testquizz (URL from `'`{=markdown}Invite more Players`'`{=markdown})"
-assignments:
-  - topic: blatt01
+  - link: TODO
+    name: "Selbsttest Wahrscheinlichkeiten (Kahoot)"
 youtube:
-  - id: XYZ (ID)
-  - link: https://youtu.be/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
+  - id: TODO
 fhmedia:
-  - link: https://www.fh-bielefeld.de/medienportal/m/XYZ
-    name: "Use This As Link Text (Link from `'share'`{=markdown}-Button)"
-sketch: true
+  - link: TODO
+    name: "Direktlink FH-Medienportal: KI Wahrscheinlichkeiten"
 ---
 
 
