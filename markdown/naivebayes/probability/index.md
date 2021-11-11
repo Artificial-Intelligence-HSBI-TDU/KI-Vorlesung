@@ -47,8 +47,8 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 *   $\Omega$ wird als **sicheres Ereignis** bezeichnet: Enthält
     definitionsgemäß **alle** Versuchsausgänge, d.h. *ein* in der Menge
     enthaltenes Ereignis *muss* auftreten
-*   Die leere Menge $\emptyset$ wird als **unmögliches Ereignis** bezeichnet.
-*   Die Variablen $A$ und $B$ heißen auch **Zufallsvariablen**.
+*   Die leere Menge $\emptyset$ wird als **unmögliches Ereignis** bezeichnet
+*   Die Variablen $A$ und $B$ heißen auch **Zufallsvariablen**
 
 Im Rahmen dieser Veranstaltung betrachten wir nur diskrete Zufallsvariablen mit
 endlichem Wertebereich!
