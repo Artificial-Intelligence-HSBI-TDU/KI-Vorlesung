@@ -57,22 +57,22 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 
 *   Verallgemeinerte Bayes Regel
     $$
-    P(H|D_1,  \ldots, D_n) = \frac{P(D_1,  \ldots, D_n|H)P(H)}{P(D_1,  \ldots, D_n)}
+    P(H|D_1, \ldots, D_n) = \frac{P(D_1, \ldots, D_n|H)P(H)}{P(D_1, \ldots, D_n)}
     $$
 
 *   Annahme: $D_i$ sind bedingt unabhängig
     $$
-    P(D_1,  \ldots, D_n|H) = P(D_1|H) \cdot  \ldots \cdot P(D_n|H) = \prod_i P(D_i|H)
+    P(D_1, \ldots, D_n|H) = P(D_1|H) \cdot \ldots \cdot P(D_n|H) = \prod_i P(D_i|H)
     $$
 
-*   Beobachtung: $P(D_1,  \ldots, D_n)$ für alle Hypothesen $h \in H$ gleich
+*   Beobachtung: $P(D_1, \ldots, D_n)$ für alle Hypothesen $h \in H$ gleich
 
 \bigskip
 \bigskip
 
 *   **Naive Bayes Klassifikator** bzw. **MAP**  [("Maximum a Posteriori")]{.notes}
     $$
-    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n)
+    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
     = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
     $$
 
@@ -85,7 +85,7 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 ## Bayes'sches Lernen
 
 $$
-h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n)
+h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
 = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
 $$
 
@@ -202,7 +202,7 @@ h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
 
 *   Unabhängigkeit der Attribute oft nicht gegeben
 
-    => $P(D_1,  \ldots, D_n|H) \ne \prod_i P(D_i|H)$
+    => $P(D_1, \ldots, D_n|H) \ne \prod_i P(D_i|H)$
 
 *   A-posteriori-Wahrscheinlichkeiten oft unrealistisch nah an 1 oder 0
 
@@ -210,7 +210,7 @@ h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
 
 *   Praxis: Dennoch häufig sehr gute Ergebnisse :-)
 
-    Wichtig: $\operatorname{argmax}_{h \in H} P(h) P(D_1,  \ldots, D_n|h) = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)$
+    Wichtig: $\operatorname{argmax}_{h \in H} P(h) P(D_1, \ldots, D_n|h) = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)$
 
     Solange die **Maximierung** die *selben Ergebnisse* liefert, müssen die
     konkreten Schätzungen/Werte nicht exakt stimmen ...
@@ -265,7 +265,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
     $$
     \begin{array}{rcl}
-    h_{MAP} &=& \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n) \\[5pt]
+    h_{MAP} &=& \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i|h))]
     \end{array}
@@ -278,7 +278,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 *   **Maximum a Posteriori**
     $$
-    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n)
+    h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n)
     = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)
     $$
 
