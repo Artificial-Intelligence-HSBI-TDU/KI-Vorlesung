@@ -187,6 +187,8 @@ h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
             der Klasse $c$ und $V$ die Vereinigung aller Terme aller Dokumente
             (als Menge)
 
+        \smallskip
+
         ::: notes
         *   Variante mit Laplace-Glättung (s.u.):
             $P(t|c) = \dfrac{\operatorname{count}(t,c) + 1}{\sum_{v \in V} \operatorname{count}(v,c) + |V|}$
@@ -208,12 +210,10 @@ h = nein: 0.4*0.5*1*0.5*0.5       = 0.05
 
 \bigskip
 
-*   Praxis: Dennoch häufig sehr gute Ergebnisse :-)
+*   Praxis: Dennoch häufig sehr gute Ergebnisse
 
-    Wichtig: $\operatorname{argmax}_{h \in H} P(h) P(D_1, \ldots, D_n|h) = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)$
-
-    Solange die **Maximierung** die *selben Ergebnisse* liefert, müssen die
-    konkreten Schätzungen/Werte nicht exakt stimmen ...
+    Wichtig: Solange die **Maximierung** über alle Hypothesen die selben Ergebnisse
+    liefert, müssen die konkreten Schätzungen/Werte nicht exakt stimmen ...
 
 Wenn Attribute nicht (bedingt) unabhängig sind, kann sich der NB verschätzen,
 d.h. es kommt dann u.U. zu einer höheren Fehlerrate, da bestimmte Eigenschaften
