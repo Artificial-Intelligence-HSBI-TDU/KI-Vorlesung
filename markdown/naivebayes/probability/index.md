@@ -189,8 +189,8 @@ $$P(A|B) = \frac{P(A,B)}{P(B)}$$
 | Schnupfen         | 0.04          | 0.06                  |
 | $\neg$  Schnupfen | 0.01          | 0.89                  |
 
-*   $P(\text{ Schnupfen } | \text{ Halsschmerzen}) = \frac{P(S,H)}{P(H)} = \frac{0.04}{0.04+0.01} = 0.8$
-*   $P(\text{ Halsschmerzen } | \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
+*   $P(\text{Schnupfen } | \text{ Halsschmerzen}) = \frac{P(S,H)}{P(H)} = \frac{0.04}{0.04+0.01} = 0.8$
+*   $P(\text{Halsschmerzen } | \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
 
 ::: notes
 Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
@@ -338,7 +338,7 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2017, Ex. 7.9, S. 135] an!
 
 ## Unabhängige Ereignisse
 
-*   $P(\text Halsschmerzen},\text{Regen}) = P(\text{Regen }|\text{ Halsschmerzen})P(\text{ Halsschmerzen})$
+*   $P(\text{Halsschmerzen},\text{ Regen}) = P(\text{Regen }|\text{ Halsschmerzen})P(\text{Halsschmerzen})$
 *   $P(\text{Regen }|\text{ Halsschmerzen}) = \text{ ?? }$ \pause $= P(\text{Regen})$
 
 \pause
