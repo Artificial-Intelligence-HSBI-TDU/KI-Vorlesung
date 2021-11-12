@@ -13,9 +13,9 @@ quizzes:
   - link: TODO
     name: "Selbsttest Naive Bayes Klassifikation (Kahoot)"
 youtube:
-  - id: TODO
+  - id: qfX4zp1i-Co
 fhmedia:
-  - link: TODO
+  - link: "https://www.fh-bielefeld.de/medienportal/m/d84605cc9bccc5d1d8d589c2968726d32539aa629bff06e28096a834730bfd8c1bef1604fd09ee1aab906d30272c5fd1f31b11418fa2bdb2e2710a23dd382d1c"
     name: "Direktlink FH-Medienportal: KI Naive Bayes Klassifikation"
 ---
 
