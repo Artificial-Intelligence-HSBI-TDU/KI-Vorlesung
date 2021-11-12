@@ -13,9 +13,9 @@ quizzes:
   - link: TODO
     name: "Selbsttest Wahrscheinlichkeiten (Kahoot)"
 youtube:
-  - id: TODO
+  - id: p_Yy5rkl4CA
 fhmedia:
-  - link: TODO
+  - link: "https://www.fh-bielefeld.de/medienportal/m/91611d22ad88ef1adf04c3956746256d14c609274091660652ff567645a537a8983f61cf6c3406110e27dc6cb56b65b599d72d60ab37f45977b6732f6610830d"
     name: "Direktlink FH-Medienportal: KI Wahrscheinlichkeiten"
 ---
 
