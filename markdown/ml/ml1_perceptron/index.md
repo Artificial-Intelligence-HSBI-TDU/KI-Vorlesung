@@ -15,9 +15,12 @@ outcomes: false
 # assignments:
 #   - topic: blatt01
 #   - topic: blatt02
-# youtube:
-#   - id: XYZ (ID)
-#   - id: XYZ (ID)
+youtube:
+    - id: IJdiwITTC9Y
+    - id: oWcvFyLgqYc
+    - id: ZvWpI0Doocc
+    - id: 8Rdw2NBCCJk
+    - id: JD8Qsg8_kQI
 ---
 
 
