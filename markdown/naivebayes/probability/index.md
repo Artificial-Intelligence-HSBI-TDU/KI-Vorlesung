@@ -10,7 +10,7 @@ readings:
   - key: "Ertel2017"
     comment: "Abschnitt 7.1"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/07261469?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636955910891"
     name: "Selbsttest Wahrscheinlichkeiten (Kahoot)"
 youtube:
   - id: p_Yy5rkl4CA
