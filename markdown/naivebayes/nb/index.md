@@ -10,7 +10,7 @@ readings:
   - key: "Ertel2017"
     comment: "Abschnitt 8.7"
 quizzes:
-  - link: TODO
+  - link: "https://kahoot.it/challenge/04333248?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636955922820"
     name: "Selbsttest Naive Bayes Klassifikation (Kahoot)"
 youtube:
   - id: qfX4zp1i-Co
