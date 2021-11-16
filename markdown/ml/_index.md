@@ -1,11 +1,11 @@
 ---
 chapter: true
-title: "Machine Learning"
+title: "Machine Learning: Perzeptron"
 weight: 8
 ---
 
 
-# Machine Learning
+# Machine Learning: Perzeptron
 
 Inhalt befindet sich im Aufbau<br>
 und wird rechtzeitig bereitgetellt.
