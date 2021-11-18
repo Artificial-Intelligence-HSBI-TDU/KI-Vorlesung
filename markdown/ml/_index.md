@@ -1,11 +1,12 @@
 ---
 chapter: true
-title: "Machine Learning: Perzeptron"
+title: "NN: Einführung in Neuronale Netze"
+menuTitle: "Neuronale Netze"
 weight: 8
 ---
 
 
-# Machine Learning: Perzeptron
+# NN: Einführung in Neuronale Netze
 
 Wie funktioniert das Gehirn? Wie funktioniert eine Nervenzelle? Wie kann man ein Modell
 einer Nervenzelle erstellen (Perzeptron)? Wie kann man damit lernen? Wie kann man daraus
