@@ -15,15 +15,45 @@ outcomes: false
 # assignments:
 #   - topic: blatt01
 #   - topic: blatt02
-# youtube:
-#   - id: XYZ (ID)
-#   - id: XYZ (ID)
+youtube:
+    - id: IJdiwITTC9Y
+    - id: oWcvFyLgqYc
+    - id: ZvWpI0Doocc
+    - id: 8Rdw2NBCCJk
+    - id: JD8Qsg8_kQI
 ---
 
 
-<div style="text-align:center;">
-Inhalt befindet sich im Aufbau<br>
-und wird rechtzeitig bereitgetellt.
-</div>
+## Kurze Übersicht
+
+### Definition "Maschinelles Lernen"
+Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959)
+
+### Arten des Lernens
+
+*   Überwachtes Lernen (e.g. Klassifizierung, Regression)
+*   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
+*   Bestärkendes Lernen (e.g. Schach spielen)
+
+
+### Formalisierung
+
+*   Zielfunktion $f$
+*   Merkmalraum (input space)
+*   Ausgaberaum (output space)
+*   Datensatz $ \mathcal{D} $
+*   Hypothesenmenge $ \mathcal{H} $
+*   Lernalgorithmus $ \mathcal{A} $
+
+
+### Das Perzeptron
+Ein einfaches Modell für die **binäre Klassifizierung**
+
+*   Bilde gewichtete Summe (Linearkombination) der Merkmale
+*   Vergleiche das Ergebnis mit einem Schwellenwert
+    *   Positiv, falls über dem Schwellenwert
+    *   Negativ, falls unter dem Schwellenwert
+*   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt > siehe **Perzeptron Lernalgorithmus**
+
 
 
