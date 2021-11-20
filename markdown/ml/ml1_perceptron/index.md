@@ -23,7 +23,6 @@ youtube:
     - id: JD8Qsg8_kQI
 ---
 
-<br>
 
 ## Kurze Übersicht
 
@@ -50,8 +49,8 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 ### Das Perzeptron
 Ein einfaches Modell für die **binäre Klassifizierung**
 
-*   Bilde gewichtete Summe (Linearkombination) der Merkmale 
-*   Vergleiche das Ergebnis mit einem Schwellenwert 
+*   Bilde gewichtete Summe (Linearkombination) der Merkmale
+*   Vergleiche das Ergebnis mit einem Schwellenwert
     *   Positiv, falls über dem Schwellenwert
     *   Negativ, falls unter dem Schwellenwert
 *   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt > siehe **Perzeptron Lernalgorithmus**
