@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "ML3 - Logistische Regression"
-menuTitle: "ML3 - Logistische Regression"
+title: "NN3 - Logistische Regression"
+menuTitle: "NN3 - Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 3
 outcomes: false

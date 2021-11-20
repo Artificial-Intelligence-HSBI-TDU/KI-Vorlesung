@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "ML7 - Training & Testing"
-menuTitle: "ML7 - Training & Testing"
+title: "NN7 - Training & Testing"
+menuTitle: "NN7 - Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 7
 outcomes: false
