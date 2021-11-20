@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "ML2 - Lineare Regression"
-menuTitle: "ML2 - Lineare Regression"
+title: "NN2 - Lineare Regression"
+menuTitle: "NN2 - Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 2
 outcomes: false

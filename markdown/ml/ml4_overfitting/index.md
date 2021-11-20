@@ -1,7 +1,7 @@
 ---
 type: lecture-cy
-title: "ML4 - Overfitting"
-menuTitle: "ML4 - Overfitting"
+title: "NN4 - Overfitting"
+menuTitle: "NN4 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 4
 outcomes: false
