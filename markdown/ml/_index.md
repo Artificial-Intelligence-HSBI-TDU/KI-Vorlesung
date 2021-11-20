@@ -8,9 +8,7 @@ weight: 8
 
 # NN: Einführung in Neuronale Netze
 
-Wie funktioniert das Gehirn? Wie funktioniert eine Nervenzelle? Wie kann man ein Modell
-einer Nervenzelle erstellen (Perzeptron)? Wie kann man damit lernen? Wie kann man daraus
-neuronale Netze erstellen und trainieren? Was muss man dabei alles beachten?
+Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden. Durch das zusammenschließen dieser "künstlichen "Nervenzellen" entstehen künstliche **Neuronale Netze** (NN), die ähnlich wie das Gehirn **lernen** sollen, komplexe Aufgaben zu bewerkstelligen. 
 
 
 {{< children showhidden="true" >}}
