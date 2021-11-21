@@ -5,7 +5,6 @@ author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
 hidden: true
 weight: 6
-sketch: false
 ---
 
 <style type="text/css">
