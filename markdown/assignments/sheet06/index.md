@@ -66,7 +66,7 @@ $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 *   (1P) Geben Sie $n$ und $m$ an und schreiben Sie die Kostenfunktion für die gegebenen Datenpunkte explizit auf. Berechnen Sie den Gradientenvektor $\nabla J$ und beschreiben Sie die Bedeutung dieses Vektors.
 
 *   (2P) Seien die Gewichte in einem Iterationsschritt $w_0 = 1, w_1 = 1$. Führen Sie für die Lernraten  $ \alpha = 0.01$, $ \alpha  = 0.1$ und  $ \alpha = 1$, jeweils fünf aufeinanderfolgende Iterationen des Gradientenabstieg (Gradient Descent) Algorithmus
-durch. Nehmen Sie das Geogebra Arbeitsblatt Gradientenabstieg zu Hilfe.
+durch. Nehmen Sie das Geogebra Arbeitsblatt [Gradientenabstieg](https://www.geogebra.org/classic/rcfffgsj) zu Hilfe.
 
     Erstellen Sie eine Tabelle mit den Spalten $w_0$, $w_1$, $J(\mathbf{w})$, $\nabla J(\mathbf{w})$, $\alpha \cdot \nabla J(\mathbf{w})$ und notieren Sie die zugehörigen Werte für jede Iteration. Erklären Sie, wie die Gewichtsaktualisierungen durchgeführt werden und geben Sie die dafür verwendete Formel an.
     
@@ -88,14 +88,14 @@ auf der einen Seite der Linie sollen als $+1$ und die anderen als $−1$ klassif
 
 Nun verwenden Sie in jedem Durchlauf den Perzeptron-Lernalgorithmus, um $h^{\*}$ zu finden. Initialisieren Sie alle Gewichstwerte mit $0$ und lassen Sie den Algorithmus bei jeder Iteration einen Punkt zufällig aus der Menge der falsch klassifizierten Punkte auswählen. Wir interessieren uns für die Anzahl der Iterationen, die PLA benötigt, um zu $h^{\*}$ zu konvergieren. Um eine zuverlässige Schätzung für diese Größe zu erhalten, wiederholen Sie das Experiment für $1000$ Durchläufe (jeder Durchlauf wie oben angegeben) und nehmen Sie den Durchschnitt über alle Durchläufe.
 
-*   Wählen Sie $m=10$. Wie viele Iterationen benötigt PLA durchnittlich, um zu konvergieren. Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
+*   Wählen Sie $m=10$. Wie viele Iterationen benötigt PLA durchnittlich, um zu konvergieren? Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
     *   1
     *   15
     *   300
     *   5000
     *   10000
 
-*   Wie viele Iterationen benötigt PLA durchnittlich, um für $m=100$ Punkte zu konvergieren. Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
+*   Wie viele Iterationen benötigt PLA durchnittlich, um für $m=100$ Punkte zu konvergieren? Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
     *   50
     *   100
     *   500
