@@ -24,7 +24,6 @@ weight: 6
     *   $ (w_0,w_1,w_2)^T = (-2, -1, -1)^T $
 
 *Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
-<br><br>
 
 ## A6.2: Logische Funktionen als Perzeptron (2P)
 
@@ -32,7 +31,6 @@ weight: 6
 *   (0.5P) Eine grundlegende Einschränkung des Perceptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
 
 *Thema*: Verständnis Perzeptron
-<br><br>
 
 
 ## A6.3: Perzeptron Lernalgorithmus I (3P)
@@ -50,7 +48,6 @@ weight: 6
 *   (1P) Zeichnen Sie eine geometrische Interpretation des Perzeptrons nach dem Lernen (Trennebene,  Gewichtsvektor, Trainingsbeispiele).
 
 *Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
-<br><br>
 
 ## A6.4: Lineare Regression und Gradientenabstieg (3P)
 
@@ -72,11 +69,9 @@ durch. Nehmen Sie das Geogebra Arbeitsblatt [Gradientenabstieg](https://www.geog
     Wie verändern sich die Kosten während des Gradientenabstieges für die unterschiedlichen Lernraten? Begründen Sie dieses Verhalten.
 
 *Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
-<br><br>
 
-<br>
 {{% challenges %}}
-## Bonus: Perzeptron Lernalgorithmus II (2P)
+## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
 In dieser Aufgabe werden Sie Ihre eigene Zielfunktion $f$ und Datensatz $\mathcal{D}$ erstellen. Nehmen Sie $n = 2$, damit Sie das Problem visualisieren können.
 
