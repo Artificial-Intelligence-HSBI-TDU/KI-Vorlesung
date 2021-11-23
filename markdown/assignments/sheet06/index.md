@@ -73,30 +73,19 @@ durch. Nehmen Sie das Geogebra Arbeitsblatt [Gradientenabstieg](https://www.geog
 {{% challenges %}}
 ## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
-In dieser Aufgabe werden Sie Ihre eigene Zielfunktion $f$ und Datensatz $\mathcal{D}$ erstellen. Nehmen Sie $n = 2$, damit Sie das Problem visualisieren können.
+Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
 
-Konstruieren Sie Ihren Datensatz, indem Sie $m$ Zufallspunkte im Bereich $\mathcal{X} = [−1, 1] \times [−1, 1] $ generieren (gleichförmig verteilt).
+*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X} = [−1, 1] \times [−1, 1] $.
+*   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] \times [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als Ihre Zielfunktion $f$.
+*   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um den entsprechenden Ausgangslabel $y^{(j)}$ zu erhalten.
 
-Wählen Sie in jedem Durchlauf eine zufällige Linie in der Ebene als Zielfunktion $f$. Nehmen Sie dazu zwei zufällige, gleichmäßig verteilte Punkte in $ [−1, 1] \times [−1, 1] $ und bilden Sie die durch diese zwei Punkte verlaufende Linie. Punkte
-auf der einen Seite der Linie sollen als $+1$ und die anderen als $−1$ klassifiziert werden. Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um den entsprechenden Ausgang (Label) $y^{(j)}$ zu erhalten.
+Führen Sie nun PLA $1000$ mal hintereinander durch. Initialsieren Sie jedes mal die Gewichte mit $0$. Wählen Sie in jedem Schritt einen Punkt *zufällig* aus der Menge der falsch klassifizierten Punkte. Halten Sie für jeden Durchlauf fest, wie viele Schritte PLA benötigt, um zu der endgültigen Hypothese $h^{\*}$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt es?
 
-Nun verwenden Sie in jedem Durchlauf den Perzeptron-Lernalgorithmus, um $h^{\*}$ zu finden. Initialisieren Sie alle Gewichstwerte mit $0$ und lassen Sie den Algorithmus bei jeder Iteration einen Punkt zufällig aus der Menge der falsch klassifizierten Punkte auswählen. Wir interessieren uns für die Anzahl der Iterationen, die PLA benötigt, um zu $h^{\*}$ zu konvergieren. Um eine zuverlässige Schätzung für diese Größe zu erhalten, wiederholen Sie das Experiment für $1000$ Durchläufe (jeder Durchlauf wie oben angegeben) und nehmen Sie den Durchschnitt über alle Durchläufe.
+Wiedeholen Sie das Experiment mit $m=100$ und $m=1000$ Datenpunkten. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
 
-*   Wählen Sie $m=10$. Wie viele Iterationen benötigt PLA durchnittlich, um zu konvergieren? Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
-    *   1
-    *   15
-    *   300
-    *   5000
-    *   10000
+Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 
-*   Wie viele Iterationen benötigt PLA durchnittlich, um für $m=100$ Punkte zu konvergieren? Wählen Sie die Option, die Ihrem Ergebnis am Nächsten ist.
-    *   50
-    *   100
-    *   500
-    *   1000
-    *   5000
-
-*Quelle*: Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012. Learning From Data. AMLBook.
+*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012. Learning From Data. AMLBook.
 
 *Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
 
