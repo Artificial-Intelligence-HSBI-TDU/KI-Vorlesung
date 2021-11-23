@@ -15,15 +15,16 @@ outcomes: false
 # assignments:
 #   - topic: blatt01
 #   - topic: blatt02
-# youtube:
-#   - id: XYZ (ID)
-#   - id: XYZ (ID)
+youtube:
+    - id: f-DTaKMnkj4
+    - id: UnLjjMswNRo
+    - id: H2YvYIaUW1Q
+    - id: URaVsZnfppQ
+    - id: 5OZF3Qopous
+    - id: m-TnM13I-no
 ---
 
 
-<div style="text-align:center;">
-Inhalt befindet sich im Aufbau<br>
-und wird rechtzeitig bereitgetellt.
-</div>
+## Kurze Übersicht
 
 
