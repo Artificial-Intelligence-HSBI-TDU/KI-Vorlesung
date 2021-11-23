@@ -27,8 +27,8 @@ weight: 6
 
 ## A6.2: Logische Funktionen als Perzeptron (2P)
 
-*   (1.5P) Das Perceptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Demonstrieren Sie die Implementierung der binären Logikfunktionen UND, ODER und KOMPLEMENT.
-*   (0.5P) Eine grundlegende Einschränkung des Perceptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
+*   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
+*   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
 
 *Thema*: Verständnis Perzeptron
 
@@ -55,14 +55,14 @@ Es sind folgende Trainingsdaten gegeben:
 
 $$ ( x^{(1)}, y^{(1)} ) = (1, 1), ( x^{(2)}, y^{(2)} ) = (2, 1), ( x^{(3)}, y^{(3)} ) = (3, 2) $$
 
-Es soll das Lineare Regressionsmodell $ h(x) = w_0 + w_1 x $ mit diesen Daten trainiert werden, wobei die zu minimierende Kostenfunktion (Durchschnittliche Summe der Fehlerquadrate) wie folgt gegeben ist:
+Es soll das lineare Regressionsmodell $ h(x) = w_0 + w_1 x $ mit diesen Daten trainiert werden, wobei die zu minimierende Kostenfunktion (durchschnittliche Summe der Fehlerquadrate) wie folgt gegeben ist:
 
 $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 
 *   (1P) Geben Sie $n$ und $m$ an und schreiben Sie die Kostenfunktion für die gegebenen Datenpunkte explizit auf. Berechnen Sie den Gradientenvektor $\nabla J$ und beschreiben Sie die Bedeutung dieses Vektors.
 
 *   (2P) Seien die Gewichte in einem Iterationsschritt $w_0 = 1, w_1 = 1$. Führen Sie für die Lernraten  $ \alpha = 0.01$, $ \alpha  = 0.1$ und  $ \alpha = 1$, jeweils fünf aufeinanderfolgende Iterationen des Gradientenabstieg (Gradient Descent) Algorithmus
-durch. Nehmen Sie das Geogebra Arbeitsblatt [Gradientenabstieg](https://www.geogebra.org/classic/rcfffgsj) zu Hilfe.
+durch. Nehmen Sie das Geogebra-Arbeitsblatt [Gradientenabstieg](https://www.geogebra.org/classic/rcfffgsj) zu Hilfe.
 
     Erstellen Sie eine Tabelle mit den Spalten $w_0$, $w_1$, $J(\mathbf{w})$, $\nabla J(\mathbf{w})$, $\alpha \cdot \nabla J(\mathbf{w})$ und notieren Sie die zugehörigen Werte für jede Iteration. Erklären Sie, wie die Gewichtsaktualisierungen durchgeführt werden und geben Sie die dafür verwendete Formel an.
     
@@ -73,7 +73,7 @@ durch. Nehmen Sie das Geogebra Arbeitsblatt [Gradientenabstieg](https://www.geog
 {{% challenges %}}
 ## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
-Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
+Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
 
 *   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X} = [−1, 1] \times [−1, 1] $.
 *   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] \times [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als Ihre Zielfunktion $f$.
@@ -81,7 +81,7 @@ Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Lau
 
 Führen Sie nun PLA $1000$ mal hintereinander durch. Initialsieren Sie jedes mal die Gewichte mit $0$. Wählen Sie in jedem Schritt einen Punkt *zufällig* aus der Menge der falsch klassifizierten Punkte. Halten Sie für jeden Durchlauf fest, wie viele Schritte PLA benötigt, um zu der endgültigen Hypothese $h^{\*}$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt es?
 
-Wiedeholen Sie das Experiment mit $m=100$ und $m=1000$ Datenpunkten. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
+Wiederholen Sie das Experiment mit $m=100$ und $m=1000$ Datenpunkten. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
 
 Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 
