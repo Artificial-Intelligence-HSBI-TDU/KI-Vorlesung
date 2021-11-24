@@ -30,7 +30,7 @@ youtube:
 ### Formalisierung
 *   Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis)
 *   Die **Hypothesenfunktion** ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$:
-    $$ h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n $$
+    $$ h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n $$
 *   Der **Verlust** (engl. loss) für einen Datenpunkt $ \mathbf{x} $ ist das **Fehlerquadrat**: 
     $$ \mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2 $$
 *   Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte:
@@ -40,9 +40,9 @@ youtube:
 ### Der Gradient
 *   Der **Gradientenvektor** $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die **Richtung des steilsten Aufstiegs**:
     $$ \nabla J = [ \partial J / \partial w_0 
-    \quad \partial J / \partial w_1 \quad ... 
+    \quad \partial J / \partial w_1 \quad \ldots 
     \quad \partial J / \partial w_n]^T $$
-*   **Schlussfolgerung**: in die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am *steilsten bergab!* 
+*   **Schlussfolgerung**: In die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am *steilsten bergab!* 
 *   **IDEE**: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken.
 
 
