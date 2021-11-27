@@ -4,7 +4,7 @@ title: "NN1 - Das Perzeptron"
 menuTitle: "NN1 - Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 1
-outcomes: false
+outcomes: true
 # readings:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"

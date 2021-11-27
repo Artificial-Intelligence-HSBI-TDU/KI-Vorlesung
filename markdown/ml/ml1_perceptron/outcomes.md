@@ -1,24 +1,22 @@
-<!-- ---
+---
 title: "Lernziele"
 disableToc: true
 hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Arten des maschinellen Lernens
+*   Formalisierung eines ML-Problems, insbesondere Klassifizierung
+    *   Datensatz
+    *   Merkmalraum
+    *   Hyphotesenfunktion
+    *   Zielfunktion
+*   Perzeptron als linearer Klassifizierer
+*   Entscheidungsgrenze
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Berechnung der Entscheidungsgrenze
+*   Perzeptron Lernalgorithmus
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}} -->
