@@ -1,24 +1,20 @@
-<!-- ---
+---
 title: "Lernziele"
 disableToc: true
 hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Lineare Regression aus Sicht neuronaler Netze
+    *   Graphische Darstellung
+    *   Vergleich mit Perzeptron
+*   Formalisierung
+*   Verlust- und Kostenfunktion
+*   Gradientenvektor
+*   Lernrate
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Gradientenabstieg
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}} -->

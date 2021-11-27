@@ -4,7 +4,7 @@ title: "NN2 - Lineare Regression"
 menuTitle: "NN2 - Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 2
-outcomes: false
+outcomes: true
 # readings:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
