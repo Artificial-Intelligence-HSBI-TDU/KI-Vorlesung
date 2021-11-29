@@ -15,15 +15,30 @@ outcomes: false
 # assignments:
 #   - topic: blatt01
 #   - topic: blatt02
-# youtube:
-#   - id: XYZ (ID)
-#   - id: XYZ (ID)
+youtube:
+    - id: GpJmjrqA5RY
+    - id: z-jFZeNWMRc
+    - id: ruuCKupOhCE
+    - id: kPAZsr-r1LA
 ---
 
+## Kurze Übersicht
 
-<div style="text-align:center;">
-Inhalt befindet sich im Aufbau<br>
-und wird rechtzeitig bereitgetellt.
-</div>
+### Formalisierung
+*   Ausgabe $y$ ist reelle Zahl aus dem stetigen Bereich $(0,1)$
+*   Die **Hypothesenfunktion** ist:
+    $$ h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) $$
+
+
+
+
+
+### Graphische Übersicht
+*   Logistische Regression
+    ![](images/log_reg_nn.png)
+*   Lineare Regression
+    ![](images/lin_reg_nn.png)
+*   Perzeptron
+    ![](images/perzeptron_nn.png)
 
 
