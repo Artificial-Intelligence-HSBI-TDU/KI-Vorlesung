@@ -1,24 +1,20 @@
-<!-- ---
+---
 title: "Lernziele"
 disableToc: true
 hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Logistische Regression aus Sicht neuronaler Netze
+    *   Graphische Darstellung
+    *   Vergleich mit Perzeptron und linearer Regression
+*   Formalisierung
+*   Sigmoid-Aktivierungsfunktion
+*   Verlust- und Kosten (Cross-Entropy Loss)
+
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Gradientenabstieg für logistische Regression
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}} -->
