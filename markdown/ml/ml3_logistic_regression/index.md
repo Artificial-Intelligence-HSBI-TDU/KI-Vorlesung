@@ -33,14 +33,14 @@ youtube:
     wobei hier $a := \hat{y} $ die Vorhersage ist.
 
 *   Die Kosten als durchschnittlicher Verlust über alle Datenpunkte $ x^{(1)}, \ldots, x^{(m)} $:
-$$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{4} $$
+    $$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{4} $$
 
 
 ### Gradientenabstieg
 *   Der Gradient für einen Datenpunkt $ \mathbf{x} $:
-$$  \frac{\partial \mathcal{L}}{\partial w} = (a-y)x$$
+    $$  \frac{\partial \mathcal{L}}{\partial w} = (a-y)x$$
 *   Der Gradient für alle Datenpunkte $X$ in Matrix-Notation:
-$$ \nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{8}$$
+    $$ \nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{8}$$
 
 
 ### Graphische Übersicht
