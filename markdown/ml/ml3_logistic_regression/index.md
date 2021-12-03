@@ -26,21 +26,21 @@ youtube:
 ### Formalisierung
 *   Ausgabe $y$ ist reelle Zahl aus dem stetigen Bereich $(0,1)$
 *   Die **Hypothesenfunktion** ist:
-    $$ h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) $$
+    $$ h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) \tag{1}$$
 
 *   Der **Kreuzentropie Verlust** (engl. Cross-Entropy) für einen Datenpunkt $ \mathbf{x} $: 
-    $$ \mathcal{L}(a, y) =  - y  \log(a) - (1-y)  \log(1-a)\tag{3} $$
+    $$ \mathcal{L}(a, y) =  - y  \log(a) - (1-y)  \log(1-a)\tag{2} $$
     wobei hier $a := \hat{y} $ die Vorhersage ist.
 
 *   Die Kosten als durchschnittlicher Verlust über alle Datenpunkte $ x^{(1)}, \ldots, x^{(m)} $:
-    $$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{4} $$
+    $$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{3} $$
 
 
 ### Gradientenabstieg
 *   Der Gradient für einen Datenpunkt $ \mathbf{x} $:
-    $$  \frac{\partial \mathcal{L}}{\partial w} = (a-y)x$$
+    $$  \frac{\partial \mathcal{L}}{\partial w} = (a-y)x \tag{4} $$
 *   Der Gradient für alle Datenpunkte $X$ in Matrix-Notation:
-    $$ \nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{8}$$
+    $$ \nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{5}$$
 
 
 ### Graphische Übersicht
