@@ -15,7 +15,7 @@ points: 10
     *   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] \times [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze ihrer Zielfunktion $f$: Punkte auf der einen Seite der Linie sollen als +1 und die anderen als −1 klassifiziert werden. 
     *   Werten Sie Ihre Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um den entsprechenden Ausgangslabel $y^{(j)}$ zu erhalten.
 
-*   (3P) Trainieren Sie ein logistisches Regressionsmodell auf diesen Daten, um $h^{\*} = \sigma(w^T x)$ zu finden. Verwenden Sie dazu den Gradientenabstieg-Algorithmus. Initialisieren Sie alle Gewichstwerte mit 0 und führen Sie 2000 Iterationen durch. Speichern Sie alle 100 Schritte die berechneten Kosten. Zeichnen Sie am Ende die Kosten als Diagramm über die Anzahl der Iterationen auf.
+*   (3P) Trainieren Sie ein logistisches Regressionsmodell auf diesen Daten, um $h^{\*} = \sigma(w^T x)$ zu finden. Verwenden Sie dazu den Gradientenabstieg-Algorithmus. Initialisieren Sie alle Gewichtswerte mit 0 und führen Sie 2000 Iterationen durch. Speichern Sie alle 100 Schritte die berechneten Kosten. Zeichnen Sie am Ende die Kosten als Diagramm über die Anzahl der Iterationen auf.
 
 *   (2P) Experimentieren Sie mit unterschiedlichen Lernraten, z.B.   $\alpha = 0.1,   \alpha = 0.01,   \alpha = 0.001$ und vergleichen Sie die Kosten-Diagramme.
 
@@ -34,7 +34,7 @@ Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/w
 
 *   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
 *   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken. 
-Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen
+Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
 
 
 *Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
