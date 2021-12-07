@@ -4,7 +4,7 @@ title: "NN5 - Multilayerperzeptron"
 menuTitle: "NN5 - Multilayerperzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 5
-outcomes: false
+outcomes: true
 # readings:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
@@ -25,7 +25,7 @@ youtube:
 ### MLP
 *   Das Perzeptron kann nur lineare Funktionen modellieren.
 *   Durch das Zusammenschließen von mehreren Perzeptronen entsteht ein mehrschichtiges Perzeptron, auch **Multi-Layer Perzeptron** (**MLP**), das komplexere Funktionen modellieren kann.
-*   Ein MLP wird oft auch als neuronales Netz, **Feed Forward Neural Network** oder  als **Fully Connected Neural Network** bezeichnet.
+*   Ein MLP wird oft auch als **neuronales Netzwerk**, **Feed Forward Neural Network** oder  als **Fully Connected Neural Network** bezeichnet.
 *   Die "inneren" Schichten eines Netzwerkes sind sogenannte **versteckte Schichten** (engl. hidden layer). Das sind alle Schichten ausgenommen der Eingangs- und Ausgangsschicht. 
 *   Ein **tiefes neuronales Netzwerk** ist ein neuronales Netzwerk mit mindestens einer versteckten Schicht. 
 
