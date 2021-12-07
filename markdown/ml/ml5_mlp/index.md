@@ -15,15 +15,26 @@ outcomes: false
 # assignments:
 #   - topic: blatt01
 #   - topic: blatt02
-# youtube:
-#   - id: XYZ (ID)
-#   - id: XYZ (ID)
+youtube:
+    - id: 7ltwa5WWuKI
 ---
 
 
-<div style="text-align:center;">
-Inhalt befindet sich im Aufbau<br>
-und wird rechtzeitig bereitgetellt.
-</div>
+## Kurze Übersicht
+
+### MLP
+*   Das Perzeptron kann nur lineare Funktionen modellieren.
+*   Durch das Zusammenschließen von mehreren Perzeptronen entsteht ein mehrschichtiges Perzeptron, auch **Multi-Layer Perzeptron** (**MLP**), das komplexere Funktionen modellieren kann.
+*   Ein MLP wird oft auch als neuronales Netz, **Feed Forward Neural Network** oder  als **Fully Connected Neural Network** bezeichnet.
+*   Die "inneren" Schichten eines Netzwerkes sind sogenannte **versteckte Schichten** (engl. hidden layer). Das sind alle Schichten ausgenommen der Eingangs- und Ausgangsschicht. 
+*   Ein **tiefes neuronales Netzwerk** ist ein neuronales Netzwerk mit mindestens einer versteckten Schicht. 
+
+### Graphische Übersicht und Vorwärtslauf
+*   Ein Multi-Layer Perzeptron
+    ![](images/mlp.png)
+    Ein Vorwärtslauf (forward pass):
+    $$ a^{[1]} = ReLU \left( W^{[1]} \cdot \mathbb{x} + b^{[1]} \right) \tag{1}$$
+    $$ \hat{y} := a^{[2]} = \sigma \left( W^{[2]} \cdot a^{[1]} + b^{[2]} \right) \tag{2}$$
+
 
 
