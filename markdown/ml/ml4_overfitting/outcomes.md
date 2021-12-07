@@ -1,24 +1,16 @@
-<!-- ---
+---
 title: "Lernziele"
 disableToc: true
 hidden: true
 ---
 
 
-{{% k1 %}}
--   Wuppie
--   Fluppie
-{{% /k1 %}}
-
 {{% k2 %}}
--   foo
--   bar
+*   Erhöhung der Modell-Komplexität durch Einfuhrung von Merkmalen höherer Ordnung
+*   Unter- und Überanpassung
+*   Regularisierung (Auswirkung auf Gewichte und Modell)
 {{% /k2 %}}
 
 {{% k3 %}}
-hammwanich
+*   Gradientenabstieg für regularisierte logistische Regression
 {{% /k3 %}}
-
-{{% k4 %}}
-gibbetsooch
-{{% /k4 %}} -->
