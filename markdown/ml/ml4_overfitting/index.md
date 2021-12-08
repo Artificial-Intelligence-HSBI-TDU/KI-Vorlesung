@@ -11,9 +11,8 @@ readings:
 # quizzes:
 #   - link: XYZ
 #     name: "Testquizz (URL from 'Invite more Players')"
-# assignments:
-#   - topic: blatt01
-#   - topic: blatt02
+assignments:
+    - topic: blatt08
 youtube:
     - id: KJLT-h_ChRo
     - id: BW91MYPUH_k
