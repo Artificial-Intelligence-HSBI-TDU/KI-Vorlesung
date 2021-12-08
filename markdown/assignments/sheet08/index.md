@@ -7,20 +7,18 @@ weight: 8
 sketch: true
 ---
 
+## A8.1: Lineares MLP (2P)
 
-Hier kommt der Inhalt für Blatt XYZ hin ... allgemeine einleitende Worte ...
+Gegeben sei ein MLP mit linearen Aktivierungsfunktionen, d.h. für jedes Neuron berechnet sich der Output durch die gewichtete Summe der Inputs: $ y = g(w^T x) $, wobei $ g(z) = z $ gilt, also $ y = w^T x $.
+Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen ersetzt werden kann. Betrachten Sie dazu ein zweilagiges Netz bestehend aus einer Ausgabe- und einer versteckten Schicht.
 
-## Aufgabe 1: XYZ (2P)
-
-tbd
-
-## Aufgabe 2: XYZ (3P)
-
-tbd
+*Thema*: Verständnis Bedeutung nichtlinearer Aktivierungsfunktionen
 
 
+## A8.2: Perzeptron-Netze (2P)
 
-{{% challenges %}}
-## Bonus: Wuppie (2P)
-Erstellen Sie ...
-{{% /challenges %}}
+Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
+
+{{< img src="images/perzeptron-netz.png" title="Abbildung 1" width="80%" >}}
+
+
