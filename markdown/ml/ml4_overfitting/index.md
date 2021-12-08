@@ -35,9 +35,9 @@ youtube:
 *   Regularisierung ist eine Maßnahme gegen Überanpassung. Man kann es sich als eine Reduktion in der Komplexität des Modells vorstellen.
 *   Der Regularisierungsparameter $\lambda$ ist ein Hyperparameter. Je größer der $\lambda$-Wert, desto größer der Regularisierungseffekt.
 *   Die **Kostentenfunktion** bei regulariserter logistischer Regression:
-    $$ J = \frac{1}{m} \left[ \sum_{i=1}^m \left( -y^{[i]}log(a^{[i]})-(1-y^{[i]})log(1-a^{[i]}) \right) + \frac{\lambda}{2} \sum_{j=1}^n (w^2_j)  \right] \tag{1} $$
+    $$ J = \frac{1}{m} \left\lbrack \sum_{i=1}^m \left( -y^{[i]}log(a^{[i]})-(1-y^{[i]})log(1-a^{[i]}) \right) + \frac{\lambda}{2} \sum_{j=1}^n (w^2_j)  \right\rbrack \tag{1} $$
 *   Die **Gewichtsaktualisierung** mit Regularisierungsterm:
-    $$ w_j := w_j - \frac{\alpha}{m} \left[ \sum_{i=1}^m \left( ( a^{[i]} - y^{[i]} )x_j^{[i]} \right) + \lambda w_j  \right] \tag{1} $$
+    $$ w_j := w_j - \frac{\alpha}{m} \left\lbrack \sum_{i=1}^m \left( ( a^{[i]} - y^{[i]} )x_j^{[i]} \right) + \lambda w_j  \right\rbrack \tag{1} $$
 
 
 
