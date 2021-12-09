@@ -125,6 +125,10 @@ SLIDES_IMAGE_TARGETS = $(SLIDES_TEX_TARGETS) $(SLIDES_DOT_TARGETS) $(SLIDES_STAN
 WEB_MARKDOWN_SOURCES = $(shell find $(SRC_DIR) -type f -iname '*.md')
 WEB_MARKDOWN_TARGETS = $(WEB_MARKDOWN_SOURCES:$(SRC_DIR)%=$(WEB_INTERMEDIATE_DIR)%)
 
+## Static files for web
+WEB_STATIC_SOURCES = $(shell find $(SRC_DIR) -type f \( -path '*files/*' ! -iname '.gitkeep' \))
+WEB_STATIC_TARGETS = $(WEB_STATIC_SOURCES:$(SRC_DIR)%=$(WEB_INTERMEDIATE_DIR)%)
+
 ## Source and target files for slides
 ## NOTE: The name for the target pdf file is generated from the relative
 ## path under $(SRC_DIR) with '/' substituted by '_'. Directories containing
@@ -185,7 +189,7 @@ $(SLIDES_SHORT_TARGETS): $$(patsubst %,$(SLIDES_OUTPUT_DIR)/%.pdf,$$@)
 
 ## Create website
 .PHONY: web
-web: $(WEB_MARKDOWN_TARGETS) $(WEB_IMAGE_TARGETS) $(READINGS) $(HUGO_LOCAL) ## Create website
+web: $(WEB_MARKDOWN_TARGETS) $(WEB_IMAGE_TARGETS) $(WEB_STATIC_TARGETS) $(READINGS) $(HUGO_LOCAL) ## Create website
 	$(HUGO) $(HUGO_ARGS)
 
 ## Build Docker image "alpine-pandoc-hugo"
@@ -282,6 +286,10 @@ $(WEB_IMAGE_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(IMAGES_OUTPUT_DIR)/%
 $(WEB_MARKDOWN_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
 	$(create-folder)
 	$(PANDOC) $(PANDOC_DIRS) -d hugo $< -o $@
+
+## Copy static files to $(WEB_INTERMEDIATE_DIR)
+$(WEB_STATIC_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
+	$(create-dir-and-copy)
 
 ## Copy image files to $(SLIDES_INTERMEDIATE_DIR)
 $(SLIDES_IMAGE_TARGETS): $(SLIDES_INTERMEDIATE_DIR)/%: $(IMAGES_OUTPUT_DIR)/%
