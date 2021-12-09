@@ -2,10 +2,11 @@
 type: assignment
 title: "Blatt 08: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
+points: 10
 hidden: true
 weight: 8
-sketch: false
 ---
+
 
 ## A8.1: Lineares MLP (2P)
 
@@ -39,6 +40,7 @@ Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/)
     *   Erhöhen Sie die Schichtanzahl auf drei, mit jeweils 7 Neuronen pro Schicht. Was können Sie über die Trainingszeit und Kosten sagen? Untersuchen und vergleichen Sie wieder die Ausgaben der Zellen in den drei Schichten.
 
 *Thema*: Verständnis Auswirkung der Hyperparameter eines MLP auf das Ergebnis 
+
 
 ## A8.4: Forwärtslauf im MLP (2P)
 
