@@ -1,5 +1,5 @@
 ##########################################################################
-# Makefile for the 'Compilerbau' lecture
+# Makefile for the 'Künstliche Intelligenz' lecture
 ##########################################################################
 
 ## Run 'make' or 'make help' to display commonly used targets. Targets for
