@@ -7,10 +7,10 @@ hidden: true
 weight: 6
 ---
 
-<style type="text/css">
+`<style type="text/css">
     ul { list-style-type: lower-alpha; }
     ul ul { list-style-type: circle; }
-</style>
+</style>`{=markdown}
 
 
 
