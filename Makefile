@@ -137,7 +137,7 @@ SLIDES_SHORT_TARGETS    = $(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,%,$(SLIDES_PDF_T
 
 ## Readings data template
 READINGS = data/readings.yaml
-BIBTEX   = cb.bib
+BIBTEX   = ki.bib
 
 #-------------------------------------------------------------------------
 # Secondary Expansion
