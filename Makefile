@@ -96,11 +96,10 @@ SRC   += dtl/entropy
 SRC   += dtl/id3
 SRC   += naivebayes/probability
 SRC   += naivebayes/nb
+SRC   += ml/ml4_overfitting
+SRC   += assignments/sheet01
 SRC   += misc/resources
 SRC   += misc/syllabus
-SRC   += assignments/sheet01
-SRC   += assignments/sheet01
-SRC += ml/ml4_overfitting
 
 ## Use different file extensions so Make can distinguish these targets
 SLIDES = $(patsubst %,$(TMP_CONTENT)/%/$(PAGE_PDF),$(SRC))
