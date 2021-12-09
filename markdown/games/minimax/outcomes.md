@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Minimax-Algorithmus
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

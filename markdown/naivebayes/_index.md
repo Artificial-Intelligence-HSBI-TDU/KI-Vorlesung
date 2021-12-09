@@ -16,4 +16,4 @@ bestimmen, wenn ich etwas Hintergrundwissen habe:
 Kann ich aus diesen Daten einen Klassifikator lernen?
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

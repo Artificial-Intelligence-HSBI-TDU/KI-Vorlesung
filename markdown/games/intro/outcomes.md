@@ -5,7 +5,7 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Spiele als Suchproblem
 *   Eigenschaften guter Spielalgorithmen
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}

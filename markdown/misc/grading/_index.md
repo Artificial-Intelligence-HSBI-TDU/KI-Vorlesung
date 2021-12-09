@@ -10,4 +10,4 @@ hidden: true
 Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

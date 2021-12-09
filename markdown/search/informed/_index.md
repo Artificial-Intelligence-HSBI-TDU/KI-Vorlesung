@@ -10,4 +10,4 @@ weight: 3
 ... Einsatz einer Kostenfunktion ...
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

@@ -15,4 +15,4 @@ das entsprechende Übungsblatt zu lösen, damit Sie in der der Sprechstunde Ihre
 Fragen zum Thema stellen können.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

@@ -5,14 +5,14 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Elementarereignisse und Wahrscheinlichkeit
 *   Bedingte Wahrscheinlichkeit und Verbundwahrscheinlichkeit
 *   (Bedingte) Unabhängigkeit
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Rechenregeln
 *   Marginalisierung
 *   Bayes'sche Regel
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

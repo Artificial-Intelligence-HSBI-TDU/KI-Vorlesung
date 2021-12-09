@@ -42,15 +42,15 @@ In den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
 Die Übungen bzw. Praktika werden wg. unterschiedlicher Prüfungsordnungen jeweils für beide
 Hochschulen getrennt durchgeführt.
 
-Zur Verteilung der Themen siehe auch den ["Fahrplan"]({{<ref "/misc/schedule" >}}). Die
-Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
+Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{<ref "/misc/schedule" >}})`{=markdown}.
+Die Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
 [Github](https://github.com/KI-Vorlesung/Lecture) entwickelt und bereitgestellt.
 
 
 
 ## Kursformat
 
-{{< img src="images/fahrplan_v2.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="90%" >}}
+`{{< img src="images/fahrplan_v2.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="90%" >}}`{=markdown}
 
 ### Vorlesung: 2 SWS
 
@@ -79,7 +79,7 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
 
-Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}})
+Siehe auch `["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}})`{=markdown}
 
 ### Übung TDU: 2 SWS
 
@@ -95,14 +95,14 @@ Siehe auch ["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}}
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf ILIAS (via Moodle)
 -   Vorstellung und Diskussion der Lösung **in** der Übungsstunde (Zoom)
 
-Siehe auch ["Hinweise zur Übung TDU"]({{<ref "/misc/grading/grading-tdu" >}})
+Siehe auch `["Hinweise zur Übung TDU"]({{<ref "/misc/grading/grading-tdu" >}})`{=markdown}
 
 
 
 ## Wichtige Seiten
 
-*   [Fahrplan]({{<ref "/misc/schedule" >}})
-*   [Praktikum]({{<ref "/assignments" >}})
-*   [Note und Credits]({{<ref "/misc/grading" >}})
-*   [Syllabus]({{<ref "/misc/syllabus" >}})
-*   [Ressourcen]({{<ref "/misc/resources" >}})
+*   `[Fahrplan]({{<ref "/misc/schedule" >}})`{=markdown}
+*   `[Praktikum]({{<ref "/assignments" >}})`{=markdown}
+*   `[Note und Credits]({{<ref "/misc/grading" >}})`{=markdown}
+*   `[Syllabus]({{<ref "/misc/syllabus" >}})`{=markdown}
+*   `[Ressourcen]({{<ref "/misc/resources" >}})`{=markdown}

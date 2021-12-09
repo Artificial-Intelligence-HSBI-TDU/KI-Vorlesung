@@ -11,4 +11,4 @@ Was ist Intelligenz? Was ist künstliche Intelligenz? Woran kann man das erkenne
 Wie kann man eine Welt (ein Problem) modellieren, um es dann anschließend lösen zu können?
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

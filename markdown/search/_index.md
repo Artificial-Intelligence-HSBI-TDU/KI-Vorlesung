@@ -11,4 +11,4 @@ Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Searc
 entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

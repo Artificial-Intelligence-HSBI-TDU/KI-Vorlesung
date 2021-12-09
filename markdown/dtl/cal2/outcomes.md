@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Entscheidungsbaumlerner CAL2
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

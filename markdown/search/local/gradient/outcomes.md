@@ -5,10 +5,10 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Problematik der lokalen Minima bei Gradientenverfahren
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Lokale Suche (Gradientenabstieg)
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

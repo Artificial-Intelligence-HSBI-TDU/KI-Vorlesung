@@ -5,7 +5,7 @@ hidden: true
 ---
 
 
-{{< schedule >}}
+`{{< schedule >}}`{=markdown}
 
 
 **Legende**:

@@ -19,4 +19,4 @@ aus dem Knoten. Wenn man am Blatt angekommen ist, hat man die Antwort des Baumes
 d.h. üblicherweise die Klasse.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

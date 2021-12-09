@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Meta-Algorithmus CAL3 für überlappende Klassen
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

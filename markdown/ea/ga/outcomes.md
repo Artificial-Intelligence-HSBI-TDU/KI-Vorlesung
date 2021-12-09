@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   GA: Kodierung, Fitnessfunktion, Ablauf, Operatoren, Auswertung
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}
