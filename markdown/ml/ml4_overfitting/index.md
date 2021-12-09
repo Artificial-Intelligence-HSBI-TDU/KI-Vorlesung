@@ -12,7 +12,7 @@ readings:
 #   - link: XYZ
 #     name: "Testquizz (URL from 'Invite more Players')"
 assignments:
-    - topic: blatt08
+    - topic: sheet08
 youtube:
     - id: KJLT-h_ChRo
     - id: BW91MYPUH_k
