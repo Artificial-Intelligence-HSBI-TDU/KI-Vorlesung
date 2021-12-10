@@ -10,4 +10,4 @@ weight: 2
 ... jeder Schritt "kostet" gleich viel: nur die Anzahl der Schritte zählt ...
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

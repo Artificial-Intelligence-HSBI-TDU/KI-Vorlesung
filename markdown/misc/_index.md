@@ -7,7 +7,7 @@ hidden: true
 
 # Organisatorisches
 
-*   [Fahrplan]({{<ref "/misc/schedule" >}})
-*   [Note und Credits]({{<ref "/misc/grading" >}})
-*   [Syllabus]({{<ref "/misc/syllabus" >}})
-*   [Ressourcen]({{<ref "/misc/resources" >}})
+*   `[Fahrplan]({{<ref "/misc/schedule" >}})`{=markdown}
+*   `[Note und Credits]({{<ref "/misc/grading" >}})`{=markdown}
+*   `[Syllabus]({{<ref "/misc/syllabus" >}})`{=markdown}
+*   `[Ressourcen]({{<ref "/misc/resources" >}})`{=markdown}

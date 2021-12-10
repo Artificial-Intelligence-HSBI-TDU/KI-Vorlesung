@@ -5,7 +5,7 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Lineare Regression aus Sicht neuronaler Netze
     *   Graphische Darstellung
     *   Vergleich mit Perzeptron
@@ -13,8 +13,8 @@ hidden: true
 *   Verlust- und Kostenfunktion
 *   Gradientenvektor
 *   Lernrate
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Gradientenabstieg
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

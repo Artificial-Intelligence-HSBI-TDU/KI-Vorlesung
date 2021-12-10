@@ -10,4 +10,4 @@ weight: 4
 ... das Ziel ist im Weg ...
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

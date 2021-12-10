@@ -5,7 +5,7 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Arten des maschinellen Lernens
 *   Formalisierung eines ML-Problems, insbesondere Klassifizierung
     *   Datensatz
@@ -14,9 +14,9 @@ hidden: true
     *   Zielfunktion
 *   Perzeptron als linearer Klassifizierer
 *   Entscheidungsgrenze
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Berechnung der Entscheidungsgrenze
 *   Perzeptron Lernalgorithmus
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

@@ -18,10 +18,11 @@ outcomes: false
 # youtube:
 #   - id: XYZ (ID)
 #   - id: XYZ (ID)
+sketch: true
 ---
 
 
-<div style="text-align:center;">
+<div class="sketch" style="text-align:center;">
 Inhalt befindet sich im Aufbau<br>
 und wird rechtzeitig bereitgetellt.
 </div>

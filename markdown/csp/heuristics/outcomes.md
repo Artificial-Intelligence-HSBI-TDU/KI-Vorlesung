@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

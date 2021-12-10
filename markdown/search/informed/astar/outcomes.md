@@ -5,14 +5,14 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   A*:
     *   Verwendete Datenstrukturen
     *   Algorithmische Abläufe, Terminierung
     *   Optimalität, Vollständigkeit und Komplexität
 *   Bedingung(en) an Restkostenabschätzung bei A\*
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Informierte Suchverfahren A*
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

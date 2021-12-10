@@ -4,6 +4,7 @@ title: "NN8 - Performanzanalyse"
 menuTitle: "NN8 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 8
+outcomes: false
 # readings:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
@@ -17,12 +18,11 @@ weight: 8
 # youtube:
 #   - id: XYZ (ID)
 #   - id: XYZ (ID)
-# outcomes: false
-# sketch: true
+sketch: true
 ---
 
 
-<div style="text-align:center;">
+<div class="sketch" style="text-align:center;">
 Inhalt befindet sich im Aufbau<br>
 und wird rechtzeitig bereitgetellt.
 </div>

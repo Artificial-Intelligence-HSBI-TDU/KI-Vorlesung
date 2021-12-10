@@ -7,10 +7,10 @@ hidden: true
 weight: 6
 ---
 
-<style type="text/css">
+`<style type="text/css">
     ul { list-style-type: lower-alpha; }
     ul ul { list-style-type: circle; }
-</style>
+</style>`{=markdown}
 
 
 
@@ -65,12 +65,12 @@ $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 durch. Nehmen Sie das Geogebra-Arbeitsblatt [Gradientenabstieg](https://www.geogebra.org/classic/rcfffgsj) zu Hilfe.
 
     Erstellen Sie eine Tabelle mit den Spalten $w_0$, $w_1$, $J(\mathbf{w})$, $\nabla J(\mathbf{w})$, $\alpha \cdot \nabla J(\mathbf{w})$ und notieren Sie die zugehörigen Werte für jede Iteration. Erklären Sie, wie die Gewichtsaktualisierungen durchgeführt werden und geben Sie die dafür verwendete Formel an.
-    
+
     Wie verändern sich die Kosten während des Gradientenabstieges für die unterschiedlichen Lernraten? Begründen Sie dieses Verhalten.
 
 *Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
 
-{{% challenges %}}
+`{{% challenges %}}`{=markdown}
 ## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
 Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
@@ -89,4 +89,4 @@ Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment 
 
 *Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
 
-{{% /challenges %}}
+`{{% /challenges %}}`{=markdown}

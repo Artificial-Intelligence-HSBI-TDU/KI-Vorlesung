@@ -5,6 +5,6 @@ hidden: true
 ---
 
 
-{{% k2 %}}
+`{{% k2 %}}`{=markdown}
 *   Funktionsweise Simulated Annealing
-{{% /k2 %}}
+`{{% /k2 %}}`{=markdown}

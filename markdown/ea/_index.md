@@ -10,4 +10,4 @@ weight: 3
 Lokale Suche mit Methoden, die der biologischen Evolution abgeschaut bzw. nachempfunden sind.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}

@@ -5,10 +5,10 @@ hidden: true
 ---
 
 
-{{% k1 %}}
+`{{% k1 %}}`{=markdown}
 *   Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung
-{{% /k1 %}}
+`{{% /k1 %}}`{=markdown}
 
-{{% k3 %}}
+`{{% k3 %}}`{=markdown}
 *   Formulierung von CSP
-{{% /k3 %}}
+`{{% /k3 %}}`{=markdown}

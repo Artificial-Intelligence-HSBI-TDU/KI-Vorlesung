@@ -5,7 +5,7 @@ languageCode: "de-DE"
 metaDataFormat: "yaml"
 theme: "hugo-theme-learn"
 
-contentDir: content
+contentDir: temp/content
 publishDir: docs
 
 params:

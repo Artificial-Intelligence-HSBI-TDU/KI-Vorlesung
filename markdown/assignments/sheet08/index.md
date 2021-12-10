@@ -20,26 +20,26 @@ Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen er
 
 Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
 
-{{< img src="images/perzeptron_netz.png" title="Abbildung 1" width="80%" >}}
+`{{< img src="images/perzeptron_netz.png" title="Abbildung 1" width="80%" >}}`{=markdown}
 
 
 ## A8.3: Tensorflow Playground (4P)
 
 Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/) um folgende Experimente durchzuführen.
 
-*   (2P) Stellen Sie ein MLP mit einer versteckten Schicht mit zwei Neuronen auf. Trainieren Sie das Netzwerk auf dem kreisförmigen Datensatz (Circle) mehrmals mit jeweils den Aktivierungsfunktionen ReLU, tanh und Sigmoid. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück. 
+*   (2P) Stellen Sie ein MLP mit einer versteckten Schicht mit zwei Neuronen auf. Trainieren Sie das Netzwerk auf dem kreisförmigen Datensatz (Circle) mehrmals mit jeweils den Aktivierungsfunktionen ReLU, tanh und Sigmoid. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
 
     *   Was passiert, wenn Sie die Anzahl der Neuronen in der versteckten Schicht auf drei erhöhen? Wie schaut die Entscheidungsgrenze aus? Wie schnell wird sie berechnet? Können alle Datenpunkte jedes mal korrekt klassifiziert werden?
     *   Erhöhen Sie die Anzahl der Schichten auf vier, mit jeweils 6 Zellen pro Schicht. Wie ändert sich dadurch die Entscheidungsgrenze? Was können Sie über Trainings- und Testkosten sagen? Entsteht eine Überanpassung?
     *   Setzen Sie nun den Noise-Level auf 15 und wiederholen Sie das Training. Kann von einer Überanpassung gesprochen werden? Hinweis: Sie können mit Hilfe der Checkbox unter der Ausgabezelle die Testdaten ein- und ausblenden.
 
-*   (2P) Trainieren Sie ein Netzwerk mit zwei versteckten Schichten mit jeweils 6   Neuronen einige Male auf dem spiralförmigen Datensatz (rechts unten). 
+*   (2P) Trainieren Sie ein Netzwerk mit zwei versteckten Schichten mit jeweils 6   Neuronen einige Male auf dem spiralförmigen Datensatz (rechts unten).
 
     *   Wie viele Epochen dauert das Training? Beobachten Sie Trainings- und Testkosten: liegt eine Überanpassung vor?
     *   Untersuchen Sie die Ausgaben der einzelnen Zellen, in dem Sie die Maus über die jeweilige Zelle bewegen. Bemerken Sie einen wesentlichen Unterschied in den Ausgaben der ersten Schicht im Vergleich zu der zweiten Schicht?
     *   Erhöhen Sie die Schichtanzahl auf drei, mit jeweils 7 Neuronen pro Schicht. Was können Sie über die Trainingszeit und Kosten sagen? Untersuchen und vergleichen Sie wieder die Ausgaben der Zellen in den drei Schichten.
 
-*Thema*: Verständnis Auswirkung der Hyperparameter eines MLP auf das Ergebnis 
+*Thema*: Verständnis Auswirkung der Hyperparameter eines MLP auf das Ergebnis
 
 
 ## A8.4: Forwärtslauf im MLP (2P)

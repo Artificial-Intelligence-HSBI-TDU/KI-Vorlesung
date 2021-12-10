@@ -20,4 +20,4 @@ Es handelt sich um eine bestimmte Art von Suchproblemen, wobei den Parametern
 Relationen zwischen den Variablen gelten.
 
 
-{{< children showhidden="true" >}}
+`{{< children showhidden="true" >}}`{=markdown}
