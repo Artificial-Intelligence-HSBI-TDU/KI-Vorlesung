@@ -4,7 +4,7 @@ title: "NN6 - Backpropagation"
 menuTitle: "NN6 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 6
-outcomes: false
+outcomes: true
 # readings:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
@@ -12,9 +12,8 @@ outcomes: false
 # quizzes:
 #   - link: XYZ
 #     name: "Testquizz (URL from 'Invite more Players')"
-# assignments:
-#   - topic: blatt01
-#   - topic: blatt02
+assignments:
+    - topic: blatt09
 youtube:
     - id: G9x75THjueQ
     - id: 9Ku0dJ8pGrU
@@ -30,7 +29,7 @@ sketch: false
 *   Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner **Forwärtsschritt** von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet:
     $$ Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1} $$
     $$A^{[l]} = g(Z^{[l]}) \tag{2} $$
-    Mit $g$ ist hier die Aktivierungsfunktion angegeben (z.B. Sigmoid oder ReLU).
+    Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
 
 *   Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen **Rückwärtsschritt** von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:
 
@@ -42,6 +41,8 @@ sketch: false
 
     $$ dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$
 
+    Dabei steht "$*$" für die elementweise Multiplikation.
+
 *   Beachten Sie:
     *   Der Forwärtsschirtt übernimmt $A^{[l-1]}$ von dem vorherigen Schritt und gibt $A^{[l]}$ an den nächsten Schritt weiter.
     *   Der Rückwärtschritt übernimmt $dA^{[l]}$ von dem vorherigen Schritt und gibt $dA^{[l-1]}$ an den nächtsen Rückwärtsschritt weiter.
@@ -52,4 +53,4 @@ sketch: false
 *   Die Aktualisierung der Parameter in Schicht $l$ erfolgt wie gewohnt durch:
     $$ W^{[l]} = W^{[l]} - \alpha \text{ } dW^{[l]} \tag{7}$$
     $$ b^{[l]} = b^{[l]} - \alpha \text{ } db^{[l]} \tag{8}$$
-    Mit $\alpha$ ist hier die Lernrate angegeben.
+    Dabei bezeichnet $\alpha$ die Lernrate.
