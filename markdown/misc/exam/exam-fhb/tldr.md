@@ -15,7 +15,7 @@ Aufsicht durchgeführt. Hier werden Ihnen Rechner für den Zugang zum Prüfungs-
 gestellt, Sie benötigen nur Ihre FH-Zugangsdaten.
 
 Wenn die Corona-Lage eine Durchführung in Präsenz nicht erlaubt, wird die Klausur stattdessen als
-*Open-Book-Prüfung* aus dem Home-Office durchgeführt. Sie benötigen dazu einen normalen Rechner
+*Open-Book-Ausarbeitung* aus dem Home-Office durchgeführt. Sie benötigen dazu einen normalen Rechner
 oder Laptop mit einem Standardbrowser. Tablets und Handys können wg. der Mobil-Version der Browser
 problematisch sein. Sie müssen JavaScript aktivieren und Cookies zulassen, der Privacy-Modus ist
 bitte ebenfalls zu deaktivieren. Sie erreichen den Prüfungs-ILIAS
@@ -33,8 +33,8 @@ schicken. Dort beantragen Sie bitte Zutritt (Verfahren wie bei den normalen ILIA
 ### Ablauf der Klausur
 
 Die Prüfung (das ILIAS-Objekt) selbst schalte ich dann zum Start der Prüfung online. Parallel zur
-Prüfung wird bei der Durchführung als Open-Book-Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen
-stellen können.
+Prüfung wird bei der Durchführung als Open-Book-Ausarbeitung eine Zoom-Sitzung laufen, in der Sie
+Fragen stellen können.
 
 Nach der Prüfung müssen Sie eine Erklärung abgeben, dass Sie die Prüfung selbstständig und ohne Hilfe
 Dritter angefertigt haben. Dazu ist im Prüfungsraum parallel zur eigentlichen Prüfung ein weiter Test

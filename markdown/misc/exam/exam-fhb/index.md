@@ -1,6 +1,6 @@
 ---
 type: lecture-cg
-title: "Prüfungsvorbereitung"
+title: "Prüfungsvorbereitung (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 youtube:
@@ -13,18 +13,20 @@ fhmedia:
 
 ## Elektronische Klausur: Termin, Materialien
 
-*   Mo, 31.01.2022, 13:00 -- 14:30 Uhr
+::: center
+[Termin 1:]{.notes} **Mo, 31.01.2022, 13:00 -- 14:30 Uhr**
+:::
 
 :::::: notes
-Dauer 90 Minuten. Es wird in beiden Prüfungszeiträumen ein Termin angeboten (konkrete
-Termine werden noch vom Prüfungsamt bekannt gegeben).
+Dauer 90 Minuten. Es wird in beiden Prüfungszeiträumen ein Termin angeboten (konkreter
+Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 ::::::
 
 \bigskip
 \bigskip
 
 *   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im Home-Office)]{.notes}
-    wird Ihnen spätestens zwei Wochen vor der Prüfung über das LSF bekanntgegeben
+    wird Ihnen [spätestens]{.notes} zwei Wochen vor der Prüfung über das LSF bekanntgegeben
 *   Die URL [zur Prüfung]{.notes} wird Ihnen jeweils ca. eine Woche vorher per Mail über das LSF
     [bzw. das ILIAS]{.notes} bekanntgegeben
 *   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungstag per "Beitritt mit Bestätigung" an
@@ -41,7 +43,7 @@ Termine werden noch vom Prüfungsamt bekannt gegeben).
     <!-- XXX Voraussichtlich XX, XX.XX.2021, XX:XX -- XX:XX Uhr -->
 
 
-## Hinweise zu technischen Vorbereitungen
+## Hinweise zu technischen Vorbereitungen (Home-Office)
 
 ::: notes
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
@@ -122,11 +124,11 @@ für Sie vorbereitet sein.
     Bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
     :::
 
-5.  Verbindungsprobleme:
+5.  Verbindungsprobleme (Home-Office):
     -   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
     -   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
         [(außer Sie haben die Probleme aktiv herbeigeführt, dann zählt das als
-        Täuschungsversuch, siehe RPO)]{.notes}
+        Täuschungsversuch, vgl. RPO §22a (5))]{.notes}
 
 6.  Erklärung "Eigenständige Bearbeitung" (max. 24h nach Prüfungsende)
 
