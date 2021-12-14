@@ -173,4 +173,6 @@
   date: "17.01.22 (Sprechstunde: cagix)"
   lecture:
     - topic: "/misc/syllabus"
+      notes: "nur @FHB: Rückblick"
+    - topic: "/misc/exam/exam-fhb"
       notes: "nur @FHB: Klausurvorbereitung"
