@@ -3,8 +3,6 @@ type: lecture-cg
 title: "Prüfungsvorbereitung"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
-readings:
-  - key: "Russell2020"
 youtube:
   - id: TODO
 fhmedia:
@@ -13,31 +11,43 @@ fhmedia:
 ---
 
 
-## E-Klausur: Termin, Materialien
+## Elektronische Klausur: Termin, Materialien
 
-<!-- XXX aktualisieren -->
+*   Mo, 31.01.2022, 13:00 -- 14:30 Uhr
 
-::: cbox
-Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
-:::
+:::::: notes
+Dauer 90 Minuten. Es wird in beiden Prüfungszeiträumen ein Termin angeboten (konkrete
+Termine werden noch vom Prüfungsamt bekannt gegeben).
+::::::
 
 \bigskip
+\bigskip
 
-*   Die URL zur Prüfung wird Ihnen ca. eine Woche vorher per Mail über das LSF bekanntgegeben
-*   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungtag per "Beitritt mit Bestätigung" an
+*   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im Home-Office)]{.notes}
+    wird Ihnen spätestens zwei Wochen vor der Prüfung über das LSF bekanntgegeben
+*   Die URL [zur Prüfung]{.notes} wird Ihnen jeweils ca. eine Woche vorher per Mail über das LSF
+    [bzw. das ILIAS]{.notes} bekanntgegeben
+*   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungstag per "Beitritt mit Bestätigung" an
     [(wie zu einem normalen Kurs)]{.notes}
 
-\smallskip
+\bigskip
 
 *   **Zugelassene Materialien**: [**ALLE**]{.alert}
     *   Ausnahme: **Keine Hilfe durch Dritte!** (insb. keine Zusammenarbeit, keine Kommunikation)
 
 \bigskip
 
-*   Klausureinsicht: Voraussichtlich Fr, 12.02.2021, 14:00 Uhr
+*   Prüfungseinsicht: Zeitnah; Bekanntgabe per Mail
+    <!-- XXX Voraussichtlich XX, XX.XX.2021, XX:XX -- XX:XX Uhr -->
 
 
 ## Hinweise zu technischen Vorbereitungen
+
+::: notes
+Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
+Durchführung in Präsenz in den Räumen am Campus Minden werden die technischen Details von uns
+für Sie vorbereitet sein.
+:::
 
 *   **Rechner**: Nutzen Sie für die Prüfung einen stationären Rechner oder ein Notebook.
 
@@ -73,7 +83,7 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
     in der Standardeinstellung: insbesondere JavaScript und Cookies müssen aktiviert/erlaubt sein.
 
     ::: notes
-    Deaktivieren Sie sämtliche Browsererweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder JavaScript-Blocker
+    Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder JavaScript-Blocker
     (No-Script, Ghostery, ...) für den Prüfungszeitraum.
 
     Nutzen Sie Ihren Browser nicht im Privacy-Modus!
@@ -83,9 +93,7 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
 
 1.  Lesen Sie sich die Hinweise auf der Startseite durch
 
-2.  Notieren Sie sich die ILIAS-Prüfungsnummer
-
-3.  Bearbeiten Sie die Aufgaben in **einem einzigen** Browser-Tab
+2.  Bearbeiten Sie die Aufgaben in **einem einzigen** Browser-Tab
 
     ::: notes
     [Öffnen Sie **NICHT** die Aufgaben in parallelen Tabs!]{.alert}
@@ -96,7 +104,7 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
     "Weiter" oder "Zurück" vom ILIAS!
     :::
 
-4.  Hinweis zu Anzeige der restlichen Bearbeitungsdauer
+3.  Hinweis zu Anzeige der restlichen Bearbeitungsdauer
 
     ::: notes
     Wenn Sie den Browser bzw. das Tab mit der Prüfung im Laufe der Prüfung verlassen,
@@ -108,33 +116,25 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
     Funktion von den Prüfenden aktiviert wurde.
     :::
 
-5.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen stellen
+4.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen stellen
 
     ::: notes
-    Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
+    Bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
     :::
 
-6.  Verbindungsprobleme:
+5.  Verbindungsprobleme:
     -   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
     -   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
         [(außer Sie haben die Probleme aktiv herbeigeführt, dann zählt das als
-        Täuschungsversuch, siehe Corona-PO)]{.notes}
+        Täuschungsversuch, siehe RPO)]{.notes}
 
-7.  Handschriftliche Erklärung (max. 24h nach Prüfungsende)
+6.  Erklärung "Eigenständige Bearbeitung" (max. 24h nach Prüfungsende)
 
     ::: notes
-    Sie müssen eine handschriftliche Erklärung in die vorbereitete Aufgabe im Prüfungsraum
-    hochladen. Ohne diese Erklärung wird Ihre Prüfung nicht bearbeitet/gewertet!
+    Sie müssen eine Erklärung der eigenständigen Bearbeitung in der vorbereiteten Aufgabe im separaten
+    "Test" im Prüfungsraum abgeben. Ohne diese Erklärung wird Ihre Prüfung nicht bearbeitet/gewertet!
 
-    Schreiben Sie dazu den folgenden Satz auf ein Blatt Papier:
-
-    > "Ich versichere, dass ich die Ausarbeitung selbstständig und ohne Hilfe Dritter angefertigt
-    > habe und bei der Übernahme fremder Gedanken diese als Zitat kenntlich gemacht habe."
-
-    Schreiben Sie Ihren Namen, Ihre Matrikelnummer und die ILIAS-Prüfungsnummer (diese sehen Sie
-    **nur** während der Prüfung oben rechts) mit auf diese Bestätigung, unterschreiben Sie diese
-    und laden Sie ein Foto/Scan der Bestätigung in die angegebene Aufgabe hoch. Dazu haben Sie
-    maximal 24 Stunden nach Beendigung der Prüfung Zeit.
+    Dazu haben Sie maximal 24 Stunden nach Beendigung der Prüfung Zeit.
     :::
 
 [Demo]{.bsp}
@@ -155,7 +155,7 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
 
 *   **Zugelassene Materialien**: [**KEINE**]{.alert}!
     *   Ausnahme: ein handbeschriebener [**DIN-A4-Zettel**]{.alert} \newline
-        \blueArrow Wird am Klausurende eingesammelt, kann später
+        => Wird am Klausurende eingesammelt, kann später
         abgeholt werden.
     *   Insbesondere: kein Handy, kein Taschenrechner, keine
         programmierbaren und/oder netzwerkfähigen Geräte, ...!
@@ -163,7 +163,7 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
     \smallskip
 
 *   **Wichtig**
-    *   Stift(e) \blueArrow Denken Sie auch an einen Ersatzstift!
+    *   Stift(e) => Denken Sie auch an einen Ersatzstift!
     *   Personal- und Studentenausweis
 
 \smallskip
@@ -199,22 +199,30 @@ Mi, 03.02.2021, **online**, 13:00 -- 14:30 Uhr
 \smallskip
 
 *   **Fragen**:
-    *   Schauen Sie sich die Wiederholungsfragen an ...
-    *   Schauen Sie sich die Selbststudiumsfragen an ...
+    *   Schauen Sie sich die Quizzes (Kahoot, ILIAS) an ...
     *   Schauen Sie sich die Praktikumsaufgaben an ...
-    *   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Klausur
-        möglich ist und gefragt werden könnte :)
+    *   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung
+        möglich ist und (wie) gefragt werden könnte :)
+
+\bigskip
+
+::: cbox
+Können vor Kennen :-)
+:::
+
+[Beispiele Fragetypen: Fragetypen-Demo im ILIAS]{.bsp}
 
 
 ## Beispiele für mögliche Fragen
 
+Betrachten Sie den folgenden Graphen:
+
 :::center
-![Wegesuche in Rumänien](figs/search/fig-3-1-romania){height="40%"}\
-[Quelle: "Artificial Intelligence: A Modern Approach (Figures from text)" [@Russell2020figs, Fig. 3.1, S. 10][, Wiedergabe mit freundlicher Erlaubnis der Autoren]{.notes}]{.origin}
+![](images/graph.png){width="60%"}
 :::
 
 Führen Sie eine Handsimulation der Breitensuche durch. Start ist
-"Sibiu", Ziel ist "Pitesti".
+"K", Ziel ist "B".
 
 \bigskip
 
@@ -283,9 +291,9 @@ Als Hilfe gegeben: Einige wichtige Logarithmen zur Basis 2
 
 Betrachten Sie das folgende Constraintproblem:
 
-*   $\mathrm{C}_1 = \{(a,b)\;|\;\; a \ne b\}$
-*   $\mathrm{C}_2 = \{(b,c)\;|\;\; b \ne c\}$
-*   $\mathrm{C}_3 = \{(a,c)\;|\;\; a = c\}$
+*   $\mathrm{C}_1 = \{(a,b) |   a \ne b\}$
+*   $\mathrm{C}_2 = \{(b,c) |   b \ne c\}$
+*   $\mathrm{C}_3 = \{(a,c) |   a = c\}$
 
 \smallskip
 
