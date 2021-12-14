@@ -1,6 +1,15 @@
 ---
+type: lecture-cg
 title: "Rückblick"
+author: "Carsten Gips (FH Bielefeld)"
 hidden: true
+readings:
+  - key: "Russell2020"
+youtube:
+  - id: TODO
+fhmedia:
+  - link: "TODO"
+    name: "Direktlink FH-Medienportal: Rückblick"
 ---
 
 

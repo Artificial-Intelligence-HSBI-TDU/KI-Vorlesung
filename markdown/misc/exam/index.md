@@ -1,6 +1,15 @@
 ---
-title: "Syllabus"
+type: lecture-cg
+title: "Prüfungsvorbereitung"
+author: "Carsten Gips (FH Bielefeld)"
 hidden: true
+readings:
+  - key: "Russell2020"
+youtube:
+  - id: TODO
+fhmedia:
+  - link: "TODO"
+    name: "Direktlink FH-Medienportal: Klausur"
 ---
 
 
