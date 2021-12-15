@@ -16,6 +16,7 @@ temp/
 
 # Hugo files and directories #
 ##############################
+.hugo_build.lock
 resources/
 docs/
 # local Hugo configuration to set the base URL to a local folder
