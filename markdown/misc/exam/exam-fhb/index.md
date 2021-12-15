@@ -13,6 +13,15 @@ fhmedia:
 
 ## Elektronische Klausur: Termin, Materialien
 
+::: notes
+Die Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem Prüfungs-ILIAS
+durchgeführt wird.
+
+Es wird angestrebt, die Klausur in Präsenz in den Rechnerpools am Campus Minden durchzuführen.
+Falls dies wegen der Corona-Situation oder anderer Umstände nicht möglich sein sollte, wird
+die Klausur als "Open-Book-Ausarbeitung" im Home-Office durchgeführt.
+:::
+
 ::: center
 [Termin 1:]{.notes} **Mo, 31.01.2022, 13:00 -- 14:30 Uhr**
 :::
