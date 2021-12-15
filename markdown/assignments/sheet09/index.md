@@ -3,7 +3,7 @@ type: assignment
 title: "Blatt 09: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
-hidden: false
+hidden: true
 weight: 9
 ---
 
@@ -23,9 +23,9 @@ $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 `{{< img src="images/mlp.png" title="Abbildung 1" width="80%" >}}`{=markdown}
 
-*   Berechnen Sie die Ausgabe $\hat{y}$ für die Eingabe $(x,y)=(0, 0.5)$. Wie groß ist der Fehler?
+*   (1P) Berechnen Sie die Ausgabe $\hat{y}$ für die Eingabe $(x,y)=(0, 0.5)$. Wie groß ist der Fehler?
 
-*   Berechnen Sie die partiellen Ableitungen für die Gewichte. Wie lauten die Gewichtsupdates für das obige Trainingsbeispiel? Setzen Sie $\alpha = 0.01$.
+*   (2P) Berechnen Sie die partiellen Ableitungen für die Gewichte. Wie lauten die Gewichtsupdates für das obige Trainingsbeispiel? Setzen Sie $\alpha = 0.01$.
 
 
 ## A9.3: MLP und Backpropagation (5P)
