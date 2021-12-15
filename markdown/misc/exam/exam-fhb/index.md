@@ -4,7 +4,7 @@ title: "Prüfungsvorbereitung (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
 hidden: true
 youtube:
-  - id: TODO
+  - id: f7GftBk8W3A
 fhmedia:
   - link: "TODO"
     name: "Direktlink FH-Medienportal: Klausur"
