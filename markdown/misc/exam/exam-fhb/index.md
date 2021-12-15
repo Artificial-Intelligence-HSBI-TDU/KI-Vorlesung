@@ -43,6 +43,22 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
     <!-- XXX Voraussichtlich XX, XX.XX.2021, XX:XX -- XX:XX Uhr -->
 
 
+## Hinweise zu technischen Vorbereitungen (Präsenzprüfung am Campus Minden)
+
+::: notes
+Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
+:::
+
+*   FH-Zugangsdaten: Username, Passwort
+
+::: notes
+Bei der Durchführung der Prüfung am Campus Minden wird Ihnen ein Rechner zur Verfügung
+gestellt. Dort läuft voraussichtlich ein Browser im Kiosk-Mode, wo Sie sich am Prüfungs-ILIAS
+anmelden. Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen"
+ILIAS anmelden.
+:::
+
+
 ## Hinweise zu technischen Vorbereitungen (Home-Office)
 
 ::: notes
