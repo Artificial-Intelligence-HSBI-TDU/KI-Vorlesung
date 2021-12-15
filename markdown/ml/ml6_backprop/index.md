@@ -13,7 +13,7 @@ outcomes: true
 #   - link: XYZ
 #     name: "Testquizz (URL from 'Invite more Players')"
 assignments:
-    - topic: blatt09
+    - topic: sheet09
 youtube:
     - id: G9x75THjueQ
     - id: 9Ku0dJ8pGrU
