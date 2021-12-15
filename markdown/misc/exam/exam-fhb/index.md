@@ -6,7 +6,7 @@ hidden: true
 youtube:
   - id: f7GftBk8W3A
 fhmedia:
-  - link: "TODO"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/b64bfb81725b314521012e3dccf75659786666005d51c17e6f0e464526720ae862680d2dc4e21a55e25c0ed3d3c8d410c31d77d87617b9e50db2c1c1a13afa88"
     name: "Direktlink FH-Medienportal: Klausur"
 ---
 
