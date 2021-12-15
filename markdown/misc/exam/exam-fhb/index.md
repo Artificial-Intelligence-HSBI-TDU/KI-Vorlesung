@@ -128,8 +128,8 @@ für Sie vorbereitet sein.
     in der Standardeinstellung: insbesondere JavaScript und Cookies müssen aktiviert/erlaubt sein.
 
     ::: notes
-    Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder JavaScript-Blocker
-    (No-Script, Ghostery, ...) für den Prüfungszeitraum.
+    Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder
+    JavaScript-Blocker (No-Script, Ghostery, ...) für den Prüfungszeitraum.
 
     Nutzen Sie Ihren Browser nicht im Privacy-Modus!
     :::

@@ -46,7 +46,7 @@ nicht gewertet.
 Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
 als Hilfsmittel zugelassen.
 
-Bei der Durchführung als "Open-Book-Ausarbeitung" im Homeoffice sind alle Hilfsmittel zugelassen.
+Bei der Durchführung als "Open-Book-Ausarbeitung" im Home-Office sind alle Hilfsmittel zugelassen.
 
 Die Unterstützung durch Dritte bzw. jegliche Kommunikation mit Dritten ist in keinem Fall zugelassen.
 Sie sollen die Prüfung selbstständig bearbeiten.
