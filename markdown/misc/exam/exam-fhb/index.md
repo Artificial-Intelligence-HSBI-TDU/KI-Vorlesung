@@ -78,12 +78,12 @@ Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räume
 
 *   FH-Zugangsdaten: Username, Passwort
 
-::: notes
-Bei der Durchführung der Prüfung am Campus Minden wird Ihnen ein Rechner zur Verfügung
-gestellt. Dort läuft voraussichtlich ein Browser im Kiosk-Mode, wo Sie sich am Prüfungs-ILIAS
-anmelden. Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen"
-ILIAS anmelden.
-:::
+    ::: notes
+    Bei der Durchführung der Prüfung am Campus Minden wird Ihnen ein Rechner zur Verfügung
+    gestellt. Dort läuft voraussichtlich ein Browser im Kiosk-Mode, wo Sie sich am Prüfungs-ILIAS
+    anmelden. Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen"
+    ILIAS anmelden.
+    :::
 
 
 ## Hinweise zu technischen Vorbereitungen (Home-Office)
@@ -133,6 +133,17 @@ für Sie vorbereitet sein.
 
     Nutzen Sie Ihren Browser nicht im Privacy-Modus!
     :::
+
+\smallskip
+
+*   **FH-Zugangsdaten**: Username, Passwort
+
+    ::: notes
+    Bei der Durchführung der Prüfung als Open-Book-Ausarbeitung führen Sie die Prüfung auf Ihrer
+    eigenen Hardware im Home-Office durch. Auch hier müssen Sie sich am Prüfungs-ILIAS anmelden.
+    Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen" ILIAS anmelden.
+    :::
+
 
 ## Hinweise zur Bearbeitung des E-Assessment
 
