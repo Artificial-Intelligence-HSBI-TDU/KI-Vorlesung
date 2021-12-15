@@ -43,8 +43,26 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 
 \bigskip
 
-*   **Zugelassene Materialien**: [**ALLE**]{.alert}
+*   **Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
+
+    ::: notes
+    Sie dürfen **einen** Spickzettel im **DIN-A4**-Format benutzen, der beidseitig beschrieben
+    sein kann.
+
+    Ich möchte Sie hier noch einmal ermuntern, diesen Zettel tatsächlich manuell zu erstellen
+    (also ganz traditionell zu **schreiben**), da bereits der Schreibvorgang einen gewissen
+    Lerneffekt bewirkt!
+
+    Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden sollte, dürfen
+    Sie zusätzlich auch alle anderen Unterlagen benutzen.
+    :::
+
     *   Ausnahme: **Keine Hilfe durch Dritte!** (insb. keine Zusammenarbeit, keine Kommunikation)
+
+        ::: notes
+        Sie sollen die Prüfung eigenständig bearbeiten. Hilfe von Dritten sowie jegliche Kommunikation
+        mit Dritten ist in keinem Fall zugelassen und wird als Täuschungsversuch gewertet.
+        :::
 
 \bigskip
 
