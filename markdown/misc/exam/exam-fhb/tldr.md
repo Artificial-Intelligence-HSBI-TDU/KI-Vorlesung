@@ -43,8 +43,13 @@ nicht gewertet.
 
 ### Hilfsmittel und Themen
 
-Es sind alle Hilfsmittel zugelassen bis auf die Unterstützung durch Dritte. Sie sollen die Prüfung
-selbstständig bearbeiten.
+Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
+als Hilfsmittel zugelassen.
+
+Bei der Durchführung als "Open-Book-Ausarbeitung" im Homeoffice sind alle Hilfsmittel zugelassen.
+
+Die Unterstützung durch Dritte bzw. jegliche Kommunikation mit Dritten ist in keinem Fall zugelassen.
+Sie sollen die Prüfung selbstständig bearbeiten.
 
 Es wird keines der behandelten Themen ausgeschlossen, allerdings eignen sich manche Themen etwas
 besser für Klausurfragen als andere ;-)
