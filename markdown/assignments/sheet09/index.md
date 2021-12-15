@@ -38,6 +38,4 @@ Trainieren Sie das Netz für den Iris-Datensatz (iris.csv) aus dem [AIMA-Reposi
 
 Falls der Trainingsfehler nach einigen tausend Epochen nicht gegen einen Wert nahe Null strebt, erweitern Sie Ihr Netz (beispielsweise eine versteckte Schicht mehr oder mehr Zellen in der schon existierenden versteckten Schicht, ... ) und trainieren Sie es erneut. Nach wievielen Epochen ist der Trainingsfehler fast Null?
 
-Hinweis: Fragen Sie sich, ob ein objektorientierter Ansatz hier wirklich hilfreich ist!
-
 *Thema*: Verständnis MLP und Backpropagation, Gefühl für nötige Größe des Netzes
