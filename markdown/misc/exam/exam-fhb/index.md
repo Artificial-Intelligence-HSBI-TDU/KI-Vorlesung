@@ -76,7 +76,7 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
 :::
 
-*   FH-Zugangsdaten: Username, Passwort
+*   **FH-Zugangsdaten**: Username, Passwort
 
     ::: notes
     Bei der Durchführung der Prüfung am Campus Minden wird Ihnen ein Rechner zur Verfügung
@@ -134,7 +134,7 @@ für Sie vorbereitet sein.
     Nutzen Sie Ihren Browser nicht im Privacy-Modus!
     :::
 
-\smallskip
+\bigskip
 
 *   **FH-Zugangsdaten**: Username, Passwort
 
