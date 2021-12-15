@@ -1,5 +1,3 @@
-<!--
-
 ---
 title: "Lernziele"
 disableToc: true
@@ -7,22 +5,12 @@ hidden: true
 ---
 
 
-`{{% k1 %}}`{=markdown}
--   Wuppie
--   Fluppie
-`{{% /k1 %}}`{=markdown}
-
 `{{% k2 %}}`{=markdown}
--   foo
--   bar
+*   Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe
+*   Ableitung der Aktivierungsfunktionen
 `{{% /k2 %}}`{=markdown}
 
 `{{% k3 %}}`{=markdown}
-hammwanich
+*   Berechnung der partiellen Ableitungen
+*   Rückwärtslauf (backpropagation) für ein gegebenes MLP
 `{{% /k3 %}}`{=markdown}
-
-`{{% k4 %}}`{=markdown}
-gibbetsooch
-`{{% /k4 %}}`{=markdown}
-
--->
