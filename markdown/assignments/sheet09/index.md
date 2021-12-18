@@ -30,7 +30,7 @@ $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 ## A9.3: MLP und Backpropagation (5P)
 
-Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht. Nutzen Sie die Cross-Entropy Verlustfunktion. 
+Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht. Nutzen Sie die Cross-Entropy Verlustfunktion. Sie können hierzu das folgende [**Jupyter Notebook**](files/B09-two_layer_mlp-starter.ipynb) bzw. [**Python-Skript**](files/b09_two_layer_mlp_starter.py) als Startpunkt benutzen.
 
 *   (1P) Implementieren Sie die Forwärtspropagation. Nutzen Sie als Aktivierungsfunktion in der Ausgangsschicht $g(z) = \frac{1}{ 1 + e^{−z} }$ und in der versteckten Schicht $g(z) = ReLU(z)$.
 
