@@ -161,6 +161,8 @@
   assignment:
     - topic: "sheet10"
       due: "12.01.2022"
+  misc_assignment:
+    - notes: ">> @FHB: Abgabe Blatt 10 bearbeiten! (nur FHB)"
 
 - week: "KW03"
   date: "17.01.22 (Sprechstunde: cagix)"
