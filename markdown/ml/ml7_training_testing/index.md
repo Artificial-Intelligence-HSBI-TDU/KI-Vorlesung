@@ -25,16 +25,16 @@ sketch: false
 ## Kurze Übersicht
 
 ### Training und Testing
-*	Der tatsächliche **Erfolg** eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, i.e. **hohe Vorhersagekraft, gute Generalisierung**!
+*	Der tatsächliche **Erfolg** eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. **hohe Vorhersagekraft, gute Generalisierung**!
 
 *   Die Menge aller gelabelten Daten  in **Trainingsset und Testset** aufteilen, Testset nicht während des Trainings einsetzen!. 
     *	$E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch **in-sample error**.
     *	$E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch **out-of-sample error**. $E_{out}$ ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich.
     *	$E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine **Näherung** für $E_{out}$.  
 
-    > Analogie:\
-    $E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.\
-    $E_{test}$ : Erfolg in Endprüfung. 
+    > Analogie:
+    > $E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+    > $E_{test}$ : Erfolg in Endprüfung. 
 
 *	Die Näherung $E_{test}$ sollte möglichst genau sein, damit es als ein verlässliches **Gütesiegel** dienen kann.
 	*	Das Testset sollte genug Daten enthalten. Üblicher Anteil an Testdaten:
@@ -46,9 +46,10 @@ sketch: false
 
 *	**Wichtige Bemerkung**: 
     *   Testdaten nicht anfassen, bis das Modell Einsatzbereit ist!
-    *   Die Testdaten dürfen in **keinster Weise** bei der Auswahl der endgültigen Hyphotese eingesetzt werden, weder bei der Berechnung der Parameter (Training), noch bei der Bestimmung der Hyperparameter (Hyperparameter-Tuning). 
-    *   Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst, kann sie nicht mehr als "Gütesiegel" eingesetzt werden.\
-	**CHECK**: Hätte man zufällig andere Testdaten gewählt, könnte sich dadurch  die endgültige Hypothese ändern?
+    *   Die Testdaten dürfen in **keinster Weise** bei der Auswahl der endgültigen Hypothese eingesetzt werden, weder bei der Berechnung der Parameter (Training), noch bei der Bestimmung der Hyperparameter (Hyperparameter-Tuning). 
+    *   Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst, kann sie nicht mehr als "Gütesiegel" eingesetzt werden.
+
+        **CHECK**: Hätte man zufällig andere Testdaten gewählt, könnte sich dadurch  die endgültige Hypothese ändern?
 	
 	
 
