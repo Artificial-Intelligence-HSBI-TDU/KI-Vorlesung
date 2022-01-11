@@ -9,13 +9,13 @@ hidden: true
 *   Performanzmetriken für die Evaluierung von Klassifizierungsmodellen
 *   Wahrheitsmatrix (engl. Confusion Matrix)
 *   Treffergnauigkeit (engl. Accuracy)
-*   Prezision (engl. Precision)
+*   Precision (engl. Precision)
 *   Recall
 *   $F_1$-Score (Harmonisches Mittel)
 `{{% /k2 %}}`{=markdown}
 
 `{{% k3 %}}`{=markdown}
-*   Berechnung und Deutung von Prezision und Recall
+*   Berechnung und Deutung von Precision und Recall
 *   Berechnung und Deutung des $F_1$-Scores
 *   Einsatz bei Evaluierung und Auswahl von Modellen
 `{{% /k3 %}}`{=markdown}
