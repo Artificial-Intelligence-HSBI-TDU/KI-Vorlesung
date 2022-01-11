@@ -5,20 +5,18 @@ hidden: true
 ---
 
 
-`{{% k1 %}}`{=markdown}
--   Wuppie
--   Fluppie
-`{{% /k1 %}}`{=markdown}
-
 `{{% k2 %}}`{=markdown}
--   foo
--   bar
+*   Performanzmetriken für die Evaluierung von Klassifizierungsmodellen
+*   Wahrheitsmatrix (engl. Confusion Matrix)
+*   Treffergnauigkeit (engl. Accuracy)
+*   Prezision (engl. Precision)
+*   Recall
+*   $F_1$-Score (Harmonisches Mittel)
 `{{% /k2 %}}`{=markdown}
 
 `{{% k3 %}}`{=markdown}
-hammwanich
+*   Berechnung und Deutung von Prezision und Recall
+*   Berechnung und Deutung des $F_1$-Scores
+*   Einsatz bei Evaluierung und Auswahl von Modellen
 `{{% /k3 %}}`{=markdown}
 
-`{{% k4 %}}`{=markdown}
-gibbetsooch
-`{{% /k4 %}}`{=markdown}
