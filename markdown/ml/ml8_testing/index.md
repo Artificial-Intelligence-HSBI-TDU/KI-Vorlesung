@@ -45,7 +45,7 @@ sketch: false
     *   Klasse 1 hat 10, Klasse 0 hat 990 Beispiele.
     *   Ein Modell, das immer 0 ausgibt, hat $990/1000 = 0.99$ Treffergenauigkeit, ist aber offensichtlich kein gutes Modell!
 
-#### Prezision (engl. Precision)
+#### Precision
 
 *   Positive Predictive Value (PPV)
 *   Antwort auf: Von allen **positiven Vorhersagen**, wie viele sind richtig?
