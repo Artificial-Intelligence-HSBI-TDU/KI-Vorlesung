@@ -20,7 +20,7 @@ weight: 6
 *   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
     *   $ (w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T $
     *   $ (w_0,w_1,w_2)^T = (200, 100, 100)^T $
-    *   $ (w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T $
+    *   $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$
     *   $ (w_0,w_1,w_2)^T = (-2, -1, -1)^T $
 
 *Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
