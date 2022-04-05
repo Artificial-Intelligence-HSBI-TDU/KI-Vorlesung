@@ -1,5 +1,8 @@
 ---
+type: lecture-cg
 title: "Fahrplan"
+author: "Carsten Gips (FH Bielefeld)"
+weight: 1
 disableToc: true
 hidden: true
 ---
@@ -8,7 +11,7 @@ hidden: true
 `{{< schedule >}}`{=markdown}
 
 
-**Legende**:
+#### Legende
 
 *   leeres Feld: keine Vorlesung bzw. kein Praktikum
 *   Vorlesung: Durchführung und Bereitstellung der Unterlagen gemeinsam für FHB und TDU

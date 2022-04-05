@@ -2,6 +2,10 @@
 title: "Datenschutzerklärung"
 disableToc: true
 hidden: true
+_build:
+  render: always
+  list: never
+  publishResources: true
 ---
 
 

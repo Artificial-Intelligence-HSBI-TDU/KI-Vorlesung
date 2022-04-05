@@ -1,5 +1,8 @@
 ---
+type: lecture-cy
 title: "Note und Credits (TDU)"
+author: "Canan Yıldız (Türkisch-Deutsche Universität)"
+weight: 2
 hidden: true
 ---
 

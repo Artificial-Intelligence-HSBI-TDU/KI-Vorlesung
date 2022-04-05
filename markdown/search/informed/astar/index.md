@@ -46,8 +46,8 @@ fhmedia:
 
 ::: notes
 Varianten:
-*   `[Branch-and-Bound]({{<ref "/search/informed/branchandbound" >}})`{=markdown}
-*   `[Best First]({{<ref "/search/informed/bestfirst" >}})`{=markdown}
+*   `[Branch-and-Bound]({{< ref "/search/informed/branchandbound" >}})`{=markdown}
+*   `[Best First]({{< ref "/search/informed/bestfirst" >}})`{=markdown}
 *   **A\***
 :::
 
@@ -131,7 +131,7 @@ Beweis siehe Übungsblatt "Blatt 01" :-)
 :::
 
 ::: notes
-Beweis siehe Übungsblatt `[Blatt 01]({{<ref "sheet01" >}})`{=markdown} :-)
+Beweis siehe Übungsblatt `[Blatt 01]({{< ref "sheet01" >}})`{=markdown} :-)
 :::
 
 ## Einfache Verbesserungen A\* (Tree-Search)

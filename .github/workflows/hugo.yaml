@@ -1,26 +1,26 @@
 name: HUGO
 on:
-  # push on master branch: build gh-page
+  # push on master branch: build lecture notes (hugo)
   push:
     branches: [master]
-  # manually triggered: build gh-page
+  # manually triggered: build lecture notes (hugo)
   workflow_dispatch:
 
 
 jobs:
-  # build gh-page
-  gh-page:
+  # build lecture notes (hugo): "make web_zip"
+  hugo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - uses: ./.github/actions/alpine-pandoc-hugo
         with:
-          make-target: 'make web'
+          make-target: 'make web_zip'
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          publish_branch: _hugo
           publish_dir: docs/
           force_orphan: true

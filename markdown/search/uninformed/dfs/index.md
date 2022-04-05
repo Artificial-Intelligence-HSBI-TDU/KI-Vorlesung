@@ -61,7 +61,7 @@ Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} 
 ::: notes
 Varianten:
 *   **Tiefensuche**
-*   `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
+*   `[Breitensuche]({{< ref "/search/uninformed/bfs" >}})`{=markdown}
 :::
 
 ::: notes
@@ -186,7 +186,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 ::: notes
 ## Eigenschaften der Tiefensuche
 
-Siehe `[Breitensuche]({{<ref "/search/uninformed/bfs" >}})`{=markdown}
+Siehe `[Breitensuche]({{< ref "/search/uninformed/bfs" >}})`{=markdown}
 :::
 
 

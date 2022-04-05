@@ -1,5 +1,8 @@
 ---
+type: lecture-cg
 title: "Note und Credits (FHB)"
+author: "Carsten Gips (FH Bielefeld)"
+weight: 1
 hidden: true
 ---
 
@@ -17,7 +20,7 @@ hidden: true
 Die Modulprüfung erfolgt in Form einer schriftlichen Prüfung ("Klausur"). Diese
 wird in beiden Prüfungszeiträumen in Form eines E-Assessments über eine spezielle
 ILIAS-Instanz durchgeführt. Nähere Informationen siehe
-`["Prüfungsvorbereitung (FHB)"]({{<ref "/misc/exam/exam-fhb" >}})`{=markdown}.
+`["Prüfungsvorbereitung (FHB)"]({{< ref "/org/exam/exam-fhb" >}})`{=markdown}.
 
 Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilnahme
 am Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt

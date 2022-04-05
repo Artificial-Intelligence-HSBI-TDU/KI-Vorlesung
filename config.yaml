@@ -1,12 +1,16 @@
 #baseURL: "https://ki-vorlesung.github.io/Lecture/"
 baseURL: "https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1166002"
+canonifyURLs: true
 
 languageCode: "de-DE"
 metaDataFormat: "yaml"
-theme: "hugo-theme-learn"
+theme:
+  - "hugo-lecture"
+  - "hugo-theme-relearn"
 
-contentDir: temp/content
-publishDir: docs
+themesDir: ".hugo"
+contentDir: "temp/content"
+publishDir: "docs"
 
 params:
   editURL: "https://github.com/KI-Vorlesung/Lecture/edit/master/markdown/"
@@ -20,23 +24,27 @@ params:
   disableSearch: true
   disableLandingPageButton: true
   disableMermaid: true
+  themeVariant:
+  - "relearn-light"
+  - "relearn-dark"
+  - "green"
 
 menu:
   shortcuts:
   - name: "<i class='fas fa-bookmark'></i> Fahrplan"
-    url: "/misc/schedule"
+    url: "/org/schedule"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Praktikum"
     url: "/assignments"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Note/Credits"
-    url: "/misc/grading"
+    url: "/org/grading"
     weight: 20
   - name: "<i class='fas fa-bookmark'></i> Syllabus"
-    url: "/misc/syllabus"
+    url: "/org/syllabus"
     weight: 30
   - name: "<i class='fas fa-bookmark'></i> Ressourcen"
-    url: "/misc/resources"
+    url: "/org/resources"
     weight: 40
 
 markup:
@@ -44,7 +52,7 @@ markup:
     renderer:
       unsafe: true
   tableOfContents:
-    startLevel: 1
+    startLevel: 2
 
 privacy:
   disqus:
@@ -58,5 +66,5 @@ privacy:
   vimeo:
     disable: true
   youtube:
-    disable: false
+    disable: true
     privacyEnhanced: true

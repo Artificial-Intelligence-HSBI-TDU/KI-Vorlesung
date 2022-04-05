@@ -42,10 +42,9 @@ In den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
 Die Übungen bzw. Praktika werden wg. unterschiedlicher Prüfungsordnungen jeweils für beide
 Hochschulen getrennt durchgeführt.
 
-Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{<ref "/misc/schedule" >}})`{=markdown}.
+Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{< ref "/org/schedule" >}})`{=markdown}.
 Die Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
 [Github](https://github.com/KI-Vorlesung/Lecture) entwickelt und bereitgestellt.
-
 
 
 ## Kursformat
@@ -79,7 +78,7 @@ VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
 -   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
 
-Siehe auch `["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}})`{=markdown}
+Siehe auch `["Hinweise zum Praktikum FHB"]({{< ref "/org/grading/grading-fhb" >}})`{=markdown}
 
 ### Übung TDU: 2 SWS
 
@@ -90,19 +89,12 @@ Siehe auch `["Hinweise zum Praktikum FHB"]({{<ref "/misc/grading/grading-fhb" >}
 | Gruppe 3 | 12:50 - 13:30 Uhr (TR) | online |
 
 
-
 -   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
 -   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf ILIAS (via Moodle)
 -   Vorstellung und Diskussion der Lösung **in** der Übungsstunde (Zoom)
 
-Siehe auch `["Hinweise zur Übung TDU"]({{<ref "/misc/grading/grading-tdu" >}})`{=markdown}
+Siehe auch `["Hinweise zur Übung TDU"]({{< ref "/org/grading/grading-tdu" >}})`{=markdown}
 
+### Prüfungsform
 
-
-## Wichtige Seiten
-
-*   `[Fahrplan]({{<ref "/misc/schedule" >}})`{=markdown}
-*   `[Praktikum]({{<ref "/assignments" >}})`{=markdown}
-*   `[Note und Credits]({{<ref "/misc/grading" >}})`{=markdown}
-*   `[Syllabus]({{<ref "/misc/syllabus" >}})`{=markdown}
-*   `[Ressourcen]({{<ref "/misc/resources" >}})`{=markdown}
+Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown}

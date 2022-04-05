@@ -55,7 +55,7 @@ endif
 ## be mounted into the Docker container! References to a parent directory
 ## of the working directory therefore will not work when using a Docker
 ## container!
-PANDOC_DIRS = --data-dir=pandoc --resource-path=".:pandoc"
+PANDOC_DIRS = --data-dir=.pandoc --resource-path=".:.pandoc"
 
 ## Define options for generating images from ".tex" files
 LATEX_ARGS = -shell-escape
@@ -131,14 +131,21 @@ WEB_STATIC_SOURCES = $(shell find $(SRC_DIR) -type f \( -path '*files/*' ! -inam
 WEB_STATIC_TARGETS = $(WEB_STATIC_SOURCES:$(SRC_DIR)%=$(WEB_INTERMEDIATE_DIR)%)
 
 ## Source and target files for slides
-## NOTE: The name for the target pdf file is generated from the relative
-## path under $(SRC_DIR) with '/' substituted by '_'. Directories containing
-## a .noslides file will not be considerd for slides generation.
-SLIDES_EXCLUDE_DIRS     = $(dir $(shell find $(SRC_DIR) -type f -iname '.noslides'))
-SLIDES_MARKDOWN_SOURCES = $(filter-out $(addsuffix %, $(SLIDES_EXCLUDE_DIRS)), $(shell find $(SRC_DIR) -type f -iname 'index.md'))
-SLIDES_MARKDOWN_TARGETS = $(SLIDES_MARKDOWN_SOURCES:$(SRC_DIR)%=$(SLIDES_INTERMEDIATE_DIR)%)
-SLIDES_PDF_TARGETS      = $(addprefix $(SLIDES_OUTPUT_DIR)/,$(subst /,_, $(patsubst $(SRC_DIR)/%/index.md,%.pdf, $(SLIDES_MARKDOWN_SOURCES))))
-SLIDES_SHORT_TARGETS    = $(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,%,$(SLIDES_PDF_TARGETS))
+## NOTES:
+## (1) The name for the target pdf file is generated from the relative
+##     path under $(SRC_DIR) with '/' substituted by '_'.
+## (2) Directories containing a .noslides file will not be considerd for slides generation.
+## Directories to be excluded
+SLIDES_EXCLUDE_DIRS            = $(dir $(shell find $(SRC_DIR) -type f -iname '.noslides'))
+## Page-bundles
+SLIDES_BUNDLE_MARKDOWN_SOURCES = $(filter-out $(addsuffix %, $(SLIDES_EXCLUDE_DIRS)), $(shell find $(SRC_DIR) -type f -iname 'index.md'))
+SLIDES_BUNDLE_PDF_TARGETS      = $(addprefix $(SLIDES_OUTPUT_DIR)/,$(subst /,_, $(patsubst $(SRC_DIR)/%/index.md,%.pdf, $(SLIDES_BUNDLE_MARKDOWN_SOURCES))))
+## Single markdown files
+SLIDES_SINGLE_MARKDOWN_SOURCES = $(filter-out $(addsuffix %, $(SLIDES_EXCLUDE_DIRS)), $(shell find $(SRC_DIR) -type f -iname '*.md'  ! -iname '*index.md' ! -iname 'tldr.md' ! -iname 'outcomes.md'))
+SLIDES_SINGLE_PDF_TARGETS      = $(addprefix $(SLIDES_OUTPUT_DIR)/,$(subst /,_, $(patsubst $(SRC_DIR)/%.md,%.pdf, $(SLIDES_SINGLE_MARKDOWN_SOURCES))))
+## Convenience targets
+SLIDES_MARKDOWN_TARGETS        = $(SLIDES_BUNDLE_MARKDOWN_SOURCES:$(SRC_DIR)%=$(SLIDES_INTERMEDIATE_DIR)%) $(SLIDES_SINGLE_MARKDOWN_SOURCES:$(SRC_DIR)%=$(SLIDES_INTERMEDIATE_DIR)%)
+SLIDES_SHORT_TARGETS           = $(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,%,$(SLIDES_BUNDLE_PDF_TARGETS)) $(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,%,$(SLIDES_SINGLE_PDF_TARGETS))
 
 ## Readings data template
 READINGS = data/readings.yaml
@@ -182,7 +189,7 @@ all: slides web ## Make everything
 
 ## Create all slides
 .PHONY: slides
-slides: $(SLIDES_PDF_TARGETS) ## Create all slides
+slides: $(SLIDES_BUNDLE_PDF_TARGETS) $(SLIDES_SINGLE_PDF_TARGETS) ## Create all slides
 
 ## Generate pdf slides (shortened target name for convenience)
 .PHONY: $(SLIDES_SHORT_TARGETS)
@@ -192,6 +199,11 @@ $(SLIDES_SHORT_TARGETS): $$(patsubst %,$(SLIDES_OUTPUT_DIR)/%.pdf,$$@)
 .PHONY: web
 web: $(WEB_MARKDOWN_TARGETS) $(WEB_IMAGE_TARGETS) $(WEB_STATIC_TARGETS) $(READINGS) $(HUGO_LOCAL) ## Create website
 	$(HUGO) $(HUGO_ARGS)
+
+## Create website and archive
+.PHONY: web_zip
+web_zip: web ## Create website and archive
+	cd $(WEB_OUTPUT_DIR) && rm -rf site.zip && zip -r site.zip *
 
 ## Build Docker image "alpine-pandoc-hugo"
 .PHONY: docker
@@ -236,6 +248,10 @@ PHONY: new_lecture-cg
 new_lecture-cg: ## Create new lecture for Carsten
 	$(HUGO) new -c "$(ORIG_CONTENT)/" -k lecture-cg $(TOPIC)
 
+PHONY: new_lecture-cy
+new_lecture-cy: ## Create new lecture for Canan
+	$(HUGO) new -c "$(ORIG_CONTENT)/" -k lecture-cy $(TOPIC)
+
 PHONY: new_assignment
 new_assignment: ## Create new assignment
 	$(HUGO) new -c "$(ORIG_CONTENT)/" -k assignment $(TOPIC)
@@ -246,12 +262,12 @@ new_assignment: ## Create new assignment
 
 ## Canned recipe for creating output folder
 define create-folder
-mkdir -p $(dir $@)
+@mkdir -p $(dir $@)
 endef
 
 ## Canned recipe for creating output folder and copy output file
 define create-dir-and-copy
-mkdir -p $(dir $@)
+$(create-folder)
 cp $< $@
 endef
 
@@ -305,8 +321,13 @@ $(SLIDES_MARKDOWN_TARGETS): $(SLIDES_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
 ## subfolder.
 ## NOTE: The prerequisites for the images must be added after the 'index.md'
 ## so that '$<' contains the right input file for pandoc.
-$(SLIDES_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%/index.md, $$(subst _,/,$$@))
+## Page-Bundles: path/name/index.md, path/name/images/, path_name.pdf
+$(SLIDES_BUNDLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%/index.md, $$(subst _,/,$$@))
 	$(create-folder)
 	$(PANDOC) $(PANDOC_DIRS) -d slides $< -o $@
-$(SLIDES_PDF_TARGETS): $$(filter $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@))%, $(SLIDES_IMAGE_TARGETS))
-
+$(SLIDES_BUNDLE_PDF_TARGETS): $$(filter $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@))%, $(SLIDES_IMAGE_TARGETS))
+## Single Markdown Files: path/name.md, path/<images>/, path_name.pdf
+$(SLIDES_SINGLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%.md, $$(subst _,/,$$@))
+	$(create-folder)
+	$(PANDOC) $(PANDOC_DIRS) -d slides $< -o $@
+$(SLIDES_SINGLE_PDF_TARGETS): $$(filter $$(dir $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@)))%, $(SLIDES_IMAGE_TARGETS))

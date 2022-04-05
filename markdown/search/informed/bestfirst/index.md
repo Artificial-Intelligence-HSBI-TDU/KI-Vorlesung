@@ -46,9 +46,9 @@ fhmedia:
 
 ::: notes
 Varianten:
-*   `[Branch-and-Bound]({{<ref "/search/informed/branchandbound" >}})`{=markdown}
+*   `[Branch-and-Bound]({{< ref "/search/informed/branchandbound" >}})`{=markdown}
 *   **Best First**
-*   `[A*]({{<ref "/search/informed/astar" >}})`{=markdown}
+*   `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
 :::
 
 ## Best-First (*BF*, *BFS*)
@@ -92,7 +92,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 ::: notes
 ## Eigenschaften von BF
 
-Siehe `[A*]({{<ref "/search/informed/astar" >}})`{=markdown}
+Siehe `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
 :::
 
 

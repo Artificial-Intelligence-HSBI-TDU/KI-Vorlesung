@@ -1,7 +1,12 @@
 ---
 chapter: true
 title: "Note und Credits"
+weight: 2
 hidden: true
+_build:
+  render: always
+  list: never
+  publishResources: true
 ---
 
 

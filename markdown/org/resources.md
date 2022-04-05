@@ -1,6 +1,11 @@
 ---
+type: lecture-cg
 title: "Ressourcen"
+author: "Carsten Gips (FH Bielefeld)"
+weight: 4
 hidden: true
+nocite: |
+  @Russell2020,@Ertel2017,@Mitchell2010
 ---
 
 
@@ -33,5 +38,3 @@ Als wichtige Tools zum *Machine Learning* seien das Java-basierte [WEKA](https:/
 [@Witten2011] sowie das Python-Framework [scikit-learn](https://scikit-learn.org) [@Pedregosa2011] genannt.
 
 **Hinweis**: Am Ende einer Vorlesung wird noch einmal spezifisch zum Thema passende Literatur empfohlen.
-
-`{{< bib />}}`{=markdown}

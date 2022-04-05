@@ -316,7 +316,7 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 
 *   "multinominalem" NB: Attribute umfassen mehrere Kategorien (verschiedene
     Ausprägungen, wie im "Wahlkampf"-Beispiel (Aufgabe A5.4 in
-    `["Blatt 05"]({{<ref "sheet05" >}})`{=markdown}: Attribut "Bildung" hat
+    `["Blatt 05"]({{< ref "sheet05" >}})`{=markdown}: Attribut "Bildung" hat
     die Ausprägungen "Abitur", "Bachelor" und "Master")
 *   Bernoulli NB: Attribute sind binär (Ausprägung 0 oder 1), typischerweise
     bei der Textklassifikation

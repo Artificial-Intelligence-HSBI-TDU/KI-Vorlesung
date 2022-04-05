@@ -2,6 +2,10 @@
 title: "Credits"
 disableToc: true
 hidden: true
+_build:
+  render: always
+  list: never
+  publishResources: true
 ---
 
 
@@ -31,9 +35,8 @@ Für die Vorverarbeitung des Materials werden die beiden Projekte eingesetzt:
 Die Webseiten für das Unterrichtsmaterial werden mit folgenden Projekten erzeugt:
 
 *   [Hugo](https://github.com/gohugoio/hugo)
-*   [Hugo Learn Theme](https://github.com/matcornic/hugo-theme-learn)
-    (abgeleitet von [Grav](https://github.com/getgrav/grav))
-*   [Hugo-Lecture-Layouts](https://github.com/cagix/Hugo-Lecture-Layouts)
+*   [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn)
+*   [Hugo-Lecture](https://github.com/cagix/Hugo-Lecture)
 
 In den generierten Webseiten werden u.a. diese Projekte genutzt:
 
@@ -44,7 +47,6 @@ In den generierten Webseiten werden u.a. diese Projekte genutzt:
 ## Weitere genutzte Tools
 
 *   [GNU Make](https://www.gnu.org/software/make/)
-*   [Hugo-Lecture-Archetypes](https://github.com/cagix/Hugo-Lecture-Archetypes)
 *   [Pandoc Dockerfiles](https://github.com/pandoc/dockerfiles)
 *   [Docker](https://www.docker.com/)
 *   [GitHub](https://github.com/)

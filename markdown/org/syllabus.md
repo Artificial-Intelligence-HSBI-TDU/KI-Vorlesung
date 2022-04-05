@@ -1,5 +1,8 @@
 ---
+type: lecture-cg
 title: "Syllabus"
+author: "Carsten Gips (FH Bielefeld)"
+weight: 3
 hidden: true
 ---
 

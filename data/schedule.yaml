@@ -1,13 +1,13 @@
 #- week: "KW39"
 #  date: "(27 Sep - 1 Okt)"
 #  lecture:
-#    - topic: "/misc/syllabus"
+#    - topic: "/org/syllabus"
 #      notes: "Kick-Off TDU (cagix und Canan)"
 
 - week: "KW40"
   date: "04.10.21 (Sprechstunde: cagix)"
   lecture:
-    - topic: "/misc/syllabus"
+    - topic: "/org/syllabus"
       notes: "Kick-Off FHB (cagix und Canan)"
     - topic: "/intro/intro-ai"
     - topic: "/intro/problems"
@@ -167,7 +167,7 @@
 - week: "KW03"
   date: "17.01.22 (Sprechstunde: cagix)"
   lecture:
-    - topic: "/misc/syllabus"
+    - topic: "/org/syllabus"
       notes: "nur @FHB: Rückblick (Zoom)"
-    - topic: "/misc/exam/exam-fhb"
+    - topic: "/org/exam/exam-fhb"
       notes: "nur @FHB: Klausurvorbereitung"

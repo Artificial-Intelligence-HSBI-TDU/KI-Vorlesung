@@ -1,44 +1,26 @@
 name: SLIDES
 on:
-  # push on master branch: create all slides
+  # push on master branch: build slides (pandoc)
   push:
     branches: [master]
-  # change on pull-request: create single slide desk using source branch name of pr
-  pull_request:
-    types: [assigned, opened, synchronize, edited, reopened]
-  # manually triggered: create all slides
+  # manually triggered: build slides (pandoc)
   workflow_dispatch:
 
 
 jobs:
-  # create single slide desk using source branch name of pr as make target
-  single-slide:
-    if: ${{ github.event_name == 'pull_request' }}
+  # build slides (pandoc): "make slides"
+  slides:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - uses: ./.github/actions/alpine-pandoc-hugo
-        with:
-          make-target: 'make ${{ github.head_ref }}'
-      - uses: actions/upload-artifact@v2
-        with:
-          path: pdf/
-          retention-days: 1
-
-  # create all slides: "make slides"
-  all-slidedesks:
-    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - uses: ./.github/actions/alpine-pandoc-hugo
         with:
           make-target: 'make slides'
-      - uses: actions/upload-artifact@v2
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          path: pdf/
-          retention-days: 1
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: _slides
+          publish_dir: pdf/
+          force_orphan: true
