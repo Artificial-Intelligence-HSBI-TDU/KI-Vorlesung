@@ -70,7 +70,9 @@ durch. Nehmen Sie das Geogebra-Arbeitsblatt [Gradientenabstieg](https://www.geog
 
 *Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
 
+
 `{{% challenges %}}`{=markdown}
+
 ## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
 Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
