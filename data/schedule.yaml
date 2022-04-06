@@ -93,7 +93,7 @@
 - week: "KW47"
   date: "22.11.21 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml1_perceptron"
+    - topic: "nn/nn1_perceptron"
   misc_lecture:
     - notes: ">> KW48 freigeschaltet. Blatt 6 bearbeiten!"
     - notes: ">> @TDU: Zwischenprüfung!"
@@ -101,7 +101,7 @@
 - week: "KW48"
   date: "29.11.21 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml2_linear_regression"
+    - topic: "nn/nn2_linear_regression"
   assignment:
     - topic: "sheet06"
       due: "01.12.2021"
@@ -111,7 +111,7 @@
 - week: "KW49"
   date: "06.12.21 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml3_logistic_regression"
+    - topic: "nn/nn3_logistic_regression"
   assignment:
     - topic: "sheet07"
       due: "08.12.2021"
@@ -121,8 +121,8 @@
 - week: "KW50"
   date: "13.12.21 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml4_overfitting"
-    - topic: "ml/ml5_mlp"
+    - topic: "nn/nn4_overfitting"
+    - topic: "nn/nn5_mlp"
   assignment:
     - topic: "sheet08"
       due: "15.12.2021"
@@ -132,7 +132,7 @@
 - week: "KW51"
   date: "20.12.21 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml6_backprop"
+    - topic: "nn/nn6_backprop"
   assignment:
     - topic: "sheet09"
       due: "22.12.2021"
@@ -148,7 +148,7 @@
 - week: "KW01"
   date: "03.01.22 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml7_training_testing"
+    - topic: "nn/nn7_training_testing"
   misc_lecture:
     - notes: ">> Alles Gute im neuen Jahr!"
     - notes: ">> @FHB: KW02 freigeschaltet. Blatt 10 bearbeiten! (nur FHB)"
@@ -156,7 +156,7 @@
 - week: "KW02"
   date: "10.01.22 (Sprechstunde: Canan)"
   lecture:
-    - topic: "ml/ml8_testing"
+    - topic: "nn/nn8_testing"
       notes: "nur @FHB"
   assignment:
     - topic: "sheet10"
