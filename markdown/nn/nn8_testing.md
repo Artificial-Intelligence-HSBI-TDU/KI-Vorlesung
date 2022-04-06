@@ -23,15 +23,15 @@ outcomes:
 #     name: "Testquizz (URL from 'Invite more Players')"
 youtube:
     - link: "https://youtu.be/T-WYL28iwdU"
-      name: "VL TODO"
+      name: "NN8.1 - Confusion Matrix"
     - link: "https://youtu.be/fpsNzn4Moow"
-      name: "VL TODO"
+      name: "NN8.2 - Precision und Recall"
     - link: "https://youtu.be/Wx_HAuIXTAQ"
-      name: "VL TODO"
+      name: "NN8.3 - Precision Recall Trade-off"
     - link: "https://youtu.be/UAV7EpdIe6Q"
-      name: "VL TODO"
+      name: "NN8.4 - F1-Score"
     - link: "https://youtu.be/vsmoYiArtrA"
-      name: "VL TODO"
+      name: "NN8.5 - Harmonisches Mittel- Intuition"
 sketch: false
 ---
 

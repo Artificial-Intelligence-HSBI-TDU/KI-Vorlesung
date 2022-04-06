@@ -22,15 +22,15 @@ assignments:
     - topic: sheet06
 youtube:
     - link: "https://youtu.be/IJdiwITTC9Y"
-      name: "VL TODO"
+      name: "NN1.1 - Einführung"
     - link: "https://youtu.be/oWcvFyLgqYc"
-      name: "VL TODO"
+      name: "NN1.1 - Einführung"
     - link: "https://youtu.be/ZvWpI0Doocc"
-      name: "VL TODO"
+      name: "NN1.3 - Das Perzeptron Modell"
     - link: "https://youtu.be/8Rdw2NBCCJk"
-      name: "VL TODO"
+      name: "NN1.4 - Perzeptron Beispiel"
     - link: "https://youtu.be/JD8Qsg8_kQI"
-      name: "VL TODO"
+      name: "NN1.5 - Der Perzeptron Lernalgorithmus"
 ---
 
 

@@ -19,9 +19,9 @@ assignments:
     - topic: sheet08
 youtube:
     - link: "https://youtu.be/KJLT-h_ChRo"
-      name: "VL TODO"
+      name: "NN4.1 - Nichtlineare Modelle"
     - link: "https://youtu.be/BW91MYPUH_k"
-      name: "VL TODO"
+      name: "NN4.2 - Overfitting und Regularisierung"
 ---
 
 

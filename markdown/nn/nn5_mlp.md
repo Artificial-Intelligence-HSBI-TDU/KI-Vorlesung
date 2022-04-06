@@ -20,7 +20,7 @@ assignments:
     - topic: sheet08
 youtube:
     - link: "https://youtu.be/7ltwa5WWuKI"
-      name: "VL TODO"
+      name: "NN5.1 - MLP Forward Propagation"
 ---
 
 

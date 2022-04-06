@@ -21,13 +21,13 @@ assignments:
     - topic: sheet07
 youtube:
     - link: "https://youtu.be/GpJmjrqA5RY"
-      name: "VL TODO"
+      name: "NN3.1 - Logistische Regression - Intro"
     - link: "https://youtu.be/z-jFZeNWMRc"
-      name: "VL TODO"
+      name: "NN3.2 - Logistische Regression - Hypothesenfunktion und Bsp"
     - link: "https://youtu.be/ruuCKupOhCE"
-      name: "VL TODO"
+      name: "NN3.3 - Logistische Regression - Verlust und Kosten"
     - link: "https://youtu.be/kPAZsr-r1LA"
-      name: "VL TODO"
+      name: "NN3.4 - Logistische Regression - Gradientenabstieg"
 ---
 
 ## Kurze Übersicht

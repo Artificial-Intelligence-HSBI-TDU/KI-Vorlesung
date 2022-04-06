@@ -21,11 +21,11 @@ assignments:
     - topic: sheet10
 youtube:
     - link: "https://youtu.be/PUw-TvLJULI"
-      name: "VL TODO"
+      name: "NN7.1 - Training, Testing, Validierung"
     - link: "https://youtu.be/DqjdZ8HaDSo"
-      name: "VL TODO"
+      name: "NN7.2 - Kreuzvalidierung"
     - link: "https://youtu.be/7XATTMNI-gI"
-      name: "VL TODO"
+      name: "NN7.3 - Beispiel"
 sketch: false
 ---
 

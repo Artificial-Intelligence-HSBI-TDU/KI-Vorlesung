@@ -22,17 +22,17 @@ assignments:
     - topic: sheet06
 youtube:
     - link: "https://youtu.be/f-DTaKMnkj4"
-      name: "VL TODO"
+      name: "NN2.1 - Lineare Regression - Intro"
     - link: "https://youtu.be/UnLjjMswNRo"
-      name: "VL TODO"
+      name: "NN2.2 - Vergleich Perzeptron und Bsp"
     - link: "https://youtu.be/H2YvYIaUW1Q"
-      name: "VL TODO"
+      name: "NN2.3 - Kostenfunktiıon und Gradientenvektor"
     - link: "https://youtu.be/URaVsZnfppQ"
-      name: "VL TODO"
+      name: "NN2.4 - Berechnung Gradientenvektor - Beispiel"
     - link: "https://youtu.be/5OZF3Qopous"
-      name: "VL TODO"
+      name: "NN2.5 - Berechnung Gradientenvektor - Allgemein"
     - link: "https://youtu.be/m-TnM13I-no"
-      name: "VL TODO"
+      name: "NN2.6 - Skalierung der Merkmale"
 ---
 
 

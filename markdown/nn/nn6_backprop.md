@@ -20,11 +20,11 @@ assignments:
     - topic: sheet09
 youtube:
     - link: "https://youtu.be/G9x75THjueQ"
-      name: "VL TODO"
+      name: "NN6.1 - MLP Backpropagation 1"
     - link: "https://youtu.be/9Ku0dJ8pGrU"
-      name: "VL TODO"
+      name: "NN6.2 - MLP Backpropagation 2"
     - link: "https://youtu.be/uvT4WPIIkwQ"
-      name: "VL TODO"
+      name: "NN6.3 - MLP Zusammenfassung"
 sketch: false
 ---
 
