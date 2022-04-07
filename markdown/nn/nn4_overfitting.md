@@ -22,6 +22,9 @@ youtube:
       name: "NN4.1 - Nichtlineare Modelle"
     - link: "https://youtu.be/BW91MYPUH_k"
       name: "NN4.2 - Overfitting und Regularisierung"
+attachments:
+  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN4-Nichtlineare_Modelle_und_Overfitting.pdf"
+    name: "NN4-Nichtlineare_Modelle_und_Overfitting.pdf"
 ---
 
 

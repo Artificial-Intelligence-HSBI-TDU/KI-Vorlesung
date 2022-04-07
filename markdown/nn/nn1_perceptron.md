@@ -31,6 +31,9 @@ youtube:
       name: "NN1.4 - Perzeptron Beispiel"
     - link: "https://youtu.be/JD8Qsg8_kQI"
       name: "NN1.5 - Der Perzeptron Lernalgorithmus"
+attachments:
+  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN1-Das_Perzeptron.pdf"
+    name: "NN1-Das_Perzeptron.pdf"
 ---
 
 

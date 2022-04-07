@@ -26,7 +26,9 @@ youtube:
       name: "NN7.2 - Kreuzvalidierung"
     - link: "https://youtu.be/7XATTMNI-gI"
       name: "NN7.3 - Beispiel"
-sketch: false
+attachments:
+  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN7-Testing-Validierung.pdf"
+    name: "NN7-Testing-Validierung.pdf"
 ---
 
 

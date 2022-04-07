@@ -32,7 +32,9 @@ youtube:
       name: "NN8.4 - F1-Score"
     - link: "https://youtu.be/vsmoYiArtrA"
       name: "NN8.5 - Harmonisches Mittel- Intuition"
-sketch: false
+attachments:
+  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN8-Performanzanalyse.pdf"
+    name: "NN8-Performanzanalyse.pdf"
 ---
 
 

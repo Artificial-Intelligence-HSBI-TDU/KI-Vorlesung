@@ -25,7 +25,9 @@ youtube:
       name: "NN6.2 - MLP Backpropagation 2"
     - link: "https://youtu.be/uvT4WPIIkwQ"
       name: "NN6.3 - MLP Zusammenfassung"
-sketch: false
+attachments:
+  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN6-MLP_Backpropagation.pdf"
+    name: "NN6-MLP_Backpropagation.pdf"
 ---
 
 
