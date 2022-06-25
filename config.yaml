@@ -46,6 +46,9 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Ressourcen"
     url: "/org/resources"
     weight: 40
+  - name: "<i class='fas fa-bookmark'></i> Prüfungsvorbereitung"
+    url: "/org/exam"
+    weight: 50
 
 markup:
   goldmark:

@@ -54,17 +54,23 @@ tldr: |
   Es wird keines der behandelten Themen ausgeschlossen, allerdings eignen sich manche Themen etwas
   besser für Klausurfragen als andere ;-)
 youtube:
-  - link: "https://youtu.be/f7GftBk8W3A"
-    name: "Hinweise zur Klausur"
+  - link: "https://youtu.be/warjJ9ZXvEM"
+    name: "Hinweise zur Prüfung: Fragetypen-Demo"
+  - link: "`https://youtu.be/_cVhJX-D6zM`{=markdown}"
+    name: "Hinweise zur Prüfung: Technische Vorbereitung"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/b64bfb81725b314521012e3dccf75659786666005d51c17e6f0e464526720ae862680d2dc4e21a55e25c0ed3d3c8d410c31d77d87617b9e50db2c1c1a13afa88"
-    name: "Hinweise zur Klausur"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/4f7c425ae13cec9dc1b3bed28c1cadd666e4ba87c4afd9fe131913187fe110d2296ef62b36696efc3f19e151c7f18fe1bd4b83aad9f86eb9a5f384d38f2a7fbf"
+    name: "Hinweise zur Prüfung: Fragetypen-Demo"
+  - link: "https://www.fh-bielefeld.de/medienportal/m/66febead31c0b01deec2ffb47adf8abfa247b51a76a539b6681423d9206f819e4df8c93ee7affd4be3f7144e035dfbaf997af8cd9314d4dbc65244bf11cd9de8"
+    name: "Hinweise zur Prüfung: Technische Vorbereitung"
 ---
 
 
 ## Elektronische Klausur: Termin, Materialien
 
 ::: notes
+### Termin
+
 Die Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem Prüfungs-ILIAS
 durchgeführt wird.
 
@@ -94,6 +100,10 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 
 \bigskip
 
+::: notes
+### Zugelassene Hilfsmittel
+:::
+
 *   **Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
 
     ::: notes
@@ -117,11 +127,14 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 
 \bigskip
 
+::: notes
+### Einsicht
+:::
+
 *   Prüfungseinsicht: Zeitnah; Bekanntgabe per Mail
-    <!-- XXX Voraussichtlich XX, XX.XX.2021, XX:XX -- XX:XX Uhr -->
 
 
-## Hinweise zu technischen Vorbereitungen (Präsenzprüfung am Campus Minden)
+## Technische Vorbereitungen: Präsenzprüfung am Campus Minden
 
 ::: notes
 Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
@@ -137,7 +150,7 @@ Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räume
     :::
 
 
-## Hinweise zu technischen Vorbereitungen (Home-Office)
+## Technische Vorbereitungen: Home-Office
 
 ::: notes
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
@@ -182,7 +195,7 @@ für Sie vorbereitet sein.
     Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder
     JavaScript-Blocker (No-Script, Ghostery, ...) für den Prüfungszeitraum.
 
-    Nutzen Sie Ihren Browser nicht im Privacy-Modus!
+    **Nutzen Sie Ihren Browser nicht im Privacy-Modus!**
     :::
 
 \bigskip
@@ -196,14 +209,14 @@ für Sie vorbereitet sein.
     :::
 
 
-## Hinweise zur Bearbeitung des E-Assessment
+## Bearbeitung des E-Assessment
 
 1.  Lesen Sie sich die Hinweise auf der Startseite durch
 
 2.  Bearbeiten Sie die Aufgaben in **einem einzigen** Browser-Tab
 
     ::: notes
-    [Öffnen Sie **NICHT** die Aufgaben in parallelen Tabs!]{.alert}
+    [**Öffnen Sie die Aufgaben _NICHT_ in parallelen Tabs!**]{.alert}
     Es kann sonst zu Fehlfunktionen von ILIAS kommen.
 
     Bewegen Sie sich nicht per Browser-Navigation ("vor", "zurück" im Browser)
@@ -244,63 +257,19 @@ für Sie vorbereitet sein.
     Dazu haben Sie maximal 24 Stunden nach Beendigung der Prüfung Zeit.
     :::
 
-[Demo]{.bsp}
 
+::: notes
+## Fragetypen-Demo
 
-<!-- XXX Präsenzklausur
-## Klausur: Termin, Materialien
-
-<!- XXX aktualisieren ->
-
-[XX, XX.XX.20, Raum XXX, XX:XX -- XX:XX Uhr]{.cbox}
-
-\bigskip
-
-*   Bitte [pünktlich]{.alert} erscheinen: ca. 15-20 Minuten vorher!
-
-    \smallskip
-
-*   **Zugelassene Materialien**: [**KEINE**]{.alert}!
-    *   Ausnahme: ein handbeschriebener [**DIN-A4-Zettel**]{.alert} \newline
-        => Wird am Klausurende eingesammelt, kann später
-        abgeholt werden.
-    *   Insbesondere: kein Handy, kein Taschenrechner, keine
-        programmierbaren und/oder netzwerkfähigen Geräte, ...!
-
-    \smallskip
-
-*   **Wichtig**
-    *   Stift(e) => Denken Sie auch an einen Ersatzstift!
-    *   Personal- und Studentenausweis
-
-\smallskip
-
-*   Klausureinsicht: Voraussichtlich XX, XX.XX.20, XX:XX -- XX:XX Uhr
-
-
-## Hinweise zur Bearbeitung der Klausur
-
-1.  Prüfen Sie, ob Ihr Exemplar vollständig ist.
-
-2.  Füllen Sie das Deckblatt vollständig aus.
-
-    \smallskip
-
-3.  Lesen Sie die Klausur von vorne nach hinten durch.
-    *   Fragen Sie, wenn Ihnen etwas unklar ist!
-    *   Teilen Sie alle (Teil-) Aufgaben in Kategorien ein:
-        a)  Die Aufgabe fällt Ihnen leicht und ist schnell zu beantworten
-        b)  Sie müssen zur Lösung der Aufgabe nachdenken, sind sich aber sicher,
-            die Aufgabe lösen zu können
-        c)  Sie wissen nicht, ob Sie die Aufgabe in sinnvoller Zeit lösen können
-    *   Arbeiten Sie die Aufgaben in dieser Reihenfolge ab!
--->
+In Ihrem ILIAS-Kurs finden Sie eine Fragetypen-Demo mit den wichtigsten Fragetypen. Machen
+Sie sich mit der Mechanik der Fragetypen vertraut und schauen Sie sich die Kommentare bei
+den einzelnen Aufgaben an. Sie können die Demo bei Bedarf beliebig oft wiederholen.
+:::
 
 
 ## Hinweise zu den Inhalten
 
 *   Klausurrelevant: Vorlesung und Praktikum
-    <!-- *   [**Ausgenommen**]{.alert}: Umwandlung in Klauselform -->
 *   Für Verständnis u.U. hilfreich: Studium der vertiefenden Literaturangaben
 
 \smallskip
@@ -316,8 +285,6 @@ für Sie vorbereitet sein.
 ::: cbox
 Können vor Kennen :-)
 :::
-
-[Beispiele Fragetypen: Fragetypen-Demo im ILIAS]{.bsp}
 
 
 ## Beispiele für mögliche Fragen
