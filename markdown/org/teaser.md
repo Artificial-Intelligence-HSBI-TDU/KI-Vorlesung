@@ -5,10 +5,10 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 6
 hidden: true
 youtube:
-  - link: ""
+  - link: "https://youtu.be/rBQZr6KDvak"
     name: "Modulvorstellung KI (Wahlfach Liste 1)"
 fhmedia:
-  - link: ""
+  - link: "https://www.fh-bielefeld.de/medienportal/m/bc7a7ce0460132e9bd7c7f58042ccd93c7b3b89632e1a0e2641ddac2aa6710e8cfca3771fe6cf446804d52f5ee2c174352e15d5aea972d84f6ac7109c40405c9"
     name: "Modulvorstellung KI (Wahlfach Liste 1)"
 ---
 
