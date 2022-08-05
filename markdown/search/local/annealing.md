@@ -143,7 +143,7 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 :::center
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png){width="60%"}
 
-[Quelle: Marcel Marnitz, reworked by [user:Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann), ["Exp e"](https://commons.wikimedia.org/wiki/File:Exp_e.svg), licensed as [public domain](https://en.wikipedia.org/wiki/Public_domain)]{.origin}
+[Quelle: ["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz, reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/Public_domain))]{.origin}
 :::
 
 *   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: $math.exp(dE/temp)$
@@ -228,4 +228,9 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
+
+\bigskip
+
+### Exceptions
+*   Figure ["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz, reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/Public_domain))
 :::
