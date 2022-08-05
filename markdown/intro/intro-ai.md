@@ -170,7 +170,7 @@ Dazu gehört auch
 ::: center
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%"}
 
-[Quelle: [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)]{.origin}
+[Quelle: [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
 :::
 
 ::: notes
@@ -335,5 +335,5 @@ Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 *   Citation "Intelligenz": [de.wikipedia.org/wiki/Intelligenz](https://de.wikipedia.org/wiki/Intelligenz), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
 *   Citation "Kognition": [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
 *   Citations "Definitionsversuche KI": nach [@Ertel2017, pp. 1-3]
-*   Figure "Turing Test": [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)
+*   Figure [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))
 :::
