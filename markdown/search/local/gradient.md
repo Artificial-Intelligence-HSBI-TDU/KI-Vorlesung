@@ -119,7 +119,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 **Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
 => "[vollständige Zustandsformulierung]{.alert}"
 
-### Eigenschaften 8-Damen-Problem ($n=8$) (nach [@Russell2020, S.131])
+### Eigenschaften 8-Damen-Problem ($n=8$)
 
 *   Zustandsraum: $8^8 \approx 17$ Millionen Zustände!
 *   Beginnend mit zufällig erzeugtem Startzustand:
@@ -128,7 +128,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 *   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
     nach durchschnittlich 3 Schritten stecken.
 
-[Quelle: [@Russell2020, S.131]]{.origin}
+[Quelle: nach [@Russell2020, p. 131]]{.origin}
 :::
 
 
