@@ -147,7 +147,7 @@ Zahlen als intelligent zu betrachten! Bezieht sich vor allem auf "*Denken*"!
 >
 > \hfill\ -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[Quelle: nach "Introduction to Artificial Intelligence" 2nd ed. [@Ertel2017, S.1-3]]{.origin}
+[Quelle: nach [@Ertel2017, pp. 1-3]]{.origin}
 
 ::: notes
 Dazu gehört auch
@@ -334,6 +334,6 @@ Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 *   Figure "Humanoider Roboter beim RoboCup 2013": [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605), by [RoboCup2013](https://www.flickr.com/photos/80267257@N05), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 *   Citation "Intelligenz": [de.wikipedia.org/wiki/Intelligenz](https://de.wikipedia.org/wiki/Intelligenz), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
 *   Citation "Kognition": [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
-*   Citations "Definitionsversuche KI": nach "Introduction to Artificial Intelligence" 2nd ed. [@Ertel2017, S.1-3]
+*   Citations "Definitionsversuche KI": nach [@Ertel2017, pp. 1-3]
 *   Figure "Turing Test": [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)
 :::
