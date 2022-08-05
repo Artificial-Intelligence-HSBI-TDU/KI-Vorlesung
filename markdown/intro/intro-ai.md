@@ -51,7 +51,7 @@ fhmedia:
 
 ![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%"}
 
-[Quelle: [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605), by [RoboCup2013](https://www.flickr.com/photos/80267257@N05), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
+[Quelle: [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by [RoboCup2013](https://www.flickr.com/photos/80267257@N05) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 ::: notes
 *   Was ist (künstliche) Intelligenz?
@@ -72,7 +72,7 @@ fhmedia:
 > unterscheiden sind, gibt es **keine allgemeingültige Definition der
 > Intelligenz**.
 >
-> \hfill\ [Quelle: [de.wikipedia.org/wiki/Intelligenz](https://de.wikipedia.org/wiki/Intelligenz), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
+> \hfill\ [Quelle: ["Intelligenz"](https://de.wikipedia.org/wiki/Intelligenz) by [Cumtempore](https://de.wikipedia.org/wiki/Benutzer:Cumtempore) and [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de) on Wikipedia ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
 
 ::: notes
 Das ist spannend: Es gibt keine allgemeingültige Definition für den Begriff "Intelligenz".
@@ -95,7 +95,7 @@ Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an
 > Glauben und einige mehr. Auch Emotionen haben einen wesentlichen kognitiven
 > Anteil.
 >
-> \hfill\ [Quelle: [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)]{.origin}
+> \hfill\ [Quelle: ["Kognition"](https://de.wikipedia.org/wiki/Kognition) by [Arbraxan](https://de.wikipedia.org/wiki/User:Arbraxan) and [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de) on Wikipedia ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
 
 ::: notes
 Zu den kognitiven Fähigkeiten und damit zur Intelligenz zählen also eine Reihe von
@@ -147,7 +147,7 @@ Zahlen als intelligent zu betrachten! Bezieht sich vor allem auf "*Denken*"!
 >
 > \hfill\ -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[Quelle: nach "Introduction to Artificial Intelligence" 2nd ed. [@Ertel2017, S.1-3]]{.origin}
+[Quelle: nach [@Ertel2017, pp. 1-3]]{.origin}
 
 ::: notes
 Dazu gehört auch
@@ -170,7 +170,7 @@ Dazu gehört auch
 ::: center
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%"}
 
-[Quelle: [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)]{.origin}
+[Quelle: [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
 :::
 
 ::: notes
@@ -331,9 +331,9 @@ Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
 
-*   Figure "Humanoider Roboter beim RoboCup 2013": [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605), by [RoboCup2013](https://www.flickr.com/photos/80267257@N05), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
-*   Citation "Intelligenz": [de.wikipedia.org/wiki/Intelligenz](https://de.wikipedia.org/wiki/Intelligenz), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
-*   Citation "Kognition": [de.wikipedia.org/wiki/Kognition](https://de.wikipedia.org/wiki/Kognition), [verschiedene Autoren](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)
-*   Citations "Definitionsversuche KI": nach "Introduction to Artificial Intelligence" 2nd ed. [@Ertel2017, S.1-3]
-*   Figure "Turing Test": [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png), by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby), licensed under [Public domain](https://en.wikipedia.org/wiki/en:public_domain)
+*   Figure [AvB - RoboCup 2013 - Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by [RoboCup2013](https://www.flickr.com/photos/80267257@N05) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))
+*   Citation ["Intelligenz"](https://de.wikipedia.org/wiki/Intelligenz) by [Cumtempore](https://de.wikipedia.org/wiki/Benutzer:Cumtempore) and [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de) on Wikipedia ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))
+*   Citation ["Kognition"](https://de.wikipedia.org/wiki/Kognition) by [Arbraxan](https://de.wikipedia.org/wiki/User:Arbraxan) and [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de) on Wikipedia ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))
+*   Citations "Definitionsversuche KI": nach [@Ertel2017, pp. 1-3]
+*   Figure [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))
 :::

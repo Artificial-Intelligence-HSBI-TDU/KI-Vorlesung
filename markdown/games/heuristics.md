@@ -109,7 +109,7 @@ der für einen der Mitspieler günstiger ist.
 ::: center
 ![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
-[Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)]{.origin}
+[Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 :::
 
 Backgammon: Was ist in dieser Situation der optimale Zug?
@@ -191,5 +191,5 @@ Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger arbeiten.
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
+*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))
 :::

@@ -39,7 +39,7 @@ fhmedia:
 ::: center
 ![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
 
-[Quelle: [Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on [Unsplash](https://unsplash.com/) ([Unsplash License](https://unsplash.com/license))]{.origin}
+[Quelle: [Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash License](https://unsplash.com/license))]{.origin}
 :::
 
 \bigskip
@@ -157,5 +157,5 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
 
 ### Exceptions
-*   [Photo "Evolution Walk"](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on [Unsplash](https://unsplash.com/), licensed under [Unsplash License](https://unsplash.com/license)
+*   Figure "Evolution Walk": [Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash License](https://unsplash.com/license))
 :::
