@@ -188,7 +188,7 @@ Für Schach immer noch zu aufwändig ...
     *   ca. 700.000 Spielsituationen (von Experten bewertet)
     *   Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen
 
-[Quelle: [@Russell2014, S. 185]]{.origin}
+[Quelle: [@Russell2014, p. 185]]{.origin}
 
 
 ## Beispiel AlphaGo (Google, 2016)
