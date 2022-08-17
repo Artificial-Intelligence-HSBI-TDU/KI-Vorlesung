@@ -1,6 +1,7 @@
 ---
-chapter: true
+archetype: "home"
 title: "KI W21"
+
 hidden: true
 ---
 
