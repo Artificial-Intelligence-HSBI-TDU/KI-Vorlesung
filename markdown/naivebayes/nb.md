@@ -64,8 +64,8 @@ outcomes:
   - k3: "Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten"
   - k3: "Klassifikation mit Naive Bayes durch Nutzung der geschätzten Wahrscheinlichkeiten"
 quizzes:
-  - link: "https://kahoot.it/challenge/04333248?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636955922820"
-    name: "Selbsttest Naive Bayes Klassifikation (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106588&client_id=FH-Bielefeld"
+    name: "Selbsttest Naive Bayes Klassifikation (ILIAS)"
 youtube:
   - link: "https://youtu.be/qfX4zp1i-Co"
     name: "VL Naive Bayes Klassifikation"
