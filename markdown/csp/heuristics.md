@@ -27,8 +27,8 @@ tldr: |
 outcomes:
   - k3: "Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV"
 quizzes:
-  - link: "https://kahoot.it/challenge/08086768?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765255208"
-    name: "Selbsttest CSP, Heuristiken (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106573&client_id=FH-Bielefeld"
+    name: "Selbsttest CSP, Heuristiken (ILIAS)"
 assignments:
   - topic: sheet04
 youtube:
