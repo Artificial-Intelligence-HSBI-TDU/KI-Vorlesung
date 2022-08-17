@@ -25,8 +25,8 @@ outcomes:
   - k2: "Optimalität, Vollständigkeit und Komplexität"
   - k3: "Uninformierte Suchverfahren: Tiefensuche"
 quizzes:
-  - link: "https://kahoot.it/challenge/09751845?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633580993690"
-    name: "Selbsttest Tiefensuche (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld"
+    name: "Selbsttest Tiefensuche (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:

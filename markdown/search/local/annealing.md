@@ -25,8 +25,8 @@ tldr: |
 outcomes:
   - k2: "Funktionsweise Simulated Annealing"
 quizzes:
-  - link: "https://kahoot.it/challenge/05934871?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634138238676"
-    name: "Selbsttest Simulated Annealing (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld"
+    name: "Selbsttest Simulated Annealing (ILIAS)"
 assignments:
   - topic: sheet02
 youtube:

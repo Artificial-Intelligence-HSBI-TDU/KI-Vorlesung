@@ -19,8 +19,8 @@ outcomes:
   - k2: "Optimalität, Vollständigkeit und Komplexität"
   - k3: "Informierte Suchverfahren Best-First"
 quizzes:
-  - link: "https://kahoot.it/challenge/01308905?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581334220"
-    name: "Selbsttest Best First (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106599&client_id=FH-Bielefeld"
+    name: "Selbsttest Best First (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:
