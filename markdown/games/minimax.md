@@ -22,8 +22,8 @@ tldr: |
 outcomes:
   - k3: "Minimax-Algorithmus"
 quizzes:
-  - link: "https://kahoot.it/challenge/04050682?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634752921630"
-    name: "Selbsttest Minimax (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld"
+    name: "Selbsttest Minimax (ILIAS)"
 assignments:
   - topic: sheet03
 youtube:
