@@ -4,6 +4,7 @@ title: "Fahrplan"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
 disableToc: true
+
 hidden: true
 ---
 

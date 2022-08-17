@@ -5,8 +5,6 @@ weight: 2
 ---
 
 
-# Uninformierte Suche
-
 ... jeder Schritt "kostet" gleich viel: nur die Anzahl der Schritte zählt ...
 
 

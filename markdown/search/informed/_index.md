@@ -5,8 +5,6 @@ weight: 3
 ---
 
 
-# Informierte Suche
-
 ... Einsatz einer Kostenfunktion ...
 
 

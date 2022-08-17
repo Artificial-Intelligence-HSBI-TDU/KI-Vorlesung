@@ -5,8 +5,6 @@ weight: 6
 ---
 
 
-# Entscheidungsbäume
-
 Beim überwachten Lernen soll eine Hypothese aufgebaut werden, die der echten (zu lernenden)
 Funktion möglichst nahe kommt. Eine Hypothese kann im einfachsten Fall als Entscheidungsbaum
 dargestellt werden. Die Merkmale bilden dabei die Knoten im Baum, und je Ausprägung gibt es

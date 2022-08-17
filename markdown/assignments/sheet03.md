@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 03: Spiele"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
-hidden: true
 weight: 3
+
+hidden: true
 ---
 
 

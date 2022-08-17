@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 09: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
-hidden: true
 weight: 9
+
+hidden: true
 ---
 
 

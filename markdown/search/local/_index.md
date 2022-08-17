@@ -5,8 +5,6 @@ weight: 4
 ---
 
 
-# Lokale Suche
-
 ... das Ziel ist im Weg ...
 
 

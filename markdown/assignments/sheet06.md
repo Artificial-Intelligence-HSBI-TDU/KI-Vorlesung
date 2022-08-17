@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 06: Perzeptron, Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
-hidden: true
 weight: 6
+
+hidden: true
 ---
 
 `<style type="text/css">

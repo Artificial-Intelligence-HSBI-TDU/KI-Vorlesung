@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 02: Lokale Suche, GA"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
-hidden: true
 weight: 2
+
+hidden: true
 ---
 
 

@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 05: Entscheidungsbäume"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
-hidden: true
 weight: 5
+
+hidden: true
 ---
 
 

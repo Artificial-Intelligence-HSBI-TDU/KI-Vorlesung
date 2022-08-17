@@ -1,6 +1,8 @@
 ---
 archetype: "chapter"
 title: "Praktikum"
+weight: 0
+
 hidden: true
 _build:
   render: always
@@ -8,8 +10,6 @@ _build:
   publishResources: true
 ---
 
-
-# Praktikum
 
 Hier finden Sie die Übungsblätter.
 
