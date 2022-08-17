@@ -6,8 +6,6 @@ weight: 5
 ---
 
 
-# Constraintsolving
-
 Was haben [Typ-Inferenz](https://en.wikipedia.org/wiki/Type_inference),
 [Sudoku](https://en.wikipedia.org/wiki/Sudoku), das
 [8-Queens-Problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle), das

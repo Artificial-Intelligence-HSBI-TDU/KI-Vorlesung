@@ -2,6 +2,7 @@
 archetype: "chapter"
 title: "Prüfungsvorbereitung"
 weight: 5
+
 hidden: true
 _build:
   render: always
@@ -9,8 +10,6 @@ _build:
   publishResources: true
 ---
 
-
-# Prüfungsvorbereitung
 
 Hier finden Sie Informationen zum Ablauf der Prüfung.
 
