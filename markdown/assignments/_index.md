@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Praktikum"
 hidden: true
 _build:

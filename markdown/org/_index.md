@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Organisatorisches"
 hidden: true
 _build:

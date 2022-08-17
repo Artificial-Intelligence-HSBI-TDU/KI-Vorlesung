@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Einführung KI"
 weight: 1
 ---

@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Uninformierte Suche"
 weight: 2
 ---

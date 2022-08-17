@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Note und Credits"
 weight: 2
 hidden: true
