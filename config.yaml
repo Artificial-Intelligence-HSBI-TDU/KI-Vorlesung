@@ -23,6 +23,7 @@ params:
   disableNextPrev: true
   disableSearch: true
   disableLandingPageButton: true
+  disableMathJax: false
   disableMermaid: true
   themeVariant:
   - "relearn-light"
