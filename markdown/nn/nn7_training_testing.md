@@ -65,7 +65,7 @@ attachments:
 
 *	Das Ziel ist es, das Modell mit bester Generalisierung, also kleinstem $E_{out}$ zu bestimmen. $E_{out}$ ist jedoch unbekannt und die Näherung $E_{test}$ *darf nicht* bei der Modellauswahl eingesetzt werden.
 
-*	LÖSUNG: Einen weiteren Teil der Daten als **Validierungsset** (auch development set) beiseitelegen und nicht für das Training (i.e. Minimierung des Trainingsfehlers $E_{in}$) verwenden!
+*	LÖSUNG: Einen weiteren Teil der Daten als **Validierungsset** (auch _development set_) beiseitelegen und nicht für das Training (i.e. Minimierung des Trainingsfehlers $E_{in}$) verwenden!
 
 *   **Bemerkung**:\
     Das Wort **Modell** kann je nach Kontext unterschiedliche Bedeutungen annehmen.\
@@ -107,7 +107,7 @@ attachments:
     *	Bei dem $i$-ten Training werden die Teilmenge $D_i$ für die Berechnung des Validierungsfehlers $e_i := E_{val}(h_m^{*(i)})$ und die restlichen $k-1$ Teilmengen für das Training verwendet.
 
     *   Der **Kreuzvalidierungsfehler** des Modells $(\mathcal{H_m},\mathcal{A_m})$ ist der Durchschnitt der $k$ Validierungsfehler $e_1, e_2, ..., e_k$ (siehe Abbildung 4).
-    $$ E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$
+    $$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$
 
     ![Abbildung 4 - Kreuzvalidierung](images/val4.png)
 
