@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 04: Constraints"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
-hidden: true
 weight: 4
+
+hidden: true
 ---
 
 

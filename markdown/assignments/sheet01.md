@@ -3,8 +3,9 @@ archetype: assignment
 title: "Blatt 01: Problemlösen, Suche"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
-hidden: true
 weight: 1
+
+hidden: true
 ---
 
 

@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Prüfungsvorbereitung (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1
-hidden: true
 tldr: |
   ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
 
@@ -63,6 +62,8 @@ fhmedia:
     name: "Hinweise zur Prüfung: Fragetypen-Demo"
   - link: "https://www.fh-bielefeld.de/medienportal/m/66febead31c0b01deec2ffb47adf8abfa247b51a76a539b6681423d9206f819e4df8c93ee7affd4be3f7144e035dfbaf997af8cd9314d4dbc65244bf11cd9de8"
     name: "Hinweise zur Prüfung: Technische Vorbereitung"
+
+hidden: true
 ---
 
 
