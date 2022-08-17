@@ -41,6 +41,3 @@ attachments:
     Ein Vorwärtslauf (forward pass):
     $$a^{[1]} = ReLU \left( W^{[1]} \cdot \mathbb{x} + b^{[1]} \right) \tag{1}$$
     $$\hat{y} := a^{[2]} = \sigma \left( W^{[2]} \cdot a^{[1]} + b^{[2]} \right) \tag{2}$$
-
-
-

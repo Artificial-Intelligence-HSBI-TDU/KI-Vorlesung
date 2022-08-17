@@ -67,6 +67,3 @@ Ein einfaches Modell für die **binäre Klassifizierung**
     *   Positiv, falls über dem Schwellenwert
     *   Negativ, falls unter dem Schwellenwert
 *   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt > siehe **Perzeptron Lernalgorithmus**
-
-
-

@@ -62,5 +62,3 @@ attachments:
     ![](images/lin_reg_nn.png)
 *   Perzeptron
     ![](images/perzeptron_nn.png)
-
-
