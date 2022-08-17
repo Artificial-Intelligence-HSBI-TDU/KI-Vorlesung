@@ -54,8 +54,8 @@ outcomes:
   - k2: "Problemlösen als Suche nach Wegen im Problemgraph => Suchbaum"
   - k2: "Unterschied zw. Tree-Search und Graph-Search"
 quizzes:
-  - link: "https://kahoot.it/challenge/04943631?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673930856"
-    name: "Selbsttest Problemlösen (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106586&client_id=FH-Bielefeld"
+    name: "Selbsttest Problemlösen (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:
