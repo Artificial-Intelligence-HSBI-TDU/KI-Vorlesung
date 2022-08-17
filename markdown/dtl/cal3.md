@@ -18,8 +18,8 @@ tldr: |
 outcomes:
   - k3: "Meta-Algorithmus CAL3 für überlappende Klassen"
 quizzes:
-  - link: "https://kahoot.it/challenge/02355374?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636211482929"
-    name: "Selbsttest CAL3 (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld"
+    name: "Selbsttest CAL3 (ILIAS)"
 assignments:
   - topic: sheet05
 youtube:
