@@ -54,9 +54,9 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 *   Zielfunktion $f$
 *   Merkmalraum (input space)
 *   Ausgaberaum (output space)
-*   Datensatz $ \mathcal{D} $
-*   Hypothesenmenge $ \mathcal{H} $
-*   Lernalgorithmus $ \mathcal{A} $
+*   Datensatz $\mathcal{D}$
+*   Hypothesenmenge $\mathcal{H}$
+*   Lernalgorithmus $\mathcal{A}$
 
 
 ### Das Perzeptron
@@ -67,6 +67,3 @@ Ein einfaches Modell für die **binäre Klassifizierung**
     *   Positiv, falls über dem Schwellenwert
     *   Negativ, falls unter dem Schwellenwert
 *   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt > siehe **Perzeptron Lernalgorithmus**
-
-
-
