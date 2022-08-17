@@ -12,9 +12,9 @@ outcomes:
 readings:
     - key: "AbuMostafa2012"
       comment: "Kapitel 4"
-# quizzes:
-#   - link: XYZ
-#     name: "Testquizz (URL from 'Invite more Players')"
+quizzes:
+   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
+     name: "Selbsttest Overfitting (ILIAS)"
 assignments:
     - topic: sheet08
 youtube:
