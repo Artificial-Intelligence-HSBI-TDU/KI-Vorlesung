@@ -33,7 +33,7 @@ youtube:
     - link: "https://youtu.be/vsmoYiArtrA"
       name: "NN8.5 - Harmonisches Mittel- Intuition"
 attachments:
-  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN8-Performanzanalyse.pdf"
+  - link: "files/NN8-Performanzanalyse.pdf"
     name: "NN8-Performanzanalyse.pdf"
 ---
 

@@ -29,7 +29,7 @@ youtube:
     - link: "https://youtu.be/kPAZsr-r1LA"
       name: "NN3.4 - Logistische Regression - Gradientenabstieg"
 attachments:
-  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN3-Logistische_Regression.pdf"
+  - link: "files/NN3-Logistische_Regression.pdf"
     name: "NN3-Logistische_Regression.pdf"
 ---
 

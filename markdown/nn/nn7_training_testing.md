@@ -27,7 +27,7 @@ youtube:
     - link: "https://youtu.be/7XATTMNI-gI"
       name: "NN7.3 - Beispiel"
 attachments:
-  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN7-Testing-Validierung.pdf"
+  - link: "files/NN7-Testing-Validierung.pdf"
     name: "NN7-Testing-Validierung.pdf"
 ---
 

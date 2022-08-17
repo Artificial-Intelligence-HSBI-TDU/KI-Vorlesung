@@ -34,7 +34,7 @@ youtube:
     - link: "https://youtu.be/m-TnM13I-no"
       name: "NN2.6 - Skalierung der Merkmale"
 attachments:
-  - link: "https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/nn/files/NN2-Lineare_Regression.pdf"
+  - link: "files/NN2-Lineare_Regression.pdf"
     name: "NN2-Lineare_Regression.pdf"
 ---
 
