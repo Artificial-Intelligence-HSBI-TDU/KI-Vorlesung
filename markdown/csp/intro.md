@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Einführung Constraints"
 menuTitle: "Intro"
 author: "Carsten Gips (FH Bielefeld)"

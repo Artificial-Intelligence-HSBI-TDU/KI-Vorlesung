@@ -23,11 +23,23 @@ params:
   disableNextPrev: true
   disableSearch: true
   disableLandingPageButton: true
+  disableMathJax: false
   disableMermaid: true
   themeVariant:
   - "relearn-light"
   - "relearn-dark"
   - "green"
+
+outputs:
+  home:
+    - "HTML"
+    - "PRINT"
+  section:
+    - "HTML"
+    - "PRINT"
+  page:
+    - "HTML"
+    - "PRINT"
 
 menu:
   shortcuts:

@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Kantenkonsistenz und AC-3"
 menuTitle: "AC-3"
 author: "Carsten Gips (FH Bielefeld)"

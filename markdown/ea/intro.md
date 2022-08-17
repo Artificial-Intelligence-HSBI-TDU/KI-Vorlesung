@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Einführung Evolutionäre Algorithmen"
 menuTitle: "Intro EA/GA"
 author: "Carsten Gips (FH Bielefeld)"

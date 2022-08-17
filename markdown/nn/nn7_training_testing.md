@@ -1,5 +1,5 @@
 ---
-type: lecture-cy
+archetype: lecture-cy
 title: "NN7 - Training & Testing"
 menuTitle: "NN7 - Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

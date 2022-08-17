@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Einführung Optimale Spiele"
 menuTitle: "Optimale Spiele"
 author: "Carsten Gips (FH Bielefeld)"

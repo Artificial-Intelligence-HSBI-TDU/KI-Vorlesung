@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Klassifikation mit Naive Bayes"
 menuTitle: "Naive Bayes"
 author: "Carsten Gips (FH Bielefeld)"

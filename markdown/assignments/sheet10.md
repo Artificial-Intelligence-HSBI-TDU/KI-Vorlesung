@@ -1,5 +1,5 @@
 ---
-type: assignment
+archetype: assignment
 title: "Blatt 10: Testing und Validierung"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10

@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Prüfungsvorbereitung"
 weight: 5
 hidden: true

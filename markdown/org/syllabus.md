@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Syllabus"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 3

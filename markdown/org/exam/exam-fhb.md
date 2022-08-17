@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Prüfungsvorbereitung (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1

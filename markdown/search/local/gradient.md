@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Lokale Suche: Gradientensuche"
 menuTitle: "Gradientensuche"
 author: "Carsten Gips (FH Bielefeld)"

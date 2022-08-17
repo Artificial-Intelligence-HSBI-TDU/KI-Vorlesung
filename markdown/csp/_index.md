@@ -1,5 +1,5 @@
 ---
-chapter: true
+archetype: "chapter"
 title: "Constraintsolving"
 menuTitle: "CSP"
 weight: 5

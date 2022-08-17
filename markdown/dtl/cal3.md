@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "CAL3"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 4
