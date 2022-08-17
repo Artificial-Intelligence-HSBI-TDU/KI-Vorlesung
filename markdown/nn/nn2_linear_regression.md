@@ -15,9 +15,9 @@ outcomes:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
-# quizzes:
-#   - link: XYZ
-#     name: "Testquizz (URL from 'Invite more Players')"
+quizzes:
+   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld"
+     name: "Selbsttest Lineare Regression (ILIAS)"
 assignments:
     - topic: sheet06
 youtube:

@@ -46,8 +46,8 @@ outcomes:
   - k3: "Marginalisierung"
   - k3: "Bayes'sche Regel"
 quizzes:
-  - link: "https://kahoot.it/challenge/07261469?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636955910891"
-    name: "Selbsttest Wahrscheinlichkeiten (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106587&client_id=FH-Bielefeld"
+    name: "Selbsttest Wahrscheinlichkeiten (ILIAS)"
 youtube:
   - link: "https://youtu.be/p_Yy5rkl4CA"
     name: "VL Wahrscheinlichkeiten"

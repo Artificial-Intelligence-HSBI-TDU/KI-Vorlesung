@@ -29,8 +29,8 @@ outcomes:
   - k3: "Pruning: Entfernen bedingt redundanter Tests"
   - k3: "Umformen von Entscheidungsbäumen mit Transformationsregel"
 quizzes:
-  - link: "https://kahoot.it/challenge/08386047?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1636211083210"
-    name: "Selbsttest Pruning (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106577&client_id=FH-Bielefeld"
+    name: "Selbsttest Pruning (ILIAS)"
 assignments:
   - topic: sheet05
 youtube:

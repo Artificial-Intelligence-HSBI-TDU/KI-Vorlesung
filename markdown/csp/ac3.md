@@ -33,8 +33,8 @@ outcomes:
   - k2: "Kantenkonsistenz bedeutet nicht globale Konsistenz"
   - k3: "AC-3 Algorithmus"
 quizzes:
-  - link: "https://kahoot.it/challenge/0862548?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765265778"
-    name: "Selbsttest CSP, AC-3 (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld"
+    name: "Selbsttest CSP, AC-3 (ILIAS)"
 assignments:
   - topic: sheet04
 youtube:

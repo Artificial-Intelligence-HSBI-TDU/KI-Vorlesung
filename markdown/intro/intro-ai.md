@@ -34,8 +34,8 @@ outcomes:
   - k1: "Starke vs. schwache KI"
   - k1: "Wichtige Strömungen in der KI und ihre zeitliche Einordnung"
 quizzes:
-  - link: "https://kahoot.it/challenge/05395894?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1632673036201"
-    name: "Selbsttest KI Einführung (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106585&client_id=FH-Bielefeld"
+    name: "Selbsttest KI Einführung (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:

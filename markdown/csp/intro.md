@@ -26,8 +26,8 @@ outcomes:
   - k1: "Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung"
   - k3: "Formulierung von CSP"
 quizzes:
-  - link: "https://kahoot.it/challenge/06611821?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1635765219155"
-    name: "Selbsttest Intro CSP (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld"
+    name: "Selbsttest Intro CSP (ILIAS)"
 assignments:
   - topic: sheet04
 youtube:

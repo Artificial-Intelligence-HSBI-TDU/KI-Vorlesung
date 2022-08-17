@@ -19,8 +19,8 @@ outcomes:
   - k2: "Problematik der lokalen Minima bei Gradientenverfahren"
   - k3: "Lokale Suche (Gradientenabstieg)"
 quizzes:
-  - link: "https://kahoot.it/challenge/05840170?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634138181107"
-    name: "Selbsttest Gradientensuche (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106601&client_id=FH-Bielefeld"
+    name: "Selbsttest Gradientensuche (ILIAS)"
 assignments:
   - topic: sheet02
 youtube:

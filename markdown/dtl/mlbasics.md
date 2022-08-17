@@ -32,6 +32,9 @@ outcomes:
   - k1: "Definition und Arten des Lernens"
   - k2: "Überwachtes Lernen: Lernen durch Beobachten (mit Lehrer)"
   - k2: "Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge"
+quizzes:
+   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
+     name: "Selbsttest Intro ML (ILIAS)"
 assignments:
   - topic: sheet05
 youtube:

@@ -33,8 +33,8 @@ outcomes:
   - k2: "Optimierungsmöglichkeit: Bewertung über Spieldatenbanken"
   - k3: "alpha-beta-Pruning"
 quizzes:
-  - link: "https://kahoot.it/challenge/08046335?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1634752873510"
-    name: "Selbsttest Alpha-Beta-Pruning (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106584&client_id=FH-Bielefeld"
+    name: "Selbsttest Alpha-Beta-Pruning (ILIAS)"
 assignments:
   - topic: sheet03
 youtube:

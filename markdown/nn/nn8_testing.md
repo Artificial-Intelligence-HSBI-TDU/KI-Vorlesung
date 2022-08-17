@@ -18,9 +18,6 @@ outcomes:
 #   - key: "Russell2020"
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
-# quizzes:
-#   - link: XYZ
-#     name: "Testquizz (URL from 'Invite more Players')"
 youtube:
     - link: "https://youtu.be/T-WYL28iwdU"
       name: "NN8.1 - Confusion Matrix"

@@ -27,8 +27,8 @@ outcomes:
   - k2: "Bedingung(en) an Restkostenabschätzung bei A*"
   - k3: "Informierte Suchverfahren A*"
 quizzes:
-  - link: "https://kahoot.it/challenge/07359960?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581428956"
-    name: "Selbsttest `A*`{=markdown} (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld"
+    name: "Selbsttest `A*`{=markdown} (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:

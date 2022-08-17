@@ -24,8 +24,8 @@ outcomes:
   - k2: "Bedeutung nicht-negativer Kosten für Branch-and-Bound"
   - k3: "Informierte Suchverfahren: Branch-and-Bound"
 quizzes:
-  - link: "https://kahoot.it/challenge/03121135?challenge-id=8471c25d-77c6-4c83-b473-6edcacfcb770_1633581228326"
-    name: "Selbsttest Branch-and-Bound (Kahoot)"
+  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106598&client_id=FH-Bielefeld"
+    name: "Selbsttest Branch-and-Bound (ILIAS)"
 assignments:
   - topic: sheet01
 youtube:
