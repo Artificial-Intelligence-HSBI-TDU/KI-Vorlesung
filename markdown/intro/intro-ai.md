@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Intro: Was ist Künstliche Intelligenz?"
 menuTitle: "Einführung KI"
 author: "Carsten Gips (FH Bielefeld)"

@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Modulvorstellung Künstliche Intelligenz (Wahlfach Liste 1)"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 6

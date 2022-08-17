@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Modellierung mit Genetischen Algorithmen"
 menuTitle: "Genetische Algorithmen"
 author: "Carsten Gips (FH Bielefeld)"

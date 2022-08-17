@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Suche mit `A*`{=markdown}"
 menuTitle: "`A*`{=markdown}"
 author: "Carsten Gips (FH Bielefeld)"

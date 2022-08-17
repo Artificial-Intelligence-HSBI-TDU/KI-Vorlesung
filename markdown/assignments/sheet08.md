@@ -1,5 +1,5 @@
 ---
-type: assignment
+archetype: assignment
 title: "Blatt 08: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10

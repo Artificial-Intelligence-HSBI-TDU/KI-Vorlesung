@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Note und Credits (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1

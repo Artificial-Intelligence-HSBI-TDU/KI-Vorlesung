@@ -1,5 +1,5 @@
 ---
-type: assignment
+archetype: assignment
 title: "Blatt 02: Lokale Suche, GA"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10

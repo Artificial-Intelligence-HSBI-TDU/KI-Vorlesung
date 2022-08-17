@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Suche mit Best First"
 menuTitle: "Best First"
 author: "Carsten Gips (FH Bielefeld)"

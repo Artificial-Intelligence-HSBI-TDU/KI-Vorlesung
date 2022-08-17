@@ -1,5 +1,5 @@
 ---
-type: lecture-cy
+archetype: lecture-cy
 title: "NN3 - Logistische Regression"
 menuTitle: "NN3 - Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Suche mit Tiefensuche"
 menuTitle: "Tiefensuche"
 author: "Carsten Gips (FH Bielefeld)"

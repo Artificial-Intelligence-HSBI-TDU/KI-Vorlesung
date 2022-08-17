@@ -1,5 +1,5 @@
 ---
-type: assignment
+archetype: assignment
 title: "Blatt 09: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
@@ -30,7 +30,7 @@ $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 ## A9.3: MLP und Backpropagation (5P)
 
-Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht. Nutzen Sie die Cross-Entropy Verlustfunktion. 
+Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht. Nutzen Sie die Cross-Entropy Verlustfunktion.
 
 *   (1P) Implementieren Sie die Forwärtspropagation. Nutzen Sie als Aktivierungsfunktion in der Ausgangsschicht $g(z) = \frac{1}{ 1 + e^{−z} }$ und in der versteckten Schicht $g(z) = ReLU(z)$.
 

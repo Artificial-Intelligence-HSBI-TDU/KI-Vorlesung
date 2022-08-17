@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Lösen von diskreten CSP"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 2

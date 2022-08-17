@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Lokale Suche: Simulated Annealing"
 menuTitle: "Simulated Annealing"
 author: "Carsten Gips (FH Bielefeld)"

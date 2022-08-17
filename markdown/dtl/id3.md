@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "ID3 und C4.5"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 6

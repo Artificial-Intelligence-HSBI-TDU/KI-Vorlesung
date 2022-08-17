@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Suche mit Branch-and-Bound"
 menuTitle: "Branch-and-Bound"
 author: "Carsten Gips (FH Bielefeld)"

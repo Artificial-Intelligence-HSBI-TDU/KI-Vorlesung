@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Wiederholung Wahrscheinlichkeitstheorie"
 menuTitle: "Wahrscheinlichkeiten"
 author: "Carsten Gips (FH Bielefeld)"

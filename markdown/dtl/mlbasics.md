@@ -1,5 +1,5 @@
 ---
-type: lecture-cg
+archetype: lecture-cg
 title: "Machine Learning 101"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 1

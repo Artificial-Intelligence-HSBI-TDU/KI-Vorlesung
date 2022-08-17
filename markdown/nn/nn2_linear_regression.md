@@ -1,5 +1,5 @@
 ---
-type: lecture-cy
+archetype: lecture-cy
 title: "NN2 - Lineare Regression"
 menuTitle: "NN2 - Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
