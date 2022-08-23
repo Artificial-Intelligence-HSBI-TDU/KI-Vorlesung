@@ -1,4 +1,3 @@
-#baseURL: "https://ki-vorlesung.github.io/Lecture/"
 baseURL: "https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898"
 canonifyURLs: true   # prepend all relative URLs w/ baseURL
 relativeURLs: false  # do NOT rewrite relative URLs to be relative to current content
