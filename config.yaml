@@ -1,6 +1,8 @@
 #baseURL: "https://ki-vorlesung.github.io/Lecture/"
 baseURL: "https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898"
-canonifyURLs: true
+canonifyURLs: true   # prepend all relative URLs w/ baseURL
+relativeURLs: false  # do NOT rewrite relative URLs to be relative to current content
+uglyurls: true       # use foo.de/bar.html instead of foo.de/bar/ (our new ILIAS 7.x HTML-Lernmodul won't find landing pages else)
 
 languageCode: "de-DE"
 metaDataFormat: "yaml"
