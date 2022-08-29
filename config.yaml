@@ -19,7 +19,7 @@ params:
   themeVariant: "green"
   titleSeparator: " "
   showVisitedLinks: true
-  disableBreadcrumb: false
+  disableBreadcrumb: true
   disableInlineCopyToClipBoard: true
   disableNextPrev: true
   disableSearch: true
