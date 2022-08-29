@@ -72,7 +72,7 @@ durch. Nehmen Sie das Geogebra-Arbeitsblatt [Gradientenabstieg](https://www.geog
 *Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
 
 
-`{{% challenges %}}`{=markdown}
+::: challenges
 
 ## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
@@ -92,4 +92,4 @@ Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment 
 
 *Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
 
-`{{% /challenges %}}`{=markdown}
+:::
