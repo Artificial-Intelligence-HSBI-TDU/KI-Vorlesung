@@ -39,6 +39,6 @@ are not part of the CC BY-SA 4.0 licence of this project.
 ## Contributors
 
 This project has been created and is being maintained by the authors
-[Canan Yıldız](https://github.com/cyildiz) and
+[Canan Yıldız](https://github.com/cyildiz), and
 [Carsten Gips](https://github.com/cagix) and various
-[contributors](https://github.com/KI-Vorlesung/Lecture/graphs/contributors).
+[contributors](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/graphs/contributors).
