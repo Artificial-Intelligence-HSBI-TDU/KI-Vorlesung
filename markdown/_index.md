@@ -43,7 +43,7 @@ Hochschulen getrennt durchgeführt.
 
 Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{< ref "/org/schedule" >}})`{=markdown}.
 Die Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
-[Github](https://github.com/KI-Vorlesung/Lecture) entwickelt und bereitgestellt.
+[Github](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung) entwickelt und bereitgestellt.
 
 
 ## Kursformat
