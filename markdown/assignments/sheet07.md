@@ -20,7 +20,7 @@ hidden: true
 
 *   (2P) Experimentieren Sie mit unterschiedlichen Lernraten, z.B.   $\alpha = 0.1,   \alpha = 0.01,   \alpha = 0.001$ und vergleichen Sie die Kosten-Diagramme.
 
-Sie können das folgende [**Jupyter Notebook**](https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/assignments/sheet07.files/Logistische_Regression_Starter.ipynb) als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy and Scikit-Learn) verwenden.
+Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung/blob/master/markdown/assignments/files/Logistische_Regression_Starter.ipynb) als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy and Scikit-Learn) verwenden.
 
 *Thema*: Verständnis und Implementierung Logistische Regression
 
@@ -35,7 +35,7 @@ Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/w
 
 *   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
 *   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
-Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](https://github.com/KI-Vorlesung/Lecture/blob/master/markdown/assignments/sheet07.files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
+Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung/blob/master/markdown/assignments/files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
 
 
 *Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
