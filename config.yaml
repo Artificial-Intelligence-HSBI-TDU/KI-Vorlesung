@@ -1,4 +1,4 @@
-baseURL: "https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898"
+baseURL: "https://www.fh-bielefeld.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/"
 canonifyURLs: true   # prepend all relative URLs w/ baseURL
 relativeURLs: false  # do NOT rewrite relative URLs to be relative to current content
 uglyurls: true       # use foo.de/bar.html instead of foo.de/bar/ (our new ILIAS 7.x HTML-Lernmodul won't find landing pages else)
@@ -19,7 +19,7 @@ params:
   themeVariant: "green"
   titleSeparator: " "
   showVisitedLinks: true
-  disableBreadcrumb: false
+  disableBreadcrumb: true
   disableInlineCopyToClipBoard: true
   disableNextPrev: true
   disableSearch: true
@@ -34,22 +34,22 @@ params:
 menu:
   shortcuts:
   - name: "<i class='fas fa-bookmark'></i> Fahrplan"
-    url: "/org/schedule"
+    url: "/org/schedule.html"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Praktikum"
-    url: "/assignments"
+    url: "/assignments.html"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Note/Credits"
-    url: "/org/grading"
+    url: "/org/grading.html"
     weight: 20
   - name: "<i class='fas fa-bookmark'></i> Syllabus"
-    url: "/org/syllabus"
+    url: "/org/syllabus.html"
     weight: 30
   - name: "<i class='fas fa-bookmark'></i> Ressourcen"
-    url: "/org/resources"
+    url: "/org/resources.html"
     weight: 40
   - name: "<i class='fas fa-bookmark'></i> Prüfungsvorbereitung"
-    url: "/org/exam"
+    url: "/org/exam.html"
     weight: 50
 
 markup:
