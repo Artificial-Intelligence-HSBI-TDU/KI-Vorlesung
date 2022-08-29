@@ -25,8 +25,8 @@ Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorle
 ### Kommunikation
 
 -   **Sie-an-uns**: Praktikum/Übung, Sprechstunde (per Zoom), E-Mail,
-    [Issue](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung/issues/new/choose) im
-    [Github](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung)
+    [Issue](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/issues/new/choose) im
+    [Github](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung)
 -   **Wir-an-Sie**: "News" im ILIAS (@TDU via Moodle), Antwort auf Issues
 
 ### Hinweis zur Kooperation zw. FHB und TDU
@@ -43,7 +43,7 @@ Hochschulen getrennt durchgeführt.
 
 Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{< ref "/org/schedule" >}})`{=markdown}.
 Die Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
-[Github](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung) entwickelt und bereitgestellt.
+[Github](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung) entwickelt und bereitgestellt.
 
 
 ## Kursformat

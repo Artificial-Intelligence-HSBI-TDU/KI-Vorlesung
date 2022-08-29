@@ -41,4 +41,4 @@ are not part of the CC BY-SA 4.0 licence of this project.
 This project has been created and is being maintained by the authors
 [Canan Yıldız](https://github.com/cyildiz), and
 [Carsten Gips](https://github.com/cagix) and various
-[contributors](https://github.com/Artificial-Intelligenz-FHB-TDU/KI-Vorlesung/graphs/contributors).
+[contributors](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/graphs/contributors).
