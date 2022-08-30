@@ -6,7 +6,9 @@ point out typos or find other errors or ambiguities in the text.
 
 ## Questions, Bugs or Feature Requests
 
-You are welcome to open a new issue.
+You are welcome to open a new issue. After clicking on the "new issue" button,
+you will be offered a few issue templates. Please choose the appropriate template
+or select "Open a blank issue, if the templates do not fit.
 
 Please check first if your request is already addressed in other (open or closed)
 issues. Feel free to reopen matching closed issues for this purpose to enter your
@@ -38,7 +40,7 @@ With the [GitHub workflows](.github/workflows/) defined in this repo, the slide
 sets (PDF files) and the lecture notes (web pages) are automatically generated
 triggered by changes to the `master` branch.
 
-The slide sets will be provided in a branch `_slides`. The lecture notes  will be
+The slide sets will be provided in a branch `_slides`. The lecture notes will be
 available in branch `_hugo`, where you also will find an archive named `site.zip`
 containing the current version of the lecture notes.
 
