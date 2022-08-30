@@ -2,7 +2,9 @@
 
 ## Overview
 
-tbd
+This represents the lecture material for the lecture "Künstliche Intelligenz",
+a course jointly developed and taught by Bielefeld University of Applied Sciences
+(Bielefeld) and Turkish-German University (Istanbul).
 
 
 ## Contributing
@@ -20,6 +22,8 @@ Digital Mobil @ FH Bielefeld.
 
 See the [credits](CREDITS.md) for a detailed list of contributing projects.
 
+
+---
 
 ## License
 
