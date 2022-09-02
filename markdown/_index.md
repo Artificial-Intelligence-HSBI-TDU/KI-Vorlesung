@@ -1,10 +1,10 @@
 ---
 archetype: "home"
-title: "KI W21"
+title: "KI W22"
 ---
 
 
-# Willkommen zur Lehrveranstaltung Künstliche Intelligenz im Winter 2021/22
+# Willkommen zur Lehrveranstaltung Künstliche Intelligenz im Winter 2022/23
 
 ## Team, Kontakt und Kommunikation
 
