@@ -4,9 +4,14 @@ title: "KI W22"
 ---
 
 
-# IFM 5.14/TBD: Künstliche Intelligenz (Winter 2022/23)
+# IFM 5.14 / TBD: Künstliche Intelligenz (Winter 2022/23)
 
-## Team, Kontakt und Kommunikation
+## Kursbeschreibung
+
+TBD
+
+
+## Team
 
 ### Dozenten
 
@@ -15,85 +20,49 @@ title: "KI W22"
 
 ### Mitarbeiter/Lehrbeauftragte
 
--   Zehra Melce Hüsünbeyi (TDU)
--   Jonas Posselt (FHB)
-
-### Sprechstunde ("Flipped"-Teil der Vorlesung)
-
-Wir nutzen den Vorlesungsslot als Sprechstunde für den "Flipped"-Teil der Vorlesung.
-
-### Kommunikation
-
--   **Sie-an-uns**: Praktikum/Übung, Sprechstunde (per Zoom), E-Mail,
-    [Issue](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/issues/new/choose) im
-    [Github](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung)
--   **Wir-an-Sie**: "News" im ILIAS (@TDU via Moodle), Antwort auf Issues
-
-### Hinweis zur Kooperation zw. FHB und TDU
-
-Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im Sommer 2020
-eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im Modul "Künstliche
-Intelligenz" gestartet.
-
-Wir werden in diesem Semester die Vorlesungen wieder gemeinsam für beide Hochschulen durchführen.
-In den Zoom-Sprechstunden nehmen deshalb alle Studierenden (TDU und FHB) teil.
-
-Die Übungen bzw. Praktika werden wg. unterschiedlicher Prüfungsordnungen jeweils für beide
-Hochschulen getrennt durchgeführt.
-
-Zur Verteilung der Themen siehe auch den `["Fahrplan"]({{< ref "/org/schedule" >}})`{=markdown}.
-Die Unterrichtssprache ist Deutsch. Die Unterlagen werden als *Open Educational Resources* über
-[Github](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung) entwickelt und bereitgestellt.
+-   TBD (TDU)
 
 
 ## Kursformat
 
-`{{< img src="images/fahrplan_v2.png" class="border1" title="Fahrplan (ZP: Zwischenprüfung, W: Weihnachtsferien)" width="90%" >}}`{=markdown}
+![](images/fahrplan_v2.png){width="90%"}
 
 ### Vorlesung: 2 SWS
 
-Durchführung als **Flipped Classroom**:
-*   Vorbereitung individuell \@home mit ausführlich kommentierten Skripten plus Screencasts
-    (**Selbststudium**)
-*   Sprechstunde ("Flipped"-Teil der Vorlesung) per Zoom (**Zugangsdaten siehe ILIAS/Moodle**)
-    *   FHB: bis 31.10.21: Mo, 10:30 - 12:00 Uhr (DE)
-    *   FHB: ab 01.11.21: Mo, 09:30 - 11:00 Uhr (DE)
-    *   TDU: Mo, 11:30 - 13:00 Uhr (TR)
+| FHB                        | TDU                        |
+|:---------------------------|:---------------------------|
+| Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) |
+| online/J101                | online/TBD                 |
 
-**Achtung**: Es gibt keine Präsenzvorlesung in KI im Wintersemester 2021/22 wg. der internationalen Kooperation.
+Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
-Arbeiten Sie das bereitgestellte Material (Skripte, Screencasts, Selbststudiumsaufgaben,
-Literaturhinweise) **selbstständig zu Hause vor der Sprechstunde** durch. Während des
-VL-Slots findet dann eine Zoom-Sprechstunde zu den jeweiligen Themen statt.
+### Übung / Praktikum: 2 SWS
 
-### Praktikum FHB: 2 SWS
+|    | FHB                          | TDU                        |
+|:---|:-----------------------------|:---------------------------|
+| G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) |
+| G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) |
+| G2 | -                            | Mi, XX:XX - XX:XX Uhr (TR) |
+|    | online/J101                  | online/TBD                 |
 
-| Gruppe | Zeit                        | Raum        |
-|--------|-----------------------------|-------------|
-| G1     | Mi, 15:45 -- 17:15 Uhr (DE) | D320/hybrid |
-| G2     | Mi, 09:45 -- 11:15 Uhr (DE) | D320/hybrid |
+Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
--   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
--   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline im ILIAS
--   Vorstellung und Diskussion der Lösung **im** Praktikum (Zoom)
+### Zeitumstellung
 
-Siehe auch `["Hinweise zum Praktikum FHB"]({{< ref "/org/grading/grading-fhb" >}})`{=markdown}
+**_TDU_: Alle Zeiten ab 31.10.22 _+1 Stunde_ später!**
 
-### Übung TDU: 2 SWS
-
-| Gruppe   | Zeit                   | Raum   |
-|----------|------------------------|--------|
-| Gruppe 1 | 11:30 - 12:10 Uhr (TR) | online |
-| Gruppe 2 | 12:10 - 12:50 Uhr (TR) | online |
-| Gruppe 3 | 12:50 - 13:30 Uhr (TR) | online |
-
-
--   Bearbeitung der Aufgaben **individuell** vor dem Praktikum
--   Angabe der gelösten (Teil-) Aufgaben **vor** der Deadline auf ILIAS (via Moodle)
--   Vorstellung und Diskussion der Lösung **in** der Übungsstunde (Zoom)
-
-Siehe auch `["Hinweise zur Übung TDU"]({{< ref "/org/grading/grading-tdu" >}})`{=markdown}
+[ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
 ### Prüfungsform
 
-Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown}
+Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown} zu Details.
+
+
+## Materialien
+
+Siehe `["Ressourcen"]({{< ref "/org/resources" >}})`{=markdown} zu Details.
+
+
+## Fahrplan
+
+`{{< schedule >}}`{=markdown}
