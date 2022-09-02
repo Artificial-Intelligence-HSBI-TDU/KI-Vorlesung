@@ -4,7 +4,7 @@ title: "KI W22"
 ---
 
 
-# Willkommen zur Lehrveranstaltung Künstliche Intelligenz im Winter 2022/23
+# IFM 5.14/TBD: Künstliche Intelligenz (Winter 2022/23)
 
 ## Team, Kontakt und Kommunikation
 
