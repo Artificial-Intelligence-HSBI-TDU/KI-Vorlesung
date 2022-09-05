@@ -20,7 +20,7 @@ TBD
 
 ### Mitarbeiter/Lehrbeauftragte
 
--   TBD (TDU)
+-   [Ayşe Betül Yüce](https://github.com/aysebetul) (TDU)
 
 
 ## Kursformat
