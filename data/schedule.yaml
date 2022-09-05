@@ -25,17 +25,22 @@
     date: "Mi, 05.10.22 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/naivebayes/probability"
-            notes: ">> nur @TDU"
         -   topic: "/naivebayes/nb"
-            notes: ">> nur @TDU"
-        -   topic: "/org/syllabus"
-            notes: ">> nur @FHB"
-        -   topic: "/intro/intro-ai"
-            notes: ">> nur @FHB"
-        -   topic: "/intro/problems"
-            notes: ">> nur @FHB"
+    misc_lecture:
+        -   notes: ">> nur @TDU"
     misc_assignment:
-        -   notes: ">> @TDU + @FHB: Keine Übung"
+        -   notes: ">> @TDU: Keine Übung"
+
+-   week: "KW40"
+    date: "Mi, 05.10.22 (Sprechstunde: cagix)"
+    lecture:
+        -   topic: "/org/syllabus"
+        -   topic: "/intro/intro-ai"
+        -   topic: "/intro/problems"
+    misc_lecture:
+        -   notes: ">> nur @FHB"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW41"
     date: "Mi, 12.10.22 (Sprechstunde: cagix)"
