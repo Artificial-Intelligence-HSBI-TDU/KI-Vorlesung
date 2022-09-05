@@ -33,7 +33,7 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 ## Kursformat
 
-![](images/fahrplan_v2.png){width="90%"}
+![](images/fahrplan_v3.png){width="90%"}
 
 ### Vorlesung: 2 SWS
 
