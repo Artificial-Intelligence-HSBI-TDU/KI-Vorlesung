@@ -34,7 +34,7 @@ params:
 menu:
   shortcuts:
   - name: "<i class='fas fa-bookmark'></i> Fahrplan"
-    url: "/org/schedule.html"
+    url: "/index.html#fahrplan"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Praktikum"
     url: "/assignments.html"
