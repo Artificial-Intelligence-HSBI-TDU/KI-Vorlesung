@@ -4,7 +4,7 @@ title: "KI W22"
 ---
 
 
-# IFM 5.14 / TBD: Künstliche Intelligenz (Winter 2022/23)
+# IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2022/23)
 
 ## Kursbeschreibung
 
