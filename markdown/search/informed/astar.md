@@ -151,7 +151,7 @@ Beweis siehe Übungsblatt "Blatt 01" :-)
 :::
 
 ::: notes
-Beweis siehe Übungsblatt `[Blatt 01]({{< ref "sheet01" >}})`{=markdown} :-)
+Beweis siehe Übung :-)
 :::
 
 ## Einfache Verbesserungen A\* (Tree-Search)
