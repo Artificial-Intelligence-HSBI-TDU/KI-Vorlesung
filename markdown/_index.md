@@ -8,7 +8,15 @@ title: "KI W22"
 
 ## Kursbeschreibung
 
-TBD
+Ausgehend von den Fragen "Was ist _Intelligenz_?" und "Was ist _künstliche Intelligenz_?"
+werden wir uns in diesem Modul mit verschiedenen Teilgebieten der KI beschäftigten und
+und anschauen, welche Methoden und Algorithmen es gibt und wie diese funktionieren. Dabei
+werden wir auch das Gebiet _Machine Learning_ berühren, aber auch andere wichtige Gebiete
+betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen Methoden-Baukasten zur
+Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis für die
+Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeuge, ...
+
+Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 
 ## Team
