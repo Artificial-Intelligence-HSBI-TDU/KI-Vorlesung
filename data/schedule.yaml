@@ -46,7 +46,7 @@
         -   topic: "/search/informed/bestfirst"
         -   topic: "/search/informed/astar"
     misc_assignment:
-        -   notes: ">> @TDU + @FHB: Teambuilding"
+        -   notes: ">> @TDU + @FHB: Teambuilding in Übungsstunde"
 
 -   week: "KW42"
     date: "Mi, 19.10.22 (Sprechstunde: cagix)"
@@ -55,9 +55,8 @@
         -   topic: "/search/local/annealing"
         -   topic: "/ea/intro"
         -   topic: "/ea/ga"
-    assignment:
-        -   topic: "p1m1"
-            due: "19.10.22"
+    misc_assignment:
+        -   notes: ">> @TDU + @FHB: keine Übung - Teamarbeit für Projekt #1"
 
 -   week: "KW43"
     date: "Mi, 26.10.22 (Sprechstunde: cagix)"
@@ -67,7 +66,7 @@
         -   topic: "/csp/heuristics"
         -   topic: "/csp/ac3"
     assignment:
-        -   topic: "p1m2"
+        -   topic: "p1m1"
             due: "26.10.22"
 
 -   week: "KW44"
@@ -80,7 +79,7 @@
         -   topic: "/dtl/entropy"
         -   topic: "/dtl/id3"
     assignment:
-        -   topic: "p1m3"
+        -   topic: "p1m2"
             due: "02.11.22"
 
 -   week: "KW45"
@@ -88,15 +87,16 @@
     lecture:
         -   topic: "nn/nn1_perceptron"
     assignment:
-        -   topic: "p1poster"
+        -   topic: "p1m3"
             due: "09.11.22"
 
 -   week: "KW46"
     date: "Mi, 16.11.22 (Sprechstunde: Canan)"
     lecture:
         -   topic: "nn/nn2_linear_regression"
-    misc_assignment:
-        -   notes: ">> @TDU + @FHB: Keine Übung"
+    assignment:
+        -   topic: "p1poster"
+            due: "16.11.22"
 
 -   week: "KW47"
     date: "Mi, 23.11.22 (Sprechstunde: Canan)"

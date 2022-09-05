@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Projekt 1: Entscheidungsbäume und Poster"
+title: "Projekt 1: Poster"
 author: "Carsten Gips (FH Bielefeld)"
 weight: 4
 
