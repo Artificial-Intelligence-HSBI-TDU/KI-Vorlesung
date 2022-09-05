@@ -145,6 +145,8 @@
     date: "Mi, 28.12.22"
     misc_lecture:
         -   notes: ">> @FHB: Weihnachtsferien!"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW01"
     date: "Mi, 04.01.23 (Sprechstunde: Canan)"
