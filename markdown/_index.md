@@ -65,6 +65,16 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
 Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown} zu Details.
 
+### Kooperation zw. FHB und TDU
+
+Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im
+Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im
+Modul "Künstliche Intelligenz" gestartet.
+
+Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
+Co-Teaching durchführen. In den Zoom-Sprechstunden nehmen deshalb alle Studierenden
+gemeinsam (TDU und FHB) teil.
+
 
 ## Materialien
 
