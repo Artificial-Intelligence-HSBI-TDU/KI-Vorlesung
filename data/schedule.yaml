@@ -2,6 +2,7 @@
     date: "Mi, 21.09.22 (Sprechstunde: cagix und Canan)"
     lecture:
         -   topic: "/org/syllabus"
+            notes: "Kick-Off (Zoom)"
         -   topic: "/intro/intro-ai"
         -   topic: "/intro/problems"
     misc_lecture:
@@ -35,6 +36,7 @@
     date: "Mi, 05.10.22 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/org/syllabus"
+            notes: "Kick-Off (Zoom)"
         -   topic: "/intro/intro-ai"
         -   topic: "/intro/problems"
     misc_lecture:
