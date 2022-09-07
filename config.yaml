@@ -24,6 +24,7 @@ params:
   disableNextPrev: true
   disableSearch: true
   disableLandingPageButton: true
+  disableLanguageSwitchingButton: true
   disableMathJax: false
   disableMermaid: true
   themeVariant:
