@@ -1,4 +1,4 @@
--   week: "KW38"
+-   week: "KW38 (TDU)"
     date: "Mi, 21.09.22 (Sprechstunde: cagix und Canan)"
     lecture:
         -   topic: "/org/syllabus"
@@ -9,7 +9,7 @@
     misc_assignment:
         -   notes: ">> @TDU: Keine Übung"
 
--   week: "KW39"
+-   week: "KW39 (TDU)"
     date: "Mi, 28.09.22 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/games/intro"
@@ -21,7 +21,7 @@
     misc_assignment:
         -   notes: ">> @TDU: Keine Übung"
 
--   week: "KW40"
+-   week: "KW40 (TDU)"
     date: "Mi, 05.10.22 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/naivebayes/probability"
@@ -31,7 +31,7 @@
     misc_assignment:
         -   notes: ">> @TDU: Keine Übung"
 
--   week: "KW40"
+-   week: "KW40 (FHB)"
     date: "Mi, 05.10.22 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/org/syllabus"
@@ -136,7 +136,7 @@
         -   topic: "p2poster"
             due: "14.12.22"
 
--   week: "KW51"
+-   week: "KW51 (TDU)"
     date: "Mi, 21.12.22 (Sprechstunde: Canan)"
     lecture:
         -   topic: "nn/nn8_testing"
@@ -153,7 +153,7 @@
     misc_assignment:
         -   notes: ">> @FHB: Keine Übung"
 
--   week: "KW01"
+-   week: "KW01 (FHB)"
     date: "Mi, 04.01.23 (Sprechstunde: Canan)"
     lecture:
         -   topic: "nn/nn8_testing"
@@ -163,7 +163,7 @@
     misc_assignment:
         -   notes: ">> @FHB: Keine Übung"
 
--   week: "KW02"
+-   week: "KW02 (FHB)"
     date: "Mi, 11.01.23 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/games/intro"
@@ -175,7 +175,7 @@
     misc_assignment:
         -   notes: ">> @FHB: Keine Übung"
 
--   week: "KW03"
+-   week: "KW03 (FHB)"
     date: "Mi, 18.01.23 (Sprechstunde: cagix)"
     lecture:
         -   topic: "/naivebayes/probability"
