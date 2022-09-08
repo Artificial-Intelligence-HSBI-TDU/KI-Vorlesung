@@ -53,21 +53,14 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 [Moodle]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
-### Prüfungsform
+### Prüfungsform, Note und Credits
 
-*   FHB
-    *   Note und Credits
-    *   Prüfungsvorbereitung
-*   TDU
-    *   Note und Credits
-    *   Prüfungsvorbereitung
+Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen:
 
-| FHB                          | TDU                        |
-|:-----------------------------|:---------------------------|
-| Note und Credits | Note und Credits |
-| Prüfungsvorbereitung | Prüfungsvorbereitung |
-
-Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown} zu Details.
+| FHB                                                               | TDU                                                               |
+|:------------------------------------------------------------------|:------------------------------------------------------------------|
+| `[Note und Credits]({{< ref "/org/grading-fhb" >}})`{=markdown}   | `[Note und Credits]({{< ref "/org/grading-tdu" >}})`{=markdown}   |
+| `[Prüfungsvorbereitung]({{< ref "/org/exams-fhb" >}})`{=markdown} | `[Prüfungsvorbereitung]({{< ref "/org/exams-tdu" >}})`{=markdown} |
 
 ### Kooperation zw. FHB und TDU
 

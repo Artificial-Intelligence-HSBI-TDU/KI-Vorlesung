@@ -37,11 +37,11 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Fahrplan"
     url: "/index.html#fahrplan"
     weight: 10
-  - name: "<i class='fas fa-bookmark'></i> Praktikum"
+  - name: "<i class='fas fa-bookmark'></i> Praktikum/Übung"
     url: "/assignments.html"
     weight: 10
   - name: "<i class='fas fa-bookmark'></i> Note/Credits"
-    url: "/org/grading.html"
+    url: "/index.html#prüfungsform-note-und-credits"
     weight: 20
   - name: "<i class='fas fa-bookmark'></i> Syllabus"
     url: "/org/syllabus.html"
@@ -49,9 +49,6 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Ressourcen"
     url: "/org/resources.html"
     weight: 40
-  - name: "<i class='fas fa-bookmark'></i> Prüfungsvorbereitung"
-    url: "/org/exam.html"
-    weight: 50
 
 markup:
   goldmark:
