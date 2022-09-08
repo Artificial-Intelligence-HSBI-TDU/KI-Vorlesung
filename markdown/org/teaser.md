@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Modulvorstellung Künstliche Intelligenz (Wahlfach Liste 1)"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 6
+weight: 1
 youtube:
   - link: "https://youtu.be/rBQZr6KDvak"
     name: "Modulvorstellung KI (Wahlfach Liste 1)"

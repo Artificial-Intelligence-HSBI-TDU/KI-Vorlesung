@@ -43,9 +43,6 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Note/Credits"
     url: "/index.html#prüfungsform-note-und-credits"
     weight: 20
-  - name: "<i class='fas fa-bookmark'></i> Syllabus"
-    url: "/org/syllabus.html"
-    weight: 30
 
 markup:
   goldmark:

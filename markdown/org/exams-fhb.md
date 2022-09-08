@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Prüfungsvorbereitung (FHB)"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 1
+weight: 6
 tldr: |
   ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
 
