@@ -32,27 +32,23 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 ### Vorlesung: 2 SWS
 
-| FHB  (03.10. - 30.01.)     | TDU (19.9. - 30.10.)       | TDU (31.10. - 19.12.)      |
+| FHB (03.10.22 - 20.01.23)  | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
 |:---------------------------|:---------------------------|:---------------------------|
-| Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) | Mi, 10:30 - 12:00 Uhr (TR) |
+| Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) | Mi, 11:30 - 13:00 Uhr (TR) |
 | online/J101                | online                     | online                     |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
 ### Übung / Praktikum: 2 SWS
 
-|    | FHB                          | TDU                        |
-|:---|:-----------------------------|:---------------------------|
-| G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) |
-| G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) |
-| G3 | -                            | Mi, 16:30 - 18:15 Uhr (TR) |
-|    | online/J101                  | online                     |
+|    | FHB (03.10.22 - 20.01.23)    | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
+|:---|:-----------------------------|:---------------------------|:---------------------------|
+| G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) | Mi, 13:30 - 15:00 Uhr (TR) |
+| G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) | Mi, 15:00 - 16:30 Uhr (TR) |
+| G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) | Mi, 17:30 - 19:00 Uhr (TR) |
+|    | online/J101                  | online                     | online                     |
 
 Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
-
-### Zeitumstellung
-
-**_TDU_: Alle Zeiten ab 31.10.22 _+1 Stunde_ später!**
 
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
