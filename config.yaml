@@ -46,9 +46,6 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Syllabus"
     url: "/org/syllabus.html"
     weight: 30
-  - name: "<i class='fas fa-bookmark'></i> Ressourcen"
-    url: "/org/resources.html"
-    weight: 40
 
 markup:
   goldmark:

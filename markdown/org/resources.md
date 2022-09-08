@@ -14,7 +14,7 @@ hidden: true
 
 ### Basics ("Must Have"!)
 
-1.  "**Artificial Intelligence: A Modern Approach**" (*AIMA*): @Russell2020
+1.  "**Artificial Intelligence: A Modern Approach**" (_AIMA_): @Russell2020
 2.  "Introduction to Artificial Intelligence": @Ertel2017
 3.  "Machine Learning": @Mitchell2010
 

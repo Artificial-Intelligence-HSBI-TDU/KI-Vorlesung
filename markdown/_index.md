@@ -75,7 +75,16 @@ gemeinsam (TDU und FHB) teil.
 
 ## Materialien
 
-Siehe `["Ressourcen"]({{< ref "/org/resources" >}})`{=markdown} zu Details.
+1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
+    Russell, S. und Norvig, P., Pearson, 2020.
+    ISBN [978-0134610993](https://www.digibib.net/openurl/Bi10?isbn=978-0134610993).
+
+2.  "Introduction to Artificial Intelligence".
+    Ertel, W., Springer, 2017.
+    ISBN [978-3-319-58487-4](https://www.digibib.net/openurl/Bi10?isbn=978-3-319-58487-4).
+    DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
+
+Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})`{=markdown}.
 
 
 ## Fahrplan
