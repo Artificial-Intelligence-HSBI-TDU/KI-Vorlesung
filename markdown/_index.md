@@ -37,7 +37,7 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 | Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) | Mi, 11:30 - 13:00 Uhr (TR) |
 | online/J101                | online                     | online                     |
 
-Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
+Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]/[Moodle]**)
 
 ### Übung / Praktikum: 2 SWS
 
@@ -48,9 +48,10 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 | G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) | Mi, 17:30 - 19:00 Uhr (TR) |
 |    | online/J101                  | online                     | online                     |
 
-**Zugangsdaten siehe [ILIAS]**
+**Zugangsdaten siehe [ILIAS]/[Moodle]**
 
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
+[Moodle]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
 ### Prüfungsform
 
