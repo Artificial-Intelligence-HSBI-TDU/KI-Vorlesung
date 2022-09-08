@@ -48,7 +48,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 | G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) | Mi, 17:30 - 19:00 Uhr (TR) |
 |    | online/J101                  | online                     | online                     |
 
-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
+**Zugangsdaten siehe [ILIAS]**
 
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
