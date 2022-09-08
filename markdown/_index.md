@@ -69,7 +69,7 @@ Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbu
 Modul "Künstliche Intelligenz" gestartet.
 
 Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sprechstunden nehmen deshalb alle Studierenden
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
 gemeinsam (TDU und FHB) teil.
 
 
