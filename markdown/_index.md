@@ -40,7 +40,7 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 | FHB                        | TDU                        |
 |:---------------------------|:---------------------------|
 | Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) |
-| online/J101                | online/TBD                 |
+| online/J101                | online                     |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
