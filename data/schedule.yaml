@@ -1,5 +1,5 @@
 -   week: "KW38 (TDU)"
-    date: "Mi, 21.09.22 (Sprechstunde: cagix und Canan)"
+    date: "Mi, 21.09.22 (Sprechstunde: Carsten und Canan)"
     lecture:
         -   topic: "/org/syllabus"
             notes: "Kick-Off (Zoom)"
@@ -11,7 +11,7 @@
         -   notes: ">> @TDU: Keine Übung"
 
 -   week: "KW39 (TDU)"
-    date: "Mi, 28.09.22 (Sprechstunde: cagix)"
+    date: "Mi, 28.09.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/games/intro"
         -   topic: "/games/minimax"
@@ -23,7 +23,7 @@
         -   notes: ">> @TDU: Keine Übung"
 
 -   week: "KW40 (TDU)"
-    date: "Mi, 05.10.22 (Sprechstunde: cagix)"
+    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/naivebayes/probability"
         -   topic: "/naivebayes/nb"
@@ -33,7 +33,7 @@
         -   notes: ">> @TDU: Keine Übung"
 
 -   week: "KW40 (FHB)"
-    date: "Mi, 05.10.22 (Sprechstunde: cagix)"
+    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/org/syllabus"
             notes: "Kick-Off (Zoom)"
@@ -45,7 +45,7 @@
         -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW41"
-    date: "Mi, 12.10.22 (Sprechstunde: cagix)"
+    date: "Mi, 12.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/search/uninformed/dfs"
         -   topic: "/search/uninformed/bfs"
@@ -56,7 +56,7 @@
         -   notes: ">> @TDU + @FHB: Teambuilding in Übungsstunde"
 
 -   week: "KW42"
-    date: "Mi, 19.10.22 (Sprechstunde: cagix)"
+    date: "Mi, 19.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/search/local/gradient"
         -   topic: "/search/local/annealing"
@@ -66,7 +66,7 @@
         -   notes: ">> @TDU + @FHB: keine Übung - Teamarbeit für Projekt #1"
 
 -   week: "KW43"
-    date: "Mi, 26.10.22 (Sprechstunde: cagix)"
+    date: "Mi, 26.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/csp/intro"
         -   topic: "/csp/backtrackingsearch"
@@ -77,7 +77,7 @@
             due: "26.10.22"
 
 -   week: "KW44"
-    date: "Mi, 02.11.22 (Sprechstunde: cagix)"
+    date: "Mi, 02.11.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/dtl/mlbasics"
         -   topic: "/dtl/cal2"
@@ -166,7 +166,7 @@
         -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW02 (FHB)"
-    date: "Mi, 11.01.23 (Sprechstunde: cagix)"
+    date: "Mi, 11.01.23 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/games/intro"
         -   topic: "/games/minimax"
@@ -178,7 +178,7 @@
         -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW03 (FHB)"
-    date: "Mi, 18.01.23 (Sprechstunde: cagix)"
+    date: "Mi, 18.01.23 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/naivebayes/probability"
         -   topic: "/naivebayes/nb"
