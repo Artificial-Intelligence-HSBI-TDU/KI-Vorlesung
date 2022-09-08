@@ -1,126 +1,95 @@
 ---
 archetype: assignment
-title: "Blatt 05: Entscheidungsbäume"
-author: "Carsten Gips (FH Bielefeld)"
+title: "Blatt 05: Perzeptron, Lineare Regression"
+author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
-weight: 5
+weight: 6
 
 hidden: true
 ---
 
-
-
-## A5.1: Handsimulation CAL2 (2P)
-
-Zeigen Sie mit einer Handsimulation, wie CAL2 mit dem folgenden
-Trainingsdatensatz schrittweise einen Entscheidungsbaum generiert.
-Nutzen Sie die linearisierte Schreibweise.
-
-| Beispiel | $x_1$ | $x_2$ | $x_3$ | Klasse |
-|:--------:|:-----:|:-----:|:-----:|:------:|
-|    1     |   a   |   a   |   a   |   1    |
-|    2     |   a   |   b   |   a   |   2    |
-|    3     |   a   |   a   |   b   |   1    |
-|    4     |   b   |   a   |   b   |   1    |
-|    5     |   a   |   a   |   c   |   1    |
-|    6     |   b   |   b   |   b   |   2    |
-
-*Thema*: Anwendung von CAL2
+`<style type="text/css">
+    ul { list-style-type: lower-alpha; }
+    ul ul { list-style-type: circle; }
+</style>`{=markdown}
 
 
 
-## A5.2: CAL2: Anforderungen an Trainingsmenge (1P)
+## A6.1: Entscheidungsgrenze (2P)
 
-Welchen Entscheidungsbaum würde CAL2 lernen, wenn dem Trainingsdatensatz aus
-der vorigen Aufgabe der Vektor $((a,a,b), 2)$ als Beispiel Nr. 7 hinzugefügt
-werden würde?
+*   (1P) Betrachten Sie das durch den Gewichtsvektor $ (w_0,w_1,w_2)^T = (2, 1, 1)^T $ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
+*   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
+    *   $ (w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T $
+    *   $ (w_0,w_1,w_2)^T = (200, 100, 100)^T $
+    *   $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$
+    *   $ (w_0,w_1,w_2)^T = (-2, -1, -1)^T $
 
-*Thema*: Voraussetzungen an Trainingsdatensatz
+*Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
 
+## A6.2: Logische Funktionen als Perzeptron (2P)
 
+*   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
+*   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
 
-## A5.3: Pruning (1P)
-
-Vereinfachen Sie schrittweise den Baum
-$$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
-so weit wie möglich.
-
-Nutzen Sie die linearisierte Schreibweise.
-Geben Sie die jeweils verwendete Regel an.
-
-*Thema*: Anwendung der Transformations- und Pruning-Regeln
+*Thema*: Verständnis Perzeptron
 
 
+## A6.3: Perzeptron Lernalgorithmus I (3P)
 
-## A5.4: Handsimulationen CAL3 und ID3 (3P)
+*   (2P) Implementieren Sie den Perzeptron-Lernalgorithmus. Ihr Programm soll eine Tabelle
+    mit den folgenden Spalten ausgeben, die eine Zeile je Lernschritt enthält:
+    $w_1$, $w_2$, $\theta$, $x_1$, $x_2$, $k$,  $\sum_{i=1}^n w_i x_i - \theta$, vorhergesagte Klasse, Änderung (=,+,-)
 
-Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die
-Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
+    Lernen Sie die boolesche Funktion `OR`. Geben Sie die vollständige Lerntabelle an.
 
-Führen Sie je eine Handsimulation mit
--   (1P) CAL3 ($S_1=4$, $S_2=0.7$) und
--   (2P) ID3 durch.
-
-| Nr. | Alter    | Einkommen | Bildung  | Kandidat |
-|:----|:---------|:----------|:---------|:---------|
-| 1   | $\ge 35$ | hoch      | Abitur   | O        |
-| 2   | $< 35$   | niedrig   | Master   | O        |
-| 3   | $\ge 35$ | hoch      | Bachelor | M        |
-| 4   | $\ge 35$ | niedrig   | Abitur   | M        |
-| 5   | $\ge 35$ | hoch      | Master   | O        |
-| 6   | $< 35$   | hoch      | Bachelor | O        |
-| 7   | $< 35$   | niedrig   | Abitur   | M        |
-
-*Thema*: Verständnis algorithmischer Ablauf CAL3 und ID3
+    Die Gewichte $w_1$ und $w_2$ sowie der Schwellenwert $\theta$ sollen jeweils mit dem Wert $0$ initialisiert werden. Die Lernschrittweite $\eta$ sei $0.5$. Nutzen Sie die
+    $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
 
 
+*   (1P) Zeichnen Sie eine geometrische Interpretation des Perzeptrons nach dem Lernen (Trennebene,  Gewichtsvektor, Trainingsbeispiele).
 
-## A5.5: Machine Learning mit Weka (3P)
+*Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
 
-Weka ([cs.waikato.ac.nz/ml/weka](https://www.cs.waikato.ac.nz/ml/weka/)) ist eine
-beliebte Sammlung von (in Java implementierten) Algorithmen aus dem Bereich des
-Maschinellen Lernens. Laden Sie sich das Tool in der aktuellen stabilen Version
-herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
+## A6.4: Lineare Regression und Gradientenabstieg (3P)
 
-Laden Sie sich die Beispieldatensätze "Zoo" (`zoo.csv`) und "Restaurant" (`restaurant.csv`)
-aus dem AIMA-Repository ([github.com/aimacode/aima-data](https://github.com/aimacode/aima-data))
-herunter. Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien eine
-Kopfzeile mit den Namen der Attribute haben. Passen Sie die Dateien entsprechend an
-und laden Sie diese im Reiter "Pre-Process" mit "Open file ...".
+Es sind folgende Trainingsdaten gegeben:
 
-*Hinweis*: Wenn Sie *Weka 3.6* einsetzen, sind alle für dieses Blatt erforderlichen
-Algorithmen bereits vorhanden. In neueren Versionen müssen Sie in der Weka-Haupt-GUI
-den Paketmanager unter "Tools" starten und dort nach einem Paket suchen, welches ID3
-enthält, und dieses Paket nachinstallieren.
+$$ ( x^{(1)}, y^{(1)} ) = (1, 1), ( x^{(2)}, y^{(2)} ) = (2, 1), ( x^{(3)}, y^{(3)} ) = (3, 2) $$
 
-### Training mit J48 (1P)
+Es soll das lineare Regressionsmodell $ h(x) = w_0 + w_1 x $ mit diesen Daten trainiert werden, wobei die zu minimierende Kostenfunktion (durchschnittliche Summe der Fehlerquadrate) wie folgt gegeben ist:
 
-Wechseln Sie auf den Reiter "Classify" und wählen Sie mit dem Button "Choose" den
-Entscheidungsbaum-Lerner J48 aus. (Dies ist eine Java-Implementierung von C4.5. Die
-ID3-Implementierung funktioniert für den `zoo.csv`-Datensatz leider nicht ...)
+$$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 
-Lernen Sie für die beiden Datensätze je einen Entscheidungsbaum. Wie sehen die Bäume
-aus? Wie hoch ist jeweils die Fehlerrate für den Trainingssatz? (Stellen Sie unter
-"Test options" den Haken auf "Use training set".) Interpretieren Sie die **Confusion
-Matrix**.
+*   (1P) Geben Sie $n$ und $m$ an und schreiben Sie die Kostenfunktion für die gegebenen Datenpunkte explizit auf. Berechnen Sie den Gradientenvektor $\nabla J$ und beschreiben Sie die Bedeutung dieses Vektors.
 
-### ARFF-Format (1P)
+*   (2P) Seien die Gewichte in einem Iterationsschritt $w_0 = 1, w_1 = 1$. Führen Sie für die Lernraten  $ \alpha = 0.01$, $ \alpha  = 0.1$ und  $ \alpha = 1$, jeweils fünf aufeinanderfolgende Iterationen des Gradientenabstieg (Gradient Descent) Algorithmus
+durch. Nehmen Sie das Geogebra-Arbeitsblatt [Gradientenabstieg](https://www.geogebra.org/classic/rcfffgsj) zu Hilfe.
 
-Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
-spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
-welchen Typ diese haben und welche Werte auftreten dürfen.
+    Erstellen Sie eine Tabelle mit den Spalten $w_0$, $w_1$, $J(\mathbf{w})$, $\nabla J(\mathbf{w})$, $\alpha \cdot \nabla J(\mathbf{w})$ und notieren Sie die zugehörigen Werte für jede Iteration. Erklären Sie, wie die Gewichtsaktualisierungen durchgeführt werden und geben Sie die dafür verwendete Formel an.
 
-Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
+    Wie verändern sich die Kosten während des Gradientenabstieges für die unterschiedlichen Lernraten? Begründen Sie dieses Verhalten.
 
-Konvertieren Sie den Zoo- und Restaurantdatensatz in das ARFF-Format. Beachten Sie, dass
-die ID3-Implementierung von Weka nicht mit bestimmten Attributtypen umgehen kann.
+*Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
 
-### Training mit ID3 und J48 (1P)
 
-Trainieren Sie für die im letzten Schritt erstellten Datensätze (Zoo und Restaurant) im
-ARFF-Format erneut Entscheidungsbäume. Nutzen Sie diesmal sowohl ID3 als auch J48.
+::: challenges
 
-Vergleichen Sie wieder die Ergebnisse (Entscheidungsbäume, Fehlerraten, Confusion Matrix)
-untereinander und mit den Ergebnissen aus dem J48-Lauf mit den `.csv`-Dateien.
+## A6.5: Bonus: Perzeptron Lernalgorithmus II (2P)
 
-*Thema*: Kennenlernen von Weka
+Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus (PLA) zu bekommen und eine Art empirische Approximation zu bestimmen.
+
+*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X} = [−1, 1] \times [−1, 1] $.
+*   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] \times [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als Ihre Zielfunktion $f$.
+*   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um den entsprechenden Ausgangslabel $y^{(j)}$ zu erhalten.
+
+Führen Sie nun PLA $1000$ mal hintereinander durch. Initialsieren Sie jedes mal die Gewichte mit $0$. Wählen Sie in jedem Schritt einen Punkt *zufällig* aus der Menge der falsch klassifizierten Punkte. Halten Sie für jeden Durchlauf fest, wie viele Schritte PLA benötigt, um zu der endgültigen Hypothese $h^{\*}$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt es?
+
+Wiederholen Sie das Experiment mit $m=100$ und $m=1000$ Datenpunkten. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
+
+Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
+
+*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012. Learning From Data. AMLBook.
+
+*Thema*: Verständnis Perzeptron und Ablauf Perzeptron-Lernalgorithmus
+
+:::
