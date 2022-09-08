@@ -37,10 +37,10 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 ### Vorlesung: 2 SWS
 
-| FHB                        | TDU                        |
-|:---------------------------|:---------------------------|
-| Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) |
-| online/J101                | online                     |
+| FHB  (03.10. - 30.01.)     | TDU (19.9. - 30.10.)       | TDU (31.10. - 19.12.)      |
+|:---------------------------|:---------------------------|:---------------------------|
+| Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) | Mi, 10:30 - 12:00 Uhr (TR) |
+| online/J101                | online                     | online                     |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
@@ -62,6 +62,18 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 
 ### Prüfungsform
+
+*   FHB
+    *   Note und Credits
+    *   Prüfungsvorbereitung
+*   TDU
+    *   Note und Credits
+    *   Prüfungsvorbereitung
+
+| FHB                          | TDU                        |
+|:-----------------------------|:---------------------------|
+| Note und Credits | Note und Credits |
+| Prüfungsvorbereitung | Prüfungsvorbereitung |
 
 Siehe `["Hinweise zur Prüfung"]({{< ref "/org/grading" >}})`{=markdown} zu Details.
 
