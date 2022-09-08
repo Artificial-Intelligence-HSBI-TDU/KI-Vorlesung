@@ -1,5 +1,5 @@
 -   week: "KW38 (TDU)"
-    date: "Mi, 21.09.22 (Sprechstunde: Carsten und Canan)"
+    date: "Mi, 21.09.22 (Sprechstunde: Canan und Carsten)"
     lecture:
         -   topic: "/org/syllabus"
             notes: "Kick-Off (Zoom)"
@@ -62,8 +62,9 @@
         -   topic: "/search/local/annealing"
         -   topic: "/ea/intro"
         -   topic: "/ea/ga"
-    misc_assignment:
-        -   notes: ">> @TDU + @FHB: keine Übung - Teamarbeit für Projekt #1"
+    assignment:
+        -   topic: "sheet01"
+            due: "19.10.22"
 
 -   week: "KW43"
     date: "Mi, 26.10.22 (Sprechstunde: Carsten)"
@@ -73,7 +74,7 @@
         -   topic: "/csp/heuristics"
         -   topic: "/csp/ac3"
     assignment:
-        -   topic: "p1m1"
+        -   topic: "sheet02"
             due: "26.10.22"
 
 -   week: "KW44"
@@ -86,7 +87,7 @@
         -   topic: "/dtl/entropy"
         -   topic: "/dtl/id3"
     assignment:
-        -   topic: "p1m2"
+        -   topic: "sheet03"
             due: "02.11.22"
 
 -   week: "KW45"
@@ -94,7 +95,7 @@
     lecture:
         -   topic: "nn/nn1_perceptron"
     assignment:
-        -   topic: "p1m3"
+        -   topic: "sheet04"
             due: "09.11.22"
 
 -   week: "KW46"
@@ -102,7 +103,7 @@
     lecture:
         -   topic: "nn/nn2_linear_regression"
     assignment:
-        -   topic: "p1poster"
+        -   topic: "poster1"
             due: "16.11.22"
 
 -   week: "KW47"
@@ -110,7 +111,7 @@
     lecture:
         -   topic: "nn/nn3_logistic_regression"
     assignment:
-        -   topic: "p2m1"
+        -   topic: "sheet05"
             due: "23.11.22"
 
 -   week: "KW48"
@@ -119,7 +120,7 @@
         -   topic: "nn/nn4_overfitting"
         -   topic: "nn/nn5_mlp"
     assignment:
-        -   topic: "p2m2"
+        -   topic: "sheet06"
             due: "30.11.22"
 
 -   week: "KW49"
@@ -127,7 +128,7 @@
     lecture:
         -   topic: "nn/nn6_backprop"
     assignment:
-        -   topic: "p2m3"
+        -   topic: "sheet07"
             due: "07.12.22"
 
 -   week: "KW50"
@@ -135,7 +136,7 @@
     lecture:
         -   topic: "nn/nn7_training_testing"
     assignment:
-        -   topic: "p2poster"
+        -   topic: "poster2"
             due: "14.12.22"
 
 -   week: "KW51 (TDU)"
