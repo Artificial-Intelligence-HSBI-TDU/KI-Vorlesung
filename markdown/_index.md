@@ -21,14 +21,9 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 ## Team
 
-### Dozenten
-
--   [Canan Yıldız](mailto:canan.yildiz@tau.edu.tr)
 -   [Carsten Gips](https://www.fh-bielefeld.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
-
-### Mitarbeiter/Lehrbeauftragte
-
--   [Ayşe Betül Yüce](https://github.com/aysebetul) (TDU)
+-   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de)
+-   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
 
 
 ## Kursformat
