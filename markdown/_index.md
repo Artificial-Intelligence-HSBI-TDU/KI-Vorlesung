@@ -91,3 +91,7 @@ Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})
 ## Fahrplan
 
 `{{< schedule >}}`{=markdown}
+
+**Hinweis**: Abgaben der Hausaufgaben bis jeweils 08.00 Uhr (DE), Deadlines für Feedback
+und Assessments je bis 04.00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende
+der TDU beachten bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.
