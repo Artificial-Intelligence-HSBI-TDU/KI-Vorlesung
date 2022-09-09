@@ -19,6 +19,17 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 
+## Kooperation zw. FHB und TDU
+
+Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im
+Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im
+Modul "Künstliche Intelligenz" gestartet.
+
+Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
+gemeinsam (TDU und FHB) teil.
+
+
 ## Team
 
 -   [Carsten Gips](https://www.fh-bielefeld.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
@@ -61,16 +72,6 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 |:------------------------------------------------------------------|:------------------------------------------------------------------|
 | `[Note und Credits]({{< ref "/org/grading-fhb" >}})`{=markdown}   | `[Note und Credits]({{< ref "/org/grading-tdu" >}})`{=markdown}   |
 | `[Prüfungsvorbereitung]({{< ref "/org/exams-fhb" >}})`{=markdown} | `[Prüfungsvorbereitung]({{< ref "/org/exams-tdu" >}})`{=markdown} |
-
-### Kooperation zw. FHB und TDU
-
-Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im
-Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im
-Modul "Künstliche Intelligenz" gestartet.
-
-Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
-gemeinsam (TDU und FHB) teil.
 
 
 ## Materialien
