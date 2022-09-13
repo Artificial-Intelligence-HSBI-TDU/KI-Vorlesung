@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Projekt 2: Poster"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 8
+weight: 9
 
 hidden: true
 ---

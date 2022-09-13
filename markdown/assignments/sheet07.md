@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 07: Overfitting & MLP"
+title: "Meilenstein 2.3: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
 weight: 8

@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 06: Logistische Regression"
+title: "Meilenstein 2.2: Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
 weight: 7

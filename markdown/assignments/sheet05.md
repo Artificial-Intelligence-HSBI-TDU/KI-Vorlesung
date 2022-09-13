@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 05: Perzeptron, Lineare Regression"
+title: "Meilenstein 2.1: Perzeptron, Lineare Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
 weight: 6

@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 02: Lokale Suche, GA"
+title: "Meilenstein 1.2: Lokale Suche, GA"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
 weight: 2

@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 01: Problemlösen, Suche"
+title: "Meilenstein 1.1: Problemlösen, Suche"
 author: "Carsten Gips (FH Bielefeld)"
 points: 10
 weight: 1
