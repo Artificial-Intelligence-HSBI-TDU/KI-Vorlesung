@@ -46,6 +46,9 @@ menu:
   - name: "<i class='fas fa-bookmark'></i> Note/Credits"
     url: "/index.html#prüfungsform-note-und-credits"
     weight: 40
+  - name: "<i class='fas fa-bookmark'></i> FAQ"
+    url: "/org/faq.html"
+    weight: 50
 
 markup:
   goldmark:
