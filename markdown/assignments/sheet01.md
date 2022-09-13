@@ -6,6 +6,8 @@ points: 10
 weight: 1
 
 hidden: true
+
+sketch: true
 ---
 
 

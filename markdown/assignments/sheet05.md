@@ -6,6 +6,8 @@ points: 10
 weight: 6
 
 hidden: true
+
+sketch: true
 ---
 
 `<style type="text/css">
