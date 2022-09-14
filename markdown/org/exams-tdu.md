@@ -3,7 +3,10 @@ archetype: lecture-cy
 title: "Prüfungsvorbereitung (TDU)"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 7
+
 hidden: true
+
+sketch: true
 ---
 
 
