@@ -34,7 +34,7 @@ Das setzt voraus, dass Sie vorbereitet in die Stunde kommen und sich aktiv einbr
 
 Zu vielen Themen wird es zusätzlich kurze Assessments im ILIAS geben. Diese werden
 jeweils in der Woche der Sprechstunde zum Thema freigeschaltet und können bis zur
-angegebenen Frist bearbeitet werden.
+angegebenen Frist selbstständig bearbeitet werden.
 
 Die Bearbeitung erfolgt einzeln, eine Zusammenarbeit ist hier nicht erlaubt.
 
@@ -86,15 +86,14 @@ Punkte nicht bekommen.
 ## How to Review
 
 Sobald die Abgabefrist für eine Aufgabe abgelaufen ist, verteilt ILIAS automatisch
-an alle, die selbst eine Lösung abgeben haben, eine Aufforderung zum Review anderer
-Abgaben/Lösungen.
+an alle, die selbst eine Lösung abgeben/hochgeladen haben, eine Aufforderung zum
+Review anderer Abgaben/Lösungen.
 
-Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt. Jede Person,
-die selbst abgegeben hat, soll 3 bis 4 Reviews erteilen.
+Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt.
 
 Sie können die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe finden.
 Gehen Sie nach der Deadline und vor Ihrer Übung/Ihrem Praktikum bitte ins ILIAS
-in die Aufgabe und schauen Sie nach, wem Sie ein Peer-Feedback gegen sollen. Sie
+in die Aufgabe und schauen Sie nach, wem Sie ein Peer-Feedback geben sollen. Sie
 finden hier ebenfalls auch die Kriterien für die Reviews in Form von kurzen
 Checklisten.
 
@@ -103,8 +102,17 @@ diese bis spätestens zur angegebenen Frist ins ILIAS.
 
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
 (also konkret Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
-vollständiges Review durch, sondern wählen den entsprechenden Punkt auf der Checkliste
-aus ("eigenes Team").
+vollständiges Review durch, sondern wählen Sie den entsprechenden Punkt auf der
+Checkliste aus ("eigenes Team").
+
+
+## Poster
+
+Für die beiden Poster-Sessions führen Sie die Ergebnisse der jeweiligen Meilensteine
+zusammen und erstellen Sie ein Poster, welches Sie dann als Lösung abgeben, vorstellen
+und wofür Sie sich gegenseitig Feedback erteilen.
+
+Eine Vorlage finden Sie hier: TODO.
 
 
 ## TDU, G3
@@ -113,3 +121,24 @@ Für die TDU-Studierenden wird die Gruppe "G3" nur mit TDU-Studierenden besetzt 
 (es gibt nur zwei Gruppen an der FHB).
 
 Die restlichen Regeln finden hier aber dennoch Anwendung.
+
+
+### Verspätete Abgaben, Krankheit
+
+Es gibt keine verspäteten Abgaben. Das sind 0P.
+
+Bei Krankheit/familiären Notfällen: Es ist sowohl bei den Übungsaufgaben als auch bei
+den Assessments ein gewisser Puffer für Notfälle oder Krankheitsfälle eingeplant. Sie
+könnten also je nach Punktestand einmal eine Woche fehlen und immer noch Ihr Testat
+(FHB) oder eine "1.0" (TDU) erreichen.
+
+Wenn die persönliche Ausnahmesituation länger vorliegen sollte, müssen ggf. andere
+Lösungen gefunden werden, um das Semester erfolgreich abschließen zu können. Nehmen
+Sie in diesem Fall zeitnah Kontakt zu Ihren Dozenten auf.
+
+Bei 2er-Teams arbeitet bitte der jeweilige Teampartner normal weiter (Abgabe der Lösung,
+Vorstellung der Lösung, Feedback), um die Punkte zu erhalten.
+
+Die beiden Poster-Sessions bauen inhaltlich auf den jeweils davor liegenden Meilensteinen
+auf. Wenn Sie einmal einen Meilenstein verpasst haben, holen Sie die Aufgabe für die
+Erstellung des Posters nach.
