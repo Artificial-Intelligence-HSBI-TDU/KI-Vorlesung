@@ -8,45 +8,89 @@ hidden: true
 ---
 
 
-## Prüfungsform FHB: Testat plus Klausur, 5 ECTS
+## Prüfungsform FHB
 
--   Mind. 6 der 10 Aufgabenblätter *jeweils* ausreichend (mind. 60% der Punkte des
-    jeweiligen Blattes) bearbeitet => **Testat**
--   E-Klausur am Ende des Semesters => **Note**
--   **Gesamtnote: Klausurnote**
+**Testat plus Klausur, 5 ECTS**
 
+-   **Testat**:
+    Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
+    Teilnahme am Praktikum und an den Assessments erforderlich, welche am
+    Ende des Semesters durch ein Testat bescheinigt wird.
 
-## Hinweise zur Modulprüfung FHB
+    Kriterien: Mindestens 5 der 9 Assessments müssen bestanden werden.
+    Zusätzlich müssen Sie durch die Bearbeitung der Übungsaufgaben im
+    Praktikum mindestens 44 von insgesamt 56 Punkten erreichen.
 
-Die Modulprüfung erfolgt in Form einer schriftlichen Prüfung ("Klausur"). Diese
-wird in beiden Prüfungszeiträumen in Form eines E-Assessments über eine spezielle
-ILIAS-Instanz durchgeführt. Nähere Informationen siehe
-`["Prüfungsvorbereitung (FHB)"]({{< ref "/org/exams-fhb" >}})`{=markdown}.
-
-Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche Teilnahme
-am Praktikum erforderlich, welche am Ende des Semesters durch ein Testat bescheinigt
-wird.
+-   **Gesamtnote**:
+    Schriftliche Prüfung ("Klausur") am Ende des Semesters, angeboten in
+    beiden Prüfungszeiträumen (Tipps zur Vorbereitung siehe
+    `["Prüfungsvorbereitung (FHB)"]({{< ref "/org/exams-fhb" >}})`{=markdown})
 
 
 ## Hinweise zum Praktikum FHB
 
-Geben Sie im ILIAS pro Blatt an, welche Aufgaben Sie bearbeitet haben. Laden Sie
-hier **nicht** Ihre Lösungen o.ä. hoch! Beachten Sie dabei die jeweilige Deadline.
+### Bearbeitung der Aufgaben
 
-Sie müssen in der Lage sein, Ihre Lösungen zu diesen Aufgaben im Praktikum der
-Gruppe vorzustellen.
+Die Bearbeitung der Aufgaben erfolgt in internationalen Zweier-Teams oder
+individuell.
 
-Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
+Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
+Lösungen ist nicht erlaubt!
+
+### Abgabe der Lösungen
+
+Bei Textaufgaben laden Sie Ihre Lösungen als **PDF-Datei** im ILIAS hoch. Sie
+können die Lösung in einer Textdatei (Markdown, LaTeX, Word, ...) bearbeiten
+und als PDF exportieren. Alternativ können Sie Ihre Lösung auf Papier
+aufschreiben und mit einer App wie zum Beispiel CamScanner ein PDF erzeugen.
+
+Programmieraufgaben laden Sie bitte als **Zip-Archiv** der jeweiligen
+Quell-Dateien im ILIAS hoch.
+
+Die Poster laden bitte jeweils als **PDF-Datei** im ILIAS hoch.
+
+**Wichtig**: Jede Person muss ihre Lösung eigenständig im ILIAS hochladen.
+Das gilt auch, wenn Sie in internationalen 2er Teams zusammenarbeiten.
+
+### Vorstellung der Lösung im Praktikum
+
+Die Vorstellung Ihrer Lösung im Praktikum kann mit einem Medium Ihrer Wahl
+stattfinden. Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung
+erklären. Sie brauchen nicht extra eine Präsentation anfertigen!
+
+### Peer-Feedback
+
+Nach der Ablauf der Deadline wird Ihnen durch ILIAS ein oder mehrere Reviews
+zugewiesen. Sie finden die Review-Kriterien (als Checklisten) und die
+anzufertigenden Reviews im ILIAS - gehen Sie dazu im Praktikumsbereich auf
+die jeweilige Aufgabe.
+
+Während des Praktikums füllen Sie bitte die Review-Checklisten aus und stellen
+Sie diese im ILIAS ein.
+
+### Punktevergabe
+
+Sie erhalten für jeden der 7 Meilensteine und jede der beiden Poster-Sessions
+bis zu 4P:
+
+-   1P für das Hochladen der Lösung im ILIAS
+-   1P für das Vorstellen der Lösung im ILIAS
+-   2P für das Erstellen des Peer-Feedbacks
+
+Ihre Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
 Beschäftigung mit der jeweiligen Aufgabe erkennen lassen.
 
-*   *Beispiel*: Wenn Sie auf dem Blatt die ersten beiden und die vierte Aufgabe
-    komplett gelöst haben und die fünfte Teilaufgabe zu 20 Prozent (d.h. Sie
-    haben sich zumindest ernsthaft Gedanken gemacht), dann tragen Sie im ILIAS
-    "a, b, d und f (20%)" ein.
+**Wichtig**: Beachten Sie, dass die Punkte aufeinander aufbauen: Ohne Abgabe
+der Lösung im ILIAS können Sie Ihre Lösung nicht vorstellen und auch kein
+Peer-Feedback abgeben. Ohne die Vorstellung der Lösung im Praktikum können
+Sie kein Peer-Feedback abgeben.
 
-Die Vorstellung Ihrer Lösungen im Praktikum kann mit einem Medium Ihrer Wahl
-stattfinden.
+Für die Poster gibt es zusätzlich je bis zu 10P, die nach inhaltlichen und
+formalen Kriterien durch die Dozenten vergeben werden.
 
-**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber im Praktikum nicht
-(oder zu spät) erscheint oder die Lösung im Praktikum nicht vorstellen kann/will,
-bekommt das gesamte Übungsblatt als "nicht bestanden" testiert!
+Damit können Sie maximal (7+2)x 4 + 2x 10 = 56 Punkte im Praktikum erreichen.
+
+
+## Hinweise zum Assessment FHB
+
+Die Aufgaben sind einzeln zu bearbeiten.
