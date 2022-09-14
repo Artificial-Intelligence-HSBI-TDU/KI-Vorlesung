@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Syllabus"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 3
+weight: 2
 
 hidden: true
 ---
@@ -56,7 +56,7 @@ hidden: true
 
 `<!--  -->`{=markdown}
 
-3)  ~~Inferenz, Logik~~ (**entfällt im W21**)
+3)  ~~Inferenz, Logik~~ (**entfällt im W22**)
     *   Prädikatenlogik: Modellierung, semantische und formale Beweise,
         Unifikation, Resolution
     *   Ausblick: Anwendung in Prolog

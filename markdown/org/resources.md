@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Ressourcen"
 author: "Carsten Gips (FH Bielefeld)"
-weight: 4
+weight: 3
 nocite: |
   @Russell2020,@Ertel2017,@Mitchell2010
 
@@ -14,7 +14,7 @@ hidden: true
 
 ### Basics ("Must Have"!)
 
-1.  "**Artificial Intelligence: A Modern Approach**" (*AIMA*): @Russell2020
+1.  "**Artificial Intelligence: A Modern Approach**" (_AIMA_): @Russell2020
 2.  "Introduction to Artificial Intelligence": @Ertel2017
 3.  "Machine Learning": @Mitchell2010
 

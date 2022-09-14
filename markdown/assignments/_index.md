@@ -1,6 +1,6 @@
 ---
 archetype: "chapter"
-title: "Praktikum"
+title: "Praktikum/Übung"
 weight: 0
 
 hidden: true
@@ -14,7 +14,7 @@ _build:
 Hier finden Sie die Übungsblätter.
 
 Bitte bearbeiten Sie vor der jeweiligen Sprechstunde das bereitgestellte Material
-(Skripte, Videos, Kahoots, Literatur, ...) und versuchen Sie vor der Sprechstunde
+(Skripte, Videos, Quizzes, Literatur, ...) und versuchen Sie vor der Sprechstunde
 das entsprechende Übungsblatt zu lösen, damit Sie in der der Sprechstunde Ihre
 Fragen zum Thema stellen können.
 

@@ -1,173 +1,213 @@
-#- week: "KW39"
-#  date: "(27 Sep - 1 Okt)"
-#  lecture:
-#    - topic: "/org/syllabus"
-#      notes: "Kick-Off TDU (cagix und Canan)"
+-   week: "KW38 (TDU)"
+    date: "Mi, 21.09.22 (Sprechstunde: Canan und Carsten)"
+    lecture:
+        -   topic: "/org/syllabus"
+            notes: "Kick-Off (Zoom)"
+        -   topic: "/intro/intro-ai"
+        -   topic: "/intro/problems"
+    misc_lecture:
+        -   notes: ">> nur @TDU"
+        -   notes: ">> @TDU: Start 11:30 Uhr (TR)"
+    misc_assignment:
+        -   notes: ">> @TDU: Keine Übung"
 
-- week: "KW40"
-  date: "04.10.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/org/syllabus"
-      notes: "Kick-Off FHB (cagix und Canan)"
-    - topic: "/intro/intro-ai"
-    - topic: "/intro/problems"
-  misc_lecture:
-    - notes: ">> KW41 freigeschaltet. Blatt 1 bearbeiten!"
+-   week: "KW39 (TDU)"
+    date: "Mi, 28.09.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/games/intro"
+        -   topic: "/games/minimax"
+        -   topic: "/games/heuristics"
+        -   topic: "/games/alphabeta"
+    misc_lecture:
+        -   notes: ">> nur @TDU"
+    misc_assignment:
+        -   notes: ">> @TDU: Keine Übung"
 
-- week: "KW41"
-  date: "11.10.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/search/uninformed/dfs"
-    - topic: "/search/uninformed/bfs"
-    - topic: "/search/informed/branchandbound"
-    - topic: "/search/informed/bestfirst"
-    - topic: "/search/informed/astar"
-  assignment:
-    - topic: "sheet01"
-      due: "13.10.2021"
-  misc_lecture:
-    - notes: ">> KW42 freigeschaltet. Blatt 2 bearbeiten!"
+-   week: "KW40 (TDU)"
+    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/naivebayes/probability"
+        -   topic: "/naivebayes/nb"
+    misc_lecture:
+        -   notes: ">> nur @TDU"
+        -   notes: ">> @TDU: Sprechstunde 12:30 - 14:00 Uhr (TR)"
+    misc_assignment:
+        -   notes: ">> @TDU: Keine Übung"
+        -   notes: ">> @TDU: Assessment (Spiele): 06.10.22"
 
-- week: "KW42"
-  date: "18.10.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/search/local/gradient"
-    - topic: "/search/local/annealing"
-    - topic: "/ea/intro"
-    - topic: "/ea/ga"
-  assignment:
-    - topic: "sheet02"
-      due: "20.10.2021"
-  misc_lecture:
-    - notes: ">> KW43 freigeschaltet. Blatt 3 bearbeiten!"
+-   week: "KW40 (FHB)"
+    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/org/syllabus"
+            notes: "Kick-Off (Zoom)"
+        -   topic: "/intro/intro-ai"
+        -   topic: "/intro/problems"
+    misc_lecture:
+        -   notes: ">> nur @FHB"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
 
-- week: "KW43"
-  date: "25.10.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/games/intro"
-    - topic: "/games/minimax"
-    - topic: "/games/heuristics"
-    - topic: "/games/alphabeta"
-  assignment:
-    - topic: "sheet03"
-      due: "27.10.2021"
-  misc_lecture:
-    - notes: ">> KW44 freigeschaltet. Blatt 4 bearbeiten!"
+-   week: "KW41"
+    date: "Mi, 12.10.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/search/uninformed/dfs"
+        -   topic: "/search/uninformed/bfs"
+        -   topic: "/search/informed/branchandbound"
+        -   topic: "/search/informed/bestfirst"
+        -   topic: "/search/informed/astar"
+    misc_assignment:
+        -   notes: ">> @TDU + @FHB: Teambuilding in Übungsstunde"
 
-- week: "KW44"
-  date: "01.11.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/csp/intro"
-    - topic: "/csp/backtrackingsearch"
-    - topic: "/csp/heuristics"
-    - topic: "/csp/ac3"
-  assignment:
-    - topic: "sheet04"
-      due: "03.11.2021"
-  misc_lecture:
-    - notes: ">> KW45 freigeschaltet. Blatt 5 bearbeiten!"
+-   week: "KW42"
+    date: "Mi, 19.10.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/search/local/gradient"
+        -   topic: "/search/local/annealing"
+        -   topic: "/ea/intro"
+        -   topic: "/ea/ga"
+    assignment:
+        -   topic: "sheet01"
+            due: "19.10.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 20.10.22, Assessment: 20.10.22"
 
-- week: "KW45"
-  date: "08.11.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/dtl/mlbasics"
-    - topic: "/dtl/cal2"
-    - topic: "/dtl/pruning"
-    - topic: "/dtl/cal3"
-    - topic: "/dtl/entropy"
-    - topic: "/dtl/id3"
-  assignment:
-    - topic: "sheet05"
-      due: "10.11.2021"
-  misc_lecture:
-    - notes: ">> KW46 freigeschaltet."
+-   week: "KW43"
+    date: "Mi, 26.10.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/csp/intro"
+        -   topic: "/csp/backtrackingsearch"
+        -   topic: "/csp/heuristics"
+        -   topic: "/csp/ac3"
+    assignment:
+        -   topic: "sheet02"
+            due: "26.10.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 27.10.22, Assessment: 27.10.22"
 
-- week: "KW46"
-  date: "15.11.21 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/naivebayes/probability"
-    - topic: "/naivebayes/nb"
-  misc_lecture:
-    - notes: ">> KW47 freigeschaltet."
+-   week: "KW44"
+    date: "Mi, 02.11.22 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/dtl/mlbasics"
+        -   topic: "/dtl/cal2"
+        -   topic: "/dtl/pruning"
+        -   topic: "/dtl/cal3"
+        -   topic: "/dtl/entropy"
+        -   topic: "/dtl/id3"
+    assignment:
+        -   topic: "sheet03"
+            due: "02.11.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 03.11.22, Assessment: 03.11.22"
 
-- week: "KW47"
-  date: "22.11.21 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn1_perceptron"
-  misc_lecture:
-    - notes: ">> KW48 freigeschaltet. Blatt 6 bearbeiten!"
-    - notes: ">> @TDU: Zwischenprüfung!"
+-   week: "KW45"
+    date: "Mi, 09.11.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn1_perceptron"
+    assignment:
+        -   topic: "sheet04"
+            due: "09.11.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 10.11.22, Assessment: 10.11.22"
 
-- week: "KW48"
-  date: "29.11.21 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn2_linear_regression"
-  assignment:
-    - topic: "sheet06"
-      due: "01.12.2021"
-  misc_lecture:
-    - notes: ">> KW49 freigeschaltet. Blatt 7 bearbeiten!"
+-   week: "KW46"
+    date: "Mi, 16.11.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn2_linear_regression"
+    assignment:
+        -   topic: "poster1"
+            due: "16.11.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 17.11.22"
 
-- week: "KW49"
-  date: "06.12.21 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn3_logistic_regression"
-  assignment:
-    - topic: "sheet07"
-      due: "08.12.2021"
-  misc_lecture:
-    - notes: ">> KW50 freigeschaltet. Blatt 8 bearbeiten!"
+-   week: "KW47"
+    date: "Mi, 23.11.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn3_logistic_regression"
+    assignment:
+        -   topic: "sheet05"
+            due: "23.11.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 24.11.22, Assessment: 24.11.22"
 
-- week: "KW50"
-  date: "13.12.21 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn4_overfitting"
-    - topic: "nn/nn5_mlp"
-  assignment:
-    - topic: "sheet08"
-      due: "15.12.2021"
-  misc_lecture:
-    - notes: ">> KW51 freigeschaltet. Blatt 09 bearbeiten!"
+-   week: "KW48"
+    date: "Mi, 30.11.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn4_overfitting"
+        -   topic: "nn/nn5_mlp"
+    assignment:
+        -   topic: "sheet06"
+            due: "30.11.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 01.12.22, Assessment: 01.12.22"
 
-- week: "KW51"
-  date: "20.12.21 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn6_backprop"
-  assignment:
-    - topic: "sheet09"
-      due: "22.12.2021"
-  misc_lecture:
-    - notes: ">> @TDU: KW52 freigeschaltet."
-    - notes: ">> @FHB: Frohe Weihnachten!"
+-   week: "KW49"
+    date: "Mi, 07.12.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn6_backprop"
+    assignment:
+        -   topic: "sheet07"
+            due: "07.12.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 08.12.22, Assessment: 08.12.22"
 
-- week: "KW52"
-  misc_lecture:
-    - notes: ">> @FHB: Weihnachtsferien!"
-    - notes: ">> @TDU: Sprechstunde/Vorlesung musste aus gesundheitlichen Gründen entfallen"
+-   week: "KW50"
+    date: "Mi, 14.12.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn7_training_testing"
+    assignment:
+        -   topic: "poster2"
+            due: "14.12.22"
+    misc_assignment:
+        -   notes: ">> Feedback: 15.12.22, Assessment: 15.12.22"
 
-- week: "KW01"
-  date: "03.01.22 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn7_training_testing"
-  misc_lecture:
-    - notes: ">> Alles Gute im neuen Jahr!"
-    - notes: ">> @FHB: KW02 freigeschaltet. Blatt 10 bearbeiten! (nur FHB)"
+-   week: "KW51 (TDU)"
+    date: "Mi, 21.12.22 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn8_testing"
+            notes: ">> nur @TDU"
+    misc_lecture:
+        -   notes: ">> @FHB: Frohe Weihnachten!"
+    misc_assignment:
+        -   notes: ">> @TDU: Keine Übung"
 
-- week: "KW02"
-  date: "10.01.22 (Sprechstunde: Canan)"
-  lecture:
-    - topic: "nn/nn8_testing"
-      notes: "nur @FHB"
-  assignment:
-    - topic: "sheet10"
-      due: "12.01.2022"
-  misc_assignment:
-    - notes: ">> @FHB: Abgabe/Praktikum Blatt 10"
+-   week: "KW52"
+    date: "Mi, 28.12.22"
+    misc_lecture:
+        -   notes: ">> @FHB: Weihnachtsferien!"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
 
-- week: "KW03"
-  date: "17.01.22 (Sprechstunde: cagix)"
-  lecture:
-    - topic: "/org/syllabus"
-      notes: "nur @FHB: Rückblick (Zoom)"
-    - topic: "/org/exam/exam-fhb"
-      notes: "nur @FHB: Klausurvorbereitung"
+-   week: "KW01 (FHB)"
+    date: "Mi, 04.01.23 (Sprechstunde: Canan)"
+    lecture:
+        -   topic: "nn/nn8_testing"
+            notes: ">> nur @FHB"
+    misc_lecture:
+        -   notes: ">> Alles Gute im neuen Jahr!"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
+
+-   week: "KW02 (FHB)"
+    date: "Mi, 11.01.23 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/games/intro"
+        -   topic: "/games/minimax"
+        -   topic: "/games/heuristics"
+        -   topic: "/games/alphabeta"
+    misc_lecture:
+        -   notes: ">> nur @FHB"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
+
+-   week: "KW03 (FHB)"
+    date: "Mi, 18.01.23 (Sprechstunde: Carsten)"
+    lecture:
+        -   topic: "/naivebayes/probability"
+        -   topic: "/naivebayes/nb"
+        -   topic: "/org/syllabus"
+        -   topic: "/org/exam/exam-fhb"
+    misc_lecture:
+        -   notes: ">> nur @FHB"
+    misc_assignment:
+        -   notes: ">> @FHB: Keine Übung"
+        -   notes: ">> @FHB: Assessment (Spiele): 19.01.23"

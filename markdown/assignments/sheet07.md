@@ -1,46 +1,55 @@
 ---
 archetype: assignment
-title: "Blatt 07: Logistische Regression"
+title: "Meilenstein 2.3: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: 10
-weight: 7
+weight: 8
 
 hidden: true
+
+sketch: true
 ---
 
 
-## A7.1: Logistische Regression (6P)
+## A8.1: Lineares MLP (2P)
 
-*   (1P)
-    *   Konstruieren Sie einen Datensatz $\mathcal{D}$ mit $m=100$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X} = [−1, 1] \times [−1, 1] $.
-    *   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $ [−1, 1] \times [−1, 1] $. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze ihrer Zielfunktion $f$: Punkte auf der einen Seite der Linie sollen als +1 und die anderen als −1 klassifiziert werden.
-    *   Werten Sie Ihre Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um den entsprechenden Ausgangslabel $y^{(j)}$ zu erhalten.
+Gegeben sei ein MLP mit linearen Aktivierungsfunktionen, d.h. für jedes Neuron berechnet sich der Output durch die gewichtete Summe der Inputs: $ y = g(w^T x) $, wobei $ g(z) = z $ gilt, also $ y = w^T x $.
+Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen ersetzt werden kann. Betrachten Sie dazu ein zweilagiges Netz bestehend aus einer Ausgabe- und einer versteckten Schicht.
 
-*   (3P) Trainieren Sie ein logistisches Regressionsmodell auf diesen Daten, um $h^{\*} = \sigma(w^T x)$ zu finden. Verwenden Sie dazu den Gradientenabstieg-Algorithmus. Initialisieren Sie alle Gewichtswerte mit 0 und führen Sie 2000 Iterationen durch. Speichern Sie alle 100 Schritte die berechneten Kosten. Zeichnen Sie am Ende die Kosten als Diagramm über die Anzahl der Iterationen auf.
-
-*   (2P) Experimentieren Sie mit unterschiedlichen Lernraten, z.B.   $\alpha = 0.1,   \alpha = 0.01,   \alpha = 0.001$ und vergleichen Sie die Kosten-Diagramme.
-
-Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/blob/master/markdown/assignments/files/Logistische_Regression_Starter.ipynb) als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy and Scikit-Learn) verwenden.
-
-*Thema*: Verständnis und Implementierung Logistische Regression
+*Thema*: Verständnis Bedeutung nichtlinearer Aktivierungsfunktionen
 
 
+## A8.2: Perzeptron-Netze (2P)
 
-## A7.2: Merkmal Skalierung (4P)
+Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
 
-Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
-
-`{{< img src="images/contour_plot_a.png" title="Abbildung 1" width="80%" >}}`{=markdown}
-`{{< img src="images/contour_plot_b.png" title="Abbildung 2" width="80%" >}}`{=markdown}
-
-*   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
-*   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
-Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/blob/master/markdown/assignments/files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
+`{{< img src="images/perzeptron_netz.png" title="Abbildung 1" width="80%" >}}`{=markdown}
 
 
-*Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
+## A8.3: Tensorflow Playground (4P)
+
+Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/) um folgende Experimente durchzuführen.
+
+*   (2P) Stellen Sie ein MLP mit einer versteckten Schicht mit zwei Neuronen auf. Trainieren Sie das Netzwerk auf dem kreisförmigen Datensatz (Circle) mehrmals mit jeweils den Aktivierungsfunktionen ReLU, tanh und Sigmoid. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
+
+    *   Was passiert, wenn Sie die Anzahl der Neuronen in der versteckten Schicht auf drei erhöhen? Wie schaut die Entscheidungsgrenze aus? Wie schnell wird sie berechnet? Können alle Datenpunkte jedes mal korrekt klassifiziert werden?
+    *   Erhöhen Sie die Anzahl der Schichten auf vier, mit jeweils 6 Zellen pro Schicht. Wie ändert sich dadurch die Entscheidungsgrenze? Was können Sie über Trainings- und Testkosten sagen? Entsteht eine Überanpassung?
+    *   Setzen Sie nun den Noise-Level auf 15 und wiederholen Sie das Training. Kann von einer Überanpassung gesprochen werden? Hinweis: Sie können mit Hilfe der Checkbox unter der Ausgabezelle die Testdaten ein- und ausblenden.
+
+*   (2P) Trainieren Sie ein Netzwerk mit zwei versteckten Schichten mit jeweils 6   Neuronen einige Male auf dem spiralförmigen Datensatz (rechts unten).
+
+    *   Wie viele Epochen dauert das Training? Beobachten Sie Trainings- und Testkosten: liegt eine Überanpassung vor?
+    *   Untersuchen Sie die Ausgaben der einzelnen Zellen, in dem Sie die Maus über die jeweilige Zelle bewegen. Bemerken Sie einen wesentlichen Unterschied in den Ausgaben der ersten Schicht im Vergleich zu der zweiten Schicht?
+    *   Erhöhen Sie die Schichtanzahl auf drei, mit jeweils 7 Neuronen pro Schicht. Was können Sie über die Trainingszeit und Kosten sagen? Untersuchen und vergleichen Sie wieder die Ausgaben der Zellen in den drei Schichten.
+
+*Thema*: Verständnis Auswirkung der Hyperparameter eines MLP auf das Ergebnis
 
 
+## A8.4: Forwärtslauf im MLP (2P)
 
+Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt). In allen Zellen wird die ReLU Aktivierungsfunktion verwendet.
 
+*   Was sind die Dimensionen der Gewichtsmatrizen $W^{[1]}$, $W^{[2]}$ und $W^{[3]}$ und der Bias-Vektoren $b^{[1]}$, $b^{[2]}$ und $b^{[3]}$?
+*   Wie wird die Ausgabe berechnet? Schreiben Sie den Forwärtslauf in Matrix-Notation auf. Wie könnte man die Ausgabe deuten; welches Problem könnte durch dieses Netzwerk möglicherweise gelöst werden?
 
+*Thema*: MLP Vorwärtslauf
