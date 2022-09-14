@@ -31,7 +31,7 @@ hidden: true
 
 ### Bearbeitung der Aufgaben
 
-Die Bearbeitung der Aufgaben erfolgt in internationalen Zweier-Teams oder
+Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder
 individuell.
 
 Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
@@ -50,7 +50,7 @@ Quell-Dateien im ILIAS hoch.
 Die Poster laden bitte jeweils als **PDF-Datei** im ILIAS hoch.
 
 **Wichtig**: Jede Person muss ihre Lösung eigenständig im ILIAS hochladen.
-Das gilt auch, wenn Sie in internationalen 2er Teams zusammenarbeiten.
+Das gilt auch, wenn Sie in internationalen 2er-Teams zusammenarbeiten.
 
 ### Vorstellung der Lösung im Praktikum
 
@@ -82,8 +82,7 @@ Beschäftigung mit der jeweiligen Aufgabe erkennen lassen.
 
 **Wichtig**: Beachten Sie, dass die Punkte aufeinander aufbauen: Ohne Abgabe
 der Lösung im ILIAS können Sie Ihre Lösung nicht vorstellen und auch kein
-Peer-Feedback abgeben. Ohne die Vorstellung der Lösung im Praktikum können
-Sie kein Peer-Feedback abgeben.
+Peer-Feedback abgeben.
 
 Für die Poster gibt es zusätzlich je bis zu 10P, die nach inhaltlichen und
 formalen Kriterien durch die Dozenten vergeben werden.
