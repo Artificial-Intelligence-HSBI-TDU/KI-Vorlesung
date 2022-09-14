@@ -17,28 +17,25 @@ sketch: true
 Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus vorgesehen.
 
 | Prüfung              | Gewicht |
-|----------------------|---------|
+|:---------------------|---------|
 | Zwischenprüfung (ZP) | 40 %    |
 | Endprüfung (EP)      | 60 %    |
 
-
-### Bonuspunkte für Aktive Teilnahme an der Übung
+### Bonuspunkte für aktive Teilnahme an der Übung
 
 Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für die Endprüfung,
 allerdings **nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
 
-Das heisst, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20% der Übungsnote als
+Das heißt, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20% der Übungsnote als
 Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
-
-<br>
 
 
 ## Hinweise zur Übung TDU
 
 ### Bearbeitung der Aufgaben
 
-- Die Bearbeitung der Aufgaben erfolgt individuell.
-- Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
+-   Die Bearbeitung der Aufgaben erfolgt individuell.
+-   Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
 
 ### Abgabe der Lösungen
 
@@ -48,7 +45,7 @@ Lösen Sie die Aufgaben auf Papier und laden Sie Ihre Lösungen als **eine PDF-D
 Lösen Sie Programmieraufgaben in einem Jupyter Notebook auf Google Colaboratory und laden
 Sie dieses als **eine .jpnyb Datei** hoch.  Es gibt reichlich Einführungsmaterial für Jupyter
 Notebooks in Google Colab.
-[Ein Quick Start finden Sie zum Beispiel hier](https://www.youtube.com/watch?v=yEIc9z-Ad3k).
+[Einen Quick-Start finden Sie zum Beispiel hier](https://www.youtube.com/watch?v=yEIc9z-Ad3k).
 
 Benennen Sie Ihre Dateien wie folgt, benutzen Sie dabei Ihren vollen Namen:
 
