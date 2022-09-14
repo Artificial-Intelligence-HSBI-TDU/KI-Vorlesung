@@ -17,11 +17,11 @@ online über Zoom durchgeführt.
 
 ## Flipped Classroom
 
-Wir drehen die Vorlesungen "um" - deshalb "Flipped Classroom".
+Wir drehen die Vorlesungen vom Ablauf her "um" - daher die Bezeichnung "Flipped Classroom".
 
 Beim Flipped Classroom arbeiten Sie sich **vor der jeweiligen Vorlesung** selbstständig
 durch das für die jeweilige Woche bereitgestellte Material: Skript, Videos, Quizzes,
-Literaturhinweise, ....
+Literaturhinweise, ..., gern auch bereits durch die Assessments und Übungsaufgaben.
 
 In der gemeinsamen Vorlesungssitzung präsentieren wir keinen neuen Stoff, sondern können
 gemeinsam auf Ihre Fragen zum aktuellen Thema eingehen und im Plenum oder in Kleingruppen
@@ -45,7 +45,7 @@ Die Übungsaufgaben sollen in internationalen 2er-Teams (oder anderenfalls einze
 bearbeitet und gelöst werden.
 
 Das gegenseitige Kennenlernen und die Teambildung für die Bearbeitung der Übungsaufgaben
-erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.22 (Woche 41).
+erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.2022 (Woche 41).
 
 
 ## Gruppenwahl
@@ -123,7 +123,7 @@ Für die TDU-Studierenden wird die Gruppe "G3" nur mit TDU-Studierenden besetzt 
 Die restlichen Regeln finden hier aber dennoch Anwendung.
 
 
-### Verspätete Abgaben, Krankheit
+## Verspätete Abgaben, Krankheit
 
 Es gibt keine verspäteten Abgaben. Das sind 0P.
 
@@ -140,5 +140,5 @@ Bei 2er-Teams arbeitet bitte der jeweilige Teampartner normal weiter (Abgabe der
 Vorstellung der Lösung, Feedback), um die Punkte zu erhalten.
 
 Die beiden Poster-Sessions bauen inhaltlich auf den jeweils davor liegenden Meilensteinen
-auf. Wenn Sie einmal einen Meilenstein verpasst haben, holen Sie die Aufgabe für die
-Erstellung des Posters nach.
+auf. Wenn Sie einmal einen Meilenstein verpasst haben, holen Sie die Aufgabe entsprechend
+bei der Erstellung des Posters nach.
