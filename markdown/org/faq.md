@@ -122,8 +122,9 @@ Die restlichen Regeln finden hier aber dennoch Anwendung.
 Es gibt keine verspäteten Abgaben. Das sind 0P.
 
 **Ausnahme**: Für die beiden Poster gibt es eine Nachfrist von jeweils einer Woche, d.h.
-die beiden Poster können bis eine Woche später abgegeben werden. Dabei können dann aber
-nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht werden!
+die beiden Poster können bis zu eine Woche später abgegeben werden. Dabei können dann
+aber nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht werden
+(1P für die Abgabe, bis zu 6P von den Dozenten für die inhaltliche und formale Qualität)!
 
 Bei Krankheit/familiären Notfällen: Es ist bei den Übungsaufgaben ein gewisser Puffer für
 Notfälle oder Krankheitsfälle eingeplant. Sie könnten also je nach Punktestand einmal
