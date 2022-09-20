@@ -74,7 +74,7 @@ Sie erhalten für jeden der 7 Meilensteine und jede der beiden Poster-Sessions
 bis zu 4P:
 
 -   1P für das Hochladen der Lösung im ILIAS
--   1P für das Vorstellen der Lösung im ILIAS
+-   1P für das Vorstellen der Lösung im Praktikum
 -   2P für das Erstellen des Peer-Feedbacks
 
 Ihre Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
