@@ -121,6 +121,10 @@ Die restlichen Regeln finden hier aber dennoch Anwendung.
 
 Es gibt keine verspäteten Abgaben. Das sind 0P.
 
+**Ausnahme**: Für die beiden Poster gibt es eine Nachfrist von jeweils einer Woche, d.h.
+die beiden Poster können bis eine Woche später abgegeben werden. Dabei können dann aber
+nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht werden!
+
 Bei Krankheit/familiären Notfällen: Es ist bei den Übungsaufgaben ein gewisser Puffer für
 Notfälle oder Krankheitsfälle eingeplant. Sie könnten also je nach Punktestand einmal
 eine Woche fehlen und immer noch Ihr Testat (FHB) oder eine "1.0" (TDU) erreichen.
