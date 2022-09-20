@@ -39,10 +39,8 @@ Erfolgreiche Teilnahme bedeutet:
 
 ### Bearbeitung der Aufgaben
 
-    -   Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder
-    individuell.
-    -   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
-    Lösungen ist nicht erlaubt!
+-   Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder individuell.
+-   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen ist nicht erlaubt!
 
 
 ### Abgabe der Lösungen
