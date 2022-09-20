@@ -14,12 +14,11 @@ hidden: true
 
 -   **Testat**:
     Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
-    Teilnahme am Praktikum und an den Assessments erforderlich, welche am
-    Ende des Semesters durch ein Testat bescheinigt wird.
+    Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
+    ein Testat bescheinigt wird.
 
-    Kriterien: Mindestens 5 der 9 Assessments müssen bestanden werden.
-    Zusätzlich müssen Sie durch die Bearbeitung der Übungsaufgaben im
-    Praktikum mindestens 44 von insgesamt 56 Punkten erreichen.
+    Kriterien: Sie haben durch die Bearbeitung der Übungsaufgaben im Praktikum
+    mindestens 44 von insgesamt maximal 56 erreichbaren Punkten erreicht.
 
 -   **Gesamtnote**:
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters, angeboten in
@@ -88,8 +87,3 @@ Für die Poster gibt es zusätzlich je bis zu 10P, die nach inhaltlichen und
 formalen Kriterien durch die Dozenten vergeben werden.
 
 Damit können Sie maximal (7+2)x 4 + 2x 10 = 56 Punkte im Praktikum erreichen.
-
-
-## Hinweise zum Assessment FHB
-
-Die Aufgaben sind einzeln zu bearbeiten.

@@ -13,7 +13,7 @@ title: "KI W22"
 
 ## Kursbeschreibung
 
-Ausgehend von den Fragen "Was ist _Intelligenz_?" und "Was ist _künstliche Intelligenz_?"
+Ausgehend von den Fragen "Was ist _Intelligenz_?" und "Was ist _künstliche_ Intelligenz?"
 werden wir uns in diesem Modul mit verschiedenen Teilgebieten der KI beschäftigen und
 uns anschauen, welche Methoden und Algorithmen es gibt und wie diese funktionieren. Dabei
 werden wir auch das Gebiet _Machine Learning_ berühren, aber auch andere wichtige Gebiete
@@ -97,6 +97,6 @@ Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})
 
 `{{< schedule >}}`{=markdown}
 
-**Hinweis**: Abgaben der Hausaufgaben bis jeweils 08.00 Uhr (DE), Deadlines für Feedback
-und Assessments je bis 04.00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende
-der TDU beachten bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.
+**Hinweis**: Abgabe der Hausaufgaben bis jeweils 08:00 Uhr (DE), Deadline für das Feedback
+je bis 04:00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende der TDU beachten
+bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.

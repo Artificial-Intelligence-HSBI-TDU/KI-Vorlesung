@@ -21,22 +21,13 @@ Wir drehen die Vorlesungen vom Ablauf her "um" - daher die Bezeichnung "Flipped 
 
 Beim Flipped Classroom arbeiten Sie sich **vor der jeweiligen Vorlesung** selbstständig
 durch das für die jeweilige Woche bereitgestellte Material: Skript, Videos, Quizzes,
-Literaturhinweise, ..., gern auch bereits durch die Assessments und Übungsaufgaben.
+Literaturhinweise, ..., gern auch bereits durch die Übungsaufgaben.
 
 In der gemeinsamen Vorlesungssitzung präsentieren wir keinen neuen Stoff, sondern können
 gemeinsam auf Ihre Fragen zum aktuellen Thema eingehen und im Plenum oder in Kleingruppen
 passende Fallstudien lösen.
 
 Das setzt voraus, dass Sie vorbereitet in die Stunde kommen und sich aktiv einbringen.
-
-
-## Assessments
-
-Zu vielen Themen wird es zusätzlich kurze Assessments im ILIAS geben. Diese werden
-jeweils in der Woche der Sprechstunde zum Thema freigeschaltet und können bis zur
-angegebenen Frist selbstständig bearbeitet werden.
-
-Die Bearbeitung erfolgt einzeln, eine Zusammenarbeit ist hier nicht erlaubt.
 
 
 ## Bearbeitung der Übungsaufgaben
@@ -130,10 +121,9 @@ Die restlichen Regeln finden hier aber dennoch Anwendung.
 
 Es gibt keine verspäteten Abgaben. Das sind 0P.
 
-Bei Krankheit/familiären Notfällen: Es ist sowohl bei den Übungsaufgaben als auch bei
-den Assessments ein gewisser Puffer für Notfälle oder Krankheitsfälle eingeplant. Sie
-könnten also je nach Punktestand einmal eine Woche fehlen und immer noch Ihr Testat
-(FHB) oder eine "1.0" (TDU) erreichen.
+Bei Krankheit/familiären Notfällen: Es ist bei den Übungsaufgaben ein gewisser Puffer für
+Notfälle oder Krankheitsfälle eingeplant. Sie könnten also je nach Punktestand einmal
+eine Woche fehlen und immer noch Ihr Testat (FHB) oder eine "1.0" (TDU) erreichen.
 
 Wenn die persönliche Ausnahmesituation länger vorliegen sollte, müssen ggf. andere
 Lösungen gefunden werden, um das Semester erfolgreich abschließen zu können. Nehmen
