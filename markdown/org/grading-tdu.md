@@ -11,10 +11,10 @@ hidden: true
 
 ## Notenzusammensetzung TDU
 
-| Prüfung              | Gewicht |
+<!-- | Prüfung              | Gewicht |
 |:---------------------|---------|
 | Übung (UE)           | 40 %    |
-| Endprüfung (EP)      | 60 %    |
+| Endprüfung (EP)      | 60 %    | -->
 
 ### Endprüfung 60%
 
@@ -28,9 +28,9 @@ Es wird keine Zwischenprüfung stattfinden.
 Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
 
 Erfolgreiche Teilnahme bedeutet: 
-    -   Aufgaben bearbeiten und hochladen
-    -   in Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen
-    -   Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung"
+-   Aufgaben bearbeiten und hochladen
+-   in Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen
+-   Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung"
 
 
 
@@ -39,8 +39,9 @@ Erfolgreiche Teilnahme bedeutet:
 
 ### Bearbeitung der Aufgaben
 
--   Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder individuell.
--   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen ist nicht erlaubt!
+Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder individuell.
+
+Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen ist nicht erlaubt!
 
 
 ### Abgabe der Lösungen
@@ -53,7 +54,7 @@ aufschreiben und mit einer App wie zum Beispiel CamScanner ein PDF erzeugen.
 Programmieraufgaben laden Sie bitte als **Zip-Archiv** der jeweiligen
 Quell-Dateien im ILIAS hoch.
 
-Die Poster laden bitte jeweils als **PDF-Datei** im ILIAS hoch.
+Die Poster laden Sie bitte jeweils als **PDF-Datei** im ILIAS hoch.
 
 **Wichtig**: Jede Person muss ihre Lösung eigenständig im ILIAS hochladen.
 Das gilt auch, wenn Sie in internationalen 2er-Teams zusammenarbeiten.
