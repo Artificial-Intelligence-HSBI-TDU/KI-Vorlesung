@@ -29,9 +29,9 @@ Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** er
 
 Erfolgreiche Teilnahme bedeutet:
 
--   Aufgaben bearbeiten und hochladen
--   In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen
--   Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung"
+1.  Aufgaben bearbeiten und hochladen, und
+2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
+3.  Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung".
 
 
 ## Hinweise zur Übung TDU
