@@ -8,8 +8,6 @@
     misc_lecture:
         -   notes: ">> nur @TDU"
         -   notes: ">> @TDU: Start 11:30 Uhr (TR)"
-    misc_assignment:
-        -   notes: ">> @TDU: Keine Übung"
 
 -   week: "KW39 (TDU)"
     date: "Mi, 28.09.22 (Sprechstunde: Carsten)"
@@ -21,7 +19,7 @@
     misc_lecture:
         -   notes: ">> nur @TDU"
     misc_assignment:
-        -   notes: ">> @TDU: Keine Übung"
+        -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
 
 -   week: "KW40 (TDU)"
     date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
@@ -32,7 +30,7 @@
         -   notes: ">> nur @TDU"
         -   notes: ">> @TDU: Sprechstunde 12:30 - 14:00 Uhr (TR)"
     misc_assignment:
-        -   notes: ">> @TDU: Keine Übung"
+        -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
 
 -   week: "KW40 (FHB)"
     date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
@@ -43,8 +41,6 @@
         -   topic: "/intro/problems"
     misc_lecture:
         -   notes: ">> nur @FHB"
-    misc_assignment:
-        -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW41"
     date: "Mi, 12.10.22 (Sprechstunde: Carsten)"
@@ -55,7 +51,7 @@
         -   topic: "/search/informed/bestfirst"
         -   topic: "/search/informed/astar"
     misc_assignment:
-        -   notes: ">> @TDU + @FHB: Teambuilding in Übungsstunde"
+        -   notes: ">> @TDU + @FHB: Team-Building in Übungsstunde"
 
 -   week: "KW42"
     date: "Mi, 19.10.22 (Sprechstunde: Carsten)"
@@ -166,15 +162,11 @@
             notes: ">> nur @TDU"
     misc_lecture:
         -   notes: ">> @FHB: Frohe Weihnachten!"
-    misc_assignment:
-        -   notes: ">> @TDU: Keine Übung"
 
 -   week: "KW52"
     date: "Mi, 28.12.22"
     misc_lecture:
         -   notes: ">> @FHB: Weihnachtsferien!"
-    misc_assignment:
-        -   notes: ">> @FHB: Keine Übung"
 
 -   week: "KW01 (FHB)"
     date: "Mi, 04.01.23 (Sprechstunde: Canan)"
@@ -184,7 +176,7 @@
     misc_lecture:
         -   notes: ">> Alles Gute im neuen Jahr!"
     misc_assignment:
-        -   notes: ">> @FHB: Keine Übung"
+        -   notes: ">> @FHB: Freies Arbeiten"
 
 -   week: "KW02 (FHB)"
     date: "Mi, 11.01.23 (Sprechstunde: Carsten)"
@@ -196,7 +188,7 @@
     misc_lecture:
         -   notes: ">> nur @FHB"
     misc_assignment:
-        -   notes: ">> @FHB: Keine Übung"
+        -   notes: ">> @FHB: Freies Arbeiten"
 
 -   week: "KW03 (FHB)"
     date: "Mi, 18.01.23 (Sprechstunde: Carsten)"
@@ -207,5 +199,3 @@
         -   topic: "/org/exam/exam-fhb"
     misc_lecture:
         -   notes: ">> nur @FHB"
-    misc_assignment:
-        -   notes: ">> @FHB: Keine Übung"
