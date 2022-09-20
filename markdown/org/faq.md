@@ -44,7 +44,7 @@ Die Bearbeitung erfolgt einzeln, eine Zusammenarbeit ist hier nicht erlaubt.
 Die Übungsaufgaben sollen in internationalen 2er-Teams (oder anderenfalls einzeln)
 bearbeitet und gelöst werden.
 
-Das gegenseitige Kennenlernen und die Teambildung für die Bearbeitung der Übungsaufgaben
+Das gegenseitige Kennenlernen und die Team-Bildung für die Bearbeitung der Übungsaufgaben
 erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.2022 (Woche 41).
 
 
@@ -92,16 +92,16 @@ Review anderer Abgaben/Lösungen.
 Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt.
 
 Sie können die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe finden.
-Gehen Sie nach der Deadline und vor Ihrer Übung/Ihrem Praktikum bitte ins ILIAS
-in die Aufgabe und schauen Sie nach, wem Sie ein Peer-Feedback geben sollen. Sie
-finden hier ebenfalls auch die Kriterien für die Reviews in Form von kurzen
+Gehen Sie **nach der Deadline** und **vor Ihrer Übung/Ihrem Praktikum** bitte ins
+ILIAS in die Aufgabe und schauen Sie nach, wem Sie ein Peer-Feedback geben sollen.
+Sie finden hier ebenfalls auch die Kriterien für die Reviews in Form von kurzen
 Checklisten.
 
 In der Übung/im Praktikum füllen Sie Ihre Checklisten beim Zuhören aus und übertragen
 diese bis spätestens zur angegebenen Frist ins ILIAS.
 
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
-(also konkret Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
+(konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
 vollständiges Review durch, sondern wählen Sie den entsprechenden Punkt auf der
 Checkliste aus ("eigenes Team").
 
@@ -112,13 +112,16 @@ Für die beiden Poster-Sessions führen Sie die Ergebnisse der jeweiligen Meilen
 zusammen und erstellen Sie ein Poster, welches Sie dann als Lösung abgeben, vorstellen
 und wofür Sie sich gegenseitig Feedback erteilen.
 
-Eine Vorlage finden Sie hier: TODO.
+Eine Vorlage finden Sie hier: **TODO**.
 
 
 ## TDU, G3
 
 Für die TDU-Studierenden wird die Gruppe "G3" nur mit TDU-Studierenden besetzt sein
 (es gibt nur zwei Gruppen an der FHB).
+
+Die Übungen in Gruppe 3 werden abweichend in **Google Meet** durchgeführt (nicht im
+Zoom).
 
 Die restlichen Regeln finden hier aber dennoch Anwendung.
 
