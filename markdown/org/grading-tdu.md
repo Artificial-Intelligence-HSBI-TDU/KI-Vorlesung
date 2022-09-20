@@ -5,68 +5,91 @@ author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 weight: 5
 
 hidden: true
-
-sketch: true
 ---
 
 
 ## Notenzusammensetzung TDU
 
-### Zwischen- und Endprüfung
+<!--
+| Prüfung         | Gewicht |
+|:----------------|---------|
+| Übung (UE)      | 40 %    |
+| Endprüfung (EP) | 60 %    |
+-->
 
-Zwischenprüfung und Endprüfung sind als schriftliche Prüfungen auf dem Campus vorgesehen.
+### Endprüfung 60%
 
-| Prüfung              | Gewicht |
-|:---------------------|---------|
-| Zwischenprüfung (ZP) | 40 %    |
-| Endprüfung (EP)      | 60 %    |
+Die Endprüfung ist als schriftliche Prüfung auf dem Campus vorgesehen.
 
-### Bonuspunkte für aktive Teilnahme an der Übung
+Es wird keine Zwischenprüfung stattfinden.
 
-Aktive Teilnahme an der Übung (UE) bringt bis zu **+20 Bonus-Punkte** für die Endprüfung,
-allerdings **nur wenn die 40 Punkte Mindestgrenze erreicht wird.**
+### Übung 40%
 
-Das heißt, nur wenn die Endprüfungsnote ≥40 Punkte ist, werden 20% der Übungsnote als
-Bonus-Punkte zu der Endprüfungsnote hinzugefügt.
+Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
+
+Erfolgreiche Teilnahme bedeutet:
+
+1.  Aufgaben bearbeiten und hochladen, und
+2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
+3.  Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung".
 
 
 ## Hinweise zur Übung TDU
 
 ### Bearbeitung der Aufgaben
 
--   Die Bearbeitung der Aufgaben erfolgt individuell.
--   Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
+Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder individuell.
+
+Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen ist nicht erlaubt!
 
 ### Abgabe der Lösungen
 
-Lösen Sie die Aufgaben auf Papier und laden Sie Ihre Lösungen als **eine PDF-Datei** im ILIAS
-(Zugriff via Moodle) hoch. Sie können dazu eine App wie zum Beispiel CamScanner benutzen.
+Bei Textaufgaben laden Sie Ihre Lösungen als **PDF-Datei** im ILIAS hoch. Sie
+können die Lösung in einer Textdatei (Markdown, LaTeX, Word, ...) bearbeiten
+und als PDF exportieren. Alternativ können Sie Ihre Lösung auf Papier
+aufschreiben und mit einer App wie zum Beispiel CamScanner ein PDF erzeugen.
 
-Lösen Sie Programmieraufgaben in einem Jupyter Notebook auf Google Colaboratory und laden
-Sie dieses als **eine .jpnyb Datei** hoch.  Es gibt reichlich Einführungsmaterial für Jupyter
-Notebooks in Google Colab.
-[Einen Quick-Start finden Sie zum Beispiel hier](https://www.youtube.com/watch?v=yEIc9z-Ad3k).
+Programmieraufgaben laden Sie bitte als **Zip-Archiv** der jeweiligen
+Quell-Dateien im ILIAS hoch.
 
-Benennen Sie Ihre Dateien wie folgt, benutzen Sie dabei Ihren vollen Namen:
+Die Poster laden Sie bitte jeweils als **PDF-Datei** im ILIAS hoch.
 
-    Vorname_Nachname_UE1.pdf
-    Vorname_Nachname_UE1.ipnyb
+**Wichtig**: Jede Person muss ihre Lösung eigenständig im ILIAS hochladen.
+Das gilt auch, wenn Sie in internationalen 2er-Teams zusammenarbeiten.
 
-**Wichtiger Hinweis:** Werden mehr als zwei Dateien, Dateien in anderen Formaten, oder nicht
-richtig benannte Dateien hochgeladen, werden diese ausnahmslos mit 0 bewertet und zurückgegeben.
+### Vorstellung der Lösung in der Übung
+
+Die Vorstellung Ihrer Lösung in der Übung kann mit einem Medium Ihrer Wahl
+stattfinden. Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung
+erklären. Sie brauchen nicht extra eine Präsentation anfertigen!
+
+### Peer-Feedback
+
+Nach der Ablauf der Deadline wird Ihnen durch ILIAS ein oder mehrere Reviews
+zugewiesen. Sie finden die Review-Kriterien (als Checklisten) und die
+anzufertigenden Reviews im ILIAS - gehen Sie dazu im ILIAS im Übungs- bzw.
+Praktikumsbereich auf die jeweilige Aufgabe.
+
+Während der Übung füllen Sie bitte die Review-Checklisten aus und stellen
+Sie diese im ILIAS ein.
 
 ### Punktevergabe
 
-Sie erhalten Ihre Übungsnote, indem Sie im jeweiligen ILIAS-Formular angeben, welche Aufgaben
-Sie bearbeitet/gelöst haben. Sie müssen in der Lage sein, diese Aufgaben in der Übungsstunde
-der Gruppe vorzustellen. Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine
-intensive Beschäftigung mit dem vorliegenden Problem erkennen lassen.
+Sie erhalten für jeden der 7 Meilensteine und jede der beiden Poster-Sessions
+bis zu 4P:
 
-### Vorstellung der Lösung in der Übungsstunde
+-   1P für das Hochladen der Lösung im ILIAS
+-   1P für das Vorstellen der Lösung in der Übung
+-   2P für das Erstellen des Peer-Feedbacks
 
-Die Vorstellung der Lösung in der Übungsstunde kann mit einem Medium Ihrer Wahl stattfinden.
-Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung erklären.
+Ihre Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
+Beschäftigung mit der jeweiligen Aufgabe erkennen lassen.
 
-**Achtung**: Wer angibt, eine Aufgabe gelöst zu haben, aber in der Übungsstunde nicht (oder
-zu spät) erscheint oder die Lösung nicht vorstellen kann, bekommt das gesamte Übungsblatt
-als "nicht bestanden" testiert!
+**Wichtig**: Beachten Sie, dass die Punkte aufeinander aufbauen: Ohne Abgabe
+der Lösung im ILIAS können Sie Ihre Lösung nicht vorstellen und auch kein
+Peer-Feedback abgeben.
+
+Für die Poster gibt es zusätzlich je bis zu 10P, die nach inhaltlichen und
+formalen Kriterien durch die Dozenten vergeben werden.
+
+Damit können Sie maximal (7+2)x 4 + 2x 10 = 56 Punkte in der Übung erreichen.
