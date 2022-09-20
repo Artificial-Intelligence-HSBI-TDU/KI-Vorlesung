@@ -19,7 +19,8 @@ hidden: true
 ### Endprüfung 60%
 
 Die Endprüfung ist als schriftliche Prüfung auf dem Campus vorgesehen.
-Es wird keine Zwischenprüfung geben.
+
+Es wird keine Zwischenprüfung stattfinden.
 
 
 
@@ -27,8 +28,8 @@ Es wird keine Zwischenprüfung geben.
 Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
 
 Erfolgreiche Teilnahme bedeutet: 
-    -   Aufgaben bearbeiten und hochladen,
-    -   in Übungsstunde anwesend sein, gegebenenfalls eigene Lösung präsentieren und 
+    -   Aufgaben bearbeiten und hochladen
+    -   in Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen
     -   Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung"
 
 
@@ -38,9 +39,9 @@ Erfolgreiche Teilnahme bedeutet:
 
 ### Bearbeitung der Aufgaben
 
-    - Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder
+    -   Die Bearbeitung der Aufgaben erfolgt in internationalen 2er-Teams oder
     individuell.
-    - Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
+    -   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
     Lösungen ist nicht erlaubt!
 
 
