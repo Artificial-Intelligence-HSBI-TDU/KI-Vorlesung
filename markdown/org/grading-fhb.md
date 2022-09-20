@@ -10,7 +10,7 @@ hidden: true
 
 ## Prüfungsform FHB
 
-**Testat plus Klausur, 5 ECTS**
+**Klausur plus Testat, 5 ECTS**
 
 -   **Testat**:
     Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
@@ -22,7 +22,7 @@ hidden: true
     Praktikum mindestens 44 von insgesamt 56 Punkten erreichen.
 
 -   **Gesamtnote**:
-    Schriftliche Prüfung ("Klausur") am Ende des Semesters, angeboten in
+    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters, angeboten in
     beiden Prüfungszeiträumen (Tipps zur Vorbereitung siehe
     `["Prüfungsvorbereitung (FHB)"]({{< ref "/org/exams-fhb" >}})`{=markdown})
 
