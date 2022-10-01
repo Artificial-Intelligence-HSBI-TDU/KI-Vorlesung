@@ -126,6 +126,10 @@ Für die TDU-Studierenden wird der Termin "G3" nur mit TDU-Studierenden besetzt 
 Die Übungen in Termin "G3" werden abweichend in **Google Meet** durchgeführt (nicht im
 Zoom).
 
+Für den Termin "G3" gibt es keine zusätzliche Zeitverschiebung/-änderung ab dem
+31.10.2022 durch die Umstellung auf Winterzeit, d.h. diese Gruppe bleibt das ganze
+Semester über bei Mi, 16:30 - 18:00 Uhr (TR).
+
 Die restlichen Regeln finden hier aber dennoch Anwendung.
 
 
