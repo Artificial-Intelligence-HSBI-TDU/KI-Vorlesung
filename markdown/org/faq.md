@@ -41,13 +41,25 @@ erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.2022 (Wo
 
 ## Gruppenwahl
 
-Zusätzlich werden in jedem Übungs-/Praktikumstermin (G1, G2, G3) feste Kleingruppen
-von je 5 Studierenden der TDU und 5 Studierenden der FHB gemeinsam in Breakout-Sessions
-arbeiten.
+Wir haben in diesem Semester an der FHB zwei Praktikumstermine (G1 und G2) und an der
+TDU drei Übungstermine (G1, G2, G3). Jede Person ist vom Stundenplan her einem dieser
+Termine zugeordnet.
+
+In jedem Übungs-/Praktikumstermin werden mehrere feste Kleingruppen gebildet, die dann
+gemeinsam im Semester in Breakout-Sessions arbeiten.
+
+In G1 und G2 werden je 3..4 Studierende der TDU und 4..5 Studierende der FHB gemeinsam
+in den Breakout-Sessions arbeiten. In G3 werden die Kleingruppen mit 10..11 Studierenden
+der TDU gebildet.
 
 Hierzu treten Sie bitte am Anfang des Semesters einmalig im Kursraum im ILIAS einer der
-dort angebotenen Kleingruppen bei, die zu Ihrem Stundenplan-Zeitslot passt. Es wird pro
-Termin entsprechend mehrere Kleingruppen geben.
+dort angebotenen Kleingruppen bei, die zu Ihrem Stundenplan-Zeitslot passt. Die Passwörter
+werden per Ankündigung in der Lehrveranstaltung bekannt gegeben.
+
+*   FHB: Beitritt zu den Breakout-Gruppen in G1 und G2 vom 05.10.2022 11:00 Uhr bis
+    08.10.2022 16:00 Uhr (DE)
+*   TDU: Beitritt zu den Breakout-Gruppen in G1, G2 und G3 vom 08.10.2022 19:00 Uhr
+    bis 11.10.2022 23:55 Uhr (TR)
 
 Die Kleingruppen im ILIAS haben eine Kennzeichnung, die wir auch im Zoom für die
 Breakout-Sessions nutzen. So finden Sie im Zoom zu "Ihrer" Kleingruppe und können
@@ -108,11 +120,15 @@ Eine Vorlage finden Sie hier: **TODO**.
 
 ## TDU, G3
 
-Für die TDU-Studierenden wird die Gruppe "G3" nur mit TDU-Studierenden besetzt sein
-(es gibt nur zwei Gruppen an der FHB).
+Für die TDU-Studierenden wird der Termin "G3" nur mit TDU-Studierenden besetzt sein
+(es gibt nur zwei Termine an der FHB).
 
-Die Übungen in Gruppe 3 werden abweichend in **Google Meet** durchgeführt (nicht im
+Die Übungen in Termin "G3" werden abweichend in **Google Meet** durchgeführt (nicht im
 Zoom).
+
+Für den Termin "G3" gibt es keine zusätzliche Zeitverschiebung/-änderung ab dem
+31.10.2022 durch die Umstellung auf Winterzeit, d.h. diese Gruppe bleibt das ganze
+Semester über bei Mi, 16:30 - 18:00 Uhr (TR).
 
 Die restlichen Regeln finden hier aber dennoch Anwendung.
 

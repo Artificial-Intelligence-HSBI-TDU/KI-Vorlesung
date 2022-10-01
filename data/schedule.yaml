@@ -31,6 +31,7 @@
         -   notes: ">> @TDU: Sprechstunde 12:30 - 14:00 Uhr (TR)"
     misc_assignment:
         -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
+        -   notes: ">> @TDU: Wahl der Breakout-Gruppen: 08.10.2022 19:00 - 11.10.2022 23:55 Uhr (TR)"
 
 -   week: "KW40 (FHB)"
     date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
@@ -41,6 +42,8 @@
         -   topic: "/intro/problems"
     misc_lecture:
         -   notes: ">> nur @FHB"
+    misc_assignment:
+        -   notes: ">> @FHB: Wahl der Breakout-Gruppen: 05.10.2022 11:00 - 08.10.2022 16:00 Uhr (DE)"
 
 -   week: "KW41"
     date: "Mi, 12.10.22 (Sprechstunde: Carsten)"

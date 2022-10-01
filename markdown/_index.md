@@ -61,7 +61,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 |:---|:-----------------------------|:---------------------------|:---------------------------|
 | G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) | Mi, 13:30 - 15:00 Uhr (TR) |
 | G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) | Mi, 15:00 - 16:30 Uhr (TR) |
-| G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) | Mi, 17:30 - 19:00 Uhr (TR) |
+| G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) | Mi, 16:30 - 18:00 Uhr (TR) |
 |    | online/J101                  | online                     | online                     |
 
 **Zugangsdaten siehe [ILIAS]/[Moodle]**
