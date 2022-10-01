@@ -89,7 +89,7 @@ Punkte nicht bekommen.
 ## How to Review
 
 Sobald die Abgabefrist für eine Aufgabe abgelaufen ist, verteilt ILIAS automatisch
-an alle, die selbst eine Lösung abgeben/hochgeladen haben, eine Aufforderung zum
+an alle, die selbst eine Lösung abgegeben/hochgeladen haben, eine Aufforderung zum
 Review anderer Abgaben/Lösungen.
 
 Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt.
@@ -97,6 +97,8 @@ Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt.
 Sie können die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe finden.
 Gehen Sie **nach der Deadline** und **vor Ihrer Übung/Ihrem Praktikum** bitte ins
 ILIAS in die Aufgabe und schauen Sie nach, wem Sie ein Peer-Feedback geben sollen.
+Da das Feedback anonymisiert ist, müssen sie dabei auf die Poster achten
+und diese im Praktikum wiedererkennen.
 Sie finden hier ebenfalls auch die Kriterien für die Reviews in Form von kurzen
 Checklisten.
 
@@ -106,7 +108,9 @@ diese bis spätestens zur angegebenen Frist ins ILIAS.
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
 (konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
 vollständiges Review durch, sondern wählen Sie den entsprechenden Punkt auf der
-Checkliste aus ("eigenes Team").
+Checkliste aus ("eigenes Team"). Außerdem kann es passieren, dass ILIAS Ihnen zwei
+mal die Lösung eines Teams zuweist, da jedes Mitglied einer Gruppe die Lösung einzeln
+hochladen muss. In diesem Fall vergeben Sie bitte zwei mal das gleiche Feedback.
 
 
 ## Poster
