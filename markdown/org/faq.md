@@ -120,10 +120,10 @@ Eine Vorlage finden Sie hier: **TODO**.
 
 ## TDU, G3
 
-Für die TDU-Studierenden wird die Gruppe "G3" nur mit TDU-Studierenden besetzt sein
-(es gibt nur zwei Gruppen an der FHB).
+Für die TDU-Studierenden wird der Termin "G3" nur mit TDU-Studierenden besetzt sein
+(es gibt nur zwei Termine an der FHB).
 
-Die Übungen in Gruppe 3 werden abweichend in **Google Meet** durchgeführt (nicht im
+Die Übungen in Termin "G3" werden abweichend in **Google Meet** durchgeführt (nicht im
 Zoom).
 
 Die restlichen Regeln finden hier aber dennoch Anwendung.
