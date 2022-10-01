@@ -67,7 +67,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 **Zugangsdaten siehe [ILIAS]/[Moodle]**
 
 [ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
-[Moodle]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
+[Moodle]: https://muh.moodle.tau.edu.tr/course/view.php?id=3
 
 ### Prüfungsform, Note und Credits
 
