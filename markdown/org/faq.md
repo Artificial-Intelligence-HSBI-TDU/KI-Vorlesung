@@ -48,7 +48,7 @@ Termine zugeordnet.
 In jedem Übungs-/Praktikumstermin werden mehrere feste Kleingruppen gebildet, die dann
 gemeinsam im Semester in Breakout-Sessions arbeiten.
 
-In G1 und G2 werden je 3..4 Studierenden der TDU und 4..5 Studierende der FHB gemeinsam
+In G1 und G2 werden je 3..4 Studierende der TDU und 4..5 Studierende der FHB gemeinsam
 in den Breakout-Sessions arbeiten. In G3 werden die Kleingruppen mit 10..11 Studierenden
 der TDU gebildet.
 
