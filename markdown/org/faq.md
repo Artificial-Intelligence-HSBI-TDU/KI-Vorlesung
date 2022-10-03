@@ -89,22 +89,24 @@ Punkte nicht bekommen.
 ## How to Review
 
 Sobald die Abgabefrist für eine Aufgabe abgelaufen ist, verteilt ILIAS automatisch
-an alle, die selbst eine Lösung abgegeben/hochgeladen haben, eine Aufforderung zum
-Review anderer Abgaben/Lösungen.
+an alle, die selbst eine Lösung hochgeladen haben, zufällige Aufforderungen zum
+Review anderer Abgaben.
 
-Die Reviews werden automatisch innerhalb Ihrer Kleingruppe verteilt.
-Sie können die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe finden.
+Die Reviews werden automatisch innerhalb Ihrer Kleingruppe (Breakout-Gruppe)
+verteilt. Sie finden die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe.
 
 ![](images/howtofeedback1.jpg){width="80%"}
 
 Gehen Sie **nach der Deadline** und **vor Ihrer Übung/Ihrem Praktikum** bitte ins
-ILIAS in die Aufgabe und klicken auf "Feedback geben", um nachzuschauen, wem Sie ein Peer-Feedback geben sollen. Da hier lediglich die ILIAS-Kürzel angezeigt werden, müssen
-Sie zudem zu Begin der Praktikumseinheiten innerhalb Ihrer Gruppe klarstellen, wem
-welches Kürzel zuzuordnen ist.
+ILIAS in die Aufgabe und klicken auf den Button "Feedback geben", um nachzuschauen,
+wem Sie ein Peer-Feedback geben sollen. Da hier lediglich die ILIAS-Kürzel angezeigt
+werden, müssen Sie zudem zu Begin der Übung bzw. des Praktikums innerhalb Ihrer
+Gruppe klarstellen, wem welches Kürzel zuzuordnen ist.
 
 ![](images/howtofeedback2.jpg){width="80%"}
 
-Indem Sie auf "bearbeiten" klicken, finden Sie hier ebenfalls die Kriterien für die Reviews in Form von kurzen Checklisten. Hier ist später das Feedback zu vergeben.
+Indem Sie auf "Bearbeiten" klicken, finden Sie hier die Kriterien für die Reviews
+in Form von kurzen Checklisten. Hier ist später das Feedback einzutragen.
 
 ![](images/howtofeedback3.jpg){width="80%"}
 
@@ -115,13 +117,15 @@ Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen T
 (konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
 vollständiges Review durch, sondern wählen Sie den entsprechenden Punkt auf der
 Checkliste aus ("eigenes Team"). Außerdem kann es passieren, dass ILIAS Ihnen zwei
-mal eine Lösung des gleichen Teams zuweist, da jedes Mitglied einer Gruppe die Lösung einzeln
-hochladen muss. In diesem Fall vergeben Sie bitte zwei Mal das gleiche Feedback.
+Mal eine Lösung des gleichen Teams zuweist, da jedes Mitglied einer Gruppe die Lösung
+einzeln hochladen muss. In diesem Fall vergeben Sie bitte zwei Mal das gleiche Feedback.
 
-Nachdem Sie fristgemäß die geforderte Anzahl an Feedbacks vergeben haben, wird in der Aufgabe ein
-weiterer Button "Erhaltenes Feedback zeigen" freigeschaltet, über welchen Sie das an Sie vergebene Feedback einsehen können. 
+Nachdem Sie fristgemäß die geforderte Anzahl an Feedbacks vergeben haben, wird in der
+Aufgabe ein weiterer Button "Erhaltenes Feedback zeigen" freigeschaltet, über welchen
+Sie das an Sie vergebene Feedback einsehen können.
 
 ![](images/howtofeedback4.jpg){width="80%"}
+
 
 ## Poster
 
