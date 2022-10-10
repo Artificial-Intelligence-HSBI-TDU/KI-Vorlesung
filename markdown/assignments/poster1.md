@@ -5,12 +5,13 @@ author: "Carsten Gips (FH Bielefeld)"
 weight: 5
 
 hidden: true
-
-sketch: true
 ---
 
 
 
-## TBD
+## Präsentation der Ergebnisse der Meilensteine 1.1 bis 1.4
 
-TBD
+Erstellen Sie ein Poster, auf dem Sie Ihr Vorgehen und die Ergebnisse der
+einzelnen Meilensteine übersichtlich präsentieren.
+
+Beschränken Sie sich dabei auf die wesentlichen Aussagen.
