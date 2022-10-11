@@ -23,27 +23,29 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 ![](images/MapGermanyGraph-Kosten.png){width="40%"}
 
 
-Implementieren Sie Tiefensuche und Breitensuche (jeweils in der Graph-Search-Variante)
-sowie A\* (in der Tree-Search-Variante mit der Verbesserung "keine Zyklen", siehe Vorlesung).
-Sie können gern die Java-Klassen im Paket `aima.core.search` als Ausgangspunkt nutzen.[^code]
+1.  Finden Sie nacheinander mit Tiefensuche und Breitensuche (jeweils in der Graph-Search-Variante)
+    sowie A\* (in der Tree-Search-Variante mit der Verbesserung "keine Zyklen", siehe Vorlesung)
+    jeweils einen Weg von Würzburg nach München.
 
-Wenden Sie diese drei Algorithmen auf das obige Problem an und finden Sie jeweils einen Weg
-von Würzburg nach München.
+    Vergleichen Sie die drei Algorithmen: Wie viele Einträge gibt es in der Datenstruktur maximal,
+    wie oft wird die Hauptschleife durchlaufen (also ein Element aus der Datenstruktur entnommen,
+    untersucht und weiterentwickelt)?
 
-Vergleichen Sie die drei Algorithmen: Wie viele Einträge gibt es in der Datenstruktur maximal,
-wie oft wird die Hauptschleife durchlaufen (also ein Element aus der Datenstruktur entnommen,
-untersucht und weiterentwickelt)?
+    Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren. Sie können
+    gern auch die Java-Klassen im Paket [`aima.core.search`] bzw. die Python-Klassen in [`search.py`]
+    als Ausgangspunkt nutzen.
 
-Dürfen die oben gegebenen Restkostenabschätzungen in A\* verwendet werden?
-*   Falls ja, warum?
-*   Falls nein, warum? Wie müssten die Abschätzungen ggf. korrigiert werden?
+2.  Dürfen die oben gegebenen Restkostenabschätzungen in A\* verwendet werden?
+    *   Falls ja, warum?
+    *   Falls nein, warum? Wie müssten die Abschätzungen ggf. korrigiert werden?
 
-Falls Sie der Meinung waren, die Abschätzungen sind nicht korrekt, korrigieren Sie die Abschätzungen
-nun und führen Sie erneut eine Suche mit A\* durch.
+    Falls Sie der Meinung waren, die Abschätzungen sind nicht korrekt, korrigieren Sie die Abschätzungen
+    nun und führen Sie erneut eine Suche mit A\* durch.
+
 
 _Hinweis_: Reihenfolge bei gleichen $f(n)$-Kosten: alphabetische Reihenfolge, d.h. Mannheim käme
 vor München, Karlsruhe vor Kassel etc.
 
 
-[^code]: Sie finden das Repository unter
-[github.com/aimacode/aima-java](https://github.com/aimacode/aima-java).
+[`aima.core.search`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search
+[`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
