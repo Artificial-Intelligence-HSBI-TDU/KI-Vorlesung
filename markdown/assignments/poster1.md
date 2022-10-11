@@ -13,7 +13,7 @@ hidden: true
 
 Betrachten Sie das Stundenplanproblem:
 
-![](images/screenshot_stundenplan.png){width="80%"}
+![](images/screenshot_stundenplan.png){width="60%"}
 
 Es gibt verschiedene Jahrgänge/Semester, verschiedene Vorlesungen (die von bestimmten Dozenten
 gehalten werden) und unterschiedliche Räume. Nehmen Sie den Stundenplan Ihres Studiengangs
@@ -29,15 +29,16 @@ welchem Jahrgang von welchem Dozenten angeboten, welche Räume werden dabei ber�
 Lösen Sie das Problem, indem Sie entweder
 
 1.  Gradientensuche und Simulated Annealing, oder
-2.  Genetische/Evolutionäre Algorithmen, oder
-3.  CSP mit `BT_Search` und AC-3
+2.  Genetische/Evolutionäre Algorithmen mit verschiedenen Parametereinstellungen, oder
+3.  Constraintsolving mit `BT_Search` und AC-3
 
 implementieren und anwenden. Sie können gern auch die passenden Java-Klassen in [`aimacode/aima-java`]
 bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.
 
 
-Erstellen Sie ein Poster, auf dem Sie Ihr Vorgehen und die Ergebnisse übersichtlich präsentieren.
-Beschränken Sie sich dabei auf die wesentlichen Aussagen.
+Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
+Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei auf
+die wesentlichen Aussagen.
 
 
 _Hinweis_: Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie
