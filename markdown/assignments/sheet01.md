@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.1: Problemlösen, Suche"
 author: "Carsten Gips (FH Bielefeld)"
-points: 10
 weight: 1
 
 hidden: true
