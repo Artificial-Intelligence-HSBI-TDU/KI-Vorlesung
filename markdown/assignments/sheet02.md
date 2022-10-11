@@ -10,20 +10,20 @@ hidden: true
 
 
 
-## Logikrätsel mit GA
+## Rätsel mit GA
 
-Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"](https://de.wikipedia.org/wiki/Zebrar%C3%A4tsel)
-auf Wikipedia.
+Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
+Vorlesung `["CSP: Intro"]({{< ref "/csp/intro" >}})`{=markdown}).
 
-Geben Sie für dieses Problem eine geeignete **Kodierung** der Individuen,
+Geben Sie für beide Probleme je eine geeignete **Kodierung** der Individuen,
 passende Operatoren (**Crossover**, **Mutation**) und eine geeignete
-**Fitnessfunktion** an, damit das Problem mit einem GA gelöst werden kann.
+**Fitnessfunktion** an, damit die Probleme mit einem GA gelöst werden können.
 Begründen Sie Ihre Wahl!
 
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
-Algorithmus auf das Einstein-Rätsel an. Wenn Sie den Algorithmus nicht komplett
-selbst schreiben wollen, können Sie beispielsweise die Klassen im Paket
-`aima.core.search.local` als Ausgangspunkt nutzen.[^code]
+Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
+Java-Klassen im Paket [`aima.core.search.local`] bzw. die Python-Klassen in
+[`search.py`] als Ausgangspunkt nutzen.
 
 Untersuchen Sie **systematisch** unterschiedliche Varianten/Einstellungen der
 in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
@@ -32,5 +32,5 @@ in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
 Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
 
-[^code]: Sie finden das Repository unter
-[github.com/aimacode/aima-java](https://github.com/aimacode/aima-java).
+[`aima.core.search.local`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/local
+[`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
