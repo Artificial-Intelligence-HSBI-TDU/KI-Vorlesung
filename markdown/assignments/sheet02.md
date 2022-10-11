@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.2: Lokale Suche, GA"
 author: "Carsten Gips (FH Bielefeld)"
-points: 10
 weight: 2
 
 hidden: true
