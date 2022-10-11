@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.3: Constraints"
 author: "Carsten Gips (FH Bielefeld)"
-points: 10
 weight: 3
 
 hidden: true
