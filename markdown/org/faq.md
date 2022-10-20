@@ -138,7 +138,7 @@ Die Reviews sollen Ihnen zusätzlich zur Diskussion über die Lösungen in der �
 Praktikum helfen, Ihre Lösung zu reflektieren und einzuordnen. Beim Erstellen der
 Feedbacks sehen Sie anhand der Kriterien, welche Aspekte wichtig waren und wo Sie
 vielleicht noch einmal nachschauen sollten. Das von den anderen Studierenden empfangene
-Feedback kann Sie beim Lernprozess unterstützen.
+Feedback kann Sie im Lernprozess unterstützen.
 
 
 ## Poster
