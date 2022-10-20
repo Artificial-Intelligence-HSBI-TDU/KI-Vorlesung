@@ -85,6 +85,9 @@ Für die Teilnahme und die Bereitschaft, Ihre Lösung vorzustellen, gibt es Punk
 Wer zwar anwesend ist, aber seine Lösung nicht vorstellen kann/will, kann diese
 Punkte nicht bekommen.
 
+**Bitte beachten Sie die von Ihnen gewählte bzw. die Ihnen zugewiesene Breakout-Gruppe.
+Ein Wechsel der (Breakout-) Gruppen ist nicht möglich.**
+
 
 ## How to Review
 
@@ -106,14 +109,17 @@ Gruppe klarstellen, wem welches Kürzel zuzuordnen ist.
 ![](images/howtofeedback2.png){width="80%"}
 
 Indem Sie auf "Bearbeiten" klicken, finden Sie hier die Kriterien für die Reviews
-in Form von kurzen Checklisten, sowie die Abgabe des zu bewertenden Peers, welche Sie über den Download-Button herunterladen können.
-Hier ist später das Feedback einzutragen.
+in Form von kurzen Checklisten, sowie die Abgabe des zu bewertenden Peers, welche
+Sie über den Download-Button herunterladen können. Hier ist später das Feedback
+einzutragen.
 
 ![](images/howtofeedback3.png){width="80%"}
 ![](images/howtofeedback4.png){width="80%"}
 
-In der Übung/im Praktikum füllen Sie Ihre Checklisten beim Zuhören aus und übertragen
-diese bis spätestens zur angegebenen Frist ins ILIAS.
+In der Übung/im Praktikum füllen Sie Ihre Checklisten beim Zuhören aus und
+übertragen diese bis spätestens zur angegebenen Frist ins ILIAS. Feedback-Fragen
+zu den von anderen Personen vorgestellten Aufgabenteilen beantworten Sie bitte
+anhand der Abgaben ihrer Feedback-Empfänger.
 
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
 (konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
