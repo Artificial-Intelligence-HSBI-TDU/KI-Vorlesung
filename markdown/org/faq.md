@@ -134,6 +134,12 @@ Sie das an Sie vergebene Feedback einsehen können.
 
 ![](images/howtofeedback5.png){width="80%"}
 
+Die Reviews sollen Ihnen zusätzlich zur Diskussion über die Lösungen in der Übung/im
+Praktikum helfen, Ihre Lösung zu reflektieren und einzuordnen. Beim Erstellen der
+Feedbacks sehen Sie anhand der Kriterien, welche Aspekte wichtig waren und wo Sie
+vielleicht noch einmal nachschauen sollten. Das von den anderen Studierenden empfangene
+Feedback kann Sie beim Lernprozess unterstützen.
+
 
 ## Poster
 
