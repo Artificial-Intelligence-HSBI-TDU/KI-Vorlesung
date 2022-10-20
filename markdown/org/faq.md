@@ -119,7 +119,7 @@ einzutragen.
 In der Übung/im Praktikum füllen Sie Ihre Checklisten beim Zuhören aus und
 übertragen diese bis spätestens zur angegebenen Frist ins ILIAS. Feedback-Fragen
 zu den von anderen Personen vorgestellten Aufgabenteilen beantworten Sie bitte
-anhand der Abgabe ihrer Feedback-Empfänger.
+anhand der Abgaben ihrer Feedback-Empfänger.
 
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
 (konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
