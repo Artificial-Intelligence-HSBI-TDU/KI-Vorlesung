@@ -85,6 +85,8 @@ Für die Teilnahme und die Bereitschaft, Ihre Lösung vorzustellen, gibt es Punk
 Wer zwar anwesend ist, aber seine Lösung nicht vorstellen kann/will, kann diese
 Punkte nicht bekommen.
 
+**Bitte beachten Sie die von Ihnen gewählte bzw. die Ihnen zugewiesene Breakout-Gruppe.**
+
 
 ## How to Review
 
