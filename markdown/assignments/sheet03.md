@@ -14,9 +14,11 @@ hidden: true
 Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
 
 Formulieren Sie das Problem als CSP (Variablen, Wertebereiche, Constraints)
-auf dem Papier. Machen Sie sich zunächst klar, was die Variablen und was deren
+zunächst auf dem Papier. Machen Sie sich klar, was die Variablen und was deren
 Wertebereiche sind. Schreiben Sie die Constraints als (unäre bzw. binäre)
-Relationen auf.
+Relationen zwischen den Variablen auf.
+
+Lösen Sie nun das Rätsel: 
 
 1.  Lösen Sie das Rätsel zunächst mit dem Basis-Algorithmus `BT_Search` aus
     der Vorlesung.
