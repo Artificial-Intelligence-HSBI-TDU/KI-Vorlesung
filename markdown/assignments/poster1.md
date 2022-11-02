@@ -40,7 +40,7 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     auf die wesentlichen Aussagen.
 
     Sie finden eine gute Anleitung sowie passende Vorlagen auf
-    ["How to create beautiful and effective academic posters in PowerPoint"](https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/).
+    ["How to create beautiful and effective academic posters in PowerPoint"].
 
 
 _Hinweis_: Abzugeben ist der Code sowie das Poster (als PDF).
@@ -54,3 +54,4 @@ entfernen Sie einige Kurse pro Jahrgang.
 
 [`aimacode/aima-java`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core
 [`aimacode/aima-python`]: https://github.com/aimacode/aima-python
+["How to create beautiful and effective academic posters in PowerPoint"]: https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/
