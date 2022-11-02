@@ -121,6 +121,11 @@ In der Übung/im Praktikum füllen Sie Ihre Checklisten beim Zuhören aus und
 zu den von anderen Personen vorgestellten Aufgabenteilen beantworten Sie bitte
 anhand der Abgaben ihrer Feedback-Empfänger.
 
+Wenn bei den Review-Fragen mit den "Ja/Nein"-Checkboxen alle Kriterien mit "Nein"
+beantwortet werden müssten, also keine der Checkboxen angehakt werden kann, schreiben
+Sie bitte einen entsprechenden Kommentar in das Freitextfeld. Sonst können Sie das
+Review nicht absenden.
+
 Unter Umständen kann es passieren, dass ILIAS Ihnen die Lösung Ihres eigenen Teams
 (konkret: Ihren Teampartner) zuweist. In diesem Fall führen Sie bitte kein
 vollständiges Review durch, sondern wählen Sie den entsprechenden Punkt auf der
