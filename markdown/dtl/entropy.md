@@ -290,6 +290,30 @@ $$
 $$
 
 
+::: notes
+## Ausblick: Gini Impurity
+
+Wir haben hier die [Entropie](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain)
+als Maß für den Informationsgehalt einer Trainingsmenge genutzt. $R(S,A)$ als die mittlere
+Entropie nach Betrachtung von Attribut $A$ wird von typischen Entscheidungsbaumverfahren
+wie ID3 und C4.5 genutzt, um bei einer Verzweigung das nächste möglichst aussagekräftige
+Merkmal auszuwählen.
+
+In anderen Entscheidungsbaumlernern wird stattdessen die
+[Gini Impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity)
+zur Bestimmung des Informationsgehalts eingesetzt (u.a. CART). Dieses Maß sagt aus,
+wie oft man ein zufällig gezogenes Element des Datensatzes falsch klassifizieren
+würde, wenn man es mit einer zufälligen Klasse basierend auf der Verteilung der
+Klassen im Datensatz labeln würde.
+
+Hierzu drei lesenswerte Blog-Einträge:
+
+*   [Deep dive into the basics of Gini Impurity in Decision Trees with math Intuition](https://medium.com/poli-data/deep-dive-into-the-basics-of-gini-impurity-in-decision-trees-with-math-intuition-46c721d4aaec)
+*   [Decision Trees, Explained](https://towardsdatascience.com/decision-trees-explained-d7678c43a59e)
+*   [Decision Tree Algorithm With Hands-On Example](https://medium.datadriveninvestor.com/decision-tree-algorithm-with-hands-on-example-e6c2afb40d38)
+:::
+
+
 ## Wrap-Up
 
 *   Begriff und Berechnung der Entropie: Maß für die Unsicherheit
