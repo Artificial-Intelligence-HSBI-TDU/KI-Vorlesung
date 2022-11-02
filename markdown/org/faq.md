@@ -75,6 +75,13 @@ muss bitte jeder Teampartner die Lösung selbst hochladen.
 Dies ist die Voraussetzung für die darauf folgenden Leistungen: Vorstellen der Lösung
 in der Übung/im Praktikum und das Erteilen von Peer-Feedback!
 
+_Anmerkung_: Falls Sie mehrere Dateien hochladen wollen, erzeugen Sie bitte vor
+dem Upload lokal ein Zip-Archiv, welches Sie dann per Button "Datei einreichen"
+hochladen und abgeben. Bitte _nicht_ den Button "Mehrere Dateien als Zip-Archiv
+hochladen" nutzen!
+
+![](images/ilias_upload.png){width="80%"}
+
 
 ## Vorstellung der Lösungen
 
