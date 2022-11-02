@@ -22,24 +22,28 @@ betrachten Sie zur Vereinfachung nur die Vorlesungen. Gehen Sie zur Vereinfachun
 davon aus, dass alle Räume gleich groß (und ausreichend groß) sind und dass die Vorlesungen
 immer in festen 2h-Zeitfenstern geplant werden können.
 
-Listen Sie alle Eigenschaften des Problems übersichtlich auf: Welche Vorlesungen werden in
-welchem Jahrgang von welchem Dozenten angeboten, welche Räume werden dabei berücksichtigt?
+
+1.  Listen Sie alle Eigenschaften des Problems übersichtlich auf: Welche Vorlesungen werden in
+    welchem Jahrgang von welchem Dozenten angeboten, welche Räume werden dabei berücksichtigt?
+
+2.  Lösen Sie das Problem, indem Sie entweder
+
+    *   Gradientensuche und Simulated Annealing, oder
+    *   Genetische/Evolutionäre Algorithmen mit verschiedenen Parametereinstellungen, oder
+    *   Constraintsolving mit `BT_Search` und AC-3
+
+    implementieren und anwenden. Sie können gern auch die passenden Java-Klassen in [`aimacode/aima-java`]
+    bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.
+
+3.  Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
+    Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei
+    auf die wesentlichen Aussagen.
+
+    Sie finden eine gute Anleitung sowie passende Vorlagen auf
+    ["How to create beautiful and effective academic posters in PowerPoint"](https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/).
 
 
-Lösen Sie das Problem, indem Sie entweder
-
-1.  Gradientensuche und Simulated Annealing, oder
-2.  Genetische/Evolutionäre Algorithmen mit verschiedenen Parametereinstellungen, oder
-3.  Constraintsolving mit `BT_Search` und AC-3
-
-implementieren und anwenden. Sie können gern auch die passenden Java-Klassen in [`aimacode/aima-java`]
-bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.
-
-
-Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
-Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei auf
-die wesentlichen Aussagen.
-
+_Hinweis_: Abzugeben ist der Code sowie das Poster (als PDF).
 
 _Hinweis_: Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie
 es etwas komplexer: Reduzieren Sie die Zahl der verfügbaren Räume und/oder lassen Sie einen
