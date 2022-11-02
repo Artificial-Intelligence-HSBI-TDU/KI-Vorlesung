@@ -32,7 +32,7 @@ quizzes:
   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106577&client_id=FH-Bielefeld"
     name: "Selbsttest Pruning (ILIAS)"
 assignments:
-  - topic: sheet05
+  - topic: sheet04
 youtube:
   - link: "https://youtu.be/LKt9F2kGYdk"
     name: "VL Pruning"

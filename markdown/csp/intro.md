@@ -29,7 +29,7 @@ quizzes:
   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld"
     name: "Selbsttest Intro CSP (ILIAS)"
 assignments:
-  - topic: sheet04
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/eFyo4Xh59ns"
     name: "VL Intro CSP"

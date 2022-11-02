@@ -36,7 +36,7 @@ quizzes:
   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld"
     name: "Selbsttest CSP, AC-3 (ILIAS)"
 assignments:
-  - topic: sheet04
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/TvF78iVDwKM"
     name: "VL CSP, AC-3"
