@@ -221,10 +221,19 @@ In einem [Paper](http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf)
 ([DOI 10.1007/s10115-007-0114-2](https://doi.org/10.1007/s10115-007-0114-2)) wurde
 der Algorithmus zu den "Top 10 algorithms in data mining" ausgewählt.
 
+Im Wikipedia-Artikel [Information Gain](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain)
+finden Sie weitere Informationen zum "Informationsgewinn" (_Information Gain_).
+
 Ein anderer, relativ ähnlich arbeitender Entscheidungsbaumlerner ist der
 [CART (Classification And Regression Tree)](https://en.wikipedia.org/wiki/Decision_tree_learning)-Algorithmus,
 wobei der Begriff "CART" allerdings oft auch einfach allgemein für "Entscheidungsbaumlerner"
 genutzt wird.
+
+Hierzu drei lesenswerte Blog-Einträge:
+
+*   [Deep dive into the basics of Gini Impurity in Decision Trees with math Intuition](https://medium.com/poli-data/deep-dive-into-the-basics-of-gini-impurity-in-decision-trees-with-math-intuition-46c721d4aaec)
+*   [Decision Trees, Explained](https://towardsdatascience.com/decision-trees-explained-d7678c43a59e)
+*   [Decision Tree Algorithm With Hands-On Example](https://medium.datadriveninvestor.com/decision-tree-algorithm-with-hands-on-example-e6c2afb40d38)
 :::
 
 
