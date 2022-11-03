@@ -43,13 +43,32 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     ["How to create beautiful and effective academic posters in PowerPoint"].
 
 
-_Hinweis_: Abzugeben ist der Code sowie das Poster (als PDF).
-
-_Hinweis_: Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie
+**Hinweis**: Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie
 es etwas komplexer: Reduzieren Sie die Zahl der verfügbaren Räume und/oder lassen Sie einen
 Dozenten mehrere Module machen. Wenn es zu lange braucht, vereinfachen Sie das Problem ein
 wenig: Geben Sie zusätzliche Räume hinzu, verteilen Sie die Arbeit auf mehrere Dozenten,
 entfernen Sie einige Kurse pro Jahrgang.
+
+
+Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
+bzw. im Praktikum vor und geben sich dann anschließend Feedback.
+
+**Bewertungs-/Feedback-Kriterien**:
+
+1.  Modellierung: Werden die wesentlichen Aspekte des Problems bei der Modellierung berücksichtigt?
+2.  Gestaltung:
+    -   Ist das Poster optisch ansprechend gestaltet?
+    -   Ist es überfrachtet mit Gestaltungselementen?
+3.  Lesbarkeit:
+    -   Ist das Poster gut lesbar?
+    -   Sind die wichtigsten Thesen zusammengefasst und vorgestellt?
+4.  Nachvollziehbarkeit:
+    -   Lässt sich die geleistete Arbeit nachvollziehen?
+    -   Gibt es einen (inhaltlichen) "roten Faden" vom Problem über die Modellierung
+        und die Umsetzung zu den Experimenten und den Ergebnissen sowie einem Fazit?
+5.  Persönliches Fazit:
+    -   Was hat Ihnen besonders gut an dem beurteilten Poster gefallen?
+    -   Welche Aspekte könnte der/die Autor/in verbessern (und wie)?
 
 
 [`aimacode/aima-java`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core
