@@ -35,19 +35,18 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     implementieren und anwenden. Sie können gern auch die passenden Java-Klassen in [`aimacode/aima-java`]
     bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.
 
+    Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie es etwas
+    komplexer: Reduzieren Sie die Zahl der verfügbaren Räume und/oder lassen Sie einen Dozenten
+    mehrere Module machen. Wenn es zu lange braucht, vereinfachen Sie das Problem ein wenig:
+    Geben Sie zusätzliche Räume hinzu, verteilen Sie die Arbeit auf mehrere Dozenten, entfernen
+    Sie einige Kurse pro Jahrgang.
+
 3.  Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
     Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei
     auf die wesentlichen Aussagen.
 
     Sie finden eine gute Anleitung sowie passende Vorlagen auf
     ["How to create beautiful and effective academic posters in PowerPoint"].
-
-
-**Hinweis**: Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie
-es etwas komplexer: Reduzieren Sie die Zahl der verfügbaren Räume und/oder lassen Sie einen
-Dozenten mehrere Module machen. Wenn es zu lange braucht, vereinfachen Sie das Problem ein
-wenig: Geben Sie zusätzliche Räume hinzu, verteilen Sie die Arbeit auf mehrere Dozenten,
-entfernen Sie einige Kurse pro Jahrgang.
 
 
 Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
