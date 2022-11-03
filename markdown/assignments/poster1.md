@@ -50,22 +50,24 @@ immer in festen 2h-Zeitfenstern geplant werden können.
 
 
 Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
-bzw. im Praktikum vor und geben sich dann anschließend Feedback.
+bzw. im Praktikum vor und geben sich dann anschließend Feedback. Sie haben **pro Person 8
+Minuten Zeit für die Vorstellung Ihres Posters**.
 
 **Bewertungs-/Feedback-Kriterien**:
 
 1.  Modellierung: Werden die wesentlichen Aspekte des Problems bei der Modellierung berücksichtigt?
 2.  Gestaltung:
     -   Ist das Poster optisch ansprechend gestaltet?
-    -   Ist es überfrachtet mit Gestaltungselementen?
+    -   Werden die Gestaltungselemente sinnvoll und sparsam eingesetzt?
 3.  Lesbarkeit:
     -   Ist das Poster gut lesbar?
     -   Sind die wichtigsten Thesen zusammengefasst und vorgestellt?
 4.  Nachvollziehbarkeit:
     -   Lässt sich die geleistete Arbeit nachvollziehen?
-    -   Gibt es einen (inhaltlichen) "roten Faden" vom Problem über die Modellierung
-        und die Umsetzung zu den Experimenten und den Ergebnissen sowie einem Fazit?
-5.  Persönliches Fazit:
+    -   Gibt es einen (inhaltlichen) "roten Faden" vom Problem über die Modellierung und die
+        Implementierung zu den Experimenten und den Ergebnissen sowie einem Fazit?
+5.  Zeit: Wurde die Zeitvorgabe bei der Präsentation des Posters eingehalten (8 Minuten)?
+6.  Persönliches Fazit:
     -   Was hat Ihnen besonders gut an dem beurteilten Poster gefallen?
     -   Welche Aspekte könnte der/die Autor/in verbessern (und wie)?
 
