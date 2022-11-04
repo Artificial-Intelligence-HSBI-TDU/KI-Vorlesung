@@ -51,7 +51,8 @@ immer in festen 2h-Zeitfenstern geplant werden können.
 
 Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
 bzw. im Praktikum vor und geben sich dann anschließend gegenseitig Feedback. Sie haben
-**pro Person 8 Minuten Zeit für die Vorstellung Ihres Posters**.
+**pro Person 8 Minuten Zeit für die Vorstellung Ihres Posters**. Für das abgegebene Poster (PDF)
+und die Vorstellung Ihrer Arbeit erhalten Sie zusätzlich noch bis zu 10 Punkten vom Dozenten-Team.
 
 **Bewertungs-/Feedback-Kriterien**:
 
