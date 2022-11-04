@@ -50,8 +50,8 @@ immer in festen 2h-Zeitfenstern geplant werden können.
 
 
 Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
-bzw. im Praktikum vor und geben sich dann anschließend Feedback. Sie haben **pro Person 8
-Minuten Zeit für die Vorstellung Ihres Posters**.
+bzw. im Praktikum vor und geben sich dann anschließend gegenseitig Feedback. Sie haben
+**pro Person 8 Minuten Zeit für die Vorstellung Ihres Posters**.
 
 **Bewertungs-/Feedback-Kriterien**:
 
