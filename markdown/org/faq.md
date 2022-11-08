@@ -159,7 +159,8 @@ Für die beiden Poster-Sessions führen Sie die Ergebnisse der jeweiligen Meilen
 zusammen und erstellen Sie ein Poster, welches Sie dann als Lösung abgeben, vorstellen
 und wofür Sie sich gegenseitig Feedback erteilen.
 
-Eine Vorlage finden Sie hier: **TODO**.
+Eine Anleitung sowie Vorlagen finden Sie hier:
+["How to create beautiful and effective academic posters in PowerPoint"](https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/).
 
 
 ## TDU, G3
