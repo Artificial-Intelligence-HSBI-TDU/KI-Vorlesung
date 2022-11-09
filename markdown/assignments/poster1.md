@@ -41,7 +41,7 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     Geben Sie zusätzliche Räume hinzu, verteilen Sie die Arbeit auf mehrere Dozenten, entfernen
     Sie einige Kurse pro Jahrgang.
 
-3.  Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
+3.  Erstellen Sie ein DIN-A2-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
     Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei
     auf die wesentlichen Aussagen.
 
