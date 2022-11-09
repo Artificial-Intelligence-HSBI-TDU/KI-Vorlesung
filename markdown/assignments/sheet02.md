@@ -24,7 +24,7 @@ Begründen Sie Ihre Wahl!
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
 Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
 Java-Klassen im Paket [`aima.core.search.local`] bzw. die Python-Klassen in
-[`search.py`] als Ausgangspunkt nutzen.
+[`search.py`] als Ausgangspunkt nutzen.[^aima]
 
 Untersuchen Sie **systematisch** unterschiedliche Varianten/Einstellungen der
 in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
@@ -35,3 +35,4 @@ Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
 [`aima.core.search.local`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/local
 [`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!

@@ -18,7 +18,7 @@ zunächst auf dem Papier. Machen Sie sich klar, was die Variablen und was deren
 Wertebereiche sind. Schreiben Sie die Constraints als (unäre bzw. binäre)
 Relationen zwischen den Variablen auf.
 
-Lösen Sie nun das Rätsel: 
+Lösen Sie nun das Rätsel:
 
 1.  Lösen Sie das Rätsel zunächst mit dem Basis-Algorithmus `BT_Search` aus
     der Vorlesung.
@@ -32,9 +32,10 @@ Lösen Sie nun das Rätsel:
 
 Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
 Sie können gern auch die Java-Klassen im Paket [`aima.core.search.csp`] bzw. die
-Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.
+Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.[^aima]
 
 
 ["Einstein-Rätsels"]: https://de.wikipedia.org/wiki/Zebrar%C3%A4tsel
 [`aima.core.search.csp`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/csp
 [`csp.py`]: https://github.com/aimacode/aima-python/blob/master/csp.py
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
