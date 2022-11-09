@@ -33,7 +33,7 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     *   Constraintsolving mit `BT_Search` und AC-3
 
     implementieren und anwenden. Sie können gern auch die passenden Java-Klassen in [`aimacode/aima-java`]
-    bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.
+    bzw. die passenden Python-Klassen in [`aimacode/aima-python`] als Ausgangspunkt nutzen.[^aima]
 
     Wenn das Problem sofort beim ersten oder zweiten Schritt gelöst ist, machen Sie es etwas
     komplexer: Reduzieren Sie die Zahl der verfügbaren Räume und/oder lassen Sie einen Dozenten
@@ -76,4 +76,5 @@ und die Vorstellung Ihrer Arbeit erhalten Sie zusätzlich noch bis zu 10 Punkten
 
 [`aimacode/aima-java`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core
 [`aimacode/aima-python`]: https://github.com/aimacode/aima-python
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
 ["How to create beautiful and effective academic posters in PowerPoint"]: https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/
