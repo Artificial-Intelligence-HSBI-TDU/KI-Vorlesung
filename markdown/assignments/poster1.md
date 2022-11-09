@@ -46,7 +46,8 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     auf die wesentlichen Aussagen.
 
     Sie finden eine gute Anleitung sowie passende Vorlagen auf
-    ["How to create beautiful and effective academic posters in PowerPoint"].
+    ["How to create beautiful and effective academic posters in PowerPoint"]. Sie _können_ diese
+    Vorlagen nutzen oder (müssen es aber nicht).
 
 
 Abzugeben ist der Sourcecode sowie das Poster (als **PDF**). Sie stellen das Poster in der Übung
