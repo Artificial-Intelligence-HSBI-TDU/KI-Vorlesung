@@ -41,15 +41,16 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     Geben Sie zusätzliche Räume hinzu, verteilen Sie die Arbeit auf mehrere Dozenten, entfernen
     Sie einige Kurse pro Jahrgang.
 
-3.  Erstellen Sie ein DIN-A4-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
+3.  Erstellen Sie ein DIN-A2-Poster, auf dem Sie Ihr Vorgehen, die Modellierung und wichtige
     Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei
     auf die wesentlichen Aussagen.
 
     Sie finden eine gute Anleitung sowie passende Vorlagen auf
-    ["How to create beautiful and effective academic posters in PowerPoint"].
+    ["How to create beautiful and effective academic posters in PowerPoint"]. Sie _können_ diese
+    Vorlagen nutzen (müssen es aber nicht).
 
 
-Abzugeben ist der Sourcecode sowie das Poster (als PDF). Sie stellen das Poster in der Übung
+Abzugeben ist der Sourcecode sowie das Poster (als **PDF**). Sie stellen das Poster in der Übung
 bzw. im Praktikum vor und geben sich dann anschließend gegenseitig Feedback. Sie haben
 **pro Person 8 Minuten Zeit für die Vorstellung Ihres Posters**. Für das abgegebene Poster (PDF)
 und die Vorstellung Ihrer Arbeit erhalten Sie zusätzlich noch bis zu 10 Punkten vom Dozenten-Team.
