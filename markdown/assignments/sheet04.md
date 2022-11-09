@@ -30,8 +30,9 @@ Schwellen $S_1=4$ und $S_2=0.7$.
 
 Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
 Sie können gern auch die Java-Klassen im Paket [`aima.core.learning`] bzw. die
-Python-Klassen in [`learning.py`] als Ausgangspunkt nutzen.
+Python-Klassen in [`learning.py`] als Ausgangspunkt nutzen.[^aima]
 
 
 [`aima.core.learning`]: https://github.com/aimacode/aima-java/blob/AIMA3e/aima-core/src/main/java/aima/core/learning/learners/DecisionTreeLearner.java
 [`learning.py`]: https://github.com/aimacode/aima-python/blob/master/learning.py
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!

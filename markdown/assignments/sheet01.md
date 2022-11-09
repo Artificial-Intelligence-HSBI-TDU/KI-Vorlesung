@@ -32,7 +32,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
     Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren. Sie können
     gern auch die Java-Klassen im Paket [`aima.core.search`] bzw. die Python-Klassen in [`search.py`]
-    als Ausgangspunkt nutzen.
+    als Ausgangspunkt nutzen.[^aima]
 
 2.  Dürfen die oben gegebenen Restkostenabschätzungen in A\* verwendet werden?
     *   Falls ja, warum?
@@ -48,3 +48,4 @@ vor München, Karlsruhe vor Kassel etc.
 
 [`aima.core.search`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search
 [`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
