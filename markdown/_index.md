@@ -26,13 +26,15 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 ## Kooperation zw. FHB und TDU
 
-Über das Projekt "Digital Mobil @ FH Bielefeld" der Fachhochschule Bielefeld (FHB) ist im
-Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU) im
-Modul "Künstliche Intelligenz" gestartet.
+Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (FHB) ist
+im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
+im Modul "Künstliche Intelligenz" gestartet.
 
 Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
-gemeinsam (TDU und FHB) teil.
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
+(TDU und FHB) teil.
+
+["Digital Mobil @ FH Bielefeld"]: https://www.fh-bielefeld.de/en/digitalmobil
 
 
 ## Kooperation mit dem DigikoS-Projekt
