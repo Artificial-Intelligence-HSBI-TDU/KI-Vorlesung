@@ -34,12 +34,17 @@ Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wie
 Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
 gemeinsam (TDU und FHB) teil.
 
+
 ## Kooperation mit dem DigikoS-Projekt
 
-<img src="https://www.karlsruhe.dhbw.de/fileadmin/_processed_/3/1/csm_lg_digikos_cmyk_48937bc55d.jpg" align="left" style="margin-right: 20px"  width="150" height="150"> 
+Diese Vorlesung wird zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
+(_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
+insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
+Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
+von der Stiftung Innovation in der Hochschullehre gefördert.
 
-Diese Vorlesung wird zudem vom Projekt [„Digitalbaukasten für kompetenzorientiertes Selbststudium“](https://www.digikos.de/ilias.php?baseClass=ilrepositorygui&reloadpublic=1&cmd=frameset&ref_id=1) (DigikoS) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt von der Stiftung Innovation in der Hochschullehre gefördert.
-<br clear="left"/>
+["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
+
 
 ## Team
 
