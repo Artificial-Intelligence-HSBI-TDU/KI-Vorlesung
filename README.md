@@ -18,7 +18,7 @@ opening a new issue.
 
 This course was funded by the German Academic Exchange Service (DAAD) and the
 German Federal Ministry of Education and Research (BMBF) as part of the project
-Digital Mobil @ FH Bielefeld.
+[Digital Mobil @ FH Bielefeld](https://www.fh-bielefeld.de/en/digitalmobil).
 
 <a href="https://www.karlsruhe.dhbw.de/fileadmin/_processed_/3/1/csm_lg_digikos_cmyk_48937bc55d.jpg"><img src="https://www.karlsruhe.dhbw.de/fileadmin/_processed_/3/1/csm_lg_digikos_cmyk_48937bc55d.jpg" align="left" style="margin-right: 20px" width="150"></a>
 This lecture is also supported by the project <a href="https://www.digikos.de">"Digitalbaukasten für kompetenzorientiertes Selbststudium"</a> (DigikoS). A Digital Learning Scout trained by the DigikoS project provided technical and content support in particular for the coordination of digital student group work, peer feedback and poster sessions in ILIAS. DigikoS is funded as a joint project by the Stiftung Innovation in der Hochschullehre.
