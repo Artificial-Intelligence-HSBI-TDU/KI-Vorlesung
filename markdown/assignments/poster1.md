@@ -45,7 +45,7 @@ immer in festen 2h-Zeitfenstern geplant werden können.
     Code-Fragmente und die Ergebnisse übersichtlich präsentieren. Beschränken Sie sich dabei
     auf die wesentlichen Aussagen.
 
-    Sie finden eine gute Anleitung sowie passende Vorlagen auf
+    Sie finden eine gute Anleitung sowie passende Vorlagen im Blog
     ["How to create beautiful and effective academic posters in PowerPoint"]. Sie _können_ diese
     Vorlagen nutzen (müssen es aber nicht).
 
@@ -76,5 +76,6 @@ und die Vorstellung Ihrer Arbeit erhalten Sie zusätzlich noch bis zu 10 Punkten
 
 [`aimacode/aima-java`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core
 [`aimacode/aima-python`]: https://github.com/aimacode/aima-python
-[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
 ["How to create beautiful and effective academic posters in PowerPoint"]: https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/
+
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
