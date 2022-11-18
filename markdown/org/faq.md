@@ -187,6 +187,10 @@ die beiden Poster können bis zu eine Woche später abgegeben werden. Dabei kön
 aber nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht werden
 (1P für die Abgabe, bis zu 6P von den Dozenten für die inhaltliche und formale Qualität)!
 
+**Sonderregelung/Hinweis für TDU (2022-11-18):** Auf Grund der Überschneidung mit den Zwischenprüfungen können für das in der Nachfrist eingereichte **erste Poster bis zu 11P** erreicht werden (1P für die Abgabe, bis zu 10P von den Dozenten). 
+
+Sie können in der Nachfrist einreichen, auch wenn Sie im ersten Termin fristgerecht eingereicht und ihr Poster vorgestellt haben. Beachten Sie aber, dass in dem Fall das **zuletzt eingereichte Poster bewertet** wird und Sie damit auf die insgesamt 3P für das Vorstellen und das Feedback verzichten.
+
 Bei Krankheit/familiären Notfällen: Es ist bei den Übungsaufgaben ein gewisser Puffer für
 Notfälle oder Krankheitsfälle eingeplant. Sie könnten also je nach Punktestand einmal
 eine Woche fehlen und immer noch Ihr Testat (FHB) oder eine "1.0" (TDU) erreichen.
