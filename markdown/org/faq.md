@@ -188,7 +188,7 @@ aber nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht w
 (1P für die Abgabe, bis zu 6P von den Dozenten für die inhaltliche und formale Qualität)!
 
 **Sonderregelung/Hinweis für TDU (2022-11-18):** Auf Grund der Überschneidung mit den
-Zwischenprüfungen können für das in der Nachfrist eingereichte **erste Poster bis zu 11P**
+Zwischenprüfungen können für das in der Nachfrist eingereichte **Poster #1 bis zu 11P**
 erreicht werden (1P für die Abgabe, bis zu 10P von den Dozenten).
 
 FHB/TDU: Sie können in der Nachfrist einreichen, auch wenn Sie im ersten Termin fristgerecht
