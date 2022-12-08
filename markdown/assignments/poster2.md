@@ -14,7 +14,10 @@ Implementieren Sie Forwärts- und Rückwärtslauf eines Multilayer Perzeptrons u
 *   Klassifizierung der handgeschriebenen Ziffern im [MNIST Datensatz](https://en.wikipedia.org/wiki/MNIST_database)
 *   Klassifizierung der Blumenarten im [Iris-Datensatz](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
-Sie können auch ein anderes, äquivalentes Klassifizierungsproblem Ihrer Wahl lösen.
+Beachten Sie, dass beide Datensätze mehr als zwei Klassen besitzen und die Anzahl der Neuronen in der Ausgangsschicht entsprechend eingestellt werden muss: ein Neuron pro Klasse und Sigmoid oder [Softmax](https://www.youtube.com/watch?v=AbLvJVwySEo&ab_channel=TheIndependentCode) als Aktivierungsfunktion. Die Ausgabe eines Neurons deuten Sie als die Wahrscheinlichkeit, dass die Eingabe $\mathbf{x}$ der entsprechenden Klasse angehört. Überlegen Sie, wie sie hier die Beschriftungen (Labels) $\mathbf{y]$ modellieren würden.
+
+Beachten Sie auch, dass Sie im Falle von Softmax eine leicht modifizierte Version des Cross-Entropy Verlustes verwenden müssen ($k$ ist die Anzahl der Klassen):
+$$L = \sum\limits_{i = 1}^{k} (y_{i}\log\left(\hat{y}_{i}\right)$$
 
 In Ihrer Implementierung sollten die Anzahl der Schichten, die Anzahl der Zellen pro Schicht und die Aktivierungsfunktion für jede Schicht einstellbar sein und ein Experimentieren mit unterschiedlichen Konfigurationen erlauben. 
 
@@ -29,6 +32,7 @@ Erstellen Sie ein DIN-A2-Poster, auf dem Sie **Ihren Datensatz**, **Ihre Modelle
 auf die wesentlichen Aussagen. Ihr Poster sollte folgende Punkte ansprechen:
 
 *   Was ist das Problem? Wie sieht der Datensatz genau aus? Welche Form haben Eingabe und Ausgabe? Welchen Anteil haben Sie als Testdaten zur Seite gelegt?
+*   Welche Aktivierungsfunktion haben Sie in der Ausgabeschicht verwendet? Wie haben Sie die Ausgaben gedeutet?
 *   Was sind die genauen Konfigurationen Ihrer Modelle? Warum diese Auswahl?
 *   Wie haben Sie Ihre Modelle trainiert (Anzahl Iterationen, Lernrate, ...)
 *   Wie erfolgreich sind Ihre Modelle? Wie messen Sie den Erfolg?
