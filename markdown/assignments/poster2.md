@@ -14,7 +14,7 @@ Implementieren Sie Forwärts- und Rückwärtslauf eines Multilayer Perzeptrons u
 *   Klassifizierung der handgeschriebenen Ziffern im [MNIST Datensatz](https://en.wikipedia.org/wiki/MNIST_database)
 *   Klassifizierung der Blumenarten im [Iris-Datensatz](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
-Beachten Sie, dass beide Datensätze mehr als zwei Klassen besitzen und die Anzahl der Neuronen in der Ausgangsschicht entsprechend eingestellt werden muss: ein Neuron pro Klasse und Sigmoid oder [Softmax](https://www.youtube.com/watch?v=AbLvJVwySEo&ab_channel=TheIndependentCode) als Aktivierungsfunktion. Die Ausgabe eines Neurons deuten Sie als die Wahrscheinlichkeit, dass die Eingabe $\mathbf{x}$ der entsprechenden Klasse angehört. Überlegen Sie, wie sie hier die Beschriftungen (Labels) $\mathbf{y]$ modellieren würden.
+Beachten Sie, dass beide Datensätze mehr als zwei Klassen besitzen und die Anzahl der Neuronen in der Ausgangsschicht entsprechend eingestellt werden muss: ein Neuron pro Klasse und Sigmoid oder [Softmax](https://www.youtube.com/watch?v=AbLvJVwySEo&ab_channel=TheIndependentCode) als Aktivierungsfunktion. Die Ausgabe eines Neurons deuten Sie als die Wahrscheinlichkeit, dass die Eingabe $\mathbf{x}$ der entsprechenden Klasse angehört. Überlegen Sie, wie sie hier die Beschriftungen (Labels) $\mathbf{y}$ modellieren würden.
 
 Beachten Sie auch, dass Sie im Falle von Softmax eine leicht modifizierte Version des Cross-Entropy Verlustes verwenden müssen ($k$ ist die Anzahl der Klassen):
 $$L = \sum\limits_{i = 1}^{k} (y_{i}\log\left(\hat{y}_{i}\right)$$
