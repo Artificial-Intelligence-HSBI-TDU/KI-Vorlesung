@@ -7,18 +7,19 @@ tldr: |
   ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
 
   Die Klausur wird dieses Semester elektronisch stattfinden. Dazu werden wir den Prüfungs-ILIAS der
-  FH Bielefeld nutzen.
+  HSBI nutzen.
 
-  Sofern die Situation dies zulässt, wird die Klausur in den Räumen der FH am Campus Minden unter
+  Sofern die Situation dies zulässt, wird die Klausur in den Räumen der HSBI am Campus Minden unter
   Aufsicht durchgeführt. Hier werden Ihnen Rechner für den Zugang zum Prüfungs-ILIAS zur Verfügung
-  gestellt, Sie benötigen nur Ihre FH-Zugangsdaten.
+  gestellt, Sie benötigen nur Ihre HSBI-Zugangsdaten (User, Passwort), einen Studierendenausweis und
+  Personalausweis sowie Ihren DIN-A4-Spickzettel.
 
   Wenn die Corona-Lage eine Durchführung in Präsenz nicht erlaubt, wird die Klausur stattdessen als
   _Open-Book-Ausarbeitung_ aus dem Home-Office durchgeführt. Sie benötigen dazu einen normalen Rechner
   oder Laptop mit einem Standardbrowser. Tablets und Handys können wg. der Mobil-Version der Browser
   problematisch sein. Sie müssen JavaScript aktivieren und Cookies zulassen, der Privacy-Modus ist
   bitte ebenfalls zu deaktivieren. Sie erreichen den Prüfungs-ILIAS
-  [eassessment.fh-bielefeld.de](https://eassessment.fh-bielefeld.de) nur über VPN.
+  [eassessment.hsbi.de](https://eassessment.hsbi.de) nur über VPN.
 
   Die Entscheidung über die konkrete Durchführung wird spätestens zwei Wochen vor der Prüfung getroffen
   und Ihnen per EMail über das LSF mitgeteilt.
@@ -31,9 +32,9 @@ tldr: |
 
   ### Ablauf der Klausur
 
-  Die Prüfung (das ILIAS-Objekt) selbst schalte ich dann zum Start der Prüfung online. Parallel zur
-  Prüfung wird bei der Durchführung als Open-Book-Ausarbeitung eine Zoom-Sitzung laufen, in der Sie
-  Fragen stellen können.
+  Die Prüfung (das ILIAS-Objekt) selbst schalte ich erst zum Start der Prüfung online. Bei der Durchführung
+  als Open-Book-Ausarbeitung wird parallel zur Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen stellen
+  können.
 
   Nach der Prüfung müssen Sie eine Erklärung abgeben, dass Sie die Prüfung selbstständig und ohne Hilfe
   Dritter angefertigt haben. Dazu ist im Prüfungsraum parallel zur eigentlichen Prüfung ein weiter Test
@@ -69,7 +70,6 @@ hidden: true
 
 ## Elektronische Klausur: Termin, Materialien
 
-::: notes
 ### Termin
 
 Die Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem Prüfungs-ILIAS
@@ -78,19 +78,11 @@ durchgeführt wird.
 Es wird angestrebt, die Klausur in Präsenz in den Rechnerpools am Campus Minden durchzuführen.
 Falls dies wegen der Corona-Situation oder anderer Umstände nicht möglich sein sollte, wird
 die Klausur als "Open-Book-Ausarbeitung" im Home-Office durchgeführt.
-:::
 
-::: center
-[Termin 1:]{.notes} **XX, XX.XX.XXXX, XX:XX -- XX:XX Uhr**
-:::
+Es wird in beiden Prüfungszeiträumen ein Termin angeboten. Die Termine werden vom Prüfungsamt
+bekannt gegeben.
 
-:::::: notes
-Dauer 90 Minuten. Es wird in beiden Prüfungszeiträumen ein Termin angeboten (konkreter
-Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
-::::::
-
-\bigskip
-\bigskip
+Dauer jeweils 90 Minuten.
 
 *   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im Home-Office)]{.notes}
     wird Ihnen [spätestens]{.notes} zwei Wochen vor der Prüfung über das LSF bekanntgegeben
@@ -99,115 +91,96 @@ Termin im zweiten Prüfungszeitraum wird noch vom Prüfungsamt bekannt gegeben).
 *   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungstag per "Beitritt mit Bestätigung" an
     [(wie zu einem normalen Kurs)]{.notes}
 
-\bigskip
-
-::: notes
 ### Zugelassene Hilfsmittel
-:::
 
-*   **Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
+#### Präsenz
 
-    ::: notes
-    Sie dürfen **einen** Spickzettel im **DIN-A4**-Format benutzen, der beidseitig beschrieben
-    sein kann.
+**Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
 
-    Ich möchte Sie hier noch einmal ermuntern, diesen Zettel tatsächlich manuell zu erstellen
-    (also ganz traditionell zu **schreiben**), da bereits der Schreibvorgang einen gewissen
-    Lerneffekt bewirkt!
+Sie dürfen **einen** Spickzettel im **DIN-A4**-Format benutzen, der beidseitig beschrieben
+sein kann.
 
-    Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden sollte, dürfen
-    Sie zusätzlich auch alle anderen Unterlagen benutzen.
-    :::
+Ich möchte Sie hier noch einmal ermuntern, diesen Zettel tatsächlich manuell zu erstellen
+(also ganz traditionell zu **schreiben**), da bereits der Schreibvorgang einen gewissen
+Lerneffekt bewirkt!
 
-    *   Ausnahme: **Keine Hilfe durch Dritte!** (insb. keine Zusammenarbeit, keine Kommunikation)
+#### Open-Book-Ausarbeitung
 
-        ::: notes
-        Sie sollen die Prüfung eigenständig bearbeiten. Hilfe von Dritten sowie jegliche Kommunikation
-        mit Dritten ist in keinem Fall zugelassen und wird als Täuschungsversuch gewertet.
-        :::
+Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden sollte, dürfen
+Sie alle Unterlagen benutzen.
 
-\bigskip
+*   Ausnahme: **Keine Hilfe durch Dritte!** (insbesondere keine Zusammenarbeit, keine Kommunikation)
 
-::: notes
+    Sie sollen die Prüfung eigenständig bearbeiten. Hilfe von Dritten sowie jegliche Kommunikation
+    mit Dritten ist in keinem Fall zugelassen und wird als Täuschungsversuch gewertet.
+
 ### Einsicht
-:::
 
 *   Prüfungseinsicht: Zeitnah; Bekanntgabe per Mail
 
 
-## Technische Vorbereitungen I: Präsenzprüfung am Campus Minden
+## Technische Vorbereitungen
 
-::: notes
+### Präsenzprüfung am Campus Minden
+
 Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
-:::
 
-*   **FH-Zugangsdaten**: Username, Passwort
+*   **HSBI-Zugangsdaten**: Username, Passwort
 
-    ::: notes
     Bei der Durchführung der Prüfung am Campus Minden wird Ihnen ein Rechner zur Verfügung
     gestellt. Dort läuft voraussichtlich ein Browser im Kiosk-Mode, wo Sie sich am Prüfungs-ILIAS
-    anmelden. Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen"
+    anmelden. Dazu benötigen Sie ihre HSBI-Zugangsdaten, mit denen Sie sich auch im "normalen"
     ILIAS anmelden.
-    :::
 
+*   **Studierendenausweis** und Personalausweis
 
-## Technische Vorbereitungen II: Home-Office
+    An der Prüfung dürfen nur Personen teilnehmen, die dafür im LSF angemeldet sind. Es findet
+    eine entsprechende Kontrolle statt. Halten Sie Ihren Studierendenausweis und Personalausweis
+    bereit.
 
-::: notes
+### Home-Office
+
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
 Durchführung in Präsenz in den Räumen am Campus Minden werden die technischen Details von uns
 für Sie vorbereitet sein.
-:::
 
 *   **Rechner**: Nutzen Sie für die Prüfung einen stationären Rechner oder ein Notebook.
 
-    ::: notes
     Vermeiden Sie die Verwendung von Tablets und Smartphones! Bei der Verwendung von Tablets
     kann es unter Umständen zu Darstellungsproblemen kommen. Smartphones sind aufgrund des kleinen
     Bildschirms für die Prüfungsdurchführung schlicht ungeeignet.
 
     Bei fehlendem Zugang zu einem entsprechenden Endgerät kontaktieren Sie bitte frühzeitig die
     Prüfungsverantwortlichen.
-    :::
 
 *   **Netz**: Stabil genug? Belastbar genug?
 
-    ::: notes
     Wenn Sie keinen Zugang zu einer ausreichend stabilen Internetverbindung haben, setzen Sie sich
     frühzeitig mit Ihren Prüfungsverantwortlichen in Verbindung.
-    :::
 
-*   **VPN**: Der Prüfungs-ILIAS ist nur im FH-VPN erreichbar.
+*   **VPN**: Der Prüfungs-ILIAS ist nur im HSBI-VPN erreichbar.
 
-    ::: notes
-    Installieren Sie den VPN-Client (Anleitung: [fh-bielefeld.de/dvz/faq/cat/7](https://www.fh-bielefeld.de/dvz/faq/cat/7))
+    Installieren Sie den VPN-Client (Anleitung: [hsbi.de/dvz/faq/cat/7](https://www.hsbi.de/dvz/faq/cat/7))
     und testen Sie im Vorfeld der Prüfung bei aktivierter VPN-Verbindung den Zugang zur Prüfungsplattform
-    [eassessment.fh-bielefeld.de](https://eassessment.fh-bielefeld.de). Zugangsdaten wie im normalen
+    [eassessment.hsbi.de](https://eassessment.hsbi.de). Zugangsdaten wie im normalen
     ILIAS.
 
-    Achtung: Auch wenn Sie sich in den Räumen der FH befinden, müssen Sie die VPN-Verbindung aktivieren,
+    Achtung: Auch wenn Sie sich in den Räumen der HSBI befinden, müssen Sie oft die VPN-Verbindung aktivieren,
     um Zugang zur Prüfungsplattform zu erhalten.
-    :::
 
 *   **Browser**: [Nutzen Sie einen der]{.notes} Standardbrowser (Edge, Firefox, Safari, Chrome/Chromium)
     in der Standardeinstellung: insbesondere JavaScript und Cookies müssen aktiviert/erlaubt sein.
 
-    ::: notes
     Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker (AdBlockPlus, uBlock, ...) oder
     JavaScript-Blocker (No-Script, Ghostery, ...) für den Prüfungszeitraum.
 
     **Nutzen Sie Ihren Browser nicht im Privacy-Modus!**
-    :::
 
-\bigskip
+*   **HSBI-Zugangsdaten**: Username, Passwort
 
-*   **FH-Zugangsdaten**: Username, Passwort
-
-    ::: notes
     Bei der Durchführung der Prüfung als Open-Book-Ausarbeitung führen Sie die Prüfung auf Ihrer
     eigenen Hardware im Home-Office durch. Auch hier müssen Sie sich am Prüfungs-ILIAS anmelden.
-    Dazu benötigen Sie ihre FH-Zugangsdaten, mit denen Sie sich auch im "normalen" ILIAS anmelden.
-    :::
+    Dazu benötigen Sie ihre HSBI-Zugangsdaten, mit denen Sie sich auch im "normalen" ILIAS anmelden.
 
 
 ## Bearbeitung des E-Assessment
@@ -216,18 +189,15 @@ für Sie vorbereitet sein.
 
 2.  Bearbeiten Sie die Aufgaben in **einem einzigen** Browser-Tab
 
-    ::: notes
     [**Öffnen Sie die Aufgaben _NICHT_ in parallelen Tabs!**]{.alert}
     Es kann sonst zu Fehlfunktionen von ILIAS kommen.
 
     Bewegen Sie sich nicht per Browser-Navigation ("vor", "zurück" im Browser)
     durch die Aufgaben, sondern nutzen Sie dafür die Buttons "nächste Frage",
     "Weiter" oder "Zurück" vom ILIAS!
-    :::
 
 3.  Hinweis zu Anzeige der restlichen Bearbeitungsdauer
 
-    ::: notes
     Wenn Sie den Browser bzw. das Tab mit der Prüfung im Laufe der Prüfung verlassen,
     wird Ihnen bei der Rückkehr unter Umständen eine falsche restliche Bearbeitungsdauer
     angezeigt. Sie können die Anzeige korrigieren/aktualisieren, indem Sie einfach zu einer
@@ -235,37 +205,30 @@ für Sie vorbereitet sein.
 
     Hinweis: Die restliche Bearbeitungsdauer wird im Test nur dann angezeigt, wenn diese
     Funktion von den Prüfenden aktiviert wurde.
-    :::
 
 4.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen stellen
 
-    ::: notes
-    Bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
-    :::
+    Nur bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
 
 5.  Verbindungsprobleme (Home-Office):
     -   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
     -   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
-        [(außer Sie haben die Probleme aktiv herbeigeführt, dann zählt das als
-        Täuschungsversuch, vgl. RPO §22a (5))]{.notes}
+        [(außer Sie haben die Probleme aktiv herbeigeführt, dann kann das als
+        Täuschungsversuch gewertet werden, vgl. RPO §22a (4))]{.notes}
 
 6.  Erklärung "Eigenständige Bearbeitung" (max. 24h nach Prüfungsende)
 
-    ::: notes
     Sie müssen eine Erklärung der eigenständigen Bearbeitung in der vorbereiteten Aufgabe im separaten
     "Test" im Prüfungsraum abgeben. Ohne diese Erklärung wird Ihre Prüfung nicht bearbeitet/gewertet!
 
     Dazu haben Sie maximal 24 Stunden nach Beendigung der Prüfung Zeit.
-    :::
 
 
-::: notes
 ## Fragetypen-Demo
 
 In Ihrem ILIAS-Kurs finden Sie eine Fragetypen-Demo mit den wichtigsten Fragetypen. Machen
 Sie sich mit der Mechanik der Fragetypen vertraut und schauen Sie sich die Kommentare bei
 den einzelnen Aufgaben an. Sie können die Demo bei Bedarf beliebig oft wiederholen.
-:::
 
 
 ## Hinweise zu den Inhalten
@@ -281,14 +244,14 @@ den einzelnen Aufgaben an. Sie können die Demo bei Bedarf beliebig oft wiederho
     *   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung
         möglich ist und (wie) gefragt werden könnte :)
 
-\bigskip
-
 ::: cbox
 Können vor Kennen :-)
 :::
 
 
 ## Beispiele für mögliche Fragen
+
+### Breitensuche
 
 Betrachten Sie den folgenden Graphen:
 
@@ -303,19 +266,14 @@ Führen Sie eine Handsimulation der Breitensuche durch. Start ist
 
 Geben Sie den Zustand der Queue in jedem Schritt an.
 
-
-## Beispiele für mögliche Fragen (cnt.)
+### Suche
 
 *   Worin liegt der Unterschied zwischen einem Knoten und einem Zustand?
-
 *   Was ist ein Suchbaum? Wo liegt der Unterschied zum Zustandsraum?
-
 *   Muss der Suchbaum über eine eigene Datenstruktur realisiert werden?
-
 *   Was bedeutet Kantenkonsistenz?
 
-
-## Beispiele für mögliche Fragen (cnt.)
+### Handsimulation Perzeptron
 
 Führen Sie den Perzeptron-Lernalgorithmus in Handsimulation durch.
 Lernen Sie die Boolesche Funktion OR. Die Trainingsmenge ist: ...
@@ -346,8 +304,7 @@ $$
 Zeichnen Sie eine geometrische Interpretation Ihres Perzeptrons nach dem
 Lernen (Trennebene,  Gewichtsvektor, Trainingsbeispiele).
 
-
-## Beispiele für mögliche Fragen (cnt.)
+### Entscheidungsbäume mit ID3
 
 Gegeben sei folgender Trainingsdatensatz ...
 
@@ -361,8 +318,7 @@ bestimmt sich die Reihenfolge der weiteren Attribute?
 
 Als Hilfe gegeben: Einige wichtige Logarithmen zur Basis 2
 
-
-## Beispiele für mögliche Fragen (cnt.)
+### CSP
 
 Betrachten Sie das folgende Constraintproblem:
 
@@ -383,8 +339,7 @@ Zeichnen Sie den zugehörigen Constraintgraphen.
 Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise
 Kantenkonsistenz herstellt.
 
-
-## Beispiele für mögliche Fragen (cnt.)
+### Backpropagation
 
 In der Vorlesung wurde die Delta-Regel bzw. die Gewichtsupdates bei der
 Backpropagation für die Ausgabeschicht und die davor liegende letzte

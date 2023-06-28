@@ -24,30 +24,6 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 
-## Kooperation zw. FHB und TDU
-
-Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (FHB) ist
-im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
-im Modul "Künstliche Intelligenz" gestartet.
-
-Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
-(TDU und FHB) teil.
-
-["Digital Mobil @ FH Bielefeld"]: https://www.fh-bielefeld.de/en/digitalmobil
-
-
-## Kooperation mit dem DigikoS-Projekt
-
-Diese Vorlesung wird zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
-(_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
-insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
-Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
-von der Stiftung Innovation in der Hochschullehre gefördert.
-
-["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
-
-
 ## Team
 
 -   [Carsten Gips](https://www.fh-bielefeld.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
@@ -113,3 +89,28 @@ Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})
 **Hinweis**: Abgabe der Hausaufgaben bis jeweils 08:00 Uhr (DE), Deadline für das Feedback
 je bis 04:00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende der TDU beachten
 bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.
+
+
+## Förderungen und Kooperationen
+
+### Kooperation zw. FHB und TDU
+
+Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (FHB) ist
+im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
+im Modul "Künstliche Intelligenz" gestartet.
+
+Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
+(TDU und FHB) teil.
+
+["Digital Mobil @ FH Bielefeld"]: https://www.fh-bielefeld.de/en/digitalmobil
+
+### Kooperation mit dem DigikoS-Projekt
+
+Diese Vorlesung wird zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
+(_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
+insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
+Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
+von der Stiftung Innovation in der Hochschullehre gefördert.
+
+["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
