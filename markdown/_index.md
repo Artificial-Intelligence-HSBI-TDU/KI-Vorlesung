@@ -40,18 +40,18 @@ Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 | HSBI (09.10.23 - 27.10.23) | HSBI (30.10.23 - 26.01.24) | TDU (18.09.23 - 22.12.23)  |
 |:---------------------------|:---------------------------|:---------------------------|
 | Mo, 10:00 - 11:30 Uhr (DE) | Mo, 09:00 - 10:30 Uhr (DE) | Mo, 11:00 - 12:30 Uhr (TR) |
-| online/J101                | online                     | online                     |
+| online/XXXX                | online                     | online                     |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]/[Moodle]**)
 
 ### Übung / Praktikum: 2 SWS
 
-|    | HSBI (09.10.23 - 26.01.24)   | TDU (18.09.23 - 22.12.23)  |
-|:---|:-----------------------------|:---------------------------|
-| G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) |
-| G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) |
-| G3 | -                            | Mi, 16:30 - 18:00 Uhr (TR) |
-|    | online/J101                  | online                     |
+|    | HSBI (09.10.23 - 26.01.24)   | TDU (18.09.23 - 22.12.23)    |
+|:---|:-----------------------------|:-----------------------------|
+| G1 | XX, XX:XX bis XX:XX Uhr (DE) | XX, XX:XX bis XX:XX Uhr (TR) |
+| G2 | XX, XX:XX bis XX:XX Uhr (DE) | XX, XX:XX bis XX:XX Uhr (TR) |
+| G3 | -                            | XX, XX:XX bis XX:XX Uhr (TR) |
+|    | online/XXXX                  | online                       |
 
 **Zugangsdaten siehe [ILIAS]/[Moodle]**
 
@@ -86,9 +86,8 @@ Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})
 
 `{{< schedule >}}`{=markdown}
 
-**Hinweis**: Abgabe der Hausaufgaben bis jeweils 08:00 Uhr (DE), Deadline für das Feedback
-je bis 04:00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende der TDU beachten
-bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.
+**Hinweis**: Abgabe der Hausaufgaben bis jeweils XX:XX Uhr (DE), Deadline für das Feedback
+je bis XX:XX Uhr (DE) am angegebenen Tag (jeweils im ILIAS bzw. Moodle).
 
 
 ## Förderungen und Kooperationen
