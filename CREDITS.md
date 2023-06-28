@@ -22,7 +22,7 @@ not part of the CC BY-SA 4.0 licence of this project.
 *   Compilation of the lecture websites:
     *   [Hugo](https://github.com/gohugoio/hugo)
     *   [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn)
-    *   [Hugo-Lecture](https://github.com/cagix/Hugo-Lecture)
+    *   [Pandoc-Lecture](https://github.com/cagix/pandoc-lecture/tree/master/hugo/hugo-lecture)
 *   These projects, among others, are used in the generated web pages:
     *   Icons: [Font Awesome](https://fontawesome.com)
     *   Rendering of mathematical formulas: [MathJax](https://www.mathjax.org/)
