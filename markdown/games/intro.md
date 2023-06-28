@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Einführung Optimale Spiele"
 menuTitle: "Optimale Spiele"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -23,7 +23,7 @@ youtube:
   - link: "https://youtu.be/wVYhbgtzxhs"
     name: "VL Einführung Optimale Spiele"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/6d02dc45505b838df7eaa0a5d8c4a65d608a2898f699716db3576caa9abf421debb61c3d5fc4c5effb0b5213b76c573df50d6aff203199eba8d66548c3238ba3"
+  - link: "https://www.hsbi.de/medienportal/m/6d02dc45505b838df7eaa0a5d8c4a65d608a2898f699716db3576caa9abf421debb61c3d5fc4c5effb0b5213b76c573df50d6aff203199eba8d66548c3238ba3"
     name: "VL Einführung Optimale Spiele"
 ---
 

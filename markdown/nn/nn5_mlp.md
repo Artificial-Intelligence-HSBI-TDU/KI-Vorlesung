@@ -14,7 +14,7 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106592&client_id=FH-Bielefeld"
+   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106592&client_id=FH-Bielefeld"
      name: "Selbsttest Multilayer Perzeptron (ILIAS)"
 assignments:
     - topic: sheet08

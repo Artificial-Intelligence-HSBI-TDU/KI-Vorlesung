@@ -1,14 +1,14 @@
 ---
 archetype: lecture-cg
-title: "Note und Credits (FHB)"
-author: "Carsten Gips (FH Bielefeld)"
+title: "Note und Credits (HSBI)"
+author: "Carsten Gips (HSBI)"
 weight: 4
 
 hidden: true
 ---
 
 
-## Prüfungsform FHB
+## Prüfungsform HSBI
 
 **Klausur plus Testat, 5 ECTS**
 
@@ -23,10 +23,10 @@ hidden: true
 -   **Gesamtnote**:
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters, angeboten in
     beiden Prüfungszeiträumen (Tipps zur Vorbereitung siehe
-    `["Prüfungsvorbereitung (FHB)"]({{< ref "/org/exams-fhb" >}})`{=markdown})
+    `["Prüfungsvorbereitung (HSBI)"]({{< ref "/org/exams-hsbi" >}})`{=markdown})
 
 
-## Hinweise zum Praktikum FHB
+## Hinweise zum Praktikum HSBI
 
 ### Bearbeitung der Aufgaben
 

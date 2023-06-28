@@ -13,7 +13,7 @@ readings:
     - key: "AbuMostafa2012"
       comment: "Kapitel 4"
 quizzes:
-   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
+   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
      name: "Selbsttest Overfitting (ILIAS)"
 assignments:
     - topic: sheet08

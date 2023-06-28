@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "CAL2"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Unger1981"
@@ -27,7 +27,7 @@ tldr: |
 outcomes:
   - k3: "Entscheidungsbaumlerner CAL2"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106575&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106575&client_id=FH-Bielefeld"
     name: "Selbsttest CAL2 (ILIAS)"
 assignments:
   - topic: sheet04
@@ -35,7 +35,7 @@ youtube:
   - link: "https://youtu.be/bR_QVYtPRx8"
     name: "VL CAL2"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/66bfcc3ba546355d5a4d41394912380e4641fc8498e8f257a98c602c11dd6ff33eb7f2ddb4fdebd433be30e9fcf91f99aaf1a484b46d2f34feac63a6e777a177"
+  - link: "https://www.hsbi.de/medienportal/m/66bfcc3ba546355d5a4d41394912380e4641fc8498e8f257a98c602c11dd6ff33eb7f2ddb4fdebd433be30e9fcf91f99aaf1a484b46d2f34feac63a6e777a177"
     name: "VL CAL2"
 ---
 

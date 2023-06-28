@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Machine Learning 101"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -33,7 +33,7 @@ outcomes:
   - k2: "Überwachtes Lernen: Lernen durch Beobachten (mit Lehrer)"
   - k2: "Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge"
 quizzes:
-   - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
+   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
      name: "Selbsttest Intro ML (ILIAS)"
 assignments:
   - topic: sheet04
@@ -41,7 +41,7 @@ youtube:
   - link: "https://youtu.be/FliWEXQZhsw"
     name: "VL Machine Learning 101"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/c871a589c1e95782173b9a3c1efbb79ac38dfb4d871df8b39fd5851562036619df4d6b31cec0b630c1c88ff928bbcb2429ea194e2cc795720fce214367009242"
+  - link: "https://www.hsbi.de/medienportal/m/c871a589c1e95782173b9a3c1efbb79ac38dfb4d871df8b39fd5851562036619df4d6b31cec0b630c1c88ff928bbcb2429ea194e2cc795720fce214367009242"
     name: "VL Machine Learning 101"
 ---
 

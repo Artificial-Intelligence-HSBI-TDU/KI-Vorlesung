@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Suche mit Breitensuche"
 menuTitle: "Breitensuche"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -21,7 +21,7 @@ outcomes:
   - k2: "Optimalität, Vollständigkeit und Komplexität"
   - k3: "Uninformierte Suchverfahren: Breitensuche"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld"
     name: "Selbsttest Breitensuche (ILIAS)"
 assignments:
   - topic: sheet01
@@ -29,7 +29,7 @@ youtube:
   - link: "https://youtu.be/WLhXt6ZpyD8"
     name: "VL Breitensuche"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/2b90123c48bc56189a083a0c9131281307f860481a17fe3dadd3bd4891d01ef157d6c12a39b5255dd39ab36fe8fd36c714ca6873277ce98667094a3f91359a2e"
+  - link: "https://www.hsbi.de/medienportal/m/2b90123c48bc56189a083a0c9131281307f860481a17fe3dadd3bd4891d01ef157d6c12a39b5255dd39ab36fe8fd36c714ca6873277ce98667094a3f91359a2e"
     name: "VL Breitensuche"
 ---
 

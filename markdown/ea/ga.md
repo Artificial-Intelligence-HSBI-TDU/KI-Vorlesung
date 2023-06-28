@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Modellierung mit Genetischen Algorithmen"
 menuTitle: "Genetische Algorithmen"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -32,7 +32,7 @@ tldr: |
 outcomes:
   - k3: "GA: Kodierung, Fitnessfunktion, Ablauf, Operatoren, Auswertung"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106580&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106580&client_id=FH-Bielefeld"
     name: "Selbsttest EA/GA (ILIAS)"
 assignments:
   - topic: sheet02
@@ -40,7 +40,7 @@ youtube:
   - link: "https://youtu.be/Sd5AA6LIEOc"
     name: "VL Modellierung mit EA/GA"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/ccdf3f05e3eb4e19644f8505b53eeeb0219cddca7902d5840fae19a0816feebfc2c3800b54f3e95bd2a8f26405ea7c40385303a98f6d7d3c94c34c10f4be43d0"
+  - link: "https://www.hsbi.de/medienportal/m/ccdf3f05e3eb4e19644f8505b53eeeb0219cddca7902d5840fae19a0816feebfc2c3800b54f3e95bd2a8f26405ea7c40385303a98f6d7d3c94c34c10f4be43d0"
     name: "VL Modellierung mit EA/GA"
 ---
 

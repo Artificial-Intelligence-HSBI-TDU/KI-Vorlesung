@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "FAQ"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 8
 
 hidden: true
@@ -10,7 +10,7 @@ hidden: true
 
 ## Co-Teaching und Online-Unterricht
 
-Wir werden die Vorlesungen an beiden Hochschulen (TDU, FHB) im Co-Teaching gemeinsam
+Wir werden die Vorlesungen an beiden Hochschulen (TDU, HSBI) im Co-Teaching gemeinsam
 durchführen. Deshalb werden alle Sitzungen (Vorlesung/Sprechstunde und Übung/Praktikum)
 online über Zoom durchgeführt.
 
@@ -41,14 +41,14 @@ erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.2022 (Wo
 
 ## Gruppenwahl
 
-Wir haben in diesem Semester an der FHB zwei Praktikumstermine (G1 und G2) und an der
+Wir haben in diesem Semester an der HSBI zwei Praktikumstermine (G1 und G2) und an der
 TDU drei Übungstermine (G1, G2, G3). Jede Person ist vom Stundenplan her einem dieser
 Termine zugeordnet.
 
 In jedem Übungs-/Praktikumstermin werden mehrere feste Kleingruppen gebildet, die dann
 gemeinsam im Semester in Breakout-Sessions arbeiten.
 
-In G1 und G2 werden je 3..4 Studierende der TDU und 4..5 Studierende der FHB gemeinsam
+In G1 und G2 werden je 3..4 Studierende der TDU und 4..5 Studierende der HSBI gemeinsam
 in den Breakout-Sessions arbeiten. In G3 werden die Kleingruppen mit 10..11 Studierenden
 der TDU gebildet.
 
@@ -56,7 +56,7 @@ Hierzu treten Sie bitte am Anfang des Semesters einmalig im Kursraum im ILIAS ei
 dort angebotenen Kleingruppen bei, die zu Ihrem Stundenplan-Zeitslot passt. Die Passwörter
 werden per Ankündigung in der Lehrveranstaltung bekannt gegeben.
 
-*   FHB: Beitritt zu den Breakout-Gruppen in G1 und G2 vom 05.10.2022 11:00 Uhr bis
+*   HSBI: Beitritt zu den Breakout-Gruppen in G1 und G2 vom 05.10.2022 11:00 Uhr bis
     08.10.2022 16:00 Uhr (DE)
 *   TDU: Beitritt zu den Breakout-Gruppen in G1, G2 und G3 vom 08.10.2022 19:00 Uhr
     bis 11.10.2022 23:55 Uhr (TR)
@@ -166,7 +166,7 @@ Eine Anleitung sowie Vorlagen finden Sie hier:
 ## TDU, G3
 
 Für die TDU-Studierenden wird der Termin "G3" nur mit TDU-Studierenden besetzt sein
-(es gibt nur zwei Termine an der FHB).
+(es gibt nur zwei Termine an der HSBI).
 
 Die Übungen in Termin "G3" werden abweichend in **Google Meet** durchgeführt (nicht im
 Zoom).
@@ -191,14 +191,14 @@ aber nur noch **maximal 7P je in der Nachfrist eingereichtes Poster** erreicht w
 Zwischenprüfungen können für das in der Nachfrist eingereichte **Poster #1 bis zu 11P**
 erreicht werden (1P für die Abgabe, bis zu 10P von den Dozenten).
 
-FHB/TDU: Sie können in der Nachfrist einreichen, auch wenn Sie im ersten Termin fristgerecht
+HSBI/TDU: Sie können in der Nachfrist einreichen, auch wenn Sie im ersten Termin fristgerecht
 eingereicht und ihr Poster vorgestellt haben. Beachten Sie aber, dass in dem Fall das
 **zuletzt eingereichte Poster bewertet** wird und Sie damit auf die insgesamt 3P für das
 Vorstellen und das Feedback verzichten.
 
 Bei Krankheit/familiären Notfällen: Es ist bei den Übungsaufgaben ein gewisser Puffer für
 Notfälle oder Krankheitsfälle eingeplant. Sie könnten also je nach Punktestand einmal
-eine Woche fehlen und immer noch Ihr Testat (FHB) oder eine "1.0" (TDU) erreichen.
+eine Woche fehlen und immer noch Ihr Testat (HSBI) oder eine "1.0" (TDU) erreichen.
 
 Wenn die persönliche Ausnahmesituation länger vorliegen sollte, müssen ggf. andere
 Lösungen gefunden werden, um das Semester erfolgreich abschließen zu können. Nehmen

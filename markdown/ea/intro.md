@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Einführung Evolutionäre Algorithmen"
 menuTitle: "Intro EA/GA"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -29,7 +29,7 @@ youtube:
   - link: "https://youtu.be/pKdKcPLI7V4"
     name: "VL Einführung Evolutionäre Algorithmen"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/7804b1839761e3ca43478cbd5eea342fc6f61539fe481d34efe0d3d64747ef4fe2a6de4c9f079ce806f6ac7194b48b0c4324bd17c3483dd318d027d94242d8f9"
+  - link: "https://www.hsbi.de/medienportal/m/7804b1839761e3ca43478cbd5eea342fc6f61539fe481d34efe0d3d64747ef4fe2a6de4c9f079ce806f6ac7194b48b0c4324bd17c3483dd318d027d94242d8f9"
     name: "VL Einführung Evolutionäre Algorithmen"
 ---
 

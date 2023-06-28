@@ -33,7 +33,7 @@
         -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
         -   notes: ">> @TDU: Wahl der Breakout-Gruppen: 08.10.2022 19:00 - 11.10.2022 23:55 Uhr (TR)"
 
--   week: "KW40 (FHB)"
+-   week: "KW40 (HSBI)"
     date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/org/syllabus"
@@ -41,9 +41,9 @@
         -   topic: "/intro/intro-ai"
         -   topic: "/intro/problems"
     misc_lecture:
-        -   notes: ">> nur @FHB"
+        -   notes: ">> nur @HSBI"
     misc_assignment:
-        -   notes: ">> @FHB: Wahl der Breakout-Gruppen: 05.10.2022 11:00 - 08.10.2022 16:00 Uhr (DE)"
+        -   notes: ">> @HSBI: Wahl der Breakout-Gruppen: 05.10.2022 11:00 - 08.10.2022 16:00 Uhr (DE)"
 
 -   week: "KW41"
     date: "Mi, 12.10.22 (Sprechstunde: Carsten)"
@@ -54,7 +54,7 @@
         -   topic: "/search/informed/bestfirst"
         -   topic: "/search/informed/astar"
     misc_assignment:
-        -   notes: ">> @TDU + @FHB: Team-Building in Übungsstunde"
+        -   notes: ">> @TDU + @HSBI: Team-Building in Übungsstunde"
 
 -   week: "KW42"
     date: "Mi, 19.10.22 (Sprechstunde: Carsten)"
@@ -164,24 +164,24 @@
         -   topic: "nn/nn8_testing"
             notes: ">> nur @TDU"
     misc_lecture:
-        -   notes: ">> @FHB: Frohe Weihnachten!"
+        -   notes: ">> @HSBI: Frohe Weihnachten!"
 
 -   week: "KW52"
     date: "Mi, 28.12.22"
     misc_lecture:
-        -   notes: ">> @FHB: Weihnachtsferien!"
+        -   notes: ">> @HSBI: Weihnachtsferien!"
 
--   week: "KW01 (FHB)"
+-   week: "KW01 (HSBI)"
     date: "Mi, 04.01.23 (Sprechstunde: Canan)"
     lecture:
         -   topic: "nn/nn8_testing"
-            notes: ">> nur @FHB"
+            notes: ">> nur @HSBI"
     misc_lecture:
         -   notes: ">> Alles Gute im neuen Jahr!"
     misc_assignment:
-        -   notes: ">> @FHB: Freies Arbeiten"
+        -   notes: ">> @HSBI: Freies Arbeiten"
 
--   week: "KW02 (FHB)"
+-   week: "KW02 (HSBI)"
     date: "Mi, 11.01.23 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/games/intro"
@@ -189,16 +189,16 @@
         -   topic: "/games/heuristics"
         -   topic: "/games/alphabeta"
     misc_lecture:
-        -   notes: ">> nur @FHB"
+        -   notes: ">> nur @HSBI"
     misc_assignment:
-        -   notes: ">> @FHB: Freies Arbeiten"
+        -   notes: ">> @HSBI: Freies Arbeiten"
 
--   week: "KW03 (FHB)"
+-   week: "KW03 (HSBI)"
     date: "Mi, 18.01.23 (Sprechstunde: Carsten)"
     lecture:
         -   topic: "/naivebayes/probability"
         -   topic: "/naivebayes/nb"
         -   topic: "/org/syllabus"
-        -   topic: "/org/exam/exam-fhb"
+        -   topic: "/org/exam/exam-hsbi"
     misc_lecture:
-        -   notes: ">> nur @FHB"
+        -   notes: ">> nur @HSBI"

@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Pruning"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 3
 readings:
   - key: "Ertel2017"
@@ -29,7 +29,7 @@ outcomes:
   - k3: "Pruning: Entfernen bedingt redundanter Tests"
   - k3: "Umformen von Entscheidungsbäumen mit Transformationsregel"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106577&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106577&client_id=FH-Bielefeld"
     name: "Selbsttest Pruning (ILIAS)"
 assignments:
   - topic: sheet04
@@ -37,7 +37,7 @@ youtube:
   - link: "https://youtu.be/LKt9F2kGYdk"
     name: "VL Pruning"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/badf517191aa92377bf6ca9e63f90e8083d64de43f85b230b336cbf2b56e805d45063cf0974a6292ee39cf010aef11e87d3cf7ff9c9bd7e7c0a64f61128504e2"
+  - link: "https://www.hsbi.de/medienportal/m/badf517191aa92377bf6ca9e63f90e8083d64de43f85b230b336cbf2b56e805d45063cf0974a6292ee39cf010aef11e87d3cf7ff9c9bd7e7c0a64f61128504e2"
     name: "VL Pruning"
 ---
 

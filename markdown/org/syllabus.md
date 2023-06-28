@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Syllabus"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 
 hidden: true
@@ -77,7 +77,7 @@ Weitere relevante KI-/ML-Themen werden in weiteren Modulen behandelt:
 
 ![](images/modulbeschreibung.png)
 
-*   FHB: 90h Selbststudium => ca. 6h Arbeitszeit pro Woche!
+*   HSBI: 90h Selbststudium => ca. 6h Arbeitszeit pro Woche!
 *   TDU: 106h Selbststudium => ca. 7h Arbeitszeit pro Woche!
 
 Zeiten sind Richtwerte! -- Manche brauchen länger, manche sind schneller ...

@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Lokale Suche: Simulated Annealing"
 menuTitle: "Simulated Annealing"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -25,7 +25,7 @@ tldr: |
 outcomes:
   - k2: "Funktionsweise Simulated Annealing"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld"
     name: "Selbsttest Simulated Annealing (ILIAS)"
 assignments:
   - topic: sheet02
@@ -33,7 +33,7 @@ youtube:
   - link: "https://youtu.be/vPg7PWuY2bM"
     name: "VL Simulated Annealing"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/5abd7e34f28bedb07ac3c4d9665a493bbf5b5cedfb97e91f9f2d8be0a3bace4e628a0b0ac2530e146ccbb0fd2de2fc99b48604d15c8b864b3f58825e8ca99260"
+  - link: "https://www.hsbi.de/medienportal/m/5abd7e34f28bedb07ac3c4d9665a493bbf5b5cedfb97e91f9f2d8be0a3bace4e628a0b0ac2530e146ccbb0fd2de2fc99b48604d15c8b864b3f58825e8ca99260"
     name: "VL Simulated Annealing"
 ---
 

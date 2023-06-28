@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Suche mit Best First"
 menuTitle: "Best First"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -19,7 +19,7 @@ outcomes:
   - k2: "Optimalität, Vollständigkeit und Komplexität"
   - k3: "Informierte Suchverfahren Best-First"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106599&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106599&client_id=FH-Bielefeld"
     name: "Selbsttest Best First (ILIAS)"
 assignments:
   - topic: sheet01
@@ -27,7 +27,7 @@ youtube:
   - link: "https://youtu.be/`dNyLOQuD_aI`{=markdown}"
     name: "VL Best First"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/4c065b44bafcd006400d7ae3ccdc25e04577d164e1aa0e118e29fa643b53bfbcaaa14dd12b93fa89105abc6f782947f7c04c849fb673a92c710da5c6b8c99083"
+  - link: "https://www.hsbi.de/medienportal/m/4c065b44bafcd006400d7ae3ccdc25e04577d164e1aa0e118e29fa643b53bfbcaaa14dd12b93fa89105abc6f782947f7c04c849fb673a92c710da5c6b8c99083"
     name: "VL Best First"
 ---
 

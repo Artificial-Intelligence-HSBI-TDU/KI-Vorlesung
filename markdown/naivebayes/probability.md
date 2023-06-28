@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Wiederholung Wahrscheinlichkeitstheorie"
 menuTitle: "Wahrscheinlichkeiten"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -46,13 +46,13 @@ outcomes:
   - k3: "Marginalisierung"
   - k3: "Bayes'sche Regel"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106587&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106587&client_id=FH-Bielefeld"
     name: "Selbsttest Wahrscheinlichkeiten (ILIAS)"
 youtube:
   - link: "https://youtu.be/p_Yy5rkl4CA"
     name: "VL Wahrscheinlichkeiten"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/91611d22ad88ef1adf04c3956746256d14c609274091660652ff567645a537a8983f61cf6c3406110e27dc6cb56b65b599d72d60ab37f45977b6732f6610830d"
+  - link: "https://www.hsbi.de/medienportal/m/91611d22ad88ef1adf04c3956746256d14c609274091660652ff567645a537a8983f61cf6c3406110e27dc6cb56b65b599d72d60ab37f45977b6732f6610830d"
     name: "VL Wahrscheinlichkeiten"
 ---
 

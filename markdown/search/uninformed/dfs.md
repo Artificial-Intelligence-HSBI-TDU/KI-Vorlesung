@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Suche mit Tiefensuche"
 menuTitle: "Tiefensuche"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -25,7 +25,7 @@ outcomes:
   - k2: "Optimalität, Vollständigkeit und Komplexität"
   - k3: "Uninformierte Suchverfahren: Tiefensuche"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld"
     name: "Selbsttest Tiefensuche (ILIAS)"
 assignments:
   - topic: sheet01
@@ -33,7 +33,7 @@ youtube:
   - link: "https://youtu.be/NzTugnuHSZ8"
     name: "VL Tiefensuche"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/01a264be691d64ecb2ca389006177bec25cc3d31a750c648e0d7450d07cbf907dd98e0248ef97d40999f7fb06355f5235827bf05f3a087b8e2511bbd68d2d5da"
+  - link: "https://www.hsbi.de/medienportal/m/01a264be691d64ecb2ca389006177bec25cc3d31a750c648e0d7450d07cbf907dd98e0248ef97d40999f7fb06355f5235827bf05f3a087b8e2511bbd68d2d5da"
     name: "VL Tiefensuche"
 ---
 

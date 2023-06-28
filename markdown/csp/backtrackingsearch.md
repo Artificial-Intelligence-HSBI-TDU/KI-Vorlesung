@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Lösen von diskreten CSP"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -22,7 +22,7 @@ youtube:
   - link: "https://youtu.be/DIY7F2ycyqA"
     name: "VL BT-Suche für CSP"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/34f066985dfe7258c153bce523c3f876b94959c8a31bbf316d7c57d4253d45f9fbde7045b99b1ec25d9e459eae84124405d76cc5cd3a32bd6f7c14206651816e"
+  - link: "https://www.hsbi.de/medienportal/m/34f066985dfe7258c153bce523c3f876b94959c8a31bbf316d7c57d4253d45f9fbde7045b99b1ec25d9e459eae84124405d76cc5cd3a32bd6f7c14206651816e"
     name: "VL BT-Suche für CSP"
 ---
 
