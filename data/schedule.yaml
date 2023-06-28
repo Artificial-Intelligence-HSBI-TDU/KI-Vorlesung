@@ -1,204 +1,205 @@
--   week: "KW38 (TDU)"
-    date: "Mi, 21.09.22 (Sprechstunde: Canan und Carsten)"
-    lecture:
-        -   topic: "/org/syllabus"
-            notes: "Kick-Off (Zoom)"
-        -   topic: "/intro/intro-ai"
-        -   topic: "/intro/problems"
-    misc_lecture:
-        -   notes: ">> nur @TDU"
-        -   notes: ">> @TDU: Start 11:30 Uhr (TR)"
+- week: "KW38 (TDU)"
+  date: "Mo, 18.09.23 (Sprechstunde: Canan und Carsten)"
+  lecture:
+    - topic: /org/syllabus
+      notes: "Kick-Off (Zoom)"
+    - topic: /intro/intro-ai
+    - topic: /intro/problems
+  misc_lecture:
+    - notes: ">> nur @TDU"
+    - notes: ">> @TDU: Start 11:00 Uhr (TR)"
 
--   week: "KW39 (TDU)"
-    date: "Mi, 28.09.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/games/intro"
-        -   topic: "/games/minimax"
-        -   topic: "/games/heuristics"
-        -   topic: "/games/alphabeta"
-    misc_lecture:
-        -   notes: ">> nur @TDU"
-    misc_assignment:
-        -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
+- week: "KW39 (TDU)"
+  date: "Mo, 25.09.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /games/intro
+    - topic: /games/minimax
+    - topic: /games/heuristics
+    - topic: /games/alphabeta
+  misc_lecture:
+    - notes: ">> nur @TDU"
+  misc_assignment:
+    - notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
 
--   week: "KW40 (TDU)"
-    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/naivebayes/probability"
-        -   topic: "/naivebayes/nb"
-    misc_lecture:
-        -   notes: ">> nur @TDU"
-        -   notes: ">> @TDU: Sprechstunde 12:30 - 14:00 Uhr (TR)"
-    misc_assignment:
-        -   notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
-        -   notes: ">> @TDU: Wahl der Breakout-Gruppen: 08.10.2022 19:00 - 11.10.2022 23:55 Uhr (TR)"
+- week: "KW40 (TDU)"
+  date: "Mo, 02.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /naivebayes/probability
+    - topic: /naivebayes/nb
+  misc_lecture:
+    - notes: ">> nur @TDU"
+  misc_assignment:
+    - notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
 
--   week: "KW40 (HSBI)"
-    date: "Mi, 05.10.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/org/syllabus"
-            notes: "Kick-Off (Zoom)"
-        -   topic: "/intro/intro-ai"
-        -   topic: "/intro/problems"
-    misc_lecture:
-        -   notes: ">> nur @HSBI"
-    misc_assignment:
-        -   notes: ">> @HSBI: Wahl der Breakout-Gruppen: 05.10.2022 11:00 - 08.10.2022 16:00 Uhr (DE)"
+- week: "KW41 (TDU)"
+  date: "Mo, 09.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /dtl/mlbasics
+    - topic: /dtl/cal2
+    - topic: /dtl/pruning
+    - topic: /dtl/cal3
+    - topic: /dtl/entropy
+    - topic: /dtl/id3
+  misc_lecture:
+    - notes: ">> nur @TDU"
+    - notes: ">> @TDU: Sprechstunde 11:00 - 12:30 Uhr (TR)"
+  misc_assignment:
+    - notes: ">> @TDU: Freies Arbeiten bzw. Tutorium"
 
--   week: "KW41"
-    date: "Mi, 12.10.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/search/uninformed/dfs"
-        -   topic: "/search/uninformed/bfs"
-        -   topic: "/search/informed/branchandbound"
-        -   topic: "/search/informed/bestfirst"
-        -   topic: "/search/informed/astar"
-    misc_assignment:
-        -   notes: ">> @TDU + @HSBI: Team-Building in Übungsstunde"
+- week: "KW41 (HSBI)"
+  date: "Mo, 09.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /org/syllabus
+      notes: "Kick-Off (Zoom)"
+    - topic: /intro/intro-ai
+    - topic: /intro/problems
+  misc_lecture:
+    - notes: ">> nur @HSBI"
+    - notes: ">> @TDU: Sprechstunde 09:00 - 10:00 Uhr (DE)"
+  misc_assignment:
+    - notes: ">> @HSBI: Kein Praktikum in der ersten Woche"
 
--   week: "KW42"
-    date: "Mi, 19.10.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/search/local/gradient"
-        -   topic: "/search/local/annealing"
-        -   topic: "/ea/intro"
-        -   topic: "/ea/ga"
-    assignment:
-        -   topic: "sheet01"
-            due: "19.10.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 20.10.22"
+- week: "KW42"
+  date: "Mo, 16.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /search/uninformed/dfs
+    - topic: /search/uninformed/bfs
+    - topic: /search/informed/branchandbound
+    - topic: /search/informed/bestfirst
+    - topic: /search/informed/astar
+  misc_assignment:
+    - notes: ">> @TDU + @HSBI: Team-Building in Übungsstunde"
 
--   week: "KW43"
-    date: "Mi, 26.10.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/csp/intro"
-        -   topic: "/csp/backtrackingsearch"
-        -   topic: "/csp/heuristics"
-        -   topic: "/csp/ac3"
-    assignment:
-        -   topic: "sheet02"
-            due: "26.10.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 27.10.22"
+- week: "KW43"
+  date: "Mo, 23.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /search/local/gradient
+    - topic: /search/local/annealing
+    - topic: /ea/intro
+    - topic: /ea/ga
+  assignment:
+    - topic: sheet01
+      due: "23.10.23"
 
--   week: "KW44"
-    date: "Mi, 02.11.22 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/dtl/mlbasics"
-        -   topic: "/dtl/cal2"
-        -   topic: "/dtl/pruning"
-        -   topic: "/dtl/cal3"
-        -   topic: "/dtl/entropy"
-        -   topic: "/dtl/id3"
-    assignment:
-        -   topic: "sheet03"
-            due: "02.11.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 03.11.22"
+- week: "KW44"
+  date: "Mo, 30.10.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /csp/intro
+    - topic: /csp/backtrackingsearch
+    - topic: /csp/heuristics
+    - topic: /csp/ac3
+  assignment:
+    - topic: sheet02
+      due: "30.10.23"
 
--   week: "KW45"
-    date: "Mi, 09.11.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn1_perceptron"
-    assignment:
-        -   topic: "sheet04"
-            due: "09.11.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 10.11.22"
+- week: "KW45 (TDU)"
+  misc_lecture:
+    - notes: ">> nur @TDU: Zwischenprüfung"
 
--   week: "KW46"
-    date: "Mi, 16.11.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn2_linear_regression"
-    assignment:
-        -   topic: "poster1"
-            due: "16.11.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 17.11.22"
+- week: "KW45 (HSBI)"
+  date: "Mo, 06.11.23 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /dtl/mlbasics
+    - topic: /dtl/cal2
+    - topic: /dtl/pruning
+    - topic: /dtl/cal3
+    - topic: /dtl/entropy
+    - topic: /dtl/id3
+  misc_lecture:
+    - notes: ">> nur @HSBI"
+  assignment:
+    - topic: sheet03
+      due: "06.11.23"
 
--   week: "KW47"
-    date: "Mi, 23.11.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn3_logistic_regression"
-    assignment:
-        -   topic: "sheet05"
-            due: "23.11.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 24.11.22"
+- week: "KW46"
+  date: "Mo, 13.11.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn1_perceptron
+  assignment:
+    - topic: sheet04
+      due: "13.11.23"
 
--   week: "KW48"
-    date: "Mi, 30.11.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn4_overfitting"
-        -   topic: "nn/nn5_mlp"
-    assignment:
-        -   topic: "sheet06"
-            due: "30.11.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 01.12.22"
+- week: "KW47"
+  date: "Mo, 20.11.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn2_linear_regression
+    - topic: nn/nn3_logistic_regression
+  assignment:
+    - topic: poster1
+      due: "20.11.23"
 
--   week: "KW49"
-    date: "Mi, 07.12.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn6_backprop"
-    assignment:
-        -   topic: "sheet07"
-            due: "07.12.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 08.12.22"
+- week: "KW48"
+  date: "Mo, 27.11.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn5_mlp
+  assignment:
+    - topic: sheet05
+      due: "27.11.23"
 
--   week: "KW50"
-    date: "Mi, 14.12.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn7_training_testing"
-    assignment:
-        -   topic: "poster2"
-            due: "14.12.22"
-    misc_assignment:
-        -   notes: ">> Feedback: 15.12.22"
+- week: "KW49"
+  date: "Mo, 04.12.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn6_backprop
+  assignment:
+    - topic: sheet06
+      due: "04.12.23"
 
--   week: "KW51 (TDU)"
-    date: "Mi, 21.12.22 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn8_testing"
-            notes: ">> nur @TDU"
-    misc_lecture:
-        -   notes: ">> @HSBI: Frohe Weihnachten!"
+- week: "KW50"
+  date: "Mo, 11.12.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn4_overfitting
+    - topic: nn/nn7_training_testing
+    - topic: nn/nn8_testing
+  assignment:
+    - topic: poster2
+      due: "11.12.23"
 
--   week: "KW52"
-    date: "Mi, 28.12.22"
-    misc_lecture:
-        -   notes: ">> @HSBI: Weihnachtsferien!"
+- week: "KW51"
+  date: "Mo, 18.12.23 (Sprechstunde: Canan)"
+  lecture:
+    - topic: nn/nn9_llm
+  misc_assignment:
+    - notes: ">> kein Praktikum/Übung"
+    - notes: ">> @HSBI: Frohe Weihnachten!"
 
--   week: "KW01 (HSBI)"
-    date: "Mi, 04.01.23 (Sprechstunde: Canan)"
-    lecture:
-        -   topic: "nn/nn8_testing"
-            notes: ">> nur @HSBI"
-    misc_lecture:
-        -   notes: ">> Alles Gute im neuen Jahr!"
-    misc_assignment:
-        -   notes: ">> @HSBI: Freies Arbeiten"
+- week: "KW52 (HSBI)"
+  date: "Mo, 25.12.23"
+  misc_lecture:
+    - notes: ">> @HSBI: Weihnachtsferien!"
 
--   week: "KW02 (HSBI)"
-    date: "Mi, 11.01.23 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/games/intro"
-        -   topic: "/games/minimax"
-        -   topic: "/games/heuristics"
-        -   topic: "/games/alphabeta"
-    misc_lecture:
-        -   notes: ">> nur @HSBI"
-    misc_assignment:
-        -   notes: ">> @HSBI: Freies Arbeiten"
+- week: "KW01 (HSBI)"
+  date: "Mo, 01.01.24"
+  misc_lecture:
+    - notes: ">> Alles Gute im neuen Jahr!"
 
--   week: "KW03 (HSBI)"
-    date: "Mi, 18.01.23 (Sprechstunde: Carsten)"
-    lecture:
-        -   topic: "/naivebayes/probability"
-        -   topic: "/naivebayes/nb"
-        -   topic: "/org/syllabus"
-        -   topic: "/org/exam/exam-hsbi"
-    misc_lecture:
-        -   notes: ">> nur @HSBI"
+- week: "KW02 (HSBI)"
+  date: "Mo, 08.01.24 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /games/intro
+    - topic: /games/minimax
+    - topic: /games/heuristics
+    - topic: /games/alphabeta
+  misc_lecture:
+    - notes: ">> nur @HSBI"
+  misc_assignment:
+    - notes: ">> @HSBI: Freies Arbeiten"
+
+- week: "KW03 (HSBI)"
+  date: "Mo, 15.01.24 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /naivebayes/probability
+    - topic: /naivebayes/nb
+  misc_lecture:
+    - notes: ">> nur @HSBI"
+
+- week: "KW04 (HSBI)"
+  date: "Mo, 22.01.24 (Sprechstunde: Carsten)"
+  lecture:
+    - topic: /logic/intro
+    - topic: /logic/syntax
+    - topic: /logic/modelle
+    - topic: /logic/resolution
+    - topic: /org/syllabus
+    - topic: /org/exam/exam-hsbi
+  misc_lecture:
+    - notes: ">> nur @HSBI"
