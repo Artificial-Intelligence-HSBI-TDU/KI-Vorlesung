@@ -30,28 +30,39 @@ params:
   disableMathJax: false
   disableMermaid: true
   themeVariant:
-  - "auto"
-  - "relearn-light"
-  - "relearn-dark"
-  - "green"
+    - "auto"
+    - "relearn-light"
+    - "relearn-dark"
+    - "green"
 
 menu:
   shortcuts:
-  - name: "<i class='fas fa-bookmark'></i> Zeiten"
-    url: "/index.html#vorlesung-2-sws"
-    weight: 10
-  - name: "<i class='fas fa-bookmark'></i> Fahrplan"
-    url: "/index.html#fahrplan"
-    weight: 20
-  - name: "<i class='fas fa-bookmark'></i> Praktikum/Übung"
-    url: "/assignments.html"
-    weight: 30
-  - name: "<i class='fas fa-bookmark'></i> Note/Credits"
-    url: "/index.html#prüfungsform-note-und-credits"
-    weight: 40
-  - name: "<i class='fas fa-bookmark'></i> FAQ"
-    url: "/org/faq.html"
-    weight: 50
+    - name: "<i class='fas fa-bookmark'></i> Zeiten"
+      url: "/index.html#vorlesung-2-sws"
+      weight: 10
+    - name: "<i class='fas fa-bookmark'></i> Fahrplan"
+      url: "/index.html#fahrplan"
+      weight: 20
+    - name: "<i class='fas fa-bookmark'></i> Praktikum/Übung"
+      url: "/assignments.html"
+      weight: 30
+    - name: "<i class='fas fa-bookmark'></i> Note/Credits"
+      url: "/index.html#prüfungsform-note-und-credits"
+      weight: 40
+    - name: "<i class='fas fa-bookmark'></i> FAQ"
+      url: "/org/faq.html"
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - PRINT
+  section:
+    - HTML
+    - PRINT
+  page:
+    - HTML
+    - PRINT
 
 markup:
   goldmark:
