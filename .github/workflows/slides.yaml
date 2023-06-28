@@ -13,11 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: cagix/pandoc-lecture@master
         with:
-          submodules: true
-      - uses: ./.github/actions/alpine-pandoc-hugo
-        with:
-          make-target: 'make slides'
+          texlive: 'true'
+      - run: make slides
+
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
