@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Minimax"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -22,13 +22,13 @@ tldr: |
 outcomes:
   - k3: "Minimax-Algorithmus"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld"
     name: "Selbsttest Minimax (ILIAS)"
 youtube:
   - link: "https://youtu.be/`aKtF__lMMsw`{=markdown}"
     name: "VL Minimax"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/1d5286179490be0627b5a19793b423753cba79388b4966b654bde224a31af81c9481e85a30057276826b3d8f7836a042d0f9e15c2cb82613a4374050b62ca6d2"
+  - link: "https://www.hsbi.de/medienportal/m/1d5286179490be0627b5a19793b423753cba79388b4966b654bde224a31af81c9481e85a30057276826b3d8f7836a042d0f9e15c2cb82613a4374050b62ca6d2"
     name: "VL Minimax"
 ---
 

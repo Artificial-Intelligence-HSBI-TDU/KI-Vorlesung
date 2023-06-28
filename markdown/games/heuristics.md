@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Heuristiken"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 3
 readings:
   - key: "Russell2020"
@@ -34,7 +34,7 @@ youtube:
   - link: "https://youtu.be/rKqNqYBXuK8"
     name: "VL Heuristiken"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/e5d279fef94d9a37e3b5d15fe9f807e024152e4c65a5a1110bab7871aff45828dba25d086e6a24f6a3a14111304b15f31c9844ff04473788595054d406790a59"
+  - link: "https://www.hsbi.de/medienportal/m/e5d279fef94d9a37e3b5d15fe9f807e024152e4c65a5a1110bab7871aff45828dba25d086e6a24f6a3a14111304b15f31c9844ff04473788595054d406790a59"
     name: "VL Heuristiken"
 ---
 

@@ -1,9 +1,0 @@
-[submodule "pandoc"]
-	path = .pandoc
-	url = https://github.com/cagix/pandoc-lecture
-[submodule "hugo-lecture"]
-	path = .hugo/hugo-lecture
-	url = https://github.com/cagix/Hugo-Lecture
-[submodule "hugo-relearn-theme"]
-	path = .hugo/hugo-theme-relearn
-	url = https://github.com/McShelby/hugo-theme-relearn

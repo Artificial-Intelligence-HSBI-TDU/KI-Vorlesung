@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Klassifikation mit Naive Bayes"
 menuTitle: "Naive Bayes"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -64,13 +64,13 @@ outcomes:
   - k3: "Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten"
   - k3: "Klassifikation mit Naive Bayes durch Nutzung der geschätzten Wahrscheinlichkeiten"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106588&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106588&client_id=FH-Bielefeld"
     name: "Selbsttest Naive Bayes Klassifikation (ILIAS)"
 youtube:
   - link: "https://youtu.be/qfX4zp1i-Co"
     name: "VL Naive Bayes Klassifikation"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/d84605cc9bccc5d1d8d589c2968726d32539aa629bff06e28096a834730bfd8c1bef1604fd09ee1aab906d30272c5fd1f31b11418fa2bdb2e2710a23dd382d1c"
+  - link: "https://www.hsbi.de/medienportal/m/d84605cc9bccc5d1d8d589c2968726d32539aa629bff06e28096a834730bfd8c1bef1604fd09ee1aab906d30272c5fd1f31b11418fa2bdb2e2710a23dd382d1c"
     name: "VL Naive Bayes Klassifikation"
 ---
 

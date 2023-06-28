@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Intro: Was ist Künstliche Intelligenz?"
 menuTitle: "Einführung KI"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -34,7 +34,7 @@ outcomes:
   - k1: "Starke vs. schwache KI"
   - k1: "Wichtige Strömungen in der KI und ihre zeitliche Einordnung"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106585&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106585&client_id=FH-Bielefeld"
     name: "Selbsttest KI Einführung (ILIAS)"
 assignments:
   - topic: sheet01
@@ -42,7 +42,7 @@ youtube:
   - link: "https://youtu.be/oETxokgYdDk"
     name: "VL Einführung"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/80e8eaac54e2b4bb11488efc73672cccbec3bb9660187613385cf34e0428a82048d6371cebec02a2bb678882fb53fab49d9bab56ed6fcfe8ac6ddbad6a740bfc"
+  - link: "https://www.hsbi.de/medienportal/m/80e8eaac54e2b4bb11488efc73672cccbec3bb9660187613385cf34e0428a82048d6371cebec02a2bb678882fb53fab49d9bab56ed6fcfe8ac6ddbad6a740bfc"
     name: "VL Einführung"
 ---
 

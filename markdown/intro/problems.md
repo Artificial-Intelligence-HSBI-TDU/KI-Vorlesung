@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Problemlösen"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 2
 readings:
   - key: "Russell2020"
@@ -54,7 +54,7 @@ outcomes:
   - k2: "Problemlösen als Suche nach Wegen im Problemgraph => Suchbaum"
   - k2: "Unterschied zw. Tree-Search und Graph-Search"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106586&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106586&client_id=FH-Bielefeld"
     name: "Selbsttest Problemlösen (ILIAS)"
 assignments:
   - topic: sheet01
@@ -62,7 +62,7 @@ youtube:
   - link: "https://youtu.be/IhUmUUzR9lQ"
     name: "VL Problemlösen"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/6754160d1977fb73c1d7f2052a1153fd073dc151853d4143c6f84622ffdb785baa6205e877ad448e1ba00fddd1c6528615c9dcb83528d32015e30a04201028f9"
+  - link: "https://www.hsbi.de/medienportal/m/6754160d1977fb73c1d7f2052a1153fd073dc151853d4143c6f84622ffdb785baa6205e877ad448e1ba00fddd1c6528615c9dcb83528d32015e30a04201028f9"
     name: "VL Problemlösen"
 ---
 

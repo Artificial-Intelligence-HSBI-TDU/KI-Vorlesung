@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Entropie"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 5
 readings:
   - key: "Ertel2017"
@@ -22,7 +22,7 @@ tldr: |
 outcomes:
   - k3: "Berechnung der Entropie und des Information Gain"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106578&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106578&client_id=FH-Bielefeld"
     name: "Selbsttest Entropie (ILIAS)"
 assignments:
   - topic: sheet04
@@ -30,7 +30,7 @@ youtube:
   - link: "https://youtu.be/4IZYA5EWO1k"
     name: "VL Entropie"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/6c84f8e181911aa89818cac70de40087fcab1209f4e0264f77da811289a5420fd284bc89464822690ff7906a735c778bda490949bf69091a5420885cc5cdad69"
+  - link: "https://www.hsbi.de/medienportal/m/6c84f8e181911aa89818cac70de40087fcab1209f4e0264f77da811289a5420fd284bc89464822690ff7906a735c778bda490949bf69091a5420885cc5cdad69"
     name: "VL Entropie"
 ---
 

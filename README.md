@@ -18,7 +18,7 @@ opening a new issue.
 
 This course was funded by the German Academic Exchange Service (DAAD) and the
 German Federal Ministry of Education and Research (BMBF) as part of the project
-[Digital Mobil @ FH Bielefeld](https://www.fh-bielefeld.de/en/digitalmobil).
+[Digital Mobil @ FH Bielefeld](https://www.hsbi.de/en/digitalmobil).
 
 <a href="https://www.karlsruhe.dhbw.de/fileadmin/_processed_/3/1/csm_lg_digikos_cmyk_48937bc55d.jpg"><img src="https://www.karlsruhe.dhbw.de/fileadmin/_processed_/3/1/csm_lg_digikos_cmyk_48937bc55d.jpg" align="left" style="margin-right: 20px" width="150"></a>
 This lecture is also supported by the project <a href="https://www.digikos.de">"Digitalbaukasten für kompetenzorientiertes Selbststudium"</a> (DigikoS). A Digital Learning Scout trained by the DigikoS project provided technical and content support in particular for the coordination of digital student group work, peer feedback and poster sessions in ILIAS. DigikoS is funded as a joint project by the Stiftung Innovation in der Hochschullehre.
@@ -34,4 +34,4 @@ See the [credits](CREDITS.md) for a detailed list of contributing projects.
 
 <!-- https://creativecommons.org/choose/ -->
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-FHB-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.

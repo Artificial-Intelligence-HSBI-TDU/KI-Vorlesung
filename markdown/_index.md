@@ -24,33 +24,9 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 Siehe `["Syllabus"]({{< ref "/org/syllabus" >}})`{=markdown} zu Details.
 
 
-## Kooperation zw. FHB und TDU
-
-Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (FHB) ist
-im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
-im Modul "Künstliche Intelligenz" gestartet.
-
-Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
-(TDU und FHB) teil.
-
-["Digital Mobil @ FH Bielefeld"]: https://www.fh-bielefeld.de/en/digitalmobil
-
-
-## Kooperation mit dem DigikoS-Projekt
-
-Diese Vorlesung wird zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
-(_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
-insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
-Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
-von der Stiftung Innovation in der Hochschullehre gefördert.
-
-["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
-
-
 ## Team
 
--   [Carsten Gips](https://www.fh-bielefeld.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
+-   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
 -   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de)
 -   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
 
@@ -61,7 +37,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 
 ### Vorlesung: 2 SWS
 
-| FHB (03.10.22 - 20.01.23)  | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
+| HSBI (03.10.22 - 20.01.23)  | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
 |:---------------------------|:---------------------------|:---------------------------|
 | Mi, 09:30 - 11:00 Uhr (DE) | Mi, 10:30 - 12:00 Uhr (TR) | Mi, 11:30 - 13:00 Uhr (TR) |
 | online/J101                | online                     | online                     |
@@ -70,7 +46,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 ### Übung / Praktikum: 2 SWS
 
-|    | FHB (03.10.22 - 20.01.23)    | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
+|    | HSBI (03.10.22 - 20.01.23)    | TDU (19.9.22 - 28.10.22)   | TDU (31.10.22 - 23.12.22)  |
 |:---|:-----------------------------|:---------------------------|:---------------------------|
 | G1 | Mi, 11:30 bis 13:00 Uhr (DE) | Mi, 12:30 - 14:00 Uhr (TR) | Mi, 13:30 - 15:00 Uhr (TR) |
 | G2 | Mi, 13:00 bis 14:30 Uhr (DE) | Mi, 14:00 - 15:30 Uhr (TR) | Mi, 15:00 - 16:30 Uhr (TR) |
@@ -79,17 +55,17 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 **Zugangsdaten siehe [ILIAS]/[Moodle]**
 
-[ILIAS]: https://www.fh-bielefeld.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
+[ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1091712&client_id=FH-Bielefeld
 [Moodle]: https://muh.moodle.tau.edu.tr/course/view.php?id=3
 
 ### Prüfungsform, Note und Credits
 
 Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen:
 
-| FHB                                                               | TDU                                                               |
+| HSBI                                                               | TDU                                                               |
 |:------------------------------------------------------------------|:------------------------------------------------------------------|
-| `[Note und Credits]({{< ref "/org/grading-fhb" >}})`{=markdown}   | `[Note und Credits]({{< ref "/org/grading-tdu" >}})`{=markdown}   |
-| `[Prüfungsvorbereitung]({{< ref "/org/exams-fhb" >}})`{=markdown} | `[Prüfungsvorbereitung]({{< ref "/org/exams-tdu" >}})`{=markdown} |
+| `[Note und Credits]({{< ref "/org/grading-hsbi" >}})`{=markdown}   | `[Note und Credits]({{< ref "/org/grading-tdu" >}})`{=markdown}   |
+| `[Prüfungsvorbereitung]({{< ref "/org/exams-hsbi" >}})`{=markdown} | `[Prüfungsvorbereitung]({{< ref "/org/exams-tdu" >}})`{=markdown} |
 
 
 ## Materialien
@@ -113,3 +89,28 @@ Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/org/resources" >}})
 **Hinweis**: Abgabe der Hausaufgaben bis jeweils 08:00 Uhr (DE), Deadline für das Feedback
 je bis 04:00 Uhr (DE) am angegebenen Tag (jeweils im ILIAS). Studierende der TDU beachten
 bitte die Zeitverschiebung: bis 28.10.22 +1 h, ab 31.10.22 +2 h.
+
+
+## Förderungen und Kooperationen
+
+### Kooperation zw. HSBI und TDU
+
+Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (HSBI) ist
+im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
+im Modul "Künstliche Intelligenz" gestartet.
+
+Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
+(TDU und HSBI) teil.
+
+["Digital Mobil @ FH Bielefeld"]: https://www.hsbi.de/en/digitalmobil
+
+### Kooperation mit dem DigikoS-Projekt
+
+Diese Vorlesung wird zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
+(_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
+insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
+Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
+von der Stiftung Innovation in der Hochschullehre gefördert.
+
+["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de

@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Alpha-Beta-Pruning"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 4
 readings:
   - key: "Russell2020"
@@ -33,13 +33,13 @@ outcomes:
   - k2: "Optimierungsmöglichkeit: Bewertung über Spieldatenbanken"
   - k3: "alpha-beta-Pruning"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106584&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106584&client_id=FH-Bielefeld"
     name: "Selbsttest Alpha-Beta-Pruning (ILIAS)"
 youtube:
   - link: "https://youtu.be/`_Hq-GCl__bU`{=markdown}"
     name: "VL Alpha-Beta-Pruning"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/f7c9b90ff9732933c8899548d0f89eb320b59efeee015383a765494b60b29578aae796e92bf7df5a621ed1f8a6dc50649e3820fcc74c698cd3f25e6987882a53"
+  - link: "https://www.hsbi.de/medienportal/m/f7c9b90ff9732933c8899548d0f89eb320b59efeee015383a765494b60b29578aae796e92bf7df5a621ed1f8a6dc50649e3820fcc74c698cd3f25e6987882a53"
     name: "VL Alpha-Beta-Pruning"
 ---
 

@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Suche mit Branch-and-Bound"
 menuTitle: "Branch-and-Bound"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -24,7 +24,7 @@ outcomes:
   - k2: "Bedeutung nicht-negativer Kosten für Branch-and-Bound"
   - k3: "Informierte Suchverfahren: Branch-and-Bound"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106598&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106598&client_id=FH-Bielefeld"
     name: "Selbsttest Branch-and-Bound (ILIAS)"
 assignments:
   - topic: sheet01
@@ -32,7 +32,7 @@ youtube:
   - link: "https://youtu.be/WBL-sihpbaM"
     name: "VL Branch-and-Bound"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/a9df47470cf25d0f57646f04280a04e6ff323f142151641b95c76b47ba0bcd10cca5d53d287842e551e119a6b9ba21609f7ddc05c38aca416115e14f9104810a"
+  - link: "https://www.hsbi.de/medienportal/m/a9df47470cf25d0f57646f04280a04e6ff323f142151641b95c76b47ba0bcd10cca5d53d287842e551e119a6b9ba21609f7ddc05c38aca416115e14f9104810a"
     name: "VL Branch-and-Bound"
 ---
 

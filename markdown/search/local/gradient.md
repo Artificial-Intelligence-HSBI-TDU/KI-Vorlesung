@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Lokale Suche: Gradientensuche"
 menuTitle: "Gradientensuche"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -19,7 +19,7 @@ outcomes:
   - k2: "Problematik der lokalen Minima bei Gradientenverfahren"
   - k3: "Lokale Suche (Gradientenabstieg)"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106601&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106601&client_id=FH-Bielefeld"
     name: "Selbsttest Gradientensuche (ILIAS)"
 assignments:
   - topic: sheet02
@@ -27,7 +27,7 @@ youtube:
   - link: "https://youtu.be/TcTF9xdW3WU"
     name: "VL Gradientensuche"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed"
+  - link: "https://www.hsbi.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed"
     name: "VL Gradientensuche"
 ---
 

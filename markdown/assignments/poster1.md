@@ -1,7 +1,7 @@
 ---
 archetype: assignment
 title: "Projekt 1: Poster"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 5
 
 hidden: true

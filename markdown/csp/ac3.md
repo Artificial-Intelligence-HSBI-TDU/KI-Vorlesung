@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Kantenkonsistenz und AC-3"
 menuTitle: "AC-3"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 4
 readings:
   - key: "Russell2020"
@@ -33,7 +33,7 @@ outcomes:
   - k2: "Kantenkonsistenz bedeutet nicht globale Konsistenz"
   - k3: "AC-3 Algorithmus"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld"
     name: "Selbsttest CSP, AC-3 (ILIAS)"
 assignments:
   - topic: sheet03
@@ -41,7 +41,7 @@ youtube:
   - link: "https://youtu.be/TvF78iVDwKM"
     name: "VL CSP, AC-3"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/8fa264520ed3ce80f71936e084254d14c579ff19e2c724e914a6df761d12c3c7d22d62ebf625cc9181f29e288922785522e7cc60f9e7ce6cb369a3148b115ca7"
+  - link: "https://www.hsbi.de/medienportal/m/8fa264520ed3ce80f71936e084254d14c579ff19e2c724e914a6df761d12c3c7d22d62ebf625cc9181f29e288922785522e7cc60f9e7ce6cb369a3148b115ca7"
     name: "VL CSP, AC-3"
 ---
 

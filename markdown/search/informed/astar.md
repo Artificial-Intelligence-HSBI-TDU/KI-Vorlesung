@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Suche mit `A*`{=markdown}"
 menuTitle: "`A*`{=markdown}"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 3
 readings:
   - key: "Russell2020"
@@ -27,7 +27,7 @@ outcomes:
   - k2: "Bedingung(en) an Restkostenabschätzung bei A*"
   - k3: "Informierte Suchverfahren A*"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld"
     name: "Selbsttest `A*`{=markdown} (ILIAS)"
 assignments:
   - topic: sheet01
@@ -35,7 +35,7 @@ youtube:
   - link: "https://youtu.be/eMkEN-HtEs8"
     name: "VL `A*`{=markdown}"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509"
+  - link: "https://www.hsbi.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509"
     name: "VL `A*`{=markdown}"
 ---
 

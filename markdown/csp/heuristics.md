@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Heuristiken"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 3
 readings:
   - key: "Russell2020"
@@ -27,7 +27,7 @@ tldr: |
 outcomes:
   - k3: "Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106573&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106573&client_id=FH-Bielefeld"
     name: "Selbsttest CSP, Heuristiken (ILIAS)"
 assignments:
   - topic: sheet03
@@ -35,7 +35,7 @@ youtube:
   - link: "https://youtu.be/pgXf0oV8lhE"
     name: "VL CSP, Heuristiken"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/66689545e201ad90f6f2007f472f3b430ec37ebaa5321315764ae687983bbcb049bc217a1b0852e2d5364eae1223153d567558533246bd58b0db5cc1fa3278c5"
+  - link: "https://www.hsbi.de/medienportal/m/66689545e201ad90f6f2007f472f3b430ec37ebaa5321315764ae687983bbcb049bc217a1b0852e2d5364eae1223153d567558533246bd58b0db5cc1fa3278c5"
     name: "VL CSP, Heuristiken"
 ---
 

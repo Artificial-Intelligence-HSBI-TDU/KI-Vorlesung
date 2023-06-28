@@ -2,7 +2,7 @@
 archetype: lecture-cg
 title: "Einführung Constraints"
 menuTitle: "Intro"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 1
 readings:
   - key: "Russell2020"
@@ -26,7 +26,7 @@ outcomes:
   - k1: "Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung"
   - k3: "Formulierung von CSP"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld"
     name: "Selbsttest Intro CSP (ILIAS)"
 assignments:
   - topic: sheet03
@@ -34,7 +34,7 @@ youtube:
   - link: "https://youtu.be/eFyo4Xh59ns"
     name: "VL Intro CSP"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/a269f53bff001a84bec4435261543b846ccca4290f211cf1634f9007d1285513c8bae4f89a0225a489e1ffda6cac455e264e022c35f46e8ffe80b4ddcd86d137"
+  - link: "https://www.hsbi.de/medienportal/m/a269f53bff001a84bec4435261543b846ccca4290f211cf1634f9007d1285513c8bae4f89a0225a489e1ffda6cac455e264e022c35f46e8ffe80b4ddcd86d137"
     name: "VL Intro CSP"
 ---
 

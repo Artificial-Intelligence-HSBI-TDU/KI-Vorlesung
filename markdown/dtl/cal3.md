@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "CAL3"
-author: "Carsten Gips (FH Bielefeld)"
+author: "Carsten Gips (HSBI)"
 weight: 4
 readings:
   - key: "Unger1981"
@@ -18,7 +18,7 @@ tldr: |
 outcomes:
   - k3: "Meta-Algorithmus CAL3 für überlappende Klassen"
 quizzes:
-  - link: "https://www.fh-bielefeld.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld"
     name: "Selbsttest CAL3 (ILIAS)"
 assignments:
   - topic: sheet04
@@ -26,7 +26,7 @@ youtube:
   - link: "https://youtu.be/9Wj51XvuntM"
     name: "VL CAL3"
 fhmedia:
-  - link: "https://www.fh-bielefeld.de/medienportal/m/6acb93574f25ff341b5a09487fc153ea28252e12d3960342bc7d05a463e56b338f53f366338229df44f5c486400465fddf58e727fd8f9cc56904dd67c7c8ecb8"
+  - link: "https://www.hsbi.de/medienportal/m/6acb93574f25ff341b5a09487fc153ea28252e12d3960342bc7d05a463e56b338f53f366338229df44f5c486400465fddf58e727fd8f9cc56904dd67c7c8ecb8"
     name: "VL CAL3"
 ---
 
