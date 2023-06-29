@@ -110,17 +110,19 @@ SLIDES_OUTPUT_DIR = pdf
 #--------------------------------------------------------------------------------
 
 ## TeX source and target files
-TEX_SOURCES        = $(shell find $(SRC_DIR) -type f -iname '*.tex')
-TEX_INTERMEDIATE   = $(patsubst $(SRC_DIR)/%,$(IMAGES_OUTPUT_DIR)/%, $(TEX_SOURCES))
-TEX_TARGETS        = $(patsubst $(SRC_DIR)/%.tex,$(IMAGES_OUTPUT_DIR)/%.png, $(TEX_SOURCES))
-WEB_TEX_TARGETS    = $(patsubst $(SRC_DIR)/%.tex,$(WEB_INTERMEDIATE_DIR)/%.png, $(TEX_SOURCES))
-SLIDES_TEX_TARGETS = $(patsubst $(SRC_DIR)/%.tex,$(SLIDES_INTERMEDIATE_DIR)/%.png, $(TEX_SOURCES))
+## uncomment to convert .tex to .png
+#TEX_SOURCES        = $(shell find $(SRC_DIR) -type f -iname '*.tex')
+#TEX_INTERMEDIATE   = $(patsubst $(SRC_DIR)/%,$(IMAGES_OUTPUT_DIR)/%, $(TEX_SOURCES))
+#TEX_TARGETS        = $(patsubst $(SRC_DIR)/%.tex,$(IMAGES_OUTPUT_DIR)/%.png, $(TEX_SOURCES))
+#WEB_TEX_TARGETS    = $(patsubst $(SRC_DIR)/%.tex,$(WEB_INTERMEDIATE_DIR)/%.png, $(TEX_SOURCES))
+#SLIDES_TEX_TARGETS = $(patsubst $(SRC_DIR)/%.tex,$(SLIDES_INTERMEDIATE_DIR)/%.png, $(TEX_SOURCES))
 
 ## Dot source and target files
-DOT_SOURCES        = $(shell find $(SRC_DIR) -type f -iname '*.dot')
-DOT_TARGETS        = $(patsubst $(SRC_DIR)/%.dot,$(IMAGES_OUTPUT_DIR)/%.png, $(DOT_SOURCES))
-WEB_DOT_TARGETS    = $(patsubst $(SRC_DIR)/%.dot,$(WEB_INTERMEDIATE_DIR)/%.png, $(DOT_SOURCES))
-SLIDES_DOT_TARGETS = $(patsubst $(SRC_DIR)/%.dot,$(SLIDES_INTERMEDIATE_DIR)/%.png, $(DOT_SOURCES))
+## uncomment to convert .dot to .png
+#DOT_SOURCES        = $(shell find $(SRC_DIR) -type f -iname '*.dot')
+#DOT_TARGETS        = $(patsubst $(SRC_DIR)/%.dot,$(IMAGES_OUTPUT_DIR)/%.png, $(DOT_SOURCES))
+#WEB_DOT_TARGETS    = $(patsubst $(SRC_DIR)/%.dot,$(WEB_INTERMEDIATE_DIR)/%.png, $(DOT_SOURCES))
+#SLIDES_DOT_TARGETS = $(patsubst $(SRC_DIR)/%.dot,$(SLIDES_INTERMEDIATE_DIR)/%.png, $(DOT_SOURCES))
 
 ## Standalone image sources and targets
 STANDALONE_SOURCES         = $(shell find $(SRC_DIR) -type f -iname '*.png')
@@ -129,8 +131,8 @@ WEB_STANDALONE_TARGETS     = $(patsubst $(SRC_DIR)/%,$(WEB_INTERMEDIATE_DIR)/%, 
 SLIDES_STANDALONE_TARGETS  = $(patsubst $(SRC_DIR)/%,$(SLIDES_INTERMEDIATE_DIR)/%, $(STANDALONE_SOURCES))
 
 ## Image targets for web and slides
-WEB_IMAGE_TARGETS    = $(WEB_TEX_TARGETS) $(WEB_DOT_TARGETS) $(WEB_STANDALONE_TARGETS)
-SLIDES_IMAGE_TARGETS = $(SLIDES_TEX_TARGETS) $(SLIDES_DOT_TARGETS) $(SLIDES_STANDALONE_TARGETS)
+WEB_IMAGE_TARGETS    = $(WEB_STANDALONE_TARGETS) $(WEB_TEX_TARGETS) $(WEB_DOT_TARGETS)
+SLIDES_IMAGE_TARGETS = $(SLIDES_STANDALONE_TARGETS) $(SLIDES_TEX_TARGETS) $(SLIDES_DOT_TARGETS)
 
 ## Markdown source and target files
 WEB_MARKDOWN_SOURCES = $(shell find $(SRC_DIR) -type f -iname '*.md')
@@ -215,11 +217,6 @@ web: $(WEB_MARKDOWN_TARGETS) $(WEB_IMAGE_TARGETS) $(WEB_STATIC_TARGETS) $(READIN
 .PHONY: web_zip
 web_zip: web ## Create website and archive
 	cd $(WEB_OUTPUT_DIR) && rm -rf site.zip && zip -r site.zip *
-
-## Build Docker image "alpine-pandoc-hugo"
-.PHONY: docker
-docker: ## Build Docker image "alpine-pandoc-hugo"
-	cd .github/actions/alpine-pandoc-hugo && make clean all
 
 ##@ Cleanup
 
