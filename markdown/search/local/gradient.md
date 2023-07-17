@@ -104,7 +104,7 @@ Beispiel: Stundenplan
 :::
 ::::::
 
-[Tafelbeispiel Gradientensuche, Bewertung: Restkostenschätzung]{.bsp}
+[[Tafelbeispiel Gradientensuche, Bewertung: Restkostenschätzung]{.bsp}]{.slides}
 
 
 ::: notes

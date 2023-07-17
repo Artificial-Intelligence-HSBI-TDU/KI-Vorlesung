@@ -102,7 +102,7 @@ fhmedia:
     *   Bewertung der Aktionen des Agenten am Ende einer Aktionsfolge
 
 
-[Analogie Lernen beim Kleinkind]{.bsp}
+[[Analogie Lernen beim Kleinkind]{.bsp}]{.slides}
 
 ::: notes
 **Beispiel Kleinkind**: Lernen von Klassen/Konzepten durch Beispiele

@@ -172,7 +172,7 @@ def Minimax(state):
 ![](images/minimaxBeispiel.png){width="50%"}
 :::
 
-[Tafelbeispiel Handsimulation]{.bsp}
+[[Tafelbeispiel Handsimulation]{.bsp}]{.slides}
 
 
 ::: notes

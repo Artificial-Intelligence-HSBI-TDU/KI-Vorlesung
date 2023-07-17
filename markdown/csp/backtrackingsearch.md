@@ -33,7 +33,7 @@ fhmedia:
 ![](images/map_graph.png){width="80%"}
 :::
 
-[Tafelbeispiel: Suche nach Lösung]{.bsp}
+[[Tafelbeispiel: Suche nach Lösung]{.bsp}]{.slides}
 
 
 ## Endliche Domänen: Formulierung als Suchproblem

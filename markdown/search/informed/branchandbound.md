@@ -94,7 +94,7 @@ der "Uniformen Suche" auf ...
 
 ![](images/tafelbeispiel.png){width="90%"}
 
-[Tafelbeispiel Branch-and-Bound (Graph-Search)]{.bsp}
+[[Tafelbeispiel Branch-and-Bound (Graph-Search)]{.bsp}]{.slides}
 
 
 ::::::::: notes

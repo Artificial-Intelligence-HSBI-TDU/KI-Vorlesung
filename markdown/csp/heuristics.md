@@ -60,7 +60,7 @@ fhmedia:
     => reduziert den Verzweigungsgrad
     :::
 
-[Tafelbeispiel]{.bsp}
+[[Tafelbeispiel]{.bsp}]{.slides}
 
 ::: notes
 Beispiel:
@@ -90,7 +90,7 @@ Beispiel:
     => reduziert den Verzweigungsgrad in späteren Schritten
     :::
 
-[Tafelbeispiel]{.bsp}
+[[Tafelbeispiel]{.bsp}]{.slides}
 
 ::: notes
 Beispiel:
@@ -124,7 +124,7 @@ Beispiel:
     => verringert die Wahrscheinlichkeit für Backtracking
     :::
 
-[Tafelbeispiel]{.bsp}
+[[Tafelbeispiel]{.bsp}]{.slides}
 
 ::: notes
 Beispiel:

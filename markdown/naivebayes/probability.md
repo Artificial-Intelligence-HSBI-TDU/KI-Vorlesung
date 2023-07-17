@@ -180,7 +180,7 @@ Daraus folgt (u.a.):
 *   $A \subseteq B$: $P(A) \le P(B)$
 :::
 
-[Tafel: Würfeln: Elementar, gerade Zahl]{.bsp}
+[[Tafel: Würfeln: Elementar, gerade Zahl]{.bsp}]{.slides}
 
 
 ## Verbundwahrscheinlichkeiten

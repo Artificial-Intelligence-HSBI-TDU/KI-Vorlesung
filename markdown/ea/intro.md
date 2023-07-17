@@ -49,7 +49,7 @@ fhmedia:
 [**Wie funktioniert's?**]{.alert}
 :::
 
-[kurze Diskussion]{.bsp}
+[[kurze Diskussion]{.bsp}]{.slides}
 
 
 ## EA -- Zutaten und Mechanismen
@@ -93,7 +93,7 @@ und die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehe
 zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
 :::
 
-[Beispiel mit 4-Queens-Puzzle]{.bsp}
+[[Beispiel mit 4-Queens-Puzzle]{.bsp}]{.slides}
 
 
 ## EA -- Strömungen
