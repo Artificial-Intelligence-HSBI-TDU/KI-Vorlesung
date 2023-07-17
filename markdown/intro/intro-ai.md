@@ -59,7 +59,7 @@ fhmedia:
 *   Woran erkennen Sie das?
 :::
 
-[Diskussion]{.bsp}
+[[Diskussion]{.bsp}]{.slides}
 
 
 ## Definition Intelligenz

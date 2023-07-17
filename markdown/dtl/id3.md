@@ -176,7 +176,7 @@ anderes Klassensymbol als "`A`" sein ...
     weiter teilen und verzweigen
 :::
 
-[Tafelbeispiel Anfang ID3]{.bsp}
+[[Tafelbeispiel Anfang ID3]{.bsp}]{.slides}
 
 
 ## Beobachtung: $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher

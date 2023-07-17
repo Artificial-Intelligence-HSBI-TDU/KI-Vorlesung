@@ -92,7 +92,7 @@ Varianten:
 :::
 ::::::
 
-[Tafelbeispiel A* (Graph-Search, nur Anfang/Schreibweise)]{.bsp}
+[[Tafelbeispiel A* (Graph-Search, nur Anfang/Schreibweise)]{.bsp}]{.slides}
 
 
 ::: notes

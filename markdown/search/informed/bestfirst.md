@@ -77,7 +77,7 @@ Varianten:
 
 *   Voraussetzungen: $h(n)$ positiv, $h(n) = 0$ für den Zielknoten
 
-[Tafelbeispiel Best-First (Graph-Search)]{.bsp}
+[[Tafelbeispiel Best-First (Graph-Search)]{.bsp}]{.slides}
 
 
 ::::::::: notes

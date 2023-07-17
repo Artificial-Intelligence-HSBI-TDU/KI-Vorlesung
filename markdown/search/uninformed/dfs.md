@@ -123,7 +123,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 :::
 ::::::
 
-[Tafelbeispiel Tiefensuche (Stack, Suchbaum, Backtracking, Zyklen)]{.bsp}
+[[Tafelbeispiel Tiefensuche (Stack, Suchbaum, Backtracking, Zyklen)]{.bsp}]{.slides}
 
 <!-- XXX
 * Beispiel mit *gerichteten* Kanten, um lange Zyklen an Tafelbeispiel zu vermeiden

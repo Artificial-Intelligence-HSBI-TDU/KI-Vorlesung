@@ -59,7 +59,7 @@ fhmedia:
 \bigskip
 => **Minimax-Baum**: [Verbesserungen möglich?]{.alert}
 
-[Tafelbeispiel: Baum und Verbesserungen]{.bsp}
+[[Tafelbeispiel: Baum und Verbesserungen]{.bsp}]{.slides}
 
 
 ## Alpha-beta-Pruning
@@ -77,7 +77,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 1.  $\alpha$ für MAX-Knoten wird nie kleiner
 2.  $\beta$ für MIN-Knoten wird nie größer
 
-[Tafelbeispiel: Beste Werte einzeichnen]{.bsp}
+[[Tafelbeispiel: Beste Werte einzeichnen]{.bsp}]{.slides}
 
 
 ## Pruning-Regeln
@@ -138,7 +138,7 @@ modifiziert werden und als Rückgabewert dienen. Das *kann* zu anderen oder fals
 Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 :::
 
-[Tafelbeispiel Handsimulation]{.bsp}
+[[Tafelbeispiel Handsimulation]{.bsp}]{.slides}
 
 
 ## Alpha-beta-Pruning -- Eigenschaften

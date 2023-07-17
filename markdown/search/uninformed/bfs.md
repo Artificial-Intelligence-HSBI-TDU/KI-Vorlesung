@@ -83,7 +83,7 @@ Varianten:
 :::
 ::::::
 
-[Tafelbeispiel Breitensuche (Queue, Suchbaum, markierte Knoten)]{.bsp}
+[[Tafelbeispiel Breitensuche (Queue, Suchbaum, markierte Knoten)]{.bsp}]{.slides}
 
 <!-- XXX
 * Beispiel mit *gerichteten* Kanten, um lange Zyklen an Tafelbeispiel zu vermeiden
