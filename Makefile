@@ -184,8 +184,8 @@ SLIDES_SHORT_TARGETS           = $(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,%,$(SLIDE
 help:  ## Display this help
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-.PHONY: list-slides
-list-slides: ## List available targets for individual slides
+.PHONY: list_slides
+list_slides: ## List available targets for individual slides
 	$(foreach target,$(SLIDES_SHORT_TARGETS), $(info $(target)))
 	@: ## Suppress 'Nothing to be done for ...' message
 
