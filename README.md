@@ -2,16 +2,21 @@
 
 ## Overview
 
-This represents the lecture material for the lecture "Künstliche Intelligenz",
-a course jointly developed and taught by Bielefeld University of Applied Sciences
-(Bielefeld) and Turkish-German University (Istanbul).
+This represents the lecture material for the lecture ["Künstliche Intelligenz"](https://www.hsbi.de/elearning/goto.php?target=crs_1089753&client_id=FH-Bielefeld), a course jointly developed and taught at Bielefeld University of Applied Sciences (Bielefeld) and Turkish-German University (Istanbul).
 
 
 ## Contributing
 
 Questions, bug reports, feature requests and pull requests are very welcome.
-Please be sure to read the [contributor guidelines](CONTRIBUTING.md) before
-opening a new issue.
+
+Please first check whether your request has already been dealt with in other (open or closed) issues. Feel free to reopen relevant closed issues to add your request there.
+
+When submitting pull requests, please make sure that your **feature branch starts at the tip of the current `master` branch**. Upon acceptance (i.e. merging your pull request), your contribution automatically becomes subject to the licence of this repository (CC BY-SA 4.0).
+
+
+## Building Stuff
+
+Please see [https://github.com/cagix/pandoc-lecture](https://github.com/cagix/pandoc-lecture/blob/master/README.md#installing-and-using-pandoc-lecture) for detailed instructions on how to produce teaching materials (PDF slides, website) from the sources maintained in this repository.
 
 
 ## Credits
