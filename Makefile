@@ -41,6 +41,9 @@
 READINGS = data/readings.yaml
 BIBTEX   = ki.bib
 
+## local.yaml allows to override settings in hugo.yaml
+HUGO_LOCAL = $(wildcard local.yaml)
+
 #--------------------------------------------------------------------------------
 # Tools
 #--------------------------------------------------------------------------------
@@ -74,9 +77,7 @@ LATEX_ARGS = -shell-escape
 DOT_ARGS = -Tpng
 
 ## Define options to be used by Hugo
-## local.yaml allows to override settings in config.yaml
-HUGO_LOCAL = $(wildcard local.yaml)
-HUGO_ARGS  = --config config.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)
+HUGO_ARGS  = --config hugo.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)
 
 #--------------------------------------------------------------------------------
 # I/O Directories
