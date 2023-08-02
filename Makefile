@@ -303,10 +303,10 @@ $(SLIDES_MARKDOWN_TARGETS): $(SLIDES_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
 ## Page-Bundles: path/name/index.md, path/name/images/, path_name.pdf
 $(SLIDES_BUNDLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%/index.md, $$(subst _,/,$$@))
 	$(create-folder)
-	$(PANDOC) $(PANDOC_ARGS) -d slides $< -o $@
+	$(PANDOC) $(PANDOC_ARGS) -d beamer $< -o $@
 $(SLIDES_BUNDLE_PDF_TARGETS): $$(filter $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@))%, $(SLIDES_IMAGE_TARGETS))
 ## Single Markdown Files: path/name.md, path/<images>/, path_name.pdf
 $(SLIDES_SINGLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%.md, $$(subst _,/,$$@))
 	$(create-folder)
-	$(PANDOC) $(PANDOC_ARGS) -d slides $< -o $@
+	$(PANDOC) $(PANDOC_ARGS) -d beamer $< -o $@
 $(SLIDES_SINGLE_PDF_TARGETS): $$(filter $$(dir $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@)))%, $(SLIDES_IMAGE_TARGETS))
