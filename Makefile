@@ -41,6 +41,9 @@
 READINGS = data/readings.yaml
 BIBTEX   = ki.bib
 
+## Metadata (for Pandoc)
+METADATA = metadata.yaml
+
 ## local.yaml allows to override settings in hugo_conf.yaml
 HUGO_LOCAL = $(wildcard local.yaml)
 
@@ -71,13 +74,16 @@ PANDOC_DIRS = --resource-path=".:$(XDG_DATA_HOME)/pandoc/:$(XDG_DATA_HOME)/pando
 HUGO_DIRS   = --themesDir "$(XDG_DATA_HOME)/pandoc/hugo"
 
 ## Define options for generating images from ".tex" files
-LATEX_ARGS = -shell-escape
+LATEX_ARGS  = -shell-escape
 
 ## Define options for generating images from ".dot" files
-DOT_ARGS = -Tpng
+DOT_ARGS    = -Tpng
+
+## Define options to be used by Pandoc
+PANDOC_ARGS = --metadata-file=$(METADATA)  $(PANDOC_DIRS)
 
 ## Define options to be used by Hugo
-HUGO_ARGS  = --config hugo_conf.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)
+HUGO_ARGS   = --config hugo_conf.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)
 
 #--------------------------------------------------------------------------------
 # I/O Directories
@@ -275,7 +281,7 @@ $(WEB_IMAGE_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(IMAGES_OUTPUT_DIR)/%
 ## Process markdown with pandoc (preprocessing for hugo)
 $(WEB_MARKDOWN_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
 	$(create-folder)
-	$(PANDOC) $(PANDOC_DIRS) -d hugo $< -o $@
+	$(PANDOC) $(PANDOC_ARGS) -d hugo $< -o $@
 
 ## Copy static files to $(WEB_INTERMEDIATE_DIR)
 $(WEB_STATIC_TARGETS): $(WEB_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
@@ -297,10 +303,10 @@ $(SLIDES_MARKDOWN_TARGETS): $(SLIDES_INTERMEDIATE_DIR)/%: $(SRC_DIR)/%
 ## Page-Bundles: path/name/index.md, path/name/images/, path_name.pdf
 $(SLIDES_BUNDLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%/index.md, $$(subst _,/,$$@))
 	$(create-folder)
-	$(PANDOC) $(PANDOC_DIRS) -d slides $< -o $@
+	$(PANDOC) $(PANDOC_ARGS) -d slides $< -o $@
 $(SLIDES_BUNDLE_PDF_TARGETS): $$(filter $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@))%, $(SLIDES_IMAGE_TARGETS))
 ## Single Markdown Files: path/name.md, path/<images>/, path_name.pdf
 $(SLIDES_SINGLE_PDF_TARGETS): $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%.md, $$(subst _,/,$$@))
 	$(create-folder)
-	$(PANDOC) $(PANDOC_DIRS) -d slides $< -o $@
+	$(PANDOC) $(PANDOC_ARGS) -d slides $< -o $@
 $(SLIDES_SINGLE_PDF_TARGETS): $$(filter $$(dir $$(patsubst $(SLIDES_OUTPUT_DIR)/%.pdf,$(SLIDES_INTERMEDIATE_DIR)/%, $$(subst _,/,$$@)))%, $(SLIDES_IMAGE_TARGETS))
