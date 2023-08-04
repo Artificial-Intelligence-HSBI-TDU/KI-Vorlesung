@@ -1,0 +1,34 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Lecture "Künstliche Intelligenz"
+message: >-
+  If you use this lecture material, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Carsten
+    family-names: Gips
+    email: cagix@hsbi.de
+    affiliation: HSBI
+    orcid: 'https://orcid.org/0000-0002-4230-9060'
+  - family-names: Yıldız
+    given-names: Canan
+    email: cyildiz@gmail.com
+    affiliation: TDU
+    orcid: 'https://orcid.org/0000-0002-9018-9462'
+repository-code: >-
+  https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung
+url: >-
+  https://www.hsbi.de/elearning/goto.php?target=crs_1089753&client_id=FH-Bielefeld
+abstract: >-
+  This represents the lecture material for the lecture
+  "Künstliche Intelligenz", a course jointly developed and
+  taught at Bielefeld University of Applied Sciences
+  (Bielefeld) and Turkish-German University (Istanbul).
+keywords:
+  - artificial intelligence
+  - machine learning
+  - oer
+license: CC-BY-SA-4.0
