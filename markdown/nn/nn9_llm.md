@@ -23,6 +23,11 @@ attachments:
     name: "NN9-LLM.pdf"
 
 sketch: true
+hidden: true
+_build:
+  render: always
+  list: never
+  publishResources: true
 ---
 
 
