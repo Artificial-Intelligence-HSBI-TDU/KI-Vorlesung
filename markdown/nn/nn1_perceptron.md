@@ -24,7 +24,7 @@ youtube:
     - link: "https://youtu.be/IJdiwITTC9Y"
       name: "NN1.1 - Einführung"
     - link: "https://youtu.be/oWcvFyLgqYc"
-      name: "NN1.1 - Einführung"
+      name: "NN1.2 - Fallstudie und Formalisierung"
     - link: "https://youtu.be/ZvWpI0Doocc"
       name: "NN1.3 - Das Perzeptron Modell"
     - link: "https://youtu.be/8Rdw2NBCCJk"

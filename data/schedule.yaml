@@ -123,7 +123,6 @@
   date: "Mo, 20.11.23 (Sprechstunde: Canan)"
   lecture:
     - topic: nn/nn2_linear_regression
-    - topic: nn/nn3_logistic_regression
   assignment:
     - topic: poster1
       due: "20.11.23"
@@ -131,7 +130,7 @@
 - week: "KW48"
   date: "Mo, 27.11.23 (Sprechstunde: Canan)"
   lecture:
-    - topic: nn/nn5_mlp
+    - topic: nn/nn3_logistic_regression
   assignment:
     - topic: sheet05
       due: "27.11.23"
@@ -139,7 +138,8 @@
 - week: "KW49"
   date: "Mo, 04.12.23 (Sprechstunde: Canan)"
   lecture:
-    - topic: nn/nn6_backprop
+    - topic: nn/nn4_overfitting
+    - topic: nn/nn5_mlp
   assignment:
     - topic: sheet06
       due: "04.12.23"
@@ -147,9 +147,7 @@
 - week: "KW50"
   date: "Mo, 11.12.23 (Sprechstunde: Canan)"
   lecture:
-    - topic: nn/nn4_overfitting
-    - topic: nn/nn7_training_testing
-    - topic: nn/nn8_testing
+    - topic: nn/nn6_backprop
   assignment:
     - topic: poster2
       due: "11.12.23"
@@ -157,7 +155,9 @@
 - week: "KW51"
   date: "Mo, 18.12.23 (Sprechstunde: Canan)"
   lecture:
-    - topic: nn/nn9_llm
+    - topic: nn/nn7_training_testing
+    - topic: nn/nn8_testing
+    #- topic: nn/nn9_llm
   misc_assignment:
     - notes: ">> kein Praktikum/Übung"
     - notes: ">> @HSBI: Frohe Weihnachten!"
