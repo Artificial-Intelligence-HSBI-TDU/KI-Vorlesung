@@ -115,6 +115,57 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
 
 
+<!-- reference to all markdown pages used in the current semester (to be replaced using a proper schedule table) -->
+::: slides
+[Syllabus](admin/syllabus.md)
+[Resources](admin/resources.md)
+[Grading HSBI](admin/grading-hsbi.md)
+[Grading TDU](admin/grading-tdu.md)
+[Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)
+[Prüfungsvorbereitung TDU](admin/exams-tdu.md)
+[FAQ](admin/faq.md)
+
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+
+[B01](homework/sheet01.md)
+[B02](homework/sheet02.md)
+[B03](homework/sheet03.md)
+[B04](homework/sheet04.md)
+[B05](homework/sheet05.md)
+[B06](homework/sheet06.md)
+[B07](homework/sheet07.md)
+[P1](homework/poster1.md)
+[P2](homework/poster2.md)
+:::
+
+
 
 
 
