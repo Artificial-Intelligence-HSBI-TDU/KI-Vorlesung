@@ -125,9 +125,11 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Prüfungsvorbereitung TDU](admin/exams-tdu.md)
 [FAQ](admin/faq.md)
 
+[Intro](lecture/intro/readme.md)            <!-- because of sub-sub-dirs -->
 [Einführung KI](lecture/intro/intro-ai.md)
 [Problemlösen](lecture/intro/problems.md)
 
+[Search](lecture/search/readme.md)          <!-- because of sub-sub-dirs -->
 [Tiefensuche](lecture/search/uninformed/dfs.md)
 [Breitensuche](lecture/search/uninformed/bfs.md)
 [Branch-and-Bound](lecture/search/informed/branchandbound.md)
@@ -136,19 +138,23 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Gradientensuche](lecture/search/local/gradient.md)
 [Simulated Annealing](lecture/search/local/annealing.md)
 
+[GA/EA](lecture/ea/readme.md)               <!-- because of sub-sub-dirs -->
 [Intro EA/GA](lecture/ea/intro-ea.md)
 [Genetische Algorithmen](lecture/ea/ga.md)
 
+[CSP](lecture/csp/readme.md)                <!-- because of sub-sub-dirs -->
 [Einführung Constraints](lecture/csp/intro-csp.md)
 [Lösen von diskreten CSP](lecture/csp/backtrackingsearch.md)
 [CSP und Heuristiken](lecture/csp/heuristics-csp.md)
 [Kantenkonsistenz und AC-3](lecture/csp/ac3.md)
 
+[Games](lecture/games/readme.md)            <!-- because of sub-sub-dirs -->
 [Optimale Spiele](lecture/games/intro-games.md)
 [Minimax](lecture/games/minimax.md)
 [Minimax und Heuristiken](lecture/games/heuristics-minimax.md)
 [Alpha-Beta-Pruning](lecture/games/alphabeta.md)
 
+[DTL](lecture/dtl/readme.md)                <!-- because of sub-sub-dirs -->
 [Machine Learning 101](lecture/dtl/mlbasics.md)
 [CAL2](lecture/dtl/cal2.md)
 [Pruning](lecture/dtl/pruning.md)
@@ -156,6 +162,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Entropie](lecture/dtl/entropy.md)
 [ID3 und C4.5](lecture/dtl/id3.md)
 
+[NN](lecture/nn/readme.md)                  <!-- because of sub-sub-dirs -->
 [Perzeptron](lecture/nn/nn1_perceptron.md)
 [Lineare Regression](lecture/nn/nn2_linear_regression.md)
 [Logistische Regression](lecture/nn/nn3_logistic_regression.md)
@@ -166,9 +173,11 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Performanzanalyse](lecture/nn/nn8_testing.md)
 <!-- [Large Language Models](lecture/nn/nn9_llm.md) -->
 
+[NB](lecture/naivebayes/readme.md)      <!-- because of sub-sub-dirs -->
 [Wahrscheinlichkeitstheorie](lecture/naivebayes/probability.md)
 [Naive Bayes](lecture/naivebayes/nb.md)
 
+[Logic](lecture/logic/readme.md)        <!-- because of sub-sub-dirs -->
 [Einführung Logik](lecture/logic/intro-logic.md)
 [Syntax und Semantik](lecture/logic/syntax.md)
 [Modelle](lecture/logic/modelle.md)
