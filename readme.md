@@ -136,17 +136,17 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Gradientensuche](lecture/search/local/gradient.md)
 [Simulated Annealing](lecture/search/local/annealing.md)
 
-[Intro EA/GA](lecture/ea/intro.md)
+[Intro EA/GA](lecture/ea/intro-ea.md)
 [Genetische Algorithmen](lecture/ea/ga.md)
 
-[Einführung Constraints](lecture/csp/intro.md)
+[Einführung Constraints](lecture/csp/intro-csp.md)
 [Lösen von diskreten CSP](lecture/csp/backtrackingsearch.md)
-[CSP und Heuristiken](lecture/csp/heuristics.md)
+[CSP und Heuristiken](lecture/csp/heuristics-csp.md)
 [Kantenkonsistenz und AC-3](lecture/csp/ac3.md)
 
-[Optimale Spiele](lecture/games/intro.md)
+[Optimale Spiele](lecture/games/intro-games.md)
 [Minimax](lecture/games/minimax.md)
-[Minimax und Heuristiken](lecture/games/heuristics.md)
+[Minimax und Heuristiken](lecture/games/heuristics-minimax.md)
 [Alpha-Beta-Pruning](lecture/games/alphabeta.md)
 
 [Machine Learning 101](lecture/dtl/mlbasics.md)
@@ -169,7 +169,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [Wahrscheinlichkeitstheorie](lecture/naivebayes/probability.md)
 [Naive Bayes](lecture/naivebayes/nb.md)
 
-[Einführung Logik](lecture/logic/intro.md)
+[Einführung Logik](lecture/logic/intro-logic.md)
 [Syntax und Semantik](lecture/logic/syntax.md)
 [Modelle](lecture/logic/modelle.md)
 [Resolutionsbeweise](lecture/logic/resolution.md)
