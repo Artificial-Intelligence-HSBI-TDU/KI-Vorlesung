@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Modelle"
 menuTitle: "Modelle"
 author: "Carsten Gips (HSBI)"
-weight: 3
 readings:
   - key: "Russell2020"
 tldr: |

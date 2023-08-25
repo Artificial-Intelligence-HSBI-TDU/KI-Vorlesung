@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "CAL2"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Unger1981"
     comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"

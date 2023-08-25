@@ -3,7 +3,6 @@ archetype: lecture-cy
 title: "NN1 - Das Perzeptron"
 menuTitle: "NN1 - Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 1
 outcomes:
   - k2: "Arten des maschinellen Lernens"
   - k2: "Formalisierung eines ML-Problems, insbesondere Klassifizierung: Datensatz, Merkmalraum, Hyphotesenfunktion, Zielfunktion"

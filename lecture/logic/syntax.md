@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Einführung Syntax und Semantik"
 menuTitle: "Syntax und Semantik"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
 tldr: |

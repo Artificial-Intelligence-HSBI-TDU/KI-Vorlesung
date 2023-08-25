@@ -3,7 +3,6 @@ archetype: lecture-cy
 title: "NN8 - Performanzanalyse"
 menuTitle: "NN8 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 8
 outcomes:
   - k2: "Performanzmetriken für die Evaluierung von Klassifizierungsmodellen"
   - k2: "Wahrheitsmatrix (engl. Confusion Matrix)"

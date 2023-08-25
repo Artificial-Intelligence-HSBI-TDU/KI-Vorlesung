@@ -3,7 +3,6 @@ archetype: lecture-cy
 title: "NN6 - Backpropagation"
 menuTitle: "NN6 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 6
 outcomes:
   - k2: "Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe"
   - k2: "Ableitung der Aktivierungsfunktionen"

@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Intro: Was ist Künstliche Intelligenz?"
 menuTitle: "Einführung KI"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Kapitel 1: Introduction"

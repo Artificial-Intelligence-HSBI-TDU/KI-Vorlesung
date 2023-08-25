@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Minimax"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "Minimax: Abschnitt 6.2"

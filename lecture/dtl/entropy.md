@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Entropie"
 author: "Carsten Gips (HSBI)"
-weight: 5
 readings:
   - key: "Ertel2017"
     comment: "Entscheidungsbäume: Abschnitt 8.4"

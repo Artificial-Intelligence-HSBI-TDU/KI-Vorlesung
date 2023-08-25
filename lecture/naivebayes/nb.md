@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Klassifikation mit Naive Bayes"
 menuTitle: "Naive Bayes"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "Kapitel 12"

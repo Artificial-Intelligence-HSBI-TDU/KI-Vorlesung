@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Suche"
-weight: 2
 ---
 
 

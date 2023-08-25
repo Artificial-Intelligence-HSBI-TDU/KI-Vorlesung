@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Einführung Evolutionäre Algorithmen"
 menuTitle: "Intro EA/GA"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "GA: Abschnitt 4.1.4"

@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Alpha-Beta-Pruning"
 author: "Carsten Gips (HSBI)"
-weight: 4
 readings:
   - key: "Russell2020"
     comment: "Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3"

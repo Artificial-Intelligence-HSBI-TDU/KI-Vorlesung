@@ -3,7 +3,6 @@ archetype: lecture-cy
 title: "NN7 - Training & Testing"
 menuTitle: "NN7 - Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 7
 outcomes:
   - k2: "Trainings-, Validierungs- und Testfehler"
   - k2: "Zweck einer Testmenge"

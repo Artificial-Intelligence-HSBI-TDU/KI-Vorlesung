@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Wiederholung Wahrscheinlichkeitstheorie"
 menuTitle: "Wahrscheinlichkeiten"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Kapitel 12"

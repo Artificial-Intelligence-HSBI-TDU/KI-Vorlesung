@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Suche mit Tiefensuche"
 menuTitle: "Tiefensuche"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Tiefensuche: Abschnitt 3.4.3"

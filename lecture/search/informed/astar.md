@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Suche mit `A*`{=markdown}"
 menuTitle: "`A*`{=markdown}"
 author: "Carsten Gips (HSBI)"
-weight: 3
 readings:
   - key: "Russell2020"
     comment: "`A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"

@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Naive Bayes"
-weight: 7
 ---
 
 

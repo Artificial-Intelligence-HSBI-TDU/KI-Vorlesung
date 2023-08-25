@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Prüfungsvorbereitung (HSBI)"
 author: "Carsten Gips (HSBI)"
-weight: 6
 tldr: |
   ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
 

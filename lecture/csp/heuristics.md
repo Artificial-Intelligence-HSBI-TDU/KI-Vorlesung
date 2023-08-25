@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Heuristiken"
 author: "Carsten Gips (HSBI)"
-weight: 3
 readings:
   - key: "Russell2020"
     comment: "CSP, Backtracking/Heuristiken: Abschnitt 5.3"

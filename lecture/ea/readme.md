@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Genetische Algorithmen"
-weight: 3
 ---
 
 

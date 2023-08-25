@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Lokale Suche: Simulated Annealing"
 menuTitle: "Simulated Annealing"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "Simulated Annealing: Abschnitt 4.1.2"

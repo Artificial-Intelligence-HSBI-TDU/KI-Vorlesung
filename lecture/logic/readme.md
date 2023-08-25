@@ -2,7 +2,6 @@
 archetype: "chapter"
 title: "Logik"
 menuTitle: "Logik"
-weight: 9
 ---
 
 

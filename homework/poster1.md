@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Projekt 1: Poster"
 author: "Carsten Gips (HSBI)"
-weight: 5
 
 hidden: true
 ---

@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Pruning"
 author: "Carsten Gips (HSBI)"
-weight: 3
 readings:
   - key: "Ertel2017"
     comment: "Entscheidungsbäume: Abschnitt 8.4"

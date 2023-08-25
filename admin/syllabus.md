@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Syllabus"
 author: "Carsten Gips (HSBI)"
-weight: 2
 
 hidden: true
 ---

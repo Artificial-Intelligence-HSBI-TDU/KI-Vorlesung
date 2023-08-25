@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Suche mit Branch-and-Bound"
 menuTitle: "Branch-and-Bound"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2"

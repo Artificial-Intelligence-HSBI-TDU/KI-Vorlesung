@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Kantenkonsistenz und AC-3"
 menuTitle: "AC-3"
 author: "Carsten Gips (HSBI)"
-weight: 4
 readings:
   - key: "Russell2020"
     comment: "CSP, AC-3: Abschnitt 5.2"

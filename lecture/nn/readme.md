@@ -2,7 +2,6 @@
 archetype: "chapter"
 title: "NN: Einführung in Neuronale Netze"
 menuTitle: "Neuronale Netze"
-weight: 8
 ---
 
 

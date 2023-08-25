@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 2.1: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 6
 
 hidden: true
 ---

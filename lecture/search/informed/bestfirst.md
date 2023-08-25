@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Suche mit Best First"
 menuTitle: "Best First"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"

@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Praktikum/Übung"
-weight: 0
 
 hidden: true
 _build:

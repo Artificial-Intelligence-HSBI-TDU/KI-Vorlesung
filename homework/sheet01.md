@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.1: Problemlösen, Suche"
 author: "Carsten Gips (HSBI)"
-weight: 1
 
 hidden: true
 ---

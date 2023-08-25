@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Entscheidungsbäume"
-weight: 6
 ---
 
 

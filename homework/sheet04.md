@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.4: Entscheidungsbäume"
 author: "Carsten Gips (HSBI)"
-weight: 4
 
 hidden: true
 ---

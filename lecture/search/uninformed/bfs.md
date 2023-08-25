@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Suche mit Breitensuche"
 menuTitle: "Breitensuche"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "Breitensuche: Abschnitt 3.4.1"

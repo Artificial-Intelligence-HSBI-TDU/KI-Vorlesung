@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 1.2: Lokale Suche, GA"
 author: "Carsten Gips (HSBI)"
-weight: 2
 
 hidden: true
 ---

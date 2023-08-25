@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Einführung Constraints"
 menuTitle: "Intro"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "CSP: Abschnitt 5.1"

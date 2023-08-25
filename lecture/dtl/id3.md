@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "ID3 und C4.5"
 author: "Carsten Gips (HSBI)"
-weight: 6
 readings:
   - key: "Ertel2017"
     comment: "Entscheidungsbäume: Abschnitt 8.4"

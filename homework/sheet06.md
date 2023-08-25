@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Meilenstein 2.2: Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 7
 
 hidden: true
 ---

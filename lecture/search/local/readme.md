@@ -1,7 +1,6 @@
 ---
 archetype: "chapter"
 title: "Lokale Suche"
-weight: 4
 ---
 
 

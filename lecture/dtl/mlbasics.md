@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Machine Learning 101"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Lernen: Abschnitte 19.1 und 19.2"

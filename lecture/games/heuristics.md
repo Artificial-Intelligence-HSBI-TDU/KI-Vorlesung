@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Heuristiken"
 author: "Carsten Gips (HSBI)"
-weight: 3
 readings:
   - key: "Russell2020"
     comment: "Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5"

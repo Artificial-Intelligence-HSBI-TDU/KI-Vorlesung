@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Lokale Suche: Gradientensuche"
 menuTitle: "Gradientensuche"
 author: "Carsten Gips (HSBI)"
-weight: 1
 readings:
   - key: "Russell2020"
     comment: "Gradientenabstieg: Abschnitt 4.1.1"

@@ -3,7 +3,6 @@ archetype: lecture-cy
 title: "NN3 - Logistische Regression"
 menuTitle: "NN3 - Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 3
 outcomes:
   - k2: "Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron und linearer Regression"
   - k2: "Formalisierung"

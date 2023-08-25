@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Lösen von diskreten CSP"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "CSP, Backtracking: Abschnitt 5.3"

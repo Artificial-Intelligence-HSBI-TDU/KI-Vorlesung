@@ -3,7 +3,6 @@ archetype: lecture-cg
 title: "Modellierung mit Genetischen Algorithmen"
 menuTitle: "Genetische Algorithmen"
 author: "Carsten Gips (HSBI)"
-weight: 2
 readings:
   - key: "Russell2020"
     comment: "GA: Abschnitt 4.1.4"

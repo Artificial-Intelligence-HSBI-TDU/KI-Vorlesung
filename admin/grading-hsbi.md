@@ -2,7 +2,6 @@
 archetype: lecture-cg
 title: "Note und Credits (HSBI)"
 author: "Carsten Gips (HSBI)"
-weight: 4
 
 hidden: true
 ---

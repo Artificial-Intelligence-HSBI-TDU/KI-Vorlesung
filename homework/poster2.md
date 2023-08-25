@@ -2,7 +2,6 @@
 archetype: assignment
 title: "Projekt 2: Poster"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-weight: 9
 
 hidden: true
 ---
@@ -19,13 +18,13 @@ Beachten Sie, dass beide Datensätze mehr als zwei Klassen besitzen und die Anza
 Beachten Sie auch, dass Sie im Falle von Softmax eine leicht modifizierte Version des Cross-Entropy Verlustes verwenden müssen ($k$ ist die Anzahl der Klassen):
 $$L = \sum\limits_{i = 1}^{k} (y_{i}\log\left(\hat{y}_{i}\right)$$
 
-In Ihrer Implementierung sollten die Anzahl der Schichten, die Anzahl der Zellen pro Schicht und die Aktivierungsfunktion für jede Schicht einstellbar sein und ein Experimentieren mit unterschiedlichen Konfigurationen erlauben. 
+In Ihrer Implementierung sollten die Anzahl der Schichten, die Anzahl der Zellen pro Schicht und die Aktivierungsfunktion für jede Schicht einstellbar sein und ein Experimentieren mit unterschiedlichen Konfigurationen erlauben.
 
 Hinweise zu den einzelnen Schritten (Initialisierung der Gewichte, Forwärtslauf, Berechnung der Kosten, Rückwärtslauf, Aktualisierung der Gewichte, Training, ...) finden Sie im [MLP-Starter-Code](files/mlp_starter.ipynb). Der Code im Starter ist als Anregung gedacht, Sie können auch unabhängig programmieren. Sie sollten auf jeden Fall alle Berechnungen in vektorisierter Form durchführen.
 
 *   Laden Sie die Daten und legen Sie einen Teil als Testdaten zur Seite. Setzen Sie diese Testdaten auf keinen Fall während des Trainings Ihrer Modelle ein.
-*   Trainieren Sie **mindestens drei Netzwerke** mit unterschiedlichen Konfigurationen und vergleichen Sie die Ergebnisse. 
-*   Stellen Sie für alle Experimente den Verlauf der Trainingskosten graphisch dar. Geben Sie am Ende des Trainings die Trainings-Accuracy (Erfolgsrate auf den Trainingsdaten) und Test-Accuracy (Erfolgsrate auf den Testdaten) an, um die Performanz Ihrer Modelle zu vergleichen. 
+*   Trainieren Sie **mindestens drei Netzwerke** mit unterschiedlichen Konfigurationen und vergleichen Sie die Ergebnisse.
+*   Stellen Sie für alle Experimente den Verlauf der Trainingskosten graphisch dar. Geben Sie am Ende des Trainings die Trainings-Accuracy (Erfolgsrate auf den Trainingsdaten) und Test-Accuracy (Erfolgsrate auf den Testdaten) an, um die Performanz Ihrer Modelle zu vergleichen.
 *   Untersuchen Sie Ihre Modelle in Bezug auf Überanpassung.
 
 Erstellen Sie ein DIN-A2-Poster, auf dem Sie **Ihren Datensatz**, **Ihre Modelle** und die **Ergebnisse Ihrer Experimente** übersichtlich präsentieren. Beschränken Sie sich dabei
