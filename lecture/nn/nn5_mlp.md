@@ -22,7 +22,7 @@ youtube:
     - link: "https://youtu.be/7ltwa5WWuKI"
       name: "NN5.1 - MLP Forward Propagation"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/markdown/nn/files/NN5-MLP.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN5-MLP.pdf"
     name: "NN5-MLP.pdf"
 ---
 

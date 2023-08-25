@@ -27,7 +27,7 @@ youtube:
     - link: "https://youtu.be/7XATTMNI-gI"
       name: "NN7.3 - Beispiel"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/markdown/nn/files/NN7-Testing-Validierung.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN7-Testing-Validierung.pdf"
     name: "NN7-Testing-Validierung.pdf"
 ---
 
