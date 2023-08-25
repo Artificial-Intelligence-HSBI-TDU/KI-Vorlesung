@@ -1,0 +1,31 @@
+name: TESTS
+on:
+  # triggered by pull requests
+  pull_request:
+  # triggered manually
+  workflow_dispatch:
+
+jobs:
+  # try building slides (pandoc, beamer)
+  test_slides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: cagix/pandoc-lecture@master
+        with:
+          texlive: 'true'
+
+      - run: make slides
+
+  # try building lecture notes (hugo)
+  test_hugo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: cagix/pandoc-lecture@master
+        with:
+          hugo: 'true'
+
+      - run: make web
