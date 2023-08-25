@@ -23,7 +23,7 @@ hidden: true
 -   **Gesamtnote**:
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters, angeboten in
     beiden Prüfungszeiträumen (Tipps zur Vorbereitung siehe
-    `["Prüfungsvorbereitung (HSBI)"]({{< ref "/org/exams-hsbi" >}})`{=markdown})
+    `["Prüfungsvorbereitung (HSBI)"]({{< ref "/admin/exams-hsbi" >}})`{=markdown})
 
 
 ## Hinweise zum Praktikum HSBI

@@ -1,7 +1,7 @@
 - week: "KW38 (TDU)"
   date: "Mo, 18.09.23 (Sprechstunde: Canan und Carsten)"
   lecture:
-    - topic: /org/syllabus
+    - topic: /admin/syllabus
       notes: "Kick-Off (Zoom)"
     - topic: /intro/intro-ai
     - topic: /intro/problems
@@ -49,7 +49,7 @@
 - week: "KW41 (HSBI)"
   date: "Mo, 09.10.23 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /org/syllabus
+    - topic: /admin/syllabus
       notes: "Kick-Off (Zoom)"
     - topic: /intro/intro-ai
     - topic: /intro/problems
@@ -199,7 +199,7 @@
     - topic: /logic/syntax
     - topic: /logic/modelle
     - topic: /logic/resolution
-    - topic: /org/syllabus
-    - topic: /org/exam/exam-hsbi
+    - topic: /admin/syllabus
+    - topic: /admin/exam/exam-hsbi
   misc_lecture:
     - notes: ">> nur @HSBI"
