@@ -64,6 +64,13 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/6754160d1977fb73c1d7f2052a1153fd073dc151853d4143c6f84622ffdb785baa6205e877ad448e1ba00fddd1c6528615c9dcb83528d32015e30a04201028f9"
     name: "VL Problemlösen"
+challenges: |
+    Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei Wesen tragen kann. Das Pferd kann den Fluss nicht allein überqueren.
+
+    Gesucht ist eine Möglichkeit, alle Elben und Orks über den Fluss zu bringen. Dabei darf zu keiner Zeit an keinem Ufer die Anzahl der sich dort befindlichen Orks größer sein als die der dort wartenden Elben, da es sonst zu Konflikten zwischen beiden Gruppen kommt.
+
+    1.  Formalisieren Sie das Problem (Zustände, Aktionen, Start- und Endzustand).
+    2.  Skizzieren Sie den Problemgraph.
 ---
 
 

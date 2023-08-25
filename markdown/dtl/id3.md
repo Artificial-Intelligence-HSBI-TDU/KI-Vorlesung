@@ -33,6 +33,21 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/aa69406cfdf0ce8b2b614dd475926b56c8025239c5b4458ec7741c7733c6077fd192e4db6f58c8a3e39b7b895c2ddedf83327640326bfbedc2617c4f75bc59bd"
     name: "VL ID3 und C4.5"
+challenges: |
+    **Textklassifikation**
+
+    Betrachten Sie die folgenden Aussagen:
+
+    > *   Patient A hat weder Husten noch Fieber und ist gesund.
+    > *   Patient B hat Husten, aber kein Fieber und ist gesund.
+    > *   Patient C hat keinen Husten, aber Fieber. Er ist krank.
+    > *   Patient D hat Husten und kein Fieber und ist krank.
+    > *   Patient E hat Husten und Fieber. Er ist krank.
+
+    Aufgaben:
+
+    1. Trainieren Sie auf diesem Datensatz einen Klassifikator mit ID3.
+    2. Ist Patient F krank? Er hat Husten, aber kein Fieber.
 ---
 
 

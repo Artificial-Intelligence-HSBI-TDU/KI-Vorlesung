@@ -41,6 +41,35 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/f7c9b90ff9732933c8899548d0f89eb320b59efeee015383a765494b60b29578aae796e92bf7df5a621ed1f8a6dc50649e3820fcc74c698cd3f25e6987882a53"
     name: "VL Alpha-Beta-Pruning"
+challenges: |
+    **Optimale Spiele und MiniMax**
+
+    Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat verloren. Zu Beginn ist Weiß am Zug.
+
+    1.  Spielbaum
+
+    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils die Zahl der genommenen und der verbleibenden Hölzer an.
+
+    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler am Zug ist.
+
+    2.  Minimax
+
+    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls Schwarz gewonnen hat.
+
+    3.  Alpha-Beta-Pruning
+
+    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder weniger oder gleich viele Spielzüge wie mit Mnimax entwickelt? Begründen Sie Ihre Antwort.
+
+
+    **Minimax Handsimulation**
+
+    Betrachten Sie den folgenden Spielbaum:
+
+    ![](images/challenge1.png)
+
+    1. Führen Sie eine Handsimulation von Minimax durch und geben Sie die Minimax-Bewertungen an.
+    2. Führen Sie eine Handsimulation von Alpha-Beta-Pruning durch. Markieren Sie die Kanten, die bei Alpha-Beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+    3. Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.
 ---
 
 

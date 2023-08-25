@@ -42,6 +42,23 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/ccdf3f05e3eb4e19644f8505b53eeeb0219cddca7902d5840fae19a0816feebfc2c3800b54f3e95bd2a8f26405ea7c40385303a98f6d7d3c94c34c10f4be43d0"
     name: "VL Modellierung mit EA/GA"
+challenges: |
+    **Sudoku**
+
+    Ein $9 \times 9$-*Sudoku*-Rätsel soll mit einem GA gelöst werden.
+
+    Geben Sie für dieses Problem jeweils eine geeignete **Kodierung** der Individuen, passende Operatoren (**Crossover**, **Mutation**) und eine geeignete **Fitnessfunktion** an, damit das Problem mit einem GA gelöst werden kann. Begründen Sie Ihre Wahl!
+
+    Was würden Sie noch benötigen, um das Probleme mit Simulated Annealing lösen zu können?
+
+
+    **Travelling Salesman Problem**
+
+    Das *Travelling Salesman Problem* für 10 Städte, d.h. das Finden der  kürzesten Route zwischen 10 Städten, soll mit einem GA gelöst werden.
+
+    Geben Sie für dieses Problem jeweils eine geeignete **Kodierung** der Individuen, passende Operatoren (**Crossover**, **Mutation**) und eine geeignete **Fitnessfunktion** an, damit das Problem mit einem GA gelöst werden kann. Begründen Sie Ihre Wahl!
+
+    Was würden Sie noch benötigen, um das Probleme mit Simulated Annealing lösen zu können?
 ---
 
 

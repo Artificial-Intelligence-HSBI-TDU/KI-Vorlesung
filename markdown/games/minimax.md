@@ -30,6 +30,36 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/1d5286179490be0627b5a19793b423753cba79388b4966b654bde224a31af81c9481e85a30057276826b3d8f7836a042d0f9e15c2cb82613a4374050b62ca6d2"
     name: "VL Minimax"
+challenges: |
+    **Optimale Spiele und MiniMax**
+
+    Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat verloren. Zu Beginn ist Weiß am Zug.
+
+    1.  Spielbaum
+
+    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils die Zahl der genommenen und der verbleibenden Hölzer an.
+
+    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler am Zug ist.
+
+    2.  Minimax
+
+    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls Schwarz gewonnen hat.
+
+    3.  Optimaler Zug
+
+    Mit welchem Zug muss Weiß beginnen, um das Spiel garantiert zu gewinnen (beide Spieler verhalten sich stets optimal)? Argumentieren Sie mit der Minimax-Bewertung.
+
+
+    **Minimax generalisiert**
+
+    Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.
+
+    ![](images/challenge2.png)
+
+    Die Spieler heißen 1, 2 und 3. Im Gegensatz zu Zwei-Personen-Nullsummenspielen liefert die Bewertungsfunktion nun Tripel $(x_1, x_2, x_3)$ zurück, wobei $x_i$ der Wert für Spieler $i$ ist. Allianzen zwischen Spielern sind nicht erlaubt.
+
+    1. Vervollständigen Sie den Spielbaum, indem Sie alle inneren Knoten und den Wurzelknoten mit den entsprechenden Wert-Tripeln annotieren.
+    2. Wie könnte man "Allianzen" zwischen Spielern modellieren?
 ---
 
 

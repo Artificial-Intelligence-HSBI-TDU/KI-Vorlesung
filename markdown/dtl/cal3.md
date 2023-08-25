@@ -28,6 +28,21 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/6acb93574f25ff341b5a09487fc153ea28252e12d3960342bc7d05a463e56b338f53f366338229df44f5c486400465fddf58e727fd8f9cc56904dd67c7c8ecb8"
     name: "VL CAL3"
+challenges: |
+    **Textklassifikation**
+
+    Betrachten Sie die folgenden Aussagen:
+
+    > *   Patient A hat weder Husten noch Fieber und ist gesund.
+    > *   Patient B hat Husten, aber kein Fieber und ist gesund.
+    > *   Patient C hat keinen Husten, aber Fieber. Er ist krank.
+    > *   Patient D hat Husten und kein Fieber und ist krank.
+    > *   Patient E hat Husten und Fieber. Er ist krank.
+
+    Aufgaben:
+
+    1. Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL3 ($S_1=4, S_2=0.6$).
+    2. Ist Patient F krank? Er hat Husten, aber kein Fieber.
 ---
 
 

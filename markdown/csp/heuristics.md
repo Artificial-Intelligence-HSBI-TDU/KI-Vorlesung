@@ -37,6 +37,25 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/66689545e201ad90f6f2007f472f3b430ec37ebaa5321315764ae687983bbcb049bc217a1b0852e2d5364eae1223153d567558533246bd58b0db5cc1fa3278c5"
     name: "VL CSP, Heuristiken"
+challenges: |
+    Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
+
+    $$\langle
+        \lbrace v_1, v_2, v_3, v_4 \rbrace,
+        \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+        \lbrace c_1, c_2, c_3, c_4 \rbrace
+    \rangle$$
+
+    mit
+
+    *   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
+    *   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
+    *   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
+    *   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
+
+    1.  Zeichen Sie den Constraint-Graph.
+    2.  Welche Variable würde bei der Anwendung von _MRV_ und _Gradheuristik_ im ersten Schritt bei der Suche mit der BT-Search ausgewählt?
+    3.  Geben Sie eine Lösung für das Problem an.
 ---
 
 

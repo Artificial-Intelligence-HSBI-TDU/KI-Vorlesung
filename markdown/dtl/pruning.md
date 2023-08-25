@@ -39,6 +39,13 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/badf517191aa92377bf6ca9e63f90e8083d64de43f85b230b336cbf2b56e805d45063cf0974a6292ee39cf010aef11e87d3cf7ff9c9bd7e7c0a64f61128504e2"
     name: "VL Pruning"
+challenges: |
+    Vereinfachen Sie schrittweise den Baum
+    $$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
+    so weit wie möglich.
+
+    Nutzen Sie die linearisierte Schreibweise.
+    Geben Sie die jeweils verwendete Regel an.
 ---
 
 
