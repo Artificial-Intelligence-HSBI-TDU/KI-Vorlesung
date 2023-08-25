@@ -45,7 +45,7 @@ BIBTEX     = ki.bib
 METADATA   = metadata.yaml
 
 ## Top level directory for source files
-SRC_DIR    = .
+SRC_DIR    = lecture
 
 ## local.yaml allows to override settings in hugo_conf.yaml
 HUGO_LOCAL = $(wildcard local.yaml)
