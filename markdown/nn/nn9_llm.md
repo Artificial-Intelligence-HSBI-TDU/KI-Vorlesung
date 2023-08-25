@@ -19,7 +19,7 @@ youtube:
     - link: "https://youtu.be/TODO"
       name: "NN9.2 - TODO"
 attachments:
-  - link: "files/NN9-LLM.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/markdown/nn/files/NN9-LLM.pdf"
     name: "NN9-LLM.pdf"
 
 sketch: true
