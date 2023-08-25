@@ -37,6 +37,29 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/66bfcc3ba546355d5a4d41394912380e4641fc8498e8f257a98c602c11dd6ff33eb7f2ddb4fdebd433be30e9fcf91f99aaf1a484b46d2f34feac63a6e777a177"
     name: "VL CAL2"
+challenges: |
+    **Modellierung**
+
+    Sie stehen vor der Entscheidung, ob Sie sich zur Vorbereitung auf die
+    Flipped-Classroom-Sitzung noch das Skript anschauen.
+
+    Zeichnen Sie einen Entscheidungsbaum, der Ihnen bei der Entscheidung hilft.
+
+
+    **Textklassifikation**
+
+    Betrachten Sie die folgenden Aussagen:
+
+    > *   Patient A hat weder Husten noch Fieber und ist gesund.
+    > *   Patient B hat Husten, aber kein Fieber und ist gesund.
+    > *   Patient C hat keinen Husten, aber Fieber. Er ist krank.
+    > *   Patient D hat Husten und kein Fieber und ist krank.
+    > *   Patient E hat Husten und Fieber. Er ist krank.
+
+    Aufgaben:
+
+    1. Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL2.
+    2. Ist Patient F krank? Er hat Husten, aber kein Fieber.
 ---
 
 

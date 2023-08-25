@@ -37,6 +37,30 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509"
     name: "VL `A*`{=markdown}"
+challenges: |
+    **Definition**: Eine Heuristik $h_1(n)$ _dominiert_ eine Heuristik $h_2(n)$, wenn für alle Knoten $n$ gilt $h_1(n) \ge h_2(n)$.
+
+    Was bedeutet das?
+
+    Wie wirkt sich die Nutzung einer dominierenden Heuristik $h_1(n)$ in A\* aus (im Vergleich zur Nutzung einer Heuristik $h_2$, die von $h_1$ dominiert wird)?
+
+    Geben Sie selbstgewählte Beispiele an.
+
+
+    **Informierte und uninformierte Suche**
+
+    Betrachten Sie folgendes Problem:
+
+    ![](images/challenges_robby.png)
+
+    Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur. Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang durchschritten werden darf. Die Werte an den Pfeilen geben die Kosten für den Übergang von einem Raum in den anderen an.
+
+    Ein Roboter `Robbi`, der sich zunächst im Kopierer-Raum aufhält, soll den Weg zur Bibliothek finden und dort das Buch aufnehmen. Der Roboter kann sich immer nur entlang den Pfeilen in einen Nachbarraum bewegen (Aktion `move`). Die Kosten für das Aufnehmen des Buches betragen 3 Einheiten (Aktion `take`). Weitere Aktionen gibt es nicht.
+
+    1.  Zeichnen Sie den Problemgraphen. Markieren Sie Start- und Zielknoten.
+    2.  Finden Sie den Weg mit Tiefensuche und mit Breitensuche (Tree-Search). Welche Unterschiede stellen Sie fest?
+    3.  Welche Wege würden mit der jeweiligen Graph-Search-Variante nicht weiter untersucht?
+    4.  Suchen Sie nun einen Weg mit A\* (Tree-Search). Definieren Sie zunächst Restkostenschätzungen. Was müssen Sie dabei beachten?
 ---
 
 

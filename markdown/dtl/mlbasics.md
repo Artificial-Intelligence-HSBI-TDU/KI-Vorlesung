@@ -43,6 +43,31 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/c871a589c1e95782173b9a3c1efbb79ac38dfb4d871df8b39fd5851562036619df4d6b31cec0b630c1c88ff928bbcb2429ea194e2cc795720fce214367009242"
     name: "VL Machine Learning 101"
+challenges: |
+    **Modellierung**
+
+    Sie stehen vor der Entscheidung, ob Sie sich zur Vorbereitung auf die
+    Flipped-Classroom-Sitzung noch das Skript anschauen. Welche Attribute
+    benötigen Sie, um die Situation zu beschreiben?
+
+
+    **Metriken für Klassifikatoren**
+
+    Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
+
+    | Nr. | Alter    | Einkommen | Bildung  | Kandidat | Vorhersage |
+    |:----|:---------|:----------|:---------|:---------|:-----------|
+    | 1   | $\ge 35$ | hoch      | Abitur   | O        | O          |
+    | 2   | $< 35$   | niedrig   | Master   | O        | O          |
+    | 3   | $\ge 35$ | hoch      | Bachelor | M        | M          |
+    | 4   | $\ge 35$ | niedrig   | Abitur   | M        | M          |
+    | 5   | $\ge 35$ | hoch      | Master   | O        | O          |
+    | 6   | $< 35$   | hoch      | Bachelor | O        | M          |
+    | 7   | $< 35$   | niedrig   | Abitur   | M        | O          |
+
+    Auf diesem Datensatz wurde ein Klassifikator trainiert, die Trainingsergebnisse sind in der Tabelle unter "Vorhersage" angegeben.
+
+    Bewerten Sie den Klassifikator.
 ---
 
 

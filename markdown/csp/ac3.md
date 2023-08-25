@@ -43,6 +43,85 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/8fa264520ed3ce80f71936e084254d14c579ff19e2c724e914a6df761d12c3c7d22d62ebf625cc9181f29e288922785522e7cc60f9e7ce6cb369a3148b115ca7"
     name: "VL CSP, AC-3"
+challenges: |
+    **Fingerübungen**
+
+    Ist die Kante zwischen a und b konsistent?
+
+    ![](images/csp_challenge_a.png)
+
+
+    Wann ist der Graph lokal konsistent?
+
+    ![](images/csp_challenge_b.png)
+
+    - a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
+    - a {1,2}; b {2,3}; c {3}; d {1,2}
+    - a {1,3}; b {2,3}; c {1,3}; d {1,2,3}
+    - a {1,2}; b {2,3}; c {1,3}; d {1,2,3}
+
+
+    Wie sieht die Queue im nächsten Schritt mit AC3 aus?
+
+    ![](images/csp_challenge_c.png)
+
+    Aktuelle Queue: [ab, ac, ba, bc, ca, cb]
+
+    - [bc, ba, ca, cb, ab, ac]
+    - [ab, ac, ba, bc, ca, cb]
+    - [ac, ba, bc, ca, cb]
+    - [ac, ba, bc, ca, cb, ba]
+
+
+    **Kantenkonsistenz mit AC-3**
+
+    Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
+
+    $$\langle
+        \lbrace v_1, v_2, v_3, v_4 \rbrace,
+        \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+        \lbrace c_1, c_2, c_3, c_4 \rbrace
+    \rangle$$
+
+    mit
+
+    *   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
+    *   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
+    *   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
+    *   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
+
+
+    Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand der Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen $D_i$, für jede Iteration des Algorithmus an.
+
+    _Hinweis_: Da es hier vor allem um das Verständnis des Ablaufs von AC-3 geht, reichen die ersten 5 Schritte aus :)
+
+
+    **Forward Checking und Kantenkonsistenz**
+
+    Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
+
+    $$\langle
+        \lbrace v_1, v_2, v_3, v_4 \rbrace,
+        \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+        \lbrace c_1, c_2, c_3, c_4 \rbrace
+    \rangle$$
+
+    mit
+
+    *   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
+    *   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
+    *   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
+    *   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
+
+    Betrachten Sie die Zuweisung $\alpha = \lbrace v_1 \to  2 \rbrace$.
+
+    1.  Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die Wertebereiche der Variablen vor und nach dem Erzeugen der Kantenkonsistenz an.
+
+        _Hinweis_: Sie dürfen annehmen, dass der Wertebereich von Variablen mit bereits zugewiesenen Werten nur aus dem zugewiesenen Wert besteht, während unbelegte Variablen den vollen Wertebereich haben.
+
+        _Hinweis_: Sie müssen zur Lösung dieser Teilaufgabe nicht den AC-3 handsimulieren.
+
+    2.  Führen Sie Forward-Checking in $\alpha$ aus. Vergleichen Sie das Ergebnis mit (1).
 ---
 
 

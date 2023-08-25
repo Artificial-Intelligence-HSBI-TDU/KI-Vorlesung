@@ -32,6 +32,21 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/6c84f8e181911aa89818cac70de40087fcab1209f4e0264f77da811289a5420fd284bc89464822690ff7906a735c778bda490949bf69091a5420885cc5cdad69"
     name: "VL Entropie"
+challenges: |
+    **Entropie einer Trainingsmenge**
+
+    Betrachten Sie die folgenden Aussagen:
+
+    > *   Patient A hat weder Husten noch Fieber und ist gesund.
+    > *   Patient B hat Husten, aber kein Fieber und ist gesund.
+    > *   Patient C hat keinen Husten, aber Fieber. Er ist krank.
+    > *   Patient D hat Husten und kein Fieber und ist krank.
+    > *   Patient E hat Husten und Fieber. Er ist krank.
+
+    Aufgaben:
+
+    1.  Geben Sie die Entropie $H(S)$ der Trainingsmenge an.
+    2.  Berechnen Sie $R(H,A)$ (die mittlere Entropie der Trainingsmenge, nachdem Attribut $A$ gesehen wurde) für die einzelnen Attribute.
 ---
 
 

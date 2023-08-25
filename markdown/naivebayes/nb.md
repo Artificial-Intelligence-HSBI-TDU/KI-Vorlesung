@@ -72,6 +72,21 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/d84605cc9bccc5d1d8d589c2968726d32539aa629bff06e28096a834730bfd8c1bef1604fd09ee1aab906d30272c5fd1f31b11418fa2bdb2e2710a23dd382d1c"
     name: "VL Naive Bayes Klassifikation"
+challenges: |
+    **Textklassifikation**
+
+    Betrachten Sie die folgenden Aussagen:
+
+    > *   Patient A hat weder Husten noch Fieber und ist gesund.
+    > *   Patient B hat Husten, aber kein Fieber und ist gesund.
+    > *   Patient C hat keinen Husten, aber Fieber. Er ist krank.
+    > *   Patient D hat Husten und kein Fieber und ist krank.
+    > *   Patient E hat Husten und Fieber. Er ist krank.
+
+    Aufgaben:
+
+    1. Trainieren Sie auf diesem Datensatz einen Klassifikator mit NB.
+    2. Ist Patient F krank? Er hat Husten, aber kein Fieber.
 ---
 
 

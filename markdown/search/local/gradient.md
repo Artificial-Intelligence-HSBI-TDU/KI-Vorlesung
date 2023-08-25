@@ -29,6 +29,15 @@ youtube:
 fhmedia:
   - link: "https://www.hsbi.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed"
     name: "VL Gradientensuche"
+challenges: |
+    Betrachten Sie folgende Landkarte und Restwegschätzungen:
+
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
+    Quelle: [MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))
+
+    ![](images/challenge.png)
+
+    Finden Sie mit der **Gradienten-Suche** jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit der Best-First-Suche.
 ---
 
 
