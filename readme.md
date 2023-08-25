@@ -21,7 +21,7 @@ betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen Methoden-Baukas
 Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis für die
 Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
-Siehe `["Syllabus"]({{< ref "/admin/syllabus" >}})`{=markdown} zu Details.
+Siehe [Syllabus](admin/syllabus.md) zu Details.
 
 
 ## Team
@@ -62,10 +62,10 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen:
 
-| HSBI                                                                 | TDU                                                               |
-|:---------------------------------------------------------------------|:------------------------------------------------------------------|
-| `[Note und Credits]({{< ref "/admin/grading-hsbi" >}})`{=markdown}   | `[Note und Credits]({{< ref "/admin/grading-tdu" >}})`{=markdown}   |
-| `[Prüfungsvorbereitung]({{< ref "/admin/exams-hsbi" >}})`{=markdown} | `[Prüfungsvorbereitung]({{< ref "/admin/exams-tdu" >}})`{=markdown} |
+| HSBI                                        | TDU                                        |
+|:--------------------------------------------|:-------------------------------------------|
+| [Note und Credits](admin/grading-hsbi.md)   | [Note und Credits](admin/grading-tdu.md)   |
+| [Prüfungsvorbereitung](admin/exams-hsbi.md) | [Prüfungsvorbereitung](admin/exams-tdu.md) |
 
 
 ## Materialien
@@ -79,7 +79,7 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
     ISBN [978-3-319-58487-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4).
     DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
 
-Weitere empfohlene Literatur siehe `["Ressourcen"]({{< ref "/admin/resources" >}})`{=markdown}.
+Weitere empfohlene Literatur siehe [Ressourcen](admin/resources.md).
 
 
 ## Fahrplan

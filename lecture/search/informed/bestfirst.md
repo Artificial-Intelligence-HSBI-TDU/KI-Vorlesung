@@ -66,9 +66,9 @@ challenges: |
 
 ::: notes
 Varianten:
-*   `[Branch-and-Bound]({{< ref "/search/informed/branchandbound" >}})`{=markdown}
+*   [Branch-and-Bound](branchandbound.md)
 *   **Best First**
-*   `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
+*   [A*](astar.md)
 :::
 
 ## Best-First (*BF*, *BFS*)
@@ -112,7 +112,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 ::: notes
 ## Eigenschaften von BF
 
-Siehe `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
+Siehe [A*](astar.md)
 :::
 
 

@@ -52,7 +52,7 @@ Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} 
 
 ::: notes
 Varianten:
-*   `[Tiefensuche]({{< ref "/search/uninformed/dfs" >}})`{=markdown}
+*   [Tiefensuche](dfs.md)
 *   **Breitensuche**
 :::
 

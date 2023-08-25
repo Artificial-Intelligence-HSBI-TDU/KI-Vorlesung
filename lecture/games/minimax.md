@@ -157,7 +157,7 @@ def Min-Value(state):
 finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
 Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
 Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine `Eval()`-Funktion
-braucht (vgl. `["Minimax: Heuristiken"]({{< ref "/games/heuristics" >}})`{=markdown}).
+braucht (vgl. [Minimax: Heuristiken](heuristics.md)).
 
 Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen
 Parameter nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!

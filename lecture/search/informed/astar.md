@@ -89,8 +89,8 @@ challenges: |
 
 ::: notes
 Varianten:
-*   `[Branch-and-Bound]({{< ref "/search/informed/branchandbound" >}})`{=markdown}
-*   `[Best First]({{< ref "/search/informed/bestfirst" >}})`{=markdown}
+*   [Branch-and-Bound](branchandbound.md)
+*   [Best First](bestfirst.md)
 *   **A\***
 :::
 

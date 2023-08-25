@@ -11,7 +11,7 @@ hidden: true
 ## Rätsel mit GA
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
-Vorlesung `["CSP: Intro"]({{< ref "/csp/intro" >}})`{=markdown}). Starten
+Vorlesung [CSP: Intro](../lecture/csp/intro.md)). Starten
 Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine
 konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
 

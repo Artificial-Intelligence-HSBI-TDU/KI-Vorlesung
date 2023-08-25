@@ -63,8 +63,8 @@ fhmedia:
 ::: notes
 Varianten:
 *   **Branch-and-Bound**
-*   `[Best First]({{< ref "/search/informed/bestfirst" >}})`{=markdown}
-*   `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
+*   [Best First](bestfirst.md)
+*   [A*](astar.md)
 :::
 
 
@@ -146,7 +146,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 ::: notes
 ## Eigenschaften von BnB
 
-Siehe `[A*]({{< ref "/search/informed/astar" >}})`{=markdown}
+Siehe [A*](astar.md)
 :::
 
 
