@@ -117,6 +117,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 
 <!-- reference to all markdown pages used in the current semester (to be replaced using a proper schedule table) -->
 ::: slides
+<details>
 [Syllabus](admin/syllabus.md)
 [Resources](admin/resources.md)
 [Grading HSBI](admin/grading-hsbi.md)
@@ -192,6 +193,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 [B07](homework/sheet07.md)
 [P1](homework/poster1.md)
 [P2](homework/poster2.md)
+</details>
 :::
 
 
