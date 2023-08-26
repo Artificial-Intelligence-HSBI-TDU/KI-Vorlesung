@@ -12,11 +12,11 @@ theme:
 #themesDir: ".hugo"  ## this is either ${HOME}/.local/share/pandoc/hugo/ (local installation)
                      ## or ${XDG_DATA_HOME}/pandoc/hugo/ (docker container / GitHub action)
 
-contentDir: "temp/content"
-publishDir: "docs"
+#contentDir: "temp"  ## set via Makefile: $(TEMP_DIR)
+#publishDir: "docs"  ## set via Makefile: $(WEB_OUTPUT_DIR)
 
 params:
-  editURL: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/edit/master/markdown/"
+#  editURL: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/edit/master/lecture/"
   author: "cagix"
   titleSeparator: " "
   alwaysopen: false
@@ -31,6 +31,8 @@ params:
   disableMermaid: true
   themeVariant:
     - "auto"
+    - "zen-light"
+    - "zen-dark"
     - "relearn-light"
     - "relearn-dark"
     - "green"
@@ -44,13 +46,13 @@ menu:
       url: "/index.html#fahrplan"
       weight: 20
     - name: "<i class='fas fa-bookmark'></i> Praktikum/Übung"
-      url: "/assignments.html"
+      url: "/homework.html"
       weight: 30
     - name: "<i class='fas fa-bookmark'></i> Note/Credits"
       url: "/index.html#prüfungsform-note-und-credits"
       weight: 40
     - name: "<i class='fas fa-bookmark'></i> FAQ"
-      url: "/org/faq.html"
+      url: "/admin/faq.html"
       weight: 50
 
 outputs:

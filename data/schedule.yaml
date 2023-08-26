@@ -1,7 +1,7 @@
 - week: "KW38 (TDU)"
   date: "Mo, 18.09.23 (Sprechstunde: Canan und Carsten)"
   lecture:
-    - topic: /org/syllabus
+    - topic: /admin/syllabus
       notes: "Kick-Off (Zoom)"
     - topic: /intro/intro-ai
     - topic: /intro/problems
@@ -12,9 +12,9 @@
 - week: "KW39 (TDU)"
   date: "Mo, 25.09.23 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /games/intro
+    - topic: /games/intro-games
     - topic: /games/minimax
-    - topic: /games/heuristics
+    - topic: /games/heuristics-minimax
     - topic: /games/alphabeta
   misc_lecture:
     - notes: ">> nur @TDU"
@@ -49,7 +49,7 @@
 - week: "KW41 (HSBI)"
   date: "Mo, 09.10.23 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /org/syllabus
+    - topic: /admin/syllabus
       notes: "Kick-Off (Zoom)"
     - topic: /intro/intro-ai
     - topic: /intro/problems
@@ -84,9 +84,9 @@
 - week: "KW44"
   date: "Mo, 30.10.23 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /csp/intro
+    - topic: /csp/intro-csp
     - topic: /csp/backtrackingsearch
-    - topic: /csp/heuristics
+    - topic: /csp/heuristics-csp
     - topic: /csp/ac3
   assignment:
     - topic: sheet02
@@ -175,9 +175,9 @@
 - week: "KW02 (HSBI)"
   date: "Mo, 08.01.24 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /games/intro
+    - topic: /games/intro-games
     - topic: /games/minimax
-    - topic: /games/heuristics
+    - topic: /games/heuristics-minimax
     - topic: /games/alphabeta
   misc_lecture:
     - notes: ">> nur @HSBI"
@@ -195,11 +195,11 @@
 - week: "KW04 (HSBI)"
   date: "Mo, 22.01.24 (Sprechstunde: Carsten)"
   lecture:
-    - topic: /logic/intro
+    - topic: /logic/intro-logic
     - topic: /logic/syntax
     - topic: /logic/modelle
     - topic: /logic/resolution
-    - topic: /org/syllabus
-    - topic: /org/exam/exam-hsbi
+    - topic: /admin/syllabus
+    - topic: /admin/exam/exam-hsbi
   misc_lecture:
     - notes: ">> nur @HSBI"

@@ -34,6 +34,7 @@ pdf/
 .hugo_build.lock
 local.yaml
 /data/readings.yaml
+make.deps
 
 
 # JAVA, Scala #
