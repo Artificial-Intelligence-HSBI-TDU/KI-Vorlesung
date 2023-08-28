@@ -123,14 +123,49 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 `{{< tabs groupid="hochschule" >}}`{=markdown}
 `{{% tab title="HSBI" %}}`{=markdown}
 
-*   [Note und Credits HSBI](admin/grading-hsbi.md)
-*   [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)
+**Klausur plus Testat**, 5 ECTS
+
+*   **Testat**: Vergabe der Credit-Points
+
+    Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
+    Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
+    ein Testat bescheinigt wird.
+
+    Kriterien: Sie haben durch die Bearbeitung der Übungsaufgaben im Praktikum
+    mindestens 44 von insgesamt maximal 56 erreichbaren Punkten erreicht.
+
+*   **Klausur**: => Modulnote
+
+    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
+    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
 `{{% /tab %}}`{=markdown}
 `{{% tab title="TDU" %}}`{=markdown}
 
-*   [Note und Credits TDU](admin/grading-tdu.md)
-*   [Prüfungsvorbereitung TDU](admin/exams-tdu.md)
+**Notenzusammensetzung TDU**
+
+<!--
+| Prüfung         | Gewicht |
+|:----------------|---------|
+| Übung (UE)      | 40 %    |
+| Endprüfung (EP) | 60 %    |
+-->
+
+*   Endprüfung 60%
+
+    Die Endprüfung ist als schriftliche Prüfung auf dem Campus vorgesehen.
+
+    Es wird keine Zwischenprüfung stattfinden.
+
+*   Übung 40%
+
+    Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
+
+    Erfolgreiche Teilnahme bedeutet:
+
+    1.  Aufgaben bearbeiten und hochladen, und
+    2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
+    3.  Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung".
 
 `{{% /tab %}}`{=markdown}
 `{{< /tabs >}}`{=markdown}
