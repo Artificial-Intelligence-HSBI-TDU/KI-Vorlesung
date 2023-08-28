@@ -1,5 +1,5 @@
 ---
-archetype: "chapter"
+archetype: "default"
 title: "Praktikum/Übung"
 
 hidden: true

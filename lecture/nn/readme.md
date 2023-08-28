@@ -1,5 +1,5 @@
 ---
-archetype: "chapter"
+archetype: "default"
 title: "NN: Einführung in Neuronale Netze"
 menuTitle: "Neuronale Netze"
 ---
