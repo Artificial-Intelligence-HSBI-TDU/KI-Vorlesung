@@ -1,5 +1,5 @@
 ---
-archetype: "chapter"
+archetype: "default"
 title: "Constraintsolving"
 menuTitle: "CSP"
 ---
