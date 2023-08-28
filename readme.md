@@ -14,14 +14,39 @@ title: "KI W23"
 ## Kursbeschreibung
 
 Ausgehend von den Fragen "Was ist _Intelligenz_?" und "Was ist _künstliche_ Intelligenz?"
-werden wir uns in diesem Modul mit verschiedenen Teilgebieten der KI beschäftigen und
-uns anschauen, welche Methoden und Algorithmen es gibt und wie diese funktionieren. Dabei
+werden wir uns in diesem Modul mit **verschiedenen Teilgebieten der KI** beschäftigen und
+uns anschauen, welche **Methoden und Algorithmen** es gibt und wie diese funktionieren. Dabei
 werden wir auch das Gebiet _Machine Learning_ berühren, aber auch andere wichtige Gebiete
-betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen Methoden-Baukasten zur
+betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen **Methoden-Baukasten** zur
 Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis für die
 Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
-Siehe [Syllabus](admin/syllabus.md) zu Details.
+
+## Überblick Modulinhalte
+
+1.  Problemlösen
+    *   Zustände, Aktionen, Problemraum
+    *   Suche (blind, informiert): Breiten-, Tiefensuche, Best-First,
+        Branch-and-Bound, A-Stern
+    *   Lokale Suche: Gradientenabstieg, Genetische/Evolutionäre Algorithmen (GA/EA)
+    *   Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken
+    *   Constraints: Backtracking, Heuristiken, Propagation, AC-3
+
+2.  Maschinelles Lernen
+    *   Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung
+    *   Entscheidungsbäume: CAL2, CAL3, ID3, C4.5
+    *   Neuronale Netze
+        *   Perzeptron, Lernregel
+        *   Feedforward Multilayer Perzeptron (MLP), Backpropagation,
+            Trainings- vs. Generalisierungsfehler
+        *   Steuerung des Trainings: Crossvalidierung, Regularisierung
+        *   Ausblick: Support-Vektor-Maschinen
+    *   Naive Bayes Klassifikator
+
+3.  Inferenz, Logik
+    *   Prädikatenlogik: Modellierung, semantische und formale Beweise,
+        Unifikation, Resolution
+    *   Ausblick: Anwendung in Prolog
 
 
 ## Team
