@@ -13,7 +13,6 @@ Wir werden die Vorlesungen an beiden Hochschulen (TDU, HSBI) im Co-Teaching geme
 durchführen. Deshalb werden alle Sitzungen (Vorlesung/Sprechstunde und Übung/Praktikum)
 online über Zoom durchgeführt.
 
-
 ## Flipped Classroom
 
 Wir drehen die Vorlesungen vom Ablauf her "um" - daher die Bezeichnung "Flipped Classroom".
@@ -28,17 +27,38 @@ passende Fallstudien lösen.
 
 Das setzt voraus, dass Sie vorbereitet in die Stunde kommen und sich aktiv einbringen.
 
+## Prüfungsform "Testat plus Klausur"
 
-## Bearbeitung der Übungsaufgaben
+Die Prüfung an sich besteht aus einer **Klausur**, die Sie in jedem der beiden Prüfungszeiträume
+absolvieren können. Die Klausurnote entspricht der Note für das Modul.
+
+Für die erfolgreiche Teilnahme am Praktikum erhalten Sie ein **Testat**. Sie erhalten die CPS
+für das Modul erst, wenn Sie das Testat haben.
+
+Testat und Note sind im Prinzip unabhängig voneinander: Sie können nur das Testat machen oder
+nur an der Klausur teilnehmen. Sie benötigen aber beide Elemente, um das Modul abschließen zu
+können.
+
+Prüfung (Termin 1+2): Die Termine werden rechtzeitig vom Prüfungsamt bekannt gegeben. Sie
+benötigen am Prüfungstag Ihre HSBI-Zugangsdaten (User, Passwort), einen Studierendenausweis und
+Personalausweis sowie Ihren DIN-A4-Spickzettel. Prüfungsrelevant sind die im "Fahrplan"
+verlinkten Inhalte.
+
+
+## Praktium/Übung
+
+### Bearbeitung der Übungsaufgaben
 
 Die Übungsaufgaben sollen in internationalen 2er-Teams (oder anderenfalls einzeln)
 bearbeitet und gelöst werden.
 
+Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von
+Lösungen ist nicht erlaubt!
+
 Das gegenseitige Kennenlernen und die Team-Bildung für die Bearbeitung der Übungsaufgaben
 erfolgt in der ersten Übung/im ersten Praktikum am Mittwoch, dem 12.10.2022 (Woche 41).
 
-
-## Gruppenwahl
+### Gruppenwahl
 
 Wir haben in diesem Semester an der HSBI zwei Praktikumstermine (G1 und G2) und an der
 TDU drei Übungstermine (G1, G2, G3). Jede Person ist vom Stundenplan her einem dieser
@@ -64,42 +84,38 @@ Die Kleingruppen im ILIAS haben eine Kennzeichnung, die wir auch im Zoom für di
 Breakout-Sessions nutzen. So finden Sie im Zoom zu "Ihrer" Kleingruppe und können
 selbstständig in "Ihre" Breakout-Session gehen.
 
+### Abgabe der Lösungen
 
-## Abgabe der Lösungen
+Bei Textaufgaben laden Sie Ihre Lösungen als **PDF-Datei** im ILIAS hoch. Sie
+können die Lösung in einer Textdatei (Markdown, LaTeX, Word, ...) bearbeiten
+und als PDF exportieren. Alternativ können Sie Ihre Lösung auf Papier
+aufschreiben und mit einer App wie zum Beispiel CamScanner ein PDF erzeugen.
 
-Bitte laden Sie Ihre Lösung als eine **PDF-Datei** oder ein **Zip-Archiv** in die
-jeweilige Aufgabe im ILIAS hoch. Wenn Sie in einem internationalen 2er-Team arbeiten,
-muss bitte jeder Teampartner die Lösung selbst hochladen.
+Programmieraufgaben laden Sie bitte als **Zip-Archiv** der jeweiligen
+Quell-Dateien im ILIAS hoch.
 
-Dies ist die Voraussetzung für die darauf folgenden Leistungen: Vorstellen der Lösung
-in der Übung/im Praktikum und das Erteilen von Peer-Feedback!
+Die Poster laden bitte jeweils als **PDF-Datei** im ILIAS hoch.
 
-_Anmerkung_: Falls Sie mehrere Dateien hochladen wollen, erzeugen Sie bitte vor
-dem Upload lokal ein Zip-Archiv, welches Sie dann per Button "Datei einreichen"
-hochladen und abgeben. Bitte _nicht_ den Button "Mehrere Dateien als Zip-Archiv
-hochladen" nutzen!
+**Wichtig**: Jede Person muss ihre Lösung eigenständig im ILIAS hochladen.
+Das gilt auch, wenn Sie in internationalen 2er-Teams zusammenarbeiten.
 
 ![](images/ilias_upload.png){width="80%"}
 
+### Vorstellung der Lösungen
 
-## Vorstellung der Lösungen
+Die Vorstellung Ihrer Lösung im Praktikum kann mit einem Medium Ihrer Wahl
+stattfinden. Sie können zum Beispiel Ihren Bildschirm teilen und Ihre Lösung
+erklären. Sie brauchen nicht extra eine Präsentation anfertigen!
 
-In der Übung/im Praktikum gehen Sie in "Ihre" Breakout-Session und stellen sich
-gegenseitig Ihre Lösungen vor und diskutieren darüber.
+### How to Review
 
-Für die Teilnahme und die Bereitschaft, Ihre Lösung vorzustellen, gibt es Punkte.
-Wer zwar anwesend ist, aber seine Lösung nicht vorstellen kann/will, kann diese
-Punkte nicht bekommen.
+Nach der Ablauf der Deadline wird Ihnen durch ILIAS ein oder mehrere Reviews
+zugewiesen. Sie finden die Review-Kriterien (als Checklisten) und die
+anzufertigenden Reviews im ILIAS - gehen Sie dazu im Praktikumsbereich auf
+die jeweilige Aufgabe.
 
-**Bitte beachten Sie die von Ihnen gewählte bzw. die Ihnen zugewiesene Breakout-Gruppe.
-Ein Wechsel der (Breakout-) Gruppen ist nicht möglich.**
-
-
-## How to Review
-
-Sobald die Abgabefrist für eine Aufgabe abgelaufen ist, verteilt ILIAS automatisch
-an alle, die selbst eine Lösung hochgeladen haben, zufällige Aufforderungen zum
-Review anderer Abgaben.
+Während des Praktikums/der Übung füllen Sie bitte die Review-Checklisten aus
+und stellen Sie diese im ILIAS ein.
 
 Die Reviews werden automatisch innerhalb Ihrer Kleingruppe (Breakout-Gruppe)
 verteilt. Sie finden die angeforderten Reviews im ILIAS in der jeweiligen Aufgabe.
@@ -151,8 +167,7 @@ Feedbacks sehen Sie anhand der Kriterien, welche Aspekte wichtig waren und wo Si
 vielleicht noch einmal nachschauen sollten. Das von den anderen Studierenden empfangene
 Feedback kann Sie im Lernprozess unterstützen.
 
-
-## Poster
+### Poster
 
 Für die beiden Poster-Sessions führen Sie die Ergebnisse der jeweiligen Meilensteine
 zusammen und erstellen Sie ein Poster, welches Sie dann als Lösung abgeben, vorstellen
@@ -161,23 +176,28 @@ und wofür Sie sich gegenseitig Feedback erteilen.
 Eine Anleitung sowie Vorlagen finden Sie hier:
 ["How to create beautiful and effective academic posters in PowerPoint"](https://www.brightcarbon.com/blog/effective-academic-posters-powerpoint/).
 
+### Punktevergabe
 
-## TDU, G3
+Sie erhalten für jeden der 7 Meilensteine und jede der beiden Poster-Sessions
+bis zu 4P:
 
-Für die TDU-Studierenden wird der Termin "G3" nur mit TDU-Studierenden besetzt sein
-(es gibt nur zwei Termine an der HSBI).
+-   1P für das Hochladen der Lösung im ILIAS
+-   1P für das Vorstellen der Lösung im Praktikum
+-   2P für das Erstellen des Peer-Feedbacks
 
-Die Übungen in Termin "G3" werden abweichend in **Google Meet** durchgeführt (nicht im
-Zoom).
+Ihre Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive
+Beschäftigung mit der jeweiligen Aufgabe erkennen lassen.
 
-Für den Termin "G3" gibt es keine zusätzliche Zeitverschiebung/-änderung ab dem
-31.10.2022 durch die Umstellung auf Winterzeit, d.h. diese Gruppe bleibt das ganze
-Semester über bei Mi, 16:30 - 18:00 Uhr (TR).
+**Wichtig**: Beachten Sie, dass die Punkte aufeinander aufbauen: Ohne Abgabe
+der Lösung im ILIAS können Sie Ihre Lösung nicht vorstellen und auch kein
+Peer-Feedback abgeben.
 
-Die restlichen Regeln finden hier aber dennoch Anwendung.
+Für die Poster gibt es zusätzlich je bis zu 10P, die nach inhaltlichen und
+formalen Kriterien durch die Dozenten vergeben werden.
 
+Damit können Sie maximal (7+2)x 4 + 2x 10 = 56 Punkte im Praktikum erreichen.
 
-## Verspätete Abgaben, Krankheit
+### Verspätete Abgaben, Krankheit
 
 Es gibt keine verspäteten Abgaben. Das sind 0P.
 
