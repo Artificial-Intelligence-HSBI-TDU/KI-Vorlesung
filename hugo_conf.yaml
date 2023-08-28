@@ -40,13 +40,13 @@ params:
 menu:
   shortcuts:
     - name: "<i class='fas fa-bookmark'></i> Zeiten"
-      url: "/index.html#vorlesung-2-sws"
+      url: "/index.html#kursformat"
       weight: 10
     - name: "<i class='fas fa-bookmark'></i> Fahrplan"
       url: "/index.html#fahrplan"
       weight: 20
-    - name: "<i class='fas fa-bookmark'></i> Praktikum/Übung"
-      url: "/homework.html"
+    - name: "<i class='fas fa-bookmark'></i> Aufgabenblätter"
+      url: "/index.html#praktikumübung"
       weight: 30
     - name: "<i class='fas fa-bookmark'></i> Note/Credits"
       url: "/index.html#prüfungsform-note-und-credits"
