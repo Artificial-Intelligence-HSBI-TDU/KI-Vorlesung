@@ -95,6 +95,8 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 
 ## Materialien
 
+### Literatur
+
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
     Russell, S. und Norvig, P., Pearson, 2020.
     ISBN [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
@@ -104,7 +106,16 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
     ISBN [978-3-319-58487-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4).
     DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
 
-Weitere empfohlene Literatur siehe [Ressourcen](admin/resources.md).
+3.  "An Introduction to Machine Learning".
+    Kubat, M., Springer, 2017.
+    ISBN [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
+    DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
+
+### Tools
+
+*   [github.com/aimacode](https://github.com/aimacode)
+*   [WEKA](https://www.cs.waikato.ac.nz/ml/weka/)
+*   [scikit-learn](https://scikit-learn.org)
 
 
 ## Fahrplan
@@ -143,8 +154,6 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 <!-- reference to all markdown pages used in the current semester (to be replaced using a proper schedule table) -->
 ::: slides
 <details>
-[Syllabus](admin/syllabus.md)
-[Resources](admin/resources.md)
 [Grading HSBI](admin/grading-hsbi.md)
 [Grading TDU](admin/grading-tdu.md)
 [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)
