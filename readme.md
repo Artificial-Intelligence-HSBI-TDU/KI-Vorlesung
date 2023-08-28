@@ -62,23 +62,56 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ### Vorlesung: 2 SWS
 
-| HSBI (09.10.23 - 27.10.23) | HSBI (30.10.23 - 26.01.24) | TDU (18.09.23 - 22.12.23)  |
-|:---------------------------|:---------------------------|:---------------------------|
-| Mo, 10:00 - 11:30 Uhr (DE) | Mo, 09:00 - 10:30 Uhr (DE) | Mo, 11:00 - 12:30 Uhr (TR) |
-| online/XXXX                | online                     | online                     |
+`{{< tabs groupid="hochschule" >}}`{=markdown}
+`{{% tab title="HSBI" %}}`{=markdown}
 
-Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]/[Moodle]**)
+| 09.10.23 - 27.10.23        | 30.10.23 - 26.01.24        |
+|:---------------------------|:---------------------------|
+| Mo, 10:00 - 11:30 Uhr (DE) | Mo, 09:00 - 10:30 Uhr (DE) |
+| online/XXXX                | online/XXXX                |
 
-### Übung / Praktikum: 2 SWS
+Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
-|    | HSBI (09.10.23 - 26.01.24)   | TDU (18.09.23 - 22.12.23)    |
-|:---|:-----------------------------|:-----------------------------|
-| G1 | XX, XX:XX bis XX:XX Uhr (DE) | XX, XX:XX bis XX:XX Uhr (TR) |
-| G2 | XX, XX:XX bis XX:XX Uhr (DE) | XX, XX:XX bis XX:XX Uhr (TR) |
-| G3 | -                            | XX, XX:XX bis XX:XX Uhr (TR) |
-|    | online/XXXX                  | online                       |
+`{{% /tab %}}`{=markdown}
+`{{% tab title="TDU" %}}`{=markdown}
 
-**Zugangsdaten siehe [ILIAS]/[Moodle]**
+| 18.09.23 - 22.12.23        |
+|:---------------------------|
+| Mo, 11:00 - 12:30 Uhr (TR) |
+| online                     |
+
+Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
+
+`{{% /tab %}}`{=markdown}
+`{{< /tabs >}}`{=markdown}
+
+### Praktikum/Übung: 2 SWS
+
+`{{< tabs groupid="hochschule" >}}`{=markdown}
+`{{% tab title="HSBI" %}}`{=markdown}
+
+| Praktikumsgruppe | 09.10.23 - 26.01.24          |
+|:-----------------|:-----------------------------|
+| G1               | XX, XX:XX bis XX:XX Uhr (DE) |
+| G2               | XX, XX:XX bis XX:XX Uhr (DE) |
+|                  | online/XXXX                  |
+
+Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
+
+`{{% /tab %}}`{=markdown}
+`{{% tab title="TDU" %}}`{=markdown}
+
+| Übungsgruppe | 18.09.23 - 22.12.23          |
+|:-------------|:-----------------------------|
+| G1           | XX, XX:XX bis XX:XX Uhr (TR) |
+| G2           | XX, XX:XX bis XX:XX Uhr (TR) |
+| G3           | XX, XX:XX bis XX:XX Uhr (TR) |
+|              | online                       |
+
+Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
+
+`{{% /tab %}}`{=markdown}
+`{{< /tabs >}}`{=markdown}
 
 [ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
 [Moodle]: https://muh.moodle.tau.edu.tr/course/view.php?id=3
@@ -87,10 +120,20 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen:
 
-| HSBI                                        | TDU                                        |
-|:--------------------------------------------|:-------------------------------------------|
-| [Note und Credits](admin/grading-hsbi.md)   | [Note und Credits](admin/grading-tdu.md)   |
-| [Prüfungsvorbereitung](admin/exams-hsbi.md) | [Prüfungsvorbereitung](admin/exams-tdu.md) |
+`{{< tabs groupid="hochschule" >}}`{=markdown}
+`{{% tab title="HSBI" %}}`{=markdown}
+
+*   [Note und Credits HSBI](admin/grading-hsbi.md)
+*   [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)
+
+`{{% /tab %}}`{=markdown}
+`{{% tab title="TDU" %}}`{=markdown}
+
+*   [Note und Credits TDU](admin/grading-tdu.md)
+*   [Prüfungsvorbereitung TDU](admin/exams-tdu.md)
+
+`{{% /tab %}}`{=markdown}
+`{{< /tabs >}}`{=markdown}
 
 
 ## Materialien
@@ -120,10 +163,157 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 
 ## Fahrplan
 
-`{{< schedule >}}`{=markdown}
+### Vorlesung
 
-**Hinweis**: Abgabe der Hausaufgaben bis jeweils XX:XX Uhr (DE), Deadline für das Feedback
-je bis XX:XX Uhr (DE) am angegebenen Tag (jeweils im ILIAS bzw. Moodle).
+`{{< tabs groupid="hochschule" >}}`{=markdown}
+`{{% tab title="HSBI" %}}`{=markdown}
+
+| Woche | Datum        | Themen                                                                                                        | Lead    | Start Bearbeitung Übungsaufgaben |
+|:-----:|:-------------|:--------------------------------------------------------------------------------------------------------------|:--------|:---------------------------------|
+|  41   | Mo, 09.10.23 | Orga HSBI (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                   | Carsten |                                  |
+|  42   | Mo, 16.10.23 | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten | [B01]                            |
+|  43   | Mo, 23.10.23 | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten | [B02]                            |
+|  44   | Mo, 30.10.23 | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten | [B03]                            |
+|  45   | Mo, 06.11.23 | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten | [B04]                            |
+|  46   | Mo, 13.11.23 | [Perzeptron]                                                                                                  | Canan   | [B05]                            |
+|  47   | Mo, 20.11.23 | [Lineare Regression]                                                                                          | Canan   | [B06]                            |
+|  48   | Mo, 27.11.23 | [Logistische Regression]                                                                                      | Canan   | [B07]                            |
+|  49   | Mo, 04.12.23 | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B08]                            |
+|  50   | Mo, 11.12.23 | [Backpropagation]                                                                                             | Canan   | [B09]                            |
+|  51   | Mo, 18.12.23 | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                                  |
+|  02   | Mo, 08.01.24 | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B10]                            |
+|  03   | Mo, 15.01.24 | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B11]                            |
+|  04   | Mo, 22.01.24 | [Einführung Logik] \| [Syntax und Semantik] \| [Modelle] \| [Resolutionsbeweise]                              | Carsten |                                  |
+|  04   | Mo, 22.01.24 | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                                  |
+
+`{{% /tab %}}`{=markdown}
+`{{% tab title="TDU" %}}`{=markdown}
+
+| Woche | Datum        | Themen                                                                                                        | Lead           | Start Bearbeitung Übungsaufgaben |
+|:-----:|:-------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:---------------------------------|
+|  38   | Mo, 18.09.23 | Orga TDU (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                    | Canan, Carsten |                                  |
+|  39   | Mo, 25.09.23 | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B10]                            |
+|  40   | Mo, 02.10.23 | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B11]                            |
+|  41   | Mo, 09.10.23 | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten        | [B04]                            |
+|  42   | Mo, 16.10.23 | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten        | [B01]                            |
+|  43   | Mo, 23.10.23 | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten        | [B02]                            |
+|  44   | Mo, 30.10.23 | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten        | [B03]                            |
+|  45   | Mo, 06.11.23 | **Zwischenprüfung**                                                                                           |                |                                  |
+|  46   | Mo, 13.11.23 | [Perzeptron]                                                                                                  | Canan          | [B05]                            |
+|  47   | Mo, 20.11.23 | [Lineare Regression]                                                                                          | Canan          | [B06]                            |
+|  48   | Mo, 27.11.23 | [Logistische Regression]                                                                                      | Canan          | [B07]                            |
+|  49   | Mo, 04.12.23 | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B08]                            |
+|  50   | Mo, 11.12.23 | [Backpropagation]                                                                                             | Canan          | [B09]                            |
+|  51   | Mo, 18.12.23 | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                                  |
+
+`{{% /tab %}}`{=markdown}
+`{{< /tabs >}}`{=markdown}
+
+[FAQ]: admin/faq.md
+
+[Einführung KI]: lecture/intro/intro-ai.md
+[Problemlösen]: lecture/intro/problems.md
+
+[Tiefensuche]: lecture/search/uninformed/dfs.md
+[Breitensuche]: lecture/search/uninformed/bfs.md
+[Branch-and-Bound]: lecture/search/informed/branchandbound.md
+[Best First]: lecture/search/informed/bestfirst.md
+[A-Stern]: lecture//search/informed/astar.md
+[Gradientensuche]: lecture/search/local/gradient.md
+[Simulated Annealing]: lecture/search/local/annealing.md
+
+[Intro EA/GA]: lecture/ea/intro-ea.md
+[Genetische Algorithmen]: lecture/ea/ga.md
+
+[Einführung Constraints]: lecture/csp/intro-csp.md
+[Lösen von diskreten CSP]: lecture/csp/backtrackingsearch.md
+[CSP und Heuristiken]: lecture/csp/heuristics-csp.md
+[Kantenkonsistenz und AC-3]: lecture/csp/ac3.md
+
+[Optimale Spiele]: lecture/games/intro-games.md
+[Minimax]: lecture/games/minimax.md
+[Minimax und Heuristiken]: lecture/games/heuristics-minimax.md
+[Alpha-Beta-Pruning]: lecture/games/alphabeta.md
+
+[Machine Learning 101]: lecture/dtl/mlbasics.md
+[CAL2]: lecture/dtl/cal2.md
+[Pruning]: lecture/dtl/pruning.md
+[CAL3]: lecture/dtl/cal3.md
+[Entropie]: lecture/dtl/entropy.md
+[ID3 und C4.5]: lecture/dtl/id3.md
+
+[Perzeptron]: lecture/nn/nn1_perceptron.md
+[Lineare Regression]: lecture/nn/nn2_linear_regression.md
+[Logistische Regression]: lecture/nn/nn3_logistic_regression.md
+[Overfitting]: lecture/nn/nn4_overfitting.md
+[Multilayer Perceptron]: lecture/nn/nn5_mlp.md
+[Backpropagation]: lecture/nn/nn6_backprop.md
+[Training & Testing]: lecture/nn/nn7_training_testing.md
+[Performanzanalyse]: lecture/nn/nn8_testing.md
+<!-- [Large Language Models]: lecture/nn/nn9_llm.md -->
+
+[Wahrscheinlichkeitstheorie]: lecture/naivebayes/probability.md
+[Naive Bayes]: lecture/naivebayes/nb.md
+
+[Einführung Logik]: lecture/logic/intro-logic.md
+[Syntax und Semantik]: lecture/logic/syntax.md
+[Modelle]: lecture/logic/modelle.md
+[Resolutionsbeweise]: lecture/logic/resolution.md
+
+
+### Praktikum/Übung
+
+`{{< tabs groupid="hochschule" >}}`{=markdown}
+`{{% tab title="HSBI" %}}`{=markdown}
+
+| Woche | Blatt                  | Abgabe ILIAS                                                                                                                                                                                                       | Vorstellung Praktikum |
+|:-----:|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
+|  43   | [B01]: Suche           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  44   | [B02]: EA/GA           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  45   | [B03]: CSP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  46   | [B04]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  47   | [B05]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  48   | [B06]: Lin. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  49   | [B07]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  50   | [B08]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  51   | [B09]: Backprop        | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  03   | [B10]: Minimax         | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  04   | [B11]: NB              | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+
+`{{% /tab %}}`{=markdown}
+`{{% tab title="TDU" %}}`{=markdown}
+
+| Woche | Blatt                  | Abgabe Google Classroom                                    | Vorstellung Übung |
+|:-----:|:-----------------------|:-----------------------------------------------------------|:------------------|
+|  40   | [B10]: Minimax         | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  41   | [B11]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  42   | [B04]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  43   | [B01]: Suche           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  44   | [B02]: EA/GA           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  46   | [B03]: CSP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  47   | [B05]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  48   | [B06]: Lin. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  49   | [B07]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  50   | [B08]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+
+`{{% /tab %}}`{=markdown}
+`{{< /tabs >}}`{=markdown}
+
+[B01]: homework/sheet01.md
+[B02]: homework/sheet02.md
+[B03]: homework/sheet03.md
+[B04]: homework/sheet04.md
+[B05]: homework/sheet05.md
+[B06]: homework/sheet06.md
+[B07]: homework/sheet07.md
+<!-- TODO physisch noch nicht vorhanden
+[B08]: homework/sheet08.md
+[B09]: homework/sheet09.md
+[B10]: homework/sheet10.md
+[B11]: homework/sheet11.md
+-->
+<!-- [P1]: homework/poster1.md -->
+<!-- [P2]: homework/poster2.md -->
 
 
 ## Förderungen und Kooperationen
@@ -149,86 +339,6 @@ Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Ver
 von der Stiftung Innovation in der Hochschullehre gefördert.
 
 ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
-
-
-<!-- reference to all markdown pages used in the current semester (to be replaced using a proper schedule table) -->
-::: slides
-<details>
-[Grading HSBI](admin/grading-hsbi.md)
-[Grading TDU](admin/grading-tdu.md)
-[Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)
-[Prüfungsvorbereitung TDU](admin/exams-tdu.md)
-[FAQ](admin/faq.md)
-
-[Intro](lecture/intro/readme.md)            <!-- because of sub-sub-dirs -->
-[Einführung KI](lecture/intro/intro-ai.md)
-[Problemlösen](lecture/intro/problems.md)
-
-[Search](lecture/search/readme.md)          <!-- because of sub-sub-dirs -->
-[Tiefensuche](lecture/search/uninformed/dfs.md)
-[Breitensuche](lecture/search/uninformed/bfs.md)
-[Branch-and-Bound](lecture/search/informed/branchandbound.md)
-[Best First](lecture/search/informed/bestfirst.md)
-[A-Stern](lecture//search/informed/astar.md)
-[Gradientensuche](lecture/search/local/gradient.md)
-[Simulated Annealing](lecture/search/local/annealing.md)
-
-[GA/EA](lecture/ea/readme.md)               <!-- because of sub-sub-dirs -->
-[Intro EA/GA](lecture/ea/intro-ea.md)
-[Genetische Algorithmen](lecture/ea/ga.md)
-
-[CSP](lecture/csp/readme.md)                <!-- because of sub-sub-dirs -->
-[Einführung Constraints](lecture/csp/intro-csp.md)
-[Lösen von diskreten CSP](lecture/csp/backtrackingsearch.md)
-[CSP und Heuristiken](lecture/csp/heuristics-csp.md)
-[Kantenkonsistenz und AC-3](lecture/csp/ac3.md)
-
-[Games](lecture/games/readme.md)            <!-- because of sub-sub-dirs -->
-[Optimale Spiele](lecture/games/intro-games.md)
-[Minimax](lecture/games/minimax.md)
-[Minimax und Heuristiken](lecture/games/heuristics-minimax.md)
-[Alpha-Beta-Pruning](lecture/games/alphabeta.md)
-
-[DTL](lecture/dtl/readme.md)                <!-- because of sub-sub-dirs -->
-[Machine Learning 101](lecture/dtl/mlbasics.md)
-[CAL2](lecture/dtl/cal2.md)
-[Pruning](lecture/dtl/pruning.md)
-[CAL3](lecture/dtl/cal3.md)
-[Entropie](lecture/dtl/entropy.md)
-[ID3 und C4.5](lecture/dtl/id3.md)
-
-[NN](lecture/nn/readme.md)                  <!-- because of sub-sub-dirs -->
-[Perzeptron](lecture/nn/nn1_perceptron.md)
-[Lineare Regression](lecture/nn/nn2_linear_regression.md)
-[Logistische Regression](lecture/nn/nn3_logistic_regression.md)
-[Overfitting](lecture/nn/nn4_overfitting.md)
-[Multilayer Perceptron](lecture/nn/nn5_mlp.md)
-[Backpropagation](lecture/nn/nn6_backprop.md)
-[Training & Testing](lecture/nn/nn7_training_testing.md)
-[Performanzanalyse](lecture/nn/nn8_testing.md)
-<!-- [Large Language Models](lecture/nn/nn9_llm.md) -->
-
-[NB](lecture/naivebayes/readme.md)      <!-- because of sub-sub-dirs -->
-[Wahrscheinlichkeitstheorie](lecture/naivebayes/probability.md)
-[Naive Bayes](lecture/naivebayes/nb.md)
-
-[Logic](lecture/logic/readme.md)        <!-- because of sub-sub-dirs -->
-[Einführung Logik](lecture/logic/intro-logic.md)
-[Syntax und Semantik](lecture/logic/syntax.md)
-[Modelle](lecture/logic/modelle.md)
-[Resolutionsbeweise](lecture/logic/resolution.md)
-
-[B01](homework/sheet01.md)
-[B02](homework/sheet02.md)
-[B03](homework/sheet03.md)
-[B04](homework/sheet04.md)
-[B05](homework/sheet05.md)
-[B06](homework/sheet06.md)
-[B07](homework/sheet07.md)
-[P1](homework/poster1.md)
-[P2](homework/poster2.md)
-</details>
-:::
 
 
 
