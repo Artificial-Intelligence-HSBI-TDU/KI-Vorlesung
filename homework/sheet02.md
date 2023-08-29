@@ -1,14 +1,15 @@
 ---
 archetype: assignment
-title: "Meilenstein 1.2: Lokale Suche, GA"
+title: "Blatt 02: Lokale Suche, GA"
 author: "Carsten Gips (HSBI)"
+points: 10
 
 hidden: true
 ---
 
 
 
-## Rätsel mit GA
+## A2.1: Modellierung von GA (2P)
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
 Vorlesung [CSP: Intro](../lecture/csp/intro-csp.md)). Starten
@@ -19,6 +20,15 @@ Geben Sie für beide Probleme je eine geeignete **Kodierung** der Individuen,
 passende Operatoren (**Crossover**, **Mutation**) und eine geeignete
 **Fitnessfunktion** an, damit die Probleme mit einem GA gelöst werden können.
 Begründen Sie Ihre Wahl!
+
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit
+Simulated Annealing lösen zu können?
+
+*Thema*: Modellierung für GA und Gradientensuche
+
+
+
+## A2.2: Implementierung (5P)
 
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
 Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
@@ -31,7 +41,29 @@ in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
 
 Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
-
 [`aima.core.search.local`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/local
 [`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
 [^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
+
+
+
+## A2.3: Anwendungen (3P)
+
+1.  Analysieren Sie die Implementierung von
+    [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)
+    ([Direktlink](https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects)).
+
+2.  Schauen Sie sich nun den ["Evolution Simulator"](https://www.openprocessing.org/sketch/205807)
+    an. Wie ist dort die Modellierung erfolgt (Kodierung, Operatoren, Fitnessfunktion)?
+
+3.  Wie werden EA/GA konkret im ["american fuzzy lop"](https://lcamtuf.coredump.cx/afl/)
+    eingesetzt?
+
+Welche Fitnessfunktion wurden in den drei Beispielen jeweils genutzt, wie die
+Individuen und die Operatoren codiert?
+
+Recherchieren Sie, in welchen *anderen* Anwendungen Evolutionäre Algorithmen
+eingesetzt werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt
+werden.
+
+*Thema*: Analyse von GA-Implementierungen
