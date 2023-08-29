@@ -118,8 +118,6 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 
 ### Prüfungsform, Note und Credits
 
-Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu den jeweiligen Prüfungsformen:
-
 `{{< tabs groupid="hochschule" >}}`{=markdown}
 `{{% tab title="HSBI" %}}`{=markdown}
 
@@ -151,13 +149,13 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 | Endprüfung (EP) | 60 %    |
 -->
 
-*   Endprüfung 60%
+*   **Endprüfung 60%**
 
     Die Endprüfung ist als schriftliche Prüfung auf dem Campus vorgesehen.
 
     Es wird keine Zwischenprüfung stattfinden.
 
-*   Übung 40%
+*   **Übung 40%**
 
     Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
 
@@ -293,6 +291,8 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 [Modelle]: lecture/logic/modelle.md
 [Resolutionsbeweise]: lecture/logic/resolution.md
 
+[Prüfungsvorbereitung HSBI]: admin/exams-hsbi.md
+[Prüfungsvorbereitung TDU]: admin/exams-tdu.md
 
 ### Praktikum/Übung
 
