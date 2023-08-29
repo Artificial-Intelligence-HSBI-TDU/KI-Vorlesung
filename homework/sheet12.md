@@ -6,23 +6,23 @@ points: 10
 
 hidden: true
 
-draft: true
+sketch: true
 ---
 
 
 
 ## A12.1: TODO (3P)
 
-TODO
+**TODO**
 
 
 
 ## A12.2: TODO (4P)
 
-TODO
+**TODO**
 
 
 
 ## A12.3: TODO (3P)
 
-TODO
+**TODO**

@@ -28,7 +28,7 @@ Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariab
 
 ## A8.3: Tensorflow Playground (4P)
 
-TODO
+**TODO**
 
 ### Winter 2022
 

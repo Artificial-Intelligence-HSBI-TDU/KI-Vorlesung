@@ -42,8 +42,3 @@ Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können h
 
 
 *Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
-
-
-
-
-

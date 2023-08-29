@@ -109,7 +109,6 @@ zulässigen Heuristik optimal ist.
 
 
 
-`{{% challenges %}}`{=markdown}
 ## A1.8 Bonus: Turing Test (1P)
 
 Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
@@ -129,5 +128,3 @@ oder [simonlaven.com](https://www.simonlaven.com/)
 oder [cleverbot.com/](https://www.cleverbot.com/)
 oder [home.pandorabots.com](https://home.pandorabots.com/en/)
 oder [github.com/alice-bot](https://github.com/alice-bot).
-
-`{{% /challenges %}}`{=markdown}

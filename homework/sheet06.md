@@ -9,6 +9,10 @@ hidden: true
 
 
 
+**TODO**
+
+
+
 ## A6.1: Lineare Regression und Gradientenabstieg (3P)
 
 Es sind folgende Trainingsdaten gegeben:
