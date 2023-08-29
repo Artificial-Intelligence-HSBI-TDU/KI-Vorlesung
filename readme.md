@@ -244,8 +244,6 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 `{{% /tab %}}`{=markdown}
 `{{< /tabs >}}`{=markdown}
 
-[FAQ]: admin/faq.md
-
 [Einführung KI]: lecture/intro/intro-ai.md
 [Problemlösen]: lecture/intro/problems.md
 
