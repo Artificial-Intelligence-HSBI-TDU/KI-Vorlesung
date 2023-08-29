@@ -23,7 +23,7 @@ Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Net
 Betrachten Sie das folgende MLP mit einer versteckten Schicht mit zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $\hat{y}$. Beide Zellen verwenden die Aktivierungsfunktion
 $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
-![Abbildung 1](images/mlp.png){width="80%"}
+![Abbildung 1](images/mlp.png){width="50%"}
 
 *   (1P) Berechnen Sie die Ausgabe $\hat{y}$ für die Eingabe $(x,y)=(0, 0.5)$. Wie groß ist der Fehler?
 

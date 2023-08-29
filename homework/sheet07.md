@@ -33,8 +33,8 @@ Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-In
 
 Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
 
-![Abbildung 1](images/contour_plot_a.png){width="80%"}
-![Abbildung 2](images/contour_plot_b.png){width="80%"}
+![Abbildung 1](images/contour_plot_a.png){width="40%"}
+![Abbildung 2](images/contour_plot_b.png){width="40%"}
 
 *   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
 *   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.

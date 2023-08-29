@@ -22,7 +22,7 @@ Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen er
 
 Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
 
-![Abbildung 1](images/perzeptron_netz.png){width="80%"}
+![Abbildung 1](images/perzeptron_netz.png){width="60%"}
 
 
 
