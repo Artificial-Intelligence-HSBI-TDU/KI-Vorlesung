@@ -47,18 +47,6 @@ challenges: |
     3.  Optimaler Zug
 
     Mit welchem Zug muss Weiß beginnen, um das Spiel garantiert zu gewinnen (beide Spieler verhalten sich stets optimal)? Argumentieren Sie mit der Minimax-Bewertung.
-
-
-    **Minimax generalisiert**
-
-    Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.
-
-    ![](images/challenge2.png)
-
-    Die Spieler heißen 1, 2 und 3. Im Gegensatz zu Zwei-Personen-Nullsummenspielen liefert die Bewertungsfunktion nun Tripel $(x_1, x_2, x_3)$ zurück, wobei $x_i$ der Wert für Spieler $i$ ist. Allianzen zwischen Spielern sind nicht erlaubt.
-
-    1. Vervollständigen Sie den Spielbaum, indem Sie alle inneren Knoten und den Wurzelknoten mit den entsprechenden Wert-Tripeln annotieren.
-    2. Wie könnte man "Allianzen" zwischen Spielern modellieren?
 ---
 
 

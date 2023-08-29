@@ -59,6 +59,25 @@ challenges: |
 
     1. Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL2.
     2. Ist Patient F krank? Er hat Husten, aber kein Fieber.
+
+
+    **Handsimulation CAL2**
+
+    Zeigen Sie mit einer Handsimulation, wie CAL2 mit dem folgenden
+    Trainingsdatensatz schrittweise einen Entscheidungsbaum generiert.
+    Nutzen Sie die linearisierte Schreibweise.
+
+    | Beispiel | $x_1$ | $x_2$ | $x_3$ | Klasse |
+    |:--------:|:-----:|:-----:|:-----:|:------:|
+    |    1     |   a   |   a   |   a   |   1    |
+    |    2     |   a   |   b   |   a   |   2    |
+    |    3     |   a   |   a   |   b   |   1    |
+    |    4     |   b   |   a   |   b   |   1    |
+    |    5     |   a   |   a   |   c   |   1    |
+    |    6     |   b   |   b   |   b   |   2    |
+
+    Welchen Entscheidungsbaum würde CAL2 lernen, wenn dem Trainingsdatensatz
+    der Vektor $((a,a,b), 2)$ als Beispiel Nr. 7 hinzugefügt werden würde?
 ---
 
 

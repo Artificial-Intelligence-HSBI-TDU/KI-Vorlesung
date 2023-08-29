@@ -216,8 +216,8 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 |  49   | Mo, 04.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B08]                            |
 |  50   | Mo, 11.12.23                            | [Backpropagation]                                                                                             | Canan   | [B09]                            |
 |  51   | Mo, 18.12.23                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                                  |
-|  02   | Mo, 08.01.24                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B10]                            |
-|  03   | Mo, 15.01.24                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B11]                            |
+|  02   | Mo, 08.01.24                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B11]                            |
+|  03   | Mo, 15.01.24                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B12]                            |
 |  04   | Mo, 22.01.24                            | [Einführung Logik] \| [Syntax und Semantik] \| [Modelle] \| [Resolutionsbeweise]                              | Carsten |                                  |
 |  04   | Mo, 22.01.24                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                                  |
 
@@ -227,8 +227,8 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 | Woche | Datum                                   | Themen                                                                                                        | Lead           | Start Bearbeitung Übungsaufgaben |
 |:-----:|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:---------------------------------|
 |  38   | Mo, 18.09.23                            | Orga TDU (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                    | Canan, Carsten |                                  |
-|  39   | Mo, 25.09.23                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B10]                            |
-|  40   | Mo, 02.10.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B11]                            |
+|  39   | Mo, 25.09.23                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B11]                            |
+|  40   | Mo, 02.10.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B12]                            |
 |  41   | Mo, 09.10.23 (**11:00 - 12:30** Uhr TR) | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten        | [B04]                            |
 |  42   | Mo, 16.10.23                            | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten        | [B01]                            |
 |  43   | Mo, 23.10.23                            | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten        | [B02]                            |
@@ -312,16 +312,16 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 |  49   | [B07]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  50   | [B08]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  51   | [B09]: Backprop        | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  03   | [B10]: Minimax         | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
-|  04   | [B11]: NB              | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  03   | [B11]: Minimax         | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  04   | [B12]: NB              | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
 
 `{{% /tab %}}`{=markdown}
 `{{% tab title="TDU" %}}`{=markdown}
 
 | Woche | Blatt                  | Abgabe Google Classroom                                    | Vorstellung Übung |
 |:-----:|:-----------------------|:-----------------------------------------------------------|:------------------|
-|  40   | [B10]: Minimax         | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  41   | [B11]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  40   | [B11]: Minimax         | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  41   | [B12]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  42   | [B04]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  43   | [B01]: Suche           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  44   | [B02]: EA/GA           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
@@ -341,12 +341,11 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 [B05]: homework/sheet05.md
 [B06]: homework/sheet06.md
 [B07]: homework/sheet07.md
-<!-- TODO physisch noch nicht vorhanden
 [B08]: homework/sheet08.md
 [B09]: homework/sheet09.md
 [B10]: homework/sheet10.md
 [B11]: homework/sheet11.md
--->
+[B12]: homework/sheet12.md
 <!-- [P1]: homework/poster1.md -->
 <!-- [P2]: homework/poster2.md -->
 

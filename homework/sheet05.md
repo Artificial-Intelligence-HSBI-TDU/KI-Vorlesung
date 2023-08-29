@@ -1,13 +1,37 @@
 ---
 archetype: assignment
-title: "Meilenstein 2.1: Perzeptron"
+title: "Blatt 05: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
+points: "10 Punkte"
 
 hidden: true
 ---
 
 
-## Perzeptron-Lernalgorithmus
+
+## A5.1: Entscheidungsgrenze (2P)
+
+*   (1P) Betrachten Sie das durch den Gewichtsvektor $ (w_0,w_1,w_2)^T = (2, 1, 1)^T $ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
+*   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
+    *   $(w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T$
+    *   $(w_0,w_1,w_2)^T = (200, 100, 100)^T$
+    *   $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$
+    *   $(w_0,w_1,w_2)^T = (-2, -1, -1)^T$
+
+*Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
+
+
+
+## A5.2: Logische Funktionen als Perzeptron (2P)
+
+*   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
+*   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
+
+*Thema*: Verständnis Perzeptron
+
+
+
+## A5.3: Perzeptron Lernalgorithmus (6P)
 
 Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus zu bekommen und eine Art empirische Approximation zu bestimmen.
 

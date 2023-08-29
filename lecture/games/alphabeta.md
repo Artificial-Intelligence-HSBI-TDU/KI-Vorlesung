@@ -57,18 +57,7 @@ challenges: |
 
     3.  Alpha-Beta-Pruning
 
-    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder weniger oder gleich viele Spielzüge wie mit Mnimax entwickelt? Begründen Sie Ihre Antwort.
-
-
-    **Minimax Handsimulation**
-
-    Betrachten Sie den folgenden Spielbaum:
-
-    ![](images/challenge1.png)
-
-    1. Führen Sie eine Handsimulation von Minimax durch und geben Sie die Minimax-Bewertungen an.
-    2. Führen Sie eine Handsimulation von Alpha-Beta-Pruning durch. Markieren Sie die Kanten, die bei Alpha-Beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
-    3. Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.
+    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder weniger oder gleich viele Spielzüge wie mit Minimax entwickelt? Begründen Sie Ihre Antwort.
 ---
 
 
