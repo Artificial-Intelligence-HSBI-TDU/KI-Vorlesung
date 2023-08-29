@@ -293,6 +293,8 @@ Hier finden Sie Informationen zum Ablauf der Übungen bzw. der Praktika sowie zu
 [Modelle]: lecture/logic/modelle.md
 [Resolutionsbeweise]: lecture/logic/resolution.md
 
+[Prüfungsvorbereitung HSBI]: admin/exams-hsbi.md
+[Prüfungsvorbereitung TDU]: admin/exams-tdu.md
 
 ### Praktikum/Übung
 
