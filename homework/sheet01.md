@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 01: Problemlösen, Suche"
 author: "Carsten Gips (HSBI)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---

@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 07: Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---

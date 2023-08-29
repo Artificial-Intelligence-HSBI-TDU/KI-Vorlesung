@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 11: Spiele"
 author: "Carsten Gips (HSBI)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---

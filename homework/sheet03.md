@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 03: Constraints"
 author: "Carsten Gips (HSBI)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---

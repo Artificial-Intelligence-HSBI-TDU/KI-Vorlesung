@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 05: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---

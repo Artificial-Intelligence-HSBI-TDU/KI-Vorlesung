@@ -2,7 +2,7 @@
 archetype: assignment
 title: "Blatt 04: Entscheidungsbäume"
 author: "Carsten Gips (HSBI)"
-points: 10
+points: "10 Punkte"
 
 hidden: true
 ---
