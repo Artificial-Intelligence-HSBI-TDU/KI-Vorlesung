@@ -16,7 +16,6 @@ theme:
 #publishDir: "docs"  ## set via Makefile: $(WEB_OUTPUT_DIR)
 
 params:
-#  editURL: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/edit/master/lecture/"
   author: "cagix"
   titleSeparator: " "
   alwaysopen: false
