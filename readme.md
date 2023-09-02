@@ -62,8 +62,8 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ### Vorlesung: 2 SWS
 
-`{{< tabs groupid="hochschule" >}}`{=markdown}
-`{{% tab title="HSBI" %}}`{=markdown}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="HSBI"}
 
 | 09.10.23 - 27.10.23        | 30.10.23 - 26.01.24        |
 |:---------------------------|:---------------------------|
@@ -72,8 +72,8 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
-`{{% /tab %}}`{=markdown}
-`{{% tab title="TDU" %}}`{=markdown}
+:::
+::: {.tab title="TDU"}
 
 | 18.09.23 - 22.12.23        |
 |:---------------------------|
@@ -82,13 +82,13 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 
-`{{% /tab %}}`{=markdown}
-`{{< /tabs >}}`{=markdown}
+:::
+::::::
 
 ### Praktikum/Übung: 2 SWS
 
-`{{< tabs groupid="hochschule" >}}`{=markdown}
-`{{% tab title="HSBI" %}}`{=markdown}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="HSBI"}
 
 | Praktikumsgruppe | 09.10.23 - 26.01.24          |
 |:-----------------|:-----------------------------|
@@ -98,8 +98,8 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
-`{{% /tab %}}`{=markdown}
-`{{% tab title="TDU" %}}`{=markdown}
+:::
+::: {.tab title="TDU"}
 
 | Übungsgruppe | 18.09.23 - 22.12.23          |
 |:-------------|:-----------------------------|
@@ -110,16 +110,16 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
 Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 
-`{{% /tab %}}`{=markdown}
-`{{< /tabs >}}`{=markdown}
+:::
+::::::
 
 [ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
 [Moodle]: https://muh.moodle.tau.edu.tr/course/view.php?id=3
 
 ### Prüfungsform, Note und Credits
 
-`{{< tabs groupid="hochschule" >}}`{=markdown}
-`{{% tab title="HSBI" %}}`{=markdown}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="HSBI"}
 
 **Klausur plus Testat**, 5 ECTS
 
@@ -137,8 +137,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
-`{{% /tab %}}`{=markdown}
-`{{% tab title="TDU" %}}`{=markdown}
+:::
+::: {.tab title="TDU"}
 
 **Notenzusammensetzung TDU**
 
@@ -165,8 +165,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
     2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
     3.  Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung".
 
-`{{% /tab %}}`{=markdown}
-`{{< /tabs >}}`{=markdown}
+:::
+::::::
 
 
 ## Materialien
@@ -198,8 +198,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 
 ### Vorlesung
 
-`{{< tabs groupid="hochschule" >}}`{=markdown}
-`{{% tab title="HSBI" %}}`{=markdown}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="HSBI"}
 
 | Woche | Datum                                   | Themen                                                                                                        | Lead    | Start Bearbeitung Übungsaufgaben |
 |:-----:|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------|:--------|:---------------------------------|
@@ -219,8 +219,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  04   | Mo, 22.01.24                            | [Einführung Logik] \| [Syntax und Semantik] \| [Modelle] \| [Resolutionsbeweise]                              | Carsten |                                  |
 |  04   | Mo, 22.01.24                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                                  |
 
-`{{% /tab %}}`{=markdown}
-`{{% tab title="TDU" %}}`{=markdown}
+:::
+::: {.tab title="TDU"}
 
 | Woche | Datum                                   | Themen                                                                                                        | Lead           | Start Bearbeitung Übungsaufgaben |
 |:-----:|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:---------------------------------|
@@ -239,8 +239,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  50   | Mo, 11.12.23                            | [Backpropagation]                                                                                             | Canan          | [B09]                            |
 |  51   | Mo, 18.12.23                            | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                                  |
 
-`{{% /tab %}}`{=markdown}
-`{{< /tabs >}}`{=markdown}
+:::
+::::::
 
 [Einführung KI]: lecture/intro/intro-ai.md
 [Problemlösen]: lecture/intro/problems.md
@@ -296,8 +296,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 
 ### Praktikum/Übung
 
-`{{< tabs groupid="hochschule" >}}`{=markdown}
-`{{% tab title="HSBI" %}}`{=markdown}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="HSBI"}
 
 | Woche | Blatt                  | Abgabe ILIAS                                                                                                                                                                                                       | Vorstellung Praktikum |
 |:-----:|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
@@ -313,8 +313,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  03   | [B11]: Minimax         | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
 |  04   | [B12]: NB              | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
 
-`{{% /tab %}}`{=markdown}
-`{{% tab title="TDU" %}}`{=markdown}
+:::
+::: {.tab title="TDU"}
 
 | Woche | Blatt                  | Abgabe Google Classroom                                    | Vorstellung Übung |
 |:-----:|:-----------------------|:-----------------------------------------------------------|:------------------|
@@ -329,8 +329,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  49   | [B07]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  50   | [B08]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 
-`{{% /tab %}}`{=markdown}
-`{{< /tabs >}}`{=markdown}
+:::
+::::::
 
 [B01]: homework/sheet01.md
 [B02]: homework/sheet02.md
