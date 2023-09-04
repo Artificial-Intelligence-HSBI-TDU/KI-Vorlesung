@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 04: Entscheidungsbäume"
+title: "Blatt 04: Constraints"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,94 +9,99 @@ hidden: true
 
 
 
-## A4.1: Entscheidungsbäume mit CAL3 und ID3 (6P)
+## A04.1: Logikrätsel (2P)
 
-Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die
-Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
+Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
 
-| Nr. | Alter    | Einkommen | Bildung  | Kandidat |
-|:----|:---------|:----------|:---------|:---------|
-| 1   | $\ge 35$ | hoch      | Abitur   | O        |
-| 2   | $< 35$   | niedrig   | Master   | O        |
-| 3   | $\ge 35$ | hoch      | Bachelor | M        |
-| 4   | $\ge 35$ | niedrig   | Abitur   | M        |
-| 5   | $\ge 35$ | hoch      | Master   | O        |
-| 6   | $< 35$   | hoch      | Bachelor | O        |
-| 7   | $< 35$   | niedrig   | Abitur   | M        |
+Formulieren Sie das Problem als CSP (Variablen, Wertebereiche, Constraints)
+zunächst auf dem Papier. Machen Sie sich klar, was die Variablen und was deren
+Wertebereiche sind. Schreiben Sie die Constraints als (unäre bzw. binäre)
+Relationen zwischen den Variablen auf.
 
-Trainieren Sie nacheinander mit den Verfahren CAL3 (3P) und ID3 (3P) auf der
-obigen Trainingsmenge je einen Entscheidungsbaum. Nutzen Sie für CAL3 dabei
-die Schwellen $S_1=4$ und $S_2=0.7$.
+*Hinweis*: Machen Sie sich zunächst klar, was die Variablen und was deren Wertebereiche
+sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
+
+*Thema*: Formulierung von Problemen als CSP
+
+
+
+## A04.2: Framework für Constraint Satisfaction (2P)
+
+Lösen Sie nun das Rätsel aus A04.1:
+
+1.  Lösen Sie das Rätsel zunächst mit dem Basis-Algorithmus `BT_Search` aus
+    der Vorlesung.
+2.  Erweitern Sie den Algorithmus um die Heuristiken MRV und Gradheuristik
+    und lösen Sie das Problem erneut. Vergleichen Sie die Ergebnisse und die
+    Laufzeit der beiden Experimente.
+3.  Wenden Sie vor dem Start von `BT_Search` den AC-3 an. Erhalten Sie damit
+    bereits eine Lösung (bzw. Unlösbarkeit)? Falls nicht, wenden Sie anschließend
+    den ergänzten Algorithmus aus Schritt (2) an. Vergleichen Sie wieder die
+    Ergebnisse und die Laufzeiten.
 
 Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
-Sie können gern auch die Java-Klassen im Paket [`aima.core.learning`] bzw. die
-Python-Klassen in [`learning.py`] als Ausgangspunkt nutzen.[^aima]
+Sie können gern auch die Java-Klassen im Paket [`aima.core.search.csp`] bzw. die
+Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.[^aima]
 
-[`aima.core.learning`]: https://github.com/aimacode/aima-java/blob/AIMA3e/aima-core/src/main/java/aima/core/learning/learners/DecisionTreeLearner.java
-[`learning.py`]: https://github.com/aimacode/aima-python/blob/master/learning.py
+["Einstein-Rätsels"]: https://de.wikipedia.org/wiki/Zebrar%C3%A4tsel
+[`aima.core.search.csp`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/csp
+[`csp.py`]: https://github.com/aimacode/aima-python/blob/master/csp.py
 [^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
 
 
 
-## A4.2: Pruning (1P)
+## A04.3: Kantenkonsistenz mit AC-3 (3P)
 
-Vereinfachen Sie schrittweise den Baum
-$$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
-so weit wie möglich.
+Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
+$$\langle
+    \lbrace v_1, v_2, v_3, v_4 \rbrace,
+    \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+    \lbrace c_1, c_2, c_3, c_4 \rbrace
+\rangle$$
+mit
 
-Nutzen Sie die linearisierte Schreibweise.
-Geben Sie die jeweils verwendete Regel an.
+*   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
+*   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
+*   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
+*   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
 
-*Thema*: Anwendung der Transformations- und Pruning-Regeln
+1.  (1P) Zeichen Sie den Constraint-Graph
+2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
+    der Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen
+    $D_i$, für jede Iteration des Algorithmus an.
+
+*Thema*: Handsimulation des AC-3-Algorithmus
 
 
 
-## A4.3: Machine Learning mit Weka (3P)
 
-Weka ([cs.waikato.ac.nz/ml/weka](https://www.cs.waikato.ac.nz/ml/weka/)) ist eine
-beliebte Sammlung von (in Java implementierten) Algorithmen aus dem Bereich des
-Maschinellen Lernens. Laden Sie sich das Tool in der aktuellen stabilen Version
-herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
+## A04.4: Forward Checking und Kantenkonsistenz (2P)
 
-Laden Sie sich die Beispieldatensätze "Zoo" (`zoo.csv`) und "Restaurant" (`restaurant.csv`)
-aus dem AIMA-Repository ([github.com/aimacode/aima-data](https://github.com/aimacode/aima-data))
-herunter. Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien eine
-Kopfzeile mit den Namen der Attribute haben. Passen Sie die Dateien entsprechend an
-und laden Sie diese im Reiter "Pre-Process" mit "Open file ...".
+Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
+$\alpha = \lbrace v_1 \to  2 \rbrace$.
 
-*Hinweis*: Wenn Sie *Weka 3.6* einsetzen, sind alle für dieses Blatt erforderlichen
-Algorithmen bereits vorhanden. In neueren Versionen müssen Sie in der Weka-Haupt-GUI
-den Paketmanager unter "Tools" starten und dort nach einem Paket suchen, welches ID3
-enthält, und dieses Paket nachinstallieren.
+1.  (1P) Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die
+    Wertebereiche der Variablen vor und nach dem Erzeugen der
+    Kantenkonsistenz an.
 
-### Training mit J48 (1P)
+    *Hinweis*: Sie dürfen annehmen, dass der Wertebereich von Variablen mit
+    bereits zugewiesenen Werten nur aus dem zugewiesenen Wert besteht, während
+    unbelegte Variablen den vollen Wertebereich haben.
 
-Wechseln Sie auf den Reiter "Classify" und wählen Sie mit dem Button "Choose" den
-Entscheidungsbaum-Lerner J48 aus. (Dies ist eine Java-Implementierung von C4.5. Die
-ID3-Implementierung funktioniert für den `zoo.csv`-Datensatz leider nicht ...)
+    *Hinweis*: Sie müssen zur Lösung dieser Teilaufgabe nicht den AC-3 nutze.
 
-Lernen Sie für die beiden Datensätze je einen Entscheidungsbaum. Wie sehen die Bäume
-aus? Wie hoch ist jeweils die Fehlerrate für den Trainingssatz? (Stellen Sie unter
-"Test options" den Haken auf "Use training set".) Interpretieren Sie die **Confusion
-Matrix**.
+2.  (1P) Führen Sie Forward-Checking in $\alpha$ aus. Vergleichen Sie das
+    Ergebnis mit (1).
 
-### ARFF-Format (1P)
+*Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
-spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
-welchen Typ diese haben und welche Werte auftreten dürfen.
 
-Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
 
-Konvertieren Sie den Zoo- und Restaurantdatensatz in das ARFF-Format. Beachten Sie, dass
-die ID3-Implementierung von Weka nicht mit bestimmten Attributtypen umgehen kann.
 
-### Training mit ID3 und J48 (1P)
+## A04.5: Anwendungen (1P)
 
-Trainieren Sie für die im letzten Schritt erstellten Datensätze (Zoo und Restaurant) im
-ARFF-Format erneut Entscheidungsbäume. Nutzen Sie diesmal sowohl ID3 als auch J48.
+Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
+Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die
+Algorithmen jeweils genutzt werden.
 
-Vergleichen Sie wieder die Ergebnisse (Entscheidungsbäume, Fehlerraten, Confusion Matrix)
-untereinander und mit den Ergebnissen aus dem J48-Lauf mit den `.csv`-Dateien.
-
-*Thema*: Kennenlernen von Weka
+*Thema*: Anwendungen von CSP, BT-Suche und AC-3

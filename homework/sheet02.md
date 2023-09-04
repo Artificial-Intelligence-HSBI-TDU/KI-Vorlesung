@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A2.1: Modellierung von GA (2P)
+## A02.1: Modellierung von GA (2P)
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
 Vorlesung [CSP: Intro](../lecture/csp/intro-csp.md)). Starten
@@ -28,7 +28,7 @@ Simulated Annealing lösen zu können?
 
 
 
-## A2.2: Implementierung (5P)
+## A02.2: Implementierung (5P)
 
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
 Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
@@ -47,7 +47,7 @@ Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
 
 
-## A2.3: Anwendungen (3P)
+## A02.3: Anwendungen (3P)
 
 1.  Analysieren Sie die Implementierung von
     [Randal Olson "Here's Waldo: Computing the optimal search strategy for finding Waldo"](http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/)
