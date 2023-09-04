@@ -1,7 +1,7 @@
 ---
 archetype: assignment
-title: "Blatt 05: Perzeptron"
-author: "Canan Yıldız (Türkisch-Deutsche Universität)"
+title: "Blatt 05: Entscheidungsbäume"
+author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
 hidden: true
@@ -9,52 +9,94 @@ hidden: true
 
 
 
-## A5.1: Entscheidungsgrenze (2P)
+## A05.1: Entscheidungsbäume mit CAL3 und ID3 (6P)
 
-*   (1P) Betrachten Sie das durch den Gewichtsvektor $ (w_0,w_1,w_2)^T = (2, 1, 1)^T $ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
-*   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
-    *   $(w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T$
-    *   $(w_0,w_1,w_2)^T = (200, 100, 100)^T$
-    *   $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$
-    *   $(w_0,w_1,w_2)^T = (-2, -1, -1)^T$
+Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die
+Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
 
-*Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
+| Nr. | Alter    | Einkommen | Bildung  | Kandidat |
+|:----|:---------|:----------|:---------|:---------|
+| 1   | $\ge 35$ | hoch      | Abitur   | O        |
+| 2   | $< 35$   | niedrig   | Master   | O        |
+| 3   | $\ge 35$ | hoch      | Bachelor | M        |
+| 4   | $\ge 35$ | niedrig   | Abitur   | M        |
+| 5   | $\ge 35$ | hoch      | Master   | O        |
+| 6   | $< 35$   | hoch      | Bachelor | O        |
+| 7   | $< 35$   | niedrig   | Abitur   | M        |
+
+Trainieren Sie nacheinander mit den Verfahren CAL3 (3P) und ID3 (3P) auf der
+obigen Trainingsmenge je einen Entscheidungsbaum. Nutzen Sie für CAL3 dabei
+die Schwellen $S_1=4$ und $S_2=0.7$.
+
+Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
+Sie können gern auch die Java-Klassen im Paket [`aima.core.learning`] bzw. die
+Python-Klassen in [`learning.py`] als Ausgangspunkt nutzen.[^aima]
+
+[`aima.core.learning`]: https://github.com/aimacode/aima-java/blob/AIMA3e/aima-core/src/main/java/aima/core/learning/learners/DecisionTreeLearner.java
+[`learning.py`]: https://github.com/aimacode/aima-python/blob/master/learning.py
+[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
 
 
 
-## A5.2: Logische Funktionen als Perzeptron (2P)
+## A05.2: Pruning (1P)
 
-*   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
-*   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
+Vereinfachen Sie schrittweise den Baum
+$$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
+so weit wie möglich.
 
-*Thema*: Verständnis Perzeptron
+Nutzen Sie die linearisierte Schreibweise.
+Geben Sie die jeweils verwendete Regel an.
+
+*Thema*: Anwendung der Transformations- und Pruning-Regeln
 
 
 
-## A5.3: Perzeptron Lernalgorithmus (6P)
+## A05.3: Machine Learning mit Weka (3P)
 
-Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus zu bekommen und eine Art empirische Approximation zu bestimmen.
+Weka ([cs.waikato.ac.nz/ml/weka](https://www.cs.waikato.ac.nz/ml/weka/)) ist eine
+beliebte Sammlung von (in Java implementierten) Algorithmen aus dem Bereich des
+Maschinellen Lernens. Laden Sie sich das Tool in der aktuellen stabilen Version
+herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
 
-### Datensatz
-*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.
-*   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $[−1, 1]\times[−1, 1]$. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze Ihrer Zielfunktion $f$. Sie können die positiv beschriftete Seite beliebig festlegen.
-*   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um die entsprechenden Beschriftungen (Ausgangslabel) $y^{(j)}$ zu erhalten.
+Laden Sie sich die Beispieldatensätze "Zoo" (`zoo.csv`) und "Restaurant" (`restaurant.csv`)
+aus dem AIMA-Repository ([github.com/aimacode/aima-data](https://github.com/aimacode/aima-data))
+herunter. Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien eine
+Kopfzeile mit den Namen der Attribute haben. Passen Sie die Dateien entsprechend an
+und laden Sie diese im Reiter "Pre-Process" mit "Open file ...".
 
-### Training
-Führen Sie nun den Perzeptron-Lernalgorithmus $1000$ mal hintereinander aus. Initialisieren Sie jedes Mal die Gewichte mit $0$. Wählen Sie in jedem Lernschritt einen Punkt $\mathbf{x}^{(i)}$ *zufällig* aus der Menge der falsch klassifizierten Punkte und aktualisieren Sie die Gewichte entsprechend der folgenden Formel:
-$$\mathbf{w}:=\mathbf{w}+\alpha ( y^{(i)} - h(\mathbf{x}^{(i)}) ) \mathbf{x}^{(i)}$$
+*Hinweis*: Wenn Sie *Weka 3.6* einsetzen, sind alle für dieses Blatt erforderlichen
+Algorithmen bereits vorhanden. In neueren Versionen müssen Sie in der Weka-Haupt-GUI
+den Paketmanager unter "Tools" starten und dort nach einem Paket suchen, welches ID3
+enthält, und dieses Paket nachinstallieren.
 
-Nehmen Sie $\alpha=1$ als Lernrate. Halten Sie für jeden Durchlauf fest, wie viele Schritte der Algorithmus benötigt, um zu der endgültigen Hypothese $h^{*}(\mathbf{x})$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt sie?
+### Training mit J48 (1P)
 
-### Experimente
-Wiederholen Sie das obige Experiment mit $m=100$ und $m=1000$ Datenpunkten, jeweils ein Mal mit den Lernraten $\alpha=1$ und $\alpha=0.1$. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
+Wechseln Sie auf den Reiter "Classify" und wählen Sie mit dem Button "Choose" den
+Entscheidungsbaum-Lerner J48 aus. (Dies ist eine Java-Implementierung von C4.5. Die
+ID3-Implementierung funktioniert für den `zoo.csv`-Datensatz leider nicht ...)
 
-Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
+Lernen Sie für die beiden Datensätze je einen Entscheidungsbaum. Wie sehen die Bäume
+aus? Wie hoch ist jeweils die Fehlerrate für den Trainingssatz? (Stellen Sie unter
+"Test options" den Haken auf "Use training set".) Interpretieren Sie die **Confusion
+Matrix**.
 
-### Visualisierung (optional)
-*   Halten Sie während des Trainings die Anzahl der falsch klassifizierten Punkte fest und veranschaulichen Sie anschließend den Lernprozess mit Hilfe eines zweidimensionalen Plots.
-*   Visualisieren Sie (auf eine geeignete Weise) Meilenstein 2.1, wie sich die Entscheidungsrenze während des Trainings verändert.
+### ARFF-Format (1P)
 
- Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/perzeptron_lernalgorithmus_starter.ipynb) als Startpunkt benutzen.
+Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
+spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
+welchen Typ diese haben und welche Werte auftreten dürfen.
 
-*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012. Learning From Data. AMLBook.
+Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
+
+Konvertieren Sie den Zoo- und Restaurantdatensatz in das ARFF-Format. Beachten Sie, dass
+die ID3-Implementierung von Weka nicht mit bestimmten Attributtypen umgehen kann.
+
+### Training mit ID3 und J48 (1P)
+
+Trainieren Sie für die im letzten Schritt erstellten Datensätze (Zoo und Restaurant) im
+ARFF-Format erneut Entscheidungsbäume. Nutzen Sie diesmal sowohl ID3 als auch J48.
+
+Vergleichen Sie wieder die Ergebnisse (Entscheidungsbäume, Fehlerraten, Confusion Matrix)
+untereinander und mit den Ergebnissen aus dem J48-Lauf mit den `.csv`-Dateien.
+
+*Thema*: Kennenlernen von Weka

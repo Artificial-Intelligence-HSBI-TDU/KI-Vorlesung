@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A1.1: Möglichkeiten und Grenzen der KI (1P)
+## A01.1: Möglichkeiten und Grenzen der KI (1P)
 
 Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden können und welche aktuell noch ungelöst sind.
@@ -18,7 +18,7 @@ gelöst werden können und welche aktuell noch ungelöst sind.
 
 
 
-## A1.2: Auswirkungen der KI (1P)
+## A01.2: Auswirkungen der KI (1P)
 
 Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa
 durch autonomes Fahren oder durch _Large Language Models_ (LLM).
@@ -27,7 +27,7 @@ durch autonomes Fahren oder durch _Large Language Models_ (LLM).
 
 
 
-## A1.3: Problemformalisierung, Zustandsraum (2P)
+## A01.3: Problemformalisierung, Zustandsraum (2P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen
 diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei
@@ -45,7 +45,7 @@ zwischen beiden Gruppen kommt.
 
 
 
-## A1.4: Suchverfahren (4P)
+## A01.4: Suchverfahren (4P)
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
@@ -86,7 +86,7 @@ vor München, Karlsruhe vor Kassel etc.
 
 
 
-## A1.6: Dominanz (1P)
+## A01.6: Dominanz (1P)
 
 Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
 
@@ -100,7 +100,7 @@ Geben Sie selbstgewählte Beispiele an.
 
 
 
-## A1.7: Beweis der Optimalität von A* (1P)
+## A01.7: Beweis der Optimalität von A* (1P)
 
 Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
 zulässigen Heuristik optimal ist.
@@ -109,7 +109,7 @@ zulässigen Heuristik optimal ist.
 
 
 
-## A1.8 Bonus: Turing Test (1P)
+## A01.8 Bonus: Turing Test (1P)
 
 Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
 

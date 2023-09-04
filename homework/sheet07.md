@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 07: Logistische Regression"
+title: "Blatt 07: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -9,36 +9,52 @@ hidden: true
 
 
 
-## A7.1: Logistische Regression (6P)
+## A07.1: Entscheidungsgrenze (2P)
 
-### Datensatz (1P)
-*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=100$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.
+*   (1P) Betrachten Sie das durch den Gewichtsvektor $ (w_0,w_1,w_2)^T = (2, 1, 1)^T $ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
+*   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
+    *   $(w_0,w_1,w_2)^T = (1, 0.5, 0.5)^T$
+    *   $(w_0,w_1,w_2)^T = (200, 100, 100)^T$
+    *   $(w_0,w_1,w_2)^T = (\sqrt{2}, \sqrt{1}, \sqrt{1})^T$
+    *   $(w_0,w_1,w_2)^T = (-2, -1, -1)^T$
+
+*Thema*: Verständnis Interpretation Perzeptron (Trennebene/Entscheidungsgrenze)
+
+
+
+## A07.2: Logische Funktionen als Perzeptron (2P)
+
+*   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
+*   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
+
+*Thema*: Verständnis Perzeptron
+
+
+
+## A07.3: Perzeptron Lernalgorithmus (6P)
+
+Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus zu bekommen und eine Art empirische Approximation zu bestimmen.
+
+### Datensatz
+*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.
 *   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $[−1, 1]\times[−1, 1]$. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze Ihrer Zielfunktion $f$. Sie können die positiv beschriftete Seite beliebig festlegen.
 *   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um die entsprechenden Beschriftungen (Ausgangslabel) $y^{(j)}$ zu erhalten.
 
-### Training (3P)
-Trainieren Sie ein logistisches Regressionsmodell auf diesen Daten, um
-$h^{*}=\sigma(w^T x)$ zu finden. Verwenden Sie dazu den Gradientenabstieg-Algorithmus. Initialisieren Sie alle Gewichtswerte mit 0 und führen Sie 2000 Iterationen durch. Nehmen Sie $\alpha=0.1$ als Lernrate. Speichern Sie alle 100 Schritte die berechneten Kosten. Zeichnen Sie am Ende die Kosten als Diagramm über die Anzahl der Iterationen auf.
+### Training
+Führen Sie nun den Perzeptron-Lernalgorithmus $1000$ mal hintereinander aus. Initialisieren Sie jedes Mal die Gewichte mit $0$. Wählen Sie in jedem Lernschritt einen Punkt $\mathbf{x}^{(i)}$ *zufällig* aus der Menge der falsch klassifizierten Punkte und aktualisieren Sie die Gewichte entsprechend der folgenden Formel:
+$$\mathbf{w}:=\mathbf{w}+\alpha ( y^{(i)} - h(\mathbf{x}^{(i)}) ) \mathbf{x}^{(i)}$$
 
-### Experimente (2P)
-Wiederholen Sie das obige Experiment mit unterschiedlichen Lernraten, z.B. $\alpha=0.1$, $\alpha=0.01$ und $\alpha=0.001$. Vergleichen Sie die Kosten-Diagramme.
+Nehmen Sie $\alpha=1$ als Lernrate. Halten Sie für jeden Durchlauf fest, wie viele Schritte der Algorithmus benötigt, um zu der endgültigen Hypothese $h^{*}(\mathbf{x})$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt sie?
 
-Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/logistische_regression_starter.ipynb) als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy and Scikit-Learn) verwenden.
+### Experimente
+Wiederholen Sie das obige Experiment mit $m=100$ und $m=1000$ Datenpunkten, jeweils ein Mal mit den Lernraten $\alpha=1$ und $\alpha=0.1$. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
 
-*Thema*: Verständnis und Implementierung Logistische Regression
+Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 
+### Visualisierung (optional)
+*   Halten Sie während des Trainings die Anzahl der falsch klassifizierten Punkte fest und veranschaulichen Sie anschließend den Lernprozess mit Hilfe eines zweidimensionalen Plots.
+*   Visualisieren Sie (auf eine geeignete Weise) Meilenstein 2.1, wie sich die Entscheidungsrenze während des Trainings verändert.
 
+ Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/perzeptron_lernalgorithmus_starter.ipynb) als Startpunkt benutzen.
 
-## A7.2: Merkmal Skalierung (4P)
-
-Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
-
-![Abbildung 1](images/contour_plot_a.png){width="40%"}
-![Abbildung 2](images/contour_plot_b.png){width="40%"}
-
-*   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
-*   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
-Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
-
-
-*Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
+*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012. Learning From Data. AMLBook.

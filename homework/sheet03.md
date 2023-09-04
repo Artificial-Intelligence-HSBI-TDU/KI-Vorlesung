@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 03: Constraints"
+title: "Blatt 03: Spiele"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,99 +9,86 @@ hidden: true
 
 
 
-## A3.1: Logikrätsel (2P)
+## A03.1: Handsimulation: Minimax und alpha-beta-Pruning (3P)
 
-Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
+![](images/alphabeta.png)
 
-Formulieren Sie das Problem als CSP (Variablen, Wertebereiche, Constraints)
-zunächst auf dem Papier. Machen Sie sich klar, was die Variablen und was deren
-Wertebereiche sind. Schreiben Sie die Constraints als (unäre bzw. binäre)
-Relationen zwischen den Variablen auf.
+1.  (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
 
-*Hinweis*: Machen Sie sich zunächst klar, was die Variablen und was deren Wertebereiche
-sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
+2.  (1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr
+    untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben
+    Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte
+    an.
 
-*Thema*: Formulierung von Problemen als CSP
+3.  (1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning
+    eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine
+    solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.
 
+*Hinweis*: Reihenfolge der Abarbeitung der Kindknoten: Wie in der VL von
+links nach rechts.
 
-
-## A3.2: Framework für Constraint Satisfaction (2P)
-
-Lösen Sie nun das Rätsel aus A3.1:
-
-1.  Lösen Sie das Rätsel zunächst mit dem Basis-Algorithmus `BT_Search` aus
-    der Vorlesung.
-2.  Erweitern Sie den Algorithmus um die Heuristiken MRV und Gradheuristik
-    und lösen Sie das Problem erneut. Vergleichen Sie die Ergebnisse und die
-    Laufzeit der beiden Experimente.
-3.  Wenden Sie vor dem Start von `BT_Search` den AC-3 an. Erhalten Sie damit
-    bereits eine Lösung (bzw. Unlösbarkeit)? Falls nicht, wenden Sie anschließend
-    den ergänzten Algorithmus aus Schritt (2) an. Vergleichen Sie wieder die
-    Ergebnisse und die Laufzeiten.
-
-Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
-Sie können gern auch die Java-Klassen im Paket [`aima.core.search.csp`] bzw. die
-Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.[^aima]
-
-["Einstein-Rätsels"]: https://de.wikipedia.org/wiki/Zebrar%C3%A4tsel
-[`aima.core.search.csp`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/csp
-[`csp.py`]: https://github.com/aimacode/aima-python/blob/master/csp.py
-[^aima]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
+*Thema*: Minimax und alpha-beta-Pruning
 
 
 
-## A3.3: Kantenkonsistenz mit AC-3 (3P)
+## A03.2: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
 
-Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
-$$\langle
-    \lbrace v_1, v_2, v_3, v_4 \rbrace,
-    \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
-    \lbrace c_1, c_2, c_3, c_4 \rbrace
-\rangle$$
-mit
+1.  (2P) Implementieren Sie den Minimax-Algorithmus (wie in der VL
+    besprochen) am Beispiel *Tic Tac Toe* in einer Sprache Ihrer Wahl.
 
-*   $c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$,
-*   $c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$,
-*   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
-*   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
+2.  (1P) Ergänzen Sie Ihre Implementierung um alpha-beta-Pruning.
 
-1.  (1P) Zeichen Sie den Constraint-Graph
-2.  (2P) Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand
-    der Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen
-    $D_i$, für jede Iteration des Algorithmus an.
+3.  (1P) Vergleichen Sie die Anzahl der jeweils berechneten Knoten.
+    Überlegen Sie sich dazu ein **sinnvolles** Szenario.
 
-*Thema*: Handsimulation des AC-3-Algorithmus
+*Thema*: Anwendung Minimax und alpha-beta-Pruning
 
 
 
+## A03.3: Minimax vereinfachen (1P)
 
-## A3.4: Forward Checking und Kantenkonsistenz (2P)
+Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die
+Eigenschaft *Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value`
+und `Max-Value` in eine einzige Funktion ohne explizite Unterscheidung der
+Spieler zusammenfassen.
 
-Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
-$\alpha = \lbrace v_1 \to  2 \rbrace$.
+Überlegen Sie sich einen Beispielbaum und zeigen Sie anhand dessen die
+Bewertung durch den Minimax-Algorithmus und durch Ihren vereinfachten
+Algorithmus.
 
-1.  (1P) Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die
-    Wertebereiche der Variablen vor und nach dem Erzeugen der
-    Kantenkonsistenz an.
-
-    *Hinweis*: Sie dürfen annehmen, dass der Wertebereich von Variablen mit
-    bereits zugewiesenen Werten nur aus dem zugewiesenen Wert besteht, während
-    unbelegte Variablen den vollen Wertebereich haben.
-
-    *Hinweis*: Sie müssen zur Lösung dieser Teilaufgabe nicht den AC-3 nutze.
-
-2.  (1P) Führen Sie Forward-Checking in $\alpha$ aus. Vergleichen Sie das
-    Ergebnis mit (1).
-
-*Thema*: Kantenkonsistenz und Forward Checking verstehen
+*Thema*: Nullsummenspiel, Minimax
 
 
 
+## A03.4: Suchtiefe begrenzen (1P)
 
-## A3.5: Anwendungen (1P)
+Die Verwendung der Suchtiefenbeschränkung erfordert den Einsatz einer
+Evaluierungsfunktion.
 
-Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
-Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die
-Algorithmen jeweils genutzt werden.
+Betrachten Sie die auf
+[https://github.com/aimacode/aima-exercises/blob/master/markdown/5-Adversarial-Search/exercises/ex_9/question.md](https://aimacode.github.io/aima-exercises/game-playing-exercises/ex_9/)
+gegebene Evaluierungsfunktion für *Tic-Tac-Toe*.
 
-*Thema*: Anwendungen von CSP, BT-Suche und AC-3
+Geben Sie die Werte der Evaluierungsfunktion für sechs verschiedene
+Spielzustände an (3 Endzustände, 3 Zwischenzustände). Begründen Sie, warum
+diese Evaluierungsfunktion im Zusammenhang mit *Tic-Tac-Toe* sinnvoll sein kann.
+
+*Thema*: Suchtiefenbegrenzung und Evaluierungsfunktion
+
+
+
+## A03.5: Minimax generalisiert (1P)
+
+Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu
+evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.
+
+![](images/minmax-multiplayer.png)
+
+Die Spieler heißen 1, 2 und 3. Im Gegensatz zu Zwei-Personen-Nullsummenspielen
+liefert die Bewertungsfunktion nun Tripel $(x_1, x_2, x_3)$ zurück, wobei $x_i$
+der Wert für Spieler $i$ ist. Allianzen zwischen Spielern sind nicht erlaubt.
+
+Vervollständigen Sie den Spielbaum, indem Sie alle inneren Knoten und den
+Wurzelknoten mit den entsprechenden Wert-Tripeln annotieren.
+
+*Thema*: Minimax generalisiert für mehrere Spieler
