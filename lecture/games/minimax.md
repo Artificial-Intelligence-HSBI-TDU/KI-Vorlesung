@@ -96,9 +96,7 @@ nicht unbedingt eine optimale Strategie.
 ### Spielbaum TTT
 :::
 
-::: center
 ![](images/tttSpielbaum.png){width="50%"}
-:::
 
 
 ::: notes

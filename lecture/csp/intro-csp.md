@@ -40,9 +40,7 @@ fhmedia:
 
 ## Motivation: Einfärben von Landkarten
 
-::: center
 ![](images/map.png){width="50%"}
-:::
 
 ::: notes
 Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe
@@ -55,9 +53,7 @@ grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
 ## Einfärben von Landkarten: Formalisierung
 
 :::::: slides
-::: center
 ![](images/map_numbered.png){width="30%"}
-:::
 ::::::
 
 \bigskip
@@ -98,9 +94,7 @@ grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
 
 ## Constraint-Graph
 
-::: center
 ![](images/map_graph.png){width="80%"}
-:::
 
 ::: notes
 Ein CSP kann man auch als Constraint-Graph darstellen. Die Variablen werden zu Knoten im

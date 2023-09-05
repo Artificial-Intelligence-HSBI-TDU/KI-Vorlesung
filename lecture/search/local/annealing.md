@@ -39,9 +39,7 @@ fhmedia:
 
 ## Motivation
 
-::: center
 ![](images/hill-climbing.png){width="60%"}
-:::
 
 \bigskip
 

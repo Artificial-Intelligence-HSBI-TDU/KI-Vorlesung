@@ -75,9 +75,7 @@ challenges: |
 
 ## Motivation: Roboter in einer Bibliothek
 
-::: center
 ![](images/problem.png){width="40%"}
-:::
 
 \pause
 \bigskip
@@ -124,9 +122,7 @@ Bemerkungen zur Umwelt:
 
 ## Zustände der Bibliotheks-Welt
 
-::: center
 ![](images/states.png){width="55%"}
-:::
 
 \bigskip
 
@@ -145,9 +141,7 @@ Ergebnis:
 
 ## Suche im Problemgraphen
 
-::: center
 ![](images/state-space.png){width="60%"}
-:::
 
 [[Tafel: Skizze Suchbaum, mit und ohne Wdhlg.]{.bsp}]{.slides}
 

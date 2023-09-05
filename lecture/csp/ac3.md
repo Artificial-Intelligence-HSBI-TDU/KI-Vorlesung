@@ -88,9 +88,7 @@ Zuweisung eines Wertes an Variable $X$:
 
 ## INFERENCE: Vorab-Prüfung (Forward Checking)
 
-::: center
 ![](images/bt_search_inference.png){width="65%"}
-:::
 
 \bigskip
 
@@ -117,9 +115,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 ## Forward Checking findet nicht alle Inkonsistenzen!
 
-::: center
 ![](images/forward_checking.png){width="55%"}
-:::
 
 \bigskip
 \bigskip

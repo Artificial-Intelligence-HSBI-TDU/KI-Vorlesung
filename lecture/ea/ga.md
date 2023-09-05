@@ -63,9 +63,7 @@ challenges: |
 
 ## EA -- Allgemeiner Ablauf
 
-::: center
 ![](images/ea_prinz.png){width="80%"}
-:::
 
 
 ## Kodierung Individuen
