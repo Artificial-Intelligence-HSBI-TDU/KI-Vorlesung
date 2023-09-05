@@ -29,6 +29,8 @@ outcomes:
   - k2: "Optimierungsmöglichkeit: Bewertung über Spieldatenbanken"
   - k3: "Minimax-Algorithmus"
   - k3: "Tiefenbeschränkung und Bewertungsfunktion bei Minimax"
+assignments:
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/rKqNqYBXuK8"
     name: "VL Heuristiken"

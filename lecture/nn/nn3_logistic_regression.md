@@ -17,7 +17,7 @@ quizzes:
    - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106591&client_id=FH-Bielefeld"
      name: "Selbsttest Logistische Regression (ILIAS)"
 assignments:
-    - topic: sheet07
+    - topic: sheet09
 youtube:
     - link: "https://youtu.be/GpJmjrqA5RY"
       name: "NN3.1 - Logistische Regression - Intro"

@@ -23,6 +23,8 @@ outcomes:
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld"
     name: "Selbsttest Minimax (ILIAS)"
+assignments:
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/`aKtF__lMMsw`{=markdown}"
     name: "VL Minimax"

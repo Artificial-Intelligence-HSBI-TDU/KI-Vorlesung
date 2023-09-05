@@ -10,6 +10,8 @@ tldr: |
 outcomes:
   - k1: "TODO"
   - k3: "TODO"
+assignments:
+  - topic: sheet12
 youtube:
   - link: "https://youtu.be/eFyo4Xh59ns"
     name: "VL Intro Logik"

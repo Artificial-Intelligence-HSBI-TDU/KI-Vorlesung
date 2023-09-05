@@ -15,7 +15,7 @@ quizzes:
    - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
      name: "Selbsttest Overfitting (ILIAS)"
 assignments:
-    - topic: sheet08
+    - topic: sheet10
 youtube:
     - link: "https://youtu.be/KJLT-h_ChRo"
       name: "NN4.1 - Nichtlineare Modelle"

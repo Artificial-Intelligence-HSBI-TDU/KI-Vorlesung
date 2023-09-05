@@ -25,7 +25,7 @@ tldr: |
 outcomes:
   - k3: "Entscheidungsbaumalgorithmen ID3 und C4.5"
 assignments:
-  - topic: sheet04
+  - topic: sheet05
 youtube:
   - link: "https://youtu.be/Yo1cmeS6BK8"
     name: "VL ID3 und C4.5"

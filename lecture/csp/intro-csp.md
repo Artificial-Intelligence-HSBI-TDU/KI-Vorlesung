@@ -28,7 +28,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld"
     name: "Selbsttest Intro CSP (ILIAS)"
 assignments:
-  - topic: sheet03
+  - topic: sheet04
 youtube:
   - link: "https://youtu.be/eFyo4Xh59ns"
     name: "VL Intro CSP"
