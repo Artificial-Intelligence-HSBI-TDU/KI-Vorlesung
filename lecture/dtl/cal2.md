@@ -83,9 +83,7 @@ challenges: |
 
 ## Entscheidungsbäume: Klassifikation
 
-::: center
 ![](images/xor-decision-tree.png){width="80%"}
-:::
 
 \bigskip
 

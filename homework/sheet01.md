@@ -49,11 +49,9 @@ zwischen beiden Gruppen kommt.
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-::: center
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png){width="40%"}
 
 [Quelle: [MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
-:::
 
 ![](images/MapGermanyGraph-Kosten.png){width="40%"}
 

@@ -28,9 +28,7 @@ fhmedia:
 
 ## Einfärben von Landkarten als CSP
 
-::: center
 ![](images/map_graph.png){width="80%"}
-:::
 
 [[Tafelbeispiel: Suche nach Lösung]{.bsp}]{.slides}
 

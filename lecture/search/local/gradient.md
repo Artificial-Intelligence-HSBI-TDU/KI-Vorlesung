@@ -70,9 +70,7 @@ Beispiel: Stundenplan
 
 ## Analogie: Bergsteigen ohne Karte und Pfade
 
-::: center
 ![](images/hill-climbing.png){width="50%"}
-:::
 
 \bigskip
 \bigskip
@@ -152,9 +150,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 [**Zielfunktion (Bewertung) nötig!**]{.alert}
 :::
 
-::: center
 ![](images/hill-climbing.png){width="60%"}
-:::
 
 \bigskip
 

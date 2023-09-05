@@ -60,9 +60,7 @@ challenges: |
 
 ## VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?
 
-::: center
 ![](images/bt_search_mrv.png){width="65%"}
-:::
 
 \bigskip
 
@@ -90,9 +88,7 @@ Beispiel:
 
 ## VARIABLES: Gleichstand bei MRV
 
-::: center
 ![](images/bt_search_mrv.png){width="65%"}
-:::
 
 \bigskip
 
@@ -123,9 +119,7 @@ Beispiel:
 
 ## VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?
 
-::: center
 ![](images/bt_search_lcv.png){width="65%"}
-:::
 
 \bigskip
 

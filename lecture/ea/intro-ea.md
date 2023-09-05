@@ -35,11 +35,9 @@ fhmedia:
 
 ## Evolution sehr erfolgreich bei Anpassung
 
-::: center
 ![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
 
 [Quelle: [Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash License](https://unsplash.com/license))]{.origin}
-:::
 
 \bigskip
 \bigskip
@@ -68,16 +66,12 @@ fhmedia:
 
 ## EA -- Allgemeiner Ablauf
 
-::: center
 ![](images/ea_prinz.png){width="80%"}
-:::
 
 
 ## EA -- Beispiel
 
-::: center
 ![](images/4-queens-example.png){width="40%"}
-:::
 
 ::: notes
 Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**

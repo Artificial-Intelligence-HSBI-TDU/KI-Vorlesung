@@ -166,11 +166,9 @@ Dazu gehört auch
 *   Wann verhält sich eine Maschine intelligent?
 :::
 
-::: center
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%"}
 
 [Quelle: [Turing Test version 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
-:::
 
 ::: notes
 Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
@@ -213,9 +211,7 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 
 ## Typische Ansätze in der KI
 
-::: center
 ![](images/dimensionen-ki.png){width="60%"}
-:::
 
 \bigskip
 \bigskip
