@@ -18,6 +18,8 @@ tldr: |
 outcomes:
   - k2: "Spiele als Suchproblem"
   - k2: "Eigenschaften guter Spielalgorithmen"
+assignments:
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/wVYhbgtzxhs"
     name: "VL Einführung Optimale Spiele"

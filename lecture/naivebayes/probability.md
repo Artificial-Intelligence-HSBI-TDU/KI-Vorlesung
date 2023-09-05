@@ -47,6 +47,8 @@ outcomes:
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106587&client_id=FH-Bielefeld"
     name: "Selbsttest Wahrscheinlichkeiten (ILIAS)"
+assignments:
+  - topic: sheet06
 youtube:
   - link: "https://youtu.be/p_Yy5rkl4CA"
     name: "VL Wahrscheinlichkeiten"

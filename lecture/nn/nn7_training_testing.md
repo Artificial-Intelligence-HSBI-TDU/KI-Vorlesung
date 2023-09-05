@@ -16,8 +16,8 @@ outcomes:
 quizzes:
    - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld"
      name: "Selbsttest Training & Testing (ILIAS)"
-assignments:
-    - topic: sheet10
+#assignments:
+#    - topic: sheet12
 youtube:
     - link: "https://youtu.be/PUw-TvLJULI"
       name: "NN7.1 - Training, Testing, Validierung"

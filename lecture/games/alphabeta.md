@@ -34,6 +34,8 @@ outcomes:
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106584&client_id=FH-Bielefeld"
     name: "Selbsttest Alpha-Beta-Pruning (ILIAS)"
+assignments:
+  - topic: sheet03
 youtube:
   - link: "https://youtu.be/`_Hq-GCl__bU`{=markdown}"
     name: "VL Alpha-Beta-Pruning"
