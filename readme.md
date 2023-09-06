@@ -80,7 +80,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 | Mo, 11:00 - 12:30 Uhr (TR) |
 | online                     |
 
-Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
+Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
 
 :::
 ::::::
@@ -108,13 +108,13 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 | G3           | XX, XX:XX bis XX:XX Uhr (TR) |
 |              | online                       |
 
-Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
+Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
 
 :::
 ::::::
 
 [ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
-[Moodle]: https://muh.moodle.tau.edu.tr/course/view.php?id=3
+[Google Classroom]: https://classroom.google.com/c/NjMzNDM4MDk1NTM5
 
 ### Prüfungsform, Note und Credits
 
