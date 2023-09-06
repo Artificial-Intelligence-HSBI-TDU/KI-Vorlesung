@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 09: Logistische Regression"
+title: "Blatt 09: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -8,37 +8,49 @@ hidden: true
 ---
 
 
+## A09.1: Perzeptron-Netze (2P)
 
-## A09.1: Logistische Regression (6P)
+Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
 
-### Datensatz (1P)
-*   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=100$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.
-*   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $[−1, 1]\times[−1, 1]$. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze Ihrer Zielfunktion $f$. Sie können die positiv beschriftete Seite beliebig festlegen.
-*   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um die entsprechenden Beschriftungen (Ausgangslabel) $y^{(j)}$ zu erhalten.
-
-### Training (3P)
-Trainieren Sie ein logistisches Regressionsmodell auf diesen Daten, um
-$h^{*}=\sigma(w^T x)$ zu finden. Verwenden Sie dazu den Gradientenabstieg-Algorithmus. Initialisieren Sie alle Gewichtswerte mit 0 und führen Sie 2000 Iterationen durch. Nehmen Sie $\alpha=0.1$ als Lernrate. Speichern Sie alle 100 Schritte die berechneten Kosten. Zeichnen Sie am Ende die Kosten als Diagramm über die Anzahl der Iterationen auf.
-
-### Experimente (2P)
-Wiederholen Sie das obige Experiment mit unterschiedlichen Lernraten, z.B. $\alpha=0.1$, $\alpha=0.01$ und $\alpha=0.001$. Vergleichen Sie die Kosten-Diagramme.
-
-Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/logistische_regression_starter.ipynb) als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy and Scikit-Learn) verwenden.
-
-*Thema*: Verständnis und Implementierung Logistische Regression
+![Abbildung 1](images/perzeptron_netz.png){width="60%"}
 
 
+## A09.2: Vorwärtslauf im MLP (2P)
 
-## A09.2: Merkmal Skalierung (4P)
+Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt). In allen Zellen wird die ReLU Aktivierungsfunktion verwendet.
 
-Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
-
-![Abbildung 1](images/contour_plot_a.png){width="40%"}
-![Abbildung 2](images/contour_plot_b.png){width="40%"}
-
-*   (1P) Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
-*   (3P) Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich $ [100, 300] \times [0, 2] $, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
-Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
+*   Was sind die Dimensionen der Gewichtsmatrizen $W^{[1]}$, $W^{[2]}$ und $W^{[3]}$ und der Bias-Vektoren $b^{[1]}$, $b^{[2]}$ und $b^{[3]}$?
+*   Wie wird die Ausgabe berechnet? Schreiben Sie den Vorwärtslauf in Matrix-Notation auf. Wie könnte man die Ausgabe deuten; welches Problem könnte durch dieses Netzwerk möglicherweise gelöst werden?
 
 
-*Thema*: Verständnis Merkmalskalierung und Gradientenabstieg
+## A09.3: Tensorflow Playground (6P)
+
+Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/) um die unten gelisteten Experimente durchzuführen. Achten Sie bei allen Experimenten auf das Verhalten der Trainings- und Testkosten. Sie können mit Hilfe der Checkbox unter der Ausgabezelle (ganz rechts, unten) die Testdaten ein- und ausblenden. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
+
+1.  (1P) Trainieren Sie ein **logistisches Regressionsmodell** zunächst auf dem "**Gaussian**" Datensatzauf (linear separierbarer Datensatz links-unten), danach auf den anderen Datensätzen.
+
+2.  (3P) Trainieren Sie ein **MLP** mit
+    *   einer versteckten Schicht mit 2 Neuronen,
+    *   einer versteckten Schicht mit 3 Neuronen,
+    *   einer versteckten Schicht mit 5 Neuronen,
+    *   zwei versteckten Schichten mit jeweils 5 Neuronen pro Schicht 
+    *   drei versteckten Schichten mit jeweils 7 Neuronen pro Schicht
+    *   vier versteckten Schichten mit jeweils 7 Neuronen pro Schicht
+
+    auf dem kreisförmigen (**Circle**) und auf dem spiralförmigen (**Spiral**) Datensatz, mehrmals mit jeweils den Aktivierungsfunktionen ReLU, tanh und Sigmoid. Hat die Auswahl der Aktivierungsfunktion einen Einfluss auf die Form der Entscheidungsgrenze oder die Geschwindigkeit der Berechnung?
+
+3.  (2P) Setzen Sie nun den **Noise-Level auf 15** und wiederholen Sie die Experimente. Wann kann von einer Überanpassung gesprochen werden?
+
+Sprechen Sie für alle Experimente die folgenden Punkte an:
+
+*   Wie verhält sich die Entscheidungsgrenze?
+*   Was können Sie über Trainings- und Testkosten sagen? Entsteht eine Überanpassung?
+*   Wie schnell wird die Entscheidungsgrenze berechnet?
+*   Können alle Datenpunkte jedes mal korrekt klassifiziert werden? Warum?
+*   Untersuchen und vergleichen Sie die Ausgaben der Zellen in den versteckten Schichten, in dem Sie die Maus über die jeweilige Zelle bewegen. Bemerken Sie einen wesentlichen Unterschied in den Ausgaben der ersten Schicht im Vergleich zu der letzten Schicht?
+
+
+
+
+
+

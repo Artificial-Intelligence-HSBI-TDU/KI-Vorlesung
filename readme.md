@@ -211,10 +211,10 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  46   | Mo, 13.11.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B06]                            |
 |  47   | Mo, 20.11.23                            | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten | [B05]                            |
 |  48   | Mo, 27.11.23                            | [Perzeptron]                                                                                                  | Canan   | [B07]                            |
-|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan   | [B08]                            |
-|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan   | [B09]                            |
-|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B10]                            |
-|  02   | Mo, 08.01.24                            | [Backpropagation]                                                                                             | Canan   | [B11]                            |
+|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan   |                                  |
+|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan   | [B08]                            |
+|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B09]                            |
+|  02   | Mo, 08.01.24                            | [Backpropagation]                                                                                             | Canan   | [B10]                            |
 |  03   | Mo, 15.01.24                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                                  |
 |  04   | Mo, 22.01.24                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                                  |
 
@@ -232,10 +232,10 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  46   | Mo, 13.11.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B06]                            |
 |  47   | Mo, 20.11.23                            | **Zwischenprüfung**                                                                                           |                |                                  |
 |  48   | Mo, 27.11.23                            | [Perzeptron]                                                                                                  | Canan          | [B07]                            |
-|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan          | [B08]                            |
-|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan          | [B09]                            |
-|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B10]                            |
-|  52   | Mo, 25.12.23                            | [Backpropagation]                                                                                             | Canan          | [B11]                            |
+|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan          |                                  |
+|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan          | [B08]                            |
+|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B09]                            |
+|  52   | Mo, 25.12.23                            | [Backpropagation]                                                                                             | Canan          | [B10]                            |
 |  02   | Mo, 08.01.24                            | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                                  |
 
 :::
@@ -307,10 +307,9 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  47   | [B06]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  48   | [B05]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  50   | [B08]: Lin. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  51   | [B09]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  02   | [B10]: MLP             | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
-|  03   | [B11]: Backprop        | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  02   | [B09]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
+|  03   | [B10]: Backprop        | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
 
 :::
 ::: {.tab title="TDU"}
@@ -324,10 +323,9 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  46   | [B04]: CSP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  48   | [B06]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  50   | [B08]: Lin. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  51   | [B09]: Log. Regression | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  52   | [B10]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  02   | [B11]: Backprop        | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2024    |
+|  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  52   | [B09]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  02   | [B10]: Backpropagation | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 
 :::
 ::::::
@@ -342,7 +340,7 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 [B08]: homework/sheet08.md
 [B09]: homework/sheet09.md
 [B10]: homework/sheet10.md
-[B11]: homework/sheet11.md
+<!-- [B11]: homework/sheet11.md -->
 <!-- [B12]: homework/sheet12.md -->
 <!-- [P1]: homework/poster1.md -->
 <!-- [P2]: homework/poster2.md -->
