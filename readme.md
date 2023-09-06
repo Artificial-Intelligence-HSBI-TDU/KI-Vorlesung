@@ -308,8 +308,8 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  48   | [B05]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
 |  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  02   | [B09]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  03   | [B10]: Backprop        | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  02   | [B09]: MLP             | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+|  03   | [B10]: Backpropagation | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
 
 :::
 ::: {.tab title="TDU"}
@@ -325,7 +325,7 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 |  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
 |  52   | [B09]: MLP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
-|  02   | [B10]: Backpropagation | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2023    |
+|  02   | [B10]: Backpropagation | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.google.de/)) | XX, XX.XX.2024    |
 
 :::
 ::::::
@@ -341,7 +341,6 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 [B09]: homework/sheet09.md
 [B10]: homework/sheet10.md
 <!-- [B11]: homework/sheet11.md -->
-<!-- [B12]: homework/sheet12.md -->
 <!-- [P1]: homework/poster1.md -->
 <!-- [P2]: homework/poster2.md -->
 
