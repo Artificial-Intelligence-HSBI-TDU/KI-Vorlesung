@@ -25,7 +25,7 @@ Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der erste
 
 ## A09.3: Tensorflow Playground (6P)
 
-Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/) um die unten gelisteten Experimente durchzuführen. Achten Sie bei allen Experimenten auf das Verhalten der Trainings- und Testkosten. Sie können mit Hilfe der Checkbox unter der Ausgabezelle (ganz rechts, unten) die Testdaten ein- und ausblenden. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
+Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/), um die unten gelisteten Experimente durchzuführen. Achten Sie bei allen Experimenten auf das Verhalten der Trainings- und Testkosten. Sie können mit Hilfe der Checkbox unter der Ausgabezelle (ganz rechts, unten) die Testdaten ein- und ausblenden. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
 
 1.  (1P) Trainieren Sie ein **logistisches Regressionsmodell** zunächst auf dem "**Gaussian**" Datensatzauf (linear separierbarer Datensatz links-unten), danach auf den anderen Datensätzen.
 
