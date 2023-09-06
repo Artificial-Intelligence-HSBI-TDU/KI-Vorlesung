@@ -121,7 +121,7 @@ Sitzungen per Zoom (**Zugangsdaten siehe [Moodle]**)
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-**Klausur plus Testat**, 5 ECTS
+Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 
 *   **Testat**: Vergabe der Credit-Points
 
