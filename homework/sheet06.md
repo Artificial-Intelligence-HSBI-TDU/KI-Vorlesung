@@ -22,13 +22,15 @@ Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bach
 
 Laden Sie sich einen geeigneten Datensatz herunter, beispielsweise das
 ["Spam Mails Dataset" (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset).
-Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen `ham` bzw. `spam`).
+Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen `ham` bzw.
+`spam`).
 
 (2P) Bereiten Sie diesen Datensatz für das Training eines Naive Bayes Klassifikators vor.
 
 (2P) Implementieren Sie einen Naive Bayes Klassifikator oder machen Sie sich mit existierenden
 Implementierungen vertraut, beispielsweise in [NLTK](https://www.nltk.org/index.html) oder
-[scikit-learn](https://scikit-learn.org/stable/index.html) oder [Weka](https://www.cs.waikato.ac.nz/ml/weka/).
+[scikit-learn](https://scikit-learn.org/stable/index.html) oder
+[Weka](https://www.cs.waikato.ac.nz/ml/weka/).
 
 (2P) Splitten Sie den vorbereiteten Datensatz in eine Trainings- und eine Testmenge auf und
 trainieren Sie den Naive Bayes Klassifikator. Wie sieht ihr Klassifikator aus, was sind die
