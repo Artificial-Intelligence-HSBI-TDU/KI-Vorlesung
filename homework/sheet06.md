@@ -9,14 +9,14 @@ hidden: true
 
 
 
-## A06.1: Wahlkampf mit Naive Bayes (3P)
+## A06.1: Wahlkampf mit Naive Bayes (4P)
 
 Betrachten Sie erneut das Szenerio von Aufgabe A05.1 auf [Blatt 05](sheet05.md).
 
 (2P) "Trainieren" Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
 
-(1P) Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bachelor)
-zuordnen?
+(2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bachelor)
+zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
 
 
 ## A06.2: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
