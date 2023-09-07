@@ -5,8 +5,6 @@ author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
 hidden: true
-
-sketch: true
 ---
 
 
