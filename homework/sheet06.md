@@ -28,8 +28,9 @@ Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klass
 
 (2P) Bereiten Sie diesen Datensatz für das Training eines Naive Bayes Klassifikators vor.
 
-(2P) Implementieren Sie einen Naive Bayes Klassifikator oder machen Sie sich mit existierenden
-Implementierungen vertraut, beispielsweise in [NLTK](https://www.nltk.org/index.html) oder
+(2P) Implementieren Sie einen Naive Bayes Klassifikator in einer Programmiersprache Ihrer Wahl
+oder machen Sie sich mit existierenden Implementierungen vertraut, beispielsweise in
+[NLTK](https://www.nltk.org/index.html) oder
 [scikit-learn](https://scikit-learn.org/stable/index.html) oder
 [Weka](https://www.cs.waikato.ac.nz/ml/weka/).
 
