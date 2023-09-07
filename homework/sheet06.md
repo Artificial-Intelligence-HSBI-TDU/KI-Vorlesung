@@ -13,9 +13,10 @@ hidden: true
 
 Betrachten Sie erneut das Szenerio von Aufgabe A05.1 auf [Blatt 05](sheet05.md).
 
-"Trainieren" Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
+(2P) "Trainieren" Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
 
-Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bachelor) zuordnen?
+(1P) Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bachelor)
+zuordnen?
 
 
 ## A06.2: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
