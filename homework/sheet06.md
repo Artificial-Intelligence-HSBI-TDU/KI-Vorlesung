@@ -17,7 +17,7 @@ sketch: true
 
 
 
-## A06.2: Textklassifikation mit Naive Bayes (6P)
+## A06.2: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
 
 Laden Sie sich einen geeigneten Datensatz herunter, beispielsweise das
 ["Spam Mails Dataset" (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset).
