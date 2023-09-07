@@ -21,10 +21,10 @@ zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
 
 ## A06.2: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
 
-Laden Sie sich einen geeigneten Datensatz herunter, beispielsweise das
-["Spam Mails Dataset" (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset).
-Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen `ham` bzw.
-`spam`).
+Laden Sie sich den Datensatz
+["Spam Mails Dataset" (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset)
+herunter. Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen
+`ham` bzw. `spam`).
 
 (2P) Bereiten Sie diesen Datensatz für das Training eines Naive Bayes Klassifikators vor.
 Überlegen Sie sich, was mögliche Merkmale sein könnten und schreiben Sie sich ein Skript,
