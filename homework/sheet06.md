@@ -27,6 +27,10 @@ Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klass
 `spam`).
 
 (2P) Bereiten Sie diesen Datensatz für das Training eines Naive Bayes Klassifikators vor.
+Überlegen Sie sich, was mögliche Merkmale sein könnten und schreiben Sie sich ein Skript,
+welches den Datensatz entsprechend bearbeitet/transformiert.
+(_Tipp_: Ein [Bag-of-Words](https://en.wikipedia.org/wiki/Bag-of-words_model) ist ein guter
+ Anfang.)
 
 (2P) Implementieren Sie einen Naive Bayes Klassifikator in einer Programmiersprache Ihrer Wahl
 oder machen Sie sich mit existierenden Implementierungen vertraut, beispielsweise in
