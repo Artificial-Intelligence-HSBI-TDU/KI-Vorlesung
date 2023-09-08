@@ -130,7 +130,7 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
     ein Testat bescheinigt wird.
 
     Kriterien: Sie haben mind. 6 der 10 Aufgabenblätter _jeweils_ ausreichend
-    (mind. 60%) bearbeitet und Lösung im Praktikum vorgestellt.
+    (mind. 60%) bearbeitet und die Lösung im Praktikum vorgestellt.
 
 *   **Klausur**: => Modulnote
 
