@@ -299,18 +299,18 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Woche | Blatt                  | Abgabe ILIAS                                                                                                                                                                                                       | Vorstellung Praktikum |
-|:-----:|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------|
-|  43   | [B01]: Suche           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  44   | [B02]: EA/GA           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  45   | [B03]: Minimax         | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  46   | [B04]: CSP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  47   | [B06]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  48   | [B05]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2023        |
-|  02   | [B09]: MLP             | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
-|  03   | [B10]: Backpropagation | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/ilias.php?ref_id=1258633&target=1258633&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=cl:p3&baseClass=ilexercisehandlergui#il_mhead_t_focus)) | XX, XX.XX.2024        |
+| Woche | Blatt                  | Abgabe ILIAS                                                                                                         | Vorstellung Praktikum |
+|:-----:|:-----------------------|:---------------------------------------------------------------------------------------------------------------------|:----------------------|
+|  43   | [B01]: Suche           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  44   | [B02]: EA/GA           | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  45   | [B03]: Minimax         | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  46   | [B04]: CSP             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  47   | [B06]: NB              | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  48   | [B05]: DTL             | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  49   | [B07]: Perzeptron      | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  51   | [B08]: Lin./Log. Regr. | XX, XX.XX.2023, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2023        |
+|  02   | [B09]: MLP             | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2024        |
+|  03   | [B10]: Backpropagation | XX, XX.XX.2024, XX:XX Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | XX, XX.XX.2024        |
 
 :::
 ::: {.tab title="TDU"}
