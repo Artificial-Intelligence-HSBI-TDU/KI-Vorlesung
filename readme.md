@@ -43,10 +43,10 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
         *   Ausblick: Support-Vektor-Maschinen
     *   Naive Bayes Klassifikator
 
-3.  Inferenz, Logik
-    *   Prädikatenlogik: Modellierung, semantische und formale Beweise,
-        Unifikation, Resolution
-    *   Ausblick: Anwendung in Prolog
+3.  ~~Inferenz, Logik~~ (**entfällt im W23**)
+    *   ~~Prädikatenlogik: Modellierung, semantische und formale Beweise,
+        Unifikation, Resolution~~
+    *   ~~Ausblick: Anwendung in Prolog~~
 
 
 ## Team
