@@ -202,42 +202,42 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Woche | Datum                                   | Themen                                                                                                        | Lead    | Start Bearbeitung Übungsaufgaben |
-|:-----:|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------|:--------|:---------------------------------|
-|  41   | Mo, 09.10.23 (**09:00 - 10:00** Uhr DE) | Orga HSBI (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                   | Carsten |                                  |
-|  42   | Mo, 16.10.23                            | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten | [B01]                            |
-|  43   | Mo, 23.10.23                            | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten | [B02]                            |
-|  44   | Mo, 30.10.23                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B03]                            |
-|  45   | Mo, 06.11.23                            | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten | [B04]                            |
-|  46   | Mo, 13.11.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B06]                            |
-|  47   | Mo, 20.11.23                            | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten | [B05]                            |
-|  48   | Mo, 27.11.23                            | [Perzeptron]                                                                                                  | Canan   | [B07]                            |
-|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan   | [B08]                            |
-|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan   |                                  |
-|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B09]                            |
-|  02   | Mo, 08.01.24                            | [Backpropagation]                                                                                             | Canan   | [B10]                            |
-|  03   | Mo, 15.01.24                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                                  |
-|  04   | Mo, 22.01.24                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                                  |
+| Woche | Datum                                   | Themen                                                                                                        | Lead    | Start Bearbeitung |
+|:-----:|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------|:--------|:------------------|
+|  41   | Mo, 09.10.23 (**09:00 - 10:00** Uhr DE) | Orga HSBI (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                   | Carsten |                   |
+|  42   | Mo, 16.10.23                            | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten | [B01]             |
+|  43   | Mo, 23.10.23                            | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten | [B02]             |
+|  44   | Mo, 30.10.23                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B03]             |
+|  45   | Mo, 06.11.23                            | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten | [B04]             |
+|  46   | Mo, 13.11.23                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B06]             |
+|  47   | Mo, 20.11.23                            | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten | [B05]             |
+|  48   | Mo, 27.11.23                            | [Perzeptron]                                                                                                  | Canan   | [B07]             |
+|  49   | Mo, 04.12.23                            | [Lineare Regression]                                                                                          | Canan   | [B08]             |
+|  50   | Mo, 11.12.23                            | [Logistische Regression]                                                                                      | Canan   |                   |
+|  51   | Mo, 18.12.23                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B09]             |
+|  02   | Mo, 08.01.24                            | [Backpropagation]                                                                                             | Canan   | [B10]             |
+|  03   | Mo, 15.01.24                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                   |
+|  04   | Mo, 22.01.24                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                   |
 
 :::
 ::: {.tab title="TDU"}
 
-| Woche | Datum        | Themen                                                                                                        | Lead           | Start Bearbeitung Übungsaufgaben |
-|:-----:|:-------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:---------------------------------|
-|  40   | Mo, 02.10.23 | Orga TDU (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                    | Canan, Carsten |                                  |
-|  41   | Mo, 09.10.23 | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten        | [B05]                            |
-|  42   | Mo, 16.10.23 | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten        | [B01]                            |
-|  43   | Mo, 23.10.23 | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten        | [B02]                            |
-|  44   | Mo, 30.10.23 | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B03]                            |
-|  45   | Mo, 06.11.23 | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten        | [B04]                            |
-|  46   | Mo, 13.11.23 | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B06]                            |
-|  47   | Mo, 20.11.23 | **Zwischenprüfung**                                                                                           |                |                                  |
-|  48   | Mo, 27.11.23 | [Perzeptron]                                                                                                  | Canan          | [B07]                            |
-|  49   | Mo, 04.12.23 | [Lineare Regression]                                                                                          | Canan          | [B08]                            |
-|  50   | Mo, 11.12.23 | [Logistische Regression]                                                                                      | Canan          |                                  |
-|  51   | Mo, 18.12.23 | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B09]                            |
-|  52   | Mo, 25.12.23 | [Backpropagation]                                                                                             | Canan          | [B10]                            |
-|  02   | Mo, 08.01.24 | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                                  |
+| Woche | Datum        | Themen                                                                                                        | Lead           | Start Bearbeitung |
+|:-----:|:-------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:------------------|
+|  40   | Mo, 02.10.23 | Orga TDU (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                    | Canan, Carsten |                   |
+|  41   | Mo, 09.10.23 | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten        | [B05]             |
+|  42   | Mo, 16.10.23 | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten        | [B01]             |
+|  43   | Mo, 23.10.23 | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten        | [B02]             |
+|  44   | Mo, 30.10.23 | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B03]             |
+|  45   | Mo, 06.11.23 | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten        | [B04]             |
+|  46   | Mo, 13.11.23 | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B06]             |
+|  47   | Mo, 20.11.23 | **Zwischenprüfung**                                                                                           |                |                   |
+|  48   | Mo, 27.11.23 | [Perzeptron]                                                                                                  | Canan          | [B07]             |
+|  49   | Mo, 04.12.23 | [Lineare Regression]                                                                                          | Canan          | [B08]             |
+|  50   | Mo, 11.12.23 | [Logistische Regression]                                                                                      | Canan          |                   |
+|  51   | Mo, 18.12.23 | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B09]             |
+|  52   | Mo, 25.12.23 | [Backpropagation]                                                                                             | Canan          | [B10]             |
+|  02   | Mo, 08.01.24 | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                   |
 
 :::
 ::::::
