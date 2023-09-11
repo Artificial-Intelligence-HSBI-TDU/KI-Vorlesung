@@ -51,9 +51,9 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ## Team
 
--   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI)
--   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
--   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
+*   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI)
+*   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
+*   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
 
 
 ## Kursformat
