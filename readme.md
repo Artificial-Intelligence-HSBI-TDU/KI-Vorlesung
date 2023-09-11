@@ -163,7 +163,8 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 
     1.  Aufgaben bearbeiten und hochladen, und
     2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
-    3.  Feedback zu den Lösungen anderer geben. Für Details siehe "Hinweise zur Übung".
+    3.  Feedback zu den Lösungen anderer geben. Für Details siehe
+        [FAQ](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions).
 
 :::
 ::::::
