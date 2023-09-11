@@ -1,6 +1,6 @@
 ---
 archetype: "home"
-title: "KI W23"
+title: "IFM 5.14 / INF701: KI (W23)"
 ---
 
 
