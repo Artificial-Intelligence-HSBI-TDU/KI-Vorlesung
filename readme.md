@@ -68,14 +68,14 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 | 09.10.23 - 27.10.23        | 30.10.23 - 26.01.24        |
 |:---------------------------|:---------------------------|
 | Mo, 10:00 - 11:30 Uhr (DE) | Mo, 09:00 - 10:30 Uhr (DE) |
-| online/XXXX                | online/XXXX                |
+| online/J101                | online/J101                |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
 :::
 ::: {.tab title="TDU"}
 
-| 18.09.23 - 22.12.23        |
+| 02.10.23 - 12.01.24        |
 |:---------------------------|
 | Mo, 11:00 - 12:30 Uhr (TR) |
 | online                     |
@@ -90,7 +90,7 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Praktikumsgruppe | 09.10.23 - 26.01.24          |
+| Praktikumsgruppe | 23.10.23 - 19.01.24          |
 |:-----------------|:-----------------------------|
 | G1               | XX, XX:XX bis XX:XX Uhr (DE) |
 | G2               | XX, XX:XX bis XX:XX Uhr (DE) |
@@ -101,7 +101,7 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 :::
 ::: {.tab title="TDU"}
 
-| Übungsgruppe | 18.09.23 - 22.12.23          |
+| Übungsgruppe | 16.10.23 - 12.01.24          |
 |:-------------|:-----------------------------|
 | G1           | XX, XX:XX bis XX:XX Uhr (TR) |
 | G2           | XX, XX:XX bis XX:XX Uhr (TR) |
