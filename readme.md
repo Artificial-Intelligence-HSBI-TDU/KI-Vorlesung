@@ -39,7 +39,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
         *   Perzeptron, Lernregel
         *   Feedforward Multilayer Perzeptron (MLP), Backpropagation,
             Trainings- vs. Generalisierungsfehler
-        *   Steuerung des Trainings: Crossvalidierung, Regularisierung
+        *   Steuerung des Trainings: Kreuzvalidierung, Regularisierung
         *   Ausblick: Support-Vektor-Maschinen
     *   Naive Bayes Klassifikator
 
