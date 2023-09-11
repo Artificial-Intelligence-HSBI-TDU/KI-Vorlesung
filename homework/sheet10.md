@@ -21,12 +21,12 @@ Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Net
 
 ## A10.2: Forward- und Backpropagation (2P)
 
-Betrachten Sie das folgende MLP mit einer versteckten Schicht mit zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $\hat{y}$. Beide Zellen verwenden die Aktivierungsfunktion
+Betrachten Sie das folgende MLP mit einer versteckten Schicht mit zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $y$. Beide Zellen verwenden die Aktivierungsfunktion
 $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 ![Abbildung 1](images/mlp.png){width="50%"}
 
-*   (1P) Berechnen Sie die Ausgabe $\hat{y}$ für die Eingabe $(x,y)=(0, 0.5)$. Wie groß ist der Fehler?
+*   (1P) Berechnen Sie die Ausgabe $y$ für die Eingabe $(x,y_T)=(0, 0.5)$. Wie groß ist der Fehler?
 
 *   (1P) Berechnen Sie die partiellen Ableitungen für die Gewichte. Wie lauten die Gewichtsupdates für das obige Trainingsbeispiel? Setzen Sie $\alpha = 0.01$.
 
@@ -42,7 +42,7 @@ Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht.
 
 *   (2P) Trainieren Sie das Netz für den Iris-Datensatz (iris.csv) aus dem [AIMA-Repository](https://github.com/aimacode/aima-data) und nutzen Sie dabei die Variante des stochastischen Gradientenabstiegs. Messen Sie pro Epoche (also nach jedem Durchlauf durch den kompletten Datensatz) den Trainingsfehler. Zeichnen Sie den Trainingsfehler als Diagramm über den Epochen auf.
 
-Falls der Trainingsfehler nach einigen tausend Epochen nicht gegen einen Wert nahe Null strebt, erweitern Sie Ihr Netz (beispielsweise eine versteckte Schicht mehr oder mehr Zellen in der schon existierenden versteckten Schicht, ... ) und trainieren Sie es erneut. Nach wievielen Epochen ist der Trainingsfehler fast Null?
+Falls der Trainingsfehler nach einigen tausend Epochen nicht gegen einen Wert nahe Null strebt, erweitern Sie Ihr Netz (beispielsweise eine versteckte Schicht mehr oder mehr Zellen in der schon existierenden versteckten Schicht, ...) und trainieren Sie es erneut. Nach wievielen Epochen ist der Trainingsfehler fast Null?
 
 *Thema*: Verständnis MLP und Backpropagation, Gefühl für nötige Größe des Netzes
 
