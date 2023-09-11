@@ -16,7 +16,7 @@ Es sind folgende Trainingsdaten gegeben:
 
 $$ ( x^{(1)}, y^{(1)} ) = (1, 1), ( x^{(2)}, y^{(2)} ) = (2, 1), ( x^{(3)}, y^{(3)} ) = (3, 2) $$
 
-Es soll das lineare Regressionsmodell $ h(x) = w_0 + w_1 x $ mit diesen Daten trainiert werden, wobei die zu minimierende Kostenfunktion (durchschnittliche Summe der Fehlerquadrate) wie folgt gegeben ist:
+Es soll das lineare Regressionsmodell $h(x) = w_0 + w_1 x$ mit diesen Daten trainiert werden, wobei die zu minimierende Kostenfunktion (durchschnittliche Summe der Fehlerquadrate) wie folgt gegeben ist:
 
 $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 
