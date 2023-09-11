@@ -69,34 +69,34 @@ Algorithmen bereits vorhanden. In neueren Versionen müssen Sie in der Weka-Haup
 den Paketmanager unter "Tools" starten und dort nach einem Paket suchen, welches ID3
 enthält, und dieses Paket nachinstallieren.
 
-### Training mit J48 (1P)
+1.  Training mit J48 (1P)
 
-Wechseln Sie auf den Reiter "Classify" und wählen Sie mit dem Button "Choose" den
-Entscheidungsbaum-Lerner J48 aus. (Dies ist eine Java-Implementierung von C4.5. Die
-ID3-Implementierung funktioniert für den `zoo.csv`-Datensatz leider nicht ...)
+    Wechseln Sie auf den Reiter "Classify" und wählen Sie mit dem Button "Choose" den
+    Entscheidungsbaum-Lerner J48 aus. (Dies ist eine Java-Implementierung von C4.5. Die
+    ID3-Implementierung funktioniert für den `zoo.csv`-Datensatz leider nicht ...)
 
-Lernen Sie für die beiden Datensätze je einen Entscheidungsbaum. Wie sehen die Bäume
-aus? Wie hoch ist jeweils die Fehlerrate für den Trainingssatz? (Stellen Sie unter
-"Test options" den Haken auf "Use training set".) Interpretieren Sie die **Confusion
-Matrix**.
+    Lernen Sie für die beiden Datensätze je einen Entscheidungsbaum. Wie sehen die Bäume
+    aus? Wie hoch ist jeweils die Fehlerrate für den Trainingssatz? (Stellen Sie unter
+    "Test options" den Haken auf "Use training set".) Interpretieren Sie die **Confusion
+    Matrix**.
 
-### ARFF-Format (1P)
+2.  ARFF-Format (1P)
 
-Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
-spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
-welchen Typ diese haben und welche Werte auftreten dürfen.
+    Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
+    spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
+    welchen Typ diese haben und welche Werte auftreten dürfen.
 
-Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
+    Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
 
-Konvertieren Sie den Zoo- und Restaurantdatensatz in das ARFF-Format. Beachten Sie, dass
-die ID3-Implementierung von Weka nicht mit bestimmten Attributtypen umgehen kann.
+    Konvertieren Sie den Zoo- und Restaurantdatensatz in das ARFF-Format. Beachten Sie, dass
+    die ID3-Implementierung von Weka nicht mit bestimmten Attributtypen umgehen kann.
 
-### Training mit ID3 und J48 (1P)
+3.  Training mit ID3 und J48 (1P)
 
-Trainieren Sie für die im letzten Schritt erstellten Datensätze (Zoo und Restaurant) im
-ARFF-Format erneut Entscheidungsbäume. Nutzen Sie diesmal sowohl ID3 als auch J48.
+    Trainieren Sie für die im letzten Schritt erstellten Datensätze (Zoo und Restaurant) im
+    ARFF-Format erneut Entscheidungsbäume. Nutzen Sie diesmal sowohl ID3 als auch J48.
 
-Vergleichen Sie wieder die Ergebnisse (Entscheidungsbäume, Fehlerraten, Confusion Matrix)
-untereinander und mit den Ergebnissen aus dem J48-Lauf mit den `.csv`-Dateien.
+    Vergleichen Sie wieder die Ergebnisse (Entscheidungsbäume, Fehlerraten, Confusion Matrix)
+    untereinander und mit den Ergebnissen aus dem J48-Lauf mit den `.csv`-Dateien.
 
 *Thema*: Kennenlernen von Weka
