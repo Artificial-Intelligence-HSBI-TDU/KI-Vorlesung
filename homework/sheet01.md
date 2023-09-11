@@ -84,7 +84,7 @@ vor München, Karlsruhe vor Kassel etc.
 
 
 
-## A01.6: Dominanz (1P)
+## A01.5: Dominanz (1P)
 
 Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
 
@@ -98,7 +98,7 @@ Geben Sie selbstgewählte Beispiele an.
 
 
 
-## A01.7: Beweis der Optimalität von A* (1P)
+## A01.6: Beweis der Optimalität von A* (1P)
 
 Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
 zulässigen Heuristik optimal ist.
@@ -107,7 +107,7 @@ zulässigen Heuristik optimal ist.
 
 
 
-## A01.8 Bonus: Turing Test (1P)
+## A01.7 Bonus: Turing Test (1P)
 
 Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
 
