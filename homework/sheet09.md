@@ -10,7 +10,7 @@ hidden: true
 
 ## A09.1: Perzeptron-Netze (2P)
 
-Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen x1 und x2 die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die sign-Funktion als Aktivierungsfunktion.
+Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
 
 ![Abbildung 1](images/perzeptron_netz.png){width="60%"}
 
