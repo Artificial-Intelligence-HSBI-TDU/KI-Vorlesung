@@ -89,9 +89,9 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 | Praktikumsgruppe | 23.10.23 - 19.01.24          |
 |:-----------------|:-----------------------------|
-| G1               | XX, XX:XX bis XX:XX Uhr (DE) |
-| G2               | XX, XX:XX bis XX:XX Uhr (DE) |
-|                  | online/XXXX                  |
+| G1/G3            | Di, 17:30 bis 19:00 Uhr (DE) |
+| G2               | Mo, 17:30 bis 19:00 Uhr (DE) |
+|                  | online/J101                  |
 
 Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
