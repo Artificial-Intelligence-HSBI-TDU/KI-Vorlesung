@@ -50,7 +50,7 @@ menu:
     - name: "<i class='fas fa-bookmark'></i> Note/Credits"
       url: "/index.html#prüfungsform-note-und-credits"
       weight: 40
-    - name: "<i class='fas fa-bookmark'></i> FAQ"
+    - name: "<i class='fas fa-external-link-alt'></i> FAQ"
       url: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions"
       weight: 50
 
