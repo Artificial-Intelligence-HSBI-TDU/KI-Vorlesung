@@ -92,7 +92,8 @@ Dauer jeweils 90 Minuten.
 
 ### Zugelassene Hilfsmittel
 
-#### Präsenz
+:::::: {.tabs groupid="modus"}
+::: {.tab title="Präsenz (in Minden)"}
 
 **Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
 
@@ -103,7 +104,8 @@ Ich möchte Sie hier noch einmal ermuntern, diesen Zettel tatsächlich manuell z
 (also ganz traditionell zu **schreiben**), da bereits der Schreibvorgang einen gewissen
 Lerneffekt bewirkt!
 
-#### Open-Book-Ausarbeitung
+:::
+::: {.tab title="Open-Book-Ausarbeitung (Homeoffice)"}
 
 Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden sollte, dürfen
 Sie alle Unterlagen benutzen.
@@ -113,6 +115,9 @@ Sie alle Unterlagen benutzen.
     Sie sollen die Prüfung eigenständig bearbeiten. Hilfe von Dritten sowie jegliche Kommunikation
     mit Dritten ist in keinem Fall zugelassen und wird als Täuschungsversuch gewertet.
 
+:::
+::::::
+
 ### Einsicht
 
 *   Prüfungseinsicht: Zeitnah; Bekanntgabe per Mail
@@ -120,7 +125,8 @@ Sie alle Unterlagen benutzen.
 
 ## Technische Vorbereitungen
 
-### Präsenzprüfung am Campus Minden
+:::::: {.tabs groupid="modus"}
+::: {.tab title="Präsenz (in Minden)"}
 
 Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
 
@@ -137,7 +143,8 @@ Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räume
     eine entsprechende Kontrolle statt. Halten Sie Ihren Studierendenausweis und Personalausweis
     bereit.
 
-### Home-Office
+:::
+::: {.tab title="Open-Book-Ausarbeitung (Homeoffice)"}
 
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
 Durchführung in Präsenz in den Räumen am Campus Minden werden die technischen Details von uns
@@ -181,6 +188,9 @@ für Sie vorbereitet sein.
     eigenen Hardware im Home-Office durch. Auch hier müssen Sie sich am Prüfungs-ILIAS anmelden.
     Dazu benötigen Sie ihre HSBI-Zugangsdaten, mit denen Sie sich auch im "normalen" ILIAS anmelden.
 
+:::
+::::::
+
 
 ## Bearbeitung des E-Assessment
 
@@ -210,8 +220,8 @@ für Sie vorbereitet sein.
     Nur bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
 
 5.  Verbindungsprobleme (Home-Office):
-    -   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
-    -   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
+    *   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
+    *   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
         [(außer Sie haben die Probleme aktiv herbeigeführt, dann kann das als
         Täuschungsversuch gewertet werden, vgl. RPO §22a (4))]{.notes}
 
@@ -245,8 +255,8 @@ wiederholen.
     *   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung
         möglich ist und (wie) gefragt werden könnte :)
 
-::: cbox
-Können vor Kennen :-)
+::: center
+[**Können vor Kennen :-)**]{.alert}
 :::
 
 
@@ -256,9 +266,7 @@ Können vor Kennen :-)
 
 Betrachten Sie den folgenden Graphen:
 
-:::center
 ![](images/graph.png){width="60%"}
-:::
 
 Führen Sie eine Handsimulation der Breitensuche durch. Start ist
 "K", Ziel ist "B".
