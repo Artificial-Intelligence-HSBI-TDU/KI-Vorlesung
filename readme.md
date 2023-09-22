@@ -51,6 +51,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 *   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI)
 *   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 *   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
+*   [Halit Canap Demir](https://people.tau.edu.tr/people.show/halit.demir/de) (TDU)
 
 
 ## Kursformat
@@ -100,12 +101,11 @@ Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
 | Übungsgruppe | 16.10.23 - 12.01.24          |
 |:-------------|:-----------------------------|
-| G1           | XX, XX:XX bis XX:XX Uhr (TR) |
-| G2           | XX, XX:XX bis XX:XX Uhr (TR) |
-| G3           | XX, XX:XX bis XX:XX Uhr (TR) |
+| G1 / G3      | Do, 14:30 bis 15:30 Uhr (TR) |
+| G2 / G4      | Do, 15:30 bis 16:30 Uhr (TR) |
 |              | online                       |
 
-Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
+Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 :::
 ::::::
