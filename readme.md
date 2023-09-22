@@ -23,7 +23,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 1.  Problemlösen
     *   Zustände, Aktionen, Problemraum
-    *   Suche (blind, informiert): Breiten-, Tiefensuche, Best-First,i
+    *   Suche (blind, informiert): Breiten-, Tiefensuche, Best-First,
         Branch-and-Bound, A-Stern
     *   Lokale Suche: Gradientenabstieg, Genetische/Evolutionäre Algorithmen (GA/EA)
     *   Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken
