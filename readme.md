@@ -137,31 +137,19 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 :::
 ::: {.tab title="TDU"}
 
-**Notenzusammensetzung TDU**
 
-<!--
-| Prüfung         | Gewicht |
-|:----------------|---------|
-| Übung (UE)      | 40 %    |
-| Endprüfung (EP) | 60 %    |
--->
+| Prüfung         | Gewicht                          |
+|:----------------|----------------------------------|
+| Zwischenprüfung | **40 %**                         |
+| Endprüfung      | **60 %**                         |
+| Übung           | **10 % Bonus für Endprüfung**    |
 
-*   **Endprüfung 60%**
 
-    Die Endprüfung ist als schriftliche Prüfung auf dem Campus vorgesehen.
+Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsnote ≥40**),
+werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
 
-    Es wird keine Zwischenprüfung stattfinden.
-
-*   **Übung 40%**
-
-    Für die Vergabe von Punkten ist die **erfolgreiche Teilnahme an der Übung** erforderlich.
-
-    Erfolgreiche Teilnahme bedeutet:
-
-    1.  Aufgaben bearbeiten und hochladen, und
-    2.  In Übungsstunde anwesend sein, gegebenenfalls eigene Lösung vorstellen, und
-    3.  Feedback zu den Lösungen anderer geben. Für Details siehe
-        [FAQ](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions).
+Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
+**Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
 
 :::
 ::::::
