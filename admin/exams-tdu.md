@@ -31,7 +31,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
     *   **Vorname_Nachname_UE1.pdf**
     *   **Vorname_Nachname_UE1.ipnyb**
 *   Die Bearbeitung der Aufgaben erfolgt individuell.  
-    *   Das Diskutieren der Themen untereinander ist Vorteilhaft, das Teilen von Lösungen nicht!
+    *   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen nicht!
 
 #### Gelöste Aufgaben ankreuzen
 *   Geben Sie im Google Classroom über das bereitgestellte Google Formular an, welche Aufgaben Sie gelöst haben.
