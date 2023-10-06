@@ -15,23 +15,23 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld"
-     name: "Selbsttest Lineare Regression (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld"
+    name: "Selbsttest Lineare Regression (ILIAS)"
 assignments:
-    - topic: sheet08
+  - topic: sheet08
 youtube:
-    - link: "https://youtu.be/f-DTaKMnkj4"
-      name: "NN2.1 - Lineare Regression - Intro"
-    - link: "https://youtu.be/UnLjjMswNRo"
-      name: "NN2.2 - Vergleich Perzeptron und Bsp"
-    - link: "https://youtu.be/H2YvYIaUW1Q"
-      name: "NN2.3 - Kostenfunktiıon und Gradientenvektor"
-    - link: "https://youtu.be/URaVsZnfppQ"
-      name: "NN2.4 - Berechnung Gradientenvektor - Beispiel"
-    - link: "https://youtu.be/5OZF3Qopous"
-      name: "NN2.5 - Berechnung Gradientenvektor - Allgemein"
-    - link: "https://youtu.be/m-TnM13I-no"
-      name: "NN2.6 - Skalierung der Merkmale"
+  - link: "https://youtu.be/f-DTaKMnkj4"
+    name: "NN2.1 - Lineare Regression - Intro"
+  - link: "https://youtu.be/UnLjjMswNRo"
+    name: "NN2.2 - Vergleich Perzeptron und Bsp"
+  - link: "https://youtu.be/H2YvYIaUW1Q"
+    name: "NN2.3 - Kostenfunktiıon und Gradientenvektor"
+  - link: "https://youtu.be/URaVsZnfppQ"
+    name: "NN2.4 - Berechnung Gradientenvektor - Beispiel"
+  - link: "https://youtu.be/5OZF3Qopous"
+    name: "NN2.5 - Berechnung Gradientenvektor - Allgemein"
+  - link: "https://youtu.be/m-TnM13I-no"
+    name: "NN2.6 - Skalierung der Merkmale"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN2-Lineare_Regression.pdf"
     name: "NN2-Lineare_Regression.pdf"
@@ -39,13 +39,13 @@ challenges: |
     **Skalierung der Merkmale**
 
     Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
- 
+
     ![Abbildung 1](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_a.png){width="40%"}
     ![Abbildung 2](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_b.png){width="40%"}
 
-    *   Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil? 
+    *   Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil?
     Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?
-    *   Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich 
+    *   Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich
     $[100, 300] \times [0, 2]$, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
     Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb) als Startpunkt benutzen.
 ---

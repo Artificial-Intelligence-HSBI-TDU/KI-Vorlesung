@@ -14,17 +14,17 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld"
-     name: "Selbsttest Training & Testing (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld"
+    name: "Selbsttest Training & Testing (ILIAS)"
 #assignments:
 #    - topic: sheet12
 youtube:
-    - link: "https://youtu.be/PUw-TvLJULI"
-      name: "NN7.1 - Training, Testing, Validierung"
-    - link: "https://youtu.be/DqjdZ8HaDSo"
-      name: "NN7.2 - Kreuzvalidierung"
-    - link: "https://youtu.be/7XATTMNI-gI"
-      name: "NN7.3 - Beispiel"
+  - link: "https://youtu.be/PUw-TvLJULI"
+    name: "NN7.1 - Training, Testing, Validierung"
+  - link: "https://youtu.be/DqjdZ8HaDSo"
+    name: "NN7.2 - Kreuzvalidierung"
+  - link: "https://youtu.be/7XATTMNI-gI"
+    name: "NN7.3 - Beispiel"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN7-Testing-Validierung.pdf"
     name: "NN7-Testing-Validierung.pdf"

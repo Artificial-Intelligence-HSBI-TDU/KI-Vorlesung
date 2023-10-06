@@ -15,21 +15,21 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
-     name: "Selbsttest Intro ML (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
+    name: "Selbsttest Intro ML (ILIAS)"
 assignments:
-    - topic: sheet07
+  - topic: sheet07
 youtube:
-    - link: "https://youtu.be/IJdiwITTC9Y"
-      name: "NN1.1 - Einführung"
-    - link: "https://youtu.be/oWcvFyLgqYc"
-      name: "NN1.2 - Fallstudie und Formalisierung"
-    - link: "https://youtu.be/ZvWpI0Doocc"
-      name: "NN1.3 - Das Perzeptron Modell"
-    - link: "https://youtu.be/8Rdw2NBCCJk"
-      name: "NN1.4 - Perzeptron Beispiel"
-    - link: "https://youtu.be/JD8Qsg8_kQI"
-      name: "NN1.5 - Der Perzeptron Lernalgorithmus"
+  - link: "https://youtu.be/IJdiwITTC9Y"
+    name: "NN1.1 - Einführung"
+  - link: "https://youtu.be/oWcvFyLgqYc"
+    name: "NN1.2 - Fallstudie und Formalisierung"
+  - link: "https://youtu.be/ZvWpI0Doocc"
+    name: "NN1.3 - Das Perzeptron Modell"
+  - link: "https://youtu.be/8Rdw2NBCCJk"
+    name: "NN1.4 - Perzeptron Beispiel"
+  - link: "https://youtu.be/JD8Qsg8_kQI"
+    name: "NN1.5 - Der Perzeptron Lernalgorithmus"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN1-Das_Perzeptron.pdf"
     name: "NN1-Das_Perzeptron.pdf"
