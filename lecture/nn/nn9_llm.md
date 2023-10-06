@@ -13,10 +13,10 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 youtube:
-    - link: "https://youtu.be/TODO"
-      name: "NN9.1 - TODO"
-    - link: "https://youtu.be/TODO"
-      name: "NN9.2 - TODO"
+  - link: "https://youtu.be/TODO"
+    name: "NN9.1 - TODO"
+  - link: "https://youtu.be/TODO"
+    name: "NN9.2 - TODO"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN9-LLM.pdf"
     name: "NN9-LLM.pdf"

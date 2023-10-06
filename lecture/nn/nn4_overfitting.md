@@ -9,18 +9,18 @@ outcomes:
   - k2: "Regularisierung (Auswirkung auf Gewichte und Modell)"
   - k3: "Gradientenabstieg für regularisierte logistische Regression"
 readings:
-    - key: "AbuMostafa2012"
-      comment: "Kapitel 4"
+  - key: "AbuMostafa2012"
+    comment: "Kapitel 4"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
-     name: "Selbsttest Overfitting (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
+    name: "Selbsttest Overfitting (ILIAS)"
 assignments:
-    - topic: sheet10
+  - topic: sheet09
 youtube:
-    - link: "https://youtu.be/KJLT-h_ChRo"
-      name: "NN4.1 - Nichtlineare Modelle"
-    - link: "https://youtu.be/BW91MYPUH_k"
-      name: "NN4.2 - Overfitting und Regularisierung"
+  - link: "https://youtu.be/KJLT-h_ChRo"
+    name: "NN4.1 - Nichtlineare Modelle"
+  - link: "https://youtu.be/BW91MYPUH_k"
+    name: "NN4.2 - Overfitting und Regularisierung"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN4-Nichtlineare_Modelle_und_Overfitting.pdf"
     name: "NN4-Nichtlineare_Modelle_und_Overfitting.pdf"

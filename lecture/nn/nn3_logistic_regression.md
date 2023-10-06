@@ -14,19 +14,19 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106591&client_id=FH-Bielefeld"
-     name: "Selbsttest Logistische Regression (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106591&client_id=FH-Bielefeld"
+    name: "Selbsttest Logistische Regression (ILIAS)"
 assignments:
-    - topic: sheet09
+  - topic: sheet08
 youtube:
-    - link: "https://youtu.be/GpJmjrqA5RY"
-      name: "NN3.1 - Logistische Regression - Intro"
-    - link: "https://youtu.be/z-jFZeNWMRc"
-      name: "NN3.2 - Logistische Regression - Hypothesenfunktion und Bsp"
-    - link: "https://youtu.be/ruuCKupOhCE"
-      name: "NN3.3 - Logistische Regression - Verlust und Kosten"
-    - link: "https://youtu.be/kPAZsr-r1LA"
-      name: "NN3.4 - Logistische Regression - Gradientenabstieg"
+  - link: "https://youtu.be/GpJmjrqA5RY"
+    name: "NN3.1 - Logistische Regression - Intro"
+  - link: "https://youtu.be/z-jFZeNWMRc"
+    name: "NN3.2 - Logistische Regression - Hypothesenfunktion und Bsp"
+  - link: "https://youtu.be/ruuCKupOhCE"
+    name: "NN3.3 - Logistische Regression - Verlust und Kosten"
+  - link: "https://youtu.be/kPAZsr-r1LA"
+    name: "NN3.4 - Logistische Regression - Gradientenabstieg"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN3-Logistische_Regression.pdf"
     name: "NN3-Logistische_Regression.pdf"

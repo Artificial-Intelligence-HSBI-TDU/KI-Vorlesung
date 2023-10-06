@@ -13,17 +13,17 @@ outcomes:
 #     comment: "Kapitel 2 und 3"
 #   - key: "Ertel2017"
 quizzes:
-   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld"
-     name: "Selbsttest Backpropagation (ILIAS)"
+  - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld"
+    name: "Selbsttest Backpropagation (ILIAS)"
 assignments:
-    - topic: sheet11
+  - topic: sheet10
 youtube:
-    - link: "https://youtu.be/G9x75THjueQ"
-      name: "NN6.1 - MLP Backpropagation 1"
-    - link: "https://youtu.be/9Ku0dJ8pGrU"
-      name: "NN6.2 - MLP Backpropagation 2"
-    - link: "https://youtu.be/uvT4WPIIkwQ"
-      name: "NN6.3 - MLP Zusammenfassung"
+  - link: "https://youtu.be/G9x75THjueQ"
+    name: "NN6.1 - MLP Backpropagation 1"
+  - link: "https://youtu.be/9Ku0dJ8pGrU"
+    name: "NN6.2 - MLP Backpropagation 2"
+  - link: "https://youtu.be/uvT4WPIIkwQ"
+    name: "NN6.3 - MLP Zusammenfassung"
 attachments:
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf"
     name: "NN6-MLP_Backpropagation.pdf"
