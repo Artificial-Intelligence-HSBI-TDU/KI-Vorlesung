@@ -96,6 +96,8 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
+[**Bitte tragen Sie sich in der [Buchungs-Liste] ein.**]{.alert}
+
 :::
 ::: {.tab title="TDU"}
 
@@ -111,6 +113,7 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::::::
 
 [ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
+[Buchungs-Liste]: https://www.hsbi.de/elearning/goto.php?target=book_1294778&client_id=FH-Bielefeld
 [Google Classroom]: https://classroom.google.com/c/NjMzNDM4MDk1NTM5
 
 ### Prüfungsform, Note und Credits
