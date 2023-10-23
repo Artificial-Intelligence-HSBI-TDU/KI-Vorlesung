@@ -143,7 +143,7 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 [Quelle: ["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz, reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/Public_domain))]{.origin}
 :::
 
-*   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: $math.exp(dE/temp)$
+*   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: `math.exp(dE/temp)`
 *   $dE$ negativ => $\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$
 
 $\exp(a)$ bzw. $e^a$:
@@ -151,12 +151,12 @@ $\exp(a)$ bzw. $e^a$:
 *   $a=0$: 1
 *   $a>0$: steil (exponentiell) gegen Unendlich ...
 
-Wenn $dE$ negativ ist, wird $math.exp(dE/temp)$ ausgewertet. Damit ergibt sich wegen $dE$ negativ:
+Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet. Damit ergibt sich wegen $dE$ negativ:
 $\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$.
-Betrachtung für $dE$ (nur negativer Fall!) und $temp$:
-*   Temperatur $temp$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder
+Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
+*   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder
     größer), d.h. die Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
-*   Temperatur $temp$ wird kleiner und geht gegen Null: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
+*   Temperatur $\text{temp}$ wird kleiner und geht gegen Null: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
     $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$ geht gegen 0
 :::
 
