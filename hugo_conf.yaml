@@ -16,7 +16,6 @@ theme:
 #publishDir: "docs"  ## set via Makefile: $(WEB_OUTPUT_DIR)
 
 params:
-  author: "cagix"
   titleSeparator: " "
   alwaysopen: false
   showVisitedLinks: true
