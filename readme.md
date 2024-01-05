@@ -96,7 +96,9 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 
 Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
 
+<!--
 [**Bitte tragen Sie sich in der [Buchungs-Liste] ein.**]{.alert}
+-->
 
 :::
 ::: {.tab title="TDU"}
