@@ -206,6 +206,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 |  02   | Mo, 08.01.                            | [Backpropagation]                                                                                             | Canan   | [B10]             |
 |  03   | Mo, 15.01.                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                   |
 |  04   | Mo, 22.01.                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                   |
+| _05_  | _Mi, 31.01._ (13:00 - 14:30 Uhr DE)   | Klausur (Campus Minden, B40)                                                                                  |         |                   |
 
 :::
 ::: {.tab title="TDU"}
