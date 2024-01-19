@@ -208,6 +208,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 |  04   | Mo, 22.01.                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                   |
 | _05_  | _Mi, 31.01._ (13:00 - 14:30 Uhr DE)   | Klausur (Campus Minden, B40)                                                                                  |         |                   |
 
+[**Bitte geben Sie mir Feedback: Nehmen Sie bitte an der anonymen [Umfrage] zu Künstliche Intelligenz teil.**]{.alert}
+
 :::
 ::: {.tab title="TDU"}
 
@@ -230,6 +232,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 :::
 ::::::
+
+[Umfrage]: https://www.hsbi.de/elearning/goto.php?target=svy_1339632&client_id=FH-Bielefeld
 
 [Einführung KI]: lecture/intro/intro-ai.md
 [Problemlösen]: lecture/intro/problems.md
