@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Resolutionsbeweise"
-menuTitle: "Resolution"
+linkTitle: "Resolution"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

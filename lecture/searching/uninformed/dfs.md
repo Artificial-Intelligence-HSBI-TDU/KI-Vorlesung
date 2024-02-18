@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Suche mit Tiefensuche"
-menuTitle: "Tiefensuche"
+linkTitle: "Tiefensuche"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

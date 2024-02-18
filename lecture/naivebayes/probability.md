@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Wiederholung Wahrscheinlichkeitstheorie"
-menuTitle: "Wahrscheinlichkeiten"
+linkTitle: "Wahrscheinlichkeiten"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

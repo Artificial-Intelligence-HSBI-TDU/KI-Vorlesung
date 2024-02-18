@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Klassifikation mit Naive Bayes"
-menuTitle: "Naive Bayes"
+linkTitle: "Naive Bayes"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Modelle"
-menuTitle: "Modelle"
+linkTitle: "Modelle"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

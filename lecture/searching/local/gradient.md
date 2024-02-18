@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Lokale Suche: Gradientensuche"
-menuTitle: "Gradientensuche"
+linkTitle: "Gradientensuche"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Suche mit `A*`{=markdown}"
-menuTitle: "`A*`{=markdown}"
+linkTitle: "`A*`{=markdown}"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

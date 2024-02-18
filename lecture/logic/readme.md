@@ -1,7 +1,7 @@
 ---
 archetype: "default"
 title: "Logik"
-menuTitle: "Logik"
+linkTitle: "Logik"
 ---
 
 

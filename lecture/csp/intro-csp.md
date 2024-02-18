@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Einführung Constraints"
-menuTitle: "Intro"
+linkTitle: "Intro"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"
