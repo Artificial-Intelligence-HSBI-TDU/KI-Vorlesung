@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
 title: "NN8 - Performanzanalyse"
-menuTitle: "NN8 - Performanzanalyse"
+linkTitle: "NN8 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Performanzmetriken für die Evaluierung von Klassifizierungsmodellen"

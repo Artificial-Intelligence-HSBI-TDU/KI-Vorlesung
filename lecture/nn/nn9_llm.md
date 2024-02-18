@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
 title: "NN9 - Large Language Models"
-menuTitle: "NN9 - LLM"
+linkTitle: "NN9 - LLM"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "TODO"

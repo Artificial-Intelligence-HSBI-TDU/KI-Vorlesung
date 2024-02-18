@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Suche mit Breitensuche"
-menuTitle: "Breitensuche"
+linkTitle: "Breitensuche"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

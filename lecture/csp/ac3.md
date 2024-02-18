@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Kantenkonsistenz und AC-3"
-menuTitle: "AC-3"
+linkTitle: "AC-3"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

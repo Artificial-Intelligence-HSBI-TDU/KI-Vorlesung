@@ -1,7 +1,7 @@
 ---
 archetype: "default"
 title: "Vorlesungsunterlagen"
-menutitle: "Vorlesung"
+linkTitle: "Vorlesung"
 ---
 
 

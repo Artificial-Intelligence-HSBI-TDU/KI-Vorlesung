@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Einführung Optimale Spiele"
-menuTitle: "Optimale Spiele"
+linkTitle: "Optimale Spiele"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Suche mit Best First"
-menuTitle: "Best First"
+linkTitle: "Best First"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

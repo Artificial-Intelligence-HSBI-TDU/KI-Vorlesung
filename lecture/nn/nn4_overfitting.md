@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
 title: "NN4 - Overfitting und Regularisierung"
-menuTitle: "NN4 - Overfitting"
+linkTitle: "NN4 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer Ordnung"

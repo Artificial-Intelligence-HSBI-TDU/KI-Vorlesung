@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cg
 title: "Lokale Suche: Simulated Annealing"
-menuTitle: "Simulated Annealing"
+linkTitle: "Simulated Annealing"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

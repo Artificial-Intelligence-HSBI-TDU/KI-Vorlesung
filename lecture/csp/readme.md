@@ -1,7 +1,7 @@
 ---
 archetype: "default"
 title: "Constraintsolving"
-menuTitle: "CSP"
+linkTitle: "CSP"
 ---
 
 
