@@ -1,0 +1,45 @@
+'@context': https://schema.org/
+creativeWorkStatus: Published
+type: LearningResource
+name: Lecture "Künstliche Intelligenz"
+description: >-
+  This represents the lecture material for the lecture "Künstliche Intelligenz",
+  a course jointly developed and taught at Bielefeld University of Applied
+  Sciences (Bielefeld) and Turkish-German University (Istanbul).
+license: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+id: https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung
+creator:
+  - givenName: Carsten
+    familyName: Gips
+    id: https://orcid.org/0000-0002-4230-9060
+    type: Person
+    affiliation:
+      name: Hochschule Bielefeld
+      type: Organization
+  - givenName: Canan
+    familyName: Yıldız
+    id: https://orcid.org/0000-0002-9018-9462
+    type: Person
+    affiliation:
+      name: Türkisch-Deutsche Universität Istanbul
+      type: Organization
+keywords:
+  - artificial intelligence
+  - machine learning
+  - oer
+inLanguage:
+  - de
+about:
+  - https://w3id.org/kim/hochschulfaechersystematik/n079
+image: >-
+  https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/static/images/logo.png?raw=true
+learningResourceType:
+  - https://w3id.org/kim/hcrt/course
+  - https://w3id.org/kim/hcrt/drill_and_practice
+  - https://w3id.org/kim/hcrt/script
+  - https://w3id.org/kim/hcrt/video
+  - https://w3id.org/kim/hcrt/web_page
+educationalLevel:
+  - https://w3id.org/kim/educationalLevel/level_A
+  - https://w3id.org/kim/educationalLevel/level_6
+datePublished: '2024-02-28'
