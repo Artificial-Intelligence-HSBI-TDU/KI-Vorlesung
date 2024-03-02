@@ -47,7 +47,7 @@ METADATA   = ki.yaml
 ## Top level directory for source files
 SRC_DIR    = lecture
 
-## local.yaml allows to override settings in hugo_conf.yaml
+## local.yaml allows to override settings in hugo.yaml
 HUGO_LOCAL = $(wildcard local.yaml)
 
 ## Filename of "landing pages": usually "readme.md"
@@ -93,7 +93,7 @@ DOT_ARGS       = -Tpng
 PANDOC_ARGS    = --metadata-file=$(METADATA)  $(PANDOC_DIRS)
 
 ## Define options to be used by Hugo
-HUGO_ARGS      = --config hugo_conf.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)  --contentDir $(TEMP_DIR)  --destination $(WEB_OUTPUT_DIR)  --printPathWarnings --panicOnWarning
+HUGO_ARGS      = --config hugo.yaml,$(HUGO_LOCAL)  $(HUGO_DIRS)  --contentDir $(TEMP_DIR)  --destination $(WEB_OUTPUT_DIR)  --printPathWarnings --panicOnWarning
 
 #--------------------------------------------------------------------------------
 # I/O Directories
@@ -250,8 +250,8 @@ $(WEB_IMAGE_TARGETS):
 ## Hugo: Process markdown with pandoc (preprocessing for hugo)
 $(WEB_MARKDOWN_TARGETS):
 	$(create-folder)
-	$(PANDOC) $(PANDOC_ARGS)  -L hugo_rewritelinks.lua -s  -d hugo -M weight=$(WEIGHT) -M indexMD=$(INDEX_MD) -M warp=$(WARP_DIR) $< -o $@
-#	$(PANDOC) $(PANDOC_ARGS) -d hugo -M weight=$(WEIGHT) -M indexMD=$(INDEX_MD) -M warp=$(WARP_DIR) $< -o $@
+	$(PANDOC) $(PANDOC_ARGS)  -L hugo_rewritelinks.lua -s  -d relearn -M weight=$(WEIGHT) -M indexMD=$(INDEX_MD) -M warp=$(WARP_DIR) $< -o $@
+#	$(PANDOC) $(PANDOC_ARGS) -d relearn -M weight=$(WEIGHT) -M indexMD=$(INDEX_MD) -M warp=$(WARP_DIR) $< -o $@
 
 ## Slides: Generate pdf slides
 ## Folder structure and names: path/name.md, path/<images>/, path_name.pdf
