@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.0">
+    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html">
+    <title>IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)</title>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.print.html" rel="alternate" type="text/html" title="IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1710829491" rel="icon" type="image/png">
+
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829491" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829491" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1710829491" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829491" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829491" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1710829491" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829491" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829491" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1710829491" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1710829491" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1710829491" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1710829491" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1710829491" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/ie.css?1710829491" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/url.js?1710829491"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1710829491"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#kursbeschreibung">Kursbeschreibung</a></li>
+    <li><a href="#überblick-modulinhalte">Überblick Modulinhalte</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#kursformat">Kursformat</a>
+      <ul>
+        <li><a href="#vorlesung-2-sws">Vorlesung: 2 SWS</a></li>
+        <li><a href="#praktikumübung-2-sws">Praktikum/Übung: 2 SWS</a></li>
+        <li><a href="#prüfungsform-note-und-credits">Prüfungsform, Note und Credits</a></li>
+      </ul>
+    </li>
+    <li><a href="#materialien">Materialien</a>
+      <ul>
+        <li><a href="#literatur">Literatur</a></li>
+        <li><a href="#tools">Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#fahrplan">Fahrplan</a>
+      <ul>
+        <li><a href="#vorlesung">Vorlesung</a></li>
+        <li><a href="#praktikumübung">Praktikum/Übung</a></li>
+      </ul>
+    </li>
+    <li><a href="#förderungen-und-kooperationen">Förderungen und Kooperationen</a>
+      <ul>
+        <li><a href="#kooperation-zw-hsbi-und-tdu">Kooperation zw. HSBI und TDU</a></li>
+        <li><a href="#kooperation-mit-dem-digikos-projekt">Kooperation mit dem DigikoS-Projekt</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable home" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="home">
+            <header class="headline">
+            </header>
+<h1 id="ifm-514--inf701-künstliche-intelligenz-winter-202324">IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)</h1>
+
+<p><a href="#R-image-3a0873342bd5456f9bfc3be131a3085f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a0873342bd5456f9bfc3be131a3085f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg?width=60%25&height=auto"></a>
+<span class='origin'>Quelle: <a href="https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-netzwerk-3706562/" target="_blank">&quot;künstliche intelligenz&quot;</a> by <a href="https://pixabay.com/de/users/geralt-9301/" target="_blank">Gerd Altmann (geralt)</a> on Pixabay.com (<a href="https://pixabay.com/de/service/license/" target="_blank">Pixabay License</a>)</span></p>
+<h2 id="kursbeschreibung">Kursbeschreibung</h2>
+<p>Ausgehend von den Fragen &quot;Was ist <em>Intelligenz</em>?&quot; und &quot;Was ist <em>künstliche</em> Intelligenz?&quot;
+werden wir uns in diesem Modul mit <strong>verschiedenen Teilgebieten der KI</strong> beschäftigen und
+uns anschauen, welche <strong>Methoden und Algorithmen</strong> es gibt und wie diese funktionieren. Dabei
+werden wir auch das Gebiet <em>Machine Learning</em> berühren, aber auch andere wichtige Gebiete
+betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen <strong>Methoden-Baukasten</strong> zur
+Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis für die
+Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...</p>
+<h2 id="überblick-modulinhalte">Überblick Modulinhalte</h2>
+<ol>
+<li>Problemlösen
+<ul>
+<li>Zustände, Aktionen, Problemraum</li>
+<li>Suche (blind, informiert): Breiten-, Tiefensuche, Best-First,
+Branch-and-Bound, A-Stern</li>
+<li>Lokale Suche: Gradientenabstieg, Genetische/Evolutionäre Algorithmen (GA/EA)</li>
+<li>Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken</li>
+<li>Constraints: Backtracking, Heuristiken, Propagation, AC-3</li>
+</ul>
+</li>
+<li>Maschinelles Lernen
+<ul>
+<li>Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung</li>
+<li>Entscheidungsbäume: CAL2, CAL3, ID3, C4.5</li>
+<li>Neuronale Netze
+<ul>
+<li>Perzeptron, Lernregel</li>
+<li>Feedforward Multilayer Perzeptron (MLP), Backpropagation,
+Trainings- vs. Generalisierungsfehler</li>
+<li>Steuerung des Trainings: Kreuzvalidierung, Regularisierung</li>
+<li>Ausblick: Support-Vektor-Maschinen</li>
+</ul>
+</li>
+<li>Naive Bayes Klassifikator</li>
+</ul>
+</li>
+<li><del>Inferenz, Logik</del> (<strong>entfällt im W23</strong>)
+<ul>
+<li><del>Prädikatenlogik: Modellierung, semantische und formale Beweise,
+Unifikation, Resolution</del></li>
+<li><del>Ausblick: Anwendung in Prolog</del></li>
+</ul>
+</li>
+</ol>
+<h2 id="team">Team</h2>
+<ul>
+<li><a href="https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips" target="_blank">Carsten Gips</a> (HSBI)</li>
+<li><a href="http://people.tau.edu.tr/people.show/cananyildiz/de" target="_blank">Canan Yıldız</a> (TDU)</li>
+<li><a href="http://people.tau.edu.tr/people.show/abyuce/de" target="_blank">Ayşe Betül Yüce</a> (TDU)</li>
+<li><a href="https://people.tau.edu.tr/people.show/halit.demir/de" target="_blank">Halit Canap Demir</a> (TDU)</li>
+</ul>
+<h2 id="kursformat">Kursformat</h2>
+<p><a href="#R-image-5d0566b57849f7e992a67e75c75f920a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ki_fahrplan_2023-2024.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5d0566b57849f7e992a67e75c75f920a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ki_fahrplan_2023-2024.png?width=80%25&height=auto"></a></p>
+<h3 id="vorlesung-2-sws">Vorlesung: 2 SWS</h3>
+
+<div class="tab-panel" data-tab-group="hochschule">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="hsbi"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('hochschule','hsbi')"
+    >
+      <span class="tab-nav-text">HSBI</span>
+    </button>
+    <button
+      data-tab-item="tdu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('hochschule','tdu')"
+    >
+      <span class="tab-nav-text">TDU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="hsbi"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">09. - 27.10.</th>
+<th style="text-align:left">30.10. - 26.01.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Mo, 10:00 - 11:30 Uhr (DE)</td>
+<td style="text-align:left">Mo, 09:00 - 10:30 Uhr (DE)</td>
+</tr>
+<tr>
+<td style="text-align:left">online/J101</td>
+<td style="text-align:left">online/J101</td>
+</tr>
+</tbody>
+</table>
+<p>Durchführung als <strong>Flipped Classroom</strong>: Sitzungen per Zoom (<strong>Zugangsdaten siehe <a href="https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld" target="_blank">ILIAS</a></strong>)</p>
+</div>
+    </div>
+    <div
+      data-tab-item="tdu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">02.10.23 - 12.01.24</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Mo, 11:00 - 12:30 Uhr (TR)</td>
+</tr>
+<tr>
+<td style="text-align:left">online</td>
+</tr>
+</tbody>
+</table>
+<p>Durchführung als <strong>Flipped Classroom</strong>: Sitzungen per Zoom (<strong>Zugangsdaten siehe <a href="https://classroom.google.com/c/NjMzNDM4MDk1NTM5" target="_blank">Google Classroom</a></strong>)</p>
+</div>
+    </div>
+  </div>
+</div>
+<h3 id="praktikumübung-2-sws">Praktikum/Übung: 2 SWS</h3>
+
+<div class="tab-panel" data-tab-group="hochschule">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="hsbi"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('hochschule','hsbi')"
+    >
+      <span class="tab-nav-text">HSBI</span>
+    </button>
+    <button
+      data-tab-item="tdu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('hochschule','tdu')"
+    >
+      <span class="tab-nav-text">TDU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="hsbi"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Praktikumsgruppe</th>
+<th style="text-align:left">23.10. - 19.01.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">G1/G3</td>
+<td style="text-align:left">Di, 17:30 bis 19:00 Uhr (DE)</td>
+</tr>
+<tr>
+<td style="text-align:left">G2</td>
+<td style="text-align:left">Mo, 17:30 bis 19:00 Uhr (DE)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">online/J101</td>
+</tr>
+</tbody>
+</table>
+<p>Sitzungen per Zoom (<strong>Zugangsdaten siehe <a href="https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld" target="_blank">ILIAS</a></strong>)</p>
+</div>
+    </div>
+    <div
+      data-tab-item="tdu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Übungsgruppe</th>
+<th style="text-align:left">16.10.23 - 12.01.24</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">G1 / G3</td>
+<td style="text-align:left">Do, 14:30 bis 15:30 Uhr (TR)</td>
+</tr>
+<tr>
+<td style="text-align:left">G2 / G4</td>
+<td style="text-align:left">Do, 15:30 bis 16:30 Uhr (TR)</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">online</td>
+</tr>
+</tbody>
+</table>
+<p>Sitzungen per Google Meet (<strong>Zugangsdaten siehe <a href="https://classroom.google.com/c/NjMzNDM4MDk1NTM5" target="_blank">Google Classroom</a></strong>)</p>
+</div>
+    </div>
+  </div>
+</div>
+<h3 id="prüfungsform-note-und-credits">Prüfungsform, Note und Credits</h3>
+
+<div class="tab-panel" data-tab-group="hochschule">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="hsbi"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('hochschule','hsbi')"
+    >
+      <span class="tab-nav-text">HSBI</span>
+    </button>
+    <button
+      data-tab-item="tdu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('hochschule','tdu')"
+    >
+      <span class="tab-nav-text">TDU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="hsbi"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<p>Prüfungsform HSBI: <strong>Klausur plus Testat</strong>, 5 ECTS</p>
+<ul>
+<li>
+<p><strong>Testat</strong>: Vergabe der Credit-Points</p>
+<p>Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
+Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
+ein Testat bescheinigt wird.</p>
+<p>Kriterien: Sie haben mind. 6 der 10 Aufgabenblätter <em>jeweils</em> ausreichend
+(mind. 60%) bearbeitet und die Lösung im Praktikum vorgestellt.</p>
+</li>
+<li>
+<p><strong>Klausur</strong>: =&gt; Modulnote</p>
+<p>Schriftliche Prüfung (&quot;<strong>Klausur</strong>&quot;) am Ende des Semesters (in beiden
+Prüfungszeiträumen; <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/admin/exams-hsbi.html">Prüfungsvorbereitung HSBI</a>).</p>
+</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="tdu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Prüfung</th>
+<th>Gewicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Zwischenprüfung</td>
+<td><strong>40 %</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">Endprüfung</td>
+<td><strong>60 %</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">Übung</td>
+<td><strong>10 % Bonus für Endprüfung</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (<strong>Prüfungsnote ≥40</strong>),
+werden <strong>10 % der Übungspunkte als Bonus</strong> zu der Prüfungsnote hinzugefügt.</p>
+<p>Für die Vergabe von Übungspunkten ist eine <strong>erfolgreiche Teilnahme an der Übung</strong> erforderlich.
+<strong>Für Details siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/admin/exams-tdu.html">Prüfung &amp; Noten @TDU</a></strong>.</p>
+</div>
+    </div>
+  </div>
+</div>
+<h2 id="materialien">Materialien</h2>
+<h3 id="literatur">Literatur</h3>
+<ol>
+<li>
+<p><a href="http://aima.cs.berkeley.edu/" target="_blank">&quot;<strong>Artificial Intelligence: A Modern Approach</strong>&quot;</a> (<em>AIMA</em>).
+Russell, S. und Norvig, P., Pearson, 2020.
+ISBN <a href="https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993" target="_blank">978-0134610993</a>.</p>
+</li>
+<li>
+<p>&quot;Introduction to Artificial Intelligence&quot;.
+Ertel, W., Springer, 2017.
+ISBN <a href="https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4" target="_blank">978-3-319-58487-4</a>.
+DOI <a href="https://doi.org/10.1007/978-3-319-58487-4" target="_blank">10.1007/978-3-319-58487-4</a>.</p>
+</li>
+<li>
+<p>&quot;An Introduction to Machine Learning&quot;.
+Kubat, M., Springer, 2017.
+ISBN <a href="https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0" target="_blank">978-3-319-63913-0</a>.
+DOI <a href="https://doi.org/10.1007/978-3-319-63913-0" target="_blank">10.1007/978-3-319-63913-0</a>.</p>
+</li>
+</ol>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><a href="https://github.com/aimacode" target="_blank">github.com/aimacode</a></li>
+<li><a href="https://www.cs.waikato.ac.nz/ml/weka/" target="_blank">WEKA</a></li>
+<li><a href="https://scikit-learn.org" target="_blank">scikit-learn</a></li>
+</ul>
+<h2 id="fahrplan">Fahrplan</h2>
+<h3 id="vorlesung">Vorlesung</h3>
+
+<div class="tab-panel" data-tab-group="hochschule">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="hsbi"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('hochschule','hsbi')"
+    >
+      <span class="tab-nav-text">HSBI</span>
+    </button>
+    <button
+      data-tab-item="tdu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('hochschule','tdu')"
+    >
+      <span class="tab-nav-text">TDU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="hsbi"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Woche</th>
+<th style="text-align:left">Datum Vorlesung</th>
+<th style="text-align:left">Themen</th>
+<th style="text-align:left">Lead</th>
+<th style="text-align:left">Start Bearbeitung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">41</td>
+<td style="text-align:left">Mo, 09.10. (<strong>09:00 - 10:00</strong> Uhr DE)</td>
+<td style="text-align:left">Orga HSBI (<strong>Zoom</strong>) || <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html">Einführung KI</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">Problemlösen</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">42</td>
+<td style="text-align:left">Mo, 16.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">A-Stern</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html">B01</a></td>
+</tr>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:left">Mo, 23.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Gradientensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Simulated Annealing</a> || <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html">Intro EA/GA</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html">Genetische Algorithmen</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html">B02</a></td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:left">Mo, 30.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Optimale Spiele</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Minimax und Heuristiken</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html">B03</a></td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:left">Mo, 06.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html">Einführung Constraints</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html">Lösen von diskreten CSP</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html">CSP und Heuristiken</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">Kantenkonsistenz und AC-3</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet04.html">B04</a></td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:left">Mo, 13.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html">Wahrscheinlichkeitstheorie</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html">Naive Bayes</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet06.html">B06</a></td>
+</tr>
+<tr>
+<td style="text-align:center">47</td>
+<td style="text-align:left">Mo, 20.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html">Machine Learning 101</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html">CAL2</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html">Pruning</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html">CAL3</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html">Entropie</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html">ID3 und C4.5</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet05.html">B05</a></td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Mo, 27.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html">Perzeptron</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet07.html">B07</a></td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:left">Mo, 04.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html">Lineare Regression</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet08.html">B08</a></td>
+</tr>
+<tr>
+<td style="text-align:center">50</td>
+<td style="text-align:left">Mo, 11.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html">Logistische Regression</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:left">Mo, 18.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html">Overfitting</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html">Multilayer Perceptron</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">B09</a></td>
+</tr>
+<tr>
+<td style="text-align:center">02</td>
+<td style="text-align:left">Mo, 08.01.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">Backpropagation</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet10.html">B10</a></td>
+</tr>
+<tr>
+<td style="text-align:center">03</td>
+<td style="text-align:left">Mo, 15.01.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html">Training &amp; Testing</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html">Performanzanalyse</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">04</td>
+<td style="text-align:left">Mo, 22.01.</td>
+<td style="text-align:left">Rückblick (<strong>Zoom</strong>) | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/admin/exams-hsbi.html">Prüfungsvorbereitung HSBI</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>05</em></td>
+<td style="text-align:left"><em>Mi, 31.01.</em> (13:00 - 14:30 Uhr DE)</td>
+<td style="text-align:left">Klausur (Campus Minden, B40)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><span class='alert'><strong>Bitte geben Sie mir Feedback: Nehmen Sie bitte an der anonymen <a href="https://www.hsbi.de/elearning/goto.php?target=svy_1339632&client_id=FH-Bielefeld" target="_blank">Umfrage</a> zu Künstliche Intelligenz teil.</strong></span></p>
+</div>
+    </div>
+    <div
+      data-tab-item="tdu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Woche</th>
+<th style="text-align:left">Datum Vorlesung</th>
+<th style="text-align:left">Themen</th>
+<th style="text-align:left">Lead</th>
+<th style="text-align:left">Start Bearbeitung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">40</td>
+<td style="text-align:left">Mo, 02.10.</td>
+<td style="text-align:left">Orga TDU (<strong>Zoom</strong>) || <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html">Einführung KI</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">Problemlösen</a></td>
+<td style="text-align:left">Canan, Carsten</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">41</td>
+<td style="text-align:left">Mo, 09.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html">Machine Learning 101</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html">CAL2</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html">Pruning</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html">CAL3</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html">Entropie</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html">ID3 und C4.5</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet05.html">B05</a></td>
+</tr>
+<tr>
+<td style="text-align:center">42</td>
+<td style="text-align:left">Mo, 16.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">A-Stern</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html">B01</a></td>
+</tr>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:left">Mo, 23.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Gradientensuche</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Simulated Annealing</a> || <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html">Intro EA/GA</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html">Genetische Algorithmen</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html">B02</a></td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:left">Mo, 30.10.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Optimale Spiele</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Minimax und Heuristiken</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html">B03</a></td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:left">Mo, 06.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html">Einführung Constraints</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html">Lösen von diskreten CSP</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html">CSP und Heuristiken</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">Kantenkonsistenz und AC-3</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet04.html">B04</a></td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:left">Mo, 13.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html">Wahrscheinlichkeitstheorie</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html">Naive Bayes</a></td>
+<td style="text-align:left">Carsten</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet06.html">B06</a></td>
+</tr>
+<tr>
+<td style="text-align:center">47</td>
+<td style="text-align:left">Mo, 20.11.</td>
+<td style="text-align:left"><strong>Zwischenprüfung</strong></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left">Mo, 27.11.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html">Perzeptron</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet07.html">B07</a></td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:left">Mo, 04.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html">Lineare Regression</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet08.html">B08</a></td>
+</tr>
+<tr>
+<td style="text-align:center">50</td>
+<td style="text-align:left">Mo, 11.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html">Logistische Regression</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:left">Mo, 18.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html">Overfitting</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html">Multilayer Perceptron</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">B09</a></td>
+</tr>
+<tr>
+<td style="text-align:center">52</td>
+<td style="text-align:left">Mo, 25.12.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">Backpropagation</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet10.html">B10</a></td>
+</tr>
+<tr>
+<td style="text-align:center">02</td>
+<td style="text-align:left">Mo, 08.01.</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html">Training &amp; Testing</a> | <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html">Performanzanalyse</a> || <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/admin/exams-tdu.html">Prüfungsvorbereitung TDU</a></td>
+<td style="text-align:left">Canan</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+  </div>
+</div>
+<h3 id="praktikumübung">Praktikum/Übung</h3>
+
+<div class="tab-panel" data-tab-group="hochschule">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="hsbi"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('hochschule','hsbi')"
+    >
+      <span class="tab-nav-text">HSBI</span>
+    </button>
+    <button
+      data-tab-item="tdu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('hochschule','tdu')"
+    >
+      <span class="tab-nav-text">TDU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="hsbi"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Woche</th>
+<th style="text-align:left">Blatt</th>
+<th style="text-align:left">Abgabe ILIAS</th>
+<th style="text-align:left">Vorstellung Praktikum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html">B01</a>: Suche</td>
+<td style="text-align:left">Mo, 23.10., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 23.10. / Di, 24.10.</td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html">B02</a>: EA/GA</td>
+<td style="text-align:left">Mo, 30.10., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 30.10. / Di, 31.10.</td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html">B03</a>: Minimax</td>
+<td style="text-align:left">Mo, 06.11., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 06.11. / Di, 07.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet04.html">B04</a>: CSP</td>
+<td style="text-align:left">Mo, 13.11., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 13.11. / Di, 14.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">47</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet06.html">B06</a>: NB</td>
+<td style="text-align:left">Mo, 20.11., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 20.11. / Di, 21.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet05.html">B05</a>: DTL</td>
+<td style="text-align:left">Mo, 27.11., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 27.11. / Di, 28.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet07.html">B07</a>: Perzeptron</td>
+<td style="text-align:left">Mo, 04.12., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 04.12. / Di, 05.12.</td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet08.html">B08</a>: Lin./Log. Regr.</td>
+<td style="text-align:left">Mo, 18.12., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 18.12. / Di, 19.12.</td>
+</tr>
+<tr>
+<td style="text-align:center">02</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">B09</a>: MLP</td>
+<td style="text-align:left">Mo, 08.01., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 08.01. / Di, 09.01.</td>
+</tr>
+<tr>
+<td style="text-align:center">03</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet10.html">B10</a>: Backpropagation</td>
+<td style="text-align:left">Mo, 15.01., 17:00 Uhr (<a href="https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld" target="_blank">Link</a>)</td>
+<td style="text-align:left">Mo, 15.01. / Di, 16.01.</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+    <div
+      data-tab-item="tdu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Woche</th>
+<th style="text-align:left">Blatt</th>
+<th style="text-align:left">Vorstellung Übung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">42</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet05.html">B05</a>: DTL</td>
+<td style="text-align:left">Do, 19.10.</td>
+</tr>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html">B01</a>: Suche</td>
+<td style="text-align:left">Do, 26.10.</td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html">B02</a>: EA/GA</td>
+<td style="text-align:left">Do, 02.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html">B03</a>: Minimax</td>
+<td style="text-align:left">Do, 09.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet04.html">B04</a>: CSP</td>
+<td style="text-align:left">Do, 16.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet06.html">B06</a>: NB</td>
+<td style="text-align:left">Do, 30.11.</td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet07.html">B07</a>: Perzeptron</td>
+<td style="text-align:left">Do, 07.12.</td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet08.html">B08</a>: Lin./Log. Regr.</td>
+<td style="text-align:left">Do, 21.12.</td>
+</tr>
+<tr>
+<td style="text-align:center">52</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">B09</a>: MLP</td>
+<td style="text-align:left">Do, 28.12.</td>
+</tr>
+<tr>
+<td style="text-align:center">02</td>
+<td style="text-align:left"><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet10.html">B10</a>: Backpropagation</td>
+<td style="text-align:left">Do, 11.01.</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+  </div>
+</div>
+<h2 id="förderungen-und-kooperationen">Förderungen und Kooperationen</h2>
+<h3 id="kooperation-zw-hsbi-und-tdu">Kooperation zw. HSBI und TDU</h3>
+<p>Über das Projekt <a href="https://www.hsbi.de/en/digitalmobil" target="_blank">&quot;Digital Mobil @ FH Bielefeld&quot;</a> der Fachhochschule Bielefeld (HSBI) ist
+im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
+im Modul &quot;Künstliche Intelligenz&quot; gestartet.</p>
+<p>Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
+Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam
+(TDU und HSBI) teil.</p>
+<h3 id="kooperation-mit-dem-digikos-projekt">Kooperation mit dem DigikoS-Projekt</h3>
+<p>Diese Vorlesung wurde zudem vom Projekt <a href="https://www.digikos.de" target="_blank">&quot;Digitalbaukasten für kompetenzorientiertes Selbststudium&quot;</a>
+(<em>DigikoS</em>) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
+insbesondere die Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
+Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt
+von der Stiftung Innovation in der Hochschullehre gefördert.</p>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
+
+
+
+<a id="logo" href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898//index.html'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png'>
+</a>
+
+        </div>
+        <form action="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['de'];
+        </script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/auto-complete.js?1710829491" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.min.js?1710829491" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.stemmer.support.min.js?1710829491" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.multi.min.js?1710829491" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.de.min.js?1710829491" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/search.js?1710829491" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html">Einführung KI<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d5efd0a842116e4053b2a67d87eea20a" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html">Einführung KI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">Problemlösen<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">Suche<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ba52359aea8fbbbebd8a2b5035d5193b" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">Uninformierte Suche<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7e7e45fbada4c99410206367a85babe0" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html">Informierte Suche<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-55fcc8c98625f201eadcbded67b62311" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">A*<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">Lokale Suche<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ccd4a4b40ee1fab6aada128d05091756" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Gradientensuche<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Simulated Annealing<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html">Genetische Algorithmen<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-513570a2bd0cf4a66bab5d5617bd8135" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html">Intro EA/GA<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html">Genetische Algorithmen<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">Spiele<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-be9f75f01bd16477b0add6a83644e3db" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Optimale Spiele<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Heuristiken<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html">CSP<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-350d6b931515a3c0942b7ee2e29cdde2" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html">Intro<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html">Lösen von diskreten CSP<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html">Heuristiken<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">AC-3<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html">Naive Bayes<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-5fc30d962871e2f731a4590e884cf48f" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html">Wahrscheinlichkeiten<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html">Naive Bayes<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html">Entscheidungsbäume<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d5c30d1ee9143be0e1bf969e932d32f8" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html">Machine Learning 101<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html">CAL2<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html">Pruning<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html">CAL3<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html">Entropie<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html">ID3 und C4.5<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">Neuronale Netze<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-34efc21b54b22f5fea2abf053a31ad8c" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html">NN1 - Perzeptron<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html">NN2 - Lineare Regression &amp; Gradientenabstieg<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html">NN3 - Logistische Regression<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html">NN4 - Overfitting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html">NN5 - MLP<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">NN6 - Backpropagation<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html">NN7 - Training &amp; Testing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html">NN8 - Performanzanalyse<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#kursformat"><i class='fas fa-bookmark'></i> Zeiten</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#fahrplan"><i class='fas fa-bookmark'></i> Fahrplan</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#praktikum%C3%BCbung"><i class='fas fa-bookmark'></i> Aufgabenblätter</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#pr%C3%BCfungsform-note-und-credits"><i class='fas fa-bookmark'></i> Note/Credits</a></li>
+            <li><a class="padding" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions"><i class='fas fa-external-link-alt'></i> FAQ</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html" lang="de-DE" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p style="text-align: center;">
+<i class='fab fa-fw fa-github'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">GitHub</a>
+<i class='fas fa-fw fa-tags'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/issues">Issues</a>
+<i class='fas fa-fw fa-bullhorn'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">Credits</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+
+</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1710829491" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1710829491" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1710829491"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1710829491" defer></script>
+  </body>
+</html>

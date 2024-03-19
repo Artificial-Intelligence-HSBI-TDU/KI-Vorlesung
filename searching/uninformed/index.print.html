@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.0">
+    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Uninformierte Suche">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Uninformierte Suche">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">
+    <title>Uninformierte Suche</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html" rel="canonical" type="text/html" title="Uninformierte Suche">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1710829491" rel="icon" type="image/png">
+
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1710829492" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1710829492" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1710829492" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/ie.css?1710829492" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/url.js?1710829492"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1710829492"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Uninformierte Suche
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="uninformierte-suche">Uninformierte Suche</h1>
+
+<p>... jeder Schritt &quot;kostet&quot; gleich viel: nur die Anzahl der Schritte zählt ...</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Suche mit Tiefensuche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Suche mit Breitensuche</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Uninformierte Suche</h1>
+<article class="default">
+<h1>Suche mit Tiefensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Die Tiefensuche gehört zu den &quot;Uninformierten Suchverfahren&quot;: Es werden keine weiteren
+Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.</p>
+<p>Die Tiefensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur einen <strong>Stack</strong> benutzt: Expandierte Nachfolger werden immer <strong>oben</strong>
+auf den Stack gelegt, und der nächste zu expandierende Knoten wird <strong>oben</strong> vom Stack
+genommen. Dadurch verfolgt die Tiefensuche einen Pfad immer erst in die Tiefe.</p>
+<p>Bei Sackgassen erfolgt automatisch ein Backtracking, d.h. es wird zum letzten Knoten mit
+einer Alternative zurückgegangen. Dies liegt daran, dass bei einer Sackgasse keine
+Nachfolger expandiert und oben auf den Stack gelegt werden.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/NzTugnuHSZ8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Tiefensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/01a264be691d64ecb2ca389006177bec25cc3d31a750c648e0d7450d07cbf907dd98e0248ef97d40999f7fb06355f5235827bf05f3a087b8e2511bbd68d2d5da' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Tiefensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K3) Uninformierte Suchverfahren: Tiefensuche</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-1483afbbfdf1c58028f1e3f16675c21c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/scene.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1483afbbfdf1c58028f1e3f16675c21c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/scene.png?width=60%25&height=auto"></a></p>
+</div>
+<p>Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek
+und einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für
+den Roboter lautet: Hole das Buch aus der Bibliothek (und bringe es zum Kopier).
+(Damit das Beispiel und der sich daraus ergebende Problemgraph nicht zu groß und zu
+unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch
+in der Bibliothek aufnimmt.)</p>
+<p>Es stehen zwei Aktionen zur Verfügung:</p>
+<ol>
+<li>Der Roboter kann von einem in den nächsten Raum wechseln (Kosten siehe Pfeile)</li>
+<li>Der Roboter kann das Buch aufnehmen (Kosten: 3)</li>
+</ol>
+<p>Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilrichtung).</p>
+<h2 id="problemgraph-zum-kopiererbeispiel">Problemgraph zum Kopiererbeispiel</h2>
+<div class='center'>
+<p><a href="#R-image-7d347b153cdd9cfb2b6066a6d23aa6eb" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d347b153cdd9cfb2b6066a6d23aa6eb"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Uninformierte (&quot;blinde&quot;) Suche</strong>:</p>
+<p>Keine Informationen über die Kosten eines Pfades: Nur die <span class='alert'>Pfadlänge</span> (Anzahl der Schritte) zählt.</p>
+<p>Varianten:</p>
+<ul>
+<li><strong>Tiefensuche</strong></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a></li>
+</ul>
+<h2 id="anmerkungen-wegesuche-landkarte">Anmerkungen Wegesuche (Landkarte)</h2>
+<p>Bei der Wegesuche hat man den Problemgraphen bereits durch die Orte und die Verbindungen (Straßen)
+zwischen ihnen gegeben. Es gibt nur eine ausführbare Aktion: &quot;<em>fahre nach</em>&quot;.</p>
+<p>Dabei können nur die Anzahl der Zwischenstationen auf dem Weg gezählt werden (&quot;uninformierte
+Suche&quot;), oder man ordnet den Kanten Kosten zu (bei der Wegesuche wären dies die Entfernungen
+zwischen den Orten oder die Zeit, die man von A nach B braucht) und landet damit bei der
+&quot;informierten Suche&quot;.</p>
+<p>Normalerweise hat man eine Ordnung auf den Aktionen, d.h. für einen Knoten ergibt sich daraus
+eine Reihenfolge, in der die Aktionen angewendet werden und die Nachfolger expandiert werden.
+Bei der Wegesuche hat man dies nicht, insofern muss man willkürlich eine Ordnung festlegen.
+In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte).</p>
+<h2 id="tiefensuche-ts-dfs">Tiefensuche (<em>TS</em>, <em>DFS</em>)</h2>
+<p><strong>Erinnerung Tree-Search</strong></p>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Expandiere alle Nachfolger des Knotens und füge diese in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>=&gt; Was passiert, wenn wir einen <span class='alert'><strong>Stack</strong></span> einsetzen?</p>
+<div class='center'>
+<p><a href="#R-image-8f485e7c00f791f9c80d052bf312210e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f485e7c00f791f9c80d052bf312210e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="bemerkungen">Bemerkungen</h2>
+<ul>
+<li>
+<p>Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände</p>
+</li>
+<li>
+<p>Suchalgorithmus mit <span class='alert'><strong>Stack</strong></span> als Datenstruktur =&gt; <strong>Tiefensuche</strong></p>
+<ul>
+<li>Zu betrachtender Knoten in Schritt 2 wird <em>oben</em> vom Stack genommen</li>
+<li>Expandierte Knoten werden in Schritt 2.a <em>oben</em> auf den Stack gelegt
+Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!</li>
+</ul>
+<p>Auswirkung: Weg wird in die <strong>Tiefe</strong> verfolgt (deshalb &quot;Tiefensuche&quot;)</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html#id_Russell2020">[Russell2020]</a> wird die Datenstruktur zum Halten der zu expandierenden Knoten (also
+hier im Fall der Tiefensuche der Stack) auch &quot;<strong>Frontier</strong>&quot; genannt.</p>
+</li>
+<li>
+<p><strong>Backtracking</strong>: Wenn der Weg in eine Sackgasse führt, d.h. ein Knoten
+keine Nachfolger hat, werden bei der Expansion des Knotens keine Nachfolger
+auf den Stack gelegt. Die Evaluation des nächsten Knotens auf dem Stack
+bewirkt deshalb ein <em>Zurückspringen</em> im Suchbaum zum letzten Knoten auf dem
+aktuellen Weg mit noch offenen Alternativen ...</p>
+</li>
+</ul>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
+sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
+soll aber natürlich die Reihenfolge der ursprünglich in der Datenstruktur enthaltenen Knoten
+nicht modifiziert werden. (Bei &quot;echten&quot; Problemen wird die Reihenfolge der expandierten
+Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)</p>
+<h2 id="weitere-hinweise">Weitere Hinweise</h2>
+<ul>
+<li>
+<p>Die Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
+einsetzen. Wichtig ist nur, dass als Datenstruktur ein <strong>Stack</strong> genutzt wird.</p>
+</li>
+<li>
+<p>Bei Tree-Search werden bereits besuchte Knoten u.U. immer wieder besucht. Zyklen im aktuell
+entwickelten Pfad sind also möglich! Außerdem sind mehrere Wege zum selben (Zwischen-/End-)
+Knoten in der Datenstruktur möglich!</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html#id_Russell2020">[Russell2020]</a> wird der Begriff &quot;Backtracking&quot; für den rekursiven Tiefensuche-Algorithmus
+verwendet. Dies steht im Gegensatz zum üblichen Sprachgebrauch in der KI!</p>
+</li>
+</ul>
+<h2 id="tiefensuche-rekursive-variante">Tiefensuche (rekursive Variante)</h2>
+<ol>
+<li>Startknoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Für jeden Nachfolger des Startknotens:
+<ul>
+<li>Rufe Tiefensuche für aktuellen (Nachfolger-) Knoten auf</li>
+<li>Ergebnis &quot;<em>gefunden</em>&quot;: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+</ul>
+</li>
+<li>Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+</ol>
+<h3 id="bemerkungen-1">Bemerkungen</h3>
+<ul>
+<li>Eigenschaften wie &quot;normale&quot; Tiefensuche</li>
+<li>Einfacher zu implementieren: Nutzung des Stacks wird auf den Compiler
+verlagert (Funktionsaufruf, Stack des Prozesses ...)</li>
+<li>Speicherbedarf: Für jeden Knoten wird nur der nächste Knoten expandiert,
+plus Speicher für die Funktion</li>
+</ul>
+<h2 id="eigenschaften-der-tiefensuche">Eigenschaften der Tiefensuche</h2>
+<p>Siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Uninformierte Suchverfahren
+<ul>
+<li>Keine weiteren Pfadkosten (nur Anzahl der Schritte)</li>
+<li>Tiefensuche: Verfolge einen Pfad zuerst in die Tiefe</li>
+<li>Backtracking bei Sackgassen (automatisch durch den Stack)</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Tiefensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 01: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Tiefensuche: Abschnitt 3.4.3</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Suche mit Breitensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Die Breitensuche gehört zu den &quot;Uninformierten Suchverfahren&quot;: Es werden keine weiteren
+Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.</p>
+<p>Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur eine <strong>Queue</strong> benutzt: Expandierte Nachfolger werden immer <strong>hinten</strong>
+in die Queue eingefügt, und der nächste zu expandierende Knoten wird <strong>vorn</strong> aus der
+Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum ebenenweise entwickelt.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/WLhXt6ZpyD8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Breitensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/2b90123c48bc56189a083a0c9131281307f860481a17fe3dadd3bd4891d01ef157d6c12a39b5255dd39ab36fe8fd36c714ca6873277ce98667094a3f91359a2e' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Breitensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K3) Uninformierte Suchverfahren: Breitensuche</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-21433e2bb9d9ed2c5e867b28b0560bc8" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-21433e2bb9d9ed2c5e867b28b0560bc8"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Uninformierte (&quot;blinde&quot;) Suche</strong>:</p>
+<p>Keine Informationen über die Kosten eines Pfades: Nur die <span class='alert'>Pfadlänge</span> (Anzahl der Schritte) zählt.</p>
+<p>Varianten:</p>
+<ul>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche</a></li>
+<li><strong>Breitensuche</strong></li>
+</ul>
+<h2 id="breitensuche-bs-bfs">Breitensuche (<em>BS</em>, <em>BFS</em>)</h2>
+<p><strong>Erinnerung Graph-Search</strong></p>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Markiere aktuellen Knoten, und</li>
+<li>Expandiere alle Nachfolger des Knotens und füge alle unmarkierten
+Nachfolger, die noch nicht in der Datenstruktur sind, in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>=&gt; Was passiert, wenn wir eine <span class='alert'><strong>Queue</strong></span> einsetzen?</p>
+<div class='center'>
+<p><a href="#R-image-b95febf683272b0bc800f9aeaf8476dc" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b95febf683272b0bc800f9aeaf8476dc"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="bemerkungen">Bemerkungen</h2>
+<ul>
+<li>
+<p>Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände</p>
+</li>
+<li>
+<p>Suchalgorithmus mit <span class='alert'><strong>Queue</strong></span> als Datenstruktur =&gt; <strong>Breitensuche</strong></p>
+<ul>
+<li>Zu betrachtender Knoten in Schritt 2 wird <em>vorn</em> aus der Queue genommen</li>
+<li>Expandierte Knoten werden in Schritt 2.a <em>hinten</em> in die Queue eingefügt
+Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!</li>
+</ul>
+<p>Auswirkung: Suchbaum wird <strong>ebenenweise</strong> aufgebaut (deshalb &quot;Breitensuche&quot;)</p>
+</li>
+<li>
+<p>Graph-Search: Markierte Knoten müssen geeignet gespeichert werden: separate Datenstruktur
+=&gt; Aufwand!</p>
+</li>
+</ul>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
+sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
+soll aber natürlich die Reihenfolge der ursprünglich in der Datenstruktur enthaltenen Knoten
+nicht modifiziert werden. (Bei &quot;echten&quot; Problemen wird die Reihenfolge der expandierten
+Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)</p>
+<h2 id="weitere-hinweise">Weitere Hinweise</h2>
+<ul>
+<li>
+<p>Die Breitensuche wurde zufällig am Beispiel Graph-Search eingeführt.
+Man kann auch die Tree-Search-Variante einsetzen. Wichtig ist nur, dass als
+Datenstruktur eine Queue genutzt wird.</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html#id_Russell2020">[Russell2020]</a> wird die Breitensuche ebenfalls auf der Basis des
+Graph-Search-Algorithmus eingeführt. Allerdings wird die Abbruchbedingung
+modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search
+eigentlich definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird,
+sondern bereits bei der Erzeugung der Nachfolgerknoten (vor dem Einfügen in
+die Queue). Dadurch spart man sich die Expansion einer zusätzlichen Ebene:
+Die Komplexität wäre in diesem Fall &quot;nur&quot; 
+<span class="math align-center">$O(b^{d})$</span>.</p>
+</li>
+</ul>
+<h2 id="vergleich-ts-bs">Eigenschaften Breitensuche vs. Tiefensuche</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><strong>Tiefensuche</strong></th>
+<th style="text-align:left"><strong>Breitensuche</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Vollständigkeit</td>
+<td style="text-align:left">nein<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:left">ja<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:left">Optimalität</td>
+<td style="text-align:left">nein</td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Zeitkomplexität</td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^m)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^{d+1})$</span></td>
+</tr>
+<tr>
+<td style="text-align:left">Speicherkomplexität</td>
+<td style="text-align:left">
+<span class="math align-center">$O(bm)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^{d+1})$</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Zeitkomplexität: maximal zu expandierende Knotenzahl</li>
+<li>Speicher:
+<ul>
+<li>TS: in jeder Tiefe weitere 
+<span class="math align-center">$b$</span> Knoten speichern</li>
+<li>BS: alle Knoten einer Ebene im Speicher halten<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+</li>
+</ul>
+<p><strong>b</strong>: Verzweigungsfaktor, <strong>d</strong>: Ebene d. höchsten Lösungsknotens, <strong>m</strong>:
+Länge d. längsten Pfades</p>
+<h2 id="praxisvergleich-breitensuche-vs-tiefensuche">Praxisvergleich Breitensuche vs. Tiefensuche</h2>
+<p><strong>Breitensuche</strong>:
+Annahme: 
+<span class="math align-center">$b=10$</span>, 10.000 Knoten/s, 1.000 Byte/Knoten</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Tiefe</strong></th>
+<th style="text-align:left"><strong>exp. Knoten</strong></th>
+<th style="text-align:left"><strong>Zeit</strong></th>
+<th style="text-align:left"><strong>Speicher</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">
+<span class="math align-center">$10^3$</span></td>
+<td style="text-align:left">0.1 s</td>
+<td style="text-align:left">1 MB</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">
+<span class="math align-center">$10^5$</span></td>
+<td style="text-align:left">10 s</td>
+<td style="text-align:left">100 MB</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">
+<span class="math align-center">$10^7$</span></td>
+<td style="text-align:left">20 min</td>
+<td style="text-align:left">10 GB</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">
+<span class="math align-center">$10^9$</span></td>
+<td style="text-align:left">30 h</td>
+<td style="text-align:left">1 TB</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">
+<span class="math align-center">$10^{11}$</span></td>
+<td style="text-align:left">130 d</td>
+<td style="text-align:left">100 TB</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tiefensuche</strong>:
+Annahme: längster Pfad (Tiefe) 
+<span class="math align-center">$m=1000$</span></p>
+<p>=&gt; Speicherbedarf <span class='alert'><strong>ca. 10 MB</strong></span></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Uninformierte Suchverfahren
+<ul>
+<li>Keine weiteren Pfadkosten (nur Anzahl der Schritte)</li>
+<li>Breitensuche: Verfolge alle Pfade (baue den Suchbaum ebenenweise auf)</li>
+</ul>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>gilt für Tree-Search-Variante; vollständig in Graph-Search-Variante bei endlichem Suchraum&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>falls <em>b</em> endlich&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>
+<span class="math align-center">$O(b^{d})$</span> mit vorgezogener Zielprüfung (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html#id_Russell2020">[Russell2020]</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Breitensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 01: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Breitensuche: Abschnitt 3.4.1</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1710829492" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1710829492" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1710829492"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1710829492" defer></script>
+  </body>
+</html>

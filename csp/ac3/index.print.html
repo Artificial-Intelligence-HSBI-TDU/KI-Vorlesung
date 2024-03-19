@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.0">
+    <meta name="generator" content="Relearn 5.26.2">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kantenkonsistenz und AC-3">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Kantenkonsistenz und AC-3">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">
+    <title>Kantenkonsistenz und AC-3</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html" rel="canonical" type="text/html" title="Kantenkonsistenz und AC-3">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1710829491" rel="icon" type="image/png">
+
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829492" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1710829492" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1710829492" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1710829492" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1710829492" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1710829492" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/ie.css?1710829492" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/url.js?1710829492"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1710829492"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Kantenkonsistenz und AC-3
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Kantenkonsistenz und AC-3</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Bei der Backtracking-Suche werden schrittweise Variablen belegt. Dabei kann eine Belegung eine Lösung
+im weiteren Verlauf der Suche unmöglich machen, so dass (viel) Backtracking notwendig wird.</p>
+<p>Beim <strong>Forward Checking</strong> entfernt man nach der Belegung einer Variablen in allen Nachbarvariablen
+die durch die aktuelle Belegung inkonsistent gewordenen Werte. Wenn dabei ein Wertebereich leer wird,
+führt die aktuelle Belegung nicht zu einer Lösung und kann sofort zurückgenommen werden. Allerdings
+findet man mit Forward Checking nicht alle Inkonsistenzen.</p>
+<p>Bei der <strong>Kantenkonsistenz</strong> prüft man, ob zu jedem Wert aus dem Wertebereich einer Variablen in den
+Nachbarvariablen mindestens ein passender (konsistenter) Wert existiert. Dabei werden die Constraints
+nacheinander betrachtet (nicht gleichzeitig). Wenn dies nicht der Fall ist, wird der Wert aus dem
+Wertebereich der betrachteten Variablen entfernt. Der AC-3-Algorithmus erzeugt schrittweise Kantenkonsistenz
+für ein CSP.</p>
+<p>Man kann den AC-3 als Vorverarbeitung nutzen und die Wertemengen <em>vor</em> der BT-Suche reduzieren. Eventuell
+findet man dabei bereits eine Lösung oder kann eine Lösung ausschließen. Man kann den AC-3 auch als
+Inferenzschritt in die BT-Suche einbetten (&quot;MAC&quot;).</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/TvF78iVDwKM' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CSP, AC-3</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/8fa264520ed3ce80f71936e084254d14c579ff19e2c724e914a6df761d12c3c7d22d62ebf625cc9181f29e288922785522e7cc60f9e7ce6cb369a3148b115ca7' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CSP, AC-3</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Forward Checking (<em>FC</em>)</li> <li>(K2) Erweiterung von <em>FC</em> auf alle Kanten: <em>Kantenkonsistenz</em></li> <li>(K2) Kantenkonsistenz bedeutet nicht globale Konsistenz</li> <li>(K3) AC-3 Algorithmus</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="problem-bei-bt-suche">Problem bei BT-Suche</h2>
+<p>Zuweisung eines Wertes an Variable 
+<span class="math align-center">$X$</span>:</p>
+<ul>
+<li>Passt zu aktueller Belegung</li>
+<li>Berücksichtigt aber nicht <strong>restliche</strong> Constraints
+=&gt; macht weitere Suche u.U. unmöglich/schwerer</li>
+</ul>
+<p><strong>Lösung</strong>: Nach Zuweisung alle <em>nicht zugewiesenen Nachbarvariablen</em> prüfen</p>
+<h2 id="inference-vorab-prüfung-forward-checking">INFERENCE: Vorab-Prüfung (Forward Checking)</h2>
+<p><a href="#R-image-ff904ad37a87cc9099dd9a29d3dcb850" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3/bt_search_inference.png?width=65%25&height=auto" style=" height: auto; width: 65%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff904ad37a87cc9099dd9a29d3dcb850"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3/bt_search_inference.png?width=65%25&height=auto"></a></p>
+<p><span class='alert'><strong>Inference</strong></span>: Frühzeitiges Erkennen von Fehlschlägen! (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html#id_Russell2020">[Russell2020, S. 178]</a>)</p>
+<p>Nach Zuweisung eines Wertes an Variable 
+<span class="math align-center">$X$</span>:</p>
+<ul>
+<li>Betrachte alle nicht zugewiesenen Variablen 
+<span class="math align-center">$Y$</span>:
+<ul>
+<li>Falls Constraints zw. 
+<span class="math align-center">$X$</span> und 
+<span class="math align-center">$Y$</span>, dann ...</li>
+<li>... entferne alle inkonsistenten Werte aus dem Wertebereich von 
+<span class="math align-center">$Y$</span>.</li>
+</ul>
+</li>
+</ul>
+<p>Beispiel:</p>
+<ol>
+<li>Sei A auf rot gesetzt =&gt; entferne rot in B und C</li>
+<li>Sei D auf grün gesetzt =&gt; entferne grün in B und C und E</li>
+</ol>
+<p>Problem: Für B und C bleibt nur noch blau; sind aber benachbart!</p>
+<h2 id="forward-checking-findet-nicht-alle-inkonsistenzen">Forward Checking findet nicht alle Inkonsistenzen!</h2>
+<p><a href="#R-image-66c2c7c7891c82a99b1c05c35d41319d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3/forward_checking.png?width=55%25&height=auto" style=" height: auto; width: 55%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-66c2c7c7891c82a99b1c05c35d41319d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3/forward_checking.png?width=55%25&height=auto"></a></p>
+<ul>
+<li>Nach 
+<span class="math align-center">$\lbrace A=red, D=green \rbrace$</span> bleibt für B und C nur noch blue</li>
+<li>B und C sind aber benachbart</li>
+</ul>
+<h2 id="übergang-von-forward-checking-zu-kantenkonsistenz">Übergang von Forward Checking zu Kantenkonsistenz</h2>
+<ul>
+<li>
+<p>Forward Checking erzeugt Konsistenz für alle Constraints der
+<strong>gerade betrachteten (belegten) Variablen</strong>.</p>
+</li>
+<li>
+<p>Idee: Ausdehnen auf alle Kanten ... =&gt; Einschränken der Wertemengen</p>
+</li>
+</ul>
+<h2 id="definition-kantenkonsistenz-arc-consistency">Definition Kantenkonsistenz (Arc Consistency)</h2>
+<blockquote>
+<p>Eine Kante von 
+<span class="math align-center">$X$</span> nach 
+<span class="math align-center">$Y$</span> ist &quot;<span class='alert'>konsistent</span>&quot;, wenn für jeden Wert
+
+<span class="math align-center">$x \in D_X$</span> und für alle Constraints zwischen 
+<span class="math align-center">$X$</span> und 
+<span class="math align-center">$Y$</span> jeweils ein Wert
+
+<span class="math align-center">$y \in D_Y$</span> existiert, so dass der betrachtete Constraint durch 
+<span class="math align-center">$(x,y)$</span>
+erfüllt ist.</p>
+</blockquote>
+<p>Ein CSP ist kanten-konsistent, wenn für alle Kanten des CSP Konsistenz herrscht.</p>
+<h2 id="beispiel-kantenkonsistenz">Beispiel Kantenkonsistenz</h2>
+
+<span class="math align-center">$V = \lbrace a,b,c,d,e \rbrace$</span>
+
+<span class="math align-center">$\mathrm{C} = \lbrace ((a,b), \ne), ((b,c), \ne), ((a,c), \ne), ((c,d), =), ((b,e), <) \rbrace$</span>
+<p>
+<span class="math align-center">$D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$</span>, 
+<span class="math align-center">$D_d=\lbrace 1,2 \rbrace$</span>, 
+<span class="math align-center">$D_e=\lbrace 1,2,3 \rbrace$</span></p>
+<p>Einschränkung der Ausgangswertemengen (kanten-konsistent)</p>
+<p>
+<span class="math align-center">$D_a=\lbrace 1,2,3 \rbrace$</span>, 
+<span class="math align-center">$D_b=\lbrace 1,2 \rbrace$</span>, 
+<span class="math align-center">$D_c=\lbrace 1,2 \rbrace$</span>, 
+<span class="math align-center">$D_d=\lbrace 1,2 \rbrace$</span>, 
+<span class="math align-center">$D_e=\lbrace 2,3 \rbrace$</span></p>
+<div style="text-align:center;">
+<span class="badge cstyle primary"><span class="badge-content"><p>=&gt; Kantenkonsistenz ist nur <strong>lokale</strong> Konsistenz!</p>
+</span></span>
+</div>
+<p><em>Anmerkung</em>: 
+<span class="math align-center">$((a,b), \ne)$</span> ist Kurzform für
+
+<span class="math align-center">$\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$</span></p>
+<h2 id="ac-3-algorithmus-herstellen-von-kantenkonsistenz">AC-3 Algorithmus: Herstellen von Kantenkonsistenz</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">AC3</span>(csp):
+</span></span><span style="display:flex;"><span>    queue <span style="color:#f92672">=</span> Queue(csp<span style="color:#f92672">.</span>arcs)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> queue<span style="color:#f92672">.</span>isEmpty():
+</span></span><span style="display:flex;"><span>        (x,y) <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span>dequeue()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ARC_Reduce(csp,x,y):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> D_x<span style="color:#f92672">.</span>isEmpty(): <span style="color:#66d9ef">return</span> false
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> x<span style="color:#f92672">.</span>neighbors(): queue<span style="color:#f92672">.</span>enqueue(z,x)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ARC_Reduce</span>(csp, x, y):
+</span></span><span style="display:flex;"><span>    change <span style="color:#f92672">=</span> false
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> D_x:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> (any w <span style="color:#f92672">in</span> D_y <span style="color:#f92672">and</span> csp<span style="color:#f92672">.</span>C_xy(v,w)):
+</span></span><span style="display:flex;"><span>            D_x<span style="color:#f92672">.</span>remove(v);  change <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> change</span></span></code></pre></div><p><span class='origin'>Quelle: Eigener Code basierend auf einer Idee nach <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html#id_Russell2020">[Russell2020, p. 171, fig. 5.3]</a></span></p>
+<p><em>Anmerkung</em>: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten: Jedes Element
+kann nur genau einmal in einer Menge enthalten sein. D.h. wenn man bei <code>queue.enqueue(z,x)</code> die
+Rückkanten von den Nachbarn in die Queue aufnimmt, sorgt die Queue eigenständig dafür, dass es
+keine doppelten Vorkommen einer Kante in der Queue gibt. (Falls die verwendete Queue in einer
+Programmiersprache das nicht unterstützt, müsste man bei <code>queue.enqueue(z,x)</code> stets abfragen, ob
+die Kante <code>(z,x)</code> bereits in der Queue ist und diese dann nicht erneut hinzufügen.)
+AC-3 hat eine Laufzeit von 
+<span class="math align-center">$O(d^3n^2)$</span> (
+<span class="math align-center">$n$</span> Knoten, maximal 
+<span class="math align-center">$d$</span> Elemente pro Domäne). Leider findet
+auch AC-3 nicht alle Inkonsistenzen ... (NP-hartes Problem).</p>
+<p><em>Hinweis</em>: In gewisser Weise kann man Forward Checking als ersten Schritt bei der
+Herstellung von Kantenkonsistenz interpretieren.</p>
+<h2 id="einsatz-des-ac-3-algorithmus">Einsatz des AC-3 Algorithmus</h2>
+<ol>
+<li>
+<p>Vorverarbeitung: Reduktion der Wertemengen <em>vor</em> BT-Suche</p>
+<ul>
+<li>Nach AC-3 evtl. bereits Lösung gefunden (oder ausgeschlossen)</li>
+</ul>
+</li>
+<li>
+<p>Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche
+(<strong>MAC</strong> -- Maintaining Arc Consistency)</p>
+<ul>
+<li>Nach jeder Zuweisung an 
+<span class="math align-center">$X_i$</span> Aufruf von AC-3-Variante:
+<ul>
+<li>Initial nur Kanten von 
+<span class="math align-center">$X_i$</span> zu allen noch nicht zugewiesenen Nachbarvariablen</li>
+</ul>
+</li>
+<li>Anschließend rekursiver Aufruf von BT-Suche</li>
+</ul>
+</li>
+</ol>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Anwendung von Forward Checking und ...</li>
+<li>... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest CSP, AC-3 (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Fingerübungen</strong></p>
+<p>Ist die Kante zwischen a und b konsistent?</p>
+<p><a href="#R-image-3e3bcef9fcc1eb7339b25d57649a865c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_a.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e3bcef9fcc1eb7339b25d57649a865c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_a.png?width=auto&height=auto"></a></p>
+<p>Wann ist der Graph lokal konsistent?</p>
+<p><a href="#R-image-3bb97b3fa4242a3ea955eb137ba36ca7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_b.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3bb97b3fa4242a3ea955eb137ba36ca7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_b.png?width=auto&height=auto"></a></p>
+<ul>
+<li>a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}</li>
+<li>a {1,2}; b {2,3}; c {3}; d {1,2}</li>
+<li>a {1,3}; b {2,3}; c {1,3}; d {1,2,3}</li>
+<li>a {1,2}; b {2,3}; c {1,3}; d {1,2,3}</li>
+</ul>
+<p>Wie sieht die Queue im nächsten Schritt mit AC3 aus?</p>
+<p><a href="#R-image-56eb00cd3b25c9dd68508dfb064c730d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_c.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56eb00cd3b25c9dd68508dfb064c730d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_c.png?width=auto&height=auto"></a></p>
+<p>Aktuelle Queue: [ab, ac, ba, bc, ca, cb]</p>
+<ul>
+<li>[bc, ba, ca, cb, ab, ac]</li>
+<li>[ab, ac, ba, bc, ca, cb]</li>
+<li>[ac, ba, bc, ca, cb]</li>
+<li>[ac, ba, bc, ca, cb, ba]</li>
+</ul>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet04.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 04: Constraints</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Bartak2001'>[Bartak2001] <strong>Theory and Practice of Constraint Propagation</strong><br>Barták, R., 2001.</li> <li id='id_Kumar1992'>[Kumar1992] <strong>Algorithms for Constraint Satisfaction Problems: A Survey</strong><br>Kumar, V., 1992.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>CSP, AC-3: Abschnitt 5.2</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1710829492" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1710829492" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1710829492"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1710829492" defer></script>
+  </body>
+</html>
