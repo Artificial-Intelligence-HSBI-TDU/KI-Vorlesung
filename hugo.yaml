@@ -16,7 +16,7 @@ theme:
 params:
   titleSeparator: " "
   alwaysopen: false
-  showVisitedLinks: true
+  showVisitedLinks: false
   externalLinkTarget: "_blank"
   disableBreadcrumb: true
   disableInlineCopyToClipBoard: true
