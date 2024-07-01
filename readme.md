@@ -341,9 +341,6 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [B08]: homework/sheet08.md
 [B09]: homework/sheet09.md
 [B10]: homework/sheet10.md
-<!-- [B11]: homework/sheet11.md -->
-<!-- [P1]: homework/poster1.md -->
-<!-- [P2]: homework/poster2.md -->
 
 
 ## Förderungen und Kooperationen
