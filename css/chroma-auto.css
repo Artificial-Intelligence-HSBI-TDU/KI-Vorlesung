@@ -1,0 +1,2 @@
+@import "chroma-zen-light.css" screen and (prefers-color-scheme: light);
+@import "chroma-zen-dark.css" screen and (prefers-color-scheme: dark);

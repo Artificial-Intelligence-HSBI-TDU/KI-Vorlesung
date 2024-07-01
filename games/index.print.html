@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Man kann Spiele auch als Suchproblem betrachten und als Ziel die Suche nach dem optimalen Zug definieren.
+Einführung Optimale Spiele Minimax Heuristiken Alpha-Beta-Pruning ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Spiele">
+    <meta name="twitter:description" content="Man kann Spiele auch als Suchproblem betrachten und als Ziel die Suche nach dem optimalen Zug definieren.
+Einführung Optimale Spiele Minimax Heuristiken Alpha-Beta-Pruning ">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">
+    <meta property="og:title" content="Spiele">
+    <meta property="og:description" content="Man kann Spiele auch als Suchproblem betrachten und als Ziel die Suche nach dem optimalen Zug definieren.
+Einführung Optimale Spiele Minimax Heuristiken Alpha-Beta-Pruning ">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Spiele">
+    <meta itemprop="description" content="Man kann Spiele auch als Suchproblem betrachten und als Ziel die Suche nach dem optimalen Zug definieren.
+Einführung Optimale Spiele Minimax Heuristiken Alpha-Beta-Pruning ">
+    <meta itemprop="wordCount" content="23">
+    <title>Spiele</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html" rel="canonical" type="text/html" title="Spiele">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1719838356" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Spiele
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="spiele">Spiele</h1>
+
+<p>Man kann Spiele auch als Suchproblem betrachten und als Ziel die Suche nach dem optimalen Zug definieren.</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Einführung Optimale Spiele</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Heuristiken</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Spiele</h1>
+<article class="default">
+<h1>Einführung Optimale Spiele</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Spiele können als Suchproblem betrachtet werden. Dabei sind in der Regel mehrere Spieler (&quot;Agenten&quot;) beteiligt. Bei manchen
+Spielen ist die Umgebung (der Spielzustand) vollständig einsehbar, bei anderen nur teilweise (Kartenspiele). Bei manchen
+Spielen kommt eine Zufallskomponente zum Wirken.</p>
+<p>Spiele sind in der KI deshalb so interessant, weil bei der Suche riesige Suchbäume entstehen (bzw. durchsucht werden müssten).
+Da die Ressourcen normalerweise begrenzt sind (denken Sie an die Reaktionszeit auf einen Zug des Gegners), muss man hier
+intelligente Lösungen finden. (Einige davon werden wir in den folgenden Sitzungen anschauen).</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/wVYhbgtzxhs' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Einführung Optimale Spiele</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/6d02dc45505b838df7eaa0a5d8c4a65d608a2898f699716db3576caa9abf421debb61c3d5fc4c5effb0b5213b76c573df50d6aff203199eba8d66548c3238ba3' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Einführung Optimale Spiele</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Spiele als Suchproblem</li> <li>(K2) Eigenschaften guter Spielalgorithmen</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="backgammon-zwei-spieler-was-ist-der-beste-zug">Backgammon: Zwei Spieler, was ist der beste Zug?</h2>
+<p><a href="#R-image-60d504f21c722cba4c82f3fce716cc82" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-60d504f21c722cba4c82f3fce716cc82"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg?width=60%25&height=auto"></a></p>
+<p><span class='origin'>Quelle: <a href="https://www.flickr.com/photos/83436399@N04/11267311625" rel="external" target="_blank">&quot;position-backgammon-decembre&quot;</a> by <a href="https://www.flickr.com/photos/83436399@N04" rel="external" target="_blank">serialgamer_fr</a> on Flickr.com (<a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich" rel="external" target="_blank">CC BY 2.0</a>)</span></p>
+<p>Zwei Spieler, ein Spielstand und ein Würfelergebnis: <span class='alert'><strong>Was ist jetzt der beste Zug?!</strong></span></p>
+<h2 id="motivation-unterschied-zu-suche">Motivation: Unterschied zu Suche?!</h2>
+<p><a href="#R-image-10e93dc1b88d5792146bf9952c33b582" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games/tttEnd.png?width=30%25&height=auto" style=" height: auto; width: 30%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-10e93dc1b88d5792146bf9952c33b582"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games/tttEnd.png?width=30%25&height=auto"></a></p>
+<p>=&gt; Mehrere <span class='alert'><strong>konkurrierende</strong></span> Agenten an Suche beteiligt!</p>
+<p>=&gt; (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.</p>
+<h2 id="spiele-und-umgebungen">Spiele und Umgebungen</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">Deterministisch</th>
+<th style="text-align:left">Zufallskomponente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Voll beobachtbar</td>
+<td style="text-align:left">Schach, Go, ...</td>
+<td style="text-align:left">Backgammon, Monopoly</td>
+</tr>
+<tr>
+<td style="text-align:left">Partiell beobachtbar</td>
+<td style="text-align:left">Schiffe-versenken</td>
+<td style="text-align:left">Bridge, Poker, Skat, ...</td>
+</tr>
+</tbody>
+</table>
+<p>=&gt; Bis auf Roboterfußball in KI traditionell keine physischen Spiele!</p>
+<h2 id="brettspiele-sind-interessant-für-ki">Brettspiele sind interessant für KI</h2>
+<ul>
+<li>
+<p>Brettspiele gut abstrakt darstellbar:</p>
+<ul>
+<li>Zustände einfach repräsentierbar</li>
+<li>Aktionen wohldefiniert (und i.d.R. sehr einfach)</li>
+<li>Realisierung als Suchproblem möglich</li>
+</ul>
+</li>
+<li>
+<p><strong>Problem</strong>: Suchbäume werden in Praxis riesig</p>
+<p>Beispiel <strong>Schach</strong>:</p>
+<ul>
+<li>Im Mittel 35 Aktionen (<em>branching factor</em>) von jeder Position</li>
+<li>Oft mehr als 40 Züge pro Spieler =&gt; Suchbäume mit mehr als 80 Ebenen</li>
+<li>
+<span class="math align-center">$35^{80} \approx 10^{123}$</span> mögliche Knoten!</li>
+<li>(Aber &quot;nur&quot; rund 
+<span class="math align-center">$10^{40}$</span> <em>verschiedene</em> Zustände)</li>
+</ul>
+<p><span class='origin'>Quelle: <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html#id_Russell2020">[Russell2020, pp. 193-196]</a></span></p>
+</li>
+</ul>
+<h2 id="eigenschaften-guter-spielalgorithmen">Eigenschaften guter Spielalgorithmen</h2>
+<ul>
+<li>
+<p>Zeit begrenzt</p>
+<ul>
+<li>Irgendeine gute Entscheidung treffen! =&gt; Bewertungsfunktion (auch für Zwischenzustände)</li>
+</ul>
+</li>
+<li>
+<p>Speicher begrenzt</p>
+<ul>
+<li>Evaluierungsfunktion für Zwischenzustände</li>
+<li>Löschen von irrelevanten Zweigen</li>
+</ul>
+</li>
+<li>
+<p>Strategien nötig</p>
+<ul>
+<li>Vorausschauend spielen (Züge &quot;vorhersehen&quot;)</li>
+</ul>
+</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Spiele kann man als Suchproblem betrachten</li>
+<li>Merkmale:
+<ul>
+<li>Mehrere Agenten beteiligt</li>
+<li>Beobachtbarkeit der Umgebung</li>
+<li>Zufallskomponente</li>
+<li>Spielstrategie</li>
+</ul>
+</li>
+<li>Problem: Riesige Spielbäume</li>
+<li>Umgang mit begrenzten Ressourcen (Zeit, Speicher)</li>
+</ul>
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 03: Spiele</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+                    
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Ertel2017'>[Ertel2017] <strong>Introduction to Artificial Intelligence</strong><br>Ertel, W., Springer, 2017. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-3-319-58487-4</a>. DOI <a href='https://doi.org/10.1007/978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1007/978-3-319-58487-4</a>.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Einführung Spiele: Abschnitt 6.1</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Minimax</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Mit dem Minimax-Algorithmus können optimale Züge berechnet werden. Dabei wird von zwei
+Spielern <code>Max</code> und <code>Min</code> ausgegangen, die abwechselnd ziehen und beide optimal spielen.
+Wenn <code>Max</code> gewonnen hat, wird der Spielausgang mit +1 bewertet, wenn <code>Min</code> gewonnen hat
+mit -1, und mit 0 sonst. Damit hat man ein sogenanntes &quot;Nullsummenspiel&quot; (der Gewinn des
+einen Spielers ist der Verlust des anderen) und kann den Algorithmus so gestalten, dass
+<code>Max</code> stets den Zug wählt, der das Spielergebnis maximiert und <code>Min</code> entsprechend den
+Zug wählt, der das Spielergebnis minimiert (daher auch die Namen der Spieler).</p>
+<p>Minimax baut den gesamten Spielbaum bis zu den Blättern auf. Die Blätter (Spielausgang)
+werden mit einer <code>Utility</code>-Funktion bewertet, und diese Bewertung wird dann im Spielbaum
+nach oben gereicht.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/aKtF__lMMsw' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Minimax</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/1d5286179490be0627b5a19793b423753cba79388b4966b654bde224a31af81c9481e85a30057276826b3d8f7836a042d0f9e15c2cb82613a4374050b62ca6d2' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Minimax</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K3) Minimax-Algorithmus</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="spiele-als-suchproblem-minimax">Spiele als Suchproblem: Minimax</h2>
+<h3 id="terminologie">Terminologie</h3>
+<ul>
+<li>
+<p>Zwei abwechselnd spielende Spieler: <code>MAX</code> und <code>MIN</code>, wobei <code>MAX</code> beginnt</p>
+<ul>
+<li>Beide Spieler spielen in jedem Zug <span class='alert'>optimal</span></li>
+<li>Spielergebnis wird aus Sicht von <code>MAX</code> bewertet:
+<ul>
+<li>
+<span class="math align-center">$+1$</span>, wenn Spieler <code>MAX</code> gewinnt</li>
+<li>
+<span class="math align-center">$-1$</span>, wenn Spieler <code>MIN</code> gewinnt</li>
+<li>
+<span class="math align-center">$0$</span>, wenn unentschieden</li>
+</ul>
+</li>
+<li>Spieler <code>MAX</code> versucht, das Spielergebnis zu <strong>maximieren</strong></li>
+<li>Spieler <code>MIN</code> versucht, das Spielergebnis zu <strong>minimieren</strong></li>
+</ul>
+</li>
+<li>
+<p>Startzustand: Initialer Zustand des Spielbrettes</p>
+</li>
+<li>
+<p>Aktionen: Legale Züge, abhängig vom Spielzustand</p>
+</li>
+<li>
+<p>Zieltest: Ist das Spiel vorbei?</p>
+<p>=&gt; Startzustand und anwendbare Aktionen definieren den Zustandsraum.</p>
+</li>
+<li>
+<p>Nutzenfunktion: 
+<span class="math align-center">$\operatorname{UTILITY}(s,p)$</span>: Wert des Spiels für
+Spieler 
+<span class="math align-center">$p$</span> im Spielzustand 
+<span class="math align-center">$s$</span></p>
+</li>
+<li>
+<p>Strategie: Spieler benötigen <strong>Strategie</strong>, um zu gewünschtem Endzustand
+zu kommen <em>(unabhängig von den Entscheidungen des Gegenspielers)</em>
+=&gt; einfacher Pfad von Start zu Ziel reicht nicht</p>
+</li>
+</ul>
+<p><em>Hinweis</em>: Nullsummenspiel! (Der Gewinn des einen Spielers ist der Verlust des
+anderen Spielers.)</p>
+<p>Eine mit dem Minimax-Algorithmus berechnete Strategie wird auch
+<em>Minimax-Strategie</em> genannt. Sie sichert dem betreffenden Spieler den
+höchstmöglichen Gewinn, der <strong>unabhängig</strong> von der Spielweise des Gegners
+erreichbar ist.</p>
+<p>Bei Nicht-Nullsummenspielen, bei denen die Niederlage des Gegners nicht
+zwangsläufig mit dem eigenen Gewinn zusammenfällt (d.h. Gewinn des einen
+Spielers 
+<span class="math align-center">$\ne$</span> Verlust des anderen Spielers), liefert der Minimax-Algorithmus
+nicht unbedingt eine optimale Strategie.</p>
+<h3 id="spielbaum-ttt">Spielbaum TTT</h3>
+<p><a href="#R-image-9a02690e9d47499c10881af820fd54f6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax/tttSpielbaum.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a02690e9d47499c10881af820fd54f6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax/tttSpielbaum.png?width=50%25&height=auto"></a></p>
+<h3 id="minimax-idee">Minimax (Idee)</h3>
+<ol>
+<li>Erzeuge kompletten Suchbaum mit Tiefensuche</li>
+<li>Wende Nutzenfunktion (<em>Utility</em>) auf jeden Endzustand an</li>
+<li>Ausgehend von Endzuständen =&gt; Bewerte Vorgängerknoten:
+<ul>
+<li>Knoten ist <code>Min</code>-Knoten:
+Nutzen ist das <strong>Minimum</strong> der Kindknoten</li>
+<li>Knoten ist <code>Max</code>-Knoten:
+Nutzen ist das <strong>Maximum</strong> der Kindknoten</li>
+</ul>
+</li>
+<li>Startknoten: <code>Max</code> wählt den Zug, der zum Nachfolger mit der
+höchsten Bewertung führt</li>
+</ol>
+<p><em>Annahme</em>: Beide spielen perfekt. Fehler verbessern das Resultat für den Gegner.</p>
+<h2 id="minimax-algorithmus-funktionen-für-max--und-min-knoten">Minimax-Algorithmus: Funktionen für MAX- und MIN-Knoten</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Max</span><span style="color:#f92672">-</span>Value(state):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> Terminal<span style="color:#f92672">-</span>Test(state): <span style="color:#66d9ef">return</span> Utility(state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>INF
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (a, s) <span style="color:#f92672">in</span> Successors(state):
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> MAX(v, Min<span style="color:#f92672">-</span>Value(s))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> v</span></span></code></pre></div><div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Min</span><span style="color:#f92672">-</span>Value(state):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> Terminal<span style="color:#f92672">-</span>Test(state): <span style="color:#66d9ef">return</span> Utility(state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> <span style="color:#f92672">+</span>INF
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (a, s) <span style="color:#f92672">in</span> Successors(state):
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> MIN(v, Max<span style="color:#f92672">-</span>Value(s))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> v</span></span></code></pre></div><p><strong>Hinweis I</strong>: Auf <a href="https://en.wikipedia.org/wiki/Minimax#Pseudocode" rel="external" target="_blank">wikipedia.org/wiki/Minimax</a>
+finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
+Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
+Abbruch durch das Erreichen der Suchtiefe statt <code>Utility()</code> eine <code>Eval()</code>-Funktion
+braucht (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Minimax: Heuristiken</a>).</p>
+<p>Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen
+Parameter nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!</p>
+<p><strong>Hinweis II</strong>: Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html#id_Russell2020">[Russell2020, S. 196, Abb. 6.3]</a> findet sich eine Variante, die die
+auf der nächsten Folien gezeigte Startfunktion mit den hier gezeigten <code>Min-Value()</code>-
+und <code>Max-Value()</code>-Funktionen verschmilzt. Dabei wird in den beiden Hilfsfunktionen
+nicht nur der <code>min</code>- bzw. <code>max</code>-Wert optimiert, sondern auch der jeweils beste Zug
+gespeichert und als Rückgabe zurückgeliefert.</p>
+<h2 id="minimax-algorithmus-sonderbehandlung-startknoten">Minimax-Algorithmus: Sonderbehandlung Startknoten</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Minimax</span>(state):
+</span></span><span style="display:flex;"><span>    (val, action) <span style="color:#f92672">=</span> (<span style="color:#f92672">-</span>INF, null)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (a, s) <span style="color:#f92672">in</span> Successors(state):
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> Min<span style="color:#f92672">-</span>Value(s)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (val <span style="color:#f92672">&lt;=</span> v):
+</span></span><span style="display:flex;"><span>            (val, action) <span style="color:#f92672">=</span> (v, a)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> action</span></span></code></pre></div><ul>
+<li>Startknoten ist ein MAX-Knoten</li>
+<li>Nicht nur Kosten, sondern auch die zugehörige Aktion speichern</li>
+</ul>
+<h2 id="minimax-beispiel">Minimax Beispiel</h2>
+<p><a href="#R-image-cfa120ec2343c9c0ebfa163cc3c3d991" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax/minimaxBeispiel.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cfa120ec2343c9c0ebfa163cc3c3d991"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax/minimaxBeispiel.png?width=50%25&height=auto"></a></p>
+<h3 id="aufwand-minimax">Aufwand Minimax</h3>
+<ul>
+<li>maximale Tiefe des Spielbaums: 
+<span class="math align-center">$m$</span></li>
+<li>in jedem Zustand 
+<span class="math align-center">$b$</span> gültige Züge</li>
+<li>=&gt; Zeitkomplexität 
+<span class="math align-center">$O(b^m)$</span></li>
+</ul>
+<p>Gedankenexperiment:</p>
+<ul>
+<li>erster Zug: 
+<span class="math align-center">$b$</span> Möglichkeiten,</li>
+<li>zweiter Zug: jeweils wieder 
+<span class="math align-center">$b$</span> Möglichkeiten 
+<span class="math align-center">$\rightarrow$</span> 
+<span class="math align-center">$b \star b = b^2$</span>,</li>
+<li>dritter Zug: jeweils wieder 
+<span class="math align-center">$b$</span> Möglichkeiten 
+<span class="math align-center">$\rightarrow$</span> 
+<span class="math align-center">$b \star (b \star b) = b^3$</span>,</li>
+<li>...,</li>
+<li>
+<span class="math align-center">$m$</span>. Zug: jeweils wieder 
+<span class="math align-center">$b$</span> Möglichkeiten 
+<span class="math align-center">$\rightarrow$</span> 
+<span class="math align-center">$b^m$</span></li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Minimax: Entwickelt Spielbaum, bewertet Zustände entsprechend <code>Max</code> und <code>Min</code>
+<ul>
+<li>Gewinn von <code>Max</code>: +1, Gewinn von <code>Min</code>: -1</li>
+<li><code>Max</code> wählt das Maximum der möglichen Züge von <code>Min</code></li>
+<li><code>Min</code> wählt das Minimum der möglichen Züge von <code>Max</code></li>
+<li>Spielbaum wird bis zu den Blättern entwickelt, Bewertung mit <code>Utility</code></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Minimax (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Optimale Spiele und MiniMax</strong></p>
+<p>Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat verloren. Zu Beginn ist Weiß am Zug.</p>
+<ol>
+<li>Spielbaum</li>
+</ol>
+<p>Zeichnen Sie den <strong>kompletten</strong> Spielbaum auf. Geben Sie an den Kanten jeweils die Zahl der genommenen und der verbleibenden Hölzer an.</p>
+<p><em>Beispiel</em>: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht an der entsprechenden Kante &quot;1/3&quot;. Geben Sie jeweils an, welcher Spieler am Zug ist.</p>
+<ol start="2">
+<li>Minimax</li>
+</ol>
+<p>Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls Schwarz gewonnen hat.</p>
+<ol start="3">
+<li>Optimaler Zug</li>
+</ol>
+<p>Mit welchem Zug muss Weiß beginnen, um das Spiel garantiert zu gewinnen (beide Spieler verhalten sich stets optimal)? Argumentieren Sie mit der Minimax-Bewertung.</p>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 03: Spiele</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+                    
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Ertel2017'>[Ertel2017] <strong>Introduction to Artificial Intelligence</strong><br>Ertel, W., Springer, 2017. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-3-319-58487-4</a>. DOI <a href='https://doi.org/10.1007/978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1007/978-3-319-58487-4</a>.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Minimax: Abschnitt 6.2</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Heuristiken</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Minimax entwickelt den gesamten Spielbaum. Wenn nicht genug Zeit dafür zur Verfügung steht, kann man die
+Suchtiefe begrenzen. Für die Bewertung der Zustände benötigt man eine <code>Eval</code>-Funktion, die die Knoten in
+der selben Reihenfolge sortieren sollte wie es in der vollständigen Version über die <code>Utility</code>-Funktion
+geschieht. Die <code>Eval</code>-Funktion sollte zudem schnell zu berechnen sein. Typische Varianten für die
+<code>Eval</code>-Funktion sind gewichtete Features oder ein Nachschlagen in Spieldatenbanken (Spielzustand plus
+Bewertung).</p>
+<p>Minimax kann auf Spiele mit mehr als zwei Spielern erweitert werden. Dabei versucht dann jeder Spieler für
+sich, das Ergebnis des Spiels (aus seiner Sicht) zu maximieren.</p>
+<p>Bei Spielen mit Zufall (Würfelereignisse) kann man jedem Würfelereignis eine Wahrscheinlichkeit zuordnen
+und damit den jeweils erreichbaren <code>Max</code>- oder <code>Min</code>-Wert gewichten. Die Summe dieser gewichteten Bewertungen
+ist die Bewertung des entsprechenden &quot;Chance&quot;-Knotens, der dann in der darüberliegenden Ebene nach dem
+Minimax-Prinzip ausgewertet wird (=&gt; <em>Expectimax</em>).</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/rKqNqYBXuK8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Heuristiken</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/e5d279fef94d9a37e3b5d15fe9f807e024152e4c65a5a1110bab7871aff45828dba25d086e6a24f6a3a14111304b15f31c9844ff04473788595054d406790a59' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Heuristiken</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Minimax für mehr als zwei Spieler</li> <li>(K2) Minimax mit Zufallskomponente</li> <li>(K2) Optimierungsmöglichkeit: Sortierung der Nachfolger =&gt; Heuristik</li> <li>(K2) Optimierungsmöglichkeit: Suchtiefe beschränken =&gt; Übergang zu Bewertungsfunktion</li> <li>(K2) Optimierungsmöglichkeit: Bewertung über Spieldatenbanken</li> <li>(K3) Minimax-Algorithmus</li> <li>(K3) Tiefenbeschränkung und Bewertungsfunktion bei Minimax</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="wenn-die-zeit-nicht-reicht-suchtiefe-begrenzen">Wenn die Zeit nicht reicht: Suchtiefe begrenzen</h2>
+<ul>
+<li>
+<p>Einführung neuer Funktionen:</p>
+<ol>
+<li>
+<p><code>Cutoff-Test</code> statt <code>Terminal-Test</code></p>
+<p>Beispielsweise bei erreichter Tiefe oder Zeitüberschreitung</p>
+</li>
+<li>
+<p><code>Eval</code> statt <code>Utility</code></p>
+<p>Bewertung der erreichten Position (statt nur Bewertung des Endzustandes)</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Bedingungen an <code>Eval</code>:</p>
+<ol>
+<li>Endknoten in selber Reihenfolge wie bei <code>Utility</code></li>
+<li>Schnell zu berechnen (!)</li>
+</ol>
+</li>
+</ul>
+<h2 id="beispiel-schach">Beispiel Schach</h2>
+<ul>
+<li>
+<p>Mögliche Evaluierungskriterien:</p>
+<ul>
+<li>Materialwert: Bauer 1, Läufer/Springer 3, Turm 5, Dame 9</li>
+<li>Stellungsbewertung: Sicherheit des Königs, Stellung der Bauern</li>
+<li>Daumenregeln: 3 Punkte Vorteil =&gt; sicherer Sieg</li>
+</ul>
+</li>
+<li>
+<p>Nutzung gewichteter Features
+
+<span class="math align-center">$f_i$</span>: 
+<span class="math align-center">$\operatorname{Eval}(s) = w_1f_1(s) + w_2f_2(s) + \ldots$</span></p>
+<ul>
+<li>Beispiel: 
+<span class="math align-center">$w_1 = 9$</span> und 
+<span class="math align-center">$f_1(s)$</span> = (# weiße Königinnen) - (# schwarze Königinnen)</li>
+</ul>
+</li>
+<li>
+<p><strong>Alternativ</strong>: Speicherung von Positionen plus Bewertung in Datenbanken
+=&gt; Lookup mit 
+<span class="math align-center">$\operatorname{Eval}(s)$</span> (statt Berechnung zur Laufzeit)</p>
+</li>
+</ul>
+<h2 id="minimax-mit-mehreren-spielern">Minimax mit mehreren Spielern</h2>
+<p><a href="#R-image-f7de1dd274b41d3bcffc1dd120edec75" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax/minimax3.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7de1dd274b41d3bcffc1dd120edec75"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax/minimax3.png?width=50%25&height=auto"></a></p>
+<p>Hier maximiert jeder Spieler sein eigenes Ergebnis. Im Grunde müsste diese
+Variante dann besser &quot;Maximax&quot; heissen ...</p>
+<p>Wenn es an einer Stelle im Suchbaum mehrere gleich gute (beste) Züge geben
+sollte, kann der Spieler Allianzen bilden: Er könnte dann einen Zug auswählen,
+der für einen der Mitspieler günstiger ist.</p>
+<h2 id="zufallsspiele">Zufallsspiele</h2>
+<p><a href="#R-image-606379dabfa3669eb45a751fc9737604" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-606379dabfa3669eb45a751fc9737604"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg?width=60%25&height=auto"></a></p>
+<p><span class='origin'>Quelle: <a href="https://www.flickr.com/photos/83436399@N04/11267311625" rel="external" target="_blank">&quot;position-backgammon-decembre&quot;</a> by <a href="https://www.flickr.com/photos/83436399@N04" rel="external" target="_blank">serialgamer_fr</a> on Flickr.com (<a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich" rel="external" target="_blank">CC BY 2.0</a>)</span></p>
+<p>Backgammon: Was ist in dieser Situation der optimale Zug?</p>
+<h2 id="minimax-mit-zufallsspielen-zufalls-knoten">Minimax mit Zufallsspielen: ZUFALLS-Knoten</h2>
+<p><a href="#R-image-313f36084feddb31a8fcaa0fbf289ab6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax/expectimax.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-313f36084feddb31a8fcaa0fbf289ab6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax/expectimax.png?width=50%25&height=auto"></a></p>
+<p>Zusätzlich zu den MIN- und MAX-Knoten führt man noch Zufalls-Knoten ein, um
+das Würfelergebnis repräsentieren zu können. Je möglichem Würfelergebnis 
+<span class="math align-center">$i$</span>
+gibt es einen Ausgang, an dem die Wahrscheinlichkeit 
+<span class="math align-center">$P(i)$</span> dieses Ausgangs
+annotiert wird.</p>
+<p>=&gt; Für Zufallsknoten <strong>erwarteten</strong> Minimax-Wert (<em>Expectimax</em>) nutzen</p>
+<h2 id="minimax-mit-zufall-expectimax">Minimax mit Zufall: Expectimax</h2>
+<p>Expectimax-Wert für Zufallsknoten 
+<span class="math align-center">$C$</span>:</p>
+
+<span class="math align-center">$$
+    \operatorname{Expectimax}(C) = \sum_i P(i) \operatorname{Expectimax}(s_i)
+$$</span>
+<ul>
+<li>
+<span class="math align-center">$i$</span> mögliches Würfelergebnis</li>
+<li>
+<span class="math align-center">$P(i)$</span> Wahrscheinlichkeit für Würfelergebnis</li>
+<li>
+<span class="math align-center">$s_i$</span> Nachfolgezustand von 
+<span class="math align-center">$C$</span> gegeben Würfelergebnis 
+<span class="math align-center">$i$</span></li>
+</ul>
+<p>Für die normalen Min- und Max-Knoten liefert <code>Expectimax()</code> die üblichen
+Aufrufe von <code>Min-Value()</code> bwz. <code>Max-Value()</code>.</p>
+<p>Auf <a href="https://en.wikipedia.org/wiki/Expectiminimax" rel="external" target="_blank">wikipedia.org/wiki/Expectiminimax</a>
+finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
+Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
+Abbruch durch das Erreichen der Suchtiefe statt <code>Utility()</code> eine <code>Eval()</code>-Funktion
+braucht. Zusätzlich kombiniert der dort gezeigte Algorithmus die Funktionen
+<code>Expectimax()</code>, <code>Min-Value()</code> und <code>Max-Value()</code> in eine einzige Funktion.</p>
+<p>Eine ähnliche geschlossene Darstellung finden Sie im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html#id_Russell2020">[Russell2020, S. 212]</a>.</p>
+<p><strong>Hinweis</strong>: Üblicherweise sind die Nachfolger der Zufallsknoten gleich wahrscheinlich.
+Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger arbeiten.</p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Minimax:
+<ul>
+<li>Kriterien zur Begrenzung der Suchtiefe, Bewertung <code>Eval</code> statt <code>Utility</code></li>
+<li>Erweiterung auf 
+<span class="math align-center">$>2$</span> Spieler</li>
+<li>Erweiterung auf Spiele mit Zufall: <em>Expectimax</em></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 03: Spiele</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+                    
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Ertel2017'>[Ertel2017] <strong>Introduction to Artificial Intelligence</strong><br>Ertel, W., Springer, 2017. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-3-319-58487-4</a>. DOI <a href='https://doi.org/10.1007/978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1007/978-3-319-58487-4</a>.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Alpha-Beta-Pruning</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Minimax entwickelt den gesamten Spielbaum. Wenn man dabei die bisher besten Werte für MAX und MIN als
+
+<span class="math align-center">$\alpha$</span> und 
+<span class="math align-center">$\beta$</span> mitführt, beobachtet man, dass ein 
+<span class="math align-center">$\alpha$</span>-Wert nie kleiner wird und ein 
+<span class="math align-center">$\beta$</span>-Wert
+nie größer wird. Dies kann man ausnutzen und das Entwickeln von Pfaden abbrechen, wenn in einem MIN-Knoten
+der 
+<span class="math align-center">$\beta$</span>-Wert kleiner wird als der 
+<span class="math align-center">$\alpha$</span>-Wert des MAX-Vorgängers: (a) kann der 
+<span class="math align-center">$\beta$</span>-Wert bei der
+weiteren Untersuchung der verbleibenden Nachfolger im MIN-Knoten nur noch kleiner werden, und (b) würde der
+MAX-Vorgänger diesen MIN-Knoten nie als Nachfolger in Betracht ziehen, da er bereits einen besseren Zug
+gesehen hat (da sein 
+<span class="math align-center">$\alpha$</span> größer ist als das 
+<span class="math align-center">$\beta$</span> im Nachfolger). Deshalb kann man hier sofort die
+Untersuchung der verbleibenden Nachfolger im MIN-Knoten abbrechen (&quot;Pruning&quot;). Eine analoge Überlegung gilt
+für einen MAX-Nachfolger unter einem MIN-Knoten.</p>
+<p>Dabei bleibt das Endergebnis erhalten. Man schneidet nur Suchpfade weg, die das Ergebnis von Minimax nicht
+verändern.</p>
+<p>Die mögliche Effizienzsteigerung ist sehr stark abhängig von Sortierung der Nachfolger! Deshalb stellt man
+häufig Heuristiken zur &quot;richtigen&quot; Sortierung der Nachfolger auf (&quot;Killer-Moves&quot;).</p>
+<p>Zusätzlich kann man wie bei Minimax auch die Suchtiefe begrenzen und eine Bewertungsfunktion (statt der
+Nutzenfunktion) einsetzen. Auch hier kann die Bewertungsfunktion wieder gewichtete Features nutzen und/oder
+Positionen mit in Datenbanken gespeicherten Positionen und Bewertungen abgleichen.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/_Hq-GCl__bU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Alpha-Beta-Pruning</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/f7c9b90ff9732933c8899548d0f89eb320b59efeee015383a765494b60b29578aae796e92bf7df5a621ed1f8a6dc50649e3820fcc74c698cd3f25e6987882a53' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Alpha-Beta-Pruning</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Optimierungsmöglichkeit: Sortierung der Nachfolger =&gt; Heuristik</li> <li>(K2) Optimierungsmöglichkeit: Suchtiefe beschränken =&gt; Übergang zu Bewertungsfunktion</li> <li>(K2) Optimierungsmöglichkeit: Bewertung über Spieldatenbanken</li> <li>(K3) alpha-beta-Pruning</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="verbesserung-minimax-algorithmus">Verbesserung Minimax-Algorithmus</h2>
+<p><a href="#R-image-9a75b56b590aad9b24a21239830af93a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta/minimax.png?width=40%25&height=auto" style=" height: auto; width: 40%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a75b56b590aad9b24a21239830af93a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta/minimax.png?width=40%25&height=auto"></a></p>
+<p>=&gt; <strong>Minimax-Baum</strong>: <span class='alert'>Verbesserungen möglich?</span></p>
+<h2 id="alpha-beta-pruning">Alpha-beta-Pruning</h2>
+<p>Minimax-Algorithmus mit zusätzlichen Informationen:</p>
+<ul>
+<li>
+<span class="math align-center">$\alpha$</span>: bisher bester Wert für MAX (höchster Wert)</li>
+<li>
+<span class="math align-center">$\beta$</span>: bisher bester Wert für MIN (kleinster Wert)</li>
+</ul>
+<p>=&gt; Beobachtungen:</p>
+<ol>
+<li>
+<span class="math align-center">$\alpha$</span> für MAX-Knoten wird nie kleiner</li>
+<li>
+<span class="math align-center">$\beta$</span> für MIN-Knoten wird nie größer</li>
+</ol>
+<h2 id="pruning-regeln">Pruning-Regeln</h2>
+<ol>
+<li>
+<p>Schneide (unter) MIN-Knoten ab, deren 
+<span class="math align-center">$\beta$</span> 
+<span class="math align-center">$\le$</span> dem
+
+<span class="math align-center">$\alpha$</span> des MAX-Vorgängers ist.</p>
+</li>
+<li>
+<p>Schneide (unter) MAX-Knoten ab, deren 
+<span class="math align-center">$\alpha$</span> 
+<span class="math align-center">$\ge$</span> dem
+
+<span class="math align-center">$\beta$</span> des MIN-Vorgängers ist.</p>
+</li>
+</ol>
+<div style="text-align:center;">
+<span class="badge cstyle primary"><span class="badge-content"><p><span class='alert'>Abbruch, wenn kein Platz mehr zwischen Alpha und Beta</span></p>
+</span></span>
+</div>
+<h2 id="alpha-beta-pruning----der-algorithmus-skizze">Alpha-beta-Pruning -- Der Algorithmus (Skizze)</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Max</span><span style="color:#f92672">-</span>Value(state, alpha, beta):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> Terminal<span style="color:#f92672">-</span>Test(state): <span style="color:#66d9ef">return</span> Utility(state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>INF
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (a, s) <span style="color:#f92672">in</span> Successors(state):
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> MAX(v, Min<span style="color:#f92672">-</span>Value(s, alpha, beta))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (v <span style="color:#f92672">&gt;=</span> beta): <span style="color:#66d9ef">return</span> v
+</span></span><span style="display:flex;"><span>        alpha <span style="color:#f92672">=</span> MAX(alpha, v)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> v</span></span></code></pre></div><div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Min</span><span style="color:#f92672">-</span>Value(state, alpha, beta):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> Terminal<span style="color:#f92672">-</span>Test(state): <span style="color:#66d9ef">return</span> Utility(state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> <span style="color:#f92672">+</span>INF
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (a, s) <span style="color:#f92672">in</span> Successors(state):
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> MIN(v, Max<span style="color:#f92672">-</span>Value(s, alpha, beta))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (v <span style="color:#f92672">&lt;=</span> alpha): <span style="color:#66d9ef">return</span> v
+</span></span><span style="display:flex;"><span>        beta <span style="color:#f92672">=</span> MIN(beta, v)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> v</span></span></code></pre></div><p>Initialer Aufruf von <code>Max-Value()</code> mit 
+<span class="math align-center">$\alpha = -\infty$</span> und 
+<span class="math align-center">$\beta = +\infty$</span></p>
+<p><strong>Achtung</strong>: Es kursieren Varianten von diesem Algorithmus, bei denen auf die
+Hilfsvariable <code>v</code> verzichtet wird und stattdessen <code>alpha</code> bzw. <code>beta</code> direkt
+modifiziert werden und als Rückgabewert dienen. Das <em>kann</em> zu anderen oder falschen
+Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.</p>
+<h2 id="alpha-beta-pruning----eigenschaften">Alpha-beta-Pruning -- Eigenschaften</h2>
+<ol>
+<li>
+<p>Pruning beeinflusst nicht das Endergebnis!</p>
+</li>
+<li>
+<p>Sortierung der Nachfolger spielt große Rolle</p>
+</li>
+<li>
+<p>Perfekte Sortierung: 
+<span class="math align-center">$O(b^{d/2})$</span> =&gt; Verdopplung der Suchtiefe möglich</p>
+</li>
+</ol>
+<p>Für Schach immer noch zu aufwändig ...</p>
+<h2 id="verbesserungen-für-alpha-beta-pruning">Verbesserungen für Alpha-beta-Pruning</h2>
+<ul>
+<li>
+<p>&quot;Killer-Move&quot;: Maximale Effizienz nur wenn <strong>optimaler Zug immer zuerst</strong> untersucht
+=&gt; Zu untersuchende Züge <strong>sortieren/priorisieren</strong>, zb. Schach:
+a)  Figuren schlagen
+b)  Drohen
+c)  Vorwärts ziehen
+d)  Rückwärts ziehen</p>
+</li>
+<li>
+<p>Verändern der Suchtiefe nach Spielsituation</p>
+</li>
+<li>
+<p>Bewertungsfunktion <code>Eval</code>:</p>
+<ul>
+<li>Datenbanken mit Spielsituationen und Expertenbewertung:
+<ul>
+<li>Eröffnungsspiele (besonders viele Verzweigungen)</li>
+<li>Endspiele</li>
+</ul>
+</li>
+<li>Lernen der optimalen Gewichte für <code>Eval</code>-Funktion</li>
+<li>Berücksichtigung von Symmetrien</li>
+</ul>
+</li>
+</ul>
+<h2 id="beispiel-deepblue-ibm-1997">Beispiel DeepBlue (IBM, 1997)</h2>
+<ul>
+<li>Alpha-beta-Pruning mit Tiefenbeschränkung: ca. 14 Halbzüge</li>
+<li>Dynamische Tiefenbeschränkung (stellungsabhängig, max. ca. 40 Züge)</li>
+<li>Heuristische Stellungsbewertung <code>Eval</code>:
+<ul>
+<li>mehr als 8.000 Features</li>
+<li>ca. 4.000 Eröffnungsstellungen</li>
+<li>ca. 700.000 Spielsituationen (von Experten bewertet)</li>
+<li>Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen</li>
+</ul>
+</li>
+</ul>
+<p><span class='origin'>Quelle: <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html#id_Russell2014">[Russell2014, p. 185]</a></span></p>
+<h2 id="beispiel-alphago-google-2016">Beispiel AlphaGo (Google, 2016)</h2>
+<ul>
+<li>
+<p>Beschränkung der Suchtiefe: Bewertung der Stellung durch <em>&quot;Value Network&quot;</em></p>
+</li>
+<li>
+<p>Beschränkung der Verzweigungsbreite: Bestimmung von Zugkandidaten durch
+<em>&quot;Policy Network&quot;</em></p>
+</li>
+<li>
+<p>Training dieser <em>&quot;Deep Neural Networks&quot;</em>:</p>
+<ul>
+<li>Überwachtes Lernen: &quot;Analyse&quot; von Spiel-Datenbanken</li>
+<li>Reinforcement-Lernen: Self-Play, Bewertung am Ende
+<ul>
+<li>Züge mit Monte-Carlo-Baumsuche ausgewählt</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><span class='origin'>Quelle: <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html#id_Silver2016">[Silver2016]</a>, siehe auch <a href="https://deepmind.com/research/case-studies/alphago-the-story-so-far" rel="external" target="_blank">deepmind.com/research/alphago/</a></span></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>
+<p>Alpha-beta-Pruning:</p>
+<ul>
+<li>Mitführen der bisher besten Werte für MAX und MIN: 
+<span class="math align-center">$\alpha$</span> und 
+<span class="math align-center">$\beta$</span></li>
+<li>Abschneiden von Pfaden, die Verschlechterung bewirken würden</li>
+<li>Endergebnis bleibt erhalten</li>
+<li>Effizienzsteigerung abhängig von Sortierung der Nachfolger</li>
+</ul>
+</li>
+<li>
+<p>Viele Verbesserungen denkbar:</p>
+<ul>
+<li>Zu untersuchende Züge &quot;richtig&quot; sortieren (Heuristik)</li>
+<li>Suchtiefe begrenzen und Bewertungsfunktion (statt Nutzenfunktion)</li>
+<li>Positionen mit Datenbank abgleichen</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106584&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Alpha-Beta-Pruning (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Optimale Spiele und MiniMax</strong></p>
+<p>Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat verloren. Zu Beginn ist Weiß am Zug.</p>
+<ol>
+<li>Spielbaum</li>
+</ol>
+<p>Zeichnen Sie den <strong>kompletten</strong> Spielbaum auf. Geben Sie an den Kanten jeweils die Zahl der genommenen und der verbleibenden Hölzer an.</p>
+<p><em>Beispiel</em>: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht an der entsprechenden Kante &quot;1/3&quot;. Geben Sie jeweils an, welcher Spieler am Zug ist.</p>
+<ol start="2">
+<li>Minimax</li>
+</ol>
+<p>Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls Schwarz gewonnen hat.</p>
+<ol start="3">
+<li>Alpha-Beta-Pruning</li>
+</ol>
+<p>Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder weniger oder gleich viele Spielzüge wie mit Minimax entwickelt? Begründen Sie Ihre Antwort.</p>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet03.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 03: Spiele</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+                    
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+                    
+                
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Ertel2017'>[Ertel2017] <strong>Introduction to Artificial Intelligence</strong><br>Ertel, W., Springer, 2017. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-3-319-58487-4</a>. DOI <a href='https://doi.org/10.1007/978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1007/978-3-319-58487-4</a>.</li> <li id='id_Russell2014'>[Russell2014] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2014. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-1-292-02420-2' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-1-292-02420-2</a>.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3</em></li> <li id='id_Silver2016'>[Silver2016] <a href='https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Mastering the game of Go with deep neural networks and tree search</strong></a><br>Silver, D. und Huang, A. und Maddison, C. und Guez, A. und Sifre, L. und Van Den Driessche, G. und Schrittwieser, I., J. Schrittwieser und Panneershelvam, V. und Lanctot, M. und others, Nature Publishing Group, 2016. DOI <a href='https://doi.org/10.1038/nature16961' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1038/nature16961</a>.</li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>

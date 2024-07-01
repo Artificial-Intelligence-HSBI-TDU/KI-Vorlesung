@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Hole das Buch =&gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) &#43; h(n)$
+$n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&gt; $h(n)$ wird auch &#34;heuristische Funktion&#34; oder &#34;Heuristik&#34; genannt Varianten:
+Branch-and-Bound Best First A* A*-Suche Kombination aus Branch-and-Bound und Best-First-Suche
+Kostenfunktion: $f(n) = g(n) &#43; h(n)$">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Suche mit A*">
+    <meta name="twitter:description" content="Hole das Buch =&gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) &#43; h(n)$
+$n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&gt; $h(n)$ wird auch &#34;heuristische Funktion&#34; oder &#34;Heuristik&#34; genannt Varianten:
+Branch-and-Bound Best First A* A*-Suche Kombination aus Branch-and-Bound und Best-First-Suche
+Kostenfunktion: $f(n) = g(n) &#43; h(n)$">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">
+    <meta property="og:title" content="Suche mit A*">
+    <meta property="og:description" content="Hole das Buch =&gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) &#43; h(n)$
+$n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&gt; $h(n)$ wird auch &#34;heuristische Funktion&#34; oder &#34;Heuristik&#34; genannt Varianten:
+Branch-and-Bound Best First A* A*-Suche Kombination aus Branch-and-Bound und Best-First-Suche
+Kostenfunktion: $f(n) = g(n) &#43; h(n)$">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Suche mit A*">
+    <meta itemprop="description" content="Hole das Buch =&gt; Problemlösen == Suche im Graphen
+Informierte Suche: Nutzung der Kostenfunktion:
+Gesamtkosten: $f(n) = g(n) &#43; h(n)$
+$n \in S$ auf aktuellem Weg erreichter Knoten $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$ $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =&gt; $h(n)$ wird auch &#34;heuristische Funktion&#34; oder &#34;Heuristik&#34; genannt Varianten:
+Branch-and-Bound Best First A* A*-Suche Kombination aus Branch-and-Bound und Best-First-Suche
+Kostenfunktion: $f(n) = g(n) &#43; h(n)$">
+    <meta itemprop="wordCount" content="623">
+    <title>Suche mit A*</title>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/index.print.html" rel="alternate" type="text/html" title="Suche mit A*">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#hole-das-buch">Hole das Buch</a></li>
+    <li><a href="#a-suche">A*-Suche</a></li>
+    <li><a href="#konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</a></li>
+    <li><a href="#a-suche----anforderungen-an-heuristik-tree-search">A*-Suche -- Anforderungen an Heuristik (Tree-Search)</a></li>
+    <li><a href="#a-ist-optimal">A* ist optimal</a></li>
+    <li><a href="#einfache-verbesserungen-a-tree-search">Einfache Verbesserungen A* (Tree-Search)</a></li>
+    <li><a href="#a-suche----anforderungen-an-heuristik-graph-search">A*-Suche -- Anforderungen an Heuristik (Graph-Search)</a></li>
+    <li><a href="#vergleich-bnb-bf-astar">Eigenschaften Branch-and-Bound, Best-First, A*</a></li>
+    <li><a href="#wrap-up">Wrap-Up</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Suche mit A*
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Suche mit A*</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>A* zählt zu den Verfahren der informierten Suche. Dabei verwendet A* sowohl die
+realen Pfadkosten als auch die Schätzungen der Restkosten, d.h. die Kostenfunktion für
+A* ist 
+<span class="math align-center">$f(n) = g(n)+h(n)$</span>.</p>
+<p>A* ist vollständig und optimal, allerdings muss die Heuristik bei der Tree-Search-Variante
+<strong>zulässig</strong> sein (d.h. sie muss <em>unterschätzen</em>, beispielsweise die Luft-Linie) und bei der
+Graph-Search-Variante muss sie <strong>konsistent</strong> sein (d.h. für jeden Knoten die
+Dreiecks-Ungleichung erfüllen).</p>
+<p>A* hat wie BnB exponentiellen Aufwand. Durch die zusätzliche Verwendung der Heuristik
+werden die partiellen Pfade in der Queue aber geschickter sortiert, so dass A* in der
+Regel mit weniger Suchschritten als BnB auskommt.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/eMkEN-HtEs8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL A*</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL A*</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K2) Bedingung(en) an Restkostenabschätzung bei A*</li> <li>(K3) Informierte Suchverfahren A*</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-aa0ceda5053564da9a42445270b4b150" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa0ceda5053564da9a42445270b4b150"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Informierte Suche: Nutzung der Kostenfunktion</strong>:</p>
+<p><strong>Gesamtkosten</strong>: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+<ul>
+<li>
+<span class="math align-center">$n \in S$</span> auf aktuellem Weg erreichter Knoten</li>
+<li>
+<span class="math align-center">$g(n)$</span> tatsächliche Kosten für Weg vom Start bis Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n)$</span> geschätzte Restkosten für Weg von Knoten 
+<span class="math align-center">$n$</span> zum Ziel
+=&gt; 
+<span class="math align-center">$h(n)$</span> wird auch &quot;heuristische Funktion&quot; oder &quot;Heuristik&quot; genannt</li>
+</ul>
+<p>Varianten:</p>
+<ul>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First</a></li>
+<li><strong>A*</strong></li>
+</ul>
+<h2 id="a-suche">A*-Suche</h2>
+<ul>
+<li>
+<p>Kombination aus Branch-and-Bound und Best-First-Suche</p>
+</li>
+<li>
+<p>Kostenfunktion: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+</li>
+<li>
+<p>Datenstruktur: <strong>sortierte Queue</strong> (Prioritätsqueue)</p>
+</li>
+<li>
+<p>Voraussetzung:</p>
+<ol>
+<li>Alle Aktionen haben positive Kosten (
+<span class="math align-center">$g(n) \ge \epsilon$</span>)</li>
+<li>Heuristik 
+<span class="math align-center">$h(n)$</span> muss <em>zulässig/konsistent</em> sein</li>
+</ol>
+</li>
+</ul>
+<div class='center'>
+<p><a href="#R-image-63f26be866c518d5d0521c3d58a432e2" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-63f26be866c518d5d0521c3d58a432e2"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Notieren Sie die Bestandteile der Kosten für jeden partiellen Weg in der Queue einzeln:
+&quot;
+<span class="math align-center">$g(n) + h(n) = f(n)$</span>&quot;. Das erleichtert Ihnen die weiteren Schritte, da Sie dort ja nur
+mit 
+<span class="math align-center">$g(n)$</span> weiter rechnen dürfen. Gleichzeitig erleichtert es die Nachvollziehbarkeit.</p>
+<p>Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf verzichten,
+wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen. Wer nicht mit
+Unterstreichen arbeiten will, muss eben dann manuell sortieren ...</p>
+<p>Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
+bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in der
+Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den analogen
+Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum selben
+(Zwischen-/End-) Knoten eingefügt werden soll.</p>
+<h2 id="a-suche----anforderungen-an-heuristik-tree-search">A*-Suche -- Anforderungen an Heuristik (Tree-Search)</h2>
+<p><strong>Tree-Search-Variante</strong>: Die Heuristik muss <span class='alert'><strong>zulässig</strong></span> sein:</p>
+<ul>
+<li>Seien 
+<span class="math align-center">$h^\star(n)$</span> die tatsächlichen optimalen Restkosten von einem Knoten
+
+<span class="math align-center">$n$</span> zum nächsten Ziel.</li>
+<li>Dann muss für jeden beliebigen Knoten 
+<span class="math align-center">$n$</span> gelten: 
+<span class="math align-center">$$h(n) \le h^\star(n)$$</span></li>
+<li>Außerdem muss gelten:
+<ul>
+<li>
+<span class="math align-center">$h(n) \ge 0$</span> für jeden Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n) = 0$</span> für jeden Zielknoten 
+<span class="math align-center">$n$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; Beispiel: Luftlinie als Abschätzung</p>
+<p><strong>Hinweis</strong>: Im der englischen Ausgabe des <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html#id_Russell2020">[Russell2020]</a> wird die
+<strong>zulässige Heuristik</strong> auch &quot;<strong>admissible heuristic</strong>&quot; genannt.</p>
+<h2 id="a-ist-optimal">A* ist optimal</h2>
+<p>A* (Tree-Search-Variante) mit zulässiger Heuristik ist optimal.</p>
+<p>Beweis siehe Übung :-)</p>
+<h2 id="einfache-verbesserungen-a-tree-search">Einfache Verbesserungen A* (Tree-Search)</h2>
+<ul>
+<li>
+<p>Dynamische Programmierung: Behalte von mehreren Pfaden zum gleichen Knoten
+nur den günstigsten in der Queue</p>
+</li>
+<li>
+<p>Pfade, deren Endknoten bereits früher im Pfad vorkommt (Schleifen), werden
+in Schritt 2 nicht in die Queue aufgenommen</p>
+</li>
+<li>
+<p>Übergang zur Graph-Search-Variante und Markierung von Knoten</p>
+<p>=&gt; Achtung: Dann schärfere Anforderungen an Heuristik (Konsistenz)</p>
+</li>
+</ul>
+<h2 id="a-suche----anforderungen-an-heuristik-graph-search">A*-Suche -- Anforderungen an Heuristik (Graph-Search)</h2>
+<p><strong>Graph-Search-Variante</strong>: Die Heuristik muss <span class='alert'><strong>konsistent</strong></span> sein:</p>
+<p>Für jeden Knoten 
+<span class="math align-center">$n$</span> und jeden durch eine Aktion 
+<span class="math align-center">$a$</span> erreichten Nachfolger 
+<span class="math align-center">$m$</span>
+gilt: 
+<span class="math align-center">$$h(n) \le c(n,a,m) + h(m)$$</span> mit 
+<span class="math align-center">$c(n,a,m)$</span> Schrittkosten für den Weg von
+
+<span class="math align-center">$n$</span> nach 
+<span class="math align-center">$m$</span> mit Aktion 
+<span class="math align-center">$a$</span>.</p>
+<p>Außerdem muss gelten:</p>
+<ul>
+<li>
+<span class="math align-center">$h(n) \ge 0$</span> für jeden Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n) = 0$</span> für jeden Zielknoten 
+<span class="math align-center">$n$</span></li>
+</ul>
+<p>=&gt; Eine konsistente Heuristik ist gleichzeitig zulässig.</p>
+<p><strong>Hinweis</strong>: Im der englischen Ausgabe des <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html#id_Russell2020">[Russell2020]</a> wird die
+<strong>konsistente Heuristik</strong> auch &quot;<strong>consistent heuristic</strong>&quot; genannt.</p>
+<h2 id="vergleich-bnb-bf-astar">Eigenschaften Branch-and-Bound, Best-First, A*</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><strong>Branch-and-Bound</strong></th>
+<th style="text-align:left"><strong>Best-First</strong></th>
+<th style="text-align:left"><strong>A*</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Kosten</td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = g(n)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = h(n)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></td>
+</tr>
+<tr>
+<td style="text-align:left">Vollständigkeit</td>
+<td style="text-align:left">ja<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:left">nein<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Optimalität</td>
+<td style="text-align:left">ja</td>
+<td style="text-align:left">nein</td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Aufwand</td>
+<td style="text-align:left">exponentiell</td>
+<td style="text-align:left">exponentiell</td>
+<td style="text-align:left">exponentiell</td>
+</tr>
+<tr>
+<td style="text-align:left">Bemerkung</td>
+<td style="text-align:left">Probiert erst alle &quot;kleinen&quot; Pfade</td>
+<td style="text-align:left">Suchverlauf stark abh. v. Heuristik</td>
+<td style="text-align:left">Heuristik: zulässig bzw. konsistent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>
+<p>Informierte Suchverfahren</p>
+<ul>
+<li>Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten</li>
+<li>A*: komplette Kostenfunktion 
+<span class="math align-center">$f(n) = g(n)+h(n)$</span>
+=&gt; besondere Anforderungen an die Heuristik!
+(Tree-Search: <em>zulässige</em> Heuristik; Graph-Search: <em>konsistente</em> Heuristik)</li>
+</ul>
+</li>
+<li>
+<p>Ausblick auf Verbesserungen der vorgestellten Suchverfahren:</p>
+<ul>
+<li>Beschränkung der Suchtiefe (&quot;Depth-Limited-Search&quot;)</li>
+<li>Iterative Vertiefung der Suchtiefe (&quot;Iterative-Deepening-Search&quot;),
+beispielsweise IDA* (&quot;Iterative-Deepening A*&quot;)</li>
+<li>Beschränkung des verwendeten Speichers, beispielsweise SMA*
+(&quot;Simplified Memory-Bounded A*&quot;)</li>
+</ul>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>BnB vollständig: Kosten größer Epsilon (positiv)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>gilt für Tree-Search-Variante; vollständig bei Graph-Search und endlichen Problemräumen&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest A* (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Informierte und uninformierte Suche</strong></p>
+<p>Betrachten Sie folgendes Problem:</p>
+<p><a href="#R-image-7f32268aabfdc17e08df9c4ffacb121b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenges_robby.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f32268aabfdc17e08df9c4ffacb121b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenges_robby.png?width=auto&height=auto"></a></p>
+<p>Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur. Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang durchschritten werden darf. Die Werte an den Pfeilen geben die Kosten für den Übergang von einem Raum in den anderen an.</p>
+<p>Ein Roboter <code>Robbi</code>, der sich zunächst im Kopierer-Raum aufhält, soll den Weg zur Bibliothek finden und dort das Buch aufnehmen. Der Roboter kann sich immer nur entlang den Pfeilen in einen Nachbarraum bewegen (Aktion <code>move</code>). Die Kosten für das Aufnehmen des Buches betragen 3 Einheiten (Aktion <code>take</code>). Weitere Aktionen gibt es nicht.</p>
+<ol>
+<li>Zeichnen Sie den Problemgraphen. Markieren Sie Start- und Zielknoten.</li>
+<li>Finden Sie den Weg mit Tiefensuche und mit Breitensuche (Tree-Search). Welche Unterschiede stellen Sie fest?</li>
+<li>Welche Wege würden mit der jeweiligen Graph-Search-Variante nicht weiter untersucht?</li>
+<li>Suchen Sie nun einen Weg mit A* (Tree-Search). Definieren Sie zunächst Restkostenschätzungen. Was müssen Sie dabei beachten?</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 01: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>A*: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
+
+
+
+<a id="logo" href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898//index.html'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png'>
+</a>
+
+        </div>
+
+        <search><form action="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['de'];
+        </script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/auto-complete.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.stemmer.support.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.multi.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.de.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/search.js?1719838356" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html">Einführung KI</a><ul id="R-subsections-d5efd0a842116e4053b2a67d87eea20a" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html">Einführung KI</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">Problemlösen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html" class="parent "><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">Suche</a><ul id="R-subsections-ba52359aea8fbbbebd8a2b5035d5193b" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">Uninformierte Suche</a><ul id="R-subsections-7e7e45fbada4c99410206367a85babe0" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html" class="parent "><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html">Informierte Suche</a><ul id="R-subsections-55fcc8c98625f201eadcbded67b62311" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html" class="active"><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">A*</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">Lokale Suche</a><ul id="R-subsections-ccd4a4b40ee1fab6aada128d05091756" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Gradientensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Simulated Annealing</a></li></ul></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html">Genetische Algorithmen</a><ul id="R-subsections-513570a2bd0cf4a66bab5d5617bd8135" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html">Intro EA/GA</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html">Genetische Algorithmen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">Spiele</a><ul id="R-subsections-be9f75f01bd16477b0add6a83644e3db" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Optimale Spiele</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html">CSP</a><ul id="R-subsections-350d6b931515a3c0942b7ee2e29cdde2" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html">Intro</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html">Lösen von diskreten CSP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">AC-3</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html">Naive Bayes</a><ul id="R-subsections-5fc30d962871e2f731a4590e884cf48f" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html">Wahrscheinlichkeiten</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html">Naive Bayes</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html">Entscheidungsbäume</a><ul id="R-subsections-d5c30d1ee9143be0e1bf969e932d32f8" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html">Machine Learning 101</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html">CAL2</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html">Pruning</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html">CAL3</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html">Entropie</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html">ID3 und C4.5</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">Neuronale Netze</a><ul id="R-subsections-34efc21b54b22f5fea2abf053a31ad8c" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html">NN1 - Perzeptron</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html">NN2 - Lineare Regression &amp; Gradientenabstieg</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html">NN3 - Logistische Regression</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html">NN4 - Overfitting</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html">NN5 - MLP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">NN6 - Backpropagation</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html">NN7 - Training &amp; Testing</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html">NN8 - Performanzanalyse</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#kursformat"><i class='fas fa-bookmark'></i> Zeiten</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#fahrplan"><i class='fas fa-bookmark'></i> Fahrplan</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#praktikum%C3%BCbung"><i class='fas fa-bookmark'></i> Aufgabenblätter</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#pr%C3%BCfungsform-note-und-credits"><i class='fas fa-bookmark'></i> Note/Credits</a></li>
+            <li><a class="padding" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions"><i class='fas fa-external-link-alt'></i> FAQ</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html" lang="de-DE" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p style="text-align: center;">
+<i class='fab fa-fw fa-github'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">GitHub</a>
+<i class='fas fa-fw fa-tags'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/issues">Issues</a>
+<i class='fas fa-fw fa-bullhorn'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">Credits</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+
+</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>

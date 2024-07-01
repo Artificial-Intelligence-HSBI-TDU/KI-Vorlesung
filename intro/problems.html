@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Motivation: Roboter in einer Bibliothek Aktionen:
+Right (R) Left (L) Take (T) Drop (D) Wahrnehmungen:
+In welchem Raum bin ich? Habe ich das Buch? Aufgabe: Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
+Bemerkungen zur Umwelt:
+Beobachtbarkeit der Umwelt kann variieren: &#34;voll beobachtbar&#34; bis zu &#34;unbeobachtbar&#34; Umwelt kann &#34;deterministisch&#34; oder &#34;stochastisch&#34; sein: Führt eine Aktion in einem Zustand immer zum selben Folgezustand? Wann erfolgt die Rückmeldung an den Agenten über die Auswirkung der Aktionen?">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Problemlösen">
+    <meta name="twitter:description" content="Motivation: Roboter in einer Bibliothek Aktionen:
+Right (R) Left (L) Take (T) Drop (D) Wahrnehmungen:
+In welchem Raum bin ich? Habe ich das Buch? Aufgabe: Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
+Bemerkungen zur Umwelt:
+Beobachtbarkeit der Umwelt kann variieren: &#34;voll beobachtbar&#34; bis zu &#34;unbeobachtbar&#34; Umwelt kann &#34;deterministisch&#34; oder &#34;stochastisch&#34; sein: Führt eine Aktion in einem Zustand immer zum selben Folgezustand? Wann erfolgt die Rückmeldung an den Agenten über die Auswirkung der Aktionen?">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">
+    <meta property="og:title" content="Problemlösen">
+    <meta property="og:description" content="Motivation: Roboter in einer Bibliothek Aktionen:
+Right (R) Left (L) Take (T) Drop (D) Wahrnehmungen:
+In welchem Raum bin ich? Habe ich das Buch? Aufgabe: Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
+Bemerkungen zur Umwelt:
+Beobachtbarkeit der Umwelt kann variieren: &#34;voll beobachtbar&#34; bis zu &#34;unbeobachtbar&#34; Umwelt kann &#34;deterministisch&#34; oder &#34;stochastisch&#34; sein: Führt eine Aktion in einem Zustand immer zum selben Folgezustand? Wann erfolgt die Rückmeldung an den Agenten über die Auswirkung der Aktionen?">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Problemlösen">
+    <meta itemprop="description" content="Motivation: Roboter in einer Bibliothek Aktionen:
+Right (R) Left (L) Take (T) Drop (D) Wahrnehmungen:
+In welchem Raum bin ich? Habe ich das Buch? Aufgabe: Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
+Bemerkungen zur Umwelt:
+Beobachtbarkeit der Umwelt kann variieren: &#34;voll beobachtbar&#34; bis zu &#34;unbeobachtbar&#34; Umwelt kann &#34;deterministisch&#34; oder &#34;stochastisch&#34; sein: Führt eine Aktion in einem Zustand immer zum selben Folgezustand? Wann erfolgt die Rückmeldung an den Agenten über die Auswirkung der Aktionen?">
+    <meta itemprop="wordCount" content="964">
+    <title>Problemlösen</title>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/index.print.html" rel="alternate" type="text/html" title="Problemlösen">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#motivation-roboter-in-einer-bibliothek">Motivation: Roboter in einer Bibliothek</a></li>
+    <li><a href="#zustände-der-bibliotheks-welt">Zustände der Bibliotheks-Welt</a></li>
+    <li><a href="#suche-im-problemgraphen">Suche im Problemgraphen</a></li>
+    <li><a href="#definition-zustand-und-aktion">Definition Zustand und Aktion</a></li>
+    <li><a href="#definition-problem">Definition Problem</a></li>
+    <li><a href="#hinweis-unterschied-zustand-und-knoten-bzw-zustandsraum-und-problemgraph">Hinweis: Unterschied Zustand und Knoten bzw. Zustandsraum und Problemgraph</a></li>
+    <li><a href="#definition-problemlösen">Definition Problemlösen</a></li>
+    <li><a href="#suche-einfache-basisvariante">Suche: Einfache Basisvariante</a></li>
+    <li><a href="#erweiterung-der-suche-vermeiden-von-wiederholungen">Erweiterung der Suche: Vermeiden von Wiederholungen</a></li>
+    <li><a href="#bewertung-von-suchalgorithmen">Bewertung von Suchalgorithmen</a></li>
+    <li><a href="#wrap-up">Wrap-Up</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Problemlösen
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Problemlösen</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Um ein Problem lösen zu können, muss es zunächst geeignet dargestellt werden. In der KI
+betrachten wir Zustände einer Welt, auf die Aktionen angewendet werden können und die die
+betrachtete Welt in den/einen Folgezustand bringen. Hier muss unterschieden werden zwischen
+deterministischen und stochastischen Welten, ebenso spielt die Beobachtbarkeit durch den
+Agenten (die die Welt betrachtende und durch die Aktionen auf die Welt einwirkende Instanz)
+eine Rolle: Kann der Agent die Welt komplett beobachten, nur einen Teil davon oder gar nichts?
+Es spielt auch eine Rolle, ob es diskrete Zustände gibt, oder ob man mit kontinuierlichen
+Variablen zu tun hat. Gibt es nur einen Agenten oder können mehrere Agenten beteiligt sein ...
+(In dieser Veranstaltung werden wir uns auf deterministische und voll beobachtbare Welten
+mit diskreten Zuständen konzentrieren.)</p>
+<p>Dies alles muss bei der Modellierung betrachtet werden. Es empfiehlt sich, die Zustände und
+die Aktionen so abstrakt wie möglich zu beschreiben. Anderenfalls kann später die Lösung des
+Problems zumindest stark erschwert werden.</p>
+<p>Durch das wiederholte Anwenden der Aktionen auf den Startzustand bzw. auf die sich daraus
+ergebenden Folgezustände wird der Zustandsraum aufgebaut. Dabei ist zu beachten, dass Aktionen
+Vorbedingungen haben können, d.h. unter Umständen nicht auf alle Zustände angewendet werden
+können. Die entstehende Struktur (Zustandsraum) kann man formal als Graph repräsentieren: Die
+Zustände werden durch die Knoten und die Aktionen als (gerichtete) Kanten im Graph dargestellt
+(=&gt; Problemgraph).</p>
+<p>Das Problemlösen entspricht nun einer Suche im Problemgraphen: Man sucht einen Weg von einem
+Startknoten zu einem Zielknoten, d.h. eine Folge von Aktionen, die den Start- in den Zielzustand
+überführen. Der Weg entspricht dann der Lösung des Problems. Normalerweise will man eine bestimmte
+Qualität der Lösungen haben: Es sollen die kürzesten Wege (also die mit den wenigsten
+Zwischenstationen/Knoten) oder die billigsten Wege (die Summe der an den Kanten annotierten Gewichte
+soll minimal sein) gefunden werden.</p>
+<p>Zur Suche kann man bei den in dieser Veranstaltung betrachteten deterministischen Problemen mit
+diskreten Zuständen den einfachen &quot;Tree-Search&quot;-Algorithmus (Benennung in Anlehnung an <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#id_Russell2020">[Russell2020]</a>)
+einsetzen, der allerdings Wiederholungen und Schleifen zulässt. Mit zwei Erweiterungen wird daraus
+der &quot;Graph-Search&quot;-Algorithmus (Benennung in Anlehnung an <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#id_Russell2020">[Russell2020]</a>), der die wiederholte
+Untersuchung von bereits besuchten Knoten vermeidet. In beiden Algorithmen wird eine zentrale
+Datenstruktur eingesetzt (im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#id_Russell2020">[Russell2020]</a> auch &quot;Frontier&quot; genannt), die die als Nächstes zu
+untersuchenden Knoten hält und die damit die Grenze zwischen dem bereits untersuchten Teil des Graphen
+und dem unbekannten Teil des Graphen bildet. Je nach Art der Datenstruktur und je nach den betrachteten
+Kosten ergeben sich eine Reihe unterschiedlicher Suchalgorithmen, die wir in einer späteren Sitzung
+betrachten.</p>
+<p>Die Suchverfahren können im Hinblick auf Optimalität, Vollständigkeit und Komplexität beurteilt
+werden.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/IhUmUUzR9lQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Problemlösen</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/6754160d1977fb73c1d7f2052a1153fd073dc151853d4143c6f84622ffdb785baa6205e877ad448e1ba00fddd1c6528615c9dcb83528d32015e30a04201028f9' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Problemlösen</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Definition Problem: Begriffe Zustand, Aktion, Zustandsraum, Problemgraph, Suchbaum</li> <li>(K2) Problemlösen als Suche nach Wegen im Problemgraph =&gt; Suchbaum</li> <li>(K2) Unterschied zw. Tree-Search und Graph-Search</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="motivation-roboter-in-einer-bibliothek">Motivation: Roboter in einer Bibliothek</h2>
+<p><a href="#R-image-22dbc950dd8429b4876e12201973e72a" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/problem.png?width=40%25&height=auto" style=" height: auto; width: 40%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-22dbc950dd8429b4876e12201973e72a"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/problem.png?width=40%25&height=auto"></a></p>
+<div class='columns'>
+<div class='column'>
+<p><strong>Aktionen:</strong></p>
+<ul>
+<li>Right (R)</li>
+<li>Left (L)</li>
+<li>Take (T)</li>
+<li>Drop (D)</li>
+</ul>
+</div>
+<div class='column'>
+<p><strong>Wahrnehmungen:</strong></p>
+<ul>
+<li>In welchem Raum bin ich?</li>
+<li>Habe ich das Buch?</li>
+</ul>
+</div>
+</div>
+<p><strong>Aufgabe:</strong> Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.</p>
+<p>Bemerkungen zur Umwelt:</p>
+<ul>
+<li>Beobachtbarkeit der Umwelt kann variieren: &quot;voll beobachtbar&quot; bis zu &quot;unbeobachtbar&quot;</li>
+<li>Umwelt kann &quot;deterministisch&quot; oder &quot;stochastisch&quot; sein: Führt eine Aktion in
+einem Zustand immer zum selben Folgezustand?</li>
+<li>Wann erfolgt die Rückmeldung an den Agenten über die Auswirkung der
+Aktionen? Sofort (&quot;sequentiell&quot;) oder erst am Ende einer Aktionsfolge
+(&quot;episodisch&quot;)?</li>
+<li>Wird die Umwelt nur durch die Aktionen des Agenten verändert (&quot;statisch&quot;)?
+Oder verändert sich die Umwelt zwischen den Aktionen eines Agenten,
+beispielsweise durch andere Agenten (&quot;dynamisch&quot;)?</li>
+<li>Gibt es diskrete Zustände (wie im Beispiel)?</li>
+</ul>
+<h2 id="zustände-der-bibliotheks-welt">Zustände der Bibliotheks-Welt</h2>
+<p><a href="#R-image-526cb39e925f2732e496c874a1d128fa" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/states.png?width=55%25&height=auto" style=" height: auto; width: 55%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-526cb39e925f2732e496c874a1d128fa"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/states.png?width=55%25&height=auto"></a></p>
+<p><strong>Problem:</strong> Gegeben einen Startzustand, wie komme ich zum Ziel?</p>
+<ul>
+<li>Welche Aktionen können in einem Zustand (zb. Nr. 4) angewendet werden?</li>
+<li>Welche Aktionen können in den Folgezuständen angewendet werden?</li>
+</ul>
+<p>Ergebnis:</p>
+<ul>
+<li>Zustandsraum: Menge aller von den Startzuständen aus erreichbaren Zustände</li>
+<li>Problemgraph: Repräsentation der Zustände und Aktionen als Knoten und (gerichtete) Kanten</li>
+</ul>
+<h2 id="suche-im-problemgraphen">Suche im Problemgraphen</h2>
+<p><a href="#R-image-a2d266b74f69340b15e0c54b1fe6275b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/state-space.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2d266b74f69340b15e0c54b1fe6275b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems/state-space.png?width=60%25&height=auto"></a></p>
+<ul>
+<li>Durch die Suche im Problemgraphen wird ein Suchbaum aufgespannt</li>
+<li>Varianten: Zustände können in einem Pfad wiederholt vorkommen vs.
+Wiederholungen werden ausgeschlossen</li>
+</ul>
+<h2 id="definition-zustand-und-aktion">Definition Zustand und Aktion</h2>
+<dl>
+<dt><strong>Zustand:</strong></dt>
+<dd>(Formale) Beschreibung eines Zustandes der Welt</dd>
+<dt><strong>Aktion:</strong></dt>
+<dd>
+<p>(Formale) Beschreibung einer durch Agenten ausführbaren Aktion</p>
+<ul>
+<li>Anwendbar auf bestimmte Zustände</li>
+<li>Überführt Welt in neuen Zustand (&quot;Nachfolge-Zustand&quot;)</li>
+</ul>
+</dd>
+</dl>
+<p><span class='alert'><strong>Geeignete Abstraktionen wählen für Zustände und Aktionen!</strong></span></p>
+<p><strong>Anmerkung:</strong>
+<a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020]</a> unterscheidet zw. Aktionen und Transitionsmodell; hier nur Aktionen!
+D.h. die Aktionen und das Übergangsmodell aus dem <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020]</a> werden direkt zusammen
+betrachtet. Bei den hier diskutierten Problemen ist das ohne Nachteile möglich, es
+wird lediglich etwas Flexibilität genommen bzw. Komplexität vermieden (je nach Sichtweise :-) ...</p>
+<h2 id="definition-problem">Definition Problem</h2>
+<p>Ein Problem besteht aus:</p>
+<dl>
+<dt><strong>Startzustände</strong></dt>
+<dd>Menge 
+<span class="math align-center">$S_A \subset S$</span></dd>
+<dt><strong>Aktionen</strong></dt>
+<dd>Menge von Funktionen 
+<span class="math align-center">$\operatorname{op}: S \to S$</span></dd>
+<dt><strong>Zustandsraum</strong></dt>
+<dd>Menge aller Zustände 
+<span class="math align-center">$S$</span>, die durch (wiederholte) Anwendung von Aktionen
+von den Startzuständen aus erreichbar sind</dd>
+<dt><strong>Zieltest</strong></dt>
+<dd>Funktion 
+<span class="math align-center">$\operatorname{goal}: S \to \{0,1\}$</span></dd>
+<dt><strong>Zielzustände</strong></dt>
+<dd>Menge 
+<span class="math align-center">$S_E \subseteq S$</span> mit 
+<span class="math align-center">$\forall x \in S_E : \operatorname{goal}(x)=1$</span></dd>
+<dt><strong>Kosten</strong></dt>
+<dd>
+<p><strong>Gesamtkosten</strong>: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+<ul>
+<li>
+<span class="math align-center">$n \in S$</span> auf dem aktuellen Weg erreichter Knoten</li>
+<li>
+<span class="math align-center">$g(n)$</span> tatsächliche Kosten für den Weg vom Start bis zu Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n)$</span> geschätzte Restkosten für den Weg von Knoten 
+<span class="math align-center">$n$</span> zum Ziel</li>
+</ul>
+</dd>
+</dl>
+<h2 id="hinweis-unterschied-zustand-und-knoten-bzw-zustandsraum-und-problemgraph">Hinweis: Unterschied Zustand und Knoten bzw. Zustandsraum und Problemgraph</h2>
+<ul>
+<li>Zustände und Aktionen kann man als einen Graph darstellen: <strong>Problemgraph</strong>
+<ul>
+<li>Zustände werden als Knoten im Graphen abgebildet</li>
+<li>Aktionen werden als (gerichtete) Kanten im Graphen abgebildet</li>
+</ul>
+</li>
+<li>Unterscheidung &quot;Zustand&quot; und &quot;Knoten&quot;:
+<ul>
+<li>Zustand: Beschreibung/Modellierung eines Zustandes der Welt</li>
+<li>Knoten: Datenstruktur, Bestandteil des Graphen,
+<em>symbolisiert</em> einen Zustand</li>
+</ul>
+</li>
+</ul>
+<p>Das bedeutet, dass der Problemgraph eine Repräsentation des Zustandsraumes ist.</p>
+<p>Die beiden Begriffe werden normalerweise synonym verwendet, sofern eindeutig ist,
+was gemeint ist.</p>
+<h2 id="definition-problemlösen">Definition Problemlösen</h2>
+<dl>
+<dt>Problemlösen</dt>
+<dd>
+<p>Wegesuche im Graph vom Startknoten zu einem Zielknoten</p>
+<ul>
+<li>Spannt den <strong>Suchbaum</strong> auf</li>
+</ul>
+</dd>
+<dt><strong>Lösung</strong></dt>
+<dd>
+<p>Folge von Aktionen, die Start- in Zielzustand überführen</p>
+<p>Ergebnis des Problemlösens</p>
+</dd>
+</dl>
+<h2 id="suche-einfache-basisvariante">Suche: Einfache Basisvariante</h2>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Expandiere alle Nachfolger des Knotens und füge diese in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>Für die in dieser Veranstaltung betrachteten deterministischen Probleme mit
+diskreten Zuständen ist diese Basisvariante der Suche eine Art generischer
+Suchalgorithmus: Durch die Variation der eingesetzten Datenstruktur und durch
+die Betrachtung unterschiedlicher Kosten erhält man die in den nächsten
+Sitzungen betrachteten verschiedenen klassischen Suchalgorithmen.</p>
+<p><strong>Anmerkung</strong>: Für Handsimulation besserer Überblick, wenn statt der Knoten
+immer <strong>partielle Wege</strong> in Datenstruktur gespeichert werden!</p>
+<p><strong>Anmerkung</strong>: Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020, Abschnitt 3.3.3, S.92]</a> wird ein Algorithmus
+mit den vorgestellten Eigenschaften als &quot;<strong>tree-like search</strong>&quot; bezeichnet.
+In Anlehnung an <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020]</a> wird diese Basisvariante der Suche in dieser
+Lehrveranstaltung kurz als &quot;Tree-Search&quot;-Algorithmus bezeichnet.</p>
+<p><strong>Anmerkung</strong>: Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020]</a> wird für die Datenstruktur, mit der die
+Suche arbeitet, auch &quot;<em>Frontier</em>&quot; genannt. Hier werden alle Knoten gehalten,
+die in einem der nächsten Schritte betrachtet werden sollen, d.h. diese Knoten
+bilden die Grenze zwischen dem bereits untersuchten Teil des Graphen und dem
+noch unbekannten Teil des Graphen (deshalb auch &quot;Frontier&quot;).</p>
+<h2 id="erweiterung-der-suche-vermeiden-von-wiederholungen">Erweiterung der Suche: Vermeiden von Wiederholungen</h2>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Markiere aktuellen Knoten, und</li>
+<li>Expandiere alle Nachfolger des Knotens und füge alle unmarkierten
+Nachfolger, die noch nicht in der Datenstruktur sind, in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>Dieser Algorithmus ist eine Erweiterung der einfachen Basisvariante der
+Suche:</p>
+<ol>
+<li>Man markiert bereits besuchte (expandierte) Knoten und besucht diese nie wieder
+(man würde diese bei einer Expansion nicht wieder in die Datenstruktur aufnehmen).</li>
+<li>Außerdem vermeidet man, dass ein Knoten mehrfach in der Datenstruktur vorkommt: Dies
+würde bedeuten, dass man hier verschiedene Wege vom Start zu diesem Knoten in der
+Datenstruktur hat, die dann auch alle weiter untersucht werden müssten. In der Regel
+reicht aber ein Weg vom Start zu einem Zwischenknoten (meist wird der kürzeste
+genommen, dazu in einer späteren Sitzung mehr).</li>
+</ol>
+<p><strong>Anmerkung</strong>: Für Handsimulation besserer Überblick, wenn statt der Knoten
+immer <strong>partielle Wege</strong> in Datenstruktur gespeichert werden!</p>
+<p><strong>Anmerkung</strong>: Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020, Abschnitt 3.3.3, S.92]</a> wird ein Algorithmus
+mit den vorgestellten Eigenschaften als &quot;<strong>graph search</strong>&quot; bezeichnet.
+In Anlehnung an <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html#id_Russell2020">[Russell2020]</a> wird diese erweiterter Variante der Suche in dieser
+Lehrveranstaltung kurz als &quot;Graph-Search&quot;-Algorithmus bezeichnet.</p>
+<h2 id="bewertung-von-suchalgorithmen">Bewertung von Suchalgorithmen</h2>
+<dl>
+<dt><strong>Vollständigkeit</strong></dt>
+<dd>Findet der Algorithmus eine Lösung, wenn es eine gibt?</dd>
+<dt><strong>Optimalität</strong></dt>
+<dd>Findet der Algorithmus die beste Lösung?</dd>
+<dt><strong>Zeitkomplexität</strong></dt>
+<dd>Wie lange dauert es eine Lösung zu finden?</dd>
+<dt><strong>Speicherkomplexität</strong></dt>
+<dd>Wieviel Speicher benötigt die Suche?</dd>
+</dl>
+<p><strong>Größen zur Bewertung:</strong></p>
+<ul>
+<li><strong>b</strong>: Verzweigungsfaktor</li>
+<li><strong>d</strong>: Ebene (Tiefe) des höchsten Lösungsknotens</li>
+<li><strong>m</strong>: Länge des längsten Pfades</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>
+<p>Begriffe &quot;Problem&quot;, &quot;Zustand&quot;, &quot;Aktion&quot;, &quot;Zustandsraum&quot;, &quot;Problemgraph&quot;, &quot;Suchbaum&quot;</p>
+</li>
+<li>
+<p>Problemlösen: Suche in Graphen nach Weg vom Start zum Ziel</p>
+<ul>
+<li>Suche spannt einen Suchbaum auf</li>
+<li>Unterschiedliche Kostenfunktionen möglich</li>
+<li>Suchalgorithmen: Einfache Basisvariante, Erweiterung mit Vermeidung von Redundanzen</li>
+<li>Beurteilung der Suchverfahren: Optimalität, Vollständigkeit, Komplexität</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106586&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Problemlösen (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p>Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei Wesen tragen kann. Das Pferd kann den Fluss nicht allein überqueren.</p>
+<p>Gesucht ist eine Möglichkeit, alle Elben und Orks über den Fluss zu bringen. Dabei darf zu keiner Zeit an keinem Ufer die Anzahl der sich dort befindlichen Orks größer sein als die der dort wartenden Elben, da es sonst zu Konflikten zwischen beiden Gruppen kommt.</p>
+<ol>
+<li>Formalisieren Sie das Problem (Zustände, Aktionen, Start- und Endzustand).</li>
+<li>Skizzieren Sie den Problemgraph.</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet01.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 01: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Problemlösen: Kapitel 3.1 - 3.3</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
+
+
+
+<a id="logo" href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898//index.html'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png'>
+</a>
+
+        </div>
+
+        <search><form action="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['de'];
+        </script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/auto-complete.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.stemmer.support.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.multi.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.de.min.js?1719838356" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/search.js?1719838356" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html" class="parent "><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html">Einführung KI</a><ul id="R-subsections-d5efd0a842116e4053b2a67d87eea20a" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro-ai.html">Einführung KI</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html" class="active"><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html">Problemlösen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">Suche</a><ul id="R-subsections-ba52359aea8fbbbebd8a2b5035d5193b" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">Uninformierte Suche</a><ul id="R-subsections-7e7e45fbada4c99410206367a85babe0" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/dfs.html">Tiefensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/bfs.html">Breitensuche</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html">Informierte Suche</a><ul id="R-subsections-55fcc8c98625f201eadcbded67b62311" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/branchandbound.html">Branch-and-Bound</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/bestfirst.html">Best First</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/astar.html">A*</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">Lokale Suche</a><ul id="R-subsections-ccd4a4b40ee1fab6aada128d05091756" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Gradientensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Simulated Annealing</a></li></ul></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html">Genetische Algorithmen</a><ul id="R-subsections-513570a2bd0cf4a66bab5d5617bd8135" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/intro-ea.html">Intro EA/GA</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ga.html">Genetische Algorithmen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">Spiele</a><ul id="R-subsections-be9f75f01bd16477b0add6a83644e3db" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/intro-games.html">Optimale Spiele</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/minimax.html">Minimax</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/heuristics-minimax.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/alphabeta.html">Alpha-Beta-Pruning</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html">CSP</a><ul id="R-subsections-350d6b931515a3c0942b7ee2e29cdde2" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/intro-csp.html">Intro</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/backtrackingsearch.html">Lösen von diskreten CSP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/heuristics-csp.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/ac3.html">AC-3</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html">Naive Bayes</a><ul id="R-subsections-5fc30d962871e2f731a4590e884cf48f" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/probability.html">Wahrscheinlichkeiten</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb.html">Naive Bayes</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html">Entscheidungsbäume</a><ul id="R-subsections-d5c30d1ee9143be0e1bf969e932d32f8" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/mlbasics.html">Machine Learning 101</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal2.html">CAL2</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/pruning.html">Pruning</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/cal3.html">CAL3</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/entropy.html">Entropie</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/id3.html">ID3 und C4.5</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">Neuronale Netze</a><ul id="R-subsections-34efc21b54b22f5fea2abf053a31ad8c" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1_perceptron.html">NN1 - Perzeptron</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2_linear_regression.html">NN2 - Lineare Regression &amp; Gradientenabstieg</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3_logistic_regression.html">NN3 - Logistische Regression</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4_overfitting.html">NN4 - Overfitting</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5_mlp.html">NN5 - MLP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">NN6 - Backpropagation</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7_training_testing.html">NN7 - Training &amp; Testing</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8_testing.html">NN8 - Performanzanalyse</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#kursformat"><i class='fas fa-bookmark'></i> Zeiten</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#fahrplan"><i class='fas fa-bookmark'></i> Fahrplan</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#praktikum%C3%BCbung"><i class='fas fa-bookmark'></i> Aufgabenblätter</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#pr%C3%BCfungsform-note-und-credits"><i class='fas fa-bookmark'></i> Note/Credits</a></li>
+            <li><a class="padding" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions"><i class='fas fa-external-link-alt'></i> FAQ</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/problems.html" lang="de-DE" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p style="text-align: center;">
+<i class='fab fa-fw fa-github'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">GitHub</a>
+<i class='fas fa-fw fa-tags'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/issues">Issues</a>
+<i class='fas fa-fw fa-bullhorn'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">Credits</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+
+</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>

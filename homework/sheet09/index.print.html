@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="A09.1: Perzeptron-Netze (2P) Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit &#43;1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
+Abbildung 1
+A09.2: Vorwärtslauf im MLP (2P) Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blatt 09: Overfitting &amp; MLP">
+    <meta name="twitter:description" content="A09.1: Perzeptron-Netze (2P) Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit &#43;1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
+Abbildung 1
+A09.2: Vorwärtslauf im MLP (2P) Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt).">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">
+    <meta property="og:title" content="Blatt 09: Overfitting &amp; MLP">
+    <meta property="og:description" content="A09.1: Perzeptron-Netze (2P) Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit &#43;1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
+Abbildung 1
+A09.2: Vorwärtslauf im MLP (2P) Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt).">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Blatt 09: Overfitting &amp; MLP">
+    <meta itemprop="description" content="A09.1: Perzeptron-Netze (2P) Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit &#43;1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
+Abbildung 1
+A09.2: Vorwärtslauf im MLP (2P) Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt).">
+    <meta itemprop="wordCount" content="391">
+    <title>Blatt 09: Overfitting &amp; MLP</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html" rel="canonical" type="text/html" title="Blatt 09: Overfitting &amp; MLP">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1719838356" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Blatt 09: Overfitting &amp; MLP
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Blatt 09: Overfitting &amp; MLP</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <p><strong>(10 Punkte)</strong></p>
+    
+
+    <h2 id="a091-perzeptron-netze-2p">A09.1: Perzeptron-Netze (2P)</h2>
+<p>Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen 
+<span class="math align-center">$x_1$</span> und 
+<span class="math align-center">$x_2$</span> die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die 
+<span class="math align-center">$\operatorname{sign}$</span>-Funktion als Aktivierungsfunktion.</p>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet09/perzeptron_netz.png" alt="Abbildung 1" width="60%" height="auto">
+    <figcaption><p>Abbildung 1</p></figcaption>
+</figure>
+<h2 id="a092-vorwärtslauf-im-mlp-2p">A09.2: Vorwärtslauf im MLP (2P)</h2>
+<p>Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt). In allen Zellen wird die ReLU Aktivierungsfunktion verwendet.</p>
+<ul>
+<li>Was sind die Dimensionen der Gewichtsmatrizen 
+<span class="math align-center">$W^{[1]}$</span>, 
+<span class="math align-center">$W^{[2]}$</span> und 
+<span class="math align-center">$W^{[3]}$</span> und der Bias-Vektoren 
+<span class="math align-center">$b^{[1]}$</span>, 
+<span class="math align-center">$b^{[2]}$</span> und 
+<span class="math align-center">$b^{[3]}$</span>?</li>
+<li>Wie wird die Ausgabe berechnet? Schreiben Sie den Vorwärtslauf in Matrix-Notation auf. Wie könnte man die Ausgabe deuten; welches Problem könnte durch dieses Netzwerk möglicherweise gelöst werden?</li>
+</ul>
+<h2 id="a093-tensorflow-playground-6p">A09.3: Tensorflow Playground (6P)</h2>
+<p>Benutzen Sie den <a href="https://playground.tensorflow.org/" rel="external" target="_blank">Neural Network Playground</a>, um die unten gelisteten Experimente durchzuführen. Achten Sie bei allen Experimenten auf das Verhalten der Trainings- und Testkosten. Sie können mit Hilfe der Checkbox unter der Ausgabezelle (ganz rechts, unten) die Testdaten ein- und ausblenden. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.</p>
+<ol>
+<li>
+<p>(1P) Trainieren Sie ein <strong>logistisches Regressionsmodell</strong> zunächst auf dem &quot;<strong>Gaussian</strong>&quot; Datensatz (linear separierbarer Datensatz links-unten), danach auf den anderen Datensätzen.</p>
+</li>
+<li>
+<p>(3P) Trainieren Sie ein <strong>MLP</strong> mit</p>
+<ul>
+<li>einer versteckten Schicht mit 2 Neuronen,</li>
+<li>einer versteckten Schicht mit 3 Neuronen,</li>
+<li>einer versteckten Schicht mit 5 Neuronen,</li>
+<li>zwei versteckten Schichten mit jeweils 5 Neuronen pro Schicht</li>
+<li>drei versteckten Schichten mit jeweils 7 Neuronen pro Schicht</li>
+<li>vier versteckten Schichten mit jeweils 7 Neuronen pro Schicht</li>
+</ul>
+<p>auf dem kreisförmigen (<strong>Circle</strong>) und auf dem spiralförmigen (<strong>Spiral</strong>) Datensatz, mehrmals mit jeweils den Aktivierungsfunktionen ReLU, tanh und Sigmoid. Hat die Auswahl der Aktivierungsfunktion einen Einfluss auf die Form der Entscheidungsgrenze oder die Geschwindigkeit der Berechnung?</p>
+</li>
+<li>
+<p>(2P) Setzen Sie nun den <strong>Noise-Level auf 15</strong> und wiederholen Sie die Experimente. Wann kann von einer Überanpassung gesprochen werden?</p>
+</li>
+</ol>
+<p>Sprechen Sie für alle Experimente die folgenden Punkte an:</p>
+<ul>
+<li>Wie verhält sich die Entscheidungsgrenze?</li>
+<li>Was können Sie über Trainings- und Testkosten sagen? Entsteht eine Überanpassung?</li>
+<li>Wie schnell wird die Entscheidungsgrenze berechnet?</li>
+<li>Können alle Datenpunkte jedes mal korrekt klassifiziert werden? Warum?</li>
+<li>Untersuchen und vergleichen Sie die Ausgaben der Zellen in den versteckten Schichten, in dem Sie die Maus über die jeweilige Zelle bewegen. Bemerken Sie einen wesentlichen Unterschied in den Ausgaben der ersten Schicht im Vergleich zu der letzten Schicht?</li>
+</ul>
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>

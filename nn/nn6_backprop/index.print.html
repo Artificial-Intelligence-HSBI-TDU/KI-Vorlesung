@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="Kurze Übersicht Forwärts- und Rückwärtslauf Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner Forwärtsschritt von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet: $$Z^{[l]} = W^{[l]}A^{[l-1]} &#43; b^{[l]} \tag{1}$$ $$A^{[l]} = g(Z^{[l]}) \tag{2}$$ Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
+Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen Rückwärtsschritt von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:
+$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g&#39;(Z^{[l]}) \tag{3}$$ $$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$ $$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$ $$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$ Dabei steht &#34; $*$&#34; für die elementweise Multiplikation.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NN6 - Backpropagation">
+    <meta name="twitter:description" content="Kurze Übersicht Forwärts- und Rückwärtslauf Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner Forwärtsschritt von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet: $$Z^{[l]} = W^{[l]}A^{[l-1]} &#43; b^{[l]} \tag{1}$$ $$A^{[l]} = g(Z^{[l]}) \tag{2}$$ Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
+Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen Rückwärtsschritt von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:
+$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g&#39;(Z^{[l]}) \tag{3}$$ $$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$ $$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$ $$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$ Dabei steht &#34; $*$&#34; für die elementweise Multiplikation.">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">
+    <meta property="og:title" content="NN6 - Backpropagation">
+    <meta property="og:description" content="Kurze Übersicht Forwärts- und Rückwärtslauf Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner Forwärtsschritt von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet: $$Z^{[l]} = W^{[l]}A^{[l-1]} &#43; b^{[l]} \tag{1}$$ $$A^{[l]} = g(Z^{[l]}) \tag{2}$$ Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
+Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen Rückwärtsschritt von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:
+$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g&#39;(Z^{[l]}) \tag{3}$$ $$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$ $$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$ $$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$ Dabei steht &#34; $*$&#34; für die elementweise Multiplikation.">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="NN6 - Backpropagation">
+    <meta itemprop="description" content="Kurze Übersicht Forwärts- und Rückwärtslauf Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner Forwärtsschritt von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet: $$Z^{[l]} = W^{[l]}A^{[l-1]} &#43; b^{[l]} \tag{1}$$ $$A^{[l]} = g(Z^{[l]}) \tag{2}$$ Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
+Im Rückwärtslauf (engl. backpropagation) werden in einem einzelnen Rückwärtsschritt von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden Gradienten berechnet:
+$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g&#39;(Z^{[l]}) \tag{3}$$ $$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$ $$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$ $$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$ Dabei steht &#34; $*$&#34; für die elementweise Multiplikation.">
+    <meta itemprop="wordCount" content="187">
+    <title>NN6 - Backpropagation</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html" rel="canonical" type="text/html" title="NN6 - Backpropagation">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1719838356" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6_backprop.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            NN6 - Backpropagation
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>NN6 - Backpropagation</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/G9x75THjueQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.1 - MLP Backpropagation 1</a></li> <li><a href='https://youtu.be/9Ku0dJ8pGrU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.2 - MLP Backpropagation 2</a></li> <li><a href='https://youtu.be/uvT4WPIIkwQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.3 - MLP Zusammenfassung</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6-MLP_Backpropagation.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="forwärts--und-rückwärtslauf">Forwärts- und Rückwärtslauf</h3>
+<ul>
+<li>
+<p>Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner <strong>Forwärtsschritt</strong> von Schicht 
+<span class="math align-center">$[l-1]$</span> auf Schicht 
+<span class="math align-center">$[l]$</span> wie folgt berechnet:
+
+<span class="math align-center">$$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1}$$</span>
+
+<span class="math align-center">$$A^{[l]} = g(Z^{[l]}) \tag{2}$$</span>
+Dabei bezeichnet 
+<span class="math align-center">$g$</span> die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).</p>
+</li>
+<li>
+<p>Im Rückwärtslauf (engl. <em>backpropagation</em>) werden in einem einzelnen <strong>Rückwärtsschritt</strong> von Schicht 
+<span class="math align-center">$[l]$</span> auf Schicht 
+<span class="math align-center">$[l-1]$</span> die folgenden Gradienten berechnet:</p>
+
+<span class="math align-center">$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g'(Z^{[l]}) \tag{3}$$</span>
+
+<span class="math align-center">$$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$</span>
+
+<span class="math align-center">$$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$</span>
+
+<span class="math align-center">$$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$</span>
+<p>Dabei steht &quot;
+<span class="math align-center">$*$</span>&quot; für die elementweise Multiplikation.</p>
+</li>
+<li>
+<p>Beachten Sie:</p>
+<ul>
+<li>Der Forwärtsschirtt übernimmt 
+<span class="math align-center">$A^{[l-1]}$</span> von dem vorherigen Schritt und gibt 
+<span class="math align-center">$A^{[l]}$</span> an den nächsten Schritt weiter.</li>
+<li>Der Rückwärtschritt übernimmt 
+<span class="math align-center">$dA^{[l]}$</span> von dem vorherigen Schritt und gibt 
+<span class="math align-center">$dA^{[l-1]}$</span> an den nächsten Rückwärtsschritt weiter.</li>
+</ul>
+</li>
+</ul>
+<h3 id="parameteraktualisierung">Parameteraktualisierung</h3>
+<ul>
+<li>Die Aktualisierung der Parameter in Schicht 
+<span class="math align-center">$l$</span> erfolgt wie gewohnt durch:
+
+<span class="math align-center">$$W^{[l]} = W^{[l]} - \alpha \text{ } dW^{[l]} \tag{7}$$</span>
+
+<span class="math align-center">$$b^{[l]} = b^{[l]} - \alpha \text{ } db^{[l]} \tag{8}$$</span>
+Dabei bezeichnet 
+<span class="math align-center">$\alpha$</span> die Lernrate.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet10.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 10: Backpropagation</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe</li> <li>(K2) Ableitung der Aktivierungsfunktionen</li> <li>(K3) Berechnung der partiellen Ableitungen</li> <li>(K3) Rückwärtslauf (backpropagation) für ein gegebenes MLP</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Backpropagation (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>

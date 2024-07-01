@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 6.0.0">
+    <meta name="description" content="... das Ziel ist im Weg ...
+Lokale Suche: Gradientensuche Lokale Suche: Simulated Annealing ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lokale Suche">
+    <meta name="twitter:description" content="... das Ziel ist im Weg ...
+Lokale Suche: Gradientensuche Lokale Suche: Simulated Annealing ">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">
+    <meta property="og:title" content="Lokale Suche">
+    <meta property="og:description" content="... das Ziel ist im Weg ...
+Lokale Suche: Gradientensuche Lokale Suche: Simulated Annealing ">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Lokale Suche">
+    <meta itemprop="description" content="... das Ziel ist im Weg ...
+Lokale Suche: Gradientensuche Lokale Suche: Simulated Annealing ">
+    <meta itemprop="wordCount" content="14">
+    <title>Lokale Suche</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html" rel="canonical" type="text/html" title="Lokale Suche">
+
+    
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1719838355" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1719838356" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1719838356" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1719838356" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1719838356" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1719838356" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1719838356" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1719838356"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Lokale Suche
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="lokale-suche">Lokale Suche</h1>
+
+<p>... das Ziel ist im Weg ...</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html">Lokale Suche: Gradientensuche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing.html">Lokale Suche: Simulated Annealing</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Lokale Suche</h1>
+<article class="default">
+<h1>Lokale Suche: Gradientensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur das
+Erreichen des Ziels.</p>
+<p>In Analogie zum Bergsteigen: Gehe in Richtung des stärksten Anstiegs kann man die Suche so
+formulieren, dass man in jedem Suchschritt den Nachfolgeknoten nach dem stärksten Anstieg
+der Kostenfunktion auswählen. Dieses Verfahren nennt sich auch <strong>Hill-Climbing</strong> (bzw.
+Gradientensuche).</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/TcTF9xdW3WU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Gradientensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Gradientensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Problematik der lokalen Minima bei Gradientenverfahren</li> <li>(K3) Lokale Suche (Gradientenabstieg)</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="unterschiede-in-den-suchproblemen">Unterschiede in den Suchproblemen?</h2>
+<div class='columns'>
+<div class='column'>
+<p><a href="#R-image-f5b739ac4b3eb924244b15c1da737c94" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/graph.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5b739ac4b3eb924244b15c1da737c94"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/graph.png?width=80%25&height=auto"></a></p>
+</div>
+<div class='column'>
+<p><a href="#R-image-e9262caf3340c06b6db47415c9cf26d1" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/screenshot_stundenplan.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9262caf3340c06b6db47415c9cf26d1"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/screenshot_stundenplan.png?width=80%25&height=auto"></a></p>
+</div>
+</div>
+<p>Bisher betrachtete Suchverfahren:</p>
+<ul>
+<li>Systematische Erkundung des Suchraums</li>
+<li><span class='alert'><strong>Weg</strong></span> zur Lösung wichtig</li>
+</ul>
+<p>=&gt; Oft aber nur das <span class='alert'><strong>Ziel</strong></span> <strong>an sich</strong> interessant!
+(Und nicht, wie man dort hin gelangt.)</p>
+<p>Beispiel: Stundenplan</p>
+<h2 id="analogie-bergsteigen-ohne-karte-und-pfade">Analogie: Bergsteigen ohne Karte und Pfade</h2>
+<p><a href="#R-image-3158834e5ececb504fc40a2aee249265" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/hill-climbing.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3158834e5ececb504fc40a2aee249265"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/hill-climbing.png?width=50%25&height=auto"></a></p>
+<p><strong>Gradienten-Suche</strong>:
+&quot;Gehe in Richtung des <span class='alert'>steilsten Anstiegs</span> der <span class='alert'>Zielfunktion</span>.&quot;</p>
+<p>=&gt; Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)</p>
+<ul>
+<li>Verschiedene Namen: &quot;Hill-climbing&quot;, &quot;Greedy local search&quot;</li>
+<li>Kann auch als Minimierung angewendet werden</li>
+</ul>
+<h2 id="pseudoalgorithmus-gradientensuche">Pseudoalgorithmus Gradientensuche</h2>
+<div style="text-align:center;">
+<span class="badge cstyle primary"><span class="badge-content"><p>&quot;<em>Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust</em>&quot;</p>
+</span></span>
+</div>
+<ol>
+<li>Setze <code>currNode</code> auf den Startknoten</li>
+<li><code>currNode</code> ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;
+<ul>
+<li>Expandiere alle Nachfolger von <code>currNode</code></li>
+<li>Setze <code>nextNode</code> auf Nachfolger mit höchster Bewertung</li>
+<li>Falls Bewertung von <code>nextNode</code> 
+<span class="math align-center">$\leq$</span> Bewertung von <code>currNode</code>:
+Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Setze <code>currNode</code> auf <code>nextNode</code></li>
+</ul>
+</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<div class='center'>
+<p><a href="#R-image-9e6ca5e17fb00cddb433092a6968c5f6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e6ca5e17fb00cddb433092a6968c5f6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="beispiel-gradientensuche-hahahugoshortcode57s2hbhb-damen">Beispiel Gradientensuche: 
+<span class="math align-center">$n$</span>-Damen</h2>
+<ul>
+<li><strong>Ziel</strong>: Setze 
+<span class="math align-center">$n$</span> Damen auf ein 
+<span class="math align-center">$n \times n$</span>-Spielfeld ohne Konflikte</li>
+<li><strong>Start</strong>: Setze 
+<span class="math align-center">$n$</span> Damen auf ein 
+<span class="math align-center">$n \times n$</span>-Spielfeld (mit Konflikten)</li>
+<li><strong>Suche</strong>: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert wird</li>
+</ul>
+<p>Schauen Sie sich auch Abb. 4.3 auf Seite 130 im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html#id_Russell2020">[Russell2020]</a> an!</p>
+<p><strong>Hinweis</strong>: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
+=&gt; &quot;<span class='alert'>vollständige Zustandsformulierung</span>&quot;</p>
+<h3 id="eigenschaften-8-damen-problem-hahahugoshortcode57s7hbhb">Eigenschaften 8-Damen-Problem (
+<span class="math align-center">$n=8$</span>)</h3>
+<ul>
+<li>Zustandsraum: 
+<span class="math align-center">$8^8 \approx 17$</span> Millionen Zustände!</li>
+<li>Beginnend mit zufällig erzeugtem Startzustand:
+<ul>
+<li>bleibt in 86% der Fälle stecken, d.h.</li>
+<li>findet Lösung nur in 14% der Fälle.</li>
+</ul>
+</li>
+<li>Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
+nach durchschnittlich 3 Schritten stecken.</li>
+</ul>
+<p><span class='origin'>Quelle: nach <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient.html#id_Russell2020">[Russell2020, p. 131]</a></span></p>
+<h2 id="eigenschaften-gradientensuche">Eigenschaften Gradientensuche</h2>
+<ul>
+<li>Vollständigkeit: nein</li>
+<li>Optimalität: nein</li>
+<li>Komplexität: linear in der Anzahl der zu expandierenden Knoten</li>
+</ul>
+<p><span class='alert'><strong>Zielfunktion (Bewertung) nötig!</strong></span></p>
+<p><a href="#R-image-ec1d96fd6a893b60aa2148e867cb8976" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/hill-climbing.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec1d96fd6a893b60aa2148e867cb8976"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/gradient/hill-climbing.png?width=60%25&height=auto"></a></p>
+<p><span class='alert'><strong>Problem</strong></span>: lokale Maxima und Plateaus</p>
+<ul>
+<li>Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung</li>
+<li>Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt!</p>
+<ul>
+<li>Gradientenverfahren: Gehe in Richtung des stärksten Anstiegs der
+Kostenfunktion</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106601&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Gradientensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p>Betrachten Sie folgende Landkarte und Restwegschätzungen:</p>
+<p><a href="#R-image-746e740e0cd77640998ab7f8588e52ec" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-746e740e0cd77640998ab7f8588e52ec"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto"></a>
+Quelle: <a href="https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg" rel="external" target="_blank">MapGermanyGraph.svg</a> by <a href="https://de.wikipedia.org/wiki/Benutzer:Regnaron" rel="external" target="_blank">Regnaron</a> and <a href="https://commons.wikimedia.org/wiki/User:Jahobr" rel="external" target="_blank">Jahobr</a> on Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/en:public_domain" rel="external" target="_blank">Public Domain</a>)</p>
+<p><a href="#R-image-60b2471432390e3dac54bc7800b58054" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/local/images/challenge.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-60b2471432390e3dac54bc7800b58054"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/local/images/challenge.png?width=auto&height=auto"></a></p>
+<p>Finden Sie mit der <strong>Gradienten-Suche</strong> jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit der Best-First-Suche.</p>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 02: Lokale Suche, GA</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Gradientenabstieg: Abschnitt 4.1.1</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Lokale Suche: Simulated Annealing</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
+das Erreichen des Ziels.</p>
+<p>Das Problem bei der Gradientensuche ist, dass man eine Kostenfunktion benötigt und
+diese auch <strong>lokale Minima</strong> enthalten kann. Mit der reinen Gradientensuche würde
+man bei Erreichen lokaler Minima die Suche abbrechen (müssen), da es keine weitere
+Verbesserung unter den Nachfolgern mehr geben kann. In Anlehnung an das Abkühlen von
+Metall kann hier eine Variante der lokalen Suche helfen: <strong>Simulated Annealing</strong>.
+Man führt einen &quot;Temperatur&quot;-Parameter ein, der im Laufe der Suche immer kleiner
+wird und schließlich gegen Null geht. In Abhängigkeit von dieser &quot;Temperatur&quot; wird
+mit einer bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer
+hohen Temperatur ist diese Wahrscheinlichkeit höher, bei einer niedrigen Temperatur
+niedriger, so dass das Verfahren in ein normales Hill-Climbing übergeht. Damit kann
+man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/vPg7PWuY2bM' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Simulated Annealing</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/5abd7e34f28bedb07ac3c4d9665a493bbf5b5cedfb97e91f9f2d8be0a3bace4e628a0b0ac2530e146ccbb0fd2de2fc99b48604d15c8b864b3f58825e8ca99260' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Simulated Annealing</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Funktionsweise Simulated Annealing</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="motivation">Motivation</h2>
+<p><a href="#R-image-2c50f2fa80f65abc39e61587f78842f7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing/hill-climbing.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c50f2fa80f65abc39e61587f78842f7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/annealing/hill-climbing.png?width=60%25&height=auto"></a></p>
+<p><span class='alert'><strong>Problem</strong></span>: lokale Maxima und Plateaus</p>
+<ul>
+<li>Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung</li>
+<li>Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren</li>
+</ul>
+<p>Mögliche Lösungen:</p>
+<ul>
+<li>Neustart des Algorithmus, wenn kein Fortschritt erzielt wird</li>
+<li>Rauschen &quot;injizieren&quot;</li>
+</ul>
+<h2 id="gedankenexperiment-ausweg-aus-lokalen-minima">Gedankenexperiment: Ausweg aus lokalen Minima</h2>
+<ul>
+<li>&quot;Drehen der Landschaft&quot;: Minimieren statt Maximieren</li>
+<li>Ball wird in Zustandsraum-Landschaft gesetzt.</li>
+<li>Folge:
+<ul>
+<li>rollt steilsten Abstieg hinunter</li>
+<li>rollt evtl. in Tal auf halber Höhe (lokales Minimum)
+=&gt; bleibt dort gefangen</li>
+</ul>
+</li>
+</ul>
+<p>=&gt; &quot;<span class='alert'><strong>Schütteln</strong></span> der Landschaft&quot; -- Ball springt aus dem Tal und
+rollt in anderes Tal</p>
+<p>Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!</p>
+<h2 id="analogie-härten-von-metall">Analogie Härten von Metall</h2>
+<ul>
+<li>Metall erhitzen bis Atome frei beweglich</li>
+<li>Langsam abkühlen</li>
+</ul>
+<p>=&gt; stabiles Atomgitter mit minimalem Energiezustand</p>
+<h2 id="übertragen-der-idee">Übertragen der Idee</h2>
+<ul>
+<li>Starkes &quot;Schütteln&quot; (hohe &quot;Temperatur&quot;) am Anfang</li>
+<li>Schrittweises &quot;Abkühlen&quot; =&gt; &quot;Schütteln&quot; im Laufe der Zeit
+verringern</li>
+</ul>
+<p>=&gt; <span class='alert'><strong>Simulated Annealing</strong></span></p>
+<h2 id="pseudocode-simulated-annealing-minimierungsproblem">Pseudocode Simulated Annealing (Minimierungsproblem)</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">simulated_annealing</span>(problem):
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">=</span> problem<span style="color:#f92672">.</span>startNode
+</span></span><span style="display:flex;"><span>    t <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  temp <span style="color:#f92672">=</span> schedule(t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> temp<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        temp <span style="color:#f92672">=</span> schedule(<span style="color:#f92672">++</span>t)
+</span></span><span style="display:flex;"><span>        neighbors <span style="color:#f92672">=</span> current<span style="color:#f92672">.</span>expandSuccessors()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> neighbors: <span style="color:#66d9ef">return</span> current
+</span></span><span style="display:flex;"><span>        working <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>choice(neighbors)
+</span></span><span style="display:flex;"><span>        dE <span style="color:#f92672">=</span> problem<span style="color:#f92672">.</span>value(current) <span style="color:#f92672">-</span> problem<span style="color:#f92672">.</span>value(working)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> dE <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> probability(math<span style="color:#f92672">.</span>exp(dE<span style="color:#f92672">/</span>temp)):
+</span></span><span style="display:flex;"><span>            current <span style="color:#f92672">=</span> working
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> current</span></span></code></pre></div><p>Wenn <code>dE</code> positiv ist, dann ist der Nachfolger &quot;besser&quot; (hier: kleiner bewertet) als der aktuelle Knoten und wird immer
+als nächster Knoten übernommen.</p>
+<p>Wenn <code>dE</code> negativ ist, dann ist der betrachtete Nachfolger &quot;schlechter&quot; (hier: größer bewertet) als der aktuelle Knoten.
+Dann wird er mit einer Wahrscheinlichkeit <code>math.exp(dE/temp)</code> als nächster Knoten übernommen. Diese
+Wahrscheinlichkeit ist bei hohen Temperaturen <code>temp</code> eher hoch, und sinkt, je niedriger die Temperatur <code>temp</code> wird.</p>
+<p>Die Temperatur <code>temp</code> bewegt sich dabei von hohen positiven Werten auf den Wert Null (wird also nicht negativ).</p>
+<h2 id="detail-akzeptieren-von-verschlechterungen">Detail: Akzeptieren von Verschlechterungen</h2>
+<div class='center'>
+<p><a href="#R-image-3f5a2037bd493f6f7d08544d560f332d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f5a2037bd493f6f7d08544d560f332d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png?width=60%25&height=auto"></a></p>
+<p><span class='origin'>Quelle: <a href="https://commons.wikimedia.org/wiki/File:Exp_e.svg" rel="external" target="_blank">&quot;Exp e.svg&quot;</a> by Marcel Marnitz, reworked by <a href="https://commons.wikimedia.org/wiki/User:Georg-Johann" rel="external" target="_blank">Georg-Johann</a> on Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Public_domain" rel="external" target="_blank">Public Domain</a>)</span></p>
+</div>
+<ul>
+<li>Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: <code>math.exp(dE/temp)</code></li>
+<li>
+<span class="math align-center">$dE$</span> negativ =&gt; 
+<span class="math align-center">$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$</span></li>
+</ul>
+<p>
+<span class="math align-center">$\exp(a)$</span> bzw. 
+<span class="math align-center">$e^a$</span>:</p>
+<ul>
+<li>
+<span class="math align-center">$a<0$</span>: geht gegen 0</li>
+<li>
+<span class="math align-center">$a=0$</span>: 1</li>
+<li>
+<span class="math align-center">$a>0$</span>: steil (exponentiell) gegen Unendlich ...</li>
+</ul>
+<p>Wenn 
+<span class="math align-center">$dE$</span> negativ ist, wird <code>math.exp(dE/temp)</code> ausgewertet. Damit ergibt sich wegen 
+<span class="math align-center">$dE$</span> negativ:
+
+<span class="math align-center">$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$</span>.
+Betrachtung für 
+<span class="math align-center">$dE$</span> (nur negativer Fall!) und 
+<span class="math align-center">$\text{temp}$</span>:</p>
+<ul>
+<li>Temperatur 
+<span class="math align-center">$\text{temp}$</span> hoch: 
+<span class="math align-center">$a = \frac{|\text{dE}|}{\text{temp}}$</span> ist positiv und klein (nahe Null), d.h. 
+<span class="math align-center">$\exp(a)$</span> nahe 1 (oder
+größer), d.h. die Wahrscheinlichkeit 
+<span class="math align-center">$1/\exp(a)$</span> ist nahe 1 (oder kleiner)</li>
+<li>Temperatur 
+<span class="math align-center">$\text{temp}$</span> wird kleiner und geht gegen Null: 
+<span class="math align-center">$a = \frac{|\text{dE}|}{\text{temp}}$</span> ist positiv und wird größer, d.h.
+
+<span class="math align-center">$\exp(a)$</span> geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit 
+<span class="math align-center">$1/\exp(a)$</span> geht gegen 0</li>
+</ul>
+<h2 id="abkühlungsplan-problemabhängig-wählen">Abkühlungsplan problemabhängig wählen</h2>
+<ul>
+<li>
+<p>Initiale Temperatur: So hoch, daß praktisch jede Änderung akzeptiert wird</p>
+</li>
+<li>
+<p>Abkühlen: 
+<span class="math align-center">$T_k = \alpha T_{k-1}$</span> mit 
+<span class="math align-center">$0.8 \le \alpha \le 0.99$</span></p>
+<ul>
+<li>Ausreichend langsam abkühlen!</li>
+<li>Typisch: jede Stufe so lange halten, daß etwa 10 Änderungen akzeptiert wurden</li>
+</ul>
+</li>
+<li>
+<p>Stop: Keine Verbesserungen in 3 aufeinander folgenden Temperaturen</p>
+</li>
+</ul>
+<p>Der Abkühlungsplan muss problemabhängig gewählt werden. Das Beispiel zeigt typische Elementes
+eines solchen Abkühlungsplans.</p>
+<h2 id="eigenschaften-simulated-annealing">Eigenschaften Simulated Annealing</h2>
+<ul>
+<li>Vollständigkeit: ja (mit gewisser Wahrscheinlichkeit)</li>
+<li>Optimalität: ja (mit gewisser Wahrscheinlichkeit)</li>
+</ul>
+<p>Voraussetzung: geeigneter Abkühlungsplan</p>
+<h2 id="anwendungen-von-simulated-annealing">Anwendungen von Simulated Annealing</h2>
+<ul>
+<li>Flugplan-Scheduling</li>
+<li>Layout-Probleme (Chipentwurf, Leiterplatten)</li>
+<li>Produktionsplanung</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt!</p>
+<ul>
+<li>Gradientenverfahren
+<ul>
+<li>Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
+Kostenfunktion =&gt; <strong>Hill-Climbing</strong></li>
+<li>Achtung: Probleme mit lokalen Minima =&gt; <strong>Simulated Annealing</strong></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Simulated Annealing (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet02.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Blatt 02: Lokale Suche, GA</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Simulated Annealing: Abschnitt 4.1.2</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1719838356" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1719838356" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1719838356"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1719838356" defer></script>
+  </body>
+</html>
