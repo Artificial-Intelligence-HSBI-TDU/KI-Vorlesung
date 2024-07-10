@@ -11,7 +11,7 @@ hidden: true
 
 ## NB.01: Wahlkampf mit Naive Bayes (4P)
 
-Betrachten Sie erneut das Szenerio von Aufgabe A05.1 auf [Blatt 05](sheet-dtl.md).
+Betrachten Sie erneut das Szenerio von [Aufgabe DTL.01](sheet-dtl.md).
 
 (2P) "Trainieren" Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
 
