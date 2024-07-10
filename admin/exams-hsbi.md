@@ -90,18 +90,6 @@ Dauer jeweils 90 Minuten.
 *   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungstag per "Beitritt mit Bestätigung" an
     [(wie zu einem normalen Kurs)]{.notes}
 
-#### Termin 1: Klausur KI (31.01.24)
-
-Die Klausur in Künstliche Intelligenz findet an Termin 1 (Mi, 31.01.24) als digitale Klausur in Präsenz am Campus Minden im Raum B40 von 13:00 Uhr bis 14:30 Uhr statt.
-
-Am Prüfungstag finden Sie sich bitte rechtzeitig vor der Prüfung vor dem B40 in Minden ein. Sie benötigen Ihre HSBI-Zugangsdaten (User, Passwort) sowie Ihren Studierendenausweis und Personalausweis. Erlaubtes Hilfsmittel: Ein DIN-A4-Spickzettel (gern beidseitig beschrieben).
-
-Bei Fragen sprechen Sie mich bitte in der Vorlesung/Sprechstunde an oder schreiben mir bitte eine kurze Mail.
-
-#### Termin 2: tbd
-
-Termin 2 wird rechtzeitig vom Prüfungsamt bekannt gegeben.
-
 ### Zugelassene Hilfsmittel
 
 :::::: {.tabs groupid="modus"}
