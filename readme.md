@@ -242,8 +242,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 [Umfrage]: https://www.hsbi.de/elearning/goto.php?target=svy_1339632&client_id=FH-Bielefeld
 
-[Einführung KI]: lecture/intro/intro-ai.md
-[Problemlösen]: lecture/intro/problems.md
+[Einführung KI]: lecture/intro/intro1-overview.md
+[Problemlösen]: lecture/intro/intro2-problemsolving.md
 
 [Tiefensuche]: lecture/searching/uninformed/dfs.md
 [Breitensuche]: lecture/searching/uninformed/bfs.md
