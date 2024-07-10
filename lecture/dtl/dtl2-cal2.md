@@ -29,7 +29,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106575&client_id=FH-Bielefeld"
     name: "Selbsttest CAL2 (ILIAS)"
 assignments:
-  - topic: sheet05
+  - topic: sheet-dtl
 youtube:
   - link: "https://youtu.be/bR_QVYtPRx8"
     name: "VL CAL2"

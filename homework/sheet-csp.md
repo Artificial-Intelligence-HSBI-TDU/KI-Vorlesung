@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A01: Logikrätsel (2P)
+## CSP.01: Logikrätsel (2P)
 
 Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
 
@@ -25,7 +25,7 @@ sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
 
 
 
-## A02: Framework für Constraint Satisfaction (2P)
+## CSP.02: Framework für Constraint Satisfaction (2P)
 
 Lösen Sie nun das Rätsel aus A04.1:
 
@@ -50,7 +50,7 @@ Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.[^aima]
 
 
 
-## A03: Kantenkonsistenz mit AC-3 (3P)
+## CSP.03: Kantenkonsistenz mit AC-3 (3P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 $$\langle
@@ -74,7 +74,7 @@ mit
 
 
 
-## A04: Forward Checking und Kantenkonsistenz (2P)
+## CSP.04: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
@@ -96,7 +96,7 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 
 
-## A05: Anwendungen (1P)
+## CSP.05: Anwendungen (1P)
 
 Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
 Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die

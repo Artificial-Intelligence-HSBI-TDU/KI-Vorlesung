@@ -266,12 +266,12 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Minimax und Heuristiken]: lecture/games/heuristics-minimax.md
 [Alpha-Beta-Pruning]: lecture/games/alphabeta.md
 
-[Machine Learning 101]: lecture/dtl/mlbasics.md
-[CAL2]: lecture/dtl/cal2.md
-[Pruning]: lecture/dtl/pruning.md
-[CAL3]: lecture/dtl/cal3.md
-[Entropie]: lecture/dtl/entropy.md
-[ID3 und C4.5]: lecture/dtl/id3.md
+[Machine Learning 101]: lecture/dtl/dtl1-mlbasics.md
+[CAL2]: lecture/dtl/dtl2-cal2.md
+[Pruning]: lecture/dtl/dtl3-pruning.md
+[CAL3]: lecture/dtl/dtl4-cal3.md
+[Entropie]: lecture/dtl/dtl5-entropy.md
+[ID3 und C4.5]: lecture/dtl/dtl6-id3.md
 
 [Perzeptron]: lecture/nn/nn1_perceptron.md
 [Lineare Regression]: lecture/nn/nn2_linear_regression.md
@@ -335,7 +335,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [B02]: homework/sheet02.md
 [B03]: homework/sheet03.md
 [B04]: homework/sheet-csp.md
-[B05]: homework/sheet05.md
+[B05]: homework/sheet-dtl.md
 [B06]: homework/sheet06.md
 [B07]: homework/sheet07.md
 [B08]: homework/sheet08.md

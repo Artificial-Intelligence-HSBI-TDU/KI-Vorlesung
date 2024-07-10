@@ -35,7 +35,7 @@ quizzes:
    - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
      name: "Selbsttest Intro ML (ILIAS)"
 assignments:
-  - topic: sheet05
+  - topic: sheet-dtl
 youtube:
   - link: "https://youtu.be/FliWEXQZhsw"
     name: "VL Machine Learning 101"

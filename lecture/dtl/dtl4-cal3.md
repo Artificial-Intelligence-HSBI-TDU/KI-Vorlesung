@@ -20,7 +20,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld"
     name: "Selbsttest CAL3 (ILIAS)"
 assignments:
-  - topic: sheet05
+  - topic: sheet-dtl
 youtube:
   - link: "https://youtu.be/9Wj51XvuntM"
     name: "VL CAL3"

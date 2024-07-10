@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 05: Entscheidungsbäume"
+title: "Übungsblatt: Entscheidungsbäume"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A05.1: Entscheidungsbäume mit CAL3 und ID3 (6P)
+## DTL.01: Entscheidungsbäume mit CAL3 und ID3 (6P)
 
 Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die
 Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
@@ -38,7 +38,7 @@ Python-Klassen in [`learning.py`] als Ausgangspunkt nutzen.[^aima]
 
 
 
-## A05.2: Pruning (1P)
+## DTL.02: Pruning (1P)
 
 Vereinfachen Sie schrittweise den Baum
 $$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
@@ -51,7 +51,7 @@ Geben Sie die jeweils verwendete Regel an.
 
 
 
-## A05.3: Machine Learning mit Weka (3P)
+## DTL.03: Machine Learning mit Weka (3P)
 
 Weka ([cs.waikato.ac.nz/ml/weka](https://www.cs.waikato.ac.nz/ml/weka/)) ist eine
 beliebte Sammlung von (in Java implementierten) Algorithmen aus dem Bereich des
