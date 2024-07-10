@@ -256,10 +256,10 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Intro EA/GA]: lecture/ea/intro-ea.md
 [Genetische Algorithmen]: lecture/ea/ga.md
 
-[Einführung Constraints]: lecture/csp/intro-csp.md
-[Lösen von diskreten CSP]: lecture/csp/backtrackingsearch.md
-[CSP und Heuristiken]: lecture/csp/heuristics-csp.md
-[Kantenkonsistenz und AC-3]: lecture/csp/ac3.md
+[Einführung Constraints]: lecture/csp/csp1-intro.md
+[Lösen von diskreten CSP]: lecture/csp/csp2-backtrackingsearch.md
+[CSP und Heuristiken]: lecture/csp/csp3-heuristics.md
+[Kantenkonsistenz und AC-3]: lecture/csp/csp4-ac3.md
 
 [Optimale Spiele]: lecture/games/intro-games.md
 [Minimax]: lecture/games/minimax.md
@@ -334,7 +334,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [B01]: homework/sheet01.md
 [B02]: homework/sheet02.md
 [B03]: homework/sheet03.md
-[B04]: homework/sheet04.md
+[B04]: homework/sheet-csp.md
 [B05]: homework/sheet05.md
 [B06]: homework/sheet06.md
 [B07]: homework/sheet07.md

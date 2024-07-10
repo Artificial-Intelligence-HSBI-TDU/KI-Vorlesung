@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 04: Constraints"
+title: "Übungsblatt: Constraints"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A04.1: Logikrätsel (2P)
+## A01: Logikrätsel (2P)
 
 Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
 
@@ -25,7 +25,7 @@ sind. Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
 
 
 
-## A04.2: Framework für Constraint Satisfaction (2P)
+## A02: Framework für Constraint Satisfaction (2P)
 
 Lösen Sie nun das Rätsel aus A04.1:
 
@@ -50,7 +50,7 @@ Python-Klassen in [`csp.py`] als Ausgangspunkt nutzen.[^aima]
 
 
 
-## A04.3: Kantenkonsistenz mit AC-3 (3P)
+## A03: Kantenkonsistenz mit AC-3 (3P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 $$\langle
@@ -74,8 +74,7 @@ mit
 
 
 
-
-## A04.4: Forward Checking und Kantenkonsistenz (2P)
+## A04: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
@@ -97,8 +96,7 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 
 
-
-## A04.5: Anwendungen (1P)
+## A05: Anwendungen (1P)
 
 Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
 Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die

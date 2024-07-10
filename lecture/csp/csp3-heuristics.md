@@ -29,7 +29,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106573&client_id=FH-Bielefeld"
     name: "Selbsttest CSP, Heuristiken (ILIAS)"
 assignments:
-  - topic: sheet04
+  - topic: sheet-csp
 youtube:
   - link: "https://youtu.be/pgXf0oV8lhE"
     name: "VL CSP, Heuristiken"

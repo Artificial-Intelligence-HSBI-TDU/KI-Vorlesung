@@ -16,7 +16,7 @@ tldr: |
 outcomes:
   - k3: "Lösung von CSP mit endlichen Domänen mit Hilfe der BT-Suche"
 assignments:
-  - topic: sheet04
+  - topic: sheet-csp
 youtube:
   - link: "https://youtu.be/DIY7F2ycyqA"
     name: "VL BT-Suche für CSP"

@@ -12,7 +12,7 @@ hidden: true
 ## A02.1: Modellierung von GA (2P)
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
-Vorlesung [CSP: Intro](../lecture/csp/intro-csp.md)). Starten
+Vorlesung [CSP: Intro](../lecture/csp/csp1-intro.md)). Starten
 Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine
 konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
 
