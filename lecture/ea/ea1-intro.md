@@ -23,7 +23,7 @@ outcomes:
   - k2: "Überblick über die verschiedenen Strömungen"
   - k2: "Prinzipieller Ablauf von Genetischen Algorithmen"
 assignments:
-  - topic: sheet02
+  - topic: sheet-ea
 youtube:
   - link: "https://youtu.be/pKdKcPLI7V4"
     name: "VL Einführung Evolutionäre Algorithmen"

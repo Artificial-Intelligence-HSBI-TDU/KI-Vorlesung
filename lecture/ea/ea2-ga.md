@@ -34,7 +34,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106580&client_id=FH-Bielefeld"
     name: "Selbsttest EA/GA (ILIAS)"
 assignments:
-  - topic: sheet02
+  - topic: sheet-ea
 youtube:
   - link: "https://youtu.be/Sd5AA6LIEOc"
     name: "VL Modellierung mit EA/GA"

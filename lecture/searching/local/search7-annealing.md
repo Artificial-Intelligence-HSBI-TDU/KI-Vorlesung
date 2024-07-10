@@ -27,7 +27,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld"
     name: "Selbsttest Simulated Annealing (ILIAS)"
 assignments:
-  - topic: sheet02
+  - topic: sheet-ea
 youtube:
   - link: "https://youtu.be/vPg7PWuY2bM"
     name: "VL Simulated Annealing"

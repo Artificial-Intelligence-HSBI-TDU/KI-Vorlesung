@@ -253,8 +253,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Gradientensuche]: lecture/searching/local/search6-gradient.md
 [Simulated Annealing]: lecture/searching/local/search7-annealing.md
 
-[Intro EA/GA]: lecture/ea/intro-ea.md
-[Genetische Algorithmen]: lecture/ea/ga.md
+[Intro EA/GA]: lecture/ea/ea1-intro.md
+[Genetische Algorithmen]: lecture/ea/ea2-ga.md
 
 [Einführung Constraints]: lecture/csp/csp1-intro.md
 [Lösen von diskreten CSP]: lecture/csp/csp2-backtrackingsearch.md
@@ -332,7 +332,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 ::::::
 
 [B01]: homework/sheet-search.md
-[B02]: homework/sheet02.md
+[B02]: homework/sheet-ea.md
 [B03]: homework/sheet-games.md
 [B04]: homework/sheet-csp.md
 [B05]: homework/sheet-dtl.md
