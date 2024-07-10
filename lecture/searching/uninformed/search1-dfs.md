@@ -27,7 +27,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld"
     name: "Selbsttest Tiefensuche (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/NzTugnuHSZ8"
     name: "VL Tiefensuche"
@@ -78,7 +78,7 @@ Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} 
 ::: notes
 Varianten:
 *   **Tiefensuche**
-*   [Breitensuche](bfs.md)
+*   [Breitensuche](search2-bfs.md)
 :::
 
 ::: notes
@@ -203,7 +203,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 ::: notes
 ## Eigenschaften der Tiefensuche
 
-Siehe [Breitensuche](bfs.md)
+Siehe [Breitensuche](search2-bfs.md)
 :::
 
 

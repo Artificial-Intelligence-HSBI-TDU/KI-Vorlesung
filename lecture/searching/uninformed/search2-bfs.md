@@ -23,7 +23,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld"
     name: "Selbsttest Breitensuche (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/WLhXt6ZpyD8"
     name: "VL Breitensuche"
@@ -52,7 +52,7 @@ Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} 
 
 ::: notes
 Varianten:
-*   [Tiefensuche](dfs.md)
+*   [Tiefensuche](search1-dfs.md)
 *   **Breitensuche**
 :::
 

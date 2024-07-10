@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 01: Problemlösen, Suche"
+title: "Übungsblatt: Problemlösen, Suche"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A01.1: Möglichkeiten und Grenzen der KI (1P)
+## Search.01: Möglichkeiten und Grenzen der KI (1P)
 
 Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden können und welche aktuell noch ungelöst sind.
@@ -18,7 +18,7 @@ gelöst werden können und welche aktuell noch ungelöst sind.
 
 
 
-## A01.2: Auswirkungen der KI (1P)
+## Search.02: Auswirkungen der KI (1P)
 
 Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa
 durch autonomes Fahren oder durch _Large Language Models_ (LLM).
@@ -27,7 +27,7 @@ durch autonomes Fahren oder durch _Large Language Models_ (LLM).
 
 
 
-## A01.3: Problemformalisierung, Zustandsraum (2P)
+## Search.03: Problemformalisierung, Zustandsraum (2P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen
 diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei
@@ -45,7 +45,7 @@ zwischen beiden Gruppen kommt.
 
 
 
-## A01.4: Suchverfahren (4P)
+## Search.04: Suchverfahren (4P)
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
@@ -84,7 +84,7 @@ vor München, Karlsruhe vor Kassel etc.
 
 
 
-## A01.5: Dominanz (1P)
+## Search.05: Dominanz (1P)
 
 Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
 
@@ -98,7 +98,7 @@ Geben Sie selbstgewählte Beispiele an.
 
 
 
-## A01.6: Beweis der Optimalität von A* (1P)
+## Search.06: Beweis der Optimalität von A* (1P)
 
 Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
 zulässigen Heuristik optimal ist.
@@ -107,7 +107,7 @@ zulässigen Heuristik optimal ist.
 
 
 
-## A01.7 Bonus: Turing Test (1P)
+## Search.07 Bonus: Turing Test (1P)
 
 Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
 

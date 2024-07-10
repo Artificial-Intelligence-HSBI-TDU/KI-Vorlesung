@@ -36,7 +36,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106585&client_id=FH-Bielefeld"
     name: "Selbsttest KI Einführung (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/oETxokgYdDk"
     name: "VL Einführung"

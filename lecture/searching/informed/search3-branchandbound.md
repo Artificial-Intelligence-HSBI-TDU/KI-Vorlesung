@@ -26,7 +26,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106598&client_id=FH-Bielefeld"
     name: "Selbsttest Branch-and-Bound (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/WBL-sihpbaM"
     name: "VL Branch-and-Bound"
@@ -63,8 +63,8 @@ fhmedia:
 ::: notes
 Varianten:
 *   **Branch-and-Bound**
-*   [Best First](bestfirst.md)
-*   [A*](astar.md)
+*   [Best First](search4-bestfirst.md)
+*   [A*](search5-astar.md)
 :::
 
 
@@ -146,7 +146,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 ::: notes
 ## Eigenschaften von BnB
 
-Siehe [A*](astar.md)
+Siehe [A*](search5-astar.md)
 :::
 
 

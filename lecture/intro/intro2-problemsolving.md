@@ -56,7 +56,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106586&client_id=FH-Bielefeld"
     name: "Selbsttest Problemlösen (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/IhUmUUzR9lQ"
     name: "VL Problemlösen"

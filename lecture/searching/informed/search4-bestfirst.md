@@ -21,7 +21,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106599&client_id=FH-Bielefeld"
     name: "Selbsttest Best First (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/`dNyLOQuD_aI`{=markdown}"
     name: "VL Best First"
@@ -34,7 +34,7 @@ challenges: |
     ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
     Quelle: [MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))
 
-    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenge.png)
+    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/search/informed/images/challenge.png)
 
     Finden Sie mit der **Best-First-Suche** jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit der Gradienten-Suche.
 ---
@@ -66,9 +66,9 @@ challenges: |
 
 ::: notes
 Varianten:
-*   [Branch-and-Bound](branchandbound.md)
+*   [Branch-and-Bound](search3-branchandbound.md)
 *   **Best First**
-*   [A*](astar.md)
+*   [A*](search5-astar.md)
 :::
 
 ## Best-First (*BF*, *BFS*)
@@ -112,7 +112,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 ::: notes
 ## Eigenschaften von BF
 
-Siehe [A*](astar.md)
+Siehe [A*](search5-astar.md)
 :::
 
 

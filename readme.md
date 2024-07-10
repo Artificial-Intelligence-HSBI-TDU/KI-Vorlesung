@@ -245,13 +245,13 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Einführung KI]: lecture/intro/intro1-overview.md
 [Problemlösen]: lecture/intro/intro2-problemsolving.md
 
-[Tiefensuche]: lecture/searching/uninformed/dfs.md
-[Breitensuche]: lecture/searching/uninformed/bfs.md
-[Branch-and-Bound]: lecture/searching/informed/branchandbound.md
-[Best First]: lecture/searching/informed/bestfirst.md
-[A-Stern]: lecture//searching/informed/astar.md
-[Gradientensuche]: lecture/searching/local/gradient.md
-[Simulated Annealing]: lecture/searching/local/annealing.md
+[Tiefensuche]: lecture/searching/uninformed/search1-dfs.md
+[Breitensuche]: lecture/searching/uninformed/search2-bfs.md
+[Branch-and-Bound]: lecture/searching/informed/search3-branchandbound.md
+[Best First]: lecture/searching/informed/search4-bestfirst.md
+[A-Stern]: lecture//searching/informed/search5-astar.md
+[Gradientensuche]: lecture/searching/local/search6-gradient.md
+[Simulated Annealing]: lecture/searching/local/search7-annealing.md
 
 [Intro EA/GA]: lecture/ea/intro-ea.md
 [Genetische Algorithmen]: lecture/ea/ga.md
@@ -331,7 +331,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 :::
 ::::::
 
-[B01]: homework/sheet01.md
+[B01]: homework/sheet-search.md
 [B02]: homework/sheet02.md
 [B03]: homework/sheet-games.md
 [B04]: homework/sheet-csp.md

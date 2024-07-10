@@ -29,7 +29,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld"
     name: "Selbsttest `A*`{=markdown} (ILIAS)"
 assignments:
-  - topic: sheet01
+  - topic: sheet-search
 youtube:
   - link: "https://youtu.be/eMkEN-HtEs8"
     name: "VL `A*`{=markdown}"
@@ -41,7 +41,7 @@ challenges: |
 
     Betrachten Sie folgendes Problem:
 
-    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenges_robby.png)
+    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/search/informed/images/challenges_robby.png)
 
     Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur. Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang durchschritten werden darf. Die Werte an den Pfeilen geben die Kosten für den Übergang von einem Raum in den anderen an.
 
@@ -80,8 +80,8 @@ challenges: |
 
 ::: notes
 Varianten:
-*   [Branch-and-Bound](branchandbound.md)
-*   [Best First](bestfirst.md)
+*   [Branch-and-Bound](search3-branchandbound.md)
+*   [Best First](search4-bestfirst.md)
 *   **A\***
 :::
 
