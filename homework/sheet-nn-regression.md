@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 08: Lineare / Logistische Regression & Gradientenabstieg"
+title: "Übungsblatt: Lineare / Logistische Regression & Gradientenabstieg"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -10,7 +10,7 @@ hidden: true
 
 
 
-## A08.1: Lineare Regression & Gradientenabstieg (3P)
+## NN.Regression.01: Lineare Regression & Gradientenabstieg (3P)
 
 Es sind folgende Trainingsdaten gegeben:
 
@@ -22,7 +22,7 @@ $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 
 *   (1P) Geben Sie $n$ und $m$ an und schreiben Sie die Kostenfunktion für die gegebenen Datenpunkte explizit auf. Berechnen Sie den Gradientenvektor $\nabla J$ und beschreiben Sie die Bedeutung dieses Vektors.
 
-*   (2P) Seien die Gewichte in einem Iterationsschritt $w_0 = 1, w_1 = 1$. Führen Sie für die Lernraten $\alpha=0.01$, $\alpha=0.1$ und $\alpha=1$ jeweils fünf aufeinanderfolgende Iterationen des Gradientenabstieg (Gradient Descent) Algorithmus durch. 
+*   (2P) Seien die Gewichte in einem Iterationsschritt $w_0 = 1, w_1 = 1$. Führen Sie für die Lernraten $\alpha=0.01$, $\alpha=0.1$ und $\alpha=1$ jeweils fünf aufeinanderfolgende Iterationen des Gradientenabstieg (Gradient Descent) Algorithmus durch.
 
     Erstellen Sie eine Tabelle mit den Spalten $w_0$, $w_1$, $J(\mathbf{w})$, $\nabla J(\mathbf{w})$, $\alpha \cdot \nabla J(\mathbf{w})$ und notieren Sie die zugehörigen Werte für jede Iteration. Erklären Sie, wie die Gewichtsaktualisierungen durchgeführt werden und geben Sie die dafür verwendete Formel an.
 
@@ -33,7 +33,7 @@ $$ J(\mathbf{w}) = \frac{1}{2m} \sum^{m}_{j=1} (h(x^{(j)}) - y^{(j)} )^2 $$
 *Thema*: Verständnis und Ablauf Gradientenabstieg und Lernrate
 
 
-## A08.2: Logistische Regression & Gradientenabstieg (7P)
+## NN.Regression.02: Logistische Regression & Gradientenabstieg (7P)
 
 ### Datensatz (1P)
 *   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=100$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.

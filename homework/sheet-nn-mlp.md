@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 09: Overfitting & MLP"
+title: "Übungsblatt: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -8,14 +8,14 @@ hidden: true
 ---
 
 
-## A09.1: Perzeptron-Netze (2P)
+## NN.MLP.01: Perzeptron-Netze (2P)
 
 Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit +1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als Aktivierungsfunktion.
 
 ![Abbildung 1](images/perzeptron_netz.png){width="60%"}
 
 
-## A09.2: Vorwärtslauf im MLP (2P)
+## NN.MLP.02: Vorwärtslauf im MLP (2P)
 
 Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der ersten versteckten Schicht, 32 Zellen in der zweiten versteckten Schicht und 4 Zellen in der Ausgabeschicht (die Bias-Zellen nicht mitgezählt). In allen Zellen wird die ReLU Aktivierungsfunktion verwendet.
 
@@ -23,7 +23,7 @@ Gegeben sei ein MLP mit 25 Zellen in der Eingangsschicht, 64 Zellen in der erste
 *   Wie wird die Ausgabe berechnet? Schreiben Sie den Vorwärtslauf in Matrix-Notation auf. Wie könnte man die Ausgabe deuten; welches Problem könnte durch dieses Netzwerk möglicherweise gelöst werden?
 
 
-## A09.3: Tensorflow Playground (6P)
+## NN.MLP.03: Tensorflow Playground (6P)
 
 Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/), um die unten gelisteten Experimente durchzuführen. Achten Sie bei allen Experimenten auf das Verhalten der Trainings- und Testkosten. Sie können mit Hilfe der Checkbox unter der Ausgabezelle (ganz rechts, unten) die Testdaten ein- und ausblenden. Der Play-Knopf startet dabei das Training und der Reload-Knopf setzt das Netzwerk zurück.
 
@@ -33,7 +33,7 @@ Benutzen Sie den [Neural Network Playground](https://playground.tensorflow.org/)
     *   einer versteckten Schicht mit 2 Neuronen,
     *   einer versteckten Schicht mit 3 Neuronen,
     *   einer versteckten Schicht mit 5 Neuronen,
-    *   zwei versteckten Schichten mit jeweils 5 Neuronen pro Schicht 
+    *   zwei versteckten Schichten mit jeweils 5 Neuronen pro Schicht
     *   drei versteckten Schichten mit jeweils 7 Neuronen pro Schicht
     *   vier versteckten Schichten mit jeweils 7 Neuronen pro Schicht
 

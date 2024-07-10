@@ -16,7 +16,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106592&client_id=FH-Bielefeld"
     name: "Selbsttest Multilayer Perzeptron (ILIAS)"
 assignments:
-  - topic: sheet09
+  - topic: sheet-nn-mlp
 youtube:
   - link: "https://youtu.be/7ltwa5WWuKI"
     name: "NN5.1 - MLP Forward Propagation"

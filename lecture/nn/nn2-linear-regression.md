@@ -18,7 +18,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld"
     name: "Selbsttest Lineare Regression (ILIAS)"
 assignments:
-  - topic: sheet08
+  - topic: sheet-nn-regression
 youtube:
   - link: "https://youtu.be/f-DTaKMnkj4"
     name: "NN2.1 - Lineare Regression - Intro"

@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 07: Perzeptron"
+title: "Übungsblatt: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A07.1: Entscheidungsgrenze (2P)
+## NN.Perzeptron.01: Entscheidungsgrenze (2P)
 
 *   (1P) Betrachten Sie das durch den Gewichtsvektor $(w_0,w_1,w_2)^T = (2,1,1)^T$ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
 *   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
@@ -22,7 +22,7 @@ hidden: true
 
 
 
-## A07.2: Logische Funktionen als Perzeptron (2P)
+## NN.Perzeptron.02: Logische Funktionen als Perzeptron (2P)
 
 *   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
 *   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
@@ -31,7 +31,7 @@ hidden: true
 
 
 
-## A07.3: Perzeptron Lernalgorithmus (6P)
+## NN.Perzeptron.03: Perzeptron Lernalgorithmus (6P)
 
 Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus zu bekommen und eine Art empirische Approximation zu bestimmen.
 

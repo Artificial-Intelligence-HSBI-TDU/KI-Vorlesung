@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 10: Backpropagation"
+title: "Übungsblatt: Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
 
@@ -10,7 +10,7 @@ hidden: true
 
 
 
-## A10.1: Gewichtsupdates für versteckte Schichten (2P)
+## NN.Backprop.01: Gewichtsupdates für versteckte Schichten (2P)
 
 In der Vorlesung wurde(n) die Gewichtsupdates bei der Backpropagation für die Ausgabeschicht und die davor liegende letzte versteckte Schicht hergeleitet, wobei in der Ausgabeschicht die Sigmoid und in der versteckten Schicht die ReLU Aktivierungsfunktionen eingesetzt wurden.
 Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Netz mit zwei echten versteckten Schichten) her. Verwenden Sie dabei die Sigmoid Funktion als Aktivierung in allen Schichten.
@@ -19,7 +19,7 @@ Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Net
 
 
 
-## A10.2: Forward- und Backpropagation (2P)
+## NN.Backprop.02: Forward- und Backpropagation (2P)
 
 Betrachten Sie das folgende MLP mit einer versteckten Schicht mit zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $y$. Beide Zellen verwenden die Aktivierungsfunktion
 $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
@@ -32,7 +32,7 @@ $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 
 
-## A10.3: MLP und Backpropagation (6P)
+## NN.Backprop.03: MLP und Backpropagation (6P)
 
 Implementieren Sie ein Feedforward MLP mit mindestens einer versteckten Schicht. Nutzen Sie die Cross-Entropy Verlustfunktion.
 

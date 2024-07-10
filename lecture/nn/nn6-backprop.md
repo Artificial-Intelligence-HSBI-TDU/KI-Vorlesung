@@ -16,7 +16,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld"
     name: "Selbsttest Backpropagation (ILIAS)"
 assignments:
-  - topic: sheet10
+  - topic: sheet-nn-backprop
 youtube:
   - link: "https://youtu.be/G9x75THjueQ"
     name: "NN6.1 - MLP Backpropagation 1"
@@ -25,6 +25,7 @@ youtube:
   - link: "https://youtu.be/uvT4WPIIkwQ"
     name: "NN6.3 - MLP Zusammenfassung"
 attachments:
+
   - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf"
     name: "NN6-MLP_Backpropagation.pdf"
 ---

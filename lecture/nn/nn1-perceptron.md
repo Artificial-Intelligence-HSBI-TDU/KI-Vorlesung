@@ -18,7 +18,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
     name: "Selbsttest Intro ML (ILIAS)"
 assignments:
-  - topic: sheet07
+  - topic: sheet-nn-perceptron
 youtube:
   - link: "https://youtu.be/IJdiwITTC9Y"
     name: "NN1.1 - Einführung"

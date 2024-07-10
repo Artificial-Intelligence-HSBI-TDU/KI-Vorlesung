@@ -273,15 +273,15 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Entropie]: lecture/dtl/dtl5-entropy.md
 [ID3 und C4.5]: lecture/dtl/dtl6-id3.md
 
-[Perzeptron]: lecture/nn/nn1_perceptron.md
-[Lineare Regression]: lecture/nn/nn2_linear_regression.md
-[Logistische Regression]: lecture/nn/nn3_logistic_regression.md
-[Overfitting]: lecture/nn/nn4_overfitting.md
-[Multilayer Perceptron]: lecture/nn/nn5_mlp.md
-[Backpropagation]: lecture/nn/nn6_backprop.md
-[Training & Testing]: lecture/nn/nn7_training_testing.md
-[Performanzanalyse]: lecture/nn/nn8_testing.md
-<!-- [Large Language Models]: lecture/nn/nn9_llm.md -->
+[Perzeptron]: lecture/nn/nn1-perceptron.md
+[Lineare Regression]: lecture/nn/nn2-linear-regression.md
+[Logistische Regression]: lecture/nn/nn3-logistic-regression.md
+[Overfitting]: lecture/nn/nn4-overfitting.md
+[Multilayer Perceptron]: lecture/nn/nn5-mlp.md
+[Backpropagation]: lecture/nn/nn6-backprop.md
+[Training & Testing]: lecture/nn/nn7-training-testing.md
+[Performanzanalyse]: lecture/nn/nn8-testing.md
+<!-- [Large Language Models]: lecture/nn/nn9-llm.md -->
 
 [Wahrscheinlichkeitstheorie]: lecture/naivebayes/nb1-probability.md
 [Naive Bayes]: lecture/naivebayes/nb2-naivebayes.md
@@ -337,10 +337,10 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [B04]: homework/sheet-csp.md
 [B05]: homework/sheet-dtl.md
 [B06]: homework/sheet-nb.md
-[B07]: homework/sheet07.md
-[B08]: homework/sheet08.md
-[B09]: homework/sheet09.md
-[B10]: homework/sheet10.md
+[B07]: homework/sheet-nn-perceptron.md
+[B08]: homework/sheet-nn-regression.md
+[B09]: homework/sheet-nn-mlp.md
+[B10]: homework/sheet-nn-backprop.md
 
 
 ## Förderungen und Kooperationen
