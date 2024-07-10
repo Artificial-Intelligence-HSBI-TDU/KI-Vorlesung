@@ -261,10 +261,10 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [CSP und Heuristiken]: lecture/csp/csp3-heuristics.md
 [Kantenkonsistenz und AC-3]: lecture/csp/csp4-ac3.md
 
-[Optimale Spiele]: lecture/games/intro-games.md
-[Minimax]: lecture/games/minimax.md
-[Minimax und Heuristiken]: lecture/games/heuristics-minimax.md
-[Alpha-Beta-Pruning]: lecture/games/alphabeta.md
+[Optimale Spiele]: lecture/games/games1-intro.md
+[Minimax]: lecture/games/games2-minimax.md
+[Minimax und Heuristiken]: lecture/games/games3-heuristics.md
+[Alpha-Beta-Pruning]: lecture/games/games4-alphabeta.md
 
 [Machine Learning 101]: lecture/dtl/dtl1-mlbasics.md
 [CAL2]: lecture/dtl/dtl2-cal2.md
@@ -333,7 +333,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 [B01]: homework/sheet01.md
 [B02]: homework/sheet02.md
-[B03]: homework/sheet03.md
+[B03]: homework/sheet-games.md
 [B04]: homework/sheet-csp.md
 [B05]: homework/sheet-dtl.md
 [B06]: homework/sheet06.md

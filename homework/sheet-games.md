@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 03: Spiele"
+title: "Übungsblatt: Spiele"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A03.1: Handsimulation: Minimax und alpha-beta-Pruning (3P)
+## Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P)
 
 ![](images/alphabeta.png)
 
@@ -31,7 +31,7 @@ links nach rechts.
 
 
 
-## A03.2: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
+## Games.02: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
 
 1.  (2P) Implementieren Sie den Minimax-Algorithmus (wie in der VL
     besprochen) am Beispiel *Tic Tac Toe* in einer Sprache Ihrer Wahl.
@@ -45,7 +45,7 @@ links nach rechts.
 
 
 
-## A03.3: Minimax vereinfachen (1P)
+## Games.03: Minimax vereinfachen (1P)
 
 Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die
 Eigenschaft *Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value`
@@ -60,7 +60,7 @@ Algorithmus.
 
 
 
-## A03.4: Suchtiefe begrenzen (1P)
+## Games.04: Suchtiefe begrenzen (1P)
 
 Die Verwendung der Suchtiefenbeschränkung erfordert den Einsatz einer
 Evaluierungsfunktion.
@@ -77,7 +77,7 @@ diese Evaluierungsfunktion im Zusammenhang mit *Tic-Tac-Toe* sinnvoll sein kann.
 
 
 
-## A03.5: Minimax generalisiert (1P)
+## Games.05: Minimax generalisiert (1P)
 
 Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu
 evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.

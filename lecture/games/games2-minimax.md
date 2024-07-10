@@ -24,7 +24,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106582&client_id=FH-Bielefeld"
     name: "Selbsttest Minimax (ILIAS)"
 assignments:
-  - topic: sheet03
+  - topic: sheet-games
 youtube:
   - link: "https://youtu.be/`aKtF__lMMsw`{=markdown}"
     name: "VL Minimax"
@@ -145,7 +145,7 @@ def Min-Value(state):
 finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
 Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
 Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine `Eval()`-Funktion
-braucht (vgl. [Minimax: Heuristiken](heuristics-minimax.md)).
+braucht (vgl. [Minimax: Heuristiken](games3-heuristics.md)).
 
 Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen
 Parameter nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!

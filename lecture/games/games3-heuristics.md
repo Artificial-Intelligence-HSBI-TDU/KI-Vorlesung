@@ -30,7 +30,7 @@ outcomes:
   - k3: "Minimax-Algorithmus"
   - k3: "Tiefenbeschränkung und Bewertungsfunktion bei Minimax"
 assignments:
-  - topic: sheet03
+  - topic: sheet-games
 youtube:
   - link: "https://youtu.be/rKqNqYBXuK8"
     name: "VL Heuristiken"
