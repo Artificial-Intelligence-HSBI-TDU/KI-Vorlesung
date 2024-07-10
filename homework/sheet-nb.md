@@ -1,6 +1,6 @@
 ---
 archetype: assignment
-title: "Blatt 06: Naive Bayes"
+title: "Übungsblatt: Naive Bayes"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"
 
@@ -9,7 +9,7 @@ hidden: true
 
 
 
-## A06.1: Wahlkampf mit Naive Bayes (4P)
+## NB.01: Wahlkampf mit Naive Bayes (4P)
 
 Betrachten Sie erneut das Szenerio von Aufgabe A05.1 auf [Blatt 05](sheet-dtl.md).
 
@@ -19,7 +19,7 @@ Betrachten Sie erneut das Szenerio von Aufgabe A05.1 auf [Blatt 05](sheet-dtl.md
 zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
 
 
-## A06.2: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
+## NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
 
 Laden Sie sich den Datensatz
 ["Spam Mails Dataset" (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset)

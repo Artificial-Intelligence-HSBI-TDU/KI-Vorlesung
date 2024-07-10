@@ -66,7 +66,7 @@ quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106588&client_id=FH-Bielefeld"
     name: "Selbsttest Naive Bayes Klassifikation (ILIAS)"
 assignments:
-  - topic: sheet06
+  - topic: sheet-nb
 youtube:
   - link: "https://youtu.be/qfX4zp1i-Co"
     name: "VL Naive Bayes Klassifikation"

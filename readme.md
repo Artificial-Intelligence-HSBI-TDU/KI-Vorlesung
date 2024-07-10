@@ -283,8 +283,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Performanzanalyse]: lecture/nn/nn8_testing.md
 <!-- [Large Language Models]: lecture/nn/nn9_llm.md -->
 
-[Wahrscheinlichkeitstheorie]: lecture/naivebayes/probability.md
-[Naive Bayes]: lecture/naivebayes/nb.md
+[Wahrscheinlichkeitstheorie]: lecture/naivebayes/nb1-probability.md
+[Naive Bayes]: lecture/naivebayes/nb2-naivebayes.md
 
 <!-- [Einführung Logik]: lecture/logic/logic1-intro.md -->
 <!-- [Syntax und Semantik]: lecture/logic/logic2-syntax.md -->
@@ -336,7 +336,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [B03]: homework/sheet-games.md
 [B04]: homework/sheet-csp.md
 [B05]: homework/sheet-dtl.md
-[B06]: homework/sheet06.md
+[B06]: homework/sheet-nb.md
 [B07]: homework/sheet07.md
 [B08]: homework/sheet08.md
 [B09]: homework/sheet09.md
