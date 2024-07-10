@@ -286,10 +286,10 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Wahrscheinlichkeitstheorie]: lecture/naivebayes/probability.md
 [Naive Bayes]: lecture/naivebayes/nb.md
 
-<!-- [Einführung Logik]: lecture/logic/intro-logic.md -->
-<!-- [Syntax und Semantik]: lecture/logic/syntax.md -->
-<!-- [Modelle]: lecture/logic/modelle.md -->
-<!-- [Resolutionsbeweise]: lecture/logic/resolution.md -->
+<!-- [Einführung Logik]: lecture/logic/logic1-intro.md -->
+<!-- [Syntax und Semantik]: lecture/logic/logic2-syntax.md -->
+<!-- [Modelle]: lecture/logic/logic3-modelle.md -->
+<!-- [Resolutionsbeweise]: lecture/logic/logic4-resolution.md -->
 
 [Prüfungsvorbereitung HSBI]: admin/exams-hsbi.md
 [Prüfungsvorbereitung TDU]: admin/exams-tdu.md
