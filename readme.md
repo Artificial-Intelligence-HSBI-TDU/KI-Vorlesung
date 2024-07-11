@@ -242,54 +242,54 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 [Umfrage]: https://www.hsbi.de/elearning/goto.php?target=svy_1339632&client_id=FH-Bielefeld
 
-[Einführung KI]: lecture/intro/intro-ai.md
-[Problemlösen]: lecture/intro/problems.md
+[Einführung KI]: lecture/intro/intro1-overview.md
+[Problemlösen]: lecture/intro/intro2-problemsolving.md
 
-[Tiefensuche]: lecture/searching/uninformed/dfs.md
-[Breitensuche]: lecture/searching/uninformed/bfs.md
-[Branch-and-Bound]: lecture/searching/informed/branchandbound.md
-[Best First]: lecture/searching/informed/bestfirst.md
-[A-Stern]: lecture//searching/informed/astar.md
-[Gradientensuche]: lecture/searching/local/gradient.md
-[Simulated Annealing]: lecture/searching/local/annealing.md
+[Tiefensuche]: lecture/searching/uninformed/search1-dfs.md
+[Breitensuche]: lecture/searching/uninformed/search2-bfs.md
+[Branch-and-Bound]: lecture/searching/informed/search3-branchandbound.md
+[Best First]: lecture/searching/informed/search4-bestfirst.md
+[A-Stern]: lecture//searching/informed/search5-astar.md
+[Gradientensuche]: lecture/searching/local/search6-gradient.md
+[Simulated Annealing]: lecture/searching/local/search7-annealing.md
 
-[Intro EA/GA]: lecture/ea/intro-ea.md
-[Genetische Algorithmen]: lecture/ea/ga.md
+[Intro EA/GA]: lecture/ea/ea1-intro.md
+[Genetische Algorithmen]: lecture/ea/ea2-ga.md
 
-[Einführung Constraints]: lecture/csp/intro-csp.md
-[Lösen von diskreten CSP]: lecture/csp/backtrackingsearch.md
-[CSP und Heuristiken]: lecture/csp/heuristics-csp.md
-[Kantenkonsistenz und AC-3]: lecture/csp/ac3.md
+[Einführung Constraints]: lecture/csp/csp1-intro.md
+[Lösen von diskreten CSP]: lecture/csp/csp2-backtrackingsearch.md
+[CSP und Heuristiken]: lecture/csp/csp3-heuristics.md
+[Kantenkonsistenz und AC-3]: lecture/csp/csp4-ac3.md
 
-[Optimale Spiele]: lecture/games/intro-games.md
-[Minimax]: lecture/games/minimax.md
-[Minimax und Heuristiken]: lecture/games/heuristics-minimax.md
-[Alpha-Beta-Pruning]: lecture/games/alphabeta.md
+[Optimale Spiele]: lecture/games/games1-intro.md
+[Minimax]: lecture/games/games2-minimax.md
+[Minimax und Heuristiken]: lecture/games/games3-heuristics.md
+[Alpha-Beta-Pruning]: lecture/games/games4-alphabeta.md
 
-[Machine Learning 101]: lecture/dtl/mlbasics.md
-[CAL2]: lecture/dtl/cal2.md
-[Pruning]: lecture/dtl/pruning.md
-[CAL3]: lecture/dtl/cal3.md
-[Entropie]: lecture/dtl/entropy.md
-[ID3 und C4.5]: lecture/dtl/id3.md
+[Machine Learning 101]: lecture/dtl/dtl1-mlbasics.md
+[CAL2]: lecture/dtl/dtl2-cal2.md
+[Pruning]: lecture/dtl/dtl3-pruning.md
+[CAL3]: lecture/dtl/dtl4-cal3.md
+[Entropie]: lecture/dtl/dtl5-entropy.md
+[ID3 und C4.5]: lecture/dtl/dtl6-id3.md
 
-[Perzeptron]: lecture/nn/nn1_perceptron.md
-[Lineare Regression]: lecture/nn/nn2_linear_regression.md
-[Logistische Regression]: lecture/nn/nn3_logistic_regression.md
-[Overfitting]: lecture/nn/nn4_overfitting.md
-[Multilayer Perceptron]: lecture/nn/nn5_mlp.md
-[Backpropagation]: lecture/nn/nn6_backprop.md
-[Training & Testing]: lecture/nn/nn7_training_testing.md
-[Performanzanalyse]: lecture/nn/nn8_testing.md
-<!-- [Large Language Models]: lecture/nn/nn9_llm.md -->
+[Perzeptron]: lecture/nn/nn1-perceptron.md
+[Lineare Regression]: lecture/nn/nn2-linear-regression.md
+[Logistische Regression]: lecture/nn/nn3-logistic-regression.md
+[Overfitting]: lecture/nn/nn4-overfitting.md
+[Multilayer Perceptron]: lecture/nn/nn5-mlp.md
+[Backpropagation]: lecture/nn/nn6-backprop.md
+[Training & Testing]: lecture/nn/nn7-training-testing.md
+[Performanzanalyse]: lecture/nn/nn8-testing.md
+<!-- [Large Language Models]: lecture/nn/nn9-llm.md -->
 
-[Wahrscheinlichkeitstheorie]: lecture/naivebayes/probability.md
-[Naive Bayes]: lecture/naivebayes/nb.md
+[Wahrscheinlichkeitstheorie]: lecture/naivebayes/nb1-probability.md
+[Naive Bayes]: lecture/naivebayes/nb2-naivebayes.md
 
-<!-- [Einführung Logik]: lecture/logic/intro-logic.md -->
-<!-- [Syntax und Semantik]: lecture/logic/syntax.md -->
-<!-- [Modelle]: lecture/logic/modelle.md -->
-<!-- [Resolutionsbeweise]: lecture/logic/resolution.md -->
+<!-- [Einführung Logik]: lecture/logic/logic1-intro.md -->
+<!-- [Syntax und Semantik]: lecture/logic/logic2-syntax.md -->
+<!-- [Modelle]: lecture/logic/logic3-modelle.md -->
+<!-- [Resolutionsbeweise]: lecture/logic/logic4-resolution.md -->
 
 [Prüfungsvorbereitung HSBI]: admin/exams-hsbi.md
 [Prüfungsvorbereitung TDU]: admin/exams-tdu.md
@@ -331,19 +331,16 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 :::
 ::::::
 
-[B01]: homework/sheet01.md
-[B02]: homework/sheet02.md
-[B03]: homework/sheet03.md
-[B04]: homework/sheet04.md
-[B05]: homework/sheet05.md
-[B06]: homework/sheet06.md
-[B07]: homework/sheet07.md
-[B08]: homework/sheet08.md
-[B09]: homework/sheet09.md
-[B10]: homework/sheet10.md
-<!-- [B11]: homework/sheet11.md -->
-<!-- [P1]: homework/poster1.md -->
-<!-- [P2]: homework/poster2.md -->
+[B01]: homework/sheet-search.md
+[B02]: homework/sheet-ea.md
+[B03]: homework/sheet-games.md
+[B04]: homework/sheet-csp.md
+[B05]: homework/sheet-dtl.md
+[B06]: homework/sheet-nb.md
+[B07]: homework/sheet-nn-perceptron.md
+[B08]: homework/sheet-nn-regression.md
+[B09]: homework/sheet-nn-mlp.md
+[B10]: homework/sheet-nn-backprop.md
 
 
 ## Förderungen und Kooperationen
