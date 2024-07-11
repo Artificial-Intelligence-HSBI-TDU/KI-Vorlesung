@@ -273,7 +273,7 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 [Kantenkonsistenz und AC-3]: lecture/csp/csp4-ac3.md
 
 [Optimale Spiele]: lecture/games/games1-intro.md
-[Games]: lecture/games/games2-minimax.md
+[Minimax]: lecture/games/games2-minimax.md
 [Minimax und Heuristiken]: lecture/games/games3-heuristics.md
 [Alpha-Beta-Pruning]: lecture/games/games4-alphabeta.md
 
