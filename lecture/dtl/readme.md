@@ -1,6 +1,6 @@
 ---
 archetype: "default"
-title: "Entscheidungsbäume"
+title: "Entscheidungsbäume (Decision Tree Learner DTL)"
 ---
 
 
