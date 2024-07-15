@@ -1,6 +1,6 @@
 ---
 archetype: "home"
-title: "IFM 5.14 / INF701: Künstliche Intelligenz (Winter 2023/24)"
+title: "IFM 3.2 (PO23) / IFM 5.14 (PO18) / INF701: Künstliche Intelligenz (Winter 2024/25)"
 ---
 
 
@@ -28,7 +28,6 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
     *   Lokale Suche: Gradientenabstieg, Genetische/Evolutionäre Algorithmen (GA/EA)
     *   Spiele: Minimax, Alpha-Beta-Pruning, Heuristiken
     *   Constraints: Backtracking, Heuristiken, Propagation, AC-3
-
 2.  Maschinelles Lernen
     *   Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung
     *   Entscheidungsbäume: CAL2, CAL3, ID3, C4.5
@@ -39,8 +38,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
         *   Steuerung des Trainings: Kreuzvalidierung, Regularisierung
         *   Ausblick: Support-Vektor-Maschinen
     *   Naive Bayes Klassifikator
-
-3.  ~~Inferenz, Logik~~ (**entfällt im W23**)
+3.  ~~Inferenz, Logik~~ (**entfällt im W24**)
     *   ~~Prädikatenlogik: Modellierung, semantische und formale Beweise,
         Unifikation, Resolution~~
     *   ~~Ausblick: Anwendung in Prolog~~
@@ -48,35 +46,36 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ## Team
 
-*   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI)
+*   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI, Sprechstunde nach Vereinbarung)
 *   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
-*   [Ayşe Betül Yüce](http://people.tau.edu.tr/people.show/abyuce/de) (TDU)
-*   [Halit Canap Demir](https://people.tau.edu.tr/people.show/halit.demir/de) (TDU)
 
 
 ## Kursformat
 
-![](admin/images/ki_fahrplan_2023-2024.png){width="80%"}
+![](admin/images/fahrplan.png){width="80%"}
 
 ### Vorlesung: 2 SWS
 
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| 09. - 27.10.               | 30.10. - 26.01.            |
-|:---------------------------|:---------------------------|
-| Mo, 10:00 - 11:30 Uhr (DE) | Mo, 09:00 - 10:30 Uhr (DE) |
-| online/J101                | online/J101                |
+| 07.10. - 24.01.            |
+|:---------------------------|
+| Mo, 11:00 - 12:30 Uhr (DE) |
+| online/J101                |
 
-Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
+Durchführung als **Flipped Classroom**.
+
+Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**).
+Sie _können_ hierzu den Raum J104 nutzen.
 
 :::
 ::: {.tab title="TDU"}
 
-| 02.10.23 - 12.01.24        |
-|:---------------------------|
-| Mo, 11:00 - 12:30 Uhr (TR) |
-| online                     |
+| 16.09. - 25.10.            | 28.10. - 30.12.            |
+|:---------------------------|:---------------------------|
+| Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
+| online                     | online                     |
 
 Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
 
@@ -88,22 +87,31 @@ Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten sieh
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Praktikumsgruppe | 23.10. - 19.01.              |
+**GKI** (PO23, 3. Semester)
+
+| Praktikumsgruppe | 07.10. - 24.01.              |
 |:-----------------|:-----------------------------|
-| G1/G3            | Di, 17:30 bis 19:00 Uhr (DE) |
-| G2               | Mo, 17:30 bis 19:00 Uhr (DE) |
+| G1               | Di, 17:30 bis 19:00 Uhr (DE) |
+| G2               | Di, 17:30 bis 19:00 Uhr (DE) |
+| G3               | Mo, 17:30 bis 19:00 Uhr (DE) |
 |                  | online/J101                  |
 
-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**)
+**KI** (PO18, 5. Semester)
 
-<!--
-[**Bitte tragen Sie sich in der [Buchungs-Liste] ein.**]{.alert}
--->
+| Praktikumsgruppe | 07.10. - 24.01.              |
+|:-----------------|:-----------------------------|
+| G4               | Di, 17:30 bis 19:00 Uhr (DE) |
+| G5               | Di, 17:30 bis 19:00 Uhr (DE) |
+| G6               | Mo, 17:30 bis 19:00 Uhr (DE) |
+|                  | online/J101                  |
+
+Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**).
+Sie _können_ hierzu den Raum J104 nutzen.
 
 :::
 ::: {.tab title="TDU"}
 
-| Übungsgruppe | 16.10.23 - 12.01.24          |
+| Übungsgruppe | 16.09. - 31.12.              |
 |:-------------|:-----------------------------|
 | G1 / G3      | Do, 14:30 bis 15:30 Uhr (TR) |
 | G2 / G4      | Do, 15:30 bis 16:30 Uhr (TR) |
@@ -115,15 +123,18 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::::::
 
 [ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
-[Buchungs-Liste]: https://www.hsbi.de/elearning/goto.php?target=book_1294778&client_id=FH-Bielefeld
 [Google Classroom]: https://classroom.google.com/c/NjMzNDM4MDk1NTM5
 
-### Prüfungsform, Note und Credits
+
+## Prüfungsform, Note und Credits
 
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
 Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
+
+**GKI** (PO23, 3. Semester)
+**KI** (PO18, 5. Semester)
 
 *   **Testat**: Vergabe der Credit-Points
 
@@ -138,13 +149,6 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
 
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
-
-Die nächste Klausur für "Künstliche Intelligenz" wird am **Donnerstag, 25. Juli 2024**
-angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung beginnt um
-**08:00 Uhr und dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen.
-Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2023/2024,
-s.u.). Weitere Informationen siehe [Prüfungsvorbereitung](admin/exams-hsbi.md).
 
 :::
 ::: {.tab title="TDU"}
@@ -197,50 +201,57 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Woche | Datum Vorlesung                       | Themen                                                                                                        | Lead    | Start Bearbeitung |
-|:-----:|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------|:--------|:------------------|
-|  41   | Mo, 09.10. (**09:00 - 10:00** Uhr DE) | Orga HSBI (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                   | Carsten |                   |
-|  42   | Mo, 16.10.                            | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten | [B01]             |
-|  43   | Mo, 23.10.                            | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten | [B02]             |
-|  44   | Mo, 30.10.                            | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten | [B03]             |
-|  45   | Mo, 06.11.                            | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten | [B04]             |
-|  46   | Mo, 13.11.                            | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten | [B06]             |
-|  47   | Mo, 20.11.                            | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten | [B05]             |
-|  48   | Mo, 27.11.                            | [Perzeptron]                                                                                                  | Canan   | [B07]             |
-|  49   | Mo, 04.12.                            | [Lineare Regression]                                                                                          | Canan   | [B08]             |
-|  50   | Mo, 11.12.                            | [Logistische Regression]                                                                                      | Canan   |                   |
-|  51   | Mo, 18.12.                            | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan   | [B09]             |
-|  02   | Mo, 08.01.                            | [Backpropagation]                                                                                             | Canan   | [B10]             |
-|  03   | Mo, 15.01.                            | [Training & Testing] \| [Performanzanalyse]                                                                   | Canan   |                   |
-|  04   | Mo, 22.01.                            | Rückblick (**Zoom**) \| [Prüfungsvorbereitung HSBI]                                                           | Carsten |                   |
-| _05_  | _Mi, 31.01._ (13:00 - 14:30 Uhr DE)   | Klausur (Campus Minden, B40)                                                                                  |         |                   |
+Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
-[**Bitte geben Sie mir Feedback: Nehmen Sie bitte an der anonymen [Umfrage] zu Künstliche Intelligenz teil.**]{.alert}
+| Monat    | Tag               | Vorlesung                                                                                               | Lead           | Start Bearbeitung        |
+|:---------|:------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|
+| Oktober  | 07.               | [Orga] (**Zoom**); [Einführung KI], [Problemlösen]                                                      | Carsten, Canan |                          |
+|          | 14.               | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | [Blatt: Suche]           |
+|          | 21.               | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: EA/GA]           |
+|          | 28.               | [Optimale Spiele], [Games], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                             | Carsten        | [Blatt: Games]           |
+| November | 04.               | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | [Blatt: DTL]             |
+|          | 11.               | [Perzeptron]                                                                                            | Canan          | [Blatt: Perzeptron]      |
+|          | 18.               | [Lineare Regression]                                                                                    | Canan          | [Blatt: Regression]      |
+|          | 25.               | [Logistische Regression]                                                                                | Canan          |                          |
+| Dezember | 02.               | [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | [Blatt: MLP]             |
+|          | 09.               | [Backpropagation]                                                                                       | Canan          | [Blatt: Backpropagation] |
+|          | 16.               | [Training & Testing], [Performanzanalyse]                                                               | Canan          |                          |
+|          | 23.               | _Weihnachtspause_                                                                                       |                |                          |
+|          | 30.               | _Weihnachtspause_                                                                                       |                |                          |
+| Januar   | 06.               | [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | [Blatt: CSP]             |
+|          | 13.               | [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | [Blatt: Naive Bayes]     |
+|          | 20.               | Rückblick (**Zoom**), [Prüfungsvorbereitung HSBI]                                                       | Carsten        |                          |
+|          |                   |                                                                                                         |                |                          |
+|          | _(Prüfungsphase)_ | _Klausur_                                                                                               |                |                          |
 
 :::
 ::: {.tab title="TDU"}
 
-| Woche | Datum Vorlesung | Themen                                                                                                        | Lead           | Start Bearbeitung |
-|:-----:|:----------------|:--------------------------------------------------------------------------------------------------------------|:---------------|:------------------|
-|  40   | Mo, 02.10.      | Orga TDU (**Zoom**) \|\| [Einführung KI] \| [Problemlösen]                                                    | Canan, Carsten |                   |
-|  41   | Mo, 09.10.      | [Machine Learning 101] \| [CAL2] \| [Pruning] \| [CAL3] \| [Entropie] \| [ID3 und C4.5]                       | Carsten        | [B05]             |
-|  42   | Mo, 16.10.      | [Tiefensuche] \| [Breitensuche] \| [Branch-and-Bound] \| [Best First] \| [A-Stern]                            | Carsten        | [B01]             |
-|  43   | Mo, 23.10.      | [Gradientensuche] \| [Simulated Annealing] \|\| [Intro EA/GA] \| [Genetische Algorithmen]                     | Carsten        | [B02]             |
-|  44   | Mo, 30.10.      | [Optimale Spiele] \| [Minimax] \| [Minimax und Heuristiken] \| [Alpha-Beta-Pruning]                           | Carsten        | [B03]             |
-|  45   | Mo, 06.11.      | [Einführung Constraints] \| [Lösen von diskreten CSP] \| [CSP und Heuristiken] \| [Kantenkonsistenz und AC-3] | Carsten        | [B04]             |
-|  46   | Mo, 13.11.      | [Wahrscheinlichkeitstheorie] \| [Naive Bayes]                                                                 | Carsten        | [B06]             |
-|  47   | Mo, 20.11.      | **Zwischenprüfung**                                                                                           |                |                   |
-|  48   | Mo, 27.11.      | [Perzeptron]                                                                                                  | Canan          | [B07]             |
-|  49   | Mo, 04.12.      | [Lineare Regression]                                                                                          | Canan          | [B08]             |
-|  50   | Mo, 11.12.      | [Logistische Regression]                                                                                      | Canan          |                   |
-|  51   | Mo, 18.12.      | [Overfitting] \| [Multilayer Perceptron]                                                                      | Canan          | [B09]             |
-|  52   | Mo, 25.12.      | [Backpropagation]                                                                                             | Canan          | [B10]             |
-|  02   | Mo, 08.01.      | [Training & Testing] \| [Performanzanalyse] \|\| [Prüfungsvorbereitung TDU]                                   | Canan          |                   |
+| Monat     | Tag                            | Vorlesung                                                                                               | Lead           | Start Bearbeitung        |
+|:----------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|
+| September | 16.                            | [Orga] (**Zoom**); [Einführung KI], [Problemlösen]                                                      | Canan, Carsten |                          |
+|           | 23.                            | [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | [Blatt: CSP]             |
+|           | 30.                            | [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | [Blatt: Naive Bayes]     |
+| Oktober   | 07. (**13:00 - 14:00** Uhr TR) | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | [Blatt: DTL]             |
+|           | 14.                            | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | [Blatt: Suche]           |
+|           | 21.                            | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: EA/GA]           |
+|           | 28.                            | [Optimale Spiele], [Games], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                             | Carsten        | [Blatt: Games]           |
+| November  | 04.                            | **Zwischenprüfung**                                                                                     |                |                          |
+|           | 11.                            | [Perzeptron]                                                                                            | Canan          | [Blatt: Perzeptron]      |
+|           | 18.                            | [Lineare Regression]                                                                                    | Canan          | [Blatt: Regression]      |
+|           | 25.                            | [Logistische Regression]                                                                                | Canan          |                          |
+| Dezember  | 02.                            | [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | [Blatt: MLP]             |
+|           | 09.                            | [Backpropagation]                                                                                       | Canan          | [Blatt: Backpropagation] |
+|           | 16.                            | [Training & Testing], [Performanzanalyse]                                                               | Canan          |                          |
+|           | 23.                            | [Vorschau Deep Learning (CNN, RNN)]                                                                     | Canan          |                          |
+|           | 30.                            | [Prüfungsvorbereitung TDU]                                                                              | Canan          |                          |
 
 :::
 ::::::
 
-[Umfrage]: https://www.hsbi.de/elearning/goto.php?target=svy_1339632&client_id=FH-Bielefeld
+[Google Kalender]: https://calendar.google.com/calendar/ical/5121604486803dcdb5cfaa8602b8b09ce76743d8b9216795606617cac807e595%40group.calendar.google.com/public/basic.ics
+
+[Orga]: https://github.com/Compiler-CampusMinden/CB-Vorlesung-Bachelor/discussions/categories/q-a?discussions_q=category%3AQ%26A+is%3Aopen
 
 [Einführung KI]: lecture/intro/intro1-overview.md
 [Problemlösen]: lecture/intro/intro2-problemsolving.md
@@ -282,6 +293,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 [Training & Testing]: lecture/nn/nn7-training-testing.md
 [Performanzanalyse]: lecture/nn/nn8-testing.md
 <!-- [Large Language Models]: lecture/nn/nn9-llm.md -->
+[Vorschau Deep Learning (CNN, RNN)]: lecture/nn/nn10-cnn.md
 
 [Wahrscheinlichkeitstheorie]: lecture/naivebayes/nb1-probability.md
 [Naive Bayes]: lecture/naivebayes/nb2-naivebayes.md
@@ -299,48 +311,50 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| Woche | Blatt                  | Abgabe ILIAS                                                                                                     | Vorstellung Praktikum   |
-|:-----:|:-----------------------|:-----------------------------------------------------------------------------------------------------------------|:------------------------|
-|  43   | [B01]: Suche           | Mo, 23.10., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 23.10. / Di, 24.10. |
-|  44   | [B02]: EA/GA           | Mo, 30.10., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 30.10. / Di, 31.10. |
-|  45   | [B03]: Minimax         | Mo, 06.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 06.11. / Di, 07.11. |
-|  46   | [B04]: CSP             | Mo, 13.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 13.11. / Di, 14.11. |
-|  47   | [B06]: NB              | Mo, 20.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 20.11. / Di, 21.11. |
-|  48   | [B05]: DTL             | Mo, 27.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 27.11. / Di, 28.11. |
-|  49   | [B07]: Perzeptron      | Mo, 04.12., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 04.12. / Di, 05.12. |
-|  51   | [B08]: Lin./Log. Regr. | Mo, 18.12., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 18.12. / Di, 19.12. |
-|  02   | [B09]: MLP             | Mo, 08.01., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 08.01. / Di, 09.01. |
-|  03   | [B10]: Backpropagation | Mo, 15.01., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 15.01. / Di, 16.01. |
+| Blatt                    | Abgabe ILIAS                                                                                                     | Vorstellung Praktikum   |
+|:-------------------------|:-----------------------------------------------------------------------------------------------------------------|:------------------------|
+| [Blatt: Suche]           | Mo, 23.10., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 23.10. / Di, 24.10. |
+| [Blatt: EA/GA]           | Mo, 30.10., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 30.10. / Di, 31.10. |
+| [Blatt: Games]           | Mo, 06.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 06.11. / Di, 07.11. |
+| [Blatt: DTL]             | Mo, 27.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 27.11. / Di, 28.11. |
+| [Blatt: Perzeptron]      | Mo, 04.12., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 04.12. / Di, 05.12. |
+| [Blatt: Regression]      | Mo, 18.12., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 18.12. / Di, 19.12. |
+| [Blatt: MLP]             | Mo, 08.01., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 08.01. / Di, 09.01. |
+| [Blatt: Backpropagation] | Mo, 15.01., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 15.01. / Di, 16.01. |
+| [Blatt: CSP]             | Mo, 13.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 13.11. / Di, 14.11. |
+| [Blatt: Naive Bayes]     | Mo, 20.11., 17:00 Uhr ([Link](https://www.hsbi.de/elearning/goto.php?target=exc_1258631&client_id=FH-Bielefeld)) | Mo, 20.11. / Di, 21.11. |
+
+Abgabe der Übungsblätter jeweils **bis 08:00 Uhr** [im ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1356670&client_id=FH-Bielefeld).
 
 :::
 ::: {.tab title="TDU"}
 
-| Woche | Blatt                  | Vorstellung Übung |
-|:-----:|:-----------------------|:------------------|
-|  42   | [B05]: DTL             | Do, 19.10.        |
-|  43   | [B01]: Suche           | Do, 26.10.        |
-|  44   | [B02]: EA/GA           | Do, 02.11.        |
-|  45   | [B03]: Minimax         | Do, 09.11.        |
-|  46   | [B04]: CSP             | Do, 16.11.        |
-|  48   | [B06]: NB              | Do, 30.11.        |
-|  49   | [B07]: Perzeptron      | Do, 07.12.        |
-|  51   | [B08]: Lin./Log. Regr. | Do, 21.12.        |
-|  52   | [B09]: MLP             | Do, 28.12.        |
-|  02   | [B10]: Backpropagation | Do, 11.01.        |
+| Blatt                    | Vorstellung Übung |
+|:-------------------------|:------------------|
+| [Blatt: CSP]             | Do, 16.11.        |
+| [Blatt: Naive Bayes]     | Do, 30.11.        |
+| [Blatt: DTL]             | Do, 19.10.        |
+| [Blatt: Suche]           | Do, 26.10.        |
+| [Blatt: EA/GA]           | Do, 02.11.        |
+| [Blatt: Games]           | Do, 09.11.        |
+| [Blatt: Perzeptron]      | Do, 07.12.        |
+| [Blatt: Regression]      | Do, 21.12.        |
+| [Blatt: MLP]             | Do, 28.12.        |
+| [Blatt: Backpropagation] | Do, 11.01.        |
 
 :::
 ::::::
 
-[B01]: homework/sheet-search.md
-[B02]: homework/sheet-ea.md
-[B03]: homework/sheet-games.md
-[B04]: homework/sheet-csp.md
-[B05]: homework/sheet-dtl.md
-[B06]: homework/sheet-nb.md
-[B07]: homework/sheet-nn-perceptron.md
-[B08]: homework/sheet-nn-regression.md
-[B09]: homework/sheet-nn-mlp.md
-[B10]: homework/sheet-nn-backprop.md
+[Blatt: Suche]: homework/sheet-search.md
+[Blatt: EA/GA]: homework/sheet-ea.md
+[Blatt: Games]: homework/sheet-games.md
+[Blatt: CSP]: homework/sheet-csp.md
+[Blatt: DTL]: homework/sheet-dtl.md
+[Blatt: Naive Bayes]: homework/sheet-nb.md
+[Blatt: Perzeptron]: homework/sheet-nn-perceptron.md
+[Blatt: Regression]: homework/sheet-nn-regression.md
+[Blatt: MLP]: homework/sheet-nn-mlp.md
+[Blatt: Backpropagation]: homework/sheet-nn-backprop.md
 
 
 ## Förderungen und Kooperationen
