@@ -1,0 +1,3406 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="generator" content="Relearn 6.1.0">
+    <meta name="description" content="Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Search und Graph-Search entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.
+Uninformierte Suche Informierte Suche Lokale Suche ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Suche">
+    <meta name="twitter:description" content="Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Search und Graph-Search entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.
+Uninformierte Suche Informierte Suche Lokale Suche ">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">
+    <meta property="og:title" content="Suche">
+    <meta property="og:description" content="Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Search und Graph-Search entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.
+Uninformierte Suche Informierte Suche Lokale Suche ">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Suche">
+    <meta itemprop="description" content="Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Search und Graph-Search entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.
+Uninformierte Suche Informierte Suche Lokale Suche ">
+    <meta itemprop="wordCount" content="28">
+    <title>Suche</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html" rel="canonical" type="text/html" title="Suche">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1722610334" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1722610334" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1722610334" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1722610334" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1722610334" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1722610334"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1722610334";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Suche
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="suche">Suche</h1>
+
+<p>Problemlösen durch Suche im Problemgraphen. Aus den Basisalgorithmen Tree-Search und Graph-Search
+entstehen je nach verwendeter Datenstruktur und nach betrachteten Kosten unterschiedliche Suchalgorithmen.</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed.html">Uninformierte Suche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed.html">Informierte Suche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local.html">Lokale Suche</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Suche</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="uninformierte-suche">Uninformierte Suche</h1>
+
+<p>... jeder Schritt &quot;kostet&quot; gleich viel: nur die Anzahl der Schritte zählt ...</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs.html">Suche mit Tiefensuche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html">Suche mit Breitensuche</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Uninformierte Suche</h1>
+<article class="default">
+<h1>Suche mit Tiefensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Die Tiefensuche gehört zu den &quot;Uninformierten Suchverfahren&quot;: Es werden keine weiteren
+Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.</p>
+<p>Die Tiefensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur einen <strong>Stack</strong> benutzt: Expandierte Nachfolger werden immer <strong>oben</strong>
+auf den Stack gelegt, und der nächste zu expandierende Knoten wird <strong>oben</strong> vom Stack
+genommen. Dadurch verfolgt die Tiefensuche einen Pfad immer erst in die Tiefe.</p>
+<p>Bei Sackgassen erfolgt automatisch ein Backtracking, d.h. es wird zum letzten Knoten mit
+einer Alternative zurückgegangen. Dies liegt daran, dass bei einer Sackgasse keine
+Nachfolger expandiert und oben auf den Stack gelegt werden.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/NzTugnuHSZ8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Tiefensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/01a264be691d64ecb2ca389006177bec25cc3d31a750c648e0d7450d07cbf907dd98e0248ef97d40999f7fb06355f5235827bf05f3a087b8e2511bbd68d2d5da' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Tiefensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K3) Uninformierte Suchverfahren: Tiefensuche</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-c98382c8116a038b5c965ba6410ba6d3" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/scene.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c98382c8116a038b5c965ba6410ba6d3"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/scene.png?width=60%25&height=auto"></a></p>
+</div>
+<p>Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek
+und einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für
+den Roboter lautet: Hole das Buch aus der Bibliothek (und bringe es zum Kopier).
+(Damit das Beispiel und der sich daraus ergebende Problemgraph nicht zu groß und zu
+unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch
+in der Bibliothek aufnimmt.)</p>
+<p>Es stehen zwei Aktionen zur Verfügung:</p>
+<ol>
+<li>Der Roboter kann von einem in den nächsten Raum wechseln (Kosten siehe Pfeile)</li>
+<li>Der Roboter kann das Buch aufnehmen (Kosten: 3)</li>
+</ol>
+<p>Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilrichtung).</p>
+<h2 id="problemgraph-zum-kopiererbeispiel">Problemgraph zum Kopiererbeispiel</h2>
+<div class='center'>
+<p><a href="#R-image-9b0d714e69b4600ba89b39e36141141e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9b0d714e69b4600ba89b39e36141141e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Uninformierte (&quot;blinde&quot;) Suche</strong>:</p>
+<p>Keine Informationen über die Kosten eines Pfades: Nur die <span class='alert'>Pfadlänge</span> (Anzahl der Schritte) zählt.</p>
+<p>Varianten:</p>
+<ul>
+<li><strong>Tiefensuche</strong></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html">Breitensuche</a></li>
+</ul>
+<h2 id="anmerkungen-wegesuche-landkarte">Anmerkungen Wegesuche (Landkarte)</h2>
+<p>Bei der Wegesuche hat man den Problemgraphen bereits durch die Orte und die Verbindungen (Straßen)
+zwischen ihnen gegeben. Es gibt nur eine ausführbare Aktion: &quot;<em>fahre nach</em>&quot;.</p>
+<p>Dabei können nur die Anzahl der Zwischenstationen auf dem Weg gezählt werden (&quot;uninformierte
+Suche&quot;), oder man ordnet den Kanten Kosten zu (bei der Wegesuche wären dies die Entfernungen
+zwischen den Orten oder die Zeit, die man von A nach B braucht) und landet damit bei der
+&quot;informierten Suche&quot;.</p>
+<p>Normalerweise hat man eine Ordnung auf den Aktionen, d.h. für einen Knoten ergibt sich daraus
+eine Reihenfolge, in der die Aktionen angewendet werden und die Nachfolger expandiert werden.
+Bei der Wegesuche hat man dies nicht, insofern muss man willkürlich eine Ordnung festlegen.
+In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte).</p>
+<h2 id="tiefensuche-ts-dfs">Tiefensuche (<em>TS</em>, <em>DFS</em>)</h2>
+<p><strong>Erinnerung Tree-Search</strong></p>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Expandiere alle Nachfolger des Knotens und füge diese in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>=&gt; Was passiert, wenn wir einen <span class='alert'><strong>Stack</strong></span> einsetzen?</p>
+<div class='center'>
+<p><a href="#R-image-0df715fc7bb0001fdd21514147f1e0c6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0df715fc7bb0001fdd21514147f1e0c6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="bemerkungen">Bemerkungen</h2>
+<ul>
+<li>
+<p>Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände</p>
+</li>
+<li>
+<p>Suchalgorithmus mit <span class='alert'><strong>Stack</strong></span> als Datenstruktur =&gt; <strong>Tiefensuche</strong></p>
+<ul>
+<li>Zu betrachtender Knoten in Schritt 2 wird <em>oben</em> vom Stack genommen</li>
+<li>Expandierte Knoten werden in Schritt 2.a <em>oben</em> auf den Stack gelegt
+Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!</li>
+</ul>
+<p>Auswirkung: Weg wird in die <strong>Tiefe</strong> verfolgt (deshalb &quot;Tiefensuche&quot;)</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs.html#id_Russell2020">[Russell2020]</a> wird die Datenstruktur zum Halten der zu expandierenden Knoten (also
+hier im Fall der Tiefensuche der Stack) auch &quot;<strong>Frontier</strong>&quot; genannt.</p>
+</li>
+<li>
+<p><strong>Backtracking</strong>: Wenn der Weg in eine Sackgasse führt, d.h. ein Knoten
+keine Nachfolger hat, werden bei der Expansion des Knotens keine Nachfolger
+auf den Stack gelegt. Die Evaluation des nächsten Knotens auf dem Stack
+bewirkt deshalb ein <em>Zurückspringen</em> im Suchbaum zum letzten Knoten auf dem
+aktuellen Weg mit noch offenen Alternativen ...</p>
+</li>
+</ul>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
+sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
+soll aber natürlich die Reihenfolge der ursprünglich in der Datenstruktur enthaltenen Knoten
+nicht modifiziert werden. (Bei &quot;echten&quot; Problemen wird die Reihenfolge der expandierten
+Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)</p>
+<h2 id="weitere-hinweise">Weitere Hinweise</h2>
+<ul>
+<li>
+<p>Die Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
+einsetzen. Wichtig ist nur, dass als Datenstruktur ein <strong>Stack</strong> genutzt wird.</p>
+</li>
+<li>
+<p>Bei Tree-Search werden bereits besuchte Knoten u.U. immer wieder besucht. Zyklen im aktuell
+entwickelten Pfad sind also möglich! Außerdem sind mehrere Wege zum selben (Zwischen-/End-)
+Knoten in der Datenstruktur möglich!</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs.html#id_Russell2020">[Russell2020]</a> wird der Begriff &quot;Backtracking&quot; für den rekursiven Tiefensuche-Algorithmus
+verwendet. Dies steht im Gegensatz zum üblichen Sprachgebrauch in der KI!</p>
+</li>
+</ul>
+<h2 id="tiefensuche-rekursive-variante">Tiefensuche (rekursive Variante)</h2>
+<ol>
+<li>Startknoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Für jeden Nachfolger des Startknotens:
+<ul>
+<li>Rufe Tiefensuche für aktuellen (Nachfolger-) Knoten auf</li>
+<li>Ergebnis &quot;<em>gefunden</em>&quot;: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+</ul>
+</li>
+<li>Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+</ol>
+<h3 id="bemerkungen-1">Bemerkungen</h3>
+<ul>
+<li>Eigenschaften wie &quot;normale&quot; Tiefensuche</li>
+<li>Einfacher zu implementieren: Nutzung des Stacks wird auf den Compiler
+verlagert (Funktionsaufruf, Stack des Prozesses ...)</li>
+<li>Speicherbedarf: Für jeden Knoten wird nur der nächste Knoten expandiert,
+plus Speicher für die Funktion</li>
+</ul>
+<h2 id="eigenschaften-der-tiefensuche">Eigenschaften der Tiefensuche</h2>
+<p>Siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html">Breitensuche</a></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Uninformierte Suchverfahren
+<ul>
+<li>Keine weiteren Pfadkosten (nur Anzahl der Schritte)</li>
+<li>Tiefensuche: Verfolge einen Pfad zuerst in die Tiefe</li>
+<li>Backtracking bei Sackgassen (automatisch durch den Stack)</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106596&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Tiefensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-search.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Tiefensuche: Abschnitt 3.4.3</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Suche mit Breitensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Die Breitensuche gehört zu den &quot;Uninformierten Suchverfahren&quot;: Es werden keine weiteren
+Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.</p>
+<p>Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur eine <strong>Queue</strong> benutzt: Expandierte Nachfolger werden immer <strong>hinten</strong>
+in die Queue eingefügt, und der nächste zu expandierende Knoten wird <strong>vorn</strong> aus der
+Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum ebenenweise entwickelt.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/WLhXt6ZpyD8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Breitensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/2b90123c48bc56189a083a0c9131281307f860481a17fe3dadd3bd4891d01ef157d6c12a39b5255dd39ab36fe8fd36c714ca6873277ce98667094a3f91359a2e' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Breitensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K3) Uninformierte Suchverfahren: Breitensuche</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-868844b9ad1470bd19a585cc93386a89" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-868844b9ad1470bd19a585cc93386a89"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Uninformierte (&quot;blinde&quot;) Suche</strong>:</p>
+<p>Keine Informationen über die Kosten eines Pfades: Nur die <span class='alert'>Pfadlänge</span> (Anzahl der Schritte) zählt.</p>
+<p>Varianten:</p>
+<ul>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search1-dfs.html">Tiefensuche</a></li>
+<li><strong>Breitensuche</strong></li>
+</ul>
+<h2 id="breitensuche-bs-bfs">Breitensuche (<em>BS</em>, <em>BFS</em>)</h2>
+<p><strong>Erinnerung Graph-Search</strong></p>
+<ol>
+<li>Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein</li>
+<li>Entnehme Knoten aus der Datenstruktur:
+<ul>
+<li>Knoten ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;</li>
+<li>Markiere aktuellen Knoten, und</li>
+<li>Expandiere alle Nachfolger des Knotens und füge alle unmarkierten
+Nachfolger, die noch nicht in der Datenstruktur sind, in die
+Datenstruktur ein</li>
+</ul>
+</li>
+<li>Falls die Datenstruktur leer ist: Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<p>=&gt; Was passiert, wenn wir eine <span class='alert'><strong>Queue</strong></span> einsetzen?</p>
+<div class='center'>
+<p><a href="#R-image-62759a71ec17f739448aaa7affe6c189" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-62759a71ec17f739448aaa7affe6c189"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="bemerkungen">Bemerkungen</h2>
+<ul>
+<li>
+<p>Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände</p>
+</li>
+<li>
+<p>Suchalgorithmus mit <span class='alert'><strong>Queue</strong></span> als Datenstruktur =&gt; <strong>Breitensuche</strong></p>
+<ul>
+<li>Zu betrachtender Knoten in Schritt 2 wird <em>vorn</em> aus der Queue genommen</li>
+<li>Expandierte Knoten werden in Schritt 2.a <em>hinten</em> in die Queue eingefügt
+Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!</li>
+</ul>
+<p>Auswirkung: Suchbaum wird <strong>ebenenweise</strong> aufgebaut (deshalb &quot;Breitensuche&quot;)</p>
+</li>
+<li>
+<p>Graph-Search: Markierte Knoten müssen geeignet gespeichert werden: separate Datenstruktur
+=&gt; Aufwand!</p>
+</li>
+</ul>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten
+sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur auftauchen, dabei
+soll aber natürlich die Reihenfolge der ursprünglich in der Datenstruktur enthaltenen Knoten
+nicht modifiziert werden. (Bei &quot;echten&quot; Problemen wird die Reihenfolge der expandierten
+Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)</p>
+<h2 id="weitere-hinweise">Weitere Hinweise</h2>
+<ul>
+<li>
+<p>Die Breitensuche wurde zufällig am Beispiel Graph-Search eingeführt.
+Man kann auch die Tree-Search-Variante einsetzen. Wichtig ist nur, dass als
+Datenstruktur eine Queue genutzt wird.</p>
+</li>
+<li>
+<p>Im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html#id_Russell2020">[Russell2020]</a> wird die Breitensuche ebenfalls auf der Basis des
+Graph-Search-Algorithmus eingeführt. Allerdings wird die Abbruchbedingung
+modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search
+eigentlich definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird,
+sondern bereits bei der Erzeugung der Nachfolgerknoten (vor dem Einfügen in
+die Queue). Dadurch spart man sich die Expansion einer zusätzlichen Ebene:
+Die Komplexität wäre in diesem Fall &quot;nur&quot; 
+<span class="math align-center">$O(b^{d})$</span>.</p>
+</li>
+</ul>
+<h2 id="vergleich-ts-bs">Eigenschaften Breitensuche vs. Tiefensuche</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><strong>Tiefensuche</strong></th>
+<th style="text-align:left"><strong>Breitensuche</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Vollständigkeit</td>
+<td style="text-align:left">nein<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:left">ja<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:left">Optimalität</td>
+<td style="text-align:left">nein</td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Zeitkomplexität</td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^m)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^{d+1})$</span></td>
+</tr>
+<tr>
+<td style="text-align:left">Speicherkomplexität</td>
+<td style="text-align:left">
+<span class="math align-center">$O(bm)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$O(b^{d+1})$</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Zeitkomplexität: maximal zu expandierende Knotenzahl</li>
+<li>Speicher:
+<ul>
+<li>TS: in jeder Tiefe weitere 
+<span class="math align-center">$b$</span> Knoten speichern</li>
+<li>BS: alle Knoten einer Ebene im Speicher halten<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+</li>
+</ul>
+<p><strong>b</strong>: Verzweigungsfaktor, <strong>d</strong>: Ebene d. höchsten Lösungsknotens, <strong>m</strong>:
+Länge d. längsten Pfades</p>
+<h2 id="praxisvergleich-breitensuche-vs-tiefensuche">Praxisvergleich Breitensuche vs. Tiefensuche</h2>
+<p><strong>Breitensuche</strong>:
+Annahme: 
+<span class="math align-center">$b=10$</span>, 10.000 Knoten/s, 1.000 Byte/Knoten</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Tiefe</strong></th>
+<th style="text-align:left"><strong>exp. Knoten</strong></th>
+<th style="text-align:left"><strong>Zeit</strong></th>
+<th style="text-align:left"><strong>Speicher</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">
+<span class="math align-center">$10^3$</span></td>
+<td style="text-align:left">0.1 s</td>
+<td style="text-align:left">1 MB</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">
+<span class="math align-center">$10^5$</span></td>
+<td style="text-align:left">10 s</td>
+<td style="text-align:left">100 MB</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">
+<span class="math align-center">$10^7$</span></td>
+<td style="text-align:left">20 min</td>
+<td style="text-align:left">10 GB</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">
+<span class="math align-center">$10^9$</span></td>
+<td style="text-align:left">30 h</td>
+<td style="text-align:left">1 TB</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">
+<span class="math align-center">$10^{11}$</span></td>
+<td style="text-align:left">130 d</td>
+<td style="text-align:left">100 TB</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tiefensuche</strong>:
+Annahme: längster Pfad (Tiefe) 
+<span class="math align-center">$m=1000$</span></p>
+<p>=&gt; Speicherbedarf <span class='alert'><strong>ca. 10 MB</strong></span></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Uninformierte Suchverfahren
+<ul>
+<li>Keine weiteren Pfadkosten (nur Anzahl der Schritte)</li>
+<li>Breitensuche: Verfolge alle Pfade (baue den Suchbaum ebenenweise auf)</li>
+</ul>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>gilt für Tree-Search-Variante; vollständig in Graph-Search-Variante bei endlichem Suchraum&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>falls <em>b</em> endlich&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>
+<span class="math align-center">$O(b^{d})$</span> mit vorgezogener Zielprüfung (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/uninformed/search2-bfs.html#id_Russell2020">[Russell2020]</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Breitensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-search.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Breitensuche: Abschnitt 3.4.1</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="informierte-suche">Informierte Suche</h1>
+
+<p>... Einsatz einer Kostenfunktion ...</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound.html">Suche mit Branch-and-Bound</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst.html">Suche mit Best First</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html">Suche mit A*</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Informierte Suche</h1>
+<article class="default">
+<h1>Suche mit Branch-and-Bound</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Branch-and-Bound gehört zu den &quot;Informierten Suchverfahren&quot;: Es werden
+(reale) Pfadkosten statt der Anzahl der Schritte berücksichtigt.</p>
+<p>Branch-and-Bound entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur eine sortierte <strong>Queue</strong> (Prioritätsqueue) benutzt: Expandierte Nachfolger
+werden immer <strong>hinten</strong> in die Queue eingefügt, diese wird nach den <strong>Kosten der partiellen
+Pfade sortiert</strong> und der nächste zu expandierende Knoten (d.h. der bisher günstigste partielle
+Weg) wird <strong>vorn</strong> aus der Queue genommen. Branch-and-Bound arbeitet mit den bisher
+entstandenen (realen) Kosten der partiellen Wege.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/WBL-sihpbaM' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Branch-and-Bound</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/a9df47470cf25d0f57646f04280a04e6ff323f142151641b95c76b47ba0bcd10cca5d53d287842e551e119a6b9ba21609f7ddc05c38aca416115e14f9104810a' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Branch-and-Bound</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K2) Bedeutung nicht-negativer Kosten für Branch-and-Bound</li> <li>(K3) Informierte Suchverfahren: Branch-and-Bound</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-7266a23169281dccbc98f4d07079fe55" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7266a23169281dccbc98f4d07079fe55"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Informierte Suche: Nutzung der Kostenfunktion</strong>:</p>
+<p><strong>Gesamtkosten</strong>: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+<ul>
+<li>
+<span class="math align-center">$n \in S$</span> auf aktuellem Weg erreichter Knoten</li>
+<li>
+<span class="math align-center">$g(n)$</span> tatsächliche Kosten für Weg vom Start bis Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n)$</span> geschätzte Restkosten für Weg von Knoten 
+<span class="math align-center">$n$</span> zum Ziel
+=&gt; 
+<span class="math align-center">$h(n)$</span> wird auch &quot;heuristische Funktion&quot; oder &quot;Heuristik&quot; genannt</li>
+</ul>
+<p>Varianten:</p>
+<ul>
+<li><strong>Branch-and-Bound</strong></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst.html">Best First</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html">A*</a></li>
+</ul>
+<h2 id="branch-and-bound-bnb">Branch-and-Bound (<em>BnB</em>)</h2>
+<p>Variante der Breitensuche mit Kosten</p>
+<ul>
+<li>
+<p>Idee: Expandiere den <em>bisher</em> <span class='alert'>günstigsten</span> partiellen Weg</p>
+</li>
+<li>
+<p>Kostenfunktion: 
+<span class="math align-center">$f(n) = g(n)$</span></p>
+</li>
+<li>
+<p>Datenstruktur: <strong>sortierte Queue</strong> (Prioritätsqueue)</p>
+</li>
+<li>
+<p>Voraussetzung: <span class='alert'>alle Aktionen</span> haben <span class='alert'>positive Kosten</span>
+(jeden Knoten 
+<span class="math align-center">$n$</span> gilt: 
+<span class="math align-center">$g(n) > 0$</span>)</p>
+</li>
+</ul>
+<p><em>Hinweis</em>: Die Branch-and-Bound-Suche taucht im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound.html#id_Russell2020">[Russell2020]</a> als Erweiterung
+der &quot;Uniformen Suche&quot; auf ...</p>
+<h2 id="bnb-finde-einen-weg-von-a-nach-h">BnB: Finde einen Weg von A nach H</h2>
+<p><a href="#R-image-6c8852e5977645473b5fb750eba25756" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c8852e5977645473b5fb750eba25756"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+<h2 id="bemerkungen-zu-bnb-mit-graph-search">Bemerkungen zu BnB mit Graph-Search</h2>
+<p>Graph-Search fordert: Expandierte Nachfolgerknoten, die schon in der Queue
+sind, sollen nicht (erneut) in die Queue aufgenommen werden.</p>
+<ul>
+<li>
+<p>Problem dabei: Was ist mit den Kosten?! Der neu expandierte Weg könnte
+günstiger sein als der schon in der Queue enthaltene.</p>
+</li>
+<li>
+<p>Lösung (vgl. Optimierungsmöglichkeiten für A*):</p>
+<p>Füge zunächst alle neu expandierten partiellen Pfade (mit unmarkierten
+Endknoten) in die Queue ein, sortiere diese und behalte von mehreren
+Pfaden zum gleichen Knoten nur den jeweils günstigsten in der Queue</p>
+</li>
+</ul>
+<p>Pfade, deren Endknoten bereits früher im Pfad vorkommt (Schleifen), werden
+bei Graph-Search in Schritt 2 nicht in die Queue aufgenommen (der Endknoten
+wäre bei einer Schleife ja bereits markiert und der neue Pfad würde bei
+Graph-Search nicht weiter beachtet).</p>
+<p>Das Einfärben ist kein Problem, da nur der jeweils günstigste Knoten aus der
+Queue genommen, gefärbt und expandiert wird. D.h. alle anderen Wege sind zu
+diesem Zeitpunkt bereits teurer. Wenn man nun (später) über einen anderen Weg
+zu einem bereits gefärbten Knoten kommt, kann der neue Weg nicht günstiger sein
+(positive Kosten vorausgesetzt).</p>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf verzichten,
+wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen. Wer nicht mit
+Unterstreichen arbeiten will, muss eben dann manuell sortieren ...</p>
+<p>Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
+bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in der
+Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den analogen
+Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum selben
+(Zwischen-/End-) Knoten eingefügt werden soll.</p>
+<h2 id="eigenschaften-von-bnb">Eigenschaften von BnB</h2>
+<p>Siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html">A*</a></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Informierte Suchverfahren
+<ul>
+<li>Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten</li>
+<li>Branch-and-Bound: nur reale Pfadkosten 
+<span class="math align-center">$g(n)$</span></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106598&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Branch-and-Bound (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-search.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Suche mit Best First</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Best First gehört wie Branch-and-Bound zu den &quot;Informierten Suchverfahren&quot;: Es werden
+Pfadkosten (in diesem Fall Schätzungen) statt der Anzahl der Schritte berücksichtigt.</p>
+<p>Best First arbeitet algorithmisch wie Branch-and-Bound, allerdings werden immer nur die
+geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/dNyLOQuD_aI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Best First</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/4c065b44bafcd006400d7ae3ccdc25e04577d164e1aa0e118e29fa643b53bfbcaaa14dd12b93fa89105abc6f782947f7c04c849fb673a92c710da5c6b8c99083' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Best First</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K1) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K3) Informierte Suchverfahren Best-First</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-f1b4a4511508fb7e6e15a3bf1e6a9ea3" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1b4a4511508fb7e6e15a3bf1e6a9ea3"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Informierte Suche: Nutzung der Kostenfunktion</strong>:</p>
+<p><strong>Gesamtkosten</strong>: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+<ul>
+<li>
+<span class="math align-center">$n \in S$</span> auf aktuellem Weg erreichter Knoten</li>
+<li>
+<span class="math align-center">$g(n)$</span> tatsächliche Kosten für Weg vom Start bis Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n)$</span> geschätzte Restkosten für Weg von Knoten 
+<span class="math align-center">$n$</span> zum Ziel
+=&gt; 
+<span class="math align-center">$h(n)$</span> wird auch &quot;heuristische Funktion&quot; oder &quot;Heuristik&quot; genannt</li>
+</ul>
+<p>Varianten:</p>
+<ul>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound.html">Branch-and-Bound</a></li>
+<li><strong>Best First</strong></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html">A*</a></li>
+</ul>
+<h2 id="best-first-bf-bfs">Best-First (<em>BF</em>, <em>BFS</em>)</h2>
+<ul>
+<li>
+<p>Idee: Expandiere den partiellen Weg, der <span class='alert'>verspricht</span>, dem Ziel am
+nächsten zu sein (<strong>Heuristik</strong>)</p>
+</li>
+<li>
+<p>Kostenfunktion: 
+<span class="math align-center">$f(n) = h(n)$</span></p>
+</li>
+<li>
+<p>Datenstruktur: <strong>sortierte Queue</strong> (Prioritätsqueue)</p>
+</li>
+<li>
+<p>Voraussetzungen: 
+<span class="math align-center">$h(n)$</span> positiv, 
+<span class="math align-center">$h(n) = 0$</span> für den Zielknoten</p>
+</li>
+</ul>
+<h2 id="konventionen-bf">Konventionen BF</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf verzichten,
+wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen. Wer nicht mit
+Unterstreichen arbeiten will, muss eben dann manuell sortieren ...</p>
+<p>Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
+bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in der
+Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den analogen
+Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum selben
+(Zwischen-/End-) Knoten eingefügt werden soll.</p>
+<h2 id="eigenschaften-von-bf">Eigenschaften von BF</h2>
+<p>Siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html">A*</a></p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Informierte Suchverfahren
+<ul>
+<li>Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten</li>
+<li>Best-First: nur Schätzungen 
+<span class="math align-center">$h(n)$</span></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106599&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Best First (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p>Betrachten Sie folgende Landkarte und Restwegschätzungen:</p>
+<p><a href="#R-image-f077560dee64413c1c6b76eb4ec71d08" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f077560dee64413c1c6b76eb4ec71d08"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto"></a>
+Quelle: <a href="https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg" rel="external" target="_blank">MapGermanyGraph.svg</a> by <a href="https://de.wikipedia.org/wiki/Benutzer:Regnaron" rel="external" target="_blank">Regnaron</a> and <a href="https://commons.wikimedia.org/wiki/User:Jahobr" rel="external" target="_blank">Jahobr</a> on Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/en:public_domain" rel="external" target="_blank">Public Domain</a>)</p>
+<p><a href="#R-image-3c1d12f657d21ec694812dd265952f1b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenge.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c1d12f657d21ec694812dd265952f1b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenge.png?width=auto&height=auto"></a></p>
+<p>Finden Sie mit der <strong>Best-First-Suche</strong> jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit der Gradienten-Suche.</p>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-search.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Suche mit A*</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>A* zählt zu den Verfahren der informierten Suche. Dabei verwendet A* sowohl die
+realen Pfadkosten als auch die Schätzungen der Restkosten, d.h. die Kostenfunktion für
+A* ist 
+<span class="math align-center">$f(n) = g(n)+h(n)$</span>.</p>
+<p>A* ist vollständig und optimal, allerdings muss die Heuristik bei der Tree-Search-Variante
+<strong>zulässig</strong> sein (d.h. sie muss <em>unterschätzen</em>, beispielsweise die Luft-Linie) und bei der
+Graph-Search-Variante muss sie <strong>konsistent</strong> sein (d.h. für jeden Knoten die
+Dreiecks-Ungleichung erfüllen).</p>
+<p>A* hat wie BnB exponentiellen Aufwand. Durch die zusätzliche Verwendung der Heuristik
+werden die partiellen Pfade in der Queue aber geschickter sortiert, so dass A* in der
+Regel mit weniger Suchschritten als BnB auskommt.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/eMkEN-HtEs8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL A*</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/b4967369536da2af1f8b0efc443d7c2275ff292f786144c83524e1eb117dd5fc305993716fe4dc472056114d43360483755c45dd8e5938f635efe4fa0ea02509' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL A*</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Verwendete Datenstrukturen</li> <li>(K2) Algorithmische Abläufe, Terminierung</li> <li>(K2) Optimalität, Vollständigkeit und Komplexität</li> <li>(K2) Bedingung(en) an Restkostenabschätzung bei A*</li> <li>(K3) Informierte Suchverfahren A*</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="hole-das-buch">Hole das Buch</h2>
+<div class='center'>
+<p><a href="#R-image-44e92e2c818336af4cf9cf6c29c5d491" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar/graph.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44e92e2c818336af4cf9cf6c29c5d491"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar/graph.png?width=60%25&height=auto"></a></p>
+</div>
+<p>=&gt; <span class='alert'><strong>Problemlösen == Suche im Graphen</strong></span></p>
+<p><strong>Informierte Suche: Nutzung der Kostenfunktion</strong>:</p>
+<p><strong>Gesamtkosten</strong>: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+<ul>
+<li>
+<span class="math align-center">$n \in S$</span> auf aktuellem Weg erreichter Knoten</li>
+<li>
+<span class="math align-center">$g(n)$</span> tatsächliche Kosten für Weg vom Start bis Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n)$</span> geschätzte Restkosten für Weg von Knoten 
+<span class="math align-center">$n$</span> zum Ziel
+=&gt; 
+<span class="math align-center">$h(n)$</span> wird auch &quot;heuristische Funktion&quot; oder &quot;Heuristik&quot; genannt</li>
+</ul>
+<p>Varianten:</p>
+<ul>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search3-branchandbound.html">Branch-and-Bound</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search4-bestfirst.html">Best First</a></li>
+<li><strong>A*</strong></li>
+</ul>
+<h2 id="a-suche">A*-Suche</h2>
+<ul>
+<li>
+<p>Kombination aus Branch-and-Bound und Best-First-Suche</p>
+</li>
+<li>
+<p>Kostenfunktion: 
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></p>
+</li>
+<li>
+<p>Datenstruktur: <strong>sortierte Queue</strong> (Prioritätsqueue)</p>
+</li>
+<li>
+<p>Voraussetzung:</p>
+<ol>
+<li>Alle Aktionen haben positive Kosten (
+<span class="math align-center">$g(n) \ge \epsilon$</span>)</li>
+<li>Heuristik 
+<span class="math align-center">$h(n)$</span> muss <em>zulässig/konsistent</em> sein</li>
+</ol>
+</li>
+</ul>
+<div class='center'>
+<p><a href="#R-image-0918d1c2b4b86f9338f963430264bc53" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0918d1c2b4b86f9338f963430264bc53"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="konventionen-für-diese-lehrveranstaltung">Konventionen für diese Lehrveranstaltung</h2>
+<p>In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
+in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html#id_Russell2020">[Russell2020]</a>). Dies
+erschwert die Nachvollziehbarkeit, wenn man die Queue oder den Stack schrittweise aufschreibt.
+Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die <strong>partiellen Wege</strong>
+aufzuschreiben.</p>
+<p>Notieren Sie die Bestandteile der Kosten für jeden partiellen Weg in der Queue einzeln:
+&quot;
+<span class="math align-center">$g(n) + h(n) = f(n)$</span>&quot;. Das erleichtert Ihnen die weiteren Schritte, da Sie dort ja nur
+mit 
+<span class="math align-center">$g(n)$</span> weiter rechnen dürfen. Gleichzeitig erleichtert es die Nachvollziehbarkeit.</p>
+<p>Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf verzichten,
+wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen. Wer nicht mit
+Unterstreichen arbeiten will, muss eben dann manuell sortieren ...</p>
+<p>Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
+bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in der
+Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den analogen
+Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum selben
+(Zwischen-/End-) Knoten eingefügt werden soll.</p>
+<h2 id="a-suche----anforderungen-an-heuristik-tree-search">A*-Suche -- Anforderungen an Heuristik (Tree-Search)</h2>
+<p><strong>Tree-Search-Variante</strong>: Die Heuristik muss <span class='alert'><strong>zulässig</strong></span> sein:</p>
+<ul>
+<li>Seien 
+<span class="math align-center">$h^\star(n)$</span> die tatsächlichen optimalen Restkosten von einem Knoten
+
+<span class="math align-center">$n$</span> zum nächsten Ziel.</li>
+<li>Dann muss für jeden beliebigen Knoten 
+<span class="math align-center">$n$</span> gelten: 
+<span class="math align-center">$$h(n) \le h^\star(n)$$</span></li>
+<li>Außerdem muss gelten:
+<ul>
+<li>
+<span class="math align-center">$h(n) \ge 0$</span> für jeden Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n) = 0$</span> für jeden Zielknoten 
+<span class="math align-center">$n$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; Beispiel: Luftlinie als Abschätzung</p>
+<p><strong>Hinweis</strong>: Im der englischen Ausgabe des <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html#id_Russell2020">[Russell2020]</a> wird die
+<strong>zulässige Heuristik</strong> auch &quot;<strong>admissible heuristic</strong>&quot; genannt.</p>
+<h2 id="a-ist-optimal">A* ist optimal</h2>
+<p>A* (Tree-Search-Variante) mit zulässiger Heuristik ist optimal.</p>
+<p>Beweis siehe Übung :-)</p>
+<h2 id="einfache-verbesserungen-a-tree-search">Einfache Verbesserungen A* (Tree-Search)</h2>
+<ul>
+<li>
+<p>Dynamische Programmierung: Behalte von mehreren Pfaden zum gleichen Knoten
+nur den günstigsten in der Queue</p>
+</li>
+<li>
+<p>Pfade, deren Endknoten bereits früher im Pfad vorkommt (Schleifen), werden
+in Schritt 2 nicht in die Queue aufgenommen</p>
+</li>
+<li>
+<p>Übergang zur Graph-Search-Variante und Markierung von Knoten</p>
+<p>=&gt; Achtung: Dann schärfere Anforderungen an Heuristik (Konsistenz)</p>
+</li>
+</ul>
+<h2 id="a-suche----anforderungen-an-heuristik-graph-search">A*-Suche -- Anforderungen an Heuristik (Graph-Search)</h2>
+<p><strong>Graph-Search-Variante</strong>: Die Heuristik muss <span class='alert'><strong>konsistent</strong></span> sein:</p>
+<p>Für jeden Knoten 
+<span class="math align-center">$n$</span> und jeden durch eine Aktion 
+<span class="math align-center">$a$</span> erreichten Nachfolger 
+<span class="math align-center">$m$</span>
+gilt: 
+<span class="math align-center">$$h(n) \le c(n,a,m) + h(m)$$</span> mit 
+<span class="math align-center">$c(n,a,m)$</span> Schrittkosten für den Weg von
+
+<span class="math align-center">$n$</span> nach 
+<span class="math align-center">$m$</span> mit Aktion 
+<span class="math align-center">$a$</span>.</p>
+<p>Außerdem muss gelten:</p>
+<ul>
+<li>
+<span class="math align-center">$h(n) \ge 0$</span> für jeden Knoten 
+<span class="math align-center">$n$</span></li>
+<li>
+<span class="math align-center">$h(n) = 0$</span> für jeden Zielknoten 
+<span class="math align-center">$n$</span></li>
+</ul>
+<p>=&gt; Eine konsistente Heuristik ist gleichzeitig zulässig.</p>
+<p><strong>Hinweis</strong>: Im der englischen Ausgabe des <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/informed/search5-astar.html#id_Russell2020">[Russell2020]</a> wird die
+<strong>konsistente Heuristik</strong> auch &quot;<strong>consistent heuristic</strong>&quot; genannt.</p>
+<h2 id="vergleich-bnb-bf-astar">Eigenschaften Branch-and-Bound, Best-First, A*</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><strong>Branch-and-Bound</strong></th>
+<th style="text-align:left"><strong>Best-First</strong></th>
+<th style="text-align:left"><strong>A*</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Kosten</td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = g(n)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = h(n)$</span></td>
+<td style="text-align:left">
+<span class="math align-center">$f(n) = g(n) + h(n)$</span></td>
+</tr>
+<tr>
+<td style="text-align:left">Vollständigkeit</td>
+<td style="text-align:left">ja<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:left">nein<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Optimalität</td>
+<td style="text-align:left">ja</td>
+<td style="text-align:left">nein</td>
+<td style="text-align:left">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">Aufwand</td>
+<td style="text-align:left">exponentiell</td>
+<td style="text-align:left">exponentiell</td>
+<td style="text-align:left">exponentiell</td>
+</tr>
+<tr>
+<td style="text-align:left">Bemerkung</td>
+<td style="text-align:left">Probiert erst alle &quot;kleinen&quot; Pfade</td>
+<td style="text-align:left">Suchverlauf stark abh. v. Heuristik</td>
+<td style="text-align:left">Heuristik: zulässig bzw. konsistent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>
+<p>Informierte Suchverfahren</p>
+<ul>
+<li>Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten</li>
+<li>A*: komplette Kostenfunktion 
+<span class="math align-center">$f(n) = g(n)+h(n)$</span>
+=&gt; besondere Anforderungen an die Heuristik!
+(Tree-Search: <em>zulässige</em> Heuristik; Graph-Search: <em>konsistente</em> Heuristik)</li>
+</ul>
+</li>
+<li>
+<p>Ausblick auf Verbesserungen der vorgestellten Suchverfahren:</p>
+<ul>
+<li>Beschränkung der Suchtiefe (&quot;Depth-Limited-Search&quot;)</li>
+<li>Iterative Vertiefung der Suchtiefe (&quot;Iterative-Deepening-Search&quot;),
+beispielsweise IDA* (&quot;Iterative-Deepening A*&quot;)</li>
+<li>Beschränkung des verwendeten Speichers, beispielsweise SMA*
+(&quot;Simplified Memory-Bounded A*&quot;)</li>
+</ul>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>BnB vollständig: Kosten größer Epsilon (positiv)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>gilt für Tree-Search-Variante; vollständig bei Graph-Search und endlichen Problemräumen&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106600&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest A* (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Informierte und uninformierte Suche</strong></p>
+<p>Betrachten Sie folgendes Problem:</p>
+<p><a href="#R-image-b1157b0e2f2889dcb7f80845bd5e63a9" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenges_robby.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b1157b0e2f2889dcb7f80845bd5e63a9"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/informed/images/challenges_robby.png?width=auto&height=auto"></a></p>
+<p>Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur. Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang durchschritten werden darf. Die Werte an den Pfeilen geben die Kosten für den Übergang von einem Raum in den anderen an.</p>
+<p>Ein Roboter <code>Robbi</code>, der sich zunächst im Kopierer-Raum aufhält, soll den Weg zur Bibliothek finden und dort das Buch aufnehmen. Der Roboter kann sich immer nur entlang den Pfeilen in einen Nachbarraum bewegen (Aktion <code>move</code>). Die Kosten für das Aufnehmen des Buches betragen 3 Einheiten (Aktion <code>take</code>). Weitere Aktionen gibt es nicht.</p>
+<ol>
+<li>Zeichnen Sie den Problemgraphen. Markieren Sie Start- und Zielknoten.</li>
+<li>Finden Sie den Weg mit Tiefensuche und mit Breitensuche (Tree-Search). Welche Unterschiede stellen Sie fest?</li>
+<li>Welche Wege würden mit der jeweiligen Graph-Search-Variante nicht weiter untersucht?</li>
+<li>Suchen Sie nun einen Weg mit A* (Tree-Search). Definieren Sie zunächst Restkostenschätzungen. Was müssen Sie dabei beachten?</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-search.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Problemlösen, Suche</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>A*: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="lokale-suche">Lokale Suche</h1>
+
+<p>... das Ziel ist im Weg ...</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient.html">Lokale Suche: Gradientensuche</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search7-annealing.html">Lokale Suche: Simulated Annealing</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Lokale Suche</h1>
+<article class="default">
+<h1>Lokale Suche: Gradientensuche</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur das
+Erreichen des Ziels.</p>
+<p>In Analogie zum Bergsteigen: Gehe in Richtung des stärksten Anstiegs kann man die Suche so
+formulieren, dass man in jedem Suchschritt den Nachfolgeknoten nach dem stärksten Anstieg
+der Kostenfunktion auswählen. Dieses Verfahren nennt sich auch <strong>Hill-Climbing</strong> (bzw.
+Gradientensuche).</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/TcTF9xdW3WU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Gradientensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/84cc094fbc7c016ef48c76ac38c0e13cb2ca06dea4843658b362ba917c595f4ba90d4be19bd6374cae8ea7ca0d241a522e93dd099fd735c03668e106e85557ed' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Gradientensuche</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Problematik der lokalen Minima bei Gradientenverfahren</li> <li>(K3) Lokale Suche (Gradientenabstieg)</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="unterschiede-in-den-suchproblemen">Unterschiede in den Suchproblemen?</h2>
+<div class='columns'>
+<div class='column'>
+<p><a href="#R-image-085073021110653604af419679eb325d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/graph.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-085073021110653604af419679eb325d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/graph.png?width=80%25&height=auto"></a></p>
+</div>
+<div class='column'>
+<p><a href="#R-image-08263c3e14048d4a262177668d924bcc" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/screenshot_stundenplan.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08263c3e14048d4a262177668d924bcc"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/screenshot_stundenplan.png?width=80%25&height=auto"></a></p>
+</div>
+</div>
+<p>Bisher betrachtete Suchverfahren:</p>
+<ul>
+<li>Systematische Erkundung des Suchraums</li>
+<li><span class='alert'><strong>Weg</strong></span> zur Lösung wichtig</li>
+</ul>
+<p>=&gt; Oft aber nur das <span class='alert'><strong>Ziel</strong></span> <strong>an sich</strong> interessant!
+(Und nicht, wie man dort hin gelangt.)</p>
+<p>Beispiel: Stundenplan</p>
+<h2 id="analogie-bergsteigen-ohne-karte-und-pfade">Analogie: Bergsteigen ohne Karte und Pfade</h2>
+<p><a href="#R-image-6bc4bd9bb3135b79047a91f9f410c418" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/hill-climbing.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6bc4bd9bb3135b79047a91f9f410c418"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/hill-climbing.png?width=50%25&height=auto"></a></p>
+<p><strong>Gradienten-Suche</strong>:
+&quot;Gehe in Richtung des <span class='alert'>steilsten Anstiegs</span> der <span class='alert'>Zielfunktion</span>.&quot;</p>
+<p>=&gt; Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)</p>
+<ul>
+<li>Verschiedene Namen: &quot;Hill-climbing&quot;, &quot;Greedy local search&quot;</li>
+<li>Kann auch als Minimierung angewendet werden</li>
+</ul>
+<h2 id="pseudoalgorithmus-gradientensuche">Pseudoalgorithmus Gradientensuche</h2>
+<div style="text-align:center;">
+<span class="badge cstyle primary"><span class="badge-content"><p>&quot;<em>Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust</em>&quot;</p>
+</span></span>
+</div>
+<ol>
+<li>Setze <code>currNode</code> auf den Startknoten</li>
+<li><code>currNode</code> ist gesuchtes Element: Abbruch, melde &quot;<em>gefunden</em>&quot;
+<ul>
+<li>Expandiere alle Nachfolger von <code>currNode</code></li>
+<li>Setze <code>nextNode</code> auf Nachfolger mit höchster Bewertung</li>
+<li>Falls Bewertung von <code>nextNode</code> 
+<span class="math align-center">$\leq$</span> Bewertung von <code>currNode</code>:
+Abbruch, melde &quot;<em>nicht gefunden</em>&quot;</li>
+<li>Setze <code>currNode</code> auf <code>nextNode</code></li>
+</ul>
+</li>
+<li>Gehe zu Schritt 2</li>
+</ol>
+<div class='center'>
+<p><a href="#R-image-6bcef891388f6a72d7d1b1e9e7142896" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/tafelbeispiel.png?width=90%25&height=auto" style=" height: auto; width: 90%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6bcef891388f6a72d7d1b1e9e7142896"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/tafelbeispiel.png?width=90%25&height=auto"></a></p>
+</div>
+<h2 id="beispiel-gradientensuche-hahahugoshortcode56s2hbhb-damen">Beispiel Gradientensuche: 
+<span class="math align-center">$n$</span>-Damen</h2>
+<ul>
+<li><strong>Ziel</strong>: Setze 
+<span class="math align-center">$n$</span> Damen auf ein 
+<span class="math align-center">$n \times n$</span>-Spielfeld ohne Konflikte</li>
+<li><strong>Start</strong>: Setze 
+<span class="math align-center">$n$</span> Damen auf ein 
+<span class="math align-center">$n \times n$</span>-Spielfeld (mit Konflikten)</li>
+<li><strong>Suche</strong>: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert wird</li>
+</ul>
+<p>Schauen Sie sich auch Abb. 4.3 auf Seite 130 im <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient.html#id_Russell2020">[Russell2020]</a> an!</p>
+<p><strong>Hinweis</strong>: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
+=&gt; &quot;<span class='alert'>vollständige Zustandsformulierung</span>&quot;</p>
+<h3 id="eigenschaften-8-damen-problem-hahahugoshortcode56s7hbhb">Eigenschaften 8-Damen-Problem (
+<span class="math align-center">$n=8$</span>)</h3>
+<ul>
+<li>Zustandsraum: 
+<span class="math align-center">$8^8 \approx 17$</span> Millionen Zustände!</li>
+<li>Beginnend mit zufällig erzeugtem Startzustand:
+<ul>
+<li>bleibt in 86% der Fälle stecken, d.h.</li>
+<li>findet Lösung nur in 14% der Fälle.</li>
+</ul>
+</li>
+<li>Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
+nach durchschnittlich 3 Schritten stecken.</li>
+</ul>
+<p><span class='origin'>Quelle: nach <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient.html#id_Russell2020">[Russell2020, p. 131]</a></span></p>
+<h2 id="eigenschaften-gradientensuche">Eigenschaften Gradientensuche</h2>
+<ul>
+<li>Vollständigkeit: nein</li>
+<li>Optimalität: nein</li>
+<li>Komplexität: linear in der Anzahl der zu expandierenden Knoten</li>
+</ul>
+<p><span class='alert'><strong>Zielfunktion (Bewertung) nötig!</strong></span></p>
+<p><a href="#R-image-791ba37feecbadb41982029dcf59095d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/hill-climbing.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-791ba37feecbadb41982029dcf59095d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search6-gradient/hill-climbing.png?width=60%25&height=auto"></a></p>
+<p><span class='alert'><strong>Problem</strong></span>: lokale Maxima und Plateaus</p>
+<ul>
+<li>Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung</li>
+<li>Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt!</p>
+<ul>
+<li>Gradientenverfahren: Gehe in Richtung des stärksten Anstiegs der
+Kostenfunktion</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106601&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Gradientensuche (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p>Betrachten Sie folgende Landkarte und Restwegschätzungen:</p>
+<p><a href="#R-image-1385289e86502591a0452866597da8d7" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1385289e86502591a0452866597da8d7"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png?width=auto&height=auto"></a>
+Quelle: <a href="https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg" rel="external" target="_blank">MapGermanyGraph.svg</a> by <a href="https://de.wikipedia.org/wiki/Benutzer:Regnaron" rel="external" target="_blank">Regnaron</a> and <a href="https://commons.wikimedia.org/wiki/User:Jahobr" rel="external" target="_blank">Jahobr</a> on Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/en:public_domain" rel="external" target="_blank">Public Domain</a>)</p>
+<p><a href="#R-image-54fe9d96827d7ddbe8a47c8a17d22cd8" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/local/images/challenge.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-54fe9d96827d7ddbe8a47c8a17d22cd8"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/searching/local/images/challenge.png?width=auto&height=auto"></a></p>
+<p>Finden Sie mit der <strong>Gradienten-Suche</strong> jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit der Best-First-Suche.</p>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-ea.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Lokale Suche, GA</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Gradientenabstieg: Abschnitt 4.1.1</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>Lokale Suche: Simulated Annealing</h1>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-graduation-cap"></i> TL;DR</div>
+  <div class="box-content">
+
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
+das Erreichen des Ziels.</p>
+<p>Das Problem bei der Gradientensuche ist, dass man eine Kostenfunktion benötigt und
+diese auch <strong>lokale Minima</strong> enthalten kann. Mit der reinen Gradientensuche würde
+man bei Erreichen lokaler Minima die Suche abbrechen (müssen), da es keine weitere
+Verbesserung unter den Nachfolgern mehr geben kann. In Anlehnung an das Abkühlen von
+Metall kann hier eine Variante der lokalen Suche helfen: <strong>Simulated Annealing</strong>.
+Man führt einen &quot;Temperatur&quot;-Parameter ein, der im Laufe der Suche immer kleiner
+wird und schließlich gegen Null geht. In Abhängigkeit von dieser &quot;Temperatur&quot; wird
+mit einer bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer
+hohen Temperatur ist diese Wahrscheinlichkeit höher, bei einer niedrigen Temperatur
+niedriger, so dass das Verfahren in ein normales Hill-Climbing übergeht. Damit kann
+man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.</p>
+</div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (YouTube)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/vPg7PWuY2bM' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Simulated Annealing</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/5abd7e34f28bedb07ac3c4d9665a493bbf5b5cedfb97e91f9f2d8be0a3bace4e628a0b0ac2530e146ccbb0fd2de2fc99b48604d15c8b864b3f58825e8ca99260' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Simulated Annealing</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Funktionsweise Simulated Annealing</li></ul></div>
+</div>
+
+
+
+
+    <h2 id="motivation">Motivation</h2>
+<p><a href="#R-image-7e56abc17f9cfebe32e4ac4c2305ee08" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search7-annealing/hill-climbing.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e56abc17f9cfebe32e4ac4c2305ee08"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/local/search7-annealing/hill-climbing.png?width=60%25&height=auto"></a></p>
+<p><span class='alert'><strong>Problem</strong></span>: lokale Maxima und Plateaus</p>
+<ul>
+<li>Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung</li>
+<li>Plateaus: Hier muss der Algorithmus mit zufälligen Zügen explorieren</li>
+</ul>
+<p>Mögliche Lösungen:</p>
+<ul>
+<li>Neustart des Algorithmus, wenn kein Fortschritt erzielt wird</li>
+<li>Rauschen &quot;injizieren&quot;</li>
+</ul>
+<h2 id="gedankenexperiment-ausweg-aus-lokalen-minima">Gedankenexperiment: Ausweg aus lokalen Minima</h2>
+<ul>
+<li>&quot;Drehen der Landschaft&quot;: Minimieren statt Maximieren</li>
+<li>Ball wird in Zustandsraum-Landschaft gesetzt.</li>
+<li>Folge:
+<ul>
+<li>rollt steilsten Abstieg hinunter</li>
+<li>rollt evtl. in Tal auf halber Höhe (lokales Minimum)
+=&gt; bleibt dort gefangen</li>
+</ul>
+</li>
+</ul>
+<p>=&gt; &quot;<span class='alert'><strong>Schütteln</strong></span> der Landschaft&quot; -- Ball springt aus dem Tal und
+rollt in anderes Tal</p>
+<p>Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!</p>
+<h2 id="analogie-härten-von-metall">Analogie Härten von Metall</h2>
+<ul>
+<li>Metall erhitzen bis Atome frei beweglich</li>
+<li>Langsam abkühlen</li>
+</ul>
+<p>=&gt; stabiles Atomgitter mit minimalem Energiezustand</p>
+<h2 id="übertragen-der-idee">Übertragen der Idee</h2>
+<ul>
+<li>Starkes &quot;Schütteln&quot; (hohe &quot;Temperatur&quot;) am Anfang</li>
+<li>Schrittweises &quot;Abkühlen&quot; =&gt; &quot;Schütteln&quot; im Laufe der Zeit
+verringern</li>
+</ul>
+<p>=&gt; <span class='alert'><strong>Simulated Annealing</strong></span></p>
+<h2 id="pseudocode-simulated-annealing-minimierungsproblem">Pseudocode Simulated Annealing (Minimierungsproblem)</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">simulated_annealing</span>(problem):
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">=</span> problem<span style="color:#f92672">.</span>startNode
+</span></span><span style="display:flex;"><span>    t <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  temp <span style="color:#f92672">=</span> schedule(t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> temp<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        temp <span style="color:#f92672">=</span> schedule(<span style="color:#f92672">++</span>t)
+</span></span><span style="display:flex;"><span>        neighbors <span style="color:#f92672">=</span> current<span style="color:#f92672">.</span>expandSuccessors()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> neighbors: <span style="color:#66d9ef">return</span> current
+</span></span><span style="display:flex;"><span>        working <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>choice(neighbors)
+</span></span><span style="display:flex;"><span>        dE <span style="color:#f92672">=</span> problem<span style="color:#f92672">.</span>value(current) <span style="color:#f92672">-</span> problem<span style="color:#f92672">.</span>value(working)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> dE <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> probability(math<span style="color:#f92672">.</span>exp(dE<span style="color:#f92672">/</span>temp)):
+</span></span><span style="display:flex;"><span>            current <span style="color:#f92672">=</span> working
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> current</span></span></code></pre></div><p>Wenn <code>dE</code> positiv ist, dann ist der Nachfolger &quot;besser&quot; (hier: kleiner bewertet) als der aktuelle Knoten und wird immer
+als nächster Knoten übernommen.</p>
+<p>Wenn <code>dE</code> negativ ist, dann ist der betrachtete Nachfolger &quot;schlechter&quot; (hier: größer bewertet) als der aktuelle Knoten.
+Dann wird er mit einer Wahrscheinlichkeit <code>math.exp(dE/temp)</code> als nächster Knoten übernommen. Diese
+Wahrscheinlichkeit ist bei hohen Temperaturen <code>temp</code> eher hoch, und sinkt, je niedriger die Temperatur <code>temp</code> wird.</p>
+<p>Die Temperatur <code>temp</code> bewegt sich dabei von hohen positiven Werten auf den Wert Null (wird also nicht negativ).</p>
+<h2 id="detail-akzeptieren-von-verschlechterungen">Detail: Akzeptieren von Verschlechterungen</h2>
+<div class='center'>
+<p><a href="#R-image-52d0995f5d1470e37ab9b6518df94009" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-52d0995f5d1470e37ab9b6518df94009"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png?width=60%25&height=auto"></a></p>
+<p><span class='origin'>Quelle: <a href="https://commons.wikimedia.org/wiki/File:Exp_e.svg" rel="external" target="_blank">&quot;Exp e.svg&quot;</a> by Marcel Marnitz, reworked by <a href="https://commons.wikimedia.org/wiki/User:Georg-Johann" rel="external" target="_blank">Georg-Johann</a> on Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Public_domain" rel="external" target="_blank">Public Domain</a>)</span></p>
+</div>
+<ul>
+<li>Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: <code>math.exp(dE/temp)</code></li>
+<li>
+<span class="math align-center">$dE$</span> negativ =&gt; 
+<span class="math align-center">$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$</span></li>
+</ul>
+<p>
+<span class="math align-center">$\exp(a)$</span> bzw. 
+<span class="math align-center">$e^a$</span>:</p>
+<ul>
+<li>
+<span class="math align-center">$a<0$</span>: geht gegen 0</li>
+<li>
+<span class="math align-center">$a=0$</span>: 1</li>
+<li>
+<span class="math align-center">$a>0$</span>: steil (exponentiell) gegen Unendlich ...</li>
+</ul>
+<p>Wenn 
+<span class="math align-center">$dE$</span> negativ ist, wird <code>math.exp(dE/temp)</code> ausgewertet. Damit ergibt sich wegen 
+<span class="math align-center">$dE$</span> negativ:
+
+<span class="math align-center">$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$</span>.
+Betrachtung für 
+<span class="math align-center">$dE$</span> (nur negativer Fall!) und 
+<span class="math align-center">$\text{temp}$</span>:</p>
+<ul>
+<li>Temperatur 
+<span class="math align-center">$\text{temp}$</span> hoch: 
+<span class="math align-center">$a = \frac{|\text{dE}|}{\text{temp}}$</span> ist positiv und klein (nahe Null), d.h. 
+<span class="math align-center">$\exp(a)$</span> nahe 1 (oder
+größer), d.h. die Wahrscheinlichkeit 
+<span class="math align-center">$1/\exp(a)$</span> ist nahe 1 (oder kleiner)</li>
+<li>Temperatur 
+<span class="math align-center">$\text{temp}$</span> wird kleiner und geht gegen Null: 
+<span class="math align-center">$a = \frac{|\text{dE}|}{\text{temp}}$</span> ist positiv und wird größer, d.h.
+
+<span class="math align-center">$\exp(a)$</span> geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit 
+<span class="math align-center">$1/\exp(a)$</span> geht gegen 0</li>
+</ul>
+<h2 id="abkühlungsplan-problemabhängig-wählen">Abkühlungsplan problemabhängig wählen</h2>
+<ul>
+<li>
+<p>Initiale Temperatur: So hoch, daß praktisch jede Änderung akzeptiert wird</p>
+</li>
+<li>
+<p>Abkühlen: 
+<span class="math align-center">$T_k = \alpha T_{k-1}$</span> mit 
+<span class="math align-center">$0.8 \le \alpha \le 0.99$</span></p>
+<ul>
+<li>Ausreichend langsam abkühlen!</li>
+<li>Typisch: jede Stufe so lange halten, daß etwa 10 Änderungen akzeptiert wurden</li>
+</ul>
+</li>
+<li>
+<p>Stop: Keine Verbesserungen in 3 aufeinander folgenden Temperaturen</p>
+</li>
+</ul>
+<p>Der Abkühlungsplan muss problemabhängig gewählt werden. Das Beispiel zeigt typische Elementes
+eines solchen Abkühlungsplans.</p>
+<h2 id="eigenschaften-simulated-annealing">Eigenschaften Simulated Annealing</h2>
+<ul>
+<li>Vollständigkeit: ja (mit gewisser Wahrscheinlichkeit)</li>
+<li>Optimalität: ja (mit gewisser Wahrscheinlichkeit)</li>
+</ul>
+<p>Voraussetzung: geeigneter Abkühlungsplan</p>
+<h2 id="anwendungen-von-simulated-annealing">Anwendungen von Simulated Annealing</h2>
+<ul>
+<li>Flugplan-Scheduling</li>
+<li>Layout-Probleme (Chipentwurf, Leiterplatten)</li>
+<li>Produktionsplanung</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<p>Lokale Suchverfahren: Nur das Ergebnis zählt!</p>
+<ul>
+<li>Gradientenverfahren
+<ul>
+<li>Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
+Kostenfunktion =&gt; <strong>Hill-Climbing</strong></li>
+<li>Achtung: Probleme mit lokalen Minima =&gt; <strong>Simulated Annealing</strong></li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Simulated Annealing (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-ea.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Lokale Suche, GA</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Simulated Annealing: Abschnitt 4.1.2</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1722610334" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1722610334" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1722610334"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1722610334" defer></script>
+  </body>
+</html>

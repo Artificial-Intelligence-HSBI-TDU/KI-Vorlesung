@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="generator" content="Relearn 6.1.0">
+    <meta name="description" content="Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden. Durch das Zusammenschließen dieser &#34;künstlichen &#34;Nervenzellen&#34; entstehen künstliche Neuronale Netze (NN), die ähnlich wie das Gehirn lernen sollen, komplexe Aufgaben zu bewerkstelligen.
+NN1 - Das Perzeptron NN2 - Lineare Regression und Gradientenabstieg NN3 - Logistische Regression NN4 - Overfitting und Regularisierung NN5 - Multilayer Perzeptron NN6 - Backpropagation NN7 - Training &amp; Testing NN8 - Performanzanalyse NN10 - Vorschau Deep Learning (CNN, RNN) ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NN: Einführung in Neuronale Netze">
+    <meta name="twitter:description" content="Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden. Durch das Zusammenschließen dieser &#34;künstlichen &#34;Nervenzellen&#34; entstehen künstliche Neuronale Netze (NN), die ähnlich wie das Gehirn lernen sollen, komplexe Aufgaben zu bewerkstelligen.
+NN1 - Das Perzeptron NN2 - Lineare Regression und Gradientenabstieg NN3 - Logistische Regression NN4 - Overfitting und Regularisierung NN5 - Multilayer Perzeptron NN6 - Backpropagation NN7 - Training &amp; Testing NN8 - Performanzanalyse NN10 - Vorschau Deep Learning (CNN, RNN) ">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">
+    <meta property="og:title" content="NN: Einführung in Neuronale Netze">
+    <meta property="og:description" content="Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden. Durch das Zusammenschließen dieser &#34;künstlichen &#34;Nervenzellen&#34; entstehen künstliche Neuronale Netze (NN), die ähnlich wie das Gehirn lernen sollen, komplexe Aufgaben zu bewerkstelligen.
+NN1 - Das Perzeptron NN2 - Lineare Regression und Gradientenabstieg NN3 - Logistische Regression NN4 - Overfitting und Regularisierung NN5 - Multilayer Perzeptron NN6 - Backpropagation NN7 - Training &amp; Testing NN8 - Performanzanalyse NN10 - Vorschau Deep Learning (CNN, RNN) ">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="NN: Einführung in Neuronale Netze">
+    <meta itemprop="description" content="Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden. Durch das Zusammenschließen dieser &#34;künstlichen &#34;Nervenzellen&#34; entstehen künstliche Neuronale Netze (NN), die ähnlich wie das Gehirn lernen sollen, komplexe Aufgaben zu bewerkstelligen.
+NN1 - Das Perzeptron NN2 - Lineare Regression und Gradientenabstieg NN3 - Logistische Regression NN4 - Overfitting und Regularisierung NN5 - Multilayer Perzeptron NN6 - Backpropagation NN7 - Training &amp; Testing NN8 - Performanzanalyse NN10 - Vorschau Deep Learning (CNN, RNN) ">
+    <meta itemprop="wordCount" content="74">
+    <title>NN: Einführung in Neuronale Netze</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html" rel="canonical" type="text/html" title="NN: Einführung in Neuronale Netze">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1722610334" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1722610334" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1722610334" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1722610334" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1722610334" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1722610334" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1722610334" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1722610334" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1722610334"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1722610334";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            NN: Einführung in Neuronale Netze
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="nn-einführung-in-neuronale-netze">NN: Einführung in Neuronale Netze</h1>
+
+<p>Das Perzeptron kann als die Nachahmung einer biologischen Nervenzelle betrachtet werden.
+Durch das Zusammenschließen dieser &quot;künstlichen &quot;Nervenzellen&quot; entstehen künstliche
+<strong>Neuronale Netze</strong> (NN), die ähnlich wie das Gehirn <strong>lernen</strong> sollen, komplexe Aufgaben
+zu bewerkstelligen.</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn1-perceptron.html">NN1 - Das Perzeptron</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2-linear-regression.html">NN2 - Lineare Regression und Gradientenabstieg</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression.html">NN3 - Logistische Regression</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4-overfitting.html">NN4 - Overfitting und Regularisierung</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5-mlp.html">NN5 - Multilayer Perzeptron</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn6-backprop.html">NN6 - Backpropagation</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing.html">NN7 - Training &amp; Testing</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8-testing.html">NN8 - Performanzanalyse</a></li>
+<li><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn10-cnn.html">NN10 - Vorschau Deep Learning (CNN, RNN)</a></li>
+</ul>
+
+            <footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of NN: Einführung in Neuronale Netze</h1>
+<article class="default">
+<h1>NN1 - Das Perzeptron</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/IJdiwITTC9Y' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1.1 - Einführung</a></li> <li><a href='https://youtu.be/oWcvFyLgqYc' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1.2 - Fallstudie und Formalisierung</a></li> <li><a href='https://youtu.be/ZvWpI0Doocc' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1.3 - Das Perzeptron Modell</a></li> <li><a href='https://youtu.be/8Rdw2NBCCJk' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1.4 - Perzeptron Beispiel</a></li> <li><a href='https://youtu.be/JD8Qsg8_kQI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1.5 - Der Perzeptron Lernalgorithmus</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN1-Das_Perzeptron.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN1-Das_Perzeptron.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="definition-maschinelles-lernen">Definition &quot;Maschinelles Lernen&quot;</h3>
+<p>Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959)</p>
+<h3 id="arten-des-lernens">Arten des Lernens</h3>
+<ul>
+<li>Überwachtes Lernen (e.g. Klassifizierung, Regression)</li>
+<li>Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)</li>
+<li>Bestärkendes Lernen (e.g. Schach spielen)</li>
+</ul>
+<h3 id="formalisierung">Formalisierung</h3>
+<ul>
+<li>Zielfunktion 
+<span class="math align-center">$f$</span></li>
+<li>Merkmalraum (input space)</li>
+<li>Ausgaberaum (output space)</li>
+<li>Datensatz 
+<span class="math align-center">$\mathcal{D}$</span></li>
+<li>Hypothesenmenge 
+<span class="math align-center">$\mathcal{H}$</span></li>
+<li>Lernalgorithmus 
+<span class="math align-center">$\mathcal{A}$</span></li>
+</ul>
+<h3 id="das-perzeptron">Das Perzeptron</h3>
+<p>Ein einfaches Modell für die <strong>binäre Klassifizierung</strong></p>
+<ul>
+<li>Bilde gewichtete Summe (Linearkombination) der Merkmale</li>
+<li>Vergleiche das Ergebnis mit einem Schwellenwert
+<ul>
+<li>Positiv, falls über dem Schwellenwert</li>
+<li>Negativ, falls unter dem Schwellenwert</li>
+</ul>
+</li>
+<li>Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt &gt; siehe <strong>Perzeptron Lernalgorithmus</strong></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-perceptron.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Perzeptron</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Arten des maschinellen Lernens</li> <li>(K2) Formalisierung eines ML-Problems, insbesondere Klassifizierung: Datensatz, Merkmalraum, Hyphotesenfunktion, Zielfunktion</li> <li>(K2) Perzeptron als linearer Klassifizierer</li> <li>(K2) Entscheidungsgrenze</li> <li>(K3) Berechnung der Entscheidungsgrenze</li> <li>(K3) Perzeptron Lernalgorithmus</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Intro ML (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN2 - Lineare Regression und Gradientenabstieg</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/f-DTaKMnkj4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.1 - Lineare Regression - Intro</a></li> <li><a href='https://youtu.be/UnLjjMswNRo' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.2 - Vergleich Perzeptron und Bsp</a></li> <li><a href='https://youtu.be/H2YvYIaUW1Q' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.3 - Kostenfunktiıon und Gradientenvektor</a></li> <li><a href='https://youtu.be/URaVsZnfppQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.4 - Berechnung Gradientenvektor - Beispiel</a></li> <li><a href='https://youtu.be/5OZF3Qopous' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.5 - Berechnung Gradientenvektor - Allgemein</a></li> <li><a href='https://youtu.be/m-TnM13I-no' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.6 - Skalierung der Merkmale</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN2-Lineare_Regression.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2-Lineare_Regression.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="formalisierung">Formalisierung</h3>
+<ul>
+<li>Ausgabe 
+<span class="math align-center">$y$</span> ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis)</li>
+<li>Die <strong>Hypothesenfunktion</strong> ist eine gewichtete Summe der Merkmale 
+<span class="math align-center">$x_i$</span> plus eine Konstante 
+<span class="math align-center">$w_0$</span>:
+
+<span class="math align-center">$$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n$$</span></li>
+<li>Der <strong>Verlust</strong> (engl. loss) für einen Datenpunkt 
+<span class="math align-center">$\mathbf{x}$</span> ist das <strong>Fehlerquadrat</strong>:
+
+<span class="math align-center">$$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$</span></li>
+<li>Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte:
+
+<span class="math align-center">$$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$</span></li>
+</ul>
+<h3 id="der-gradient">Der Gradient</h3>
+<ul>
+<li>Der <strong>Gradientenvektor</strong> 
+<span class="math align-center">$\nabla J(\mathbf{w})$</span> setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion 
+<span class="math align-center">$J$</span> nach den Gewichten 
+<span class="math align-center">$w_i$</span> und zeigt in jedem Punkt 
+<span class="math align-center">$\mathbf{w}$</span> in die <strong>Richtung des steilsten Aufstiegs</strong>:
+
+<span class="math align-center">$$\nabla J = [ \partial J / \partial w_0
+    \quad \partial J / \partial w_1 \quad \ldots
+    \quad \partial J / \partial w_n]^T$$</span></li>
+<li><strong>Schlussfolgerung</strong>: In die entgegengesetzte Richtung, i.e. in Richtung 
+<span class="math align-center">$-\nabla J(\mathbf{w})$</span> geht es am <em>steilsten bergab!</em></li>
+<li><strong>IDEE</strong>: Bewege 
+<span class="math align-center">$\mathbf{w}$</span> in Richtung 
+<span class="math align-center">$-\nabla J(\mathbf{w})$</span>, um die Kosten 
+<span class="math align-center">$J$</span> möglichst schnell zu senken.</li>
+</ul>
+<h3 id="der-gradientenabstieg-engl-gradient-descent">Der Gradientenabstieg (engl. Gradient Descent)</h3>
+<ol>
+<li>Starte mit zufälligen Gewichten 
+<span class="math align-center">$\mathbf{w}$</span></li>
+<li>Berechne den Gradientenvektor im aktuellen Punkt 
+<span class="math align-center">$\mathbf{w}$</span></li>
+<li><strong>Gewichtsaktualisierung</strong>: Gehe einen <em>kleinen</em> Schritt in Richtung 
+<span class="math align-center">$-\nabla J(\mathbf{w})$</span>
+
+<span class="math align-center">$$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$</span>
+(
+<span class="math align-center">$\alpha$</span>: Lernrate/Schrittweite).</li>
+<li>Wiederhole Schritte 2-3, bis das globale Minimum von 
+<span class="math align-center">$J$</span> erreicht ist.</li>
+</ol>
+<h3 id="graphische-übersicht">Graphische Übersicht</h3>
+<ul>
+<li>Lineare Regression
+<a href="#R-image-11f2f1fb20ae209f3789c78473755492" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2-linear-regression/lin_reg_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11f2f1fb20ae209f3789c78473755492"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2-linear-regression/lin_reg_nn.png?width=auto&height=auto"></a></li>
+<li>Perzeptron
+<a href="#R-image-fe97d6d04a8969005dbee269540ce957" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2-linear-regression/perzeptron_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe97d6d04a8969005dbee269540ce957"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn2-linear-regression/perzeptron_nn.png?width=auto&height=auto"></a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-regression.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Lineare / Logistische Regression & Gradientenabstieg</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Lineare Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron</li> <li>(K2) Formalisierung</li> <li>(K2) Verlust- und Kostenfunktion</li> <li>(K2) Gradientenvektor</li> <li>(K2) Lernrate</li> <li>(K3) Gradientenabstieg</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Lineare Regression (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Skalierung der Merkmale</strong></p>
+<p>Abbildung 1 und Abbildung 2 zeigen die <a href="https://de.wikipedia.org/wiki/H%C3%B6henlinie" rel="external" target="_blank">Höhenlinien</a> (<a href="https://en.wikipedia.org/wiki/Contour_line" rel="external" target="_blank">Contour Lines</a>) von zwei Kostenfunktionen.</p>
+<figure class="center">
+    <img src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_a.png" alt="Abbildung 1" width="40%" height="auto">
+    <figcaption><p>Abbildung 1</p></figcaption>
+</figure>
+<figure class="center">
+    <img src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_b.png" alt="Abbildung 2" width="40%" height="auto">
+    <figcaption><p>Abbildung 2</p></figcaption>
+</figure>
+<ul>
+<li>Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil?
+Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?</li>
+<li>Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich
+
+<span class="math align-center">$[100, 300] \times [0, 2]$</span>, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
+Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb" rel="external" target="_blank"><strong>Jupyter Notebook</strong></a> als Startpunkt benutzen.</li>
+</ul>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN3 - Logistische Regression</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/GpJmjrqA5RY' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN3.1 - Logistische Regression - Intro</a></li> <li><a href='https://youtu.be/z-jFZeNWMRc' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN3.2 - Logistische Regression - Hypothesenfunktion und Bsp</a></li> <li><a href='https://youtu.be/ruuCKupOhCE' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN3.3 - Logistische Regression - Verlust und Kosten</a></li> <li><a href='https://youtu.be/kPAZsr-r1LA' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN3.4 - Logistische Regression - Gradientenabstieg</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN3-Logistische_Regression.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN3-Logistische_Regression.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="formalisierung">Formalisierung</h3>
+<ul>
+<li>
+<p>Ausgabe 
+<span class="math align-center">$y$</span> ist reelle Zahl aus dem stetigen Bereich 
+<span class="math align-center">$(0,1)$</span></p>
+</li>
+<li>
+<p>Die <strong>Hypothesenfunktion</strong> ist:
+
+<span class="math align-center">$$h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) \tag{1}$$</span></p>
+</li>
+<li>
+<p>Der <strong>Kreuzentropie Verlust</strong> (engl. Cross-Entropy) für einen Datenpunkt 
+<span class="math align-center">$\mathbf{x}$</span>:
+
+<span class="math align-center">$$\mathcal{L}(a, y) =  - y  \log(a) - (1-y)  \log(1-a)\tag{2}$$</span>
+wobei hier 
+<span class="math align-center">$a := \hat{y}$</span> die Vorhersage ist.</p>
+</li>
+<li>
+<p>Die Kosten als durchschnittlicher Verlust über alle Datenpunkte 
+<span class="math align-center">$x^{(1)}, \ldots, x^{(m)}$</span>:
+
+<span class="math align-center">$$J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{3}$$</span></p>
+</li>
+</ul>
+<h3 id="gradientenabstieg">Gradientenabstieg</h3>
+<ul>
+<li>Der Gradient für einen Datenpunkt 
+<span class="math align-center">$\mathbf{x}$</span>:
+
+<span class="math align-center">$$\frac{\partial \mathcal{L}}{\partial w} = (a-y)x \tag{4}$$</span></li>
+<li>Der Gradient für alle Datenpunkte 
+<span class="math align-center">$X$</span> in Matrix-Notation:
+
+<span class="math align-center">$$\nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{5}$$</span></li>
+</ul>
+<h3 id="graphische-übersicht">Graphische Übersicht</h3>
+<ul>
+<li>Logistische Regression
+<a href="#R-image-141b9f53011be1a2f5d4f009704e8dc2" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/log_reg_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-141b9f53011be1a2f5d4f009704e8dc2"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/log_reg_nn.png?width=auto&height=auto"></a></li>
+<li>Lineare Regression
+<a href="#R-image-340759903dd5882bb8187ca38f5c7136" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/lin_reg_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-340759903dd5882bb8187ca38f5c7136"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/lin_reg_nn.png?width=auto&height=auto"></a></li>
+<li>Perzeptron
+<a href="#R-image-dc56b8f2656dcc3e66e669ab4b53159c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/perzeptron_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc56b8f2656dcc3e66e669ab4b53159c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn3-logistic-regression/perzeptron_nn.png?width=auto&height=auto"></a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-regression.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Lineare / Logistische Regression & Gradientenabstieg</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron und linearer Regression</li> <li>(K2) Formalisierung</li> <li>(K2) Sigmoid-Aktivierungsfunktion</li> <li>(K2) Verlust- und Kosten (Cross-Entropy Loss)</li> <li>(K3) Gradientenabstieg für logistische Regression</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106591&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Logistische Regression (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN4 - Overfitting und Regularisierung</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/KJLT-h_ChRo' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN4.1 - Nichtlineare Modelle</a></li> <li><a href='https://youtu.be/BW91MYPUH_k' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN4.2 - Overfitting und Regularisierung</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN4-Nichtlineare_Modelle_und_Overfitting.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN4-Nichtlineare_Modelle_und_Overfitting.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="nichtlineare-modelle">Nichtlineare Modelle</h3>
+<ul>
+<li>Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der ursprünglichen Merkmale</li>
+<li>Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen Beziehungen</li>
+<li><strong>Bemerkung</strong>: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird weiterhin logistische Regression in einem <strong>erweiterten</strong> Merkmalraum durchgeführt.</li>
+</ul>
+<h3 id="überanpassung-und-regularisierung">Überanpassung und Regularisierung</h3>
+<ul>
+<li>Die <strong>Überanpassung</strong> (engl. Overfitting) ist eines der häufigsten und wichtigsten Probleme in ML und DL</li>
+<li>&quot;Was im Bereich des maschinellen Lernens Professionelle von Amateuren unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen.&quot; <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn4-overfitting.html#id_AbuMostafa2012">[AbuMostafa2012, S. 119]</a></li>
+<li>Anzeichen von Überanpassung sind geringe Trainingskosten und hohe <strong>Testkosten</strong> (Kosten auf nicht-gesehenen Daten).</li>
+<li>Regularisierung ist eine Maßnahme gegen Überanpassung. Man kann es sich als eine Reduktion in der Komplexität des Modells vorstellen.</li>
+<li>Der Regularisierungsparameter 
+<span class="math align-center">$\lambda$</span> ist ein Hyperparameter. Je größer der 
+<span class="math align-center">$\lambda$</span>-Wert, desto größer der Regularisierungseffekt.</li>
+<li>Die <strong>Kostentenfunktion</strong> bei regulariserter logistischer Regression:
+
+<span class="math align-center">$$J = \frac{1}{m} \left\lbrack \sum_{i=1}^m \left( -y^{[i]}log(a^{[i]})-(1-y^{[i]})log(1-a^{[i]}) \right) + \frac{\lambda}{2} \sum_{j=1}^n (w^2_j)  \right\rbrack \tag{1}$$</span></li>
+<li>Die <strong>Gewichtsaktualisierung</strong> mit Regularisierungsterm:
+
+<span class="math align-center">$$w_j := w_j - \frac{\alpha}{m} \left\lbrack \sum_{i=1}^m \left( ( a^{[i]} - y^{[i]} )x_j^{[i]} \right) + \lambda w_j  \right\rbrack \tag{2}$$</span></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-mlp.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Overfitting & MLP</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer Ordnung</li> <li>(K2) Unter- und Überanpassung</li> <li>(K2) Regularisierung (Auswirkung auf Gewichte und Modell)</li> <li>(K3) Gradientenabstieg für regularisierte logistische Regression</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Overfitting (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_AbuMostafa2012'>[AbuMostafa2012] <a href='https://work.caltech.edu/telecourse' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Learning From Data</strong></a><br>Abu-Mostafa, Y. S. und Magdon-Ismail, M. und Lin, H., AMLBook, 2012. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-1-6004-9006-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-1-6004-9006-4</a>.<br><em>Kapitel 4</em></li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN5 - Multilayer Perzeptron</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/7ltwa5WWuKI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN5.1 - MLP Forward Propagation</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN5-MLP.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN5-MLP.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="multilayer-perzeptron-mlp">Multilayer Perzeptron (MLP)</h3>
+<ul>
+<li>Das Perzeptron kann nur linear separable Daten korrekt klassifizieren.</li>
+<li>Durch das Zusammenschließen von mehreren Perzeptronen kann man ein mehrschichtiges Perzeptron (engl. Multilayer Perceptron) aufstellen, das komplexere Funktionen modellieren kann.</li>
+<li>Ein MLP wird oft auch als <strong>Feed Forward Neural Network</strong> oder als <strong>Fully Connected Neural Network</strong> bezeichnet.</li>
+<li>Die &quot;inneren&quot; Schichten eines solchen Netzwerkes sind sogenannte <strong>versteckte Schichten</strong> (engl. hidden layer). Das sind alle Schichten ausgenommen die Eingangs- und Ausgangsschicht.</li>
+</ul>
+<h3 id="graphische-übersicht-und-vorwärtslauf">Graphische Übersicht und Vorwärtslauf</h3>
+<ul>
+<li>Ein Multi-Layer Perzeptron
+<a href="#R-image-e17015186b3951c3e928efe5c53673bc" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5-mlp/mlp.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e17015186b3951c3e928efe5c53673bc"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn5-mlp/mlp.png?width=auto&height=auto"></a>
+Ein Vorwärtslauf (forward pass):
+
+<span class="math align-center">$$a^{[1]} = ReLU \left( W^{[1]} \cdot \mathbb{x} + b^{[1]} \right) \tag{1}$$</span>
+
+<span class="math align-center">$$\hat{y} := a^{[2]} = \sigma \left( W^{[2]} \cdot a^{[1]} + b^{[2]} \right) \tag{2}$$</span></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-mlp.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Overfitting & MLP</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Multi-Layer Perzeptron (MLP): Graphische Darstellung, Vorwärtslauf</li> <li>(K2) Aktivierungsfunktionen (insbesondere ReLU)</li> <li>(K3) Vorwärtslauf (forward pass) für ein gegebenes MLP</li> <li>(K3) Berechnung der einzelnen Aktivierungen</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106592&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Multilayer Perzeptron (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-puzzle-piece"></i> Challenges</div>
+  <div class="box-content">
+
+<p><strong>Lineares MLP</strong></p>
+<p>Gegeben sei ein MLP mit linearen Aktivierungsfunktionen, d.h. für jedes Neuron berechnet sich der
+Output durch die gewichtete Summe der Inputs: 
+<span class="math align-center">$y = g(w^T x)$</span>, wobei 
+<span class="math align-center">$g(z) = z$</span> gilt, also 
+<span class="math align-center">$y = w^T x$</span>.
+Zeigen Sie, dass dieses Netz durch eine einzige Schicht mit linearen Neuronen ersetzt werden kann.</p>
+<p>Betrachten Sie dazu ein zwei-schichtiges Netz (i.e. bestehend aus Eingabe-Schicht, Ausgabe-Schicht und einer versteckten Schicht)
+und schreiben Sie die Gleichung auf, die die Ausgabe als Funktion der Eingabe darstellt.</p>
+<p>Als Beispiel sei das zwei-schichtige MLP mit den folgenden Gewichten und Bias-Werten gegeben:</p>
+<p>Schicht 1: 
+<span class="math align-center">$W_1 = [[2, 2],[3, -2]]$</span>, 
+<span class="math align-center">$b_1 = [[1],[-1]]$</span>
+Schicht 2: 
+<span class="math align-center">$W_2 = [[-2, 2]]$</span>, 
+<span class="math align-center">$b_2 = [[-1]]$</span></p>
+<ul>
+<li>Stellen Sie dieses Netzwerk graphisch dar. Was ist die Anzahl der Zellen in den einzelnen Schichten?</li>
+<li>Berechnen Sie die Ausgabe für eine Beispiel-Eingabe Ihrer Wahl.</li>
+<li>Stellen Sie ein ein-schichtiges Netz auf, das für jede Eingabe die gleiche Ausgabe wie das obige Netzwerk berechnet und es somit ersetzen könnte.</li>
+</ul>
+</div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN6 - Backpropagation</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/G9x75THjueQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.1 - MLP Backpropagation 1</a></li> <li><a href='https://youtu.be/9Ku0dJ8pGrU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.2 - MLP Backpropagation 2</a></li> <li><a href='https://youtu.be/uvT4WPIIkwQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6.3 - MLP Zusammenfassung</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN6-MLP_Backpropagation.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="forwärts--und-rückwärtslauf">Forwärts- und Rückwärtslauf</h3>
+<ul>
+<li>
+<p>Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner <strong>Forwärtsschritt</strong> von Schicht 
+<span class="math align-center">$[l-1]$</span> auf Schicht 
+<span class="math align-center">$[l]$</span> wie folgt berechnet:
+
+<span class="math align-center">$$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1}$$</span>
+
+<span class="math align-center">$$A^{[l]} = g(Z^{[l]}) \tag{2}$$</span>
+Dabei bezeichnet 
+<span class="math align-center">$g$</span> die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).</p>
+</li>
+<li>
+<p>Im Rückwärtslauf (engl. <em>backpropagation</em>) werden in einem einzelnen <strong>Rückwärtsschritt</strong> von Schicht 
+<span class="math align-center">$[l]$</span> auf Schicht 
+<span class="math align-center">$[l-1]$</span> die folgenden Gradienten berechnet:</p>
+
+<span class="math align-center">$$dZ^{[l]} := \frac{\partial J }{\partial Z^{[l]}} = dA^{[l]} * g'(Z^{[l]}) \tag{3}$$</span>
+
+<span class="math align-center">$$dW^{[l]} := \frac{\partial J }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{4}$$</span>
+
+<span class="math align-center">$$db^{[l]} := \frac{\partial J }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{5}$$</span>
+
+<span class="math align-center">$$dA^{[l-1]} := \frac{\partial J }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{6}$$</span>
+<p>Dabei steht &quot;
+<span class="math align-center">$*$</span>&quot; für die elementweise Multiplikation.</p>
+</li>
+<li>
+<p>Beachten Sie:</p>
+<ul>
+<li>Der Forwärtsschirtt übernimmt 
+<span class="math align-center">$A^{[l-1]}$</span> von dem vorherigen Schritt und gibt 
+<span class="math align-center">$A^{[l]}$</span> an den nächsten Schritt weiter.</li>
+<li>Der Rückwärtschritt übernimmt 
+<span class="math align-center">$dA^{[l]}$</span> von dem vorherigen Schritt und gibt 
+<span class="math align-center">$dA^{[l-1]}$</span> an den nächsten Rückwärtsschritt weiter.</li>
+</ul>
+</li>
+</ul>
+<h3 id="parameteraktualisierung">Parameteraktualisierung</h3>
+<ul>
+<li>Die Aktualisierung der Parameter in Schicht 
+<span class="math align-center">$l$</span> erfolgt wie gewohnt durch:
+
+<span class="math align-center">$$W^{[l]} = W^{[l]} - \alpha \text{ } dW^{[l]} \tag{7}$$</span>
+
+<span class="math align-center">$$b^{[l]} = b^{[l]} - \alpha \text{ } db^{[l]} \tag{8}$$</span>
+Dabei bezeichnet 
+<span class="math align-center">$\alpha$</span> die Lernrate.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-backprop.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Backpropagation</a></li></ul></div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe</li> <li>(K2) Ableitung der Aktivierungsfunktionen</li> <li>(K3) Berechnung der partiellen Ableitungen</li> <li>(K3) Rückwärtslauf (backpropagation) für ein gegebenes MLP</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Backpropagation (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN7 - Training &amp; Testing</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/PUw-TvLJULI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.1 - Training, Testing, Validierung</a></li> <li><a href='https://youtu.be/DqjdZ8HaDSo' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.2 - Kreuzvalidierung</a></li> <li><a href='https://youtu.be/7XATTMNI-gI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.3 - Beispiel</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN7-Testing-Validierung.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7-Testing-Validierung.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="training-und-testing">Training und Testing</h3>
+<ul>
+<li>
+<p>Der tatsächliche <strong>Erfolg</strong> eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. <strong>hohe Vorhersagekraft, gute Generalisierung</strong>!</p>
+</li>
+<li>
+<p>Die Menge aller gelabelten Daten in <strong>Trainingsset und Testset</strong> aufteilen, Testset nicht während des Trainings einsetzen!.</p>
+<ul>
+<li>
+<span class="math align-center">$E_{in}$</span> bezeichnet den Fehler auf dem Trainingsset, auch <strong>in-sample error</strong>.</li>
+<li>
+<span class="math align-center">$E_{out}$</span> bezeichnet den Fehler auf dem gesamten Eingaberaum 
+<span class="math align-center">$X$</span>, auch <strong>out-of-sample error</strong>. 
+<span class="math align-center">$E_{out}$</span> ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich.</li>
+<li>
+<span class="math align-center">$E_{test}$</span> bezeichnet den Fehler auf dem Testset und ist eine <strong>Näherung</strong> für 
+<span class="math align-center">$E_{out}$</span>.</li>
+</ul>
+<blockquote>
+<p>Analogie:<br>
+
+<span class="math align-center">$E_{in}$</span> : Erfolg in Übungsaufgaben und Probeprüfungen.<br>
+
+<span class="math align-center">$E_{test}$</span> : Erfolg in Endprüfung.</p>
+</blockquote>
+</li>
+<li>
+<p>Die Näherung 
+<span class="math align-center">$E_{test}$</span> sollte möglichst genau sein, damit es als ein verlässliches <strong>Gütesiegel</strong> dienen kann.</p>
+<ul>
+<li>Das Testset sollte genug Daten enthalten. Üblicher Anteil an Testdaten:
+<ul>
+<li>bei 
+<span class="math align-center">$|D| \approx 100.000 \rightarrow$</span> ca. 20%</li>
+<li>bei 
+<span class="math align-center">$|D| \approx 10.000.000 \rightarrow$</span> ca. 1%</li>
+<li>Beispiel: Hat man 1000 Beispiele im Testset, wird 
+<span class="math align-center">$E_{test}$</span> mit 
+<span class="math align-center">$\ge 98\%$</span> Wahrscheinlichkeit in der 
+<span class="math align-center">$\pm 5\%$</span> Umgebung von 
+<span class="math align-center">$E_{out}$</span> liegen (für theoretische Grundlagen und Herleitung siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing.html#id_AbuMostafa2012">[AbuMostafa2012, S. 39-69]</a>).</li>
+</ul>
+</li>
+<li>Trainingsdaten und Testdaten sollten möglichst aus derselben Verteilung kommen, wie die zukünftigen <strong>Real-World-Daten</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Wichtige Bemerkung</strong>:</p>
+<ul>
+<li>Testdaten nicht anfassen, bis das Modell Einsatzbereit ist!</li>
+<li>Die Testdaten dürfen in <strong>keinster Weise</strong> bei der Auswahl der endgültigen Hypothese eingesetzt werden, weder bei der Berechnung der Parameter (Training), noch bei der Bestimmung der Hyperparameter (Hyperparameter-Tuning).</li>
+<li>Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst, kann sie nicht mehr als &quot;Gütesiegel&quot; eingesetzt werden.<br>
+<strong>CHECK</strong>: Hätte man zufällig andere Testdaten gewählt, könnte sich dadurch die endgültige Hypothese ändern?</li>
+</ul>
+</li>
+</ul>
+<h3 id="validierung-und-modellauswahl">Validierung und Modellauswahl</h3>
+<ul>
+<li>
+<p>Das Ziel ist es, das Modell mit bester Generalisierung, also kleinstem 
+<span class="math align-center">$E_{out}$</span> zu bestimmen. 
+<span class="math align-center">$E_{out}$</span> ist jedoch unbekannt und die Näherung 
+<span class="math align-center">$E_{test}$</span> <em>darf nicht</em> bei der Modellauswahl eingesetzt werden.</p>
+</li>
+<li>
+<p>LÖSUNG: Einen weiteren Teil der Daten als <strong>Validierungsset</strong> (auch <em>development set</em>) beiseitelegen und nicht für das Training (i.e. Minimierung des Trainingsfehlers 
+<span class="math align-center">$E_{in}$</span>) verwenden!</p>
+</li>
+<li>
+<p><strong>Bemerkung</strong>:<br>
+Das Wort <strong>Modell</strong> kann je nach Kontext unterschiedliche Bedeutungen annehmen.<br>
+Ein Modell im aktuellen Kontext ist als ein Paar 
+<span class="math align-center">$(\mathcal{H},\mathcal{A})$</span> von Hypothesenraum (bzw. <strong>Modellarchitektur</strong>) und <strong>Lernalgorithmus</strong> definiert.</p>
+<ul>
+<li>Die Auswahl eines Modells kann aus einer Menge von Modellen unterschiedlicher Art erfolgen (z.B. lineare Modelle, polynomiale Modelle, neuronale Netze), oder von Modellen derselben Art aber mit unterschiedlichen Hyperparametern (z.B. Neuronale Netze mit unterschiedlicher Anzahl von versteckten Schichten).</li>
+<li>Außerdem kann dieselbe Modellarchitektur 
+<span class="math align-center">$\mathcal{H}$</span> mit unterschiedlichen Lernalgorithmen trainiert werden, was wiederum die endgültige Hypothese beeinflussen kann. Die Bestimmung der Hyperparameter von 
+<span class="math align-center">${\mathcal{A}}$</span> (wie z.B. Optimierungsfunktion, Lernrate, Kostenfunktion, Regularisierungsparameter usw.) sind daher auch Teil der Modellauswahl.</li>
+</ul>
+</li>
+<li>
+<p>Der <strong>Validierungsfehler 
+<span class="math align-center">$E_{val}$</span></strong> kann nun als Entscheidungsgrundlage an verschiedenen Stellen des Lernrpozesses eingesetzt werden, wie zum Beispiel:</p>
+<ul>
+<li>Bei der <strong>Auswahl geeigneter Hyperparameter</strong> wie z.B. Anzahl Schichten, Anzahl Zellen/Schicht, Aktivierungsfunktion, Regularisierungsparameter (siehe Abbildung 1).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing/val1.png" alt="Abbildung 1 - Einsatz der Validierung für das Hyperparameter-Tuning" width="auto" height="auto">
+    <figcaption><p>Abbildung 1 - Einsatz der Validierung für das Hyperparameter-Tuning</p></figcaption>
+</figure>
+<ul>
+<li>Bei der <strong>Auswahl der endgültigen Hypothese</strong> (
+<span class="math align-center">$\rightarrow$</span> Parameterauswahl!): unter allen Hypothesen, die während des Trainings durchlafen werden, wähle jene mit kleinstem 
+<span class="math align-center">$E_{val}$</span> (siehe Abbildung 2).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing/val2.png" alt="Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen Hypothese" width="auto" height="auto">
+    <figcaption><p>Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen Hypothese</p></figcaption>
+</figure>
+<ul>
+<li>Bei der graphischen <strong>Darstellung von Lernkurven</strong> für die Diagnose von Über- und Unteranpassung (siehe Abbildung 3).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing/val3.png" alt="Abbildung 3 - Lernkurven" width="auto" height="auto">
+    <figcaption><p>Abbildung 3 - Lernkurven</p></figcaption>
+</figure>
+</li>
+<li>
+<p>Übliche train/val/test Aufteilung der Daten (in Prozent):</p>
+<ul>
+<li>bei 
+<span class="math align-center">$|D| \approx 100.000 \rightarrow$</span> ca. 60/20/20</li>
+<li>bei 
+<span class="math align-center">$|D| \approx 10.000.000 \rightarrow$</span> ca. 98/1/1</li>
+</ul>
+</li>
+<li>
+<p><strong>Bemerkung</strong>:<br>
+Das Modell ist trainiert für gute Ergebnisse auf Trainingsdaten und &quot;fine-tuned&quot; für gute Ergebnisse auf den Validierungsdaten. Ergebnisse auf Testdaten werden mit hoher wahrscheinlichkeit schlechter ausfallen, als auf Validierungsdaten (
+<span class="math align-center">$E_{val}$</span> ist eine zu optimistische Näherung).</p>
+</li>
+<li>
+<p>Sind Validierungs- und/oder Trainingsset zu klein, führt das zu schlechten Näherungen 
+<span class="math align-center">$E_{val}$</span> und folglich zu schlechten Entscheidungen.</p>
+<ul>
+<li>Bei der Aufteilung muss ein gutes Trade-off gefunden werden.</li>
+<li>Wenn kein Gütesiegel notwendig ist, kann man auf das Testset verzichten und die Daten in Trainings- und Validierungsset aufteilen.</li>
+<li>Für eine bessere Näherung mit weniger Validierungsdaten kann k-fache Kreuzvalidierung eingesetzt werden (wenn genug Rechenkapazität vorhanden ist).</li>
+</ul>
+</li>
+</ul>
+<h3 id="k-fache-kreuzvalidierung-engl-k-fold-cross-validation">K-fache Kreuzvalidierung (engl. k-fold cross-validation):</h3>
+<ul>
+<li>
+<p>Das Modell 
+<span class="math align-center">$(\mathcal{H_m},\mathcal{A_m})$</span> wird 
+<span class="math align-center">$k$</span> mal trainiert und validiert, jedes mal mit unterschiedlichen Trainings- und Validierungsmengen:</p>
+<ul>
+<li>
+<p>Die Trainingsdaten werden in 
+<span class="math align-center">$k$</span> disjunkte Teilmengen 
+<span class="math align-center">$D_1, D_2, ..., D_k$</span> aufgeteilt.</p>
+</li>
+<li>
+<p>Bei dem 
+<span class="math align-center">$i$</span>-ten Training werden die Teilmenge 
+<span class="math align-center">$D_i$</span> für die Berechnung des Validierungsfehlers 
+<span class="math align-center">$e_i := E_{val}(h_m^{*(i)})$</span> und die restlichen 
+<span class="math align-center">$k-1$</span> Teilmengen für das Training verwendet.</p>
+</li>
+<li>
+<p>Der <strong>Kreuzvalidierungsfehler</strong> des Modells 
+<span class="math align-center">$(\mathcal{H_m},\mathcal{A_m})$</span> ist der Durchschnitt der 
+<span class="math align-center">$k$</span> Validierungsfehler 
+<span class="math align-center">$e_1, e_2, ..., e_k$</span> (siehe Abbildung 4).
+
+<span class="math align-center">$$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$</span></p>
+</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn7-training-testing/val4.png" alt="Abbildung 4 - Kreuzvalidierung" width="auto" height="auto">
+    <figcaption><p>Abbildung 4 - Kreuzvalidierung</p></figcaption>
+</figure>
+</li>
+<li>
+<p>Bemerkung: Die Kreuzvalidierung wird nur bei der Modellauswahl eingesetzt: es liefert verlässlichere Näherungen für 
+<span class="math align-center">$E_{out}$</span> und führt daher zu besseren Entscheidungen. Das zuletzt ausgewählte Modell wird danach wie gewohnt auf den gesamten Trainigsdaten (ausgenommen Testdaten) trainiert und zum Schluss mit den Testdaten evaluiert.</p>
+</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Trainings-, Validierungs- und Testfehler</li> <li>(K2) Zweck einer Testmenge</li> <li>(K2) Kreuzvalidierung</li> <li>(K2) Hyperparameter-Tuning</li> <li>(K2) Lernkurven</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-user-check"></i> Quizzes</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Training & Testing (ILIAS)</a></li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-book-reader"></i> Quellen</div>
+  <div class="box-content">
+
+<ul> <li id='id_AbuMostafa2012'>[AbuMostafa2012] <a href='https://work.caltech.edu/telecourse' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Learning From Data</strong></a><br>Abu-Mostafa, Y. S. und Magdon-Ismail, M. und Lin, H., AMLBook, 2012. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-1-6004-9006-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-1-6004-9006-4</a>.</li></ul></div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN8 - Performanzanalyse</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-podcast"></i> Videos</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://youtu.be/T-WYL28iwdU' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8.1 - Confusion Matrix</a></li> <li><a href='https://youtu.be/fpsNzn4Moow' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8.2 - Precision und Recall</a></li> <li><a href='https://youtu.be/Wx_HAuIXTAQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8.3 - Precision Recall Trade-off</a></li> <li><a href='https://youtu.be/UAV7EpdIe6Q' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8.4 - F1-Score</a></li> <li><a href='https://youtu.be/vsmoYiArtrA' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8.5 - Harmonisches Mittel- Intuition</a></li></ul></div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="far fa-file-powerpoint"></i> Folien</div>
+  <div class="box-content">
+
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN8-Performanzanalyse.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN8-Performanzanalyse.pdf</a></li></ul></div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="performanzmetriken-für-klassifizierungsprobleme">Performanzmetriken für Klassifizierungsprobleme</h3>
+<h4 id="wahrheitsmatrix-engl-confusion-matrix">Wahrheitsmatrix (engl. Confusion Matrix)</h4>
+<ul>
+<li>Gibt eine Übersicht über die Anzahl von richtig und falsch klassifizierten Datenpunkten (bei binärer Klassifizierung)
+<ul>
+<li>
+<span class="math align-center">$TP =$</span> # True Positives 
+<span class="math align-center">$=$</span> Anzahl richtiger 1-Vorhersagen</li>
+<li>
+<span class="math align-center">$FP =$</span> # False Positives 
+<span class="math align-center">$=$</span> Anzahl falscher 1-Vorhersagen</li>
+<li>
+<span class="math align-center">$FN =$</span> # False Negatives 
+<span class="math align-center">$=$</span> Anzahl falscher 0-Vorhersagen</li>
+<li>
+<span class="math align-center">$TN =$</span> # True Negatives 
+<span class="math align-center">$=$</span> Anzahl richtiger 0-Vorhersagen</li>
+</ul>
+</li>
+<li>Bei Klassifizierungsproblemen mit 
+<span class="math align-center">$N$</span> Klassen hat man eine 
+<span class="math align-center">$N \times N$</span> Matrix, die in Position 
+<span class="math align-center">$(i,j)$</span> die Anzahl der Klasse-
+<span class="math align-center">$j$</span>-Beispiele enthält, die als Klasse-
+<span class="math align-center">$i$</span> vorhergesagt wurden.</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn8-testing/nn8-1.png" alt="Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung" width="auto" height="auto">
+    <figcaption><p>Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung</p></figcaption>
+</figure>
+<h4 id="treffergenauigkeit-engl-accuracy">Treffergenauigkeit (engl. Accuracy)</h4>
+<ul>
+<li>
+<p>Anzahl richtig klassifizierter Datenpunkte, Erfolgsrate (engl. correct rate)
+
+<span class="math align-center">$$Accuracy = \frac{TP+TN}{TP+TN+FP+FN}$$</span></p>
+</li>
+<li>
+<p>Accuracy vermittelt ein falsches Bild des Erfolges bei unausgewogenen Datensätzen<br>
+Beispiel:</p>
+<ul>
+<li>Klasse 1 hat 10, Klasse 0 hat 990 Beispiele.</li>
+<li>Ein Modell, das immer 0 ausgibt, hat 
+<span class="math align-center">$990/1000 = 0.99$</span> Treffergenauigkeit, ist aber offensichtlich kein gutes Modell!</li>
+</ul>
+</li>
+</ul>
+<h4 id="precision">Precision</h4>
+<ul>
+<li>Positive Predictive Value (PPV)</li>
+<li>Antwort auf: Von allen <strong>positiven Vorhersagen</strong>, wie viele sind richtig?
+
+<span class="math align-center">$$Precision = \frac{TP}{TP + FP}$$</span></li>
+<li>Wahrscheinlichkeit, dass ein positiv klassifiziertes Beispiel auch tatsächlich positiv ist.</li>
+<li>Je näher an 1, desto besser.</li>
+<li>Accuracy of <strong>positive predictions</strong>.</li>
+</ul>
+<h4 id="recall">Recall</h4>
+<ul>
+<li>True Positive Rate, auch Sensitivität (engl. Sensitivity)</li>
+<li>Antwort auf: Von allen <strong>positiven Beispielen</strong>, wie viele wurden richtig klassifiziert?
+
+<span class="math align-center">$$Recall = \frac{TP}{TP + FN}$$</span></li>
+<li>Wahrscheinlichkeit, dass ein positives Beispiel tatsächlich als solches erkannt wird.</li>
+<li>Je näher an 1, desto besser.</li>
+<li>Accuracy of <strong>positive examples</strong>.</li>
+</ul>
+<h4 id="precision-recall-trade-off">Precision-Recall Trade-off</h4>
+<ul>
+<li>Ein gutes Modell sollte hohe Precision und zugleich hohes Recall haben.</li>
+<li>Man kann die Precision eines Modells beliebig erhöhen (durch das Vergrößern des Schwellenwertes bei der Klassifizierung), jedoch wird dabei der Recall abnehmen.</li>
+<li>Genau so kann man den Recall eines Modells beliebig erhöhen (durch das Verkleinern des Schwellenwertes bei der Klassifizierung), jedoch wird dabei die Precision abnehmen.</li>
+<li>Es gilt ein gutes Trade-off zu finden.</li>
+<li>Eine Zwei-Zahlen-Metrik erschwert den Entscheidungsprozess bei Evaluierung und Modellauswahl.</li>
+</ul>
+<h4 id="hahahugoshortcode49s18hbhb-score-harmonisches-mittel">
+<span class="math align-center">$F_1$</span>-Score (Harmonisches Mittel)</h4>
+<ul>
+<li>Fasst Precision (P) und Recall (R) in einer Metrik zusammen (Harmonisches Mittel von P und R):
+
+<span class="math align-center">$$F_1-Score = \frac{2}{\frac{1}{P} + \frac{1}{R}} = 2 \cdot \frac{PR}{P + R}$$</span></li>
+<li>Der 
+<span class="math align-center">$F_1$</span>-Score wird nur dann hoch sein, wenn P und R beide hoch sind.</li>
+<li>Je näher an 1, desto besser.</li>
+<li>Sehr kleine P und R Werte ziehen den 
+<span class="math align-center">$F_1$</span>-Score sehr stark herunter. In dieser Hinsicht gibt diese Metrik ein akkurates Bild über den Erfolg eines Modells.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fas fa-lightbulb"></i> Lernziele</div>
+  <div class="box-content">
+
+<ul> <li>(K2) Performanzmetriken für die Evaluierung von Klassifizierungsmodellen</li> <li>(K2) Wahrheitsmatrix (engl. Confusion Matrix)</li> <li>(K2) Treffergenauigkeit (engl. Accuracy)</li> <li>(K2) Precision (engl. Precision)</li> <li>(K2) Recall</li> <li>(K2) <span class="math align-center">$F_1$</span>-Score (Harmonisches Mittel)</li> <li>(K3) Berechnung und Deutung von Precision und Recall</li> <li>(K3) Berechnung und Deutung des 
+<span class="math align-center">$F_1$</span>-Scores</li> <li>(K3) Einsatz bei Evaluierung und Auswahl von Modellen</li></ul></div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+<article class="default">
+<h1>NN10 - Vorschau Deep Learning (CNN, RNN)</h1>
+
+
+
+    <div style="text-align:center;">
+    Inhalt befindet sich im Aufbau<br>
+    und wird rechtzeitig bereitgestellt.
+</div>
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1722610334" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1722610334" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1722610334"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1722610334" defer></script>
+  </body>
+</html>
