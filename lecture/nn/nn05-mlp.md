@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN5 - Multilayer Perzeptron"
-linkTitle: "NN5 - MLP"
+title: "NN05 - Multilayer Perzeptron"
+linkTitle: "NN05 - MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Multi-Layer Perzeptron (MLP): Graphische Darstellung, Vorwärtslauf"

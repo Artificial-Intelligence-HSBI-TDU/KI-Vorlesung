@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN1 - Das Perzeptron"
-linkTitle: "NN1 - Perzeptron"
+title: "NN01 - Das Perzeptron"
+linkTitle: "NN01 - Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Arten des maschinellen Lernens"
