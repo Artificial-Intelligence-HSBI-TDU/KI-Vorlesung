@@ -256,13 +256,13 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 [Einführung KI]: lecture/intro/intro1-overview.md
 [Problemlösen]: lecture/intro/intro2-problemsolving.md
 
-[Tiefensuche]: lecture/searching/uninformed/search1-dfs.md
-[Breitensuche]: lecture/searching/uninformed/search2-bfs.md
-[Branch-and-Bound]: lecture/searching/informed/search3-branchandbound.md
-[Best First]: lecture/searching/informed/search4-bestfirst.md
-[A-Stern]: lecture//searching/informed/search5-astar.md
-[Gradientensuche]: lecture/searching/local/search6-gradient.md
-[Simulated Annealing]: lecture/searching/local/search7-annealing.md
+[Tiefensuche]: lecture/searching/search1-dfs.md
+[Breitensuche]: lecture/searching/search2-bfs.md
+[Branch-and-Bound]: lecture/searching/search3-branchandbound.md
+[Best First]: lecture/searching/search4-bestfirst.md
+[A-Stern]: lecture//searching/search5-astar.md
+[Gradientensuche]: lecture/searching/search6-gradient.md
+[Simulated Annealing]: lecture/searching/search7-annealing.md
 
 [Intro EA/GA]: lecture/ea/ea1-intro.md
 [Genetische Algorithmen]: lecture/ea/ea2-ga.md
