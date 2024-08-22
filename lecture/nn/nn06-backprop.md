@@ -25,8 +25,8 @@ youtube:
   - link: "https://youtu.be/uvT4WPIIkwQ"
     name: "NN6.3 - MLP Zusammenfassung"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf"
-    name: "NN6-MLP_Backpropagation.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN06-MLP_Backpropagation.pdf"
+    name: "NN06-MLP_Backpropagation.pdf"
 ---
 
 

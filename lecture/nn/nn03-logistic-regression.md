@@ -28,8 +28,8 @@ youtube:
   - link: "https://youtu.be/kPAZsr-r1LA"
     name: "NN3.4 - Logistische Regression - Gradientenabstieg"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN3-Logistische_Regression.pdf"
-    name: "NN3-Logistische_Regression.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN03-Logistische_Regression.pdf"
+    name: "NN03-Logistische_Regression.pdf"
 ---
 
 ## Kurze Übersicht
