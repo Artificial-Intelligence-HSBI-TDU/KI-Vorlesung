@@ -284,15 +284,14 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 [Entropie]: lecture/dtl/dtl5-entropy.md
 [ID3 und C4.5]: lecture/dtl/dtl6-id3.md
 
-[Perzeptron]: lecture/nn/nn1-perceptron.md
-[Lineare Regression]: lecture/nn/nn2-linear-regression.md
-[Logistische Regression]: lecture/nn/nn3-logistic-regression.md
-[Overfitting]: lecture/nn/nn4-overfitting.md
-[Multilayer Perceptron]: lecture/nn/nn5-mlp.md
-[Backpropagation]: lecture/nn/nn6-backprop.md
-[Training & Testing]: lecture/nn/nn7-training-testing.md
-[Performanzanalyse]: lecture/nn/nn8-testing.md
-<!-- [Large Language Models]: lecture/nn/nn9-llm.md -->
+[Perzeptron]: lecture/nn/nn01-perceptron.md
+[Lineare Regression]: lecture/nn/nn02-linear-regression.md
+[Logistische Regression]: lecture/nn/nn03-logistic-regression.md
+[Overfitting]: lecture/nn/nn04-overfitting.md
+[Multilayer Perceptron]: lecture/nn/nn05-mlp.md
+[Backpropagation]: lecture/nn/nn06-backprop.md
+[Training & Testing]: lecture/nn/nn07-training-testing.md
+[Performanzanalyse]: lecture/nn/nn08-testing.md
 [Vorschau Deep Learning (CNN, RNN)]: lecture/nn/nn10-cnn.md
 
 [Wahrscheinlichkeitstheorie]: lecture/naivebayes/nb1-probability.md
