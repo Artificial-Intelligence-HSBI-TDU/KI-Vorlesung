@@ -201,7 +201,7 @@ anderes Klassensymbol als "`A`" sein ...
 \smallskip
 
 *   4-seitiger Würfel:
-    *   Entropie = $H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
+    *   Entropie = $H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
 
 \bigskip
 
@@ -219,10 +219,10 @@ einfach wegen der größeren Anzahl an Ausprägungen rechnerisch bevorzugt würd
 
 ## C4.5 als Verbesserung zu ID3
 
-Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A)$
+Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A)$
 
 $$
-    \operatorname{Normierung}(A) = \frac{1}{
+    \operatorname{Normalisation}(A) = \frac{1}{
         \sum_{v \in \operatorname{Values}(A)} p_v \log_2 \frac{1}{p_v}
     }
 $$
@@ -256,14 +256,14 @@ Hierzu drei lesenswerte Blog-Einträge:
 *   Faire Münze:
     *   Entropie = $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
     *   Normierung: $1/(0.5 \log_2 (1/0.5) + 0.5 \log_2 (1/0.5)) = 1/(0.5 \cdot 1 + 0.5 \cdot 1) = 1$
-    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$
+    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$
 
 \smallskip
 
 *   4-seitiger Würfel:
-    *   Entropie = $H(\operatorname{Würfel}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
+    *   Entropie = $H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
     *   Normierung: $1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$
-    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normierung}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$
+    *   Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$
 
 \bigskip
 
