@@ -208,7 +208,7 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 | Oktober  | 07.               | [Orga] (**Zoom**); [Einführung KI], [Problemlösen]                                                      | Carsten, Canan |                          |
 |          | 14.               | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | [Blatt: Suche]           |
 |          | 21.               | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: EA/GA]           |
-|          | 28.               | [Optimale Spiele], [Games], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                             | Carsten        | [Blatt: Games]           |
+|          | 28.               | [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | [Blatt: Games]           |
 | November | 04.               | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | [Blatt: DTL]             |
 |          | 11.               | [Perzeptron]                                                                                            | Canan          | [Blatt: Perzeptron]      |
 |          | 18.               | [Lineare Regression]                                                                                    | Canan          | [Blatt: Regression]      |
@@ -235,7 +235,7 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 | Oktober   | 07. (**13:00 - 14:00** Uhr TR) | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | [Blatt: DTL]             |
 |           | 14.                            | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | [Blatt: Suche]           |
 |           | 21.                            | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: EA/GA]           |
-|           | 28.                            | [Optimale Spiele], [Games], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                             | Carsten        | [Blatt: Games]           |
+|           | 28.                            | [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | [Blatt: Games]           |
 | November  | 04.                            | **Zwischenprüfung**                                                                                     |                |                          |
 |           | 11.                            | [Perzeptron]                                                                                            | Canan          | [Blatt: Perzeptron]      |
 |           | 18.                            | [Lineare Regression]                                                                                    | Canan          | [Blatt: Regression]      |
@@ -273,7 +273,7 @@ Hier finden Sie einen abonnierbaren [Google Kalender] mit allen Terminen der Ver
 [Kantenkonsistenz und AC-3]: lecture/csp/csp4-ac3.md
 
 [Optimale Spiele]: lecture/games/games1-intro.md
-[Minimax]: lecture/games/games2-minimax.md
+[Games mit Minimax]: lecture/games/games2-minimax.md
 [Minimax und Heuristiken]: lecture/games/games3-heuristics.md
 [Alpha-Beta-Pruning]: lecture/games/games4-alphabeta.md
 
