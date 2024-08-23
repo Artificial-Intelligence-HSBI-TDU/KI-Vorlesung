@@ -59,15 +59,13 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="HSBI"}
 
-| 07.10. - 24.01.            |
-|:---------------------------|
-| Mo, 11:00 - 12:30 Uhr (DE) |
-| online/J101                |
+| 07.10. - 24.01.                     |
+|:------------------------------------|
+| Mo, 11:00 - 12:30 Uhr (DE) (online) |
+| (*Flipped Classroom*)               |
 
-Durchführung als **Flipped Classroom**.
-
-Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**).
-Sie _können_ hierzu den Raum J104 nutzen.
+Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Semester)] bzw. [ILIAS IFM 5.14 KI (PO18, 5. Semester)]**).
+Sie _können_ hierzu den Raum J101 nutzen.
 
 :::
 ::: {.tab title="TDU"}
@@ -77,39 +75,45 @@ Sie _können_ hierzu den Raum J104 nutzen.
 | Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
 | online                     | online                     |
 
-Durchführung als **Flipped Classroom**: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
+Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
 
 :::
 ::::::
 
 ### Praktikum/Übung: 2 SWS
 
-:::::: {.tabs groupid="hochschule"}
-::: {.tab title="HSBI"}
+:::::::::::: {.tabs groupid="hochschule"}
+::::::::: {.tab title="HSBI"}
 
-**GKI** (PO23, 3. Semester)
+:::::: {.tabs groupid="ifm-po"}
+::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
 
-| Praktikumsgruppe | 07.10. - 24.01.              |
-|:-----------------|:-----------------------------|
-| G1               | Di, 17:30 bis 19:00 Uhr (DE) |
-| G2               | Di, 17:30 bis 19:00 Uhr (DE) |
-| G3               | Mo, 17:30 bis 19:00 Uhr (DE) |
-|                  | online/J101                  |
+| Praktikumsgruppe | 07.10. - 24.01.                       |
+|:-----------------|:--------------------------------------|
+| G1               | Mo, 17:00 bis 18:30 Uhr (DE) (online) |
+| G2               | Mo, 15:15 bis 16:45 Uhr (DE) (online) |
+| G3               | Di, 09:45 bis 11:15 Uhr (DE) (online) |
 
-**KI** (PO18, 5. Semester)
-
-| Praktikumsgruppe | 07.10. - 24.01.              |
-|:-----------------|:-----------------------------|
-| G4               | Di, 17:30 bis 19:00 Uhr (DE) |
-| G5               | Di, 17:30 bis 19:00 Uhr (DE) |
-| G6               | Mo, 17:30 bis 19:00 Uhr (DE) |
-|                  | online/J101                  |
-
-Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS]**).
-Sie _können_ hierzu den Raum J104 nutzen.
+Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]**).
+Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::
-::: {.tab title="TDU"}
+::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+
+| Praktikumsgruppe | 07.10. - 24.01.                       |
+|:-----------------|:--------------------------------------|
+| G1               | Mi, 11:30 bis 13:00 Uhr (DE) (online) |
+| G2               | Mi, 14:00 bis 15:30 Uhr (DE) (online) |
+| G3               | Fr, 11:30 bis 13:00 Uhr (DE) (online) |
+
+Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 5.14 KI (PO18, 5. Semester)]**).
+Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
+
+:::
+::::::
+
+:::::::::
+::::::::: {.tab title="TDU"}
 
 | Übungsgruppe | 16.09. - 31.12.              |
 |:-------------|:-----------------------------|
@@ -119,22 +123,23 @@ Sie _können_ hierzu den Raum J104 nutzen.
 
 Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
-:::
-::::::
+:::::::::
+::::::::::::
 
-[ILIAS]: https://www.hsbi.de/elearning/goto.php?target=crs_1254525&client_id=FH-Bielefeld
+[ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
+[ILIAS IFM 5.14 KI (PO18, 5. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400604&client_id=FH-Bielefeld
 [Google Classroom]: https://classroom.google.com/c/NjMzNDM4MDk1NTM5
 
 
 ## Prüfungsform, Note und Credits
 
-:::::: {.tabs groupid="hochschule"}
-::: {.tab title="HSBI"}
+:::::::::::: {.tabs groupid="hochschule"}
+::::::::: {.tab title="HSBI"}
 
-Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
+:::::: {.tabs groupid="ifm-po"}
+::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
 
-**GKI** (PO23, 3. Semester)
-**KI** (PO18, 5. Semester)
+**Klausur plus Testat**, 5 ECTS
 
 *   **Testat**: Vergabe der Credit-Points
 
@@ -151,7 +156,29 @@ Prüfungsform HSBI: **Klausur plus Testat**, 5 ECTS
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
 :::
-::: {.tab title="TDU"}
+::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+
+**Klausur plus Testat**, 5 ECTS
+
+*   **Testat**: Vergabe der Credit-Points
+
+    Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
+    Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
+    ein Testat bescheinigt wird.
+
+    Kriterien: Sie haben mind. 6 der 10 Aufgabenblätter _jeweils_ ausreichend
+    (mind. 60%) bearbeitet und die Lösung im Praktikum vorgestellt.
+
+*   **Klausur**: => Modulnote
+
+    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
+    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
+
+:::
+::::::
+
+:::::::::
+::::::::: {.tab title="TDU"}
 
 | Prüfung         | Gewicht                       |
 |:----------------|-------------------------------|
@@ -165,8 +192,8 @@ werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
 Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
 **Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
 
-:::
-::::::
+:::::::::
+::::::::::::
 
 
 ## Materialien
@@ -176,12 +203,10 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
     Russell, S. und Norvig, P., Pearson, 2020.
     ISBN [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
-
 2.  "Introduction to Artificial Intelligence".
     Ertel, W., Springer, 2017.
     ISBN [978-3-319-58487-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4).
     DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
-
 3.  "An Introduction to Machine Learning".
     Kubat, M., Springer, 2017.
     ISBN [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
