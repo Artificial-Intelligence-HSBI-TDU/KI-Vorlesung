@@ -54,39 +54,20 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-### Vorlesung: 2 SWS
+:::::::::::: {.tabs groupid="hochschule"}
+::::::::: {.tab title="HSBI"}
 
-:::::: {.tabs groupid="hochschule"}
-::: {.tab title="HSBI"}
+:::::: {.tabs groupid="ifm-po"}
+::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
+
+**Vorlesung (2 SWS)**
 
 | 07.10. - 24.01.                     |
 |:------------------------------------|
 | Mo, 11:00 - 12:30 Uhr (DE) (online) |
 | (*Flipped Classroom*)               |
 
-Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Semester)] bzw. [ILIAS IFM 5.14 KI (PO18, 5. Semester)]**).
-Sie _können_ hierzu den Raum J101 nutzen.
-
-:::
-::: {.tab title="TDU"}
-
-| 16.09. - 25.10.            | 28.10. - 30.12.            |
-|:---------------------------|:---------------------------|
-| Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
-| online                     | online                     |
-
-Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
-
-:::
-::::::
-
-### Praktikum/Übung: 2 SWS
-
-:::::::::::: {.tabs groupid="hochschule"}
-::::::::: {.tab title="HSBI"}
-
-:::::: {.tabs groupid="ifm-po"}
-::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
+**Praktikum (2 SWS)**
 
 | Praktikumsgruppe | 07.10. - 24.01.                       |
 |:-----------------|:--------------------------------------|
@@ -99,6 +80,15 @@ Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::
 ::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+
+**Vorlesung (2 SWS)**
+
+| 07.10. - 24.01.                     |
+|:------------------------------------|
+| Mo, 11:00 - 12:30 Uhr (DE) (online) |
+| (*Flipped Classroom*)               |
+
+**Praktikum (2 SWS)**
 
 | Praktikumsgruppe | 07.10. - 24.01.                       |
 |:-----------------|:--------------------------------------|
@@ -114,6 +104,17 @@ Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::::::::
 ::::::::: {.tab title="TDU"}
+
+**Vorlesung (2 SWS)**
+
+| 16.09. - 25.10.            | 28.10. - 30.12.            |
+|:---------------------------|:---------------------------|
+| Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
+| online                     | online                     |
+
+Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe [Google Classroom]**)
+
+**Übung (2 SWS)**
 
 | Übungsgruppe | 16.09. - 31.12.              |
 |:-------------|:-----------------------------|
