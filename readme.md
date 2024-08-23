@@ -198,8 +198,6 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 ## Materialien
 
-### Literatur
-
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
     Russell, S. und Norvig, P., Pearson, 2020.
     ISBN [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
@@ -211,12 +209,6 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
     Kubat, M., Springer, 2017.
     ISBN [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
     DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
-
-### Tools
-
-*   [github.com/aimacode](https://github.com/aimacode)
-*   [WEKA](https://www.cs.waikato.ac.nz/ml/weka/)
-*   [scikit-learn](https://scikit-learn.org)
 
 
 ## Fahrplan
