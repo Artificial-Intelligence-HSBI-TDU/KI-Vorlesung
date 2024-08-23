@@ -236,13 +236,13 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 |                   | 48    | 25.: [Logistische Regression]                                                                                | Canan          |                               |                       |
 | Dezember          | 49    | 02.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | 02.: [Blatt: Regression]      | 02. / 03.             |
 |                   | 50    | 09.: [Backpropagation]                                                                                       | Canan          | 09.: [Blatt: MLP]             | 09. / 10.             |
-|                   | 51    | 16.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 16.: [Blatt: Backpropagation] | 16. / 17.             |
+|                   | 51    | 16.: **Projektwoche Semester 1+3**                                                                           |                |                               |                       |
 |                   | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
 |                   | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
-| Januar            | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
+| Januar            | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Backpropagation] | 06. / 07.             |
 |                   | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 13.: [Blatt: CSP]             | 13. / 14.             |
 |                   | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 20.: [Blatt: Naive Bayes]     | 20. / 21.             |
-| _(Prüfungsphase)_ |       | _Klausur_                                                                                                    |                |                               |                       |
+| _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
 
 :::
 ::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
@@ -269,7 +269,7 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 | Januar            | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
 |                   | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 15.: [Blatt: CSP]             | 15. / 17.             |
 |                   | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 22.: [Blatt: Naive Bayes]     | 22. / 24.             |
-| _(Prüfungsphase)_ |       | _Klausur_                                                                                                    |                |                               |                       |
+| _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
 
 :::
 ::::::
