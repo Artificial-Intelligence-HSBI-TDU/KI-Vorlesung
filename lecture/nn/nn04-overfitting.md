@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN4 - Overfitting und Regularisierung"
-linkTitle: "NN4 - Overfitting"
+title: "NN04 - Overfitting und Regularisierung"
+linkTitle: "NN04 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer Ordnung"
@@ -22,8 +22,8 @@ youtube:
   - link: "https://youtu.be/BW91MYPUH_k"
     name: "NN4.2 - Overfitting und Regularisierung"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN4-Nichtlineare_Modelle_und_Overfitting.pdf"
-    name: "NN4-Nichtlineare_Modelle_und_Overfitting.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
+    name: "NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
 ---
 
 

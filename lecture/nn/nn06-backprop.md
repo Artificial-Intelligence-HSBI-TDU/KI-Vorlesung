@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN6 - Backpropagation"
-linkTitle: "NN6 - Backpropagation"
+title: "NN06 - Backpropagation"
+linkTitle: "NN06 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe"
@@ -25,8 +25,8 @@ youtube:
   - link: "https://youtu.be/uvT4WPIIkwQ"
     name: "NN6.3 - MLP Zusammenfassung"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN6-MLP_Backpropagation.pdf"
-    name: "NN6-MLP_Backpropagation.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN06-MLP_Backpropagation.pdf"
+    name: "NN06-MLP_Backpropagation.pdf"
 ---
 
 

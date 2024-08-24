@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN8 - Performanzanalyse"
-linkTitle: "NN8 - Performanzanalyse"
+title: "NN08 - Performanzanalyse"
+linkTitle: "NN08 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Performanzmetriken für die Evaluierung von Klassifizierungsmodellen"
@@ -29,8 +29,8 @@ youtube:
   - link: "https://youtu.be/vsmoYiArtrA"
     name: "NN8.5 - Harmonisches Mittel- Intuition"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN8-Performanzanalyse.pdf"
-    name: "NN8-Performanzanalyse.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN08-Performanzanalyse.pdf"
+    name: "NN08-Performanzanalyse.pdf"
 ---
 
 

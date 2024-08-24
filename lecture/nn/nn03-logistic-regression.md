@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN3 - Logistische Regression"
-linkTitle: "NN3 - Logistische Regression"
+title: "NN03 - Logistische Regression"
+linkTitle: "NN03 - Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron und linearer Regression"
@@ -28,8 +28,8 @@ youtube:
   - link: "https://youtu.be/kPAZsr-r1LA"
     name: "NN3.4 - Logistische Regression - Gradientenabstieg"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN3-Logistische_Regression.pdf"
-    name: "NN3-Logistische_Regression.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN03-Logistische_Regression.pdf"
+    name: "NN03-Logistische_Regression.pdf"
 ---
 
 ## Kurze Übersicht

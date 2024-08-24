@@ -1,7 +1,7 @@
 ---
 archetype: lecture-cy
-title: "NN7 - Training & Testing"
-linkTitle: "NN7 - Training & Testing"
+title: "NN07 - Training & Testing"
+linkTitle: "NN07 - Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Trainings-, Validierungs- und Testfehler"
@@ -26,8 +26,8 @@ youtube:
   - link: "https://youtu.be/7XATTMNI-gI"
     name: "NN7.3 - Beispiel"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN7-Testing-Validierung.pdf"
-    name: "NN7-Testing-Validierung.pdf"
+  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN07-Testing-Validierung.pdf"
+    name: "NN07-Testing-Validierung.pdf"
 ---
 
 
