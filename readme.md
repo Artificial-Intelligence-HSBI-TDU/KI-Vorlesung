@@ -54,11 +54,8 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-:::::::::::: {.tabs groupid="hochschule"}
-::::::::: {.tab title="HSBI"}
-
-:::::: {.tabs groupid="ifm-po"}
-::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 **Vorlesung (2 SWS)**
 
@@ -79,7 +76,7 @@ Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Sem
 Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::
-::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
 **Vorlesung (2 SWS)**
 
@@ -100,10 +97,7 @@ Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 5.14 KI (PO18, 5. Sem
 Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::
-::::::
-
-:::::::::
-::::::::: {.tab title="TDU"}
+::: {.tab title="INF701 KI (TDU)"}
 
 **Vorlesung (2 SWS)**
 
@@ -124,8 +118,8 @@ Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe 
 
 Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
-:::::::::
-::::::::::::
+:::
+::::::
 
 [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
 [ILIAS IFM 5.14 KI (PO18, 5. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400604&client_id=FH-Bielefeld
@@ -134,11 +128,8 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 ## Prüfungsform, Note und Credits
 
-:::::::::::: {.tabs groupid="hochschule"}
-::::::::: {.tab title="HSBI"}
-
-:::::: {.tabs groupid="ifm-po"}
-::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 **Klausur plus Testat**, 5 ECTS
 
@@ -157,7 +148,7 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
 :::
-::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
 **Klausur plus Testat**, 5 ECTS
 
@@ -176,10 +167,7 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
 :::
-::::::
-
-:::::::::
-::::::::: {.tab title="TDU"}
+::: {.tab title="INF701 KI (TDU)"}
 
 | Prüfung         | Gewicht                       |
 |:----------------|-------------------------------|
@@ -193,8 +181,8 @@ werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
 Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
 **Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
 
-:::::::::
-::::::::::::
+:::
+::::::
 
 
 ## Materialien
@@ -214,11 +202,8 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 ## Fahrplan
 
-:::::::::::: {.tabs groupid="hochschule"}
-::::::::: {.tab title="HSBI"}
-
-:::::: {.tabs groupid="ifm-po"}
-::: {.tab title="IFM 3.2 GKI (PO23, 3. Semester)"}
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
@@ -245,7 +230,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 | _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
 
 :::
-::: {.tab title="IFM 5.14 KI (PO18, 5. Semester)"}
+::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 5.14 KI (PO18, 5. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
@@ -272,10 +257,7 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 | _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
 
 :::
-::::::
-
-:::::::::
-::::::::: {.tab title="TDU"}
+::: {.tab title="INF701 KI (TDU)"}
 
 **Vorlesung**
 
@@ -313,8 +295,8 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 | [Blatt: MLP]             | Do, 28.12.        |
 | [Blatt: Backpropagation] | Do, 11.01.        |
 
-:::::::::
-::::::::::::
+:::
+::::::
 
 [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)]: https://calendar.google.com/calendar/ical/5121604486803dcdb5cfaa8602b8b09ce76743d8b9216795606617cac807e595%40group.calendar.google.com/public/basic.ics
 [Google Kalender IFM 5.14 KI (PO18, 5. Semester)]: https://calendar.google.com/calendar/ical/5121604486803dcdb5cfaa8602b8b09ce76743d8b9216795606617cac807e595%40group.calendar.google.com/public/basic.ics
