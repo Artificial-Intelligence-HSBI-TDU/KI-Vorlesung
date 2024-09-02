@@ -166,6 +166,13 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
+Die nächste Klausur für "Künstliche Intelligenz" wird am **Mittwoch, 02. Oktober 2024**
+angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung beginnt um
+**08:00 Uhr und dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen.
+Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2023/2024,
+s.u.). Weitere Informationen siehe [Prüfungsvorbereitung HSBI].
+
 :::
 ::: {.tab title="INF701 KI (TDU)"}
 
