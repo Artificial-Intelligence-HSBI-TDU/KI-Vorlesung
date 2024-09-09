@@ -159,6 +159,29 @@ Dazu gehört auch
 *   Über Emotionen und Empathie verfügen
 :::
 
+::: notes
+{{% notice style="info" title="KI-Grundverordnung der EU"%}}
+Die EU hat am 13. Juni 2024 die sogenannte "KI-Verordnung" verabschiedet ("VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES",
+[Document 32024R1689: Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom 13. Juni 2024 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz und zur Änderung der Verordnungen (EG) Nr. 300/2008, (EU) Nr. 167/2013, (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 und (EU) 2019/2144 sowie der Richtlinien 2014/90/EU, (EU) 2016/797 und (EU) 2020/1828 (Verordnung über künstliche Intelligenz) (Text von Bedeutung für den EWR)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)).
+
+Dort finden Sie unter Artikel 3 "Begriffsbestimmungen" unter Absatz 1 eine Begriffsdefinition.
+Ein "KI-System" wird darin als ein maschinengestütztes System definiert, in irgendeiner Art für
+einen autonomen Betrieb ausgelegt ist und eine gewisse Anpassungsfähigkeit haben kann. Zusätzlich
+soll das "KI-System" aus den Eingaben Vorhersagen und Entscheidungen zu treffen oder auch Inhalte
+erzeugen und mit der physischen oder digitalen Umwelt interagieren können.
+[Quelle: [VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689), Art. 3 Abs. 1]{.origin}
+
+Interessant ist, dass dabei nicht explizit auf Softwaresysteme eingegangen wird. Später im
+Text finden sich Hinweise, dass sich ein KI-System vermutlich als Software repräsentiert,
+auch kommen Modelle und Daten vor. Bei den Modellen kommt der Begriff des Lernens vor, in
+allen derzeit üblichen Varianten (überwachtes Lernen, unüberwachtes Lernen, Reinforcement
+Learning). Große Teile des Dokuments beschäftigen sich mit weitreichenden Bestimmungen für
+Akteure, die ein KI-System zur Verfügung stellen wollen.
+
+Lesen Sie selbst: [VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
+{{% /notice %}}
+:::
+
 
 ## Alan Turing 1950: Turing-Test (begründet Zweige der KI)
 
