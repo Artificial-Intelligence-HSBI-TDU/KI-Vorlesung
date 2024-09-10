@@ -216,20 +216,20 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 ## Starke vs. schwache KI
 
 ### "Schwache KI"
--   Simulation intelligenten Verhaltens
--   Lösung konkreter Probleme
--   Adaptives Verhalten ("Lernen")
--   Umgang mit Unsicherheit und unvollständigen Informationen
+*   Simulation intelligenten Verhaltens
+*   Lösung konkreter Probleme
+*   Adaptives Verhalten ("Lernen")
+*   Umgang mit Unsicherheit und unvollständigen Informationen
 
 \bigskip
 \bigskip
 
 ### "Starke KI"
--   Eigenschaften der "schwachen KI"
--   Intelligenz nach menschlichen Maßstäben (auf "Augenhöhe")
--   Bewusstsein
--   Emotionen (?)
--   Empathie
+*   Eigenschaften der "schwachen KI"
+*   Intelligenz nach menschlichen Maßstäben (auf "Augenhöhe")
+*   Bewusstsein
+*   Emotionen (?)
+*   Empathie
 
 ::: notes
 Frage: Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
@@ -266,17 +266,24 @@ Damit erhält man vier Kombinationen:
 
 ### Menschliches Denken: Kognitive Modellierung
 
--   Welche kognitiven Fähigkeiten sind für intelligentes Verhalten nötig?
+*   Welche kognitiven Fähigkeiten sind für intelligentes Verhalten nötig?
     Wie laufen Denkprozesse im Gehirn ab?
--   Erfordert Theorien über interne Aktivitäten des Gehirns
--   Ansätze:
-    -   top-down: Vorhersage und Test von menschlichem Verhalten
-    -   bottom-up:  Auswertung neurobiologischer Daten
--   Wissenschaftszweige: Kognitionswissenschaft (Verbindung der
+*   Erfordert Theorien über interne Aktivitäten des Gehirns
+*   Ansätze:
+    *   top-down: Vorhersage und Test von menschlichem Verhalten
+    *   bottom-up: Auswertung neurobiologischer Daten
+*   Wissenschaftszweige: Kognitionswissenschaft (Verbindung der
     Computermodelle der KI mit den Experimenten und Theorien der
     Psychologie), Neurobiologie/-informatik
 
-**=>** "**Neuronale KI**"
+{{% notice style="info" title="Neuronale bzw. Konnektionistische KI"%}}
+Die Schule der sogenannten "**Neuronalen bzw. Konnektionistischen KI**" verfolgt den Ansatz,
+die biologischen Prozesse im Gehirn zu verstehen und nachzubauen (bottom-up Ansatz) und auf
+reale Probleme anzuwenden.
+
+Dank massiver Rechenleistung, riesigen Datenmengen und geeigneten Modellen (Deep Learning)
+kann diese Tradition aktuell große Erfolge vorzeigen.
+{{% /notice %}}
 
 
 ### Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? => Wie sollen wir denken?
@@ -287,26 +294,48 @@ Beispiel:
     Fakt: Alle Menschen sind sterblich.
     Folgerung: Sokrates ist sterblich.
 
--   Formalisierte Problembeschreibung
--   Problemlösung durch *logische Prozesse*
--   Verbindung von moderner KI zur Mathematik und Philosophie
+*   Formalisierte Problembeschreibung
+*   Problemlösung durch *logische Prozesse*
+*   Verbindung von moderner KI zur Mathematik und Philosophie
 
-**=>** "**Symbolische KI**"
+{{% notice style="info" title="Symbolische KI"%}}
+Die Schule der sogenannten "**Symbolische KI**" verfolgt den top-down-Ansatz, mit Hilfe
+formaler Beweise Schlüsse zu ziehen und damit Fragen zu beantworten bzw. Probleme zu lösen.
+Dabei wird die betrachtete "Welt", also Gedanken, Konzepte und Beziehungen zwischen Objekten
+durch Symbole und Formeln repräsentiert, ähnlich der Art und Weise, wie Menschen logisch
+denken und kommunizieren.
+
+Das Hauptproblem dieser Tradition liegt im Aufwand bei der geeigneten Formalisierung der
+realen Welt.
+{{% /notice %}}
 
 
 ### Rationales Verhalten: Das "Richtige" tun
 
--   Das "Richtige": Verhalten zum Erzielen des besten (erwarteten)
+*   Das "Richtige": Verhalten zum Erzielen des besten (erwarteten)
     Ergebnisses (unter Berücksichtigung der verfügbaren Informationen)
 
     Ein System ist rational, wenn es das seinen Kenntnissen nach "Richtige"
     macht.
--   Denken ist nicht unbedingt notwendig (zb. Reflexe können auch rationales
+*   Denken ist nicht unbedingt notwendig (zb. Reflexe können auch rationales
     Verhalten sein)
--   Interessant: "richtige" Handlung unter unvollständigen/unsicheren
+*   Interessant: "richtige" Handlung unter unvollständigen/unsicheren
     Informationen
 
 **=>** "**Spiel-Theorie, Naive Bayes**"
+
+{{% notice style="info" title="Statistische KI"%}}
+Die Schule der sogenannten "**Statistischen KI**" verfolgt einen Ansatz, der sich stark auf
+statistische Methoden und Modelle stützt, um Muster in Daten zu erkennen und Entscheidungen zu
+treffen, also um aus großen Datenmengen Erkenntnisse zu gewinnen und Vorhersagen zu treffen.
+
+Aus der Analyse von Datenpunkten und deren Merkmalen werden Wahrscheinlichkeiten für bestimmte
+Ereignisse berechnet, beispielsweise in Regressionsanalysen, Klassifizierungsverfahren oder
+Zeitreihenanalysen.
+
+Diese Tradition spielt eine zentrale Rolle in zahlreichen Anwendungsbereichen wie
+Gesundheitswesen, Finanzen, Marketing und vielen weiteren.
+{{% /notice %}}
 
 
 ### Menschliches Verhalten: Na ja, Sie wissen schon ;-)
