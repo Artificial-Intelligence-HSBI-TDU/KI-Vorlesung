@@ -371,6 +371,48 @@ ich in diesem Skript diesen Begriff nicht für das Generieren einer Vorhersage n
 :::
 
 
+::: notes
+## Modellkomplexität
+
+In der KI werden sehr unterschiedliche Modelle betrachtet, die auch eine sehr unterschiedliche
+Komplexität aufweisen.
+
+Besonders einfache Modelle sind Modelle, die für einen Input direkt einen Output berechnen.
+Für jeden Input wird eine feste Berechnung durchgeführt, es erfolgt kein Backtracking und es
+gibt keine (inneren) Zustände. Dies ähnelt dem reflexartigen Verhalten in biologischen
+Vorbildern, weshalb diese Modell oft auch "*reflex-based models*" genannt werden. In diese
+Kategorie fallen beispielsweise [lineare Regression](../nn/nn02-linear-regression.md) und das
+[Perzeptron](../nn/nn01-perceptron.md), aber auch Modelle mit vielen Parametern wie ein
+[Multilagen-Perzeptron (MLP)](../nn/nn05-mlp.md) oder die daraus abgeleiteten Deep Neural
+Networks.
+
+In der nächst komplexeren Stufe haben die Modelle einen internen Zustand ("*state-based
+models*"). Darüber wird ein Zustand der betrachteten Welt modelliert. Zwischen den Zuständen
+gibt es Übergänge (sogenannte Aktionen), so dass sich hier ein Graph aufspannt (der sogenannte
+Problemgraph, vgl. [Problemlösen](intro2-problemsolving.md)). In diese Klasse fallen die
+typischen Suchprobleme (wie [Breitensuche](../searching/search2-bfs.md),
+[Tiefensuche](../searching/search1-dfs.md), [A\*](../searching/search5-astar.md)), aber auch
+[Spiele](../games/readme.md) mit Zufallskomponente oder mit gegnerischen Mitspielern.
+
+Noch eine Stufe komplexer sind Modelle mit Variablen ("*variable-based models*"). Während es
+bei den zustandsbasierten Modellen immer (auch) um den Weg zwischen den Zuständen geht und
+damit um eine prozedurale Beschreibung, wie von einem Startzustand zu einem Zielzustand zu
+gelangen ist, steht bei Modellen mit Variablen nur die Lösung im Vordergrund: Das Modell
+enthält verschiedene Variablen, denen ein passender Wert aus einem Wertebereich zugeordnet
+werden muss. Wie diese Belegung entsteht, ist am Ende nicht mehr so interessant. Denken Sie
+beispielsweise an ein Sudoku oder die Erstellung eines Stundenplans. Die Variablen sind
+entsprechend die einzelnen Felder, gesucht ist eine insgesamt korrekte Belegung aller Felder.
+In diese Klasse fallen [Constraint Satisfaction Probleme (CSP)](../csp/readme.md), aber auch
+Bayes'sche Netze und die sogenannte ["lokale Suche"](../searching/search6-gradient.md).
+
+Auf der höchsten Komplexitätsstufe stehen logische Modelle. Hier wird Wissen über die Welt in
+Form von Fakten und Regeln modelliert, und über eine entsprechende Anfrage wird daraus mit
+Hilfe von formal definierten Beweisen eine korrekte Antwort generiert. Dies nennt man auch
+"*Inferenz*". Hier kommt beispielsweise das Prädikatenkalkül zum Einsatz oder die
+Programmiersprache Prolog.
+:::
+
+
 ## Kurzer Geschichtsüberblick -- Wichtigste Meilensteine
 
 *   1943: McCulloch/Pitts: binäres Modell eines Neurons
