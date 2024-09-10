@@ -101,7 +101,7 @@ Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 **Vorlesung (2 SWS)**
 
-| 16.09. - 25.10.            | 28.10. - 30.12.            |
+| 30.09. - 25.10.            | 28.10. - 15.01.            |
 |:---------------------------|:---------------------------|
 | Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
 | online                     | online                     |
