@@ -313,6 +313,64 @@ Beispiel:
 :::::::::
 
 
+::: notes
+## Modelle, Lernen und Vorhersagen
+
+In der Informatik allgemein und auch in der KI versuchen wir, Probleme der realen Welt mit
+Hilfe von künstlichen Systemen (Algorithmen, Software) zu lösen. Dafür brauchen wir zunächst
+ein abstraktes mathematisches **Modell** der Welt, in der wir uns bewegen. Das Modell sollte
+alle für das zu lösende Problem relevanten Aspekte der Welt repräsentieren - und möglichst
+nicht mehr als diese, um unnötige Komplexität zu vermeiden. Es kommt häufig vor, dass selbst
+die relevanten Aspekte zu umfangreich oder teilweise sogar unbekannt sind und nicht
+vollständig dargestellt werden können. Modelle stellen also eine Abstraktion der echten Welt
+dar und sind *verlustbehaftet*. Es gibt viele verschiedene Modelle.
+
+_Beispiel_: Wir möchten von Bielefeld nach Minden fahren. Neben den offensichtlichen
+Parametern (Womit wollen wir fahren? Wo genau ist der Startpunkt, wo genau der Zielpunkt? Wann
+wollen wir fahren?) spielen in der realen Welt unendlich viele Aspekte eine Rolle: Farben,
+Gerüche, Licht, Beschaffenheit der einzelnen Straßen, exakte Positionen auf der Straße/im Ort
+... Sind diese wirklich relevant für dieses Problem? Am Ende wird es wichtig sein, eine
+abstrakte Darstellung zu finden, die irgendwie die Städte und Dörfer repräsentiert und die
+Verbindungen dazwischen. Und vermutlich muss ich wissen, wie lang die Strecken jeweils sind
+(oder wie lange ich brauche oder wieviel Geld mich das Abfahren kostet). Es scheint also so zu
+sein, dass eine Abstraktion des Problems als *Graph* sinnvoll ist: Die Knoten entsprechen den
+Orten, die Kanten den Straßen (oder Bahnlinien o.ä.). An den Kanten sind Kosten annotiert
+(Kilometer, Zeit, ...). Damit ignorieren wir die Komplexität der realen Welt und fokussieren
+uns auf die Aspekte, die zur Lösung des Problems wichtig sind. Behalten Sie im Gedächtnis,
+dass unser Modell verlustbehaftet ist und wir damit tatsächlich nur das Wegeproblem lösen
+können! Wenn wir Wege vergessen haben oder falsch bewertet haben, wird unser Algorithmus
+später möglicherweise nicht die gewünschte Lösung finden! Wir schauen uns das Thema
+Modellierung am Beispiel des Problemlösens und insbesondere für Suchprobleme in der Lektion
+[Problemlösen](intro2-problemsolving.md) noch genauer an.
+
+Ein Modell kann Parameter haben. Im obigen Beispiel wären dies die Werte an den Kanten. Es
+kann sein, dass diese Werte nicht im Vorfeld bekannt sind, sondern aus einem Datensatz
+extrahiert werden müssen. Dies nennt man **Lernen**: Das Modell wird (besser gesagt: die
+Parameter des Modells werden) an das Problem angepasst. Dafür gibt es unterschiedliche
+Algorithmen. In der Regel benötigt man ein Ziel für den Adaptionsprozess: eine sogenannte
+Ziel- oder Kostenfunktion. Anpassen der Modellparameter mit Hilfe von Daten und einer
+Zielfunktion bedeutet auch, dass man das Ziel möglicherweise nie zu 100% erreicht, sondern nur
+in die Nähe kommt. Je nach Problem kann man auch nur eine Modellfamilie vorgeben und den
+konkreten Aufbau des Modells im Trainingsprozess erarbeiten lassen.
+
+_Wichtig_: Lernen bietet sich immer dann an, wenn eine analytische Lösung nicht möglich ist
+(fehlende Informationen, Komplexität des Problems). Das bedeutet im Umkehrschluss aber auch:
+Wenn eine analytische Lösung bekannt ist (oder zu finden ist), dann gibt es keinen Grund für
+den Einsatz von adaptiven Systemen!
+
+Mit dem Modell der Welt kann nun das Problem gelöst werden. Dazu wird das Modell mit Daten
+versorgt (im obigen Beispiel: Start und Ziel) und ein passender Algorithmus kann auf dem
+Modell die Lösung berechnen. Dies kann eine **Vorhersage** sein, welchen Weg ich nehmen soll,
+wie lange es dauern wird, welchen Spielzug ich als nächstes machen sollte, ob in einem Bild
+eine Katze zu sehen ist, ... Es könnte aber auch im Fall von sogenannten *generativen
+Modellen* ein erzeugter Text oder ein erzeugtes Bild sein.
+
+_Hinweis_: In manchen Quellen wird dieser Vorgang auch "Inferenz" genannt. Da dieser Begriff
+aus der Logik stammt und mit bestimmten Prozessen zur Schlussfolgerung verbunden ist, möchte
+ich in diesem Skript diesen Begriff nicht für das Generieren einer Vorhersage nutzen.
+:::
+
+
 ## Kurzer Geschichtsüberblick -- Wichtigste Meilensteine
 
 *   1943: McCulloch/Pitts: binäres Modell eines Neurons
