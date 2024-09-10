@@ -467,6 +467,12 @@ Siehe auch Abbildung 1.3 in [@Ertel2017, S.8] ...
 *   Dimensionen: Denken vs. Verhalten, menschlich vs. rational
 *   Ziele der KI: Verständnis menschlicher Fähigkeiten, Übertragen auf künstliche Systeme
 
+::: notes
+Schauen Sie sich zur Einführung auch gern das YouTube-Video
+[Overview Artificial Intelligence Course | Stanford CS221](https://youtu.be/J8Eh7RqggsU)
+an. (Vorsicht: Das ist recht lang.)
+:::
+
 
 
 
