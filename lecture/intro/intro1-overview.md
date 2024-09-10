@@ -231,6 +231,10 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 -   Emotionen (?)
 -   Empathie
 
+::: notes
+Frage: Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
+:::
+
 
 ## Typische Ansätze in der KI
 
