@@ -160,7 +160,7 @@ Dazu gehört auch
 :::
 
 ::: notes
-{{% notice style="info" title="KI-Grundverordnung der EU"%}}
+`{{% notice style="info" title="KI-Grundverordnung der EU" %}}`{=markdown}
 Die EU hat am 13. Juni 2024 die sogenannte "KI-Verordnung" verabschiedet ("VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES",
 [Document 32024R1689: Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom 13. Juni 2024 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz und zur Änderung der Verordnungen (EG) Nr. 300/2008, (EU) Nr. 167/2013, (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 und (EU) 2019/2144 sowie der Richtlinien 2014/90/EU, (EU) 2016/797 und (EU) 2020/1828 (Verordnung über künstliche Intelligenz) (Text von Bedeutung für den EWR)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)).
 
@@ -179,7 +179,7 @@ Learning). Große Teile des Dokuments beschäftigen sich mit weitreichenden Best
 Akteure, die ein KI-System zur Verfügung stellen wollen.
 
 Lesen Sie selbst: [VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
-{{% /notice %}}
+`{{% /notice %}}`{=markdown}
 :::
 
 
@@ -232,7 +232,9 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 *   Empathie
 
 ::: notes
-Frage: Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
+`{{% notice style="note" title="Frage" %}}`{=markdown}
+Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
+`{{% /notice %}}`{=markdown}
 :::
 
 
@@ -276,14 +278,14 @@ Damit erhält man vier Kombinationen:
     Computermodelle der KI mit den Experimenten und Theorien der
     Psychologie), Neurobiologie/-informatik
 
-{{% notice style="info" title="Neuronale bzw. Konnektionistische KI"%}}
+`{{% notice style="info" title="Neuronale bzw. Konnektionistische KI" %}}`{=markdown}
 Die Schule der sogenannten "**Neuronalen bzw. Konnektionistischen KI**" verfolgt den Ansatz,
 die biologischen Prozesse im Gehirn zu verstehen und nachzubauen (bottom-up Ansatz) und auf
 reale Probleme anzuwenden.
 
 Dank massiver Rechenleistung, riesigen Datenmengen und geeigneten Modellen (Deep Learning)
 kann diese Tradition aktuell große Erfolge vorzeigen.
-{{% /notice %}}
+`{{% /notice %}}`{=markdown}
 
 
 ### Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? => Wie sollen wir denken?
@@ -298,7 +300,7 @@ Beispiel:
 *   Problemlösung durch *logische Prozesse*
 *   Verbindung von moderner KI zur Mathematik und Philosophie
 
-{{% notice style="info" title="Symbolische KI"%}}
+`{{% notice style="info" title="Symbolische KI" %}}`{=markdown}
 Die Schule der sogenannten "**Symbolische KI**" verfolgt den top-down-Ansatz, mit Hilfe
 formaler Beweise Schlüsse zu ziehen und damit Fragen zu beantworten bzw. Probleme zu lösen.
 Dabei wird die betrachtete "Welt", also Gedanken, Konzepte und Beziehungen zwischen Objekten
@@ -307,7 +309,7 @@ denken und kommunizieren.
 
 Das Hauptproblem dieser Tradition liegt im Aufwand bei der geeigneten Formalisierung der
 realen Welt.
-{{% /notice %}}
+`{{% /notice %}}`{=markdown}
 
 
 ### Rationales Verhalten: Das "Richtige" tun
@@ -322,9 +324,7 @@ realen Welt.
 *   Interessant: "richtige" Handlung unter unvollständigen/unsicheren
     Informationen
 
-**=>** "**Spiel-Theorie, Naive Bayes**"
-
-{{% notice style="info" title="Statistische KI"%}}
+`{{% notice style="info" title="Statistische KI" %}}`{=markdown}
 Die Schule der sogenannten "**Statistischen KI**" verfolgt einen Ansatz, der sich stark auf
 statistische Methoden und Modelle stützt, um Muster in Daten zu erkennen und Entscheidungen zu
 treffen, also um aus großen Datenmengen Erkenntnisse zu gewinnen und Vorhersagen zu treffen.
@@ -335,7 +335,7 @@ Zeitreihenanalysen.
 
 Diese Tradition spielt eine zentrale Rolle in zahlreichen Anwendungsbereichen wie
 Gesundheitswesen, Finanzen, Marketing und vielen weiteren.
-{{% /notice %}}
+`{{% /notice %}}`{=markdown}
 
 
 ### Menschliches Verhalten: Na ja, Sie wissen schon ;-)
