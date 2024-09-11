@@ -110,7 +110,7 @@ Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe 
 
 **Übung (2 SWS)**
 
-| Übungsgruppe | 16.09. - 31.12.              |
+| Übungsgruppe | 30.09. - 15.01.              |
 |:-------------|:-----------------------------|
 | G1 / G3      | Do, 14:30 bis 15:30 Uhr (TR) |
 | G2 / G4      | Do, 15:30 bis 16:30 Uhr (TR) |
