@@ -9,25 +9,7 @@ hidden: true
 
 
 
-## Search.01: Möglichkeiten und Grenzen der KI (1P)
-
-Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
-gelöst werden können und welche aktuell noch ungelöst sind.
-
-*Thema*: Gefühl für bereits realisierbare Aufgaben
-
-
-
-## Search.02: Auswirkungen der KI (1P)
-
-Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa
-durch autonomes Fahren oder durch _Large Language Models_ (LLM).
-
-*Thema*: Chancen und Risiken, Ethik
-
-
-
-## Search.03: Problemformalisierung, Zustandsraum (2P)
+## Search.01: Problemformalisierung, Zustandsraum (3P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen
 diesen überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei
@@ -45,7 +27,7 @@ zwischen beiden Gruppen kommt.
 
 
 
-## Search.04: Suchverfahren (4P)
+## Search.02: Suchverfahren (5P)
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
@@ -68,7 +50,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
     gern auch die Java-Klassen im Paket [`aima.core.search`] bzw. die Python-Klassen in [`search.py`]
     als Ausgangspunkt nutzen.[^aima]
 
-2.  Dürfen die oben gegebenen Restkostenabschätzungen in A\* verwendet werden?
+2.  Dürfen die oben gegebenen Restkostenabschätzungen in A\* verwendet werden? (1P)
     *   Falls ja, warum?
     *   Falls nein, warum? Wie müssten die Abschätzungen ggf. korrigiert werden?
 
@@ -84,7 +66,7 @@ vor München, Karlsruhe vor Kassel etc.
 
 
 
-## Search.05: Dominanz (1P)
+## Search.03: Dominanz (1P)
 
 Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
 
@@ -98,31 +80,9 @@ Geben Sie selbstgewählte Beispiele an.
 
 
 
-## Search.06: Beweis der Optimalität von A* (1P)
+## Search.04: Beweis der Optimalität von A\* (1P)
 
-Beweisen Sie, dass A* in der Tree-Search-Variante bei Nutzung einer
+Beweisen Sie, dass A\* in der Tree-Search-Variante bei Nutzung einer
 zulässigen Heuristik optimal ist.
 
 *Thema*: Bedeutung einer zulässigen Heuristik (Selbststudium)
-
-
-
-## Search.07 Bonus: Turing Test (1P)
-
-Testen Sie einige der im Netz verfügbaren Chatbots auf deren Intelligenz.[^Links]
-
-Notieren Sie sich eine Startfrage und messen Sie die Zeit, die Sie bei den
-verschiedenen Programmen benötigen, bis Sie sicher sagen können, dass es kein
-Mensch ist. Speichern Sie jeweils ein Protokoll der Dialoge. Können Sie selbst
-einen Bot erstellen?
-
-Vergleichen Sie dabei traditionelle Chatbots und LLM.
-
-*Thema*: Turing-Test selbst erfahren
-
-[^Links]: Starten Sie zum Beispiel auf
-[github.com/DopplerHQ/awesome-bots](https://github.com/DopplerHQ/awesome-bots#popular-examples-of-bots)
-oder [simonlaven.com](https://www.simonlaven.com/)
-oder [cleverbot.com/](https://www.cleverbot.com/)
-oder [home.pandorabots.com](https://home.pandorabots.com/en/)
-oder [github.com/alice-bot](https://github.com/alice-bot).
