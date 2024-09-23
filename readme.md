@@ -212,6 +212,12 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
+<!--
+`{{% notice style="note" title="News" %}}`{=markdown}
+Here be dragons ...
+`{{% /notice %}}`{=markdown}
+-->
+
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420535&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
@@ -240,6 +246,12 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
+<!--
+`{{% notice style="note" title="News" %}}`{=markdown}
+Here be dragons ...
+`{{% /notice %}}`{=markdown}
+-->
+
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 5.14 KI (PO18, 5. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420536&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
@@ -267,6 +279,12 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 
 :::
 ::: {.tab title="INF701 KI (TDU)"}
+
+<!--
+`{{% notice style="note" title="News" %}}`{=markdown}
+Here be dragons ...
+`{{% /notice %}}`{=markdown}
+-->
 
 | Monat     | Tag                            | Vorlesung                                                                                               | Lead           | Start Bearbeitung        | Vorstellung Übung                    |
 |:----------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|:-------------------------------------|

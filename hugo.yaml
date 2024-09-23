@@ -44,15 +44,12 @@ menu:
     - name: "<i class='fas fa-bookmark'></i> Fahrplan"
       url: "/index.html#fahrplan"
       weight: 20
-    - name: "<i class='fas fa-bookmark'></i> Aufgabenblätter"
-      url: "/index.html#praktikumübung"
-      weight: 30
     - name: "<i class='fas fa-bookmark'></i> Note/Credits"
       url: "/index.html#prüfungsform-note-und-credits"
+      weight: 30
+    - name: "<i class='fas fa-bookmark'></i> News"
+      url: "/index.html#fahrplan"
       weight: 40
-    - name: "<i class='fas fa-external-link-alt'></i> FAQ"
-      url: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/discussions"
-      weight: 50
 
 outputs:
   home:
