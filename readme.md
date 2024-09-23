@@ -216,25 +216,26 @@ Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semes
 
 Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420535&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
-| Monat             | Woche | Vorlesung                                                                                                    | Lead           | Abgabe Aufgabenblatt          | Vorstellung Praktikum |
-|:------------------|:------|:-------------------------------------------------------------------------------------------------------------|:---------------|:------------------------------|:----------------------|
-| Oktober           | 41    | 07.: [Orga] (*Zoom*); [Einführung KI], [Problemlösen]; [Machine Learning 101], [Perzeptron]                  | Carsten, Canan |                               |                       |
-|                   | 42    | 14.: [Lineare Regression]                                                                                    | Canan          | 14.: [Blatt: Perzeptron]      | 14. / 15.             |
-|                   | 43    | 21.: [Logistische Regression]                                                                                | Canan          |                               |                       |
-|                   | 44    | 28.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | 28.: [Blatt: Regression]      | 28. / 29.             |
-| November          | 45    | 04.: [Backpropagation]                                                                                       | Canan          | 04.: [Blatt: MLP]             | 04. / 05.             |
-|                   | 46    | 11.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 11.: [Blatt: Backpropagation] | 11. / 12.             |
-|                   | 47    | 18.: [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        |                               |                       |
-|                   | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 25.: [Blatt: DTL]             | 25. / 26.             |
-| Dezember          | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 02.: [Blatt: Suche]           | 02. / 03.             |
-|                   | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 09.: [Blatt: EA/GA]           | 09. / 10.             |
-|                   | 51    | 16.: **Projektwoche Semester 1+3**                                                                           |                |                               |                       |
-|                   | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
-|                   | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
-| Januar            | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Games]           | 06. / 07.             |
-|                   | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 13.: [Blatt: CSP]             | 13. / 14.             |
-|                   | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 20.: [Blatt: Naive Bayes]     | 20. / 21.             |
-| _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
+| Monat                | Woche | Vorlesung                                                                                                    | Lead           | Abgabe Aufgabenblatt          | Vorstellung Praktikum |
+|:---------------------|:------|:-------------------------------------------------------------------------------------------------------------|:---------------|:------------------------------|:----------------------|
+| Oktober              | 41    | 07.: [Orga] (*Zoom*); [Einführung KI], [Problemlösen]; [Machine Learning 101], [Perzeptron]                  | Carsten, Canan |                               |                       |
+|                      | 42    | 14.: [Lineare Regression]                                                                                    | Canan          | 14.: [Blatt: Perzeptron]      | 14. / 15.             |
+|                      | 43    | 21.: [Logistische Regression]                                                                                | Canan          |                               |                       |
+|                      | 44    | 28.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | 28.: [Blatt: Regression]      | 28. / 29.             |
+| November             | 45    | 04.: [Backpropagation]                                                                                       | Canan          | 04.: [Blatt: MLP]             | 04. / 05.             |
+|                      | 46    | 11.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 11.: [Blatt: Backpropagation] | 11. / 12.             |
+|                      | 47    | 18.: [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        |                               |                       |
+|                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 25.: [Blatt: DTL]             | 25. / 26.             |
+| Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 02.: [Blatt: Suche]           | 02. / 03.             |
+|                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 09.: [Blatt: EA/GA]           | 09. / 10.             |
+|                      | 51    | 16.: **Projektwoche Semester 1+3**                                                                           |                |                               |                       |
+|                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
+|                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
+| Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Games]           | 06. / 07.             |
+|                      | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 13.: [Blatt: CSP]             | 13. / 14.             |
+|                      | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 20.: [Blatt: Naive Bayes]     | 20. / 21.             |
+| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 08-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-14 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
@@ -243,25 +244,26 @@ Hier finden Sie einen abonnierbaren [Google Kalender IFM 5.14 KI (PO18, 5. Semes
 
 Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420536&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
-| Monat             | Woche | Vorlesung                                                                                                    | Lead           | Abgabe Aufgabenblatt          | Vorstellung Praktikum |
-|:------------------|:------|:-------------------------------------------------------------------------------------------------------------|:---------------|:------------------------------|:----------------------|
-| Oktober           | 41    | 07.: [Orga] (*Zoom*); [Einführung KI], [Problemlösen]; [Machine Learning 101], [Perzeptron]                  | Carsten, Canan |                               |                       |
-|                   | 42    | 14.: [Lineare Regression]                                                                                    | Canan          | 16.: [Blatt: Perzeptron]      | 16. / 18.             |
-|                   | 43    | 21.: [Logistische Regression]                                                                                | Canan          |                               |                       |
-|                   | 44    | 28.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          |                               |                       |
-| November          | 45    | 04.: [Backpropagation]                                                                                       | Canan          | 06.: [Blatt: Regression]      | 06. / 08.             |
-|                   | 46    | 11.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 13.: [Blatt: MLP]             | 13. / 15.             |
-|                   | 47    | 18.: [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | 20.: [Blatt: Backpropagation] | 20. / 22.             |
-|                   | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 27.: [Blatt: DTL]             | 27. / 29.             |
-| Dezember          | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 04.: [Blatt: Suche]           | 04. / 06.             |
-|                   | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 11.: [Blatt: EA/GA]           | 11. / 13.             |
-|                   | 51    | 16.: _Projektwoche Semester 1+3_                                                                             |                | 18.: [Blatt: Games]           | 18. / 20.             |
-|                   | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
-|                   | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
-| Januar            | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
-|                   | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 15.: [Blatt: CSP]             | 15. / 17.             |
-|                   | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 22.: [Blatt: Naive Bayes]     | 22. / 24.             |
-| _(Prüfungsphase)_ |       | **Klausur**                                                                                                  |                |                               |                       |
+| Monat                | Woche | Vorlesung                                                                                                    | Lead           | Abgabe Aufgabenblatt          | Vorstellung Praktikum |
+|:---------------------|:------|:-------------------------------------------------------------------------------------------------------------|:---------------|:------------------------------|:----------------------|
+| Oktober              | 41    | 07.: [Orga] (*Zoom*); [Einführung KI], [Problemlösen]; [Machine Learning 101], [Perzeptron]                  | Carsten, Canan |                               |                       |
+|                      | 42    | 14.: [Lineare Regression]                                                                                    | Canan          | 16.: [Blatt: Perzeptron]      | 16. / 18.             |
+|                      | 43    | 21.: [Logistische Regression]                                                                                | Canan          |                               |                       |
+|                      | 44    | 28.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          |                               |                       |
+| November             | 45    | 04.: [Backpropagation]                                                                                       | Canan          | 06.: [Blatt: Regression]      | 06. / 08.             |
+|                      | 46    | 11.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 13.: [Blatt: MLP]             | 13. / 15.             |
+|                      | 47    | 18.: [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | 20.: [Blatt: Backpropagation] | 20. / 22.             |
+|                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 27.: [Blatt: DTL]             | 27. / 29.             |
+| Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 04.: [Blatt: Suche]           | 04. / 06.             |
+|                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 11.: [Blatt: EA/GA]           | 11. / 13.             |
+|                      | 51    | 16.: _Projektwoche Semester 1+3_                                                                             |                | 18.: [Blatt: Games]           | 18. / 20.             |
+|                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
+|                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
+| Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
+|                      | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 15.: [Blatt: CSP]             | 15. / 17.             |
+|                      | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 22.: [Blatt: Naive Bayes]     | 22. / 24.             |
+| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 08-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-14 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
 :::
 ::: {.tab title="INF701 KI (TDU)"}
