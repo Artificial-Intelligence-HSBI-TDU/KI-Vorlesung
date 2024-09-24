@@ -48,6 +48,8 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 *   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI, Sprechstunde nach Vereinbarung)
 *   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
+*   [Fulya Yenilmez](https://people.tau.edu.tr/people.show/fulya.yenilmez/de) (TDU)
+
 
 
 ## Kursformat
@@ -112,8 +114,8 @@ Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe 
 
 | Übungsgruppe | 30.09. - 15.01.              |
 |:-------------|:-----------------------------|
-| G1 / G3      | Do, 14:30 bis 15:30 Uhr (TR) |
-| G2 / G4      | Do, 15:30 bis 16:30 Uhr (TR) |
+| G1 / G2      | wird bekanntgegeben          |
+| G3 / G4      | wird bekanntgegeben          |
 |              | online                       |
 
 Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
@@ -123,7 +125,7 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
 [ILIAS IFM 5.14 KI (PO18, 5. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400604&client_id=FH-Bielefeld
-[Google Classroom]: https://classroom.google.com/c/NjMzNDM4MDk1NTM5
+[Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
 
 
 ## Prüfungsform, Note und Credits
@@ -286,24 +288,24 @@ Here be dragons ...
 `{{% /notice %}}`{=markdown}
 -->
 
-| Monat     | Tag                            | Vorlesung                                                                                               | Lead           | Start Bearbeitung        | Vorstellung Übung                    |
-|:----------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|:-------------------------------------|
-| September | 30.                            | [Orga] (*Zoom*); [Einführung KI], [Problemlösen]                                                        | Canan, Carsten |                          |                                      |
-| Oktober   | 07. (**12:30 - 13:30** Uhr TR) | [Machine Learning 101], [Perzeptron]                                                                    | Canan          | [Blatt: Perzeptron]      |                                      |
-|           | 14.                            | [Lineare Regression]                                                                                    | Canan          | [Blatt: Regression]      | Do, 17.10.: [Blatt: Perzeptron]      |
-|           | 21.                            | [Logistische Regression]                                                                                | Canan          |                          |                                      |
-|           | 28.                            | [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | [Blatt: MLP]             | Do, 31.10.: [Blatt: Regression]      |
-| November  | 04.                            | [Backpropagation]                                                                                       | Canan          | [Blatt: Backpropagation] | Do, 07.11.: [Blatt: MLP]             |
-|           | 11.                            | [Training & Testing], [Performanzanalyse]                                                               | Canan          |                          | Do, 14.11.: [Blatt: Backpropagation] |
-|           | 18.                            | **Zwischenprüfung**                                                                                     |                |                          |                                      |
-|           | 25.                            | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | [Blatt: Suche]           |                                      |
-| Dezember  | 02.                            | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: EA/GA]           | Do, 05.12.: [Blatt: Suche]           |
-|           | 09.                            | [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | [Blatt: Games]           | Do, 12.12.: [Blatt: EA/GA]           |
-|           | 16.                            | [Vorschau Deep Learning (CNN, RNN)]                                                                     | Canan          |                          | Do, 19.12.: [Blatt: Games]           |
-|           | 23.                            | [Prüfungsvorbereitung TDU]                                                                              | Canan          |                          |                                      |
-|           | 30. (**Keine Sprechstunde**)   | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           |                | [Blatt: DTL]             |                                      |
-| Januar    | 06.                            | [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | [Blatt: CSP]             | Do, 09.01.: [Blatt: DTL]             |
-|           | 13.                            | [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        |                          | Do, 16.01.: [Blatt: CSP]             |
+| KW | Monat | Tag                            | Vorlesung                                                                                               | Lead           | Abgabe Übung             |
+|:---|:------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|
+| 40 | Sep   | 30.                            | [Orga] (*Zoom*); [Einführung KI], [Problemlösen]                                                        | Canan, Carsten |                          |
+| 41 | Okt   | 07. (**12:30 - 13:30** Uhr TR) | [Machine Learning 101], [Perzeptron]                                                                    | Canan          |                          |
+| 42 |       | 14.                            | [Lineare Regression]                                                                                    | Canan          | [Blatt: Perzeptron]      |
+| 43 |       | 21.                            | [Logistische Regression]                                                                                | Canan          |                          |
+| 44 |       | 28.                            | [Overfitting], [Multilayer Perceptron]                                                                  | Canan          | [Blatt: Regression]      |
+| 45 | Nov   | 04.                            | [Backpropagation]                                                                                       | Canan          | [Blatt: MLP]             |
+| 46 |       | 11.                            | [Training & Testing], [Performanzanalyse]                                                               | Canan          | [Blatt: Backpropagation] |
+| 47 |       | 18.                            | **Zwischenprüfung**                                                                                     |                |                          |
+| 48 |       | 25.                            | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        |                          |
+| 49 | Dez   | 02.                            | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: Suche]           |
+| 50 |       | 09.                            | [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | [Blatt: EA/GA]           |
+| 51 |       | 16.                            | [Vorschau Deep Learning (CNN, RNN)]                                                                     | Canan          | [Blatt: Games]           |
+| 52 |       | 23.                            | [Prüfungsvorbereitung TDU]                                                                              | Canan          |                          |
+| 01 |       | 30. (**Keine Sprechstunde**)   | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           |                |                          |
+| 02 | Jan   | 06.                            | [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | [Blatt: DTL]             |
+| 03 |       | 13.                            | [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | [Blatt: CSP]             |
 
 :::
 ::::::
