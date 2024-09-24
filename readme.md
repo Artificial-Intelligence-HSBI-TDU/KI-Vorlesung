@@ -136,12 +136,11 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 *   **Testat**: Vergabe der Credit-Points
 
-    Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
-    Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
-    ein Testat bescheinigt wird.
+    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
 
-    Kriterien: Sie haben mind. 6 der 10 Aufgabenblätter _jeweils_ ausreichend
-    (mind. 60%) bearbeitet und die Lösung im Praktikum vorgestellt.
+    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
+    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
+    Vorstellung der Lösungen im Praktikum)
 
 *   **Klausur**: => Modulnote
 
@@ -155,12 +154,11 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 *   **Testat**: Vergabe der Credit-Points
 
-    Für die Vergabe der Credit-Points ist die regelmäßige und erfolgreiche
-    Teilnahme am Praktikum erforderlich, welche am Ende des Semesters durch
-    ein Testat bescheinigt wird.
+    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
 
-    Kriterien: Sie haben mind. 6 der 10 Aufgabenblätter _jeweils_ ausreichend
-    (mind. 60%) bearbeitet und die Lösung im Praktikum vorgestellt.
+    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
+    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
+    Vorstellung der Lösungen im Praktikum)
 
 *   **Klausur**: => Modulnote
 
