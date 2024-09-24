@@ -51,7 +51,6 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 *   [Fulya Yenilmez](https://people.tau.edu.tr/people.show/fulya.yenilmez/de) (TDU)
 
 
-
 ## Kursformat
 
 ![](admin/images/fahrplan.png){width="80%"}
@@ -112,11 +111,11 @@ Durchführung als *Flipped Classroom*: Sitzungen per Zoom (**Zugangsdaten siehe 
 
 **Übung (2 SWS)**
 
-| Übungsgruppe | 30.09. - 15.01.              |
-|:-------------|:-----------------------------|
-| G1 / G2      | wird bekanntgegeben          |
-| G3 / G4      | wird bekanntgegeben          |
-|              | online                       |
+| Übungsgruppe | 30.09. - 15.01.     |
+|:-------------|:--------------------|
+| G1 / G2      | wird bekanntgegeben |
+| G3 / G4      | wird bekanntgegeben |
+|              | online              |
 
 Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
