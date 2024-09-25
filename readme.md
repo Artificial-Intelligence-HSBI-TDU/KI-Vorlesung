@@ -232,8 +232,8 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Games]           | 06. / 07.             |
 |                      | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 13.: [Blatt: CSP]             | 13. / 14.             |
 |                      | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 20.: [Blatt: Naive Bayes]     | 20. / 21.             |
-| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 08-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
-| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-14 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 10-18 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
@@ -268,8 +268,8 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
 |                      | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 15.: [Blatt: CSP]             | 15. / 17.             |
 |                      | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 22.: [Blatt: Naive Bayes]     | 22. / 24.             |
-| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 08-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
-| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-14 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 10-18 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
+| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
 :::
 ::: {.tab title="INF701 KI (TDU)"}
