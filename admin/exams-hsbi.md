@@ -3,54 +3,54 @@ archetype: lecture-cg
 title: "Prüfungsvorbereitung (HSBI)"
 author: "Carsten Gips (HSBI)"
 tldr: |
-  ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
+    ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
 
-  Die Klausur wird dieses Semester elektronisch stattfinden. Dazu werden wir den Prüfungs-ILIAS der
-  HSBI nutzen.
+    Die Klausur wird dieses Semester elektronisch stattfinden. Dazu werden wir den Prüfungs-ILIAS der
+    HSBI nutzen.
 
-  Sofern die Situation dies zulässt, wird die Klausur in den Räumen der HSBI am Campus Minden unter
-  Aufsicht durchgeführt. Hier werden Ihnen Rechner für den Zugang zum Prüfungs-ILIAS zur Verfügung
-  gestellt, Sie benötigen nur Ihre HSBI-Zugangsdaten (User, Passwort), einen Studierendenausweis und
-  Personalausweis sowie Ihren DIN-A4-Spickzettel.
+    Sofern die Situation dies zulässt, wird die Klausur in den Räumen der HSBI am Campus Minden unter
+    Aufsicht durchgeführt. Hier werden Ihnen Rechner für den Zugang zum Prüfungs-ILIAS zur Verfügung
+    gestellt, Sie benötigen nur Ihre HSBI-Zugangsdaten (User, Passwort), einen Studierendenausweis und
+    Personalausweis sowie Ihren DIN-A4-Spickzettel.
 
-  Wenn die Corona-Lage eine Durchführung in Präsenz nicht erlaubt, wird die Klausur stattdessen als
-  _Open-Book-Ausarbeitung_ aus dem Home-Office durchgeführt. Sie benötigen dazu einen normalen Rechner
-  oder Laptop mit einem Standardbrowser. Tablets und Handys können wg. der Mobil-Version der Browser
-  problematisch sein. Sie müssen JavaScript aktivieren und Cookies zulassen, der Privacy-Modus ist
-  bitte ebenfalls zu deaktivieren. Sie erreichen den Prüfungs-ILIAS
-  [eassessment.hsbi.de](https://eassessment.hsbi.de) nur über VPN.
+    Wenn die Corona-Lage eine Durchführung in Präsenz nicht erlaubt, wird die Klausur stattdessen als
+    _Open-Book-Ausarbeitung_ aus dem Home-Office durchgeführt. Sie benötigen dazu einen normalen Rechner
+    oder Laptop mit einem Standardbrowser. Tablets und Handys können wg. der Mobil-Version der Browser
+    problematisch sein. Sie müssen JavaScript aktivieren und Cookies zulassen, der Privacy-Modus ist
+    bitte ebenfalls zu deaktivieren. Sie erreichen den Prüfungs-ILIAS
+    [eassessment.hsbi.de](https://eassessment.hsbi.de) nur über VPN.
 
-  Die Entscheidung über die konkrete Durchführung wird spätestens zwei Wochen vor der Prüfung getroffen
-  und Ihnen per EMail über das LSF mitgeteilt.
+    Die Entscheidung über die konkrete Durchführung wird spätestens zwei Wochen vor der Prüfung getroffen
+    und Ihnen per EMail über das LSF mitgeteilt.
 
-  ### Ablauf der Klausur
+    ### Ablauf der Klausur
 
-  Die Prüfung (das ILIAS-Objekt) selbst schalte ich erst zum Start der Prüfung online. Bei der Durchführung
-  als Open-Book-Ausarbeitung wird parallel zur Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen stellen
-  können.
+    Die Prüfung (das ILIAS-Objekt) selbst schalte ich erst zum Start der Prüfung online. Bei der Durchführung
+    als Open-Book-Ausarbeitung wird parallel zur Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen stellen
+    können.
 
-  ### Hilfsmittel und Themen
+    ### Hilfsmittel und Themen
 
-  Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
-  als Hilfsmittel zugelassen.
+    Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
+    als Hilfsmittel zugelassen.
 
-  Bei der Durchführung als "Open-Book-Ausarbeitung" im Home-Office sind alle Hilfsmittel zugelassen.
+    Bei der Durchführung als "Open-Book-Ausarbeitung" im Home-Office sind alle Hilfsmittel zugelassen.
 
-  Die Unterstützung durch Dritte bzw. jegliche Kommunikation mit Dritten ist in keinem Fall zugelassen.
-  Sie sollen die Prüfung selbstständig bearbeiten.
+    Die Unterstützung durch Dritte bzw. jegliche Kommunikation mit Dritten ist in keinem Fall zugelassen.
+    Sie sollen die Prüfung selbstständig bearbeiten.
 
-  Es wird keines der behandelten Themen ausgeschlossen, allerdings eignen sich manche Themen etwas
-  besser für Klausurfragen als andere ;-)
+    Es wird keines der behandelten Themen ausgeschlossen, allerdings eignen sich manche Themen etwas
+    besser für Klausurfragen als andere ;-)
 youtube:
-  - link: "https://youtu.be/warjJ9ZXvEM"
-    name: "Hinweise zur Prüfung: Fragetypen-Demo"
-  - link: "`https://youtu.be/_cVhJX-D6zM`{=markdown}"
-    name: "Hinweise zur Prüfung: Technische Vorbereitung"
+    - link: "https://youtu.be/warjJ9ZXvEM"
+      name: "Hinweise zur Prüfung: Fragetypen-Demo"
+    - link: "`https://youtu.be/_cVhJX-D6zM`{=markdown}"
+      name: "Hinweise zur Prüfung: Technische Vorbereitung"
 fhmedia:
-  - link: "https://www.hsbi.de/medienportal/m/4f7c425ae13cec9dc1b3bed28c1cadd666e4ba87c4afd9fe131913187fe110d2296ef62b36696efc3f19e151c7f18fe1bd4b83aad9f86eb9a5f384d38f2a7fbf"
-    name: "Hinweise zur Prüfung: Fragetypen-Demo"
-  - link: "https://www.hsbi.de/medienportal/m/66febead31c0b01deec2ffb47adf8abfa247b51a76a539b6681423d9206f819e4df8c93ee7affd4be3f7144e035dfbaf997af8cd9314d4dbc65244bf11cd9de8"
-    name: "Hinweise zur Prüfung: Technische Vorbereitung"
+    - link: "https://www.hsbi.de/medienportal/m/4f7c425ae13cec9dc1b3bed28c1cadd666e4ba87c4afd9fe131913187fe110d2296ef62b36696efc3f19e151c7f18fe1bd4b83aad9f86eb9a5f384d38f2a7fbf"
+      name: "Hinweise zur Prüfung: Fragetypen-Demo"
+    - link: "https://www.hsbi.de/medienportal/m/66febead31c0b01deec2ffb47adf8abfa247b51a76a539b6681423d9206f819e4df8c93ee7affd4be3f7144e035dfbaf997af8cd9314d4dbc65244bf11cd9de8"
+      name: "Hinweise zur Prüfung: Technische Vorbereitung"
 
 hidden: true
 ---
@@ -60,8 +60,8 @@ hidden: true
 
 ### Termin
 
-Die Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem Prüfungs-ILIAS
-durchgeführt wird.
+Die schriftliche Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem
+Prüfungs-ILIAS durchgeführt wird.
 
 Es wird angestrebt, die Klausur in Präsenz in den Rechnerpools am Campus Minden durchzuführen.
 Falls dies wegen der Corona-Situation oder anderer Umstände nicht möglich sein sollte, wird
@@ -212,7 +212,7 @@ für Sie vorbereitet sein.
 ## Fragetypen-Demo
 
 In Ihrem ILIAS-Kurs finden Sie eine
-[**Fragetypen-Demo**](https://www.hsbi.de/elearning/goto.php?target=tst_1258630&client_id=FH-Bielefeld)
+[**Fragetypen-Demo**](https://www.hsbi.de/elearning/goto.php?target=tst_1352273&client_id=FH-Bielefeld)
 mit den wichtigsten Fragetypen. Machen Sie sich mit der Mechanik der Fragetypen vertraut und schauen
 Sie sich die Kommentare bei den einzelnen Aufgaben an. Sie können die Demo bei Bedarf beliebig oft
 wiederholen.
@@ -226,7 +226,7 @@ wiederholen.
 \smallskip
 
 *   **Fragen**:
-    *   Schauen Sie sich die Quizzes an ...
+    *   Schauen Sie sich die Challenges und/oder Quizzes an ...
     *   Schauen Sie sich die Praktikumsaufgaben an ...
     *   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung
         möglich ist und (wie) gefragt werden könnte :)
