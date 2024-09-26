@@ -23,12 +23,6 @@ tldr: |
   Die Entscheidung über die konkrete Durchführung wird spätestens zwei Wochen vor der Prüfung getroffen
   und Ihnen per EMail über das LSF mitgeteilt.
 
-  ### Anmeldung zum Prüfungsraum
-
-  Ich werde Ihnen über das LSF ca. eine Woche vor der Prüfung eine Mail mit dem Link zum "Prüfungsraum"
-  schicken. Dort beantragen Sie bitte Zutritt (Verfahren wie bei den normalen ILIAS-Unterrichts-Räumen:
-  "Beitritt per Bestätigung").
-
   ### Ablauf der Klausur
 
   Die Prüfung (das ILIAS-Objekt) selbst schalte ich erst zum Start der Prüfung online. Bei der Durchführung
@@ -85,10 +79,6 @@ Dauer jeweils 90 Minuten.
 
 *   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im Home-Office)]{.notes}
     wird Ihnen [spätestens]{.notes} zwei Wochen vor der Prüfung über das LSF bekanntgegeben
-*   Die URL [zur Prüfung]{.notes} wird Ihnen jeweils ca. eine Woche vorher per Mail über das LSF
-    [bzw. das ILIAS]{.notes} bekanntgegeben
-*   Melden Sie sich im ILIAS-Prüfungsraum vor dem Prüfungstag per "Beitritt mit Bestätigung" an
-    [(wie zu einem normalen Kurs)]{.notes}
 
 ### Zugelassene Hilfsmittel
 
@@ -216,8 +206,6 @@ für Sie vorbereitet sein.
     Funktion von den Prüfenden aktiviert wurde.
 
 4.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen stellen
-
-    Nur bei Durchführung aus dem Home-Office; Daten siehe Mail über das LSF ca. eine Woche vor der Prüfung
 
 5.  Verbindungsprobleme (Home-Office):
     *   Bei kurzzeitigen Verbindungsabbrüchen loggen Sie sich einfach wieder ein
