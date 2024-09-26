@@ -29,11 +29,6 @@ tldr: |
   als Open-Book-Ausarbeitung wird parallel zur Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen stellen
   können.
 
-  Nach der Prüfung müssen Sie eine Erklärung abgeben, dass Sie die Prüfung selbstständig und ohne Hilfe
-  Dritter angefertigt haben. Dazu ist im Prüfungsraum parallel zur eigentlichen Prüfung ein weiter Test
-  angelegt, der ab Ende der Prüfung noch 24h zur Verfügung steht. Ohne diese Bestätigung wird Ihre Prüfung
-  nicht gewertet.
-
   ### Hilfsmittel und Themen
 
   Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
@@ -212,13 +207,6 @@ für Sie vorbereitet sein.
     *   Wenn die Probleme länger dauern, gilt der Versuch als nicht unternommen
         [(außer Sie haben die Probleme aktiv herbeigeführt, dann kann das als
         Täuschungsversuch gewertet werden, vgl. RPO §22a (4))]{.notes}
-
-6.  Erklärung "Eigenständige Bearbeitung" (max. 24h nach Prüfungsende)
-
-    Sie müssen eine Erklärung der eigenständigen Bearbeitung in der vorbereiteten Aufgabe im separaten
-    "Test" im Prüfungsraum abgeben. Ohne diese Erklärung wird Ihre Prüfung nicht bearbeitet/gewertet!
-
-    Dazu haben Sie maximal 24 Stunden nach Beendigung der Prüfung Zeit.
 
 
 ## Fragetypen-Demo
