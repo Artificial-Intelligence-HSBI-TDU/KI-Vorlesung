@@ -206,7 +206,13 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 
 <!--
 `{{% notice style="note" title="News" %}}`{=markdown}
-Here be dragons ...
+**Projektwoche**: Vom 16.-20.12.2024 findet unsere gemeinsame Projektwoche des ersten und
+dritten Semesters statt. In den teilnehmenden Veranstaltungen entfallen deshalb die
+Vorlesungen und Übungen - wir nehmen mit "Grundlagen der KI" (GKI) teil :-)
+
+*Bonus*: Wenn Sie in Ihr Projekt nachweislich Inhalte aus GKO einbringen, zählt das wie ein
+zusätzliches Übungsblatt. Sie haben also eine zusätzliche Chance für das Testat (6 aus 11
+Blättern) ...
 `{{% /notice %}}`{=markdown}
 -->
 
