@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.0">
+    <meta name="description" content="Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P) (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
+(1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+(1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Übungsblatt: Spiele">
+    <meta name="twitter:description" content="Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P) (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
+(1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+(1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games.html">
+    <meta property="og:title" content="Übungsblatt: Spiele">
+    <meta property="og:description" content="Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P) (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
+(1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+(1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Übungsblatt: Spiele">
+    <meta itemprop="description" content="Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P) (1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.
+(1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben Sie für jeden Knoten die (sich ändernden) $\alpha$- und $\beta$-Werte an.
+(1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.">
+    <meta itemprop="wordCount" content="334">
+    <title>Übungsblatt: Spiele</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games.html" rel="canonical" type="text/html" title="Übungsblatt: Spiele">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1727687850" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1727687850" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1727687850" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1727687850" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1727687850" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1727687850"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1727687850";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Übungsblatt: Spiele
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Übungsblatt: Spiele</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <p><strong>(10 Punkte)</strong></p>
+    
+
+    <h2 id="games01-handsimulation-minimax-und-alpha-beta-pruning-3p">Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P)</h2>
+<p><a href="#R-image-4529231fa19968cad4a7d5a0301bab3b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games/alphabeta.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4529231fa19968cad4a7d5a0301bab3b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games/alphabeta.png?width=auto&height=auto"></a></p>
+<ol>
+<li>
+<p>(1P) Geben Sie für den Spielbaum die Minimax-Bewertungen an.</p>
+</li>
+<li>
+<p>(1P) Markieren Sie die Kanten, die bei alpha-beta-Pruning nicht mehr
+untersucht werden würden, d.h. wo Pruning stattfinden würde. Geben
+Sie für jeden Knoten die (sich ändernden) <span class="math align-center">$\alpha$</span>- und <span class="math align-center">$\beta$</span>-Werte
+an.</p>
+</li>
+<li>
+<p>(1P) Können die Knoten derart geordnet werden, dass alpha-beta-Pruning
+eine größere Anzahl von Zweigen abschneidet? Wenn ja, geben Sie eine
+solche Ordnung an. Wenn nein, begründen Sie Ihre Antwort.</p>
+</li>
+</ol>
+<p><em>Hinweis</em>: Reihenfolge der Abarbeitung der Kindknoten: Wie in der VL von
+links nach rechts.</p>
+<p><em>Thema</em>: Minimax und alpha-beta-Pruning</p>
+<h2 id="games02-optimale-spiele-minimax-und-alpha-beta-pruning-4p">Games.02: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)</h2>
+<ol>
+<li>
+<p>(2P) Implementieren Sie den Minimax-Algorithmus (wie in der VL
+besprochen) am Beispiel <em>Tic Tac Toe</em> in einer Sprache Ihrer Wahl.</p>
+</li>
+<li>
+<p>(1P) Ergänzen Sie Ihre Implementierung um alpha-beta-Pruning.</p>
+</li>
+<li>
+<p>(1P) Vergleichen Sie die Anzahl der jeweils berechneten Knoten.
+Überlegen Sie sich dazu ein <strong>sinnvolles</strong> Szenario.</p>
+</li>
+</ol>
+<p><em>Thema</em>: Anwendung Minimax und alpha-beta-Pruning</p>
+<h2 id="games03-minimax-vereinfachen-1p">Games.03: Minimax vereinfachen (1P)</h2>
+<p>Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die
+Eigenschaft <em>Nullsummenspiel</em> berücksichtigen und die Funktionen <code>Min-Value</code>
+und <code>Max-Value</code> in eine einzige Funktion ohne explizite Unterscheidung der
+Spieler zusammenfassen.</p>
+<p>Überlegen Sie sich einen Beispielbaum und zeigen Sie anhand dessen die
+Bewertung durch den Minimax-Algorithmus und durch Ihren vereinfachten
+Algorithmus.</p>
+<p><em>Thema</em>: Nullsummenspiel, Minimax</p>
+<h2 id="games04-suchtiefe-begrenzen-1p">Games.04: Suchtiefe begrenzen (1P)</h2>
+<p>Die Verwendung der Suchtiefenbeschränkung erfordert den Einsatz einer
+Evaluierungsfunktion.</p>
+<p>Betrachten Sie die auf
+<a href="https://aimacode.github.io/aima-exercises/game-playing-exercises/ex_9/" rel="external" target="_blank">https://github.com/aimacode/aima-exercises/blob/master/markdown/5-Adversarial-Search/exercises/ex_9/question.md</a>
+gegebene Evaluierungsfunktion für <em>Tic-Tac-Toe</em>.</p>
+<p>Geben Sie die Werte der Evaluierungsfunktion für sechs verschiedene
+Spielzustände an (3 Endzustände, 3 Zwischenzustände). Begründen Sie, warum
+diese Evaluierungsfunktion im Zusammenhang mit <em>Tic-Tac-Toe</em> sinnvoll sein kann.</p>
+<p><em>Thema</em>: Suchtiefenbegrenzung und Evaluierungsfunktion</p>
+<h2 id="games05-minimax-generalisiert-1p">Games.05: Minimax generalisiert (1P)</h2>
+<p>Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu
+evaluieren, das nicht notwendigerweise die Nullsummenbedingung erfüllt.</p>
+<p><a href="#R-image-5ae5065fc1a59fd48e5d0b6fb3a407bb" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games/minmax-multiplayer.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ae5065fc1a59fd48e5d0b6fb3a407bb"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-games/minmax-multiplayer.png?width=auto&height=auto"></a></p>
+<p>Die Spieler heißen 1, 2 und 3. Im Gegensatz zu Zwei-Personen-Nullsummenspielen
+liefert die Bewertungsfunktion nun Tripel <span class="math align-center">$(x_1, x_2, x_3)$</span> zurück, wobei <span class="math align-center">$x_i$</span>
+der Wert für Spieler <span class="math align-center">$i$</span> ist. Allianzen zwischen Spielern sind nicht erlaubt.</p>
+<p>Vervollständigen Sie den Spielbaum, indem Sie alle inneren Knoten und den
+Wurzelknoten mit den entsprechenden Wert-Tripeln annotieren.</p>
+<p><em>Thema</em>: Minimax generalisiert für mehrere Spieler</p>
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1727687850" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1727687850" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1727687850"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1727687850" defer></script>
+  </body>
+</html>

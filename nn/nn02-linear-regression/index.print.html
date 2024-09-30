@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.0">
+    <meta name="description" content="Kurze Übersicht Formalisierung Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis) Die Hypothesenfunktion ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$: $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 &#43; w_1x_1 &#43; w_2x_2 &#43; \ldots &#43; w_nx_n$$ Der Verlust (engl. loss) für einen Datenpunkt $\mathbf{x}$ ist das Fehlerquadrat: $$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$ Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte: $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$ Der Gradient Der Gradientenvektor $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die Richtung des steilsten Aufstiegs: $$\nabla J = [ \partial J / \partial w_0 \quad \partial J / \partial w_1 \quad \ldots \quad \partial J / \partial w_n]^T$$ Schlussfolgerung: In die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am steilsten bergab! IDEE: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken. Der Gradientenabstieg (engl. Gradient Descent) Starte mit zufälligen Gewichten $\mathbf{w}$ Berechne den Gradientenvektor im aktuellen Punkt $\mathbf{w}$ Gewichtsaktualisierung: Gehe einen kleinen Schritt in Richtung $-\nabla J(\mathbf{w})$ $$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$ ($\alpha$: Lernrate/Schrittweite). Wiederhole Schritte 2-3, bis das globale Minimum von $J$ erreicht ist. Graphische Übersicht Lineare Regression Perzeptron">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NN02 - Lineare Regression und Gradientenabstieg">
+    <meta name="twitter:description" content="Kurze Übersicht Formalisierung Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis) Die Hypothesenfunktion ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$: $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 &#43; w_1x_1 &#43; w_2x_2 &#43; \ldots &#43; w_nx_n$$ Der Verlust (engl. loss) für einen Datenpunkt $\mathbf{x}$ ist das Fehlerquadrat: $$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$ Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte: $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$ Der Gradient Der Gradientenvektor $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die Richtung des steilsten Aufstiegs: $$\nabla J = [ \partial J / \partial w_0 \quad \partial J / \partial w_1 \quad \ldots \quad \partial J / \partial w_n]^T$$ Schlussfolgerung: In die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am steilsten bergab! IDEE: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken. Der Gradientenabstieg (engl. Gradient Descent) Starte mit zufälligen Gewichten $\mathbf{w}$ Berechne den Gradientenvektor im aktuellen Punkt $\mathbf{w}$ Gewichtsaktualisierung: Gehe einen kleinen Schritt in Richtung $-\nabla J(\mathbf{w})$ $$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$ ($\alpha$: Lernrate/Schrittweite). Wiederhole Schritte 2-3, bis das globale Minimum von $J$ erreicht ist. Graphische Übersicht Lineare Regression Perzeptron">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression.html">
+    <meta property="og:title" content="NN02 - Lineare Regression und Gradientenabstieg">
+    <meta property="og:description" content="Kurze Übersicht Formalisierung Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis) Die Hypothesenfunktion ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$: $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 &#43; w_1x_1 &#43; w_2x_2 &#43; \ldots &#43; w_nx_n$$ Der Verlust (engl. loss) für einen Datenpunkt $\mathbf{x}$ ist das Fehlerquadrat: $$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$ Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte: $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$ Der Gradient Der Gradientenvektor $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die Richtung des steilsten Aufstiegs: $$\nabla J = [ \partial J / \partial w_0 \quad \partial J / \partial w_1 \quad \ldots \quad \partial J / \partial w_n]^T$$ Schlussfolgerung: In die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am steilsten bergab! IDEE: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken. Der Gradientenabstieg (engl. Gradient Descent) Starte mit zufälligen Gewichten $\mathbf{w}$ Berechne den Gradientenvektor im aktuellen Punkt $\mathbf{w}$ Gewichtsaktualisierung: Gehe einen kleinen Schritt in Richtung $-\nabla J(\mathbf{w})$ $$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$ ($\alpha$: Lernrate/Schrittweite). Wiederhole Schritte 2-3, bis das globale Minimum von $J$ erreicht ist. Graphische Übersicht Lineare Regression Perzeptron">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="NN02 - Lineare Regression und Gradientenabstieg">
+    <meta itemprop="description" content="Kurze Übersicht Formalisierung Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis) Die Hypothesenfunktion ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$: $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 &#43; w_1x_1 &#43; w_2x_2 &#43; \ldots &#43; w_nx_n$$ Der Verlust (engl. loss) für einen Datenpunkt $\mathbf{x}$ ist das Fehlerquadrat: $$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$ Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte: $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$ Der Gradient Der Gradientenvektor $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die Richtung des steilsten Aufstiegs: $$\nabla J = [ \partial J / \partial w_0 \quad \partial J / \partial w_1 \quad \ldots \quad \partial J / \partial w_n]^T$$ Schlussfolgerung: In die entgegengesetzte Richtung, i.e. in Richtung $-\nabla J(\mathbf{w})$ geht es am steilsten bergab! IDEE: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken. Der Gradientenabstieg (engl. Gradient Descent) Starte mit zufälligen Gewichten $\mathbf{w}$ Berechne den Gradientenvektor im aktuellen Punkt $\mathbf{w}$ Gewichtsaktualisierung: Gehe einen kleinen Schritt in Richtung $-\nabla J(\mathbf{w})$ $$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$ ($\alpha$: Lernrate/Schrittweite). Wiederhole Schritte 2-3, bis das globale Minimum von $J$ erreicht ist. Graphische Übersicht Lineare Regression Perzeptron">
+    <meta itemprop="wordCount" content="225">
+    <title>NN02 - Lineare Regression und Gradientenabstieg</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression.html" rel="canonical" type="text/html" title="NN02 - Lineare Regression und Gradientenabstieg">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1727687850" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1727687850" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1727687850" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1727687850" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1727687850" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1727687850"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1727687850";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            NN02 - Lineare Regression und Gradientenabstieg
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>NN02 - Lineare Regression und Gradientenabstieg</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/f-DTaKMnkj4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.1 - Lineare Regression - Intro</a></li> <li><a href='https://youtu.be/UnLjjMswNRo' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.2 - Vergleich Perzeptron und Bsp</a></li> <li><a href='https://youtu.be/H2YvYIaUW1Q' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.3 - Kostenfunktiıon und Gradientenvektor</a></li> <li><a href='https://youtu.be/URaVsZnfppQ' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.4 - Berechnung Gradientenvektor - Beispiel</a></li> <li><a href='https://youtu.be/5OZF3Qopous' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.5 - Berechnung Gradientenvektor - Allgemein</a></li> <li><a href='https://youtu.be/m-TnM13I-no' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN2.6 - Skalierung der Merkmale</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="far fa-file-powerpoint"></i> Folien
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN02-Lineare_Regression.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN02-Lineare_Regression.pdf</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="formalisierung">Formalisierung</h3>
+<ul>
+<li>Ausgabe <span class="math align-center">$y$</span> ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis)</li>
+<li>Die <strong>Hypothesenfunktion</strong> ist eine gewichtete Summe der Merkmale <span class="math align-center">$x_i$</span> plus eine Konstante <span class="math align-center">$w_0$</span>:
+<span class="math align-center">$$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n$$</span></li>
+<li>Der <strong>Verlust</strong> (engl. loss) für einen Datenpunkt <span class="math align-center">$\mathbf{x}$</span> ist das <strong>Fehlerquadrat</strong>:
+<span class="math align-center">$$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$</span></li>
+<li>Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte:
+<span class="math align-center">$$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$</span></li>
+</ul>
+<h3 id="der-gradient">Der Gradient</h3>
+<ul>
+<li>Der <strong>Gradientenvektor</strong> <span class="math align-center">$\nabla J(\mathbf{w})$</span> setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion <span class="math align-center">$J$</span> nach den Gewichten <span class="math align-center">$w_i$</span> und zeigt in jedem Punkt <span class="math align-center">$\mathbf{w}$</span> in die <strong>Richtung des steilsten Aufstiegs</strong>:
+<span class="math align-center">$$\nabla J = [ \partial J / \partial w_0
+    \quad \partial J / \partial w_1 \quad \ldots
+    \quad \partial J / \partial w_n]^T$$</span></li>
+<li><strong>Schlussfolgerung</strong>: In die entgegengesetzte Richtung, i.e. in Richtung <span class="math align-center">$-\nabla J(\mathbf{w})$</span> geht es am <em>steilsten bergab!</em></li>
+<li><strong>IDEE</strong>: Bewege <span class="math align-center">$\mathbf{w}$</span> in Richtung <span class="math align-center">$-\nabla J(\mathbf{w})$</span>, um die Kosten <span class="math align-center">$J$</span> möglichst schnell zu senken.</li>
+</ul>
+<h3 id="der-gradientenabstieg-engl-gradient-descent">Der Gradientenabstieg (engl. Gradient Descent)</h3>
+<ol>
+<li>Starte mit zufälligen Gewichten <span class="math align-center">$\mathbf{w}$</span></li>
+<li>Berechne den Gradientenvektor im aktuellen Punkt <span class="math align-center">$\mathbf{w}$</span></li>
+<li><strong>Gewichtsaktualisierung</strong>: Gehe einen <em>kleinen</em> Schritt in Richtung <span class="math align-center">$-\nabla J(\mathbf{w})$</span>
+<span class="math align-center">$$\mathbf{w} _{neu} := \mathbf{w} _{alt} - \alpha \cdot \nabla J(\mathbf{w} _{alt})$$</span>
+(<span class="math align-center">$\alpha$</span>: Lernrate/Schrittweite).</li>
+<li>Wiederhole Schritte 2-3, bis das globale Minimum von <span class="math align-center">$J$</span> erreicht ist.</li>
+</ol>
+<h3 id="graphische-übersicht">Graphische Übersicht</h3>
+<ul>
+<li>Lineare Regression
+<a href="#R-image-f8307d760487dd6e7fb80c84e2ee7162" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression/lin_reg_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f8307d760487dd6e7fb80c84e2ee7162"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression/lin_reg_nn.png?width=auto&height=auto"></a></li>
+<li>Perzeptron
+<a href="#R-image-cae17f190474bc587d3d22adfbb7e5ab" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression/perzeptron_nn.png?width=auto&height=auto" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cae17f190474bc587d3d22adfbb7e5ab"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression/perzeptron_nn.png?width=auto&height=auto"></a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nn-regression.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Lineare / Logistische Regression & Gradientenabstieg</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K2) Lineare Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron</li> <li>(K2) Formalisierung</li> <li>(K2) Verlust- und Kostenfunktion</li> <li>(K2) Gradientenvektor</li> <li>(K2) Lernrate</li> <li>(K3) Gradientenabstieg</li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106590&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Lineare Regression (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-puzzle-piece"></i> Challenges
+  </div>
+  <div class="box-content">
+<p><strong>Skalierung der Merkmale</strong></p>
+<p>Abbildung 1 und Abbildung 2 zeigen die <a href="https://de.wikipedia.org/wiki/H%C3%B6henlinie" rel="external" target="_blank">Höhenlinien</a> (<a href="https://en.wikipedia.org/wiki/Contour_line" rel="external" target="_blank">Contour Lines</a>) von zwei Kostenfunktionen.</p>
+<figure class="center">
+    <img src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_a.png" alt="Abbildung 1" width="40%" height="auto">
+    <figcaption><p>Abbildung 1</p></figcaption>
+</figure>
+<figure class="center">
+    <img src="https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_b.png" alt="Abbildung 2" width="40%" height="auto">
+    <figcaption><p>Abbildung 2</p></figcaption>
+</figure>
+<ul>
+<li>Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil?
+Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?</li>
+<li>Zeigen Sie unter Verwendung Ihrer eigenen, zufällig generierten Datenpunkte aus dem Bereich
+<span class="math align-center">$[100, 300] \times [0, 2]$</span>, wie sich Standardisierung, Min-Max Skalierung und Normalisierung auf die Daten auswirken.
+Vergleichen Sie dazu die jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb" rel="external" target="_blank"><strong>Jupyter Notebook</strong></a> als Startpunkt benutzen.</li>
+</ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1727687850" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1727687850" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1727687850"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1727687850" defer></script>
+  </body>
+</html>

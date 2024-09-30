@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.0">
+    <meta name="description" content="CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
+$n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
+Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+Endknoten mit Vereinigungsklasse:
+Zähler für $k$ erhöhen, bzw. $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+Für genau eine Klasse gilt: $P(k | \tilde{x}) \ge S_2$: =&gt; Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CAL3">
+    <meta name="twitter:description" content="CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
+$n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
+Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+Endknoten mit Vereinigungsklasse:
+Zähler für $k$ erhöhen, bzw. $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+Für genau eine Klasse gilt: $P(k | \tilde{x}) \ge S_2$: =&gt; Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl4-cal3.html">
+    <meta property="og:title" content="CAL3">
+    <meta property="og:description" content="CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
+$n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
+Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+Endknoten mit Vereinigungsklasse:
+Zähler für $k$ erhöhen, bzw. $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+Für genau eine Klasse gilt: $P(k | \tilde{x}) \ge S_2$: =&gt; Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="CAL3">
+    <meta itemprop="description" content="CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
+$n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
+Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+Endknoten mit Vereinigungsklasse:
+Zähler für $k$ erhöhen, bzw. $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+Für genau eine Klasse gilt: $P(k | \tilde{x}) \ge S_2$: =&gt; Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)">
+    <meta itemprop="wordCount" content="250">
+    <title>CAL3</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl4-cal3.html" rel="canonical" type="text/html" title="CAL3">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1727687850" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1727687850" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1727687850" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1727687850" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1727687850" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1727687850"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1727687850";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl4-cal3.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            CAL3
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>CAL3</h1>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-graduation-cap"></i> TL;DR
+  </div>
+  <div class="box-content">
+<p>
+CAL3 ist eine einfache Erweiterung von CAL2 für nicht-disjunkte (überlappende) Klassen. Statt
+beim Baumaufbau bei einer Fehlklassifikation sofort zu verzweigen, werden hier zunächst die
+im entsprechenden Pfad aufgelaufenen Klassensymbole gezählt. Wenn ausreichend viele davon
+gesehen wurden (Schwelle <span class="math align-center">$S_1$</span>), wird eine Entscheidung getroffen: Wenn eine Klasse in diesem
+temporären Blatt dominiert (ihre Häufigkeit über einer Schwelle <span class="math align-center">$S_2$</span> liegt), dann entscheidet
+man sich in diesem Blatt fest für diese Klasse. Ansonsten (die Häufigkeit aller Klassen in
+dem Blatt liegt unter <span class="math align-center">$S_2$</span>) nimmt man analog zu CAL2 den nächsten, auf diesem Pfad noch nicht
+verwendeten Test hinzu.
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (YouTube)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/9Wj51XvuntM' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CAL3</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/6acb93574f25ff341b5a09487fc153ea28252e12d3960342bc7d05a463e56b338f53f366338229df44f5c486400465fddf58e727fd8f9cc56904dd67c7c8ecb8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CAL3</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K3) Meta-Algorithmus CAL3 für überlappende Klassen</li></ul>
+  </div>
+</div>
+
+
+
+
+    <h2 id="cal3-erweiterung-von-cal2-für-nicht-disjunkte-klassen">CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen</h2>
+<ol>
+<li>
+<p>Anfangsschritt: <span class="math align-center">$\alpha^{(0)} = \ast$</span> (totales Unwissen)</p>
+</li>
+<li>
+<p><span class="math align-center">$n$</span>-ter Lernschritt: Objekt <span class="math align-center">$v$</span> mit Klasse <span class="math align-center">$k$</span></p>
+<ul>
+<li>
+<p>Rückweisung (Endknoten mit <span class="math align-center">$\ast$</span>):
+Ersetze <span class="math align-center">$\ast$</span> durch Vereinigungsklasse <span class="math align-center">$/k1/$</span></p>
+</li>
+<li>
+<p>Endknoten mit Vereinigungsklasse:</p>
+<ul>
+<li>Zähler für <span class="math align-center">$k$</span> erhöhen, bzw.</li>
+<li><span class="math align-center">$k$</span> mit Anzahl <span class="math align-center">$1$</span> in Vereinigungsklasse einfügen</li>
+</ul>
+</li>
+</ul>
+<p>Falls nun die Summe aller Klassen am Endknoten größer/gleich <span class="math align-center">$S_1$</span> (Statistikschwelle):</p>
+<ul>
+<li>
+<p>Für <strong>genau eine</strong> Klasse gilt: <span class="math align-center">$P(k | \tilde{x}) \ge S_2$</span>:
+=&gt; Abschluss: Ersetze Vereinigungsklasse durch <span class="math align-center">$k$</span> (für immer!)</p>
+</li>
+<li>
+<p>Für <strong>alle</strong> Klassen gilt: <span class="math align-center">$P(k | \tilde{x}) < S_2$</span>:
+=&gt; Differenzierung: Ersetze Vereinigungsklasse durch neuen
+Test: <span class="math align-center">$\kappa \gets x_{t+1}(\ast, \ldots, \ast, /k1/, \ast, \ldots, \ast)$</span></p>
+<p><span class="math align-center">$x_{t+1}$</span>: nächstes Attribut, auf dem aktuellen Pfad <span class="math align-center">$\tilde{x}$</span>
+noch nicht verwendet
+Symbol <span class="math align-center">$k$</span> mit Anzahl 1 an Position <span class="math align-center">$i$</span> wenn <span class="math align-center">$x_{t+1}(v) = i$</span></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="beispiel-mit-cal3">Beispiel mit CAL3</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><span class="math align-center">$x_1$</span></th>
+          <th style="text-align: left"><span class="math align-center">$x_2$</span></th>
+          <th style="text-align: left"><span class="math align-center">$k$</span></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">A</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><span class="math align-center">$S_1 = 4, S_2 = 0.7$</span></li>
+</ul>
+<p><strong>Ergebnis</strong>: <span class="math align-center">$x_1(A,  x_2(B, A))$</span></p>
+<p>Trainingsfehler: <span class="math align-center">$1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$</span></p>
+<p><strong>Hinweis</strong>: Bei nicht überlappenden Klassen erzeugt CAL3 u.U. andere Bäume als CAL2 ...</p>
+<h2 id="cal3-abbruchbedingungen-und-parameter">CAL3: Abbruchbedingungen und Parameter</h2>
+<ul>
+<li>
+<p><strong>Parameter</strong>:</p>
+<ul>
+<li><span class="math align-center">$S_1$</span>: Statistikschwelle, problemabhängig wählen</li>
+<li><span class="math align-center">$S_2$</span>: <span class="math align-center">$0.5 < S_2 \le 1.0$</span></li>
+<li>Klassifikationsfehler kleiner als <span class="math align-center">$1-S_2$</span>
+<ul>
+<li>kleiner Fehler =&gt; großer Baum</li>
+<li>großer Fehler =&gt; kleiner Baum</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Abbruch</strong>:</p>
+<ul>
+<li>Alle Trainingsobjekte richtig klassifiziert
+=&gt; Kein Fehler in einem kompletten Durchlauf</li>
+<li>Alle Endknoten mit eindeutigen Klassensymbolen belegt</li>
+<li>Differenzierung nötig, aber alle Merkmale verbraucht</li>
+<li>Lernschrittzahl überschritten</li>
+</ul>
+</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>CAL3: Erweiterung von CAL2 für überlappende Klassen
+<ul>
+<li>Parameter <span class="math align-center">$S_1$</span> (Anzahl Objekte bis Entscheidung), <span class="math align-center">$S_2$</span> (Dominanz?)</li>
+<li>Trainingsfehler wg. überlappender Klassen!</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest CAL3 (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-puzzle-piece"></i> Challenges
+  </div>
+  <div class="box-content">
+<p><strong>Textklassifikation</strong></p>
+<p>Betrachten Sie die folgenden Aussagen:</p>
+<blockquote>
+<ul>
+<li>Patient A hat weder Husten noch Fieber und ist gesund.</li>
+<li>Patient B hat Husten, aber kein Fieber und ist gesund.</li>
+<li>Patient C hat keinen Husten, aber Fieber. Er ist krank.</li>
+<li>Patient D hat Husten und kein Fieber und ist krank.</li>
+<li>Patient E hat Husten und Fieber. Er ist krank.</li>
+</ul>
+</blockquote>
+<p>Aufgaben:</p>
+<ol>
+<li>Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL3 (<span class="math align-center">$S_1=4, S_2=0.6$</span>).</li>
+<li>Ist Patient F krank? Er hat Husten, aber kein Fieber.</li>
+</ol>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-dtl.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Entscheidungsbäume (Decision Tree Learner DTL)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_Unger1981'>[Unger1981] <strong>Lernfähige Klassifizierungssysteme (Classifier Systems Which Are Able to Learn)</strong><br>Unger, S. und Wysotzki, F., Akademie-Verlag, 1981.<br><em>Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)</em></li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1727687850" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1727687850" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1727687850"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1727687850" defer></script>
+  </body>
+</html>

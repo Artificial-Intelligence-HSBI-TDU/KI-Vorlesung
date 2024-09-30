@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.0">
+    <meta name="description" content="Wie Attribute wählen? Erinnerung: CAL2/CAL3
+Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &#34;richtigen&#34; Attributwahl bei Verzweigung unklar =&gt; Betrachte stattdessen die komplette Trainingsmenge!
+Erinnerung Entropie: Maß für die Unsicherheit Entropie $H(S)$ der Trainingsmenge $S$: relative Häufigkeit der Klassen zählen
+Mittlere Entropie nach Betrachtung von Attribut $A$
+$$ R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) $$ Informationsgewinn durch Betrachtung von Attribut $A$
+$$ \begin{array}{rcl} \operatorname{Gain}(S, A) &amp;=&amp; H(S) - R(S, A)\\[5pt] &amp;=&amp; H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) \end{array} $$ $R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A. Je kleiner $R(S,A)$, um so kleiner die verbleibende Unsicherheit bzw. um so kleiner die Anzahl der nötigen Bits zur Darstellung der partitionierten Trainingsmenge nach Betrachtung von Attribut $A$ ...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ID3 und C4.5">
+    <meta name="twitter:description" content="Wie Attribute wählen? Erinnerung: CAL2/CAL3
+Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &#34;richtigen&#34; Attributwahl bei Verzweigung unklar =&gt; Betrachte stattdessen die komplette Trainingsmenge!
+Erinnerung Entropie: Maß für die Unsicherheit Entropie $H(S)$ der Trainingsmenge $S$: relative Häufigkeit der Klassen zählen
+Mittlere Entropie nach Betrachtung von Attribut $A$
+$$ R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) $$ Informationsgewinn durch Betrachtung von Attribut $A$
+$$ \begin{array}{rcl} \operatorname{Gain}(S, A) &amp;=&amp; H(S) - R(S, A)\\[5pt] &amp;=&amp; H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) \end{array} $$ $R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A. Je kleiner $R(S,A)$, um so kleiner die verbleibende Unsicherheit bzw. um so kleiner die Anzahl der nötigen Bits zur Darstellung der partitionierten Trainingsmenge nach Betrachtung von Attribut $A$ ...">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html">
+    <meta property="og:title" content="ID3 und C4.5">
+    <meta property="og:description" content="Wie Attribute wählen? Erinnerung: CAL2/CAL3
+Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &#34;richtigen&#34; Attributwahl bei Verzweigung unklar =&gt; Betrachte stattdessen die komplette Trainingsmenge!
+Erinnerung Entropie: Maß für die Unsicherheit Entropie $H(S)$ der Trainingsmenge $S$: relative Häufigkeit der Klassen zählen
+Mittlere Entropie nach Betrachtung von Attribut $A$
+$$ R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) $$ Informationsgewinn durch Betrachtung von Attribut $A$
+$$ \begin{array}{rcl} \operatorname{Gain}(S, A) &amp;=&amp; H(S) - R(S, A)\\[5pt] &amp;=&amp; H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) \end{array} $$ $R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A. Je kleiner $R(S,A)$, um so kleiner die verbleibende Unsicherheit bzw. um so kleiner die Anzahl der nötigen Bits zur Darstellung der partitionierten Trainingsmenge nach Betrachtung von Attribut $A$ ...">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="ID3 und C4.5">
+    <meta itemprop="description" content="Wie Attribute wählen? Erinnerung: CAL2/CAL3
+Zyklische Iteration durch die Trainingsmenge Ausschließlich aktuelles Objekt betrachtet Reihenfolge der &#34;richtigen&#34; Attributwahl bei Verzweigung unklar =&gt; Betrachte stattdessen die komplette Trainingsmenge!
+Erinnerung Entropie: Maß für die Unsicherheit Entropie $H(S)$ der Trainingsmenge $S$: relative Häufigkeit der Klassen zählen
+Mittlere Entropie nach Betrachtung von Attribut $A$
+$$ R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) $$ Informationsgewinn durch Betrachtung von Attribut $A$
+$$ \begin{array}{rcl} \operatorname{Gain}(S, A) &amp;=&amp; H(S) - R(S, A)\\[5pt] &amp;=&amp; H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v) \end{array} $$ $R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A. Je kleiner $R(S,A)$, um so kleiner die verbleibende Unsicherheit bzw. um so kleiner die Anzahl der nötigen Bits zur Darstellung der partitionierten Trainingsmenge nach Betrachtung von Attribut $A$ ...">
+    <meta itemprop="wordCount" content="833">
+    <title>ID3 und C4.5</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html" rel="canonical" type="text/html" title="ID3 und C4.5">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1727687850" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1727687850" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1727687850" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1727687850" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1727687850" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1727687850" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1727687850" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1727687850"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1727687850";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            ID3 und C4.5
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>ID3 und C4.5</h1>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-graduation-cap"></i> TL;DR
+  </div>
+  <div class="box-content">
+<p>Der Entscheidungsbaum-Lernalgorithmus <strong>ID3</strong> nutzt den Informationsgehalt für die Entscheidung
+bei der Attributwahl: Nimm das Attribut, welches einen möglichst hohen Informationsgehalt hat.
+Oder andersherum: Wähle das Attribut, bei dem die verbleibende mittlere Entropie der Trainingsmenge
+nach der Wahl des Attributs am kleinsten ist. Oder noch anders formuliert: Nimm das Attribut, bei
+dem die Differenz zwischen der Entropie der Trainingsmenge (vor der Wahl des Attributs) und der
+verbleibenden mittleren Entropie (nach der Wahl des Attributs) am größten ist (die Differenz nennt
+man auch &quot;<em>Information Gain</em>&quot;). Die Trainingsmenge wird entsprechend der Ausprägung in Bezug auf
+das eben gewählte Merkmal aufgeteilt und an die Kinder des Knotens weiter gereicht; dort wird der
+Baum rekursiv weiter aufgebaut.</p>
+<p>Durch eine Normierung des <em>Information Gain</em> kann eine Verbesserung in Bezug auf mehrwertige
+Attribute erreicht werden, dies führt zum Algorithmus <strong>C4.5</strong>.</p>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (YouTube)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/Yo1cmeS6BK8' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL ID3 und C4.5</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/aa69406cfdf0ce8b2b614dd475926b56c8025239c5b4458ec7741c7733c6077fd192e4db6f58c8a3e39b7b895c2ddedf83327640326bfbedc2617c4f75bc59bd' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL ID3 und C4.5</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K3) Entscheidungsbaumalgorithmen ID3 und C4.5</li></ul>
+  </div>
+</div>
+
+
+
+
+    <h2 id="wie-attribute-wählen">Wie Attribute wählen?</h2>
+<p>Erinnerung: CAL2/CAL3</p>
+<ul>
+<li>Zyklische Iteration durch die Trainingsmenge</li>
+<li>Ausschließlich aktuelles Objekt betrachtet</li>
+<li><span class='alert'>Reihenfolge</span> der &quot;richtigen&quot; Attributwahl bei Verzweigung unklar</li>
+</ul>
+<p>=&gt; Betrachte stattdessen die <strong>komplette</strong> Trainingsmenge!</p>
+<h2 id="erinnerung-entropie-maß-für-die-unsicherheit">Erinnerung Entropie: Maß für die Unsicherheit</h2>
+<ul>
+<li>
+<p>Entropie <span class="math align-center">$H(S)$</span> der Trainingsmenge <span class="math align-center">$S$</span>: relative Häufigkeit der Klassen zählen</p>
+</li>
+<li>
+<p>Mittlere Entropie nach Betrachtung von Attribut <span class="math align-center">$A$</span></p>
+<span class="math align-center">$$
+        R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+    $$</span>
+</li>
+<li>
+<p>Informationsgewinn durch Betrachtung von Attribut <span class="math align-center">$A$</span></p>
+<span class="math align-center">$$
+    \begin{array}{rcl}
+        \operatorname{Gain}(S, A) &=& H(S) - R(S, A)\\[5pt]
+                                &=& H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+    \end{array}
+    $$</span>
+</li>
+</ul>
+<p><span class="math align-center">$R(S,A)$</span> ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A.
+Je kleiner <span class="math align-center">$R(S,A)$</span>, um so kleiner die <strong>verbleibende Unsicherheit</strong> bzw.
+um so kleiner die Anzahl der nötigen Bits zur Darstellung der
+partitionierten Trainingsmenge <strong>nach</strong> Betrachtung von Attribut <span class="math align-center">$A$</span> ...</p>
+<p>=&gt; Je kleiner <span class="math align-center">$R(S,A)$</span>, um so größer der Informationsgewinn</p>
+<h2 id="informationsgewinn-kriterium-zur-auswahl-von-attributen">Informationsgewinn: Kriterium zur Auswahl von Attributen</h2>
+<ol>
+<li>Informationsgewinn für alle Attribute berechnen</li>
+<li>Nehme Attribut mit größtem Informationsgewinn als nächsten Test</li>
+</ol>
+<div class='columns'>
+<div class='column'>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Nr.</th>
+          <th style="text-align: left"><span class="math align-center">$x_1$</span></th>
+          <th style="text-align: left"><span class="math align-center">$x_2$</span></th>
+          <th style="text-align: left"><span class="math align-center">$x_3$</span></th>
+          <th style="text-align: left"><span class="math align-center">$k$</span></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">A</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<div class='column'>
+<span class="math align-center">$H(S) = 0.92 \operatorname{Bit}$</span>
+<span class="math align-center">$$
+\begin{array}{rcl}
+\operatorname{Gain}(S, x_1) &=& 0.92 - 0.87 = 0.05 \operatorname{Bit}\\
+\operatorname{Gain}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
+                            &=& 0.25 \operatorname{Bit}\\
+\operatorname{Gain}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
+                            &=& 0.13 \operatorname{Bit}
+\end{array}
+$$</span>
+</div>
+</div>
+<p>Informationsgewinn für <span class="math align-center">$x_2$</span> am höchsten =&gt; wähle <span class="math align-center">$x_2$</span> als nächsten Test</p>
+<h2 id="entscheidungsbaumlerner-id3-quinlan-1986">Entscheidungsbaumlerner ID3 (Quinlan, 1986)</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ID3</span>(examples, attr, default):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Abbruchbedingungen</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> examples<span style="color:#f92672">.</span>isEmpty():  <span style="color:#66d9ef">return</span> default
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> examples<span style="color:#f92672">.</span>each(<span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">== </span><span style="color:#a6e22e">A</span>):  <span style="color:#66d9ef">return</span> A  <span style="color:#75715e"># all examples have same class</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> attr<span style="color:#f92672">.</span>isEmpty():  <span style="color:#66d9ef">return</span> examples<span style="color:#f92672">.</span>MajorityValue()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Baum mit neuem Test erweitern</span>
+</span></span><span style="display:flex;"><span>    test <span style="color:#f92672">=</span> MaxInformationGain(examples, attr)
+</span></span><span style="display:flex;"><span>    tree <span style="color:#f92672">=</span> new DecisionTree(test)
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">=</span> examples<span style="color:#f92672">.</span>MajorityValue()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> v_i <span style="color:#f92672">in</span> test:
+</span></span><span style="display:flex;"><span>        ex_i <span style="color:#f92672">=</span> examples<span style="color:#f92672">.</span>select(test <span style="color:#f92672">==</span> v_i)
+</span></span><span style="display:flex;"><span>        st <span style="color:#f92672">=</span> ID3(ex_i, attr <span style="color:#f92672">-</span> test, m)
+</span></span><span style="display:flex;"><span>        tree<span style="color:#f92672">.</span>addBranch(label<span style="color:#f92672">=</span>v_i, subtree<span style="color:#f92672">=</span>st)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> tree</span></span></code></pre></div>
+<p><a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html#id_Russell2020">[Russell2020]</a>: Man erhält aus dem &quot;Learn-Decision-Tree&quot;-Algorithmus <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html#id_Russell2020">[Russell2020, S. 678, Fig. 19.5]</a>
+den hier vorgestellten ID3-Algorithmus, wenn man die Funktion <span class="math align-center">$\operatorname{Importance}(a, examples)$</span>
+als <span class="math align-center">$\operatorname{InformationGain}(examples, attr)$</span> implementiert/nutzt.</p>
+<p><strong>Hinweis</strong>: Mit der Zeile <code>if examples.each(class == A):  return A</code> soll ausgedrückt werden, dass alle
+ankommenden Trainingsbeispiele die selbe Klasse haben und dass diese dann als Ergebnis zurückgeliefert
+wird. Das &quot;<code>A</code>&quot; steht im obigen Algorithmus nur symbolisch für die selbe Klasse! Es kann also auch ein
+anderes Klassensymbol als &quot;<code>A</code>&quot; sein ...</p>
+<h3 id="beispiel-id3">Beispiel ID3</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Nr.</th>
+          <th style="text-align: left"><span class="math align-center">$x_1$</span></th>
+          <th style="text-align: left"><span class="math align-center">$x_2$</span></th>
+          <th style="text-align: left"><span class="math align-center">$x_3$</span></th>
+          <th style="text-align: left"><span class="math align-center">$k$</span></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">A</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><span class="math align-center">$x2$</span> höchsten Information Gain</li>
+<li><span class="math align-center">$x2=0$</span> =&gt; Beispiele 1,2 =&gt; A</li>
+<li><span class="math align-center">$x2=1$</span> =&gt; Beispiele 3,4,5,6 =&gt; Information Gain berechnen,
+weiter teilen und verzweigen</li>
+</ul>
+<h2 id="beobachtung-hahahugoshortcode15s27hbhb-ist-bei-mehrwertigen-attributen-höher">Beobachtung: <span class="math align-center">$\operatorname{Gain}$</span> ist bei mehrwertigen Attributen höher</h2>
+<ul>
+<li>
+<p>Faire Münze:</p>
+<ul>
+<li>Entropie = <span class="math align-center">$H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+<li>
+<p>4-seitiger Würfel:</p>
+<ul>
+<li>Entropie = <span class="math align-center">$H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; <span class="math align-center">$\operatorname{Gain}$</span> ist bei mehrwertigen Attributen höher</p>
+<p>Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben als andere.</p>
+<p><em>Anmerkung</em>: Im obigen Beispiel wurde einfach die Entropie für zwei &quot;Attribute&quot; mit unterschiedlich
+vielen Ausprägungen betrachtet, das ist natürlich kein <span class="math align-center">$\operatorname{Gain}(S, A)$</span>. Aber es sollte
+deutlich machen, dass Merkmale mit mehr Ausprägungen bei der Berechnung des Gain für eine Trainingsmenge
+einfach wegen der größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.</p>
+<h2 id="c45-als-verbesserung-zu-id3">C4.5 als Verbesserung zu ID3</h2>
+<p>Normierter Informationsgewinn: <span class="math align-center">$\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A)$</span></p>
+<span class="math align-center">$$
+    \operatorname{Normalisation}(A) = \frac{1}{
+        \sum_{v \in \operatorname{Values}(A)} p_v \log_2 \frac{1}{p_v}
+    }
+$$</span>
+<p>C4.5 kann zusätzlich u.a. auch noch mit kontinuierlichen Attributen umgehen, vgl.
+<a href="https://en.wikipedia.org/wiki/C4.5_algorithm" rel="external" target="_blank">en.wikipedia.org/wiki/C4.5_algorithm</a>.</p>
+<p>In einem <a href="http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf" rel="external" target="_blank">Paper</a>
+(<a href="https://doi.org/10.1007/s10115-007-0114-2" rel="external" target="_blank">DOI 10.1007/s10115-007-0114-2</a>) wurde
+der Algorithmus zu den &quot;Top 10 algorithms in data mining&quot; ausgewählt.</p>
+<p>Im Wikipedia-Artikel <a href="https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain" rel="external" target="_blank">Information Gain</a>
+finden Sie weitere Informationen zum &quot;Informationsgewinn&quot; (<em>Information Gain</em>).</p>
+<p>Ein anderer, relativ ähnlich arbeitender Entscheidungsbaumlerner ist der
+<a href="https://en.wikipedia.org/wiki/Decision_tree_learning" rel="external" target="_blank">CART (Classification And Regression Tree)</a>-Algorithmus,
+wobei der Begriff &quot;CART&quot; allerdings oft auch einfach allgemein für &quot;Entscheidungsbaumlerner&quot;
+genutzt wird.</p>
+<p>Hierzu drei lesenswerte Blog-Einträge:</p>
+<ul>
+<li><a href="https://medium.com/poli-data/deep-dive-into-the-basics-of-gini-impurity-in-decision-trees-with-math-intuition-46c721d4aaec" rel="external" target="_blank">Deep dive into the basics of Gini Impurity in Decision Trees with math Intuition</a></li>
+<li><a href="https://towardsdatascience.com/decision-trees-explained-d7678c43a59e" rel="external" target="_blank">Decision Trees, Explained</a></li>
+<li><a href="https://medium.datadriveninvestor.com/decision-tree-algorithm-with-hands-on-example-e6c2afb40d38" rel="external" target="_blank">Decision Tree Algorithm With Hands-On Example</a></li>
+</ul>
+<h2 id="beispiele-zur-normierung-bei-c45">Beispiele zur Normierung bei C4.5</h2>
+<ul>
+<li>
+<p>Faire Münze:</p>
+<ul>
+<li>Entropie = <span class="math align-center">$H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$</span></li>
+<li>Normierung: <span class="math align-center">$1/(0.5 \log_2 (1/0.5) + 0.5 \log_2 (1/0.5)) = 1/(0.5 \cdot 1 + 0.5 \cdot 1) = 1$</span></li>
+<li>Normierter Informationsgewinn: <span class="math align-center">$\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+<li>
+<p>4-seitiger Würfel:</p>
+<ul>
+<li>Entropie = <span class="math align-center">$H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$</span></li>
+<li>Normierung: <span class="math align-center">$1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$</span></li>
+<li>Normierter Informationsgewinn: <span class="math align-center">$\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$</span></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; Normierung sorgt für fairen Vergleich der Attribute</p>
+<p><em>Anmerkung</em>: Auch hier ist die Entropie natürlich kein <span class="math align-center">$\operatorname{Gain}(S, A)$</span>. Das Beispiel soll
+nur übersichtlich deutlich machen, dass der &quot;Vorteil&quot; von Attributen mit mehr Ausprägungen durch die
+Normierung in C4.5 aufgehoben wird.</p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Entscheidungsbaumlerner <strong>ID3</strong>
+<ul>
+<li>Nutze <em>Information Gain</em> zur Auswahl des nächsten Attributs</li>
+<li>Teile die Trainingsmenge entsprechend auf (&quot;nach unten hin&quot;)</li>
+</ul>
+</li>
+<li>Verbesserung durch Normierung des <em>Information Gain</em>: <strong>C4.5</strong></li>
+</ul>
+
+
+    
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-puzzle-piece"></i> Challenges
+  </div>
+  <div class="box-content">
+<p><strong>Textklassifikation</strong></p>
+<p>Betrachten Sie die folgenden Aussagen:</p>
+<blockquote>
+<ul>
+<li>Patient A hat weder Husten noch Fieber und ist gesund.</li>
+<li>Patient B hat Husten, aber kein Fieber und ist gesund.</li>
+<li>Patient C hat keinen Husten, aber Fieber. Er ist krank.</li>
+<li>Patient D hat Husten und kein Fieber und ist krank.</li>
+<li>Patient E hat Husten und Fieber. Er ist krank.</li>
+</ul>
+</blockquote>
+<p>Aufgaben:</p>
+<ol>
+<li>Trainieren Sie auf diesem Datensatz einen Klassifikator mit ID3.</li>
+<li>Ist Patient F krank? Er hat Husten, aber kein Fieber.</li>
+</ol>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-dtl.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Entscheidungsbäume (Decision Tree Learner DTL)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+                    
+                
+            
+            
+                
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_Ertel2017'>[Ertel2017] <strong>Introduction to Artificial Intelligence</strong><br>Ertel, W., Springer, 2017. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-3-319-58487-4</a>. DOI <a href='https://doi.org/10.1007/978-3-319-58487-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>10.1007/978-3-319-58487-4</a>.<br><em>Entscheidungsbäume: Abschnitt 8.4</em></li> <li id='id_Mitchell2010'>[Mitchell2010] <strong>Machine Learning</strong><br>Mitchell, T., McGraw-Hill, 2010. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0-0711-5467-3' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0-0711-5467-3</a>.<br><em>ID3: Kapitel 3</em></li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Entscheidungsbäume: Abschnitt 19.3</em></li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1727687850" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1727687850" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1727687850"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1727687850" defer></script>
+  </body>
+</html>
