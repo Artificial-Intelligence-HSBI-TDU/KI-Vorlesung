@@ -229,9 +229,9 @@ Here be dragons ...
 | 48 |       | 25.                            | [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        |                          |
 | 49 | Dez   | 02.                            | [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | [Blatt: Suche]           |
 | 50 |       | 09.                            | [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | [Blatt: EA/GA]           |
-| 51 |       | 16.                            | [Vorschau Deep Learning (CNN, RNN)]                                                                     | Canan          | [Blatt: Games]           |
-| 52 |       | 23.                            | [Prüfungsvorbereitung TDU]                                                                              | Canan          |                          |
-| 01 |       | 30. (**Keine Sprechstunde**)   | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           |                |                          |
+| 51 |       | 16. (**Google Meet**)          | [Vorschau Deep Learning (CNN, RNN)]                                                                     | Canan          | [Blatt: Games]           |
+| 52 |       | 23. (**Google Meet**)          | [Prüfungsvorbereitung TDU]                                                                              | Canan          |                          |
+| 01 |       | 30. (**KEINE Sprechstunde**)   | [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           |                |                          |
 | 02 | Jan   | 06.                            | [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | [Blatt: DTL]             |
 | 03 |       | 13.                            | [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | [Blatt: CSP]             |
 
