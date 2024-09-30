@@ -127,78 +127,6 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 [Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
 
 
-## Prüfungsform, Note und Credits
-
-:::::: {.tabs groupid="hochschule"}
-::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
-
-**Klausur plus Testat**, 5 ECTS
-
-*   **Testat**: Vergabe der Credit-Points
-
-    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
-
-    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
-    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
-    Vorstellung der Lösungen im Praktikum)
-
-*   **Klausur**: => Modulnote
-
-    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
-    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
-
-:::
-::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
-
-**Klausur plus Testat**, 5 ECTS
-
-*   **Testat**: Vergabe der Credit-Points
-
-    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
-
-    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
-    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
-    Vorstellung der Lösungen im Praktikum)
-
-*   **Klausur**: => Modulnote
-
-    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
-    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
-
-:::
-::: {.tab title="INF701 KI (TDU)"}
-
-| Prüfung         | Gewicht                       |
-|:----------------|-------------------------------|
-| Zwischenprüfung | **40 %**                      |
-| Endprüfung      | **60 %**                      |
-| Übung           | **10 % Bonus für Endprüfung** |
-
-Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsnote ≥40**),
-werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
-
-Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
-**Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
-
-:::
-::::::
-
-
-## Materialien
-
-1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
-    Russell, S. und Norvig, P., Pearson, 2020.
-    ISBN [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
-2.  "Introduction to Artificial Intelligence".
-    Ertel, W., Springer, 2017.
-    ISBN [978-3-319-58487-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4).
-    DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
-3.  "An Introduction to Machine Learning".
-    Kubat, M., Springer, 2017.
-    ISBN [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
-    DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
-
-
 ## Fahrplan
 
 :::::: {.tabs groupid="hochschule"}
@@ -377,6 +305,78 @@ Here be dragons ...
 [Blatt: Regression]: homework/sheet-nn-regression.md
 [Blatt: MLP]: homework/sheet-nn-mlp.md
 [Blatt: Backpropagation]: homework/sheet-nn-backprop.md
+
+
+## Prüfungsform, Note und Credits
+
+:::::: {.tabs groupid="hochschule"}
+::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
+
+**Klausur plus Testat**, 5 ECTS
+
+*   **Testat**: Vergabe der Credit-Points
+
+    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
+
+    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
+    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
+    Vorstellung der Lösungen im Praktikum)
+
+*   **Klausur**: => Modulnote
+
+    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
+    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
+
+:::
+::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
+
+**Klausur plus Testat**, 5 ECTS
+
+*   **Testat**: Vergabe der Credit-Points
+
+    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
+
+    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
+    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
+    Vorstellung der Lösungen im Praktikum)
+
+*   **Klausur**: => Modulnote
+
+    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
+    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
+
+:::
+::: {.tab title="INF701 KI (TDU)"}
+
+| Prüfung         | Gewicht                       |
+|:----------------|-------------------------------|
+| Zwischenprüfung | **40 %**                      |
+| Endprüfung      | **60 %**                      |
+| Übung           | **10 % Bonus für Endprüfung** |
+
+Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsnote ≥40**),
+werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
+
+Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
+**Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
+
+:::
+::::::
+
+
+## Materialien
+
+1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
+    Russell, S. und Norvig, P., Pearson, 2020.
+    ISBN [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
+2.  "Introduction to Artificial Intelligence".
+    Ertel, W., Springer, 2017.
+    ISBN [978-3-319-58487-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-58487-4).
+    DOI [10.1007/978-3-319-58487-4](https://doi.org/10.1007/978-3-319-58487-4).
+3.  "An Introduction to Machine Learning".
+    Kubat, M., Springer, 2017.
+    ISBN [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
+    DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
 
 
 ## Förderungen und Kooperationen
