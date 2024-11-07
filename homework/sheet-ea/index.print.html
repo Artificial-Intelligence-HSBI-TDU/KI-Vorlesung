@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="EA.01: Modellierung von GA (2P) Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung CSP: Intro). Starten Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
+Geben Sie für beide Probleme je eine geeignete Kodierung der Individuen, passende Operatoren (Crossover, Mutation) und eine geeignete Fitnessfunktion an, damit die Probleme mit einem GA gelöst werden können. Begründen Sie Ihre Wahl!
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated Annealing lösen zu können?">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Übungsblatt: Lokale Suche, GA">
+    <meta name="twitter:description" content="EA.01: Modellierung von GA (2P) Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung CSP: Intro). Starten Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
+Geben Sie für beide Probleme je eine geeignete Kodierung der Individuen, passende Operatoren (Crossover, Mutation) und eine geeignete Fitnessfunktion an, damit die Probleme mit einem GA gelöst werden können. Begründen Sie Ihre Wahl!
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated Annealing lösen zu können?">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-ea.html">
+    <meta property="og:title" content="Übungsblatt: Lokale Suche, GA">
+    <meta property="og:description" content="EA.01: Modellierung von GA (2P) Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung CSP: Intro). Starten Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
+Geben Sie für beide Probleme je eine geeignete Kodierung der Individuen, passende Operatoren (Crossover, Mutation) und eine geeignete Fitnessfunktion an, damit die Probleme mit einem GA gelöst werden können. Begründen Sie Ihre Wahl!
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated Annealing lösen zu können?">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Übungsblatt: Lokale Suche, GA">
+    <meta itemprop="description" content="EA.01: Modellierung von GA (2P) Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung CSP: Intro). Starten Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.
+Geben Sie für beide Probleme je eine geeignete Kodierung der Individuen, passende Operatoren (Crossover, Mutation) und eine geeignete Fitnessfunktion an, damit die Probleme mit einem GA gelöst werden können. Begründen Sie Ihre Wahl!
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated Annealing lösen zu können?">
+    <meta itemprop="wordCount" content="263">
+    <title>Übungsblatt: Lokale Suche, GA</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-ea.html" rel="canonical" type="text/html" title="Übungsblatt: Lokale Suche, GA">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1730987965" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1730987965" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1730987965" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1730987965" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1730987965" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1730987965" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1730987965" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1730987965" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1730987965" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1730987965" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1730987965" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1730987965" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1730987965" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1730987965" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1730987965" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1730987965"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1730987965";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-ea.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Übungsblatt: Lokale Suche, GA
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Übungsblatt: Lokale Suche, GA</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <p><strong>(10 Punkte)</strong></p>
+    
+
+    <h2 id="ea01-modellierung-von-ga-2p">EA.01: Modellierung von GA (2P)</h2>
+<p>Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus
+Vorlesung <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html">CSP: Intro</a>). Starten
+Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine
+konfliktfreie Einfärbung mit einer minimalen Anzahl an Farben sein.</p>
+<p>Geben Sie für beide Probleme je eine geeignete <strong>Kodierung</strong> der Individuen,
+passende Operatoren (<strong>Crossover</strong>, <strong>Mutation</strong>) und eine geeignete
+<strong>Fitnessfunktion</strong> an, damit die Probleme mit einem GA gelöst werden können.
+Begründen Sie Ihre Wahl!</p>
+<p>Was würden Sie noch benötigen, um die obigen Probleme jeweils mit
+Simulated Annealing lösen zu können?</p>
+<p><em>Thema</em>: Modellierung für GA und Gradientensuche</p>
+<h2 id="ea02-implementierung-5p">EA.02: Implementierung (5P)</h2>
+<p>Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
+Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
+Java-Klassen im Paket <a href="https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/local" rel="external" target="_blank"><code>aima.core.search.local</code></a> bzw. die Python-Klassen in
+<a href="https://github.com/aimacode/aima-python/blob/master/search.py" rel="external" target="_blank"><code>search.py</code></a> als Ausgangspunkt nutzen.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Untersuchen Sie <strong>systematisch</strong> unterschiedliche Varianten/Einstellungen der
+in der VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind.
+100 Läufe durch und messen Sie die besprochenen Kennzahlen.</p>
+<p>Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.</p>
+<h2 id="ea03-anwendungen-3p">EA.03: Anwendungen (3P)</h2>
+<ol>
+<li>
+<p>Analysieren Sie die Implementierung von
+<a href="http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/" rel="external" target="_blank">Randal Olson &quot;Here's Waldo: Computing the optimal search strategy for finding Waldo&quot;</a>
+(<a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects" rel="external" target="_blank">Direktlink</a>).</p>
+</li>
+<li>
+<p>Schauen Sie sich nun den <a href="https://www.openprocessing.org/sketch/205807" rel="external" target="_blank">&quot;Evolution Simulator&quot;</a>
+an. Wie ist dort die Modellierung erfolgt (Kodierung, Operatoren, Fitnessfunktion)?</p>
+</li>
+<li>
+<p>Wie werden EA/GA konkret im <a href="https://lcamtuf.coredump.cx/afl/" rel="external" target="_blank">&quot;american fuzzy lop&quot;</a>
+eingesetzt?</p>
+</li>
+</ol>
+<p>Welche Fitnessfunktion wurden in den drei Beispielen jeweils genutzt, wie die
+Individuen und die Operatoren codiert?</p>
+<p>Recherchieren Sie, in welchen <em>anderen</em> Anwendungen Evolutionäre Algorithmen
+eingesetzt werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt
+werden.</p>
+<p><em>Thema</em>: Analyse von GA-Implementierungen</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Im Python-Code tauchen immer wieder &quot;TODO&quot;-Marker auf - bitte mit Vorsicht genießen!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1730987965" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1730987965" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1730987965"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1730987965" defer></script>
+  </body>
+</html>
