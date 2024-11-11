@@ -21,7 +21,7 @@ Leiten Sie die Gewichtsupdates für die erste versteckte Schicht (für ein Net
 
 ## NN.Backprop.02: Forward- und Backpropagation (2P)
 
-Betrachten Sie das folgende MLP mit einer versteckten Schicht mit zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $y$. Beide Zellen verwenden die Aktivierungsfunktion
+Betrachten Sie das folgende MLP mit zwei Schichten mit insgesamt zwei Zellen. Die Gewichte sind an den Kanten angegeben. Das Netz erhält den skalaren Input $x$ und berechnet daraus die Ausgabe $y$. Beide Zellen verwenden die Aktivierungsfunktion
 $\sigma(z) = \frac{1}{ 1 + e^{−z} }$.
 
 ![Abbildung 1](images/mlp.png){width="50%"}
