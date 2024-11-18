@@ -36,7 +36,7 @@ welches den Datensatz entsprechend bearbeitet/transformiert.
 oder machen Sie sich mit existierenden Implementierungen vertraut, beispielsweise in
 [NLTK](https://www.nltk.org/index.html) oder
 [scikit-learn](https://scikit-learn.org/stable/index.html) oder
-[Weka](https://www.cs.waikato.ac.nz/ml/weka/).
+[Weka](https://waikato.github.io/weka-wiki/).
 
 (2P) Splitten Sie den vorbereiteten Datensatz in eine Trainings- und eine Testmenge auf und
 trainieren Sie den Naive Bayes Klassifikator. Wie sieht ihr Klassifikator aus, was sind die

@@ -53,7 +53,7 @@ Geben Sie die jeweils verwendete Regel an.
 
 ## DTL.03: Machine Learning mit Weka (3P)
 
-Weka ([cs.waikato.ac.nz/ml/weka](https://www.cs.waikato.ac.nz/ml/weka/)) ist eine
+Weka ([waikato.github.io/weka-wiki/](https://waikato.github.io/weka-wiki/)) ist eine
 beliebte Sammlung von (in Java implementierten) Algorithmen aus dem Bereich des
 Maschinellen Lernens. Laden Sie sich das Tool in der aktuellen stabilen Version
 herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
