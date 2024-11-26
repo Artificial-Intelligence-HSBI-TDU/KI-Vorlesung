@@ -85,6 +85,7 @@ enthält, und dieses Paket nachinstallieren.
     Lesen Sie in der beiliegenden Doku zum Thema "ARFF" nach. Dabei handelt es sich um ein
     spezielles Datenformat, womit man Weka mitteilen kann, welche Attribute es gibt und
     welchen Typ diese haben und welche Werte auftreten dürfen.
+    ([Link](https://waikato.github.io/weka-wiki/formats_and_processing/arff/))
 
     Erklären Sie die Unterschiede zwischen "nominal", "ordinal" (bzw. "numeric") und "string".
 
