@@ -60,7 +60,8 @@ herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
 
 Laden Sie sich die Beispieldatensätze "Zoo" (`zoo.csv`) und "Restaurant" (`restaurant.csv`)
 aus dem AIMA-Repository ([github.com/aimacode/aima-data](https://github.com/aimacode/aima-data))
-herunter. Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien eine
+herunter.^[Zum Zoo-Datensatz gibt es die Erklärung direkt im Repo, für den Restaurant-Datensatz
+finden Sie die Erklärung im AIMA (Buch).] Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien eine
 Kopfzeile mit den Namen der Attribute haben. Passen Sie die Dateien entsprechend an
 und laden Sie diese im Reiter "Pre-Process" mit "Open file ...".
 
