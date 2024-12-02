@@ -132,17 +132,23 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
-<!--
 `{{% notice style="note" title="News" %}}`{=markdown}
-**Projektwoche**: Vom 16.-20.12.2024 findet unsere gemeinsame Projektwoche des ersten und
-dritten Semesters statt. In den teilnehmenden Veranstaltungen entfallen deshalb die
-Vorlesungen und Übungen - wir nehmen mit "Grundlagen der KI" (GKI) teil :-)
+`{{% expand title="29.11.24" %}}`{=markdown}
 
-*Bonus*: Wenn Sie in Ihr Projekt nachweislich Inhalte aus GKO einbringen, zählt das wie ein
-zusätzliches Übungsblatt. Sie haben also eine zusätzliche Chance für das Testat (6 aus 11
-Blättern) ...
+**Projektwoche**: Vom 16.-20.12.2024 findet unsere gemeinsame Projektwoche des ersten und
+dritten Semesters statt. Sie können in einem Team an spannenden Aufgaben arbeiten. In den
+teilnehmenden Veranstaltungen entfallen deshalb die Vorlesungen und Übungen - wir nehmen
+mit "Grundlagen der KI" (GKI) an der Projektwoche teil :-)
+
+Wenn Sie in Ihr Projekt nachweislich Inhalte aus "Grundlagen der KI" (GKI) einbringen, zählt
+das wie ein zusätzliches Übungsblatt. Sie haben also eine zusätzliche Chance für das Testat
+(6 aus 11 Blättern) ...
+
+Melden Sie sich bis zum 04.12. unter https://www.hsbi.de/elearning/goto.php?target=crs_1460449
+an. Dort finden Sie auch weitere Informationen zum Ablauf.
+
+`{{% /expand %}}`{=markdown}
 `{{% /notice %}}`{=markdown}
--->
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
