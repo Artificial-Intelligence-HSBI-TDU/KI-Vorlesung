@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="Was ist Lernen? Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch Erfahrung.
+Warum Lernen? Nicht alle Situationen vorhersehbar Nicht alle Details modellierbar Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar Data Mining: Entdeckung neuen Wissens durch Analyse der Daten Selbstanpassende Programme =&gt; Lernen wichtige Eigenschaft lebender Wesen :-)
+Learning Agent Feedback während des Lernens Überwachtes Lernen">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Machine Learning 101">
+    <meta name="twitter:description" content="Was ist Lernen? Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch Erfahrung.
+Warum Lernen? Nicht alle Situationen vorhersehbar Nicht alle Details modellierbar Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar Data Mining: Entdeckung neuen Wissens durch Analyse der Daten Selbstanpassende Programme =&gt; Lernen wichtige Eigenschaft lebender Wesen :-)
+Learning Agent Feedback während des Lernens Überwachtes Lernen">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics.html">
+    <meta property="og:title" content="Machine Learning 101">
+    <meta property="og:description" content="Was ist Lernen? Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch Erfahrung.
+Warum Lernen? Nicht alle Situationen vorhersehbar Nicht alle Details modellierbar Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar Data Mining: Entdeckung neuen Wissens durch Analyse der Daten Selbstanpassende Programme =&gt; Lernen wichtige Eigenschaft lebender Wesen :-)
+Learning Agent Feedback während des Lernens Überwachtes Lernen">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Machine Learning 101">
+    <meta itemprop="description" content="Was ist Lernen? Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch Erfahrung.
+Warum Lernen? Nicht alle Situationen vorhersehbar Nicht alle Details modellierbar Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar Data Mining: Entdeckung neuen Wissens durch Analyse der Daten Selbstanpassende Programme =&gt; Lernen wichtige Eigenschaft lebender Wesen :-)
+Learning Agent Feedback während des Lernens Überwachtes Lernen">
+    <meta itemprop="wordCount" content="914">
+    <title>Machine Learning 101</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics.html" rel="canonical" type="text/html" title="Machine Learning 101">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1733324267" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1733324267" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1733324267" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1733324267" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1733324267" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1733324267"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1733324267";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Machine Learning 101
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Machine Learning 101</h1>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-graduation-cap"></i> TL;DR
+  </div>
+  <div class="box-content">
+<p>Lernen wird in der KI oft als Verhaltensänderung (eines Systems) aufgefasst. Dabei soll eine
+Gütefunktion optimiert werden.</p>
+<p>Je nach verfügbarem Feedback eines &quot;Lehrers&quot; werden typischerweise drei Arten von Lernen
+unterschieden: Überwachtes Lernen, Unüberwachtes Lernen, Reinforcement Lernen. Dabei stellt
+der Lehrer beim überwachten Lernen Trainingsbeispiele plus eine Vorgabe (Klasse, Funktionswert)
+zur Verfügung, während beim unüberwachten Lernen nur die Trainingsbeispiele bereitgestellt
+werden und der Algorithmus selbst Zusammenhänge in den Daten erkennen soll. Beim Reinforcement
+Learning erfolgt das Feedback am Ende einer Kette von Aktionen, d.h. der Algorithmus muss
+diese Bewertung auf die einzelnen Aktionen zurückrechnen.</p>
+<p>Beim überwachten Lernen soll eine Hypothese aufgebaut werden, die der echten (zu lernenden)
+Funktion möglichst nahe kommt. Eine konsistente Hypothese erklärt die Trainingsdaten, eine
+generalisierende Hypothese kann auch unbekannte Daten (die aus der selben Quelle stammen, also
+zum selben Problem gehören) korrekt bewerten. Es wird unterschieden zwischen Klassifikation
+(einige wenige diskrete Label/Klassen, die den Trainingsbeispielen zugeordnet sind) und
+Regression (Lernen eines Funktionsverlaufs).</p>
+<p>Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte, d.h. jedes Objekt
+kann über einen Merkmalsvektor beschrieben werden. Trainingsdaten sind ausgewählte Beispielobjekte
+(durch Merkmalsvektoren beschrieben) plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.</p>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (YouTube)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/FliWEXQZhsw' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Machine Learning 101</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/c871a589c1e95782173b9a3c1efbb79ac38dfb4d871df8b39fd5851562036619df4d6b31cec0b630c1c88ff928bbcb2429ea194e2cc795720fce214367009242' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Machine Learning 101</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K1) Definition und Arten des Lernens</li> <li>(K2) Überwachtes Lernen: Lernen durch Beobachten (mit Lehrer)</li> <li>(K2) Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge</li></ul>
+  </div>
+</div>
+
+
+
+
+    <h2 id="was-ist-lernen">Was ist Lernen?</h2>
+<blockquote>
+<p>Verhaltensänderung eines Agenten in Richtung der Optimierung eines
+Gütefunktionals (Bewertungsfunktion) durch Erfahrung.</p>
+</blockquote>
+<h2 id="warum-lernen">Warum Lernen?</h2>
+<ul>
+<li>Nicht alle Situationen vorhersehbar</li>
+<li>Nicht alle Details modellierbar</li>
+<li>Lösung oder Lösungsweg unbekannt, nicht explizit programmierbar</li>
+<li>Data Mining: Entdeckung neuen Wissens durch Analyse der Daten</li>
+<li>Selbstanpassende Programme</li>
+</ul>
+<p>=&gt; Lernen wichtige Eigenschaft lebender Wesen :-)</p>
+<h2 id="learning-agent">Learning Agent</h2>
+<p><a href="#R-image-fd2f35604550552b7bfec9800f70a12c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/learning.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd2f35604550552b7bfec9800f70a12c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/learning.png?width=80%25&height=auto"></a></p>
+<h2 id="feedback-während-des-lernens">Feedback während des Lernens</h2>
+<ul>
+<li>
+<p><strong>Überwachtes Lernen</strong></p>
+<ul>
+<li>Lernen durch Beobachtung</li>
+<li>Vorgabe von Beispielen: Ein- und Ausgabewerte</li>
+</ul>
+<p>=&gt; Regression, <span class='alert'>Klassifikation</span></p>
+</li>
+<li>
+<p><strong>Unüberwachtes Lernen</strong></p>
+<ul>
+<li>Erkennen von Mustern in den Inputdaten, Clustering</li>
+<li>Kein Feedback (!)</li>
+</ul>
+</li>
+<li>
+<p><strong>Reinforcement Lernen</strong></p>
+<ul>
+<li>Bewertung der Aktionen des Agenten am Ende einer Aktionsfolge</li>
+</ul>
+</li>
+</ul>
+<p><strong>Beispiel Kleinkind</strong>: Lernen von Klassen/Konzepten durch Beispiele</p>
+<ul>
+<li>Zuerst ist alles &quot;Katze&quot; (Übergeneralisierung)</li>
+<li>Differenzierung durch Feedback der Umwelt; Erkennung unterschiedlicher Ausprägungen</li>
+</ul>
+<h2 id="beispiel-kreditrisiko">Beispiel: Kreditrisiko</h2>
+<ul>
+<li>
+<p>Bankkunde beantragt Kredit</p>
+</li>
+<li>
+<p>Soll er aus Sicht der Bank den Kredit bekommen?</p>
+</li>
+<li>
+<p>Bankangestellter betrachtet (relevante) Merkmale des Kunden:</p>
+<ul>
+<li>Alter, Einkommen, sozialer Status</li>
+<li>Kundenhistorie bei der Bank</li>
+<li>Höhe des Kredits</li>
+</ul>
+</li>
+<li>
+<p>Bewertung des Kreditrisikos:</p>
+<ul>
+<li><strong>Klassifikation</strong>: Guter oder schlechter Kunde (Binäre Entscheidung: 2 Klassen)</li>
+<li><strong>Regression</strong>: Vorhersage Gewinn/Verlust für die Bank (Höhe des Gewinns/Verlusts interessant)</li>
+</ul>
+</li>
+</ul>
+<h2 id="beispiel-autoreparatur">Beispiel: Autoreparatur</h2>
+<ul>
+<li>
+<p><strong>Gegeben</strong>: Eigenschaften eines Autos</p>
+<p>=&gt; Eigenschaften: Ausprägungen der Merkmale</p>
+</li>
+<li>
+<p><strong>Gesucht</strong>: Diagnose und Reparaturanleitung</p>
+<p>=&gt; Hypothese über den Merkmalen (Funktion <span class="math align-center">$\operatorname{h}$</span>)</p>
+</li>
+</ul>
+<h2 id="lernen-durch-beobachten-lernen-einer-funktion-hahahugoshortcode11s1hbhb">Lernen durch Beobachten: Lernen einer Funktion <span class="math align-center">$\operatorname{f}$</span></h2>
+<p>Funktionsapproximation: Lernen einer Funktion <span class="math align-center">$\operatorname{f}$</span> anhand von Beispielen</p>
+<ul>
+<li>
+<p>Ein Beispiel ist ein Tupel <span class="math align-center">$(\mathbf{x}, \operatorname{f}(\mathbf{x}))$</span>, etwa
+<span class="math align-center">$$
+    (\mathbf{x}, \operatorname{f}(\mathbf{x})) = \left(\begin{array}{ccc}
+    O & O & X \\
+    . & X & . \\
+    X & . & .
+    \end{array}, +1\right)
+    $$</span></p>
+</li>
+<li>
+<p>Aufgabe: Baue Hypothese <span class="math align-center">$\operatorname{h}$</span> auf, so dass <span class="math align-center">$\operatorname{h} \approx \operatorname{f}$</span>.</p>
+<ul>
+<li>Benutze dazu Menge von Beispielen =&gt; <span class='alert'><strong>Trainingsdaten</strong></span>.</li>
+</ul>
+</li>
+<li>
+<p>Ziele:</p>
+<ol>
+<li><strong>Konsistente Hypothese</strong>: Übereinstimmung bei Trainingsdaten</li>
+<li><strong>Generalisierende Hypothese</strong>: Korrekte Vorhersage bei
+unbekannten Daten</li>
+</ol>
+</li>
+</ul>
+<p><em>Anmerkung</em>: Stark vereinfachtes Modell realen Lernens!</p>
+<h2 id="konstruieren-einer-konsistenten-hypothese">Konstruieren einer konsistenten Hypothese</h2>
+<p><a href="#R-image-f594228f26e1b14b1cbec6e21f7510ad" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams1.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f594228f26e1b14b1cbec6e21f7510ad"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams1.png?width=60%25&height=auto"></a></p>
+<p>Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ...
+Wir haben für einige x-Werte die zugehörigen y-Werte vorgegeben.</p>
+<h2 id="konstruieren-einer-konsistenten-hypothese-cnt">Konstruieren einer konsistenten Hypothese (cnt.)</h2>
+<p><a href="#R-image-13443eaf5c7b3f621b303b1cea285b89" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams2.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-13443eaf5c7b3f621b303b1cea285b89"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams2.png?width=60%25&height=auto"></a></p>
+<p>Die einfachste Approximation wäre eine lineare Funktion. Allerdings werden hierbei
+einige Werte mehr oder weniger stark nicht korrekt widergegeben, d.h. man hat einen
+relativ hohen (Trainings-) Fehler.</p>
+<h2 id="konstruieren-einer-konsistenten-hypothese-cnt-1">Konstruieren einer konsistenten Hypothese (cnt.)</h2>
+<p><a href="#R-image-9569cf866e470e240aced69606d36cfd" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams3.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9569cf866e470e240aced69606d36cfd"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams3.png?width=60%25&height=auto"></a></p>
+<p>Die Hyperbel erklärt die Trainingsdaten bis auf den einen Punkt sehr gut.
+Die Frage ist, ob dieser eine Punkt zum zu lernenden Zusammenhang gehört
+oder ein Ausreißer ist, den man gefahrlos ignorieren kann?</p>
+<h2 id="konstruieren-einer-konsistenten-hypothese-cnt-2">Konstruieren einer konsistenten Hypothese (cnt.)</h2>
+<p><a href="#R-image-e120686216bf5907f44549b5fea6c223" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams4.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e120686216bf5907f44549b5fea6c223"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams4.png?width=60%25&height=auto"></a></p>
+<p>Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt
+aber alle Datenpunkte. D.h. hier wäre der Trainingsfehler Null. Zwischen den
+Trainingsdaten zeigt das Modell eine &quot;glatte&quot; Approximation, d.h. es wird auch
+neue Daten, die es beim Training nicht gesehen hat, relativ gut erklären.
+(Dabei liegt freilich die Annahme zugrunde, dass alle relevanten Daten in der
+Trainingsmenge vorhanden sind, d.h. dass es insbesondere zwischen den Datenpunkten
+keine Ausreißer o.ä. gibt.)</p>
+<h2 id="konstruieren-einer-konsistenten-hypothese-cnt-3">Konstruieren einer konsistenten Hypothese (cnt.)</h2>
+<p><a href="#R-image-f882db8bb32c0bd8441a8ea1e9bdd2db" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams5.png?width=60%25&height=auto" style=" height: auto; width: 60%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f882db8bb32c0bd8441a8ea1e9bdd2db"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics/occams5.png?width=60%25&height=auto"></a></p>
+<p>Diese Hypothese erklärt ebenfalls sämtliche Trainingsdaten. Allerdings schwingt
+die Funktion zwischen den Daten stark hin und her. Vermutlich entspricht dies
+nicht dem zu lernenden Funktionsverlauf. Der Trainingsfehler wäre wie bei der
+deutlich einfacheren Hypthese aus dem letzten Schritt Null. Der Generalisierungsfehler
+(sprich die Abweichung, wenn man das Modell nach Daten zwischen den Trainingspunkten
+fragt) dürfte erheblich höher liegen.</p>
+<p>D.h. hier hat das Modell einfach die Trainingsdaten auswendig gelernt, aber nicht
+den Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!</p>
+<h2 id="occams-razor">Occam's Razor</h2>
+<p><strong>Bevorzuge die einfachste konsistente Hypothese!</strong></p>
+<ol>
+<li>Wenn es mehrere mögliche Erklärungen für einen Sachverhalt gibt, ist die
+einfachste Erklärung allen anderen vorzuziehen.</li>
+<li>Eine Erklärung ist &quot;einfach&quot;, wenn sie möglichst wenige Variablen und
+Annahmen enthält und wenn diese in klaren logischen Beziehungen zueinander
+stehen, aus denen der zu erklärende Sachverhalt logisch folgt.</li>
+</ol>
+<h2 id="trainingsdaten-und-merkmalsvektoren">Trainingsdaten und Merkmalsvektoren</h2>
+<p>Lehrer gibt Beispiele vor: Eingabe <span class="math align-center">$\mathbf{x}$</span> und passende Ausgabe <span class="math align-center">$\operatorname{f}(\mathbf{x})$</span></p>
+<ul>
+<li>
+<p>Ausgabe: typischerweise Skalar (Funktionswert oder Klasse)
+=&gt; Beispiel: Bewertung eines Spielstandes bei TicTacToe</p>
+</li>
+<li>
+<p>Eingabe: (Beschreibung des) Objekt(s) oder Situation, die zur Ausgabe gehört
+=&gt; Beispiel: Spielstand bei TicTacToe</p>
+</li>
+</ul>
+<p><strong>Merkmalsvektoren</strong>:</p>
+<ul>
+<li>Zusammenfassen der <span class='alert'>relevanten Merkmale</span> zu <span class='alert'>Vektoren</span></li>
+</ul>
+<h2 id="beispiel-schwimmen-im-see">Beispiel: Schwimmen im See</h2>
+<p>Beschreibung der Faktoren, wann ich im See schwimmen möchte:</p>
+<ol>
+<li>Scheint die Sonne?</li>
+<li>Wie warm ist das Wasser?</li>
+<li>Wie warm ist die Luft?</li>
+</ol>
+<ul>
+<li>Trainingsbeispiel:
+<ul>
+<li>Eingabe: Merkmalsvektor <code>(sonnig, warm, warm)</code></li>
+<li>Ausgabe: Klasse <code>ja</code></li>
+</ul>
+</li>
+</ul>
+<p>Dabei wird davon ausgegangen, dass jeder Faktor (jedes Merkmal) an einer bestimmten
+Stelle im Merkmalsvektor aufgeführt ist. Beispielsweise gehört das <code>sonnig</code> zur
+Frage &quot;Scheint die Sonne&quot;, <code>warm</code> jeweils zur Wasser- und zur Lufttemperatur.</p>
+<p>Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen Zustand
+der Welt mit den relevanten Dingen beschrieben. Diesem Zustand kann man beispielsweise
+ein Label (Klasse) verpassen, hier in diesem Fall &quot;ja, in dieser Welt möchte ich
+schwimmen&quot;.</p>
+<p>Die Trainingsmenge baut sich dann beim überwachten Lernen aus vielen solcher Paare
+(Merkmalsvektor, Klasse) auf, und die Algorithmen sollen diese Zuordnung lernen, d.h.
+ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und darüber hinaus
+für neue Daten aus der selben Datenquelle gute Vorhersagen macht.</p>
+<h2 id="trainingsdaten----merkmalsvektoren">Trainingsdaten -- Merkmalsvektoren</h2>
+<p><strong>Generell</strong>: Merkmalsvektor für Objekt <span class="math align-center">$v$</span>:
+<span class="math align-center">$$
+    \mathbf{x}(v) = (x_1, x_2, \ldots, x_n)
+$$</span></p>
+<ul>
+<li><span class="math align-center">$n$</span> Merkmale (Attribute)</li>
+<li>Attribut <span class="math align-center">$x_t$</span> hat <span class="math align-center">$m_t$</span> mögliche Ausprägungen</li>
+<li>Ausprägung von <span class="math align-center">$v$</span> bzgl. <span class="math align-center">$x_t$</span>: <span class="math align-center">$\quad x_t(v) = i \quad$</span> (mit <span class="math align-center">$i = 1 \ldots m_t$</span>)</li>
+</ul>
+<p><em>Anmerkung</em>: Stellen Sie sich den Merkmalsvektor vielleicht wie
+einen Konstruktor einer Klasse <code>x</code> vor: Die einzelnen Attribute <span class="math align-center">$x_t$</span> sind
+die Parameter, aus denen der Merkmalsvektor aufgebaut ist/wird. Jedes der
+Attribute hat einen Typ und damit eine bestimmte Anzahl erlaubter Werte
+(&quot;Ausprägungen&quot;) ...</p>
+<p><strong>Trainingsbeispiel</strong>:</p>
+<ul>
+<li>Tupel aus Merkmalsvektor und zugehöriger Klasse: <span class="math align-center">$\left(\mathbf{x}(v), k\right)$</span></li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>
+<p>Lernen ist Verhaltensänderung, Ziel: Optimierung einer Gütefunktion</p>
+<ul>
+<li>Aufbau einer Hypothese, die beobachtete Daten erklären soll</li>
+<li>Arten: Überwachtes Lernen, Unüberwachtes Lernen, Reinforcement Lernen</li>
+</ul>
+</li>
+<li>
+<p>Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte</p>
+</li>
+<li>
+<p>Trainingsdaten: Beispielobjekte (durch Merkmalsvektoren beschrieben) plus Vorgabe vom Lehrer</p>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Intro ML (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-puzzle-piece"></i> Challenges
+  </div>
+  <div class="box-content">
+<p><strong>Modellierung</strong></p>
+<p>Sie stehen vor der Entscheidung, ob Sie sich zur Vorbereitung auf die
+Flipped-Classroom-Sitzung noch das Skript anschauen. Welche Attribute
+benötigen Sie, um die Situation zu beschreiben?</p>
+<p><strong>Metriken für Klassifikatoren</strong></p>
+<p>Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft. Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Nr.</th>
+          <th style="text-align: left">Alter</th>
+          <th style="text-align: left">Einkommen</th>
+          <th style="text-align: left">Bildung</th>
+          <th style="text-align: left">Kandidat</th>
+          <th style="text-align: left">Vorhersage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left"><span class="math align-center">$\ge 35$</span></td>
+          <td style="text-align: left">hoch</td>
+          <td style="text-align: left">Abitur</td>
+          <td style="text-align: left">O</td>
+          <td style="text-align: left">O</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left"><span class="math align-center">$< 35$</span></td>
+          <td style="text-align: left">niedrig</td>
+          <td style="text-align: left">Master</td>
+          <td style="text-align: left">O</td>
+          <td style="text-align: left">O</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left"><span class="math align-center">$\ge 35$</span></td>
+          <td style="text-align: left">hoch</td>
+          <td style="text-align: left">Bachelor</td>
+          <td style="text-align: left">M</td>
+          <td style="text-align: left">M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left"><span class="math align-center">$\ge 35$</span></td>
+          <td style="text-align: left">niedrig</td>
+          <td style="text-align: left">Abitur</td>
+          <td style="text-align: left">M</td>
+          <td style="text-align: left">M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left"><span class="math align-center">$\ge 35$</span></td>
+          <td style="text-align: left">hoch</td>
+          <td style="text-align: left">Master</td>
+          <td style="text-align: left">O</td>
+          <td style="text-align: left">O</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6</td>
+          <td style="text-align: left"><span class="math align-center">$< 35$</span></td>
+          <td style="text-align: left">hoch</td>
+          <td style="text-align: left">Bachelor</td>
+          <td style="text-align: left">O</td>
+          <td style="text-align: left">M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">7</td>
+          <td style="text-align: left"><span class="math align-center">$< 35$</span></td>
+          <td style="text-align: left">niedrig</td>
+          <td style="text-align: left">Abitur</td>
+          <td style="text-align: left">M</td>
+          <td style="text-align: left">O</td>
+      </tr>
+  </tbody>
+</table>
+<p>Auf diesem Datensatz wurde ein Klassifikator trainiert, die Trainingsergebnisse sind in der Tabelle unter &quot;Vorhersage&quot; angegeben.</p>
+<p>Bewerten Sie den Klassifikator.</p>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-dtl.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Entscheidungsbäume (Decision Tree Learner DTL)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>Lernen: Abschnitte 19.1 und 19.2</em></li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1733324267" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1733324267" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1733324267"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1733324267" defer></script>
+  </body>
+</html>

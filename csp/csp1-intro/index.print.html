@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="Motivation: Einfärben von Landkarten Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende Länder müssen unterschiedliche Farben bekommen (=&gt; Constraint).
+Einfärben von Landkarten: Formalisierung Variablen: A, B, C, D, E, F
+Werte: $\lbrace red, green, blue \rbrace$">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Einführung Constraints">
+    <meta name="twitter:description" content="Motivation: Einfärben von Landkarten Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende Länder müssen unterschiedliche Farben bekommen (=&gt; Constraint).
+Einfärben von Landkarten: Formalisierung Variablen: A, B, C, D, E, F
+Werte: $\lbrace red, green, blue \rbrace$">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html">
+    <meta property="og:title" content="Einführung Constraints">
+    <meta property="og:description" content="Motivation: Einfärben von Landkarten Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende Länder müssen unterschiedliche Farben bekommen (=&gt; Constraint).
+Einfärben von Landkarten: Formalisierung Variablen: A, B, C, D, E, F
+Werte: $\lbrace red, green, blue \rbrace$">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Einführung Constraints">
+    <meta itemprop="description" content="Motivation: Einfärben von Landkarten Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende Länder müssen unterschiedliche Farben bekommen (=&gt; Constraint).
+Einfärben von Landkarten: Formalisierung Variablen: A, B, C, D, E, F
+Werte: $\lbrace red, green, blue \rbrace$">
+    <meta itemprop="wordCount" content="322">
+    <title>Einführung Constraints</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html" rel="canonical" type="text/html" title="Einführung Constraints">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1733324267" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1733324267" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1733324267" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1733324267" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1733324267" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1733324267"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1733324267";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Einführung Constraints
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Einführung Constraints</h1>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-graduation-cap"></i> TL;DR
+  </div>
+  <div class="box-content">
+<p>Ein Constraintproblem (CSP) besteht aus Variablen, die über Einschränkungen (&quot;Constraints&quot;)
+verbunden sind. Jeder Variable wird eine Domäne (Wertebereich) zugeordnet.</p>
+<p>Die Constraints können sich auf eine einzelne Variable beziehen (&quot;unäre Constraints&quot;),
+auf zwei Variablen (&quot;binäre Constraints&quot;) oder auf mehr Variablen. Ein CSP kann als Graph
+dargestellt werden.</p>
+<p>Eine &quot;Belegung&quot; ist eine Zuweisung von Werten an Variablen aus deren Domäne. Eine
+&quot;konsistente&quot; Belegung erfüllt die Constraints, eine &quot;vollständige&quot; Belegung belegt
+alle Variablen.</p>
+<p>Eine Lösung für ein CSP ist eine vollständige und konsistente Belegung.</p>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (YouTube)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/eFyo4Xh59ns' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Intro CSP</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/a269f53bff001a84bec4435261543b846ccca4290f211cf1634f9007d1285513c8bae4f89a0225a489e1ffda6cac455e264e022c35f46e8ffe80b4ddcd86d137' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL Intro CSP</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K1) Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung</li> <li>(K3) Formulierung von CSP</li></ul>
+  </div>
+</div>
+
+
+
+
+    <h2 id="motivation-einfärben-von-landkarten">Motivation: Einfärben von Landkarten</h2>
+<p><a href="#R-image-bfc5eb6f1bafb053fad7d3491eea9a1e" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro/map.png?width=50%25&height=auto" style=" height: auto; width: 50%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfc5eb6f1bafb053fad7d3491eea9a1e"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro/map.png?width=50%25&height=auto"></a></p>
+<p>Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe
+lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu
+erhöhen. Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander
+grenzende Länder müssen unterschiedliche Farben bekommen (=&gt; <em>Constraint</em>).</p>
+<h2 id="einfärben-von-landkarten-formalisierung">Einfärben von Landkarten: Formalisierung</h2>
+<ul>
+<li>
+<p><strong>Variablen</strong>: A, B, C, D, E, F</p>
+</li>
+<li>
+<p><strong>Werte</strong>: <span class="math align-center">$\lbrace red, green, blue \rbrace$</span></p>
+</li>
+<li>
+<p><strong>Constraints</strong>: Benachbarte Regionen müssen unterschiedliche Farben haben</p>
+</li>
+<li>
+<p><strong>Mögliche Lösung</strong>: Zuweisung an Variablen (&quot;Belegung&quot;)
+<span class="math align-center">$\lbrace \operatorname{A} = red, \operatorname{B} = blue, \operatorname{C} = green,
+    \operatorname{D} = red, \operatorname{E} = blue, \operatorname{F} = blue \rbrace$</span></p>
+</li>
+</ul>
+<h2 id="definition-constraint-satisfaction-problem-csp">Definition: Constraint Satisfaction Problem (CSP)</h2>
+<ul>
+<li>
+<p>Ein CSP <span class="math align-center">$\langle V, D, C \rangle$</span> besteht aus:</p>
+<ul>
+<li>Menge von <strong>Variablen</strong> <span class="math align-center">$V = \lbrace V_1, V_2, \ldots, V_n \rbrace$</span></li>
+<li>Je <span class="math align-center">$V_i$</span> nicht leere <strong>Domäne</strong> <span class="math align-center">$D_i = \lbrace d_{i,1}, d_{i,2}, \ldots, d_{i,m_i} \rbrace$</span></li>
+<li>Menge von <strong>Constraints</strong> <span class="math align-center">$C = \lbrace C_1, C_2, \ldots, C_p \rbrace$</span>
+(Randbedingungen, Abhängigkeiten zwischen Variablen)</li>
+</ul>
+</li>
+<li>
+<p>Zuweisung/Belegung (<em>Assignment</em>) <span class="math align-center">$\alpha$</span>:</p>
+<ul>
+<li>Zuweisung von Werten an (einige/alle) Variablen:
+<span class="math align-center">$\alpha = \lbrace X=a, Y=b, \ldots \rbrace$</span>
+(aus den jeweiligen Wertebereichen)</li>
+<li><strong>Konsistente Belegung</strong>: Randbedingungen sind nicht verletzt</li>
+<li><strong>Vollständige Belegung</strong>: Alle Variablen sind belegt</li>
+</ul>
+</li>
+<li>
+<p><strong>Lösung</strong> eines CSP: Vollständige und konsistente Belegung</p>
+</li>
+</ul>
+<h2 id="constraint-graph">Constraint-Graph</h2>
+<p><a href="#R-image-c210f55644e4e6eebd7aa088f186bf0f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro/map_graph.png?width=80%25&height=auto" style=" height: auto; width: 80%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c210f55644e4e6eebd7aa088f186bf0f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro/map_graph.png?width=80%25&height=auto"></a></p>
+<p>Ein CSP kann man auch als Constraint-Graph darstellen. Die Variablen werden zu Knoten im
+Graph, die Constraints zu Kanten zwischen den Knoten. Dadurch kann man die aus dem Problemlösen
+bekannten Algorithmen anwenden ...</p>
+<h2 id="constraints----arität">Constraints -- Arität</h2>
+<p>Die <em>Arität</em> betrifft hier die &quot;Stelligkeit&quot;: Wie viele Variablen stehen in
+einem Constraint miteinander in Beziehung? (Also wie viele Parameter hat
+ein Constraint?)</p>
+<ul>
+<li>
+<p><strong>unär</strong>: betrifft einzelne Variablen
+Beispiel: <span class="math align-center">$\operatorname{A} \neq red$</span></p>
+</li>
+<li>
+<p><strong>binär</strong>: betrifft Paare von Variablen
+Beispiel: <span class="math align-center">$\operatorname{A} \neq \operatorname{B}$</span></p>
+</li>
+<li>
+<p><strong>höhere Ordnung</strong>: betrifft 3 oder mehr Variablen</p>
+</li>
+<li>
+<p><strong>Präferenzen</strong>: &quot;soft constraints&quot;
+Beispiel: &quot;rot ist besser als grün&quot;</p>
+<p>Abbildung über Gewichtung =&gt; Constraint-Optimierungsproblem (COP)</p>
+</li>
+</ul>
+<h2 id="constraints----wertebereiche">Constraints -- Wertebereiche</h2>
+<ul>
+<li>
+<p><strong>Endliche Domänen</strong>: <span class="math align-center">$d$</span> Werte =&gt; <span class="math align-center">$O(d^n)$</span> mögliche Zuweisungen
+(exponentiell in der Zahl der Variablen)</p>
+</li>
+<li>
+<p><strong>Unendliche Domänen</strong>: reelle Zahlen, natürliche Zahlen
+=&gt; Keine Auflistung der erlaubten Wertekombinationen mehr möglich
+=&gt; Übergang zu Gleichungen/Ungleichungen: <span class="math align-center">$job_1+5<job_2$</span></p>
+<ul>
+<li>lineare Constraints</li>
+<li>nichtlineare Constraints</li>
+</ul>
+</li>
+</ul>
+<p><strong>Historische Unterscheidung</strong>:</p>
+<ul>
+<li><strong>Constraint Satisfaction</strong>: endliche Domänen, kombinatorische Methoden</li>
+<li><strong>Constraint Solving</strong>: unendliche Domänen</li>
+</ul>
+<h2 id="csp-sind-überall-">CSP sind überall ...</h2>
+<ul>
+<li>Stundenpläne (Klassen, Räume, Zeiten)</li>
+<li>Konfiguration (Computer, Autos, ...)</li>
+<li>Fahrpläne (Zug, Flug, ...)</li>
+<li>Planung von komplexen Projekten</li>
+<li>Sudoku :-)</li>
+<li>...</li>
+</ul>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Definitionen und Begriffe:
+<ul>
+<li>Variable, (un-) endliche Domänen, Wertemenge</li>
+<li>Constraint, Arität, CSP</li>
+<li>Zuweisung, Lösung, ...</li>
+</ul>
+</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Intro CSP (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-csp.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Constraints</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_Bartak2001'>[Bartak2001] <strong>Theory and Practice of Constraint Propagation</strong><br>Barták, R., 2001.</li> <li id='id_Kumar1992'>[Kumar1992] <strong>Algorithms for Constraint Satisfaction Problems: A Survey</strong><br>Kumar, V., 1992.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>CSP: Abschnitt 5.1</em></li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1733324267" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1733324267" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1733324267"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1733324267" defer></script>
+  </body>
+</html>

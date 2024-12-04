@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden? VARIABLES: Welche Variable zuerst ausprobieren?
+Minimum Remaining Values (MRV): (vgl. [Russell2020, S. 177])
+Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)
+=&gt; reduziert den Verzweigungsgrad
+Beispiel:
+Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&gt; wähle A B und C haben nur noch zwei freie Werte =&gt; wähle B (oder C) C hat nur noch einen Wert, D noch zwei, der Rest drei =&gt; wähle C VARIABLES: Gleichstand bei MRV">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Heuristiken">
+    <meta name="twitter:description" content="VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden? VARIABLES: Welche Variable zuerst ausprobieren?
+Minimum Remaining Values (MRV): (vgl. [Russell2020, S. 177])
+Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)
+=&gt; reduziert den Verzweigungsgrad
+Beispiel:
+Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&gt; wähle A B und C haben nur noch zwei freie Werte =&gt; wähle B (oder C) C hat nur noch einen Wert, D noch zwei, der Rest drei =&gt; wähle C VARIABLES: Gleichstand bei MRV">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html">
+    <meta property="og:title" content="Heuristiken">
+    <meta property="og:description" content="VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden? VARIABLES: Welche Variable zuerst ausprobieren?
+Minimum Remaining Values (MRV): (vgl. [Russell2020, S. 177])
+Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)
+=&gt; reduziert den Verzweigungsgrad
+Beispiel:
+Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&gt; wähle A B und C haben nur noch zwei freie Werte =&gt; wähle B (oder C) C hat nur noch einen Wert, D noch zwei, der Rest drei =&gt; wähle C VARIABLES: Gleichstand bei MRV">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Heuristiken">
+    <meta itemprop="description" content="VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden? VARIABLES: Welche Variable zuerst ausprobieren?
+Minimum Remaining Values (MRV): (vgl. [Russell2020, S. 177])
+Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)
+=&gt; reduziert den Verzweigungsgrad
+Beispiel:
+Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&gt; wähle A B und C haben nur noch zwei freie Werte =&gt; wähle B (oder C) C hat nur noch einen Wert, D noch zwei, der Rest drei =&gt; wähle C VARIABLES: Gleichstand bei MRV">
+    <meta itemprop="wordCount" content="381">
+    <title>Heuristiken</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html" rel="canonical" type="text/html" title="Heuristiken">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1733324267" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733324267" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1733324267" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1733324267" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1733324267" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1733324267" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1733324267" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1733324267"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1733324267";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Heuristiken
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Heuristiken</h1>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-graduation-cap"></i> TL;DR
+  </div>
+  <div class="box-content">
+<p>CSP's mit endlichen Domänen lassen sich mit einer Backtracking-Suche lösen. Dabei
+gibt es einige Freiheitsgrade: Auswahl der nächsten Variable und Wahl des nächsten
+Werts. Hier können Heuristiken die Suche beschleunigen.</p>
+<p>Zur Wahl der als nächstes zu betrachtenden Variable kann die <strong>Minimum Remaining
+Values (MRV)</strong>-Heuristik eingesetzt werden: Wähle die Variable mit wenigsten freien
+Werten. Bei Gleichstand bei der MRV kann man mit der <strong>Gradheuristik</strong> die Variable
+mit den meisten Constraints zu offenen (noch nicht belegten) Variablen wählen.</p>
+<p>Bei der Wahl des Wertes kann die <strong>Least Constraining Value (LCV)</strong>-Heuristik genutzt
+werden: Wähle den Wert, der für die verbleibenden Variablen die wenigsten Werte ungültig
+macht.</p>
+<p>Während die MRV relativ leicht umzusetzen ist, muss man für die LCV alle Constraints zu
+den Nachbarn auswerten.</p>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (YouTube)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/pgXf0oV8lhE' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CSP, Heuristiken</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos (HSBI-Medienportal)
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/medienportal/m/66689545e201ad90f6f2007f472f3b430ec37ebaa5321315764ae687983bbcb049bc217a1b0852e2d5364eae1223153d567558533246bd58b0db5cc1fa3278c5' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>VL CSP, Heuristiken</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K3) Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV</li></ul>
+  </div>
+</div>
+
+
+
+
+    <h2 id="variables-variablen-sortierung-welche-variable-soll-betrachtet-werden">VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?</h2>
+<p><a href="#R-image-02df63cd10e01a791212a9e848f6612d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_mrv.png?width=65%25&height=auto" style=" height: auto; width: 65%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-02df63cd10e01a791212a9e848f6612d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_mrv.png?width=65%25&height=auto"></a></p>
+<p><span class='alert'><strong>VARIABLES</strong></span>: Welche Variable zuerst ausprobieren?</p>
+<p><strong>Minimum Remaining Values (MRV)</strong>: (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html#id_Russell2020">[Russell2020, S. 177]</a>)</p>
+<ul>
+<li>
+<p>Wähle Variable mit wenigsten freien Werten (die am meisten eingeschränkte Variable)</p>
+<p>=&gt; reduziert den Verzweigungsgrad</p>
+</li>
+</ul>
+<p>Beispiel:</p>
+<ol>
+<li>Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =&gt; wähle A</li>
+<li>B und C haben nur noch zwei freie Werte =&gt; wähle B (oder C)</li>
+<li>C hat nur noch einen Wert, D noch zwei, der Rest drei =&gt; wähle C</li>
+</ol>
+<h2 id="variables-gleichstand-bei-mrv">VARIABLES: Gleichstand bei MRV</h2>
+<p><a href="#R-image-8fccbc0ab2dcb125a79e6d6d4aa2d21d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_mrv.png?width=65%25&height=auto" style=" height: auto; width: 65%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8fccbc0ab2dcb125a79e6d6d4aa2d21d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_mrv.png?width=65%25&height=auto"></a></p>
+<p><span class='alert'><strong>VARIABLES</strong></span>: Welche Variable zuerst ausprobieren?</p>
+<p><strong>Gradheuristik</strong>: Erweiterung von <em>MRV</em> bei <em>Gleichstand</em> (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html#id_Russell2020">[Russell2020, S. 177]</a>)</p>
+<ul>
+<li>
+<p>Wähle Variable mit meisten Constraints auf offene (noch nicht zugewiesene) Variablen</p>
+<p>=&gt; reduziert den Verzweigungsgrad in späteren Schritten</p>
+</li>
+</ul>
+<p>Beispiel:</p>
+<ol>
+<li>MRV: Alle haben gleich viele freie Werte (jeweils 3) =&gt; Gradheuristik: B, C und D haben
+die meisten Verbindungen (Constraints) auf offene Variablen =&gt; wähle B (oder C oder D)</li>
+<li>MRV: A, C und D haben nur noch zwei freie Werte =&gt; Gradheuristik: C und D haben
+je zwei Constraints auf noch offene Variablen =&gt; wähle C (oder D)</li>
+<li>MRV: A und D haben beide nur noch einen Wert =&gt; Gradheuristik: D hat
+die meisten Verbindungen (Constraints) auf offene Variablen =&gt; wähle D</li>
+</ol>
+<h2 id="values-werte-sortierung-welchen-wert-soll-ich-ausprobieren">VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?</h2>
+<p><a href="#R-image-c3517e0f996b911feaa489fc93ebba76" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_lcv.png?width=65%25&height=auto" style=" height: auto; width: 65%;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3517e0f996b911feaa489fc93ebba76"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics/bt_search_lcv.png?width=65%25&height=auto"></a></p>
+<p><span class='alert'><strong>VALUES</strong></span>: Welchen Wert zuerst ausprobieren?</p>
+<p><strong>Least Constraining Value (LCV)</strong>: (vgl. <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html#id_Russell2020">[Russell2020, S. 177]</a>)</p>
+<ul>
+<li>
+<p>Wähle Wert, der für verbleibende Variablen die wenigsten Werte
+ungültig macht</p>
+<p>=&gt; verringert die Wahrscheinlichkeit für Backtracking</p>
+</li>
+</ul>
+<p>Beispiel:</p>
+<ol>
+<li>Sei A gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
+=&gt; freie Wahl des Wertes =&gt; wähle beispielsweise rot</li>
+<li>Sei B gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
+=&gt; freie Wahl des Wertes =&gt; wähle beispielsweise grün</li>
+<li>Sei D gewählt: Verbleibende Werte rot und blau
+<ul>
+<li>Wahl von rot würde für C einen Wert übrig lassen (blau)</li>
+<li>Wahl von blau würde für C <strong>keinen</strong> Wert übrig lassen
+=&gt; LCV: Wahl von rot!</li>
+</ul>
+</li>
+</ol>
+<p><strong>Hinweis</strong>: Diese Heuristik ist in der Praxis sehr aufwändig zu berechnen! Man müsste für
+jeden Wert die noch offenen Constraints anschauen und berechnen, wie viele Werte damit jeweils
+ungültig gemacht werden. Die Idee ist aber dennoch interessant, und möglicherweise kann man
+sie für ein reales Problem so adaptieren, dass bei der Umsetzung nur wenig zusätzlicher
+Aufwand entsteht.</p>
+<h2 id="wrap-up">Wrap-Up</h2>
+<ul>
+<li>Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV</li>
+</ul>
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106573&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest CSP, Heuristiken (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-puzzle-piece"></i> Challenges
+  </div>
+  <div class="box-content">
+<p>Sei <span class="math align-center">$D=\lbrace 0, \ldots, 5 \rbrace$</span>, und ein Constraintproblem definiert durch</p>
+<span class="math align-center">$$\langle
+    \lbrace v_1, v_2, v_3, v_4 \rbrace,
+    \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
+    \lbrace c_1, c_2, c_3, c_4 \rbrace
+\rangle$$</span>
+<p>mit</p>
+<ul>
+<li><span class="math align-center">$c_1=\left((v_1,v_2), \lbrace (x,y) \in D^2 | x+y = 3 \rbrace\right)$</span>,</li>
+<li><span class="math align-center">$c_2=\left((v_2,v_3), \lbrace (x,y) \in D^2 | x+y \le 3 \rbrace\right)$</span>,</li>
+<li><span class="math align-center">$c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$</span> und</li>
+<li><span class="math align-center">$c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$</span>.</li>
+</ul>
+<ol>
+<li>Zeichen Sie den Constraint-Graph.</li>
+<li>Welche Variable würde bei der Anwendung von <em>MRV</em> und <em>Gradheuristik</em> im ersten Schritt bei der Suche mit der BT-Search ausgewählt?</li>
+<li>Geben Sie eine Lösung für das Problem an.</li>
+</ol>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+
+        
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fas fa-laptop-code"></i> Übungsblätter/Aufgaben
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-csp.html' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Übungsblatt: Constraints</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                
+            
+            
+            
+        
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_Bartak2001'>[Bartak2001] <strong>Theory and Practice of Constraint Propagation</strong><br>Barták, R., 2001.</li> <li id='id_Kumar1992'>[Kumar1992] <strong>Algorithms for Constraint Satisfaction Problems: A Survey</strong><br>Kumar, V., 1992.</li> <li id='id_Russell2020'>[Russell2020] <a href='http://aima.cs.berkeley.edu' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Artificial Intelligence: A Modern Approach</strong></a><br>Russell, S. und Norvig, P., Pearson, 2020. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-0134610993</a>.<br><em>CSP, Backtracking/Heuristiken: Abschnitt 5.3</em></li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1733324267" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1733324267" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1733324267"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1733324267" defer></script>
+  </body>
+</html>
