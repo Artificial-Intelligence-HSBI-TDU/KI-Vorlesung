@@ -133,6 +133,13 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 `{{% notice style="note" title="News" %}}`{=markdown}
+`{{% expand title="04.12.24" %}}`{=markdown}
+
+Da die Projektwoche (16.-20.12.2024) mangels Interesse nicht stattfinden wird, biete ich eine
+zusätzliche Sprechstunde im Vorlesungsslot am 16.12. an.
+
+`{{% /expand %}}`{=markdown}
+
 `{{% expand title="29.11.24" %}}`{=markdown}
 
 **Projektwoche**: Vom 16.-20.12.2024 findet unsere gemeinsame Projektwoche des ersten und
@@ -166,7 +173,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 |                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 25.: [Blatt: DTL]             | 25. / 26.             |
 | Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 02.: [Blatt: Suche]           | 02. / 03.             |
 |                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 09.: [Blatt: EA/GA]           | 09. / 10.             |
-|                      | 51    | 16.: **Projektwoche Semester 1+3**                                                                           |                |                               |                       |
+|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Sprechstunde                                                              |                |                               |                       |
 |                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
 |                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Games]           | 06. / 07.             |
@@ -204,7 +211,7 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 |                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 27.: [Blatt: DTL]             | 27. / 29.             |
 | Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 04.: [Blatt: Suche]           | 04. / 06.             |
 |                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 11.: [Blatt: EA/GA]           | 11. / 13.             |
-|                      | 51    | 16.: _Projektwoche Semester 1+3_                                                                             |                | 18.: [Blatt: Games]           | 18. / 20.             |
+|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Sprechstunde                                                              |                | 18.: [Blatt: Games]           | 18. / 20.             |
 |                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
 |                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
