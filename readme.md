@@ -133,6 +133,15 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 `{{% notice style="note" title="News" %}}`{=markdown}
+`{{% expand title="09.12.24" %}}`{=markdown}
+
+Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
+bereits angekündigte offene Sprechstunde.
+
+Das Thema Deep Learning ist nicht prüfungsrelevant (aber trotzdem spannend ;).
+
+`{{% /expand %}}`{=markdown}
+
 `{{% expand title="04.12.24" %}}`{=markdown}
 
 Da die Projektwoche (16.-20.12.2024) mangels Interesse nicht stattfinden wird, biete ich eine
@@ -173,7 +182,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 |                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 25.: [Blatt: DTL]             | 25. / 26.             |
 | Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 02.: [Blatt: Suche]           | 02. / 03.             |
 |                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 09.: [Blatt: EA/GA]           | 09. / 10.             |
-|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Sprechstunde                                                              |                |                               |                       |
+|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Intro Deep Learning und offene Sprechstunde                               | Canan, Carsten |                               |                       |
 |                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
 |                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        | 06.: [Blatt: Games]           | 06. / 07.             |
@@ -185,15 +194,16 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
-<!--
 `{{% notice style="note" title="News" %}}`{=markdown}
-Die nächste Klausur für "Künstliche Intelligenz" (IFM 5.14, PO18) wird am **Mittwoch, 02. Oktober 2024**
-angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in Präsenz vor Ort in
-**Minden im Raum B40** durchgeführt. Die Prüfung beginnt um **08:00 Uhr und dauert 90 Minuten**. Ein
-DIN-A4-Zettel ist als Hilfsmittel zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten
-Kurs (Winter 2023/2024). Weitere Informationen siehe [Prüfungsvorbereitung HSBI].
+`{{% expand title="09.12.24" %}}`{=markdown}
+
+Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
+bereits angekündigte offene Sprechstunde.
+
+Das Thema Deep Learning ist nicht prüfungsrelevant (aber trotzdem spannend ;).
+
+`{{% /expand %}}`{=markdown}
 `{{% /notice %}}`{=markdown}
--->
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 5.14 KI (PO18, 5. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
@@ -211,7 +221,7 @@ Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https:/
 |                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 27.: [Blatt: DTL]             | 27. / 29.             |
 | Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 04.: [Blatt: Suche]           | 04. / 06.             |
 |                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 11.: [Blatt: EA/GA]           | 11. / 13.             |
-|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Sprechstunde                                                              |                | 18.: [Blatt: Games]           | 18. / 20.             |
+|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Intro Deep Learning und offene Sprechstunde                               | Canan, Carsten | 18.: [Blatt: Games]           | 18. / 20.             |
 |                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
 |                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
 | Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
