@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="Kurze Übersicht Training und Testing Der tatsächliche Erfolg eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. hohe Vorhersagekraft, gute Generalisierung!
+Die Menge aller gelabelten Daten in Trainingsset und Testset aufteilen, Testset nicht während des Trainings einsetzen!.
+$E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch in-sample error. $E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch out-of-sample error. $E_{out}$ ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich. $E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine Näherung für $E_{out}$. Analogie:
+$E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+$E_{test}$ : Erfolg in Endprüfung.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NN07 - Training & Testing">
+    <meta name="twitter:description" content="Kurze Übersicht Training und Testing Der tatsächliche Erfolg eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. hohe Vorhersagekraft, gute Generalisierung!
+Die Menge aller gelabelten Daten in Trainingsset und Testset aufteilen, Testset nicht während des Trainings einsetzen!.
+$E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch in-sample error. $E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch out-of-sample error. $E_{out}$ ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich. $E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine Näherung für $E_{out}$. Analogie:
+$E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+$E_{test}$ : Erfolg in Endprüfung.">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html">
+    <meta property="og:title" content="NN07 - Training & Testing">
+    <meta property="og:description" content="Kurze Übersicht Training und Testing Der tatsächliche Erfolg eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. hohe Vorhersagekraft, gute Generalisierung!
+Die Menge aller gelabelten Daten in Trainingsset und Testset aufteilen, Testset nicht während des Trainings einsetzen!.
+$E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch in-sample error. $E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch out-of-sample error. $E_{out}$ ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich. $E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine Näherung für $E_{out}$. Analogie:
+$E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+$E_{test}$ : Erfolg in Endprüfung.">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="NN07 - Training & Testing">
+    <meta itemprop="description" content="Kurze Übersicht Training und Testing Der tatsächliche Erfolg eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. hohe Vorhersagekraft, gute Generalisierung!
+Die Menge aller gelabelten Daten in Trainingsset und Testset aufteilen, Testset nicht während des Trainings einsetzen!.
+$E_{in}$ bezeichnet den Fehler auf dem Trainingsset, auch in-sample error. $E_{out}$ bezeichnet den Fehler auf dem gesamten Eingaberaum $X$, auch out-of-sample error. $E_{out}$ ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich. $E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine Näherung für $E_{out}$. Analogie:
+$E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+$E_{test}$ : Erfolg in Endprüfung.">
+    <meta itemprop="wordCount" content="766">
+    <title>NN07 - Training &amp; Testing</title>
+    <link href="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html" rel="canonical" type="text/html" title="NN07 - Training &amp; Testing">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1733765682" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1733765682" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1733765682" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1733765682" rel="stylesheet" media="print">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/format-print.css?1733765682" rel="stylesheet">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1733765682"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1733765682";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            NN07 - Training &amp; Testing
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>NN07 - Training &amp; Testing</h1>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-podcast"></i> Videos
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://youtu.be/PUw-TvLJULI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.1 - Training, Testing, Validierung</a></li> <li><a href='https://youtu.be/DqjdZ8HaDSo' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.2 - Kreuzvalidierung</a></li> <li><a href='https://youtu.be/7XATTMNI-gI' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN7.3 - Beispiel</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+        
+        
+            
+            
+                
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="far fa-file-powerpoint"></i> Folien
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN07-Testing-Validierung.pdf' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>NN07-Testing-Validierung.pdf</a></li></ul>
+  </div>
+</div>
+
+
+
+
+    <div class="recap">
+        <h2 id="kurze-übersicht">Kurze Übersicht</h2>
+<h3 id="training-und-testing">Training und Testing</h3>
+<ul>
+<li>
+<p>Der tatsächliche <strong>Erfolg</strong> eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. <strong>hohe Vorhersagekraft, gute Generalisierung</strong>!</p>
+</li>
+<li>
+<p>Die Menge aller gelabelten Daten in <strong>Trainingsset und Testset</strong> aufteilen, Testset nicht während des Trainings einsetzen!.</p>
+<ul>
+<li><span class="math align-center">$E_{in}$</span> bezeichnet den Fehler auf dem Trainingsset, auch <strong>in-sample error</strong>.</li>
+<li><span class="math align-center">$E_{out}$</span> bezeichnet den Fehler auf dem gesamten Eingaberaum <span class="math align-center">$X$</span>, auch <strong>out-of-sample error</strong>. <span class="math align-center">$E_{out}$</span> ist der eigentliche Indikator für den zukünftigen Erfolg des Modells, ist uns aber nicht zugänglich.</li>
+<li><span class="math align-center">$E_{test}$</span> bezeichnet den Fehler auf dem Testset und ist eine <strong>Näherung</strong> für <span class="math align-center">$E_{out}$</span>.</li>
+</ul>
+<blockquote>
+<p>Analogie:<br>
+<span class="math align-center">$E_{in}$</span> : Erfolg in Übungsaufgaben und Probeprüfungen.<br>
+<span class="math align-center">$E_{test}$</span> : Erfolg in Endprüfung.</p>
+</blockquote>
+</li>
+<li>
+<p>Die Näherung <span class="math align-center">$E_{test}$</span> sollte möglichst genau sein, damit es als ein verlässliches <strong>Gütesiegel</strong> dienen kann.</p>
+<ul>
+<li>Das Testset sollte genug Daten enthalten. Üblicher Anteil an Testdaten:
+<ul>
+<li>bei <span class="math align-center">$|D| \approx 100.000 \rightarrow$</span> ca. 20%</li>
+<li>bei <span class="math align-center">$|D| \approx 10.000.000 \rightarrow$</span> ca. 1%</li>
+<li>Beispiel: Hat man 1000 Beispiele im Testset, wird <span class="math align-center">$E_{test}$</span> mit <span class="math align-center">$\ge 98\%$</span> Wahrscheinlichkeit in der <span class="math align-center">$\pm 5\%$</span> Umgebung von <span class="math align-center">$E_{out}$</span> liegen (für theoretische Grundlagen und Herleitung siehe <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html#id_AbuMostafa2012">[AbuMostafa2012, S. 39-69]</a>).</li>
+</ul>
+</li>
+<li>Trainingsdaten und Testdaten sollten möglichst aus derselben Verteilung kommen, wie die zukünftigen <strong>Real-World-Daten</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Wichtige Bemerkung</strong>:</p>
+<ul>
+<li>Testdaten nicht anfassen, bis das Modell Einsatzbereit ist!</li>
+<li>Die Testdaten dürfen in <strong>keinster Weise</strong> bei der Auswahl der endgültigen Hypothese eingesetzt werden, weder bei der Berechnung der Parameter (Training), noch bei der Bestimmung der Hyperparameter (Hyperparameter-Tuning).</li>
+<li>Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst, kann sie nicht mehr als &quot;Gütesiegel&quot; eingesetzt werden.<br>
+<strong>CHECK</strong>: Hätte man zufällig andere Testdaten gewählt, könnte sich dadurch die endgültige Hypothese ändern?</li>
+</ul>
+</li>
+</ul>
+<h3 id="validierung-und-modellauswahl">Validierung und Modellauswahl</h3>
+<ul>
+<li>
+<p>Das Ziel ist es, das Modell mit bester Generalisierung, also kleinstem <span class="math align-center">$E_{out}$</span> zu bestimmen. <span class="math align-center">$E_{out}$</span> ist jedoch unbekannt und die Näherung <span class="math align-center">$E_{test}$</span> <em>darf nicht</em> bei der Modellauswahl eingesetzt werden.</p>
+</li>
+<li>
+<p>LÖSUNG: Einen weiteren Teil der Daten als <strong>Validierungsset</strong> (auch <em>development set</em>) beiseitelegen und nicht für das Training (i.e. Minimierung des Trainingsfehlers <span class="math align-center">$E_{in}$</span>) verwenden!</p>
+</li>
+<li>
+<p><strong>Bemerkung</strong>:<br>
+Das Wort <strong>Modell</strong> kann je nach Kontext unterschiedliche Bedeutungen annehmen.<br>
+Ein Modell im aktuellen Kontext ist als ein Paar <span class="math align-center">$(\mathcal{H},\mathcal{A})$</span> von Hypothesenraum (bzw. <strong>Modellarchitektur</strong>) und <strong>Lernalgorithmus</strong> definiert.</p>
+<ul>
+<li>Die Auswahl eines Modells kann aus einer Menge von Modellen unterschiedlicher Art erfolgen (z.B. lineare Modelle, polynomiale Modelle, neuronale Netze), oder von Modellen derselben Art aber mit unterschiedlichen Hyperparametern (z.B. Neuronale Netze mit unterschiedlicher Anzahl von versteckten Schichten).</li>
+<li>Außerdem kann dieselbe Modellarchitektur <span class="math align-center">$\mathcal{H}$</span> mit unterschiedlichen Lernalgorithmen trainiert werden, was wiederum die endgültige Hypothese beeinflussen kann. Die Bestimmung der Hyperparameter von <span class="math align-center">${\mathcal{A}}$</span> (wie z.B. Optimierungsfunktion, Lernrate, Kostenfunktion, Regularisierungsparameter usw.) sind daher auch Teil der Modellauswahl.</li>
+</ul>
+</li>
+<li>
+<p>Der <strong>Validierungsfehler <span class="math align-center">$E_{val}$</span></strong> kann nun als Entscheidungsgrundlage an verschiedenen Stellen des Lernrpozesses eingesetzt werden, wie zum Beispiel:</p>
+<ul>
+<li>Bei der <strong>Auswahl geeigneter Hyperparameter</strong> wie z.B. Anzahl Schichten, Anzahl Zellen/Schicht, Aktivierungsfunktion, Regularisierungsparameter (siehe Abbildung 1).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing/val1.png" alt="Abbildung 1 - Einsatz der Validierung für das Hyperparameter-Tuning" width="auto" height="auto">
+    <figcaption><p>Abbildung 1 - Einsatz der Validierung für das Hyperparameter-Tuning</p></figcaption>
+</figure>
+<ul>
+<li>Bei der <strong>Auswahl der endgültigen Hypothese</strong> (<span class="math align-center">$\rightarrow$</span> Parameterauswahl!): unter allen Hypothesen, die während des Trainings durchlafen werden, wähle jene mit kleinstem <span class="math align-center">$E_{val}$</span> (siehe Abbildung 2).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing/val2.png" alt="Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen Hypothese" width="auto" height="auto">
+    <figcaption><p>Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen Hypothese</p></figcaption>
+</figure>
+<ul>
+<li>Bei der graphischen <strong>Darstellung von Lernkurven</strong> für die Diagnose von Über- und Unteranpassung (siehe Abbildung 3).</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing/val3.png" alt="Abbildung 3 - Lernkurven" width="auto" height="auto">
+    <figcaption><p>Abbildung 3 - Lernkurven</p></figcaption>
+</figure>
+</li>
+<li>
+<p>Übliche train/val/test Aufteilung der Daten (in Prozent):</p>
+<ul>
+<li>bei <span class="math align-center">$|D| \approx 100.000 \rightarrow$</span> ca. 60/20/20</li>
+<li>bei <span class="math align-center">$|D| \approx 10.000.000 \rightarrow$</span> ca. 98/1/1</li>
+</ul>
+</li>
+<li>
+<p><strong>Bemerkung</strong>:<br>
+Das Modell ist trainiert für gute Ergebnisse auf Trainingsdaten und &quot;fine-tuned&quot; für gute Ergebnisse auf den Validierungsdaten. Ergebnisse auf Testdaten werden mit hoher wahrscheinlichkeit schlechter ausfallen, als auf Validierungsdaten (<span class="math align-center">$E_{val}$</span> ist eine zu optimistische Näherung).</p>
+</li>
+<li>
+<p>Sind Validierungs- und/oder Trainingsset zu klein, führt das zu schlechten Näherungen <span class="math align-center">$E_{val}$</span> und folglich zu schlechten Entscheidungen.</p>
+<ul>
+<li>Bei der Aufteilung muss ein gutes Trade-off gefunden werden.</li>
+<li>Wenn kein Gütesiegel notwendig ist, kann man auf das Testset verzichten und die Daten in Trainings- und Validierungsset aufteilen.</li>
+<li>Für eine bessere Näherung mit weniger Validierungsdaten kann k-fache Kreuzvalidierung eingesetzt werden (wenn genug Rechenkapazität vorhanden ist).</li>
+</ul>
+</li>
+</ul>
+<h3 id="k-fache-kreuzvalidierung-engl-k-fold-cross-validation">K-fache Kreuzvalidierung (engl. k-fold cross-validation):</h3>
+<ul>
+<li>
+<p>Das Modell <span class="math align-center">$(\mathcal{H_m},\mathcal{A_m})$</span> wird <span class="math align-center">$k$</span> mal trainiert und validiert, jedes mal mit unterschiedlichen Trainings- und Validierungsmengen:</p>
+<ul>
+<li>
+<p>Die Trainingsdaten werden in <span class="math align-center">$k$</span> disjunkte Teilmengen <span class="math align-center">$D_1, D_2, ..., D_k$</span> aufgeteilt.</p>
+</li>
+<li>
+<p>Bei dem <span class="math align-center">$i$</span>-ten Training werden die Teilmenge <span class="math align-center">$D_i$</span> für die Berechnung des Validierungsfehlers <span class="math align-center">$e_i := E_{val}(h_m^{*(i)})$</span> und die restlichen <span class="math align-center">$k-1$</span> Teilmengen für das Training verwendet.</p>
+</li>
+<li>
+<p>Der <strong>Kreuzvalidierungsfehler</strong> des Modells <span class="math align-center">$(\mathcal{H_m},\mathcal{A_m})$</span> ist der Durchschnitt der <span class="math align-center">$k$</span> Validierungsfehler <span class="math align-center">$e_1, e_2, ..., e_k$</span> (siehe Abbildung 4).
+<span class="math align-center">$$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$</span></p>
+</li>
+</ul>
+<figure class="center">
+    <img src="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing/val4.png" alt="Abbildung 4 - Kreuzvalidierung" width="auto" height="auto">
+    <figcaption><p>Abbildung 4 - Kreuzvalidierung</p></figcaption>
+</figure>
+</li>
+<li>
+<p>Bemerkung: Die Kreuzvalidierung wird nur bei der Modellauswahl eingesetzt: es liefert verlässlichere Näherungen für <span class="math align-center">$E_{out}$</span> und führt daher zu besseren Entscheidungen. Das zuletzt ausgewählte Modell wird danach wie gewohnt auf den gesamten Trainigsdaten (ausgenommen Testdaten) trainiert und zum Schluss mit den Testdaten evaluiert.</p>
+</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+    
+
+    
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-lightbulb"></i> Lernziele
+  </div>
+  <div class="box-content">
+<ul> <li>(K2) Trainings-, Validierungs- und Testfehler</li> <li>(K2) Zweck einer Testmenge</li> <li>(K2) Kreuzvalidierung</li> <li>(K2) Hyperparameter-Tuning</li> <li>(K2) Lernkurven</li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+    
+        
+        
+        
+            
+        
+    
+    
+
+    <div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fas fa-user-check"></i> Quizzes
+  </div>
+  <div class="box-content">
+<ul> <li><a href='https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>Selbsttest Training & Testing (ILIAS)</a></li></ul>
+  </div>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    
+        
+        
+
+        
+            
+            
+            
+            
+            
+
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+            
+            
+            
+            
+            
+
+            
+            
+                
+            
+            
+                
+                
+                    
+                
+                
+            
+            
+            
+        
+    
+    
+
+    <div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fas fa-book-reader"></i> Quellen
+  </div>
+  <div class="box-content">
+<ul> <li id='id_AbuMostafa2012'>[AbuMostafa2012] <a href='https://work.caltech.edu/telecourse' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'><strong>Learning From Data</strong></a><br>Abu-Mostafa, Y. S. und Magdon-Ismail, M. und Lin, H., AMLBook, 2012. ISBN <a href='https://fhb-bielefeld.digibib.net/openurl?isbn=978-1-6004-9006-4' class='icon reading' target='_blank' rel='nofollow noopener noreferrer'>978-1-6004-9006-4</a>.</li></ul>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1733765682" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1733765682" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1733765682"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1733765682" defer></script>
+  </body>
+</html>

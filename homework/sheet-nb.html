@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.4.1">
+    <meta name="description" content="NB.01: Wahlkampf mit Naive Bayes (4P) Betrachten Sie erneut das Szenerio von Aufgabe DTL.01.
+(2P) &#34;Trainieren&#34; Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
+(2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($&lt; 35$, niedrig, Bachelor) zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
+NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P) Laden Sie sich den Datensatz &#34;Spam Mails Dataset&#34; (Kaggle) herunter. Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen ham bzw. spam).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Übungsblatt: Naive Bayes">
+    <meta name="twitter:description" content="NB.01: Wahlkampf mit Naive Bayes (4P) Betrachten Sie erneut das Szenerio von Aufgabe DTL.01.
+(2P) &#34;Trainieren&#34; Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
+(2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($&lt; 35$, niedrig, Bachelor) zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
+NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P) Laden Sie sich den Datensatz &#34;Spam Mails Dataset&#34; (Kaggle) herunter. Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen ham bzw. spam).">
+    <meta property="og:url" content="https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nb.html">
+    <meta property="og:title" content="Übungsblatt: Naive Bayes">
+    <meta property="og:description" content="NB.01: Wahlkampf mit Naive Bayes (4P) Betrachten Sie erneut das Szenerio von Aufgabe DTL.01.
+(2P) &#34;Trainieren&#34; Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
+(2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($&lt; 35$, niedrig, Bachelor) zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
+NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P) Laden Sie sich den Datensatz &#34;Spam Mails Dataset&#34; (Kaggle) herunter. Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen ham bzw. spam).">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Übungsblatt: Naive Bayes">
+    <meta itemprop="description" content="NB.01: Wahlkampf mit Naive Bayes (4P) Betrachten Sie erneut das Szenerio von Aufgabe DTL.01.
+(2P) &#34;Trainieren&#34; Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).
+(2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($&lt; 35$, niedrig, Bachelor) zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
+NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P) Laden Sie sich den Datensatz &#34;Spam Mails Dataset&#34; (Kaggle) herunter. Dieser besteht aus knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen ham bzw. spam).">
+    <meta itemprop="wordCount" content="183">
+    <title>Übungsblatt: Naive Bayes</title>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nb/index.print.html" rel="alternate" type="text/html" title="Übungsblatt: Naive Bayes">
+
+    
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png?1733765682" rel="icon" type="image/png">
+
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fontawesome-all.min.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/nucleus.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/auto-complete.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/perfect-scrollbar.min.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733765682" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/fonts.css?1733765682" rel="stylesheet"></noscript>
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/theme-auto.css?1733765682" rel="stylesheet" id="R-variant-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/chroma-auto.css?1733765682" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/variant.css?1733765682" rel="stylesheet">
+    <link href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/css/print.css?1733765682" rel="stylesheet" media="print">
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/variant.js?1733765682"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.hsbi.de\/elearning\/data\/FH-Bielefeld\/lm_data\/lm_1358898';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.search.js?1733765682";
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'zen-light', 'zen-dark', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+
+ 
+.center {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.alert {
+    color: #ff3333;
+}
+.bsp {
+    padding: 0.05cm;
+    border-width: 0.05cm;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 25px;
+    float: right;
+}
+.cbox {
+    padding: 0.2cm;
+    border-width: 0.1cm;
+    border-style: solid;
+    border-color: #4070a0;
+    background-color: #f2f2f2;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    overflow: auto;
+}
+.blueArrow {
+    color: #4070a0;
+    font-family: "Courier New", "Courier", monospace;
+    font-weight: bold;
+}
+.origin {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+.showme {
+    background-color: #ededed;
+    font-size: 0.8em;
+}
+
+
+ 
+.tldr {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.recap {
+    
+    
+   margin: 4px 0px 26px 0px;
+}
+.bib {
+    background: #dbe4ed;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.outcomes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.quizzes {
+    background: #d9e9d5;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.challenges {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+.assignments {
+    background: #ebe4d6;
+    padding: 12px;
+    margin: 4px 0px 26px 0px;
+}
+h1.tldr, h1.recap, h1.bib, h1.outcomes, h1.quizzes, h1.challenges, h1.assignments {
+    padding: 0px;
+}
+
+
+ 
+.noJsAlert {
+    padding: 20px;
+    background-color: #f44336;  
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+ 
+.embed-video-player {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+}
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+ 
+#header-wrapper {
+    padding:0.6rem;
+}
+
+
+ 
+#shortcuts {
+    padding-top: 2.0rem;
+}
+
+
+ 
+#chapter p {
+    text-align: left;
+}
+
+
+ 
+figcaption h4 {
+    margin-top:-2.5rem;
+}
+.border1 {
+    border:1px solid black;
+}
+
+ 
+td ul, td ol {
+    margin: 0 0 1rem 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+
+ 
+h1 { font-size:2.8rem !important;}
+h2 { font-size:2.2rem; margin:1.2rem 0}
+h3 { font-size:1.9rem; text-align:left !important; font-weight:400 !important;}
+h4 { font-size:1.6rem}
+h5 { font-size:1.3rem}
+h6 { font-size:1rem}
+
+h2 {
+    width:100% !important;
+    border-bottom:1px solid #5e5e5e !important;
+    padding-bottom: 2px;
+}
+.tldr h2, .recap h2, .bib h2, .outcomes h2, .quizzes h2, .challenges h2, .assignments h2 {
+    margin:0.5rem 0
+}
+
+.btn-crossreference, .btn-crossreference:hover {
+    cursor: initial;
+}
+
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nb.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#nb01-wahlkampf-mit-naive-bayes-4p">NB.01: Wahlkampf mit Naive Bayes (4P)</a></li>
+    <li><a href="#nb02-textklassifikation-mit-naive-bayes-spam-erkennung-6p">NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+            Übungsblatt: Naive Bayes
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nb/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable " tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+<h1>Übungsblatt: Naive Bayes</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <p><strong>(10 Punkte)</strong></p>
+    
+
+    <h2 id="nb01-wahlkampf-mit-naive-bayes-4p">NB.01: Wahlkampf mit Naive Bayes (4P)</h2>
+<p>Betrachten Sie erneut das Szenerio von <a href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-dtl.html">Aufgabe DTL.01</a>.</p>
+<p>(2P) &quot;Trainieren&quot; Sie für den gezeigten Datensatz einen Naive Bayes Klassifikator (manuell).</p>
+<p>(2P) Welchen Kandidaten würde der Klassifikator einem Wähler (<span class="math align-center">$< 35$</span>, niedrig, Bachelor)
+zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.</p>
+<h2 id="nb02-textklassifikation-mit-naive-bayes-spam-erkennung-6p">NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)</h2>
+<p>Laden Sie sich den Datensatz <a href="https://www.kaggle.com/datasets/venky73/spam-mails-dataset" rel="external" target="_blank">&quot;Spam Mails Dataset&quot; (Kaggle)</a> herunter. Dieser besteht aus
+knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen <code>ham</code> bzw. <code>spam</code>).</p>
+<p>(2P) Bereiten Sie diesen Datensatz für das Training eines Naive Bayes Klassifikators vor.
+Überlegen Sie sich, was mögliche Merkmale sein könnten und schreiben Sie sich ein Skript,
+welches den Datensatz entsprechend bearbeitet/transformiert. (<em>Tipp</em>: Ein <a href="https://en.wikipedia.org/wiki/Bag-of-words_model" rel="external" target="_blank">&quot;Bag-of-Words&quot;</a> ist
+ein guter Anfang.)</p>
+<p>(2P) Implementieren Sie einen Naive Bayes Klassifikator in einer Programmiersprache Ihrer Wahl
+oder machen Sie sich mit existierenden Implementierungen vertraut, beispielsweise in <a href="https://www.nltk.org/index.html" rel="external" target="_blank">NLTK</a>
+oder <a href="https://scikit-learn.org/stable/index.html" rel="external" target="_blank">scikit-learn</a> oder <a href="https://waikato.github.io/weka-wiki/" rel="external" target="_blank">Weka</a>.</p>
+<p>(2P) Splitten Sie den vorbereiteten Datensatz in eine Trainings- und eine Testmenge auf und
+trainieren Sie den Naive Bayes Klassifikator. Wie sieht ihr Klassifikator aus, was sind die
+wichtigsten Begriffe jeweils für die Klasse <code>spam</code> bzw. <code>ham</code>? Bewerten Sie das Testergebnis.</p>
+
+
+    
+
+
+
+
+
+
+
+<footer class="footline"><div style="color: darkgray; font-size: small;">
+<p style="margin-left: 4rem; margin-right: 4rem; margin-top: 6rem;">
+<!-- https://creativecommons.org/choose/ -->
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+Unless otherwise noted, <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">this work</a> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cyildiz" property="cc:attributionName" rel="cc:attributionURL">Canan Yıldız</a>, <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/cagix" property="cc:attributionName" rel="cc:attributionURL">Carsten Gips</a>, and <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors">contributors</a> is licensed under <a rel="license" href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md">CC BY-SA 4.0</a>.
+See the <a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">credits</a> for a detailed list of contributing projects.
+
+</p>
+</div>
+
+</footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
+
+<a id="logo" href='https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898//index.html'>
+    <img style="max-width:35%" alt="icon" src='/elearning/data/FH-Bielefeld/lm_data/lm_1358898/images/logo.png'>
+</a>
+
+        </div>
+
+        <search><form action="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['de'];
+        </script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/auto-complete.js?1733765682" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.min.js?1733765682" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.stemmer.support.min.js?1733765682" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.multi.min.js?1733765682" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/lunr/lunr.de.min.js?1733765682" defer></script>
+        <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/search.js?1733765682" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro.html">Einführung KI</a><ul id="R-subsections-d5efd0a842116e4053b2a67d87eea20a" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro1-overview.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro1-overview.html">Einführung KI</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro2-problemsolving.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/intro/intro2-problemsolving.html">Problemlösen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl.html">Entscheidungsbäume (DTL)</a><ul id="R-subsections-d5c30d1ee9143be0e1bf969e932d32f8" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl1-mlbasics.html">Machine Learning 101</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl2-cal2.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl2-cal2.html">CAL2</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl3-pruning.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl3-pruning.html">Pruning</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl4-cal3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl4-cal3.html">CAL3</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl5-entropy.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl5-entropy.html">Entropie</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/dtl/dtl6-id3.html">ID3 und C4.5</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn.html">Neuronale Netze</a><ul id="R-subsections-34efc21b54b22f5fea2abf053a31ad8c" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn01-perceptron.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn01-perceptron.html">NN01 - Perzeptron</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn02-linear-regression.html">NN02 - Lineare Regression &amp; Gradientenabstieg</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn03-logistic-regression.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn03-logistic-regression.html">NN03 - Logistische Regression</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn04-overfitting.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn04-overfitting.html">NN04 - Overfitting</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn05-mlp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn05-mlp.html">NN05 - MLP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn06-backprop.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn06-backprop.html">NN06 - Backpropagation</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn07-training-testing.html">NN07 - Training &amp; Testing</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn08-testing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn08-testing.html">NN08 - Performanzanalyse</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn10-cnn.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/nn/nn10-cnn.html">NN10 - CNN</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching.html">Suche</a><ul id="R-subsections-ba52359aea8fbbbebd8a2b5035d5193b" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search1-dfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search1-dfs.html">Tiefensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search2-bfs.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search2-bfs.html">Breitensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search3-branchandbound.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search3-branchandbound.html">Branch-and-Bound</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search4-bestfirst.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search4-bestfirst.html">Best First</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search5-astar.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search5-astar.html">A*</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search6-gradient.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search6-gradient.html">Gradientensuche</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search7-annealing.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/searching/search7-annealing.html">Simulated Annealing</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea.html">Genetische Algorithmen</a><ul id="R-subsections-513570a2bd0cf4a66bab5d5617bd8135" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ea1-intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ea1-intro.html">Intro EA/GA</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ea2-ga.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/ea/ea2-ga.html">Genetische Algorithmen</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games.html">Spiele</a><ul id="R-subsections-be9f75f01bd16477b0add6a83644e3db" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games1-intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games1-intro.html">Optimale Spiele</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games2-minimax.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games2-minimax.html">Minimax</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games3-heuristics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games3-heuristics.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games4-alphabeta.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/games/games4-alphabeta.html">Alpha-Beta-Pruning</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp.html">CSP</a><ul id="R-subsections-350d6b931515a3c0942b7ee2e29cdde2" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp1-intro.html">Intro</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp2-backtrackingsearch.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp2-backtrackingsearch.html">Lösen von diskreten CSP</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp3-heuristics.html">Heuristiken</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp4-ac3.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/csp/csp4-ac3.html">AC-3</a></li></ul></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes.html">Naive Bayes</a><ul id="R-subsections-5fc30d962871e2f731a4590e884cf48f" class="morespace collapsible-menu">
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb1-probability.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb1-probability.html">Wahrscheinlichkeiten</a></li>
+          <li data-nav-id="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb2-naivebayes.html" class=""><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/naivebayes/nb2-naivebayes.html">Naive Bayes</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#kursformat"><i class='fas fa-bookmark'></i> Zeiten</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#fahrplan"><i class='fas fa-bookmark'></i> Fahrplan</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#pr%C3%BCfungsform-note-und-credits"><i class='fas fa-bookmark'></i> Note/Credits</a></li>
+            <li><a class="padding" href="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#fahrplan"><i class='fas fa-bookmark'></i> News</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/homework/sheet-nb.html" lang="de-DE" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p style="text-align: center;">
+<i class='fab fa-fw fa-github'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung">GitHub</a>
+<i class='fas fa-fw fa-tags'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/issues">Issues</a>
+<i class='fas fa-fw fa-bullhorn'></i><a href="https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md">Credits</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0;margin:0;display:inline;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+
+</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/clipboard.min.js?1733765682" defer></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/perfect-scrollbar.min.js?1733765682" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/mathjax/tex-mml-chtml.js?1733765682"></script>
+    <script src="/elearning/data/FH-Bielefeld/lm_data/lm_1358898/js/theme.js?1733765682" defer></script>
+  </body>
+</html>
