@@ -350,6 +350,16 @@ Here be dragons ...
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
+Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 04. Februar 2025**
+angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung findet aufgrund der
+hohen Teilnehmerzahl und der begrenzten Plätze im B40 in mehreren Gruppen nacheinander
+statt (je beginnend um **10:00 Uhr**, um **12:00 Uhr** und um **14:00 Uhr**) und
+**dauert 90 Minuten**. Die Einteilung zu Ihrer Gruppe wird Ihnen rechtzeitig vorher per
+E-Mail und News bekannt gegeben. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen. Der
+geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2024/25). Weitere
+Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
+
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
@@ -367,6 +377,16 @@ Here be dragons ...
 
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
+
+Die nächste Klausur für "Künstliche Intelligenz" wird am **Dienstag, 04. Februar 2025**
+angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung findet aufgrund der
+hohen Teilnehmerzahl und der begrenzten Plätze im B40 in mehreren Gruppen nacheinander
+statt (je beginnend um **10:00 Uhr**, um **12:00 Uhr** und um **14:00 Uhr**) und
+**dauert 90 Minuten**. Die Einteilung zu Ihrer Gruppe wird Ihnen rechtzeitig vorher per
+E-Mail und News bekannt gegeben. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen. Der
+geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2024/25). Weitere
+Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
 
 :::
 ::: {.tab title="INF701 KI (TDU)"}
