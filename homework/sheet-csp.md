@@ -24,7 +24,7 @@ Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
 
 ## CSP.02: Framework für Constraint Satisfaction (2P)
 
-Lösen Sie nun das Rätsel aus A04.1:
+Lösen Sie nun das obige Rätsel (aus CSP.01):
 
 1.  Lösen Sie das Rätsel zunächst mit dem Basis-Algorithmus `BT_Search` aus der Vorlesung.
 2.  Erweitern Sie den Algorithmus um die Heuristiken MRV und Gradheuristik und lösen Sie das
