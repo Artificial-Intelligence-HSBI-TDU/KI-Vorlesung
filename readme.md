@@ -133,6 +133,15 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 `{{% notice style="note" title="News" %}}`{=markdown}
+`{{% expand title="24.01.25" %}}`{=markdown}
+
+**Planung Klausur GKI (04.02.25)**
+
+Die Klausur in GKI wird am Dienstag, den 04.02.25 von **10:00 bis ca. 11:30 Uhr**
+im B40 stattfinden.
+
+`{{% /expand %}}`{=markdown}
+
 `{{% expand title="09.12.24" %}}`{=markdown}
 
 Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
@@ -195,6 +204,15 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
 
 `{{% notice style="note" title="News" %}}`{=markdown}
+`{{% expand title="24.01.25" %}}`{=markdown}
+
+**Planung Klausur KI (04.02.25)**
+
+Die Klausur in KI wird am Dienstag, den 04.02.25 von **12:00 bis ca. 13:30 Uhr**
+im B40 stattfinden.
+
+`{{% /expand %}}`{=markdown}
+
 `{{% expand title="09.12.24" %}}`{=markdown}
 
 Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
@@ -352,13 +370,10 @@ Here be dragons ...
 
 Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 04. Februar 2025**
 angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung findet aufgrund der
-hohen Teilnehmerzahl und der begrenzten Plätze im B40 in mehreren Gruppen nacheinander
-statt (je beginnend um **10:00 Uhr**, um **12:00 Uhr** und um **14:00 Uhr**) und
-**dauert 90 Minuten**. Die Einteilung zu Ihrer Gruppe wird Ihnen rechtzeitig vorher per
-E-Mail und News bekannt gegeben. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen. Der
-geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2024/25). Weitere
-Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für GKI beginnt
+um **10:00 Uhr** und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
+zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs
+(Winter 2024/25). Weitere Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
 
 :::
 ::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
@@ -380,13 +395,10 @@ Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
 
 Die nächste Klausur für "Künstliche Intelligenz" wird am **Dienstag, 04. Februar 2025**
 angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung findet aufgrund der
-hohen Teilnehmerzahl und der begrenzten Plätze im B40 in mehreren Gruppen nacheinander
-statt (je beginnend um **10:00 Uhr**, um **12:00 Uhr** und um **14:00 Uhr**) und
-**dauert 90 Minuten**. Die Einteilung zu Ihrer Gruppe wird Ihnen rechtzeitig vorher per
-E-Mail und News bekannt gegeben. Ein DIN-A4-Zettel ist als Hilfsmittel zugelassen. Der
-geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs (Winter 2024/25). Weitere
-Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für KI beginnt
+um **12:00 Uhr** und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
+zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs
+(Winter 2024/25). Weitere Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
 
 :::
 ::: {.tab title="INF701 KI (TDU)"}
