@@ -133,6 +133,16 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
 
 `{{% notice style="note" title="News" %}}`{=markdown}
+`{{% expand title="17.02.25" %}}`{=markdown}
+
+**Planung Klausur GKI (01.04.25)**
+
+Die Klausur in GKI wird am Dienstag, den 01.04.25 zwischen **10:00 bis 16:00 Uhr**
+im B40 stattfinden. Die genaue Verteilung der Startzeit erfolgt per Mail über das
+LSF ca. eine Woche vorher.
+
+`{{% /expand %}}`{=markdown}
+
 `{{% expand title="24.01.25" %}}`{=markdown}
 
 **Planung Klausur GKI (04.02.25)**
@@ -378,10 +388,11 @@ Here be dragons ...
     Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
     Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
 
-Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 04. Februar 2025**
+Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 01. April 2025**
 angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für GKI beginnt
-um **10:00 Uhr** und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
+Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für GKI findet zwischen
+**10 Uhr bis 16 Uhr** statt (Bekanntgabe der konkreten Startzeit per Mail ca. eine Woche
+vor dem Termin) und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
 zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs
 (Winter 2024/25). Weitere Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
 
