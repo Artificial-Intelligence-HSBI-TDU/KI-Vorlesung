@@ -1,6 +1,5 @@
 ---
 title: "NN: Einführung in Neuronale Netze"
-linkTitle: "Neuronale Netze"
 ---
 
 

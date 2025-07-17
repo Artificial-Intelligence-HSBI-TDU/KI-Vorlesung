@@ -1,6 +1,5 @@
 ---
 title: "Suche mit Breitensuche"
-linkTitle: "Breitensuche"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

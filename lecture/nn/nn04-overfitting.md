@@ -1,6 +1,5 @@
 ---
 title: "NN04 - Overfitting und Regularisierung"
-linkTitle: "NN04 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer Ordnung"

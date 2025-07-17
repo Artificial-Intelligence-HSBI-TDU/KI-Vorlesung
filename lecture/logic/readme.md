@@ -1,6 +1,5 @@
 ---
 title: "Logik"
-linkTitle: "Logik"
 ---
 
 

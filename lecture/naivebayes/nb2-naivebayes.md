@@ -1,6 +1,5 @@
 ---
 title: "Klassifikation mit Naive Bayes"
-linkTitle: "Naive Bayes"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

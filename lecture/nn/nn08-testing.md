@@ -1,6 +1,5 @@
 ---
 title: "NN08 - Performanzanalyse"
-linkTitle: "NN08 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Performanzmetriken für die Evaluierung von Klassifizierungsmodellen"

@@ -1,6 +1,5 @@
 ---
 title: "Einführung Syntax und Semantik"
-linkTitle: "Syntax und Semantik"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

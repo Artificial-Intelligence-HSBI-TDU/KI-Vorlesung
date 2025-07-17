@@ -1,6 +1,5 @@
 ---
 title: "Constraintsolving"
-linkTitle: "CSP"
 ---
 
 

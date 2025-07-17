@@ -1,6 +1,5 @@
 ---
 title: "NN03 - Logistische Regression"
-linkTitle: "NN03 - Logistische Regression"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron und linearer Regression"

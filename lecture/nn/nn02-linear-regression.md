@@ -1,6 +1,5 @@
 ---
 title: "NN02 - Lineare Regression und Gradientenabstieg"
-linkTitle: "NN02 - Lineare Regression & Gradientenabstieg"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Lineare Regression aus Sicht neuronaler Netze: Graphische Darstellung, Vergleich mit Perzeptron"

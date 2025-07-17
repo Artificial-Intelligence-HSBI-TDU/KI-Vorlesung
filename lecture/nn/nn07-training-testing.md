@@ -1,6 +1,5 @@
 ---
 title: "NN07 - Training & Testing"
-linkTitle: "NN07 - Training & Testing"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Trainings-, Validierungs- und Testfehler"

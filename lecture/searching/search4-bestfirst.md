@@ -1,6 +1,5 @@
 ---
 title: "Suche mit Best First"
-linkTitle: "Best First"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

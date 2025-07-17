@@ -1,6 +1,5 @@
 ---
 title: "Wiederholung Wahrscheinlichkeitstheorie"
-linkTitle: "Wahrscheinlichkeiten"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

@@ -1,6 +1,5 @@
 ---
 title: "Einführung Constraints"
-linkTitle: "Intro"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

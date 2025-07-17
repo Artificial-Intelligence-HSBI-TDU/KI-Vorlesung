@@ -1,6 +1,5 @@
 ---
 title: "NN06 - Backpropagation"
-linkTitle: "NN06 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 outcomes:
   - k2: "Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als Eingabe"

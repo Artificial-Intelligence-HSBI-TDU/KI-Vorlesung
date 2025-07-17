@@ -1,6 +1,5 @@
 ---
 title: "Lokale Suche: Simulated Annealing"
-linkTitle: "Simulated Annealing"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

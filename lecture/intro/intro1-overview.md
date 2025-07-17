@@ -1,6 +1,5 @@
 ---
 title: "Intro: Was ist Künstliche Intelligenz?"
-linkTitle: "Einführung KI"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

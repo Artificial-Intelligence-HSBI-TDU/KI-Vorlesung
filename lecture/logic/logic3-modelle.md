@@ -1,6 +1,5 @@
 ---
 title: "Modelle"
-linkTitle: "Modelle"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

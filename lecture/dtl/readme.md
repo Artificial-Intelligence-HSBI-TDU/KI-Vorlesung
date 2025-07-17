@@ -1,6 +1,5 @@
 ---
 title: "Entscheidungsbäume (Decision Tree Learner - DTL)"
-linkTitle: "Entscheidungsbäume (DTL)"
 ---
 
 

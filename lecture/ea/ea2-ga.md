@@ -1,6 +1,5 @@
 ---
 title: "Modellierung mit Genetischen Algorithmen"
-linkTitle: "Genetische Algorithmen"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

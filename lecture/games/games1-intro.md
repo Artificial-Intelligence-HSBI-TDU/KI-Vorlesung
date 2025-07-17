@@ -1,6 +1,5 @@
 ---
 title: "Einführung Optimale Spiele"
-linkTitle: "Optimale Spiele"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

@@ -1,6 +1,5 @@
 ---
 title: "Einführung Evolutionäre Algorithmen"
-linkTitle: "Intro EA/GA"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

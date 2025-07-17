@@ -1,6 +1,5 @@
 ---
 title: "Suche mit Tiefensuche"
-linkTitle: "Tiefensuche"
 author: "Carsten Gips (HSBI)"
 readings:
   - key: "Russell2020"

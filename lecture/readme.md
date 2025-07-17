@@ -1,6 +1,5 @@
 ---
 title: "Vorlesungsunterlagen"
-linkTitle: "Vorlesung"
 ---
 
 
