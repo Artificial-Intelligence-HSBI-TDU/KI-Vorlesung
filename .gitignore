@@ -34,7 +34,12 @@ pdf/
 .hugo_build.lock
 local.yaml
 /data/readings.yaml
+.pandoc
 make.deps
+_gfm
+_docsify
+_pdf
+_beamer
 
 
 # JAVA, Scala #
