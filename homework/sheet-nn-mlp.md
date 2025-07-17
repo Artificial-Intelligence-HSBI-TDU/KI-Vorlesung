@@ -2,8 +2,6 @@
 title: "Übungsblatt: Overfitting & MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
-
-hidden: true
 ---
 
 

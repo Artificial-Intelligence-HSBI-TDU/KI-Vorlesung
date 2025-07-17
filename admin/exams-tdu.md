@@ -1,8 +1,6 @@
 ---
 title: "Prüfung & Noten (TDU)"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-
-hidden: true
 ---
 
 
