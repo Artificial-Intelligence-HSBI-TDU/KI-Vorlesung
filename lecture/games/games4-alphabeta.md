@@ -203,7 +203,7 @@ Für Schach immer noch zu aufwändig ...
     *   ca. 700.000 Spielsituationen (von Experten bewertet)
     *   Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen
 
-[Quelle: [@Russell2014, p. 185]]{.origin}
+[[@Russell2014, p. 185]]{.origin}
 
 
 ## Beispiel AlphaGo (Google, 2016)
@@ -219,7 +219,7 @@ Für Schach immer noch zu aufwändig ...
     *   Reinforcement-Lernen: Self-Play, Bewertung am Ende
         *   Züge mit Monte-Carlo-Baumsuche ausgewählt
 
-[Quelle: [@Silver2016], siehe auch [deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.origin}
+[[@Silver2016], siehe auch [deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.origin}
 
 
 ## Wrap-Up

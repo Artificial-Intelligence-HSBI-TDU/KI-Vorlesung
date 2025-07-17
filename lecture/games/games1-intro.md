@@ -30,7 +30,7 @@ fhmedia:
 
 ![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
-[Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
+[["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 ::: notes
 Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste Zug?!**
@@ -78,7 +78,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ _verschiedene_ Zustände)
 
-    [Quelle: [@Russell2020, pp. 193-196]]{.origin}
+    [[@Russell2020, pp. 193-196]]{.origin}
 
 
 ## Eigenschaften guter Spielalgorithmen

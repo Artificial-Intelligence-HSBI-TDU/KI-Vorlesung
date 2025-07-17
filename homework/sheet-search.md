@@ -27,8 +27,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
 ![][1]
 
-[Quelle: [MapGermanyGraph.svg] by [Regnaron] and [Jahobr] on Wikimedia Commons ([Public
-Domain])]{.origin}
+[[MapGermanyGraph.svg] by [Regnaron] and [Jahobr] on Wikimedia Commons ([Public Domain])]{.origin}
 
 ![][2]
 
