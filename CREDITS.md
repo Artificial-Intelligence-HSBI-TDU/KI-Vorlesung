@@ -1,3 +1,8 @@
+---
+no_beamer: true
+---
+
+
 # Credits
 
 This is a list of external projects used to build the lecture slides and the lecture
@@ -9,23 +14,16 @@ not part of the CC BY-SA 4.0 licence of this project.
 
 *   [Pandoc](https://github.com/jgm/pandoc)
 *   [Pandoc-Lecture](https://github.com/cagix/pandoc-lecture)
+*   [Pandoc-Lecture-Zen](https://github.com/cagix/pandoc-lecture-zen)
 *   [TeX Live](http://tug.org/texlive/)
 *   [Beamer](https://github.com/josephwright/beamer)
 *   [Metropolis](https://github.com/matze/mtheme)
 
 
-## Building the Lecture Web Pages
+## Building the Lecture GitHub Preview
 
-*   Pre-processing:
-    *   [Pandoc](https://github.com/jgm/pandoc)
-    *   [Pandoc-Lecture](https://github.com/cagix/pandoc-lecture)
-*   Compilation of the lecture websites:
-    *   [Hugo](https://github.com/gohugoio/hugo)
-    *   [Hugo Relearn Theme](https://github.com/McShelby/hugo-theme-relearn)
-    *   [Pandoc-Lecture](https://github.com/cagix/pandoc-lecture/tree/master/hugo/hugo-lecture)
-*   These projects, among others, are used in the generated web pages:
-    *   Icons: [Font Awesome](https://fontawesome.com)
-    *   Rendering of mathematical formulas: [MathJax](https://www.mathjax.org/)
+*   [Pandoc](https://github.com/jgm/pandoc)
+*   [Pandoc-Lecture](https://github.com/cagix/pandoc-lecture)
 
 
 ## Further Tools used
