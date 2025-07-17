@@ -2,10 +2,8 @@
 title: "Klassifikation mit Naive Bayes"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Kapitel 12"
-  - key: "Ertel2017"
-    comment: "Abschnitt 8.7"
+  - "@Russell2020: Kapitel 12"
+  - "@Ertel2017: Abschnitt 8.7"
 tldr: |
   Mit Hilfe der (verallgemeinerten) Bayes-Regel kann man Klassifikation durchführen.
   Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den Trainingsdaten

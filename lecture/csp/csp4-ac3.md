@@ -2,10 +2,9 @@
 title: "Kantenkonsistenz und AC-3"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "CSP, AC-3: Abschnitt 5.2"
-  - key: "Kumar1992"
-  - key: "Bartak2001"
+  - "@Russell2020: CSP, AC-3: Abschnitt 5.2"
+  - "@Kumar1992"
+  - "@Bartak2001"
 tldr: |
   Bei der Backtracking-Suche werden schrittweise Variablen belegt. Dabei kann eine Belegung eine Lösung
   im weiteren Verlauf der Suche unmöglich machen, so dass (viel) Backtracking notwendig wird.

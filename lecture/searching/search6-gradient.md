@@ -2,8 +2,7 @@
 title: "Lokale Suche: Gradientensuche"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Gradientenabstieg: Abschnitt 4.1.1"
+  - "@Russell2020: Gradientenabstieg: Abschnitt 4.1.1"
 tldr: |
   Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur das
   Erreichen des Ziels.

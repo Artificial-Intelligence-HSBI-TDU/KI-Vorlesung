@@ -2,8 +2,7 @@
 title: "Lokale Suche: Simulated Annealing"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Simulated Annealing: Abschnitt 4.1.2"
+  - "@Russell2020: Simulated Annealing: Abschnitt 4.1.2"
 tldr: |
   Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
   das Erreichen des Ziels.

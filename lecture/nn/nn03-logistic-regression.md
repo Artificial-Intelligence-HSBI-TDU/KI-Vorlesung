@@ -8,9 +8,8 @@ outcomes:
   - k2: "Verlust- und Kosten (Cross-Entropy Loss)"
   - k3: "Gradientenabstieg für logistische Regression"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106591&client_id=FH-Bielefeld"
     name: "Selbsttest Logistische Regression (ILIAS)"

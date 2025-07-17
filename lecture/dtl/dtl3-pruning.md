@@ -2,10 +2,8 @@
 title: "Pruning"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Ertel2017"
-    comment: "Entscheidungsbäume: Abschnitt 8.4"
-  - key: "Russell2020"
-    comment: "Entscheidungsbäume: Abschnitt 19.3"
+  - "@Ertel2017: Entscheidungsbäume: Abschnitt 8.4"
+  - "@Russell2020: Entscheidungsbäume: Abschnitt 19.3"
 tldr: |
   Pruning ist das Entfernen redundanter und irrelevanter Tests (Merkmale).
 

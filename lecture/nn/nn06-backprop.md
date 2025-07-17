@@ -7,9 +7,8 @@ outcomes:
   - k3: "Berechnung der partiellen Ableitungen"
   - k3: "Rückwärtslauf (backpropagation) für ein gegebenes MLP"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106593&client_id=FH-Bielefeld"
     name: "Selbsttest Backpropagation (ILIAS)"

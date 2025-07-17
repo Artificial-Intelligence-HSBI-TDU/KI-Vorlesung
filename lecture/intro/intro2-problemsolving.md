@@ -2,8 +2,7 @@
 title: "Problemlösen"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Problemlösen: Kapitel 3.1 - 3.3"
+  - "@Russell2020: Problemlösen: Kapitel 3.1 - 3.3"
 tldr: |
   Um ein Problem lösen zu können, muss es zunächst geeignet dargestellt werden. In der KI
   betrachten wir Zustände einer Welt, auf die Aktionen angewendet werden können und die die

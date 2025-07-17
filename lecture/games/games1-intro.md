@@ -2,9 +2,8 @@
 title: "Einführung Optimale Spiele"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Einführung Spiele: Abschnitt 6.1"
-  - key: "Ertel2017"
+  - "@Russell2020: Einführung Spiele: Abschnitt 6.1"
+  - "@Ertel2017"
 tldr: |
   Spiele können als Suchproblem betrachtet werden. Dabei sind in der Regel mehrere Spieler ("Agenten") beteiligt. Bei manchen
   Spielen ist die Umgebung (der Spielzustand) vollständig einsehbar, bei anderen nur teilweise (Kartenspiele). Bei manchen

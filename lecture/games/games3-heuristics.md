@@ -2,9 +2,8 @@
 title: "Heuristiken"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5"
-  - key: "Ertel2017"
+  - "@Russell2020: Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5"
+  - "@Ertel2017"
 tldr: |
   Minimax entwickelt den gesamten Spielbaum. Wenn nicht genug Zeit dafür zur Verfügung steht, kann man die
   Suchtiefe begrenzen. Für die Bewertung der Zustände benötigt man eine `Eval`-Funktion, die die Knoten in

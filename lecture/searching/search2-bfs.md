@@ -2,8 +2,7 @@
 title: "Suche mit Breitensuche"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Breitensuche: Abschnitt 3.4.1"
+  - "@Russell2020: Breitensuche: Abschnitt 3.4.1"
 tldr: |
   Die Breitensuche gehört zu den "Uninformierten Suchverfahren": Es werden keine weiteren
   Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.

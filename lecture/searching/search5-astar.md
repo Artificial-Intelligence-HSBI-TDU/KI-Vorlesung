@@ -2,8 +2,7 @@
 title: "Suche mit `A*`{=markdown}"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "`A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
+  - "@Russell2020: `A*`{=markdown}: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6"
 tldr: |
   A\* zählt zu den Verfahren der informierten Suche. Dabei verwendet A\* sowohl die
   realen Pfadkosten als auch die Schätzungen der Restkosten, d.h. die Kostenfunktion für

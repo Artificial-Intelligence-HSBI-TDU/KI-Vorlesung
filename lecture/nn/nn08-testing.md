@@ -12,9 +12,8 @@ outcomes:
   - k3: "Berechnung und Deutung des $F_1$-Scores"
   - k3: "Einsatz bei Evaluierung und Auswahl von Modellen"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 youtube:
   - link: "https://youtu.be/T-WYL28iwdU"
     name: "NN8.1 - Confusion Matrix"

@@ -2,10 +2,9 @@
 title: "Einführung Constraints"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "CSP: Abschnitt 5.1"
-  - key: "Kumar1992"
-  - key: "Bartak2001"
+  - "@Russell2020: CSP: Abschnitt 5.1"
+  - "@Kumar1992"
+  - "@Bartak2001"
 tldr: |
   Ein Constraintproblem (CSP) besteht aus Variablen, die über Einschränkungen ("Constraints")
   verbunden sind. Jeder Variable wird eine Domäne (Wertebereich) zugeordnet.

@@ -2,8 +2,7 @@
 title: "Machine Learning 101"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Lernen: Abschnitte 19.1 und 19.2"
+  - "@Russell2020: Lernen: Abschnitte 19.1 und 19.2"
 tldr: |
   Lernen wird in der KI oft als Verhaltensänderung (eines Systems) aufgefasst. Dabei soll eine
   Gütefunktion optimiert werden.

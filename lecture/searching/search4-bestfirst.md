@@ -2,8 +2,7 @@
 title: "Suche mit Best First"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"
+  - "@Russell2020: Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6"
 tldr: |
   Best First gehört wie Branch-and-Bound zu den "Informierten Suchverfahren": Es werden
   Pfadkosten (in diesem Fall Schätzungen) statt der Anzahl der Schritte berücksichtigt.

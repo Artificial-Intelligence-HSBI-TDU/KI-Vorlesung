@@ -2,13 +2,11 @@
 title: "Modellierung mit Genetischen Algorithmen"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "GA: Abschnitt 4.1.4"
-  - key: "Schwefel1995"
-    comment: "Originalarbeit zu Evolutionsstrategien"
-  - key: "Michalewicz1996"
-  - key: "Baeck1996"
-  - key: "Nissen1997"
+  - "@Russell2020: GA: Abschnitt 4.1.4"
+  - "@Schwefel1995: Originalarbeit zu Evolutionsstrategien"
+  - "@Michalewicz1996"
+  - "@Baeck1996"
+  - "@Nissen1997"
 tldr: |
   Lokale Suchverfahren: Nur das Ergebnis zählt!
 

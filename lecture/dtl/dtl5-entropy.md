@@ -2,12 +2,9 @@
 title: "Entropie"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Ertel2017"
-    comment: "Entscheidungsbäume: Abschnitt 8.4"
-  - key: "Russell2020"
-    comment: "Entscheidungsbäume: Abschnitt 19.3"
-  - key: "Mitchell2010"
-    comment: "ID3: Kapitel 3"
+  - "@Ertel2017: Entscheidungsbäume: Abschnitt 8.4"
+  - "@Russell2020: Entscheidungsbäume: Abschnitt 19.3"
+  - "@Mitchell2010: ID3: Kapitel 3"
 tldr: |
   Die Entropie kann als Maß für den Informationsgehalt einer Trainingsmenge betrachtet werden:
   Wieviele Ja/Nein-Entscheidungen sind nötig, um die Daten fehlerfrei zu repräsentieren?

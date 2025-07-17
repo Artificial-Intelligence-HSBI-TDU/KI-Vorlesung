@@ -2,7 +2,7 @@
 title: "Einführung Syntax und Semantik"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
+  - "@Russell2020"
 tldr: |
   TODO
 outcomes:

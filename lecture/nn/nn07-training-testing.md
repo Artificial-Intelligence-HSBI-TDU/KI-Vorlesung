@@ -8,9 +8,8 @@ outcomes:
   - k2: "Hyperparameter-Tuning"
   - k2: "Lernkurven"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106594&client_id=FH-Bielefeld"
     name: "Selbsttest Training & Testing (ILIAS)"

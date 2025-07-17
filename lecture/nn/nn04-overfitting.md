@@ -7,8 +7,7 @@ outcomes:
   - k2: "Regularisierung (Auswirkung auf Gewichte und Modell)"
   - k3: "Gradientenabstieg für regularisierte logistische Regression"
 readings:
-  - key: "AbuMostafa2012"
-    comment: "Kapitel 4"
+  - "@AbuMostafa2012: Kapitel 4"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld"
     name: "Selbsttest Overfitting (ILIAS)"

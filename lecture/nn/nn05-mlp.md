@@ -7,9 +7,8 @@ outcomes:
   - k3: "Vorwärtslauf (forward pass) für ein gegebenes MLP"
   - k3: "Berechnung der einzelnen Aktivierungen"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106592&client_id=FH-Bielefeld"
     name: "Selbsttest Multilayer Perzeptron (ILIAS)"

@@ -9,9 +9,8 @@ outcomes:
   - k3: "Berechnung der Entscheidungsgrenze"
   - k3: "Perzeptron Lernalgorithmus"
 # readings:
-#   - key: "Russell2020"
-#     comment: "Kapitel 2 und 3"
-#   - key: "Ertel2017"
+#   - "@Russell2020: Kapitel 2 und 3"
+#   - "@Ertel2017"
 quizzes:
   - link: "https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld"
     name: "Selbsttest Intro ML (ILIAS)"

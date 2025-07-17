@@ -2,10 +2,8 @@
 title: "Wiederholung Wahrscheinlichkeitstheorie"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Kapitel 12"
-  - key: "Ertel2017"
-    comment: "Abschnitt 7.1"
+  - "@Russell2020: Kapitel 12"
+  - "@Ertel2017: Abschnitt 7.1"
 tldr: |
   Diese Sitzung ist eine (relativ oberflächliche) Einführung/Wiederholung in die/der
   Grundlagen der Wahrscheinlichkeitstheorie.

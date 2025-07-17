@@ -2,10 +2,9 @@
 title: "Heuristiken"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "CSP, Backtracking/Heuristiken: Abschnitt 5.3"
-  - key: "Kumar1992"
-  - key: "Bartak2001"
+  - "@Russell2020: CSP, Backtracking/Heuristiken: Abschnitt 5.3"
+  - "@Kumar1992"
+  - "@Bartak2001"
 tldr: |
   CSP's mit endlichen Domänen lassen sich mit einer Backtracking-Suche lösen. Dabei
   gibt es einige Freiheitsgrade: Auswahl der nächsten Variable und Wahl des nächsten

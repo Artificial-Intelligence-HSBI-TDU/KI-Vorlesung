@@ -2,9 +2,8 @@
 title: "Alpha-Beta-Pruning"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3"
-  - key: "Ertel2017"
+  - "@Russell2020: Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3"
+  - "@Ertel2017"
 tldr: |
   Minimax entwickelt den gesamten Spielbaum. Wenn man dabei die bisher besten Werte für MAX und MIN als
   $\alpha$ und $\beta$ mitführt, beobachtet man, dass ein $\alpha$-Wert nie kleiner wird und ein $\beta$-Wert

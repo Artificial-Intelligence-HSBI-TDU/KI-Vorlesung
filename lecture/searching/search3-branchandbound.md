@@ -2,8 +2,7 @@
 title: "Suche mit Branch-and-Bound"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2"
+  - "@Russell2020: Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2"
 tldr: |
   Branch-and-Bound gehört zu den "Informierten Suchverfahren": Es werden
   (reale) Pfadkosten statt der Anzahl der Schritte berücksichtigt.

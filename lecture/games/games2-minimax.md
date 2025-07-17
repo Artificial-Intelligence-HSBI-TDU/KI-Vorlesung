@@ -2,9 +2,8 @@
 title: "Minimax"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Minimax: Abschnitt 6.2"
-  - key: "Ertel2017"
+  - "@Russell2020: Minimax: Abschnitt 6.2"
+  - "@Ertel2017"
 tldr: |
   Mit dem Minimax-Algorithmus können optimale Züge berechnet werden. Dabei wird von zwei
   Spielern `Max` und `Min` ausgegangen, die abwechselnd ziehen und beide optimal spielen.

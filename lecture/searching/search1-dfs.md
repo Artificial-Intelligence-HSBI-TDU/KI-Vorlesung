@@ -2,8 +2,7 @@
 title: "Suche mit Tiefensuche"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Tiefensuche: Abschnitt 3.4.3"
+  - "@Russell2020: Tiefensuche: Abschnitt 3.4.3"
 tldr: |
   Die Tiefensuche gehört zu den "Uninformierten Suchverfahren": Es werden keine weiteren
   Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.

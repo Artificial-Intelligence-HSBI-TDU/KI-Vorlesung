@@ -2,10 +2,8 @@
 title: "Intro: Was ist Künstliche Intelligenz?"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "Kapitel 1: Introduction"
-  - key: "Ertel2017"
-    comment: "Kapitel 1: Introduction"
+  - "@Russell2020: Kapitel 1: Introduction"
+  - "@Ertel2017: Kapitel 1: Introduction"
 tldr: |
   KI ist ein altes und modernes Forschungsgebiet, welches periodisch Hype-Zeiten erlebt hat und sich aktuell
   wieder in einer Hoch-Phase befindet. Wer heute "KI" sagt, meint meist Maschinelles Lernen oder (noch genauer)

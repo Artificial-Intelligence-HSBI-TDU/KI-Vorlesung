@@ -2,8 +2,7 @@
 title: "CAL3"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Unger1981"
-    comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
+  - "@Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
 tldr: |
   CAL3 ist eine einfache Erweiterung von CAL2 für nicht-disjunkte (überlappende) Klassen. Statt
   beim Baumaufbau bei einer Fehlklassifikation sofort zu verzweigen, werden hier zunächst die

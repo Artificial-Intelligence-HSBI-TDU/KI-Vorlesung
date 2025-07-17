@@ -2,10 +2,9 @@
 title: "Lösen von diskreten CSP"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Russell2020"
-    comment: "CSP, Backtracking: Abschnitt 5.3"
-  - key: "Kumar1992"
-  - key: "Bartak2001"
+  - "@Russell2020: CSP, Backtracking: Abschnitt 5.3"
+  - "@Kumar1992"
+  - "@Bartak2001"
 tldr: |
   CSP's mit endlichen Domänen lassen sich mit einer Backtracking-Suche lösen. Dabei wird
   schrittweise eine Variablen ausgewählt und dann ein Wert aus deren Wertebereich für

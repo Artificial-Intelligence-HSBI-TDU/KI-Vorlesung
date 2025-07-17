@@ -2,8 +2,7 @@
 title: "CAL2"
 author: "Carsten Gips (HSBI)"
 readings:
-  - key: "Unger1981"
-    comment: "Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
+  - "@Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)"
 tldr: |
   Eine Hypothese kann im einfachsten Fall als Entscheidungsbaum dargestellt werden. Die Merkmale bilden
   dabei die Knoten im Baum, und je Ausprägung gibt es eine Kante zu einem Nachfolgerknoten. Ein Merkmal
