@@ -28,6 +28,7 @@ no_beamer: true
 # Kurze Übersicht
 
 ## Nichtlineare Modelle
+
 *   Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der ursprünglichen Merkmale
 *   Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen Beziehungen
 *   **Bemerkung**: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird weiterhin logistische Regression in einem **erweiterten** Merkmalraum durchgeführt.

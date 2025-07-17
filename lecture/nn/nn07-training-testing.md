@@ -32,6 +32,7 @@ no_beamer: true
 # Kurze Übersicht
 
 ## Training und Testing
+
 *   Der tatsächliche **Erfolg** eines Modells wird nicht durch niedrige Trainingskosten gemessen, sondern durch geringe Kosten auf ungesehenen Daten, d.h. **hohe Vorhersagekraft, gute Generalisierung**!
 
 *   Die Menge aller gelabelten Daten  in **Trainingsset und Testset** aufteilen, Testset nicht während des Trainings einsetzen!.
@@ -99,6 +100,7 @@ no_beamer: true
 
 
 ## K-fache Kreuzvalidierung (engl. k-fold cross-validation):
+
 *   Das Modell $(\mathcal{H_m},\mathcal{A_m})$ wird $k$ mal trainiert und validiert, jedes mal mit unterschiedlichen Trainings- und Validierungsmengen:
     *   Die Trainingsdaten werden in $k$ disjunkte Teilmengen $D_1, D_2, ..., D_k$ aufgeteilt.
     *   Bei dem $i$-ten Training werden die Teilmenge $D_i$ für die Berechnung des Validierungsfehlers $e_i := E_{val}(h_m^{*(i)})$ und die restlichen $k-1$ Teilmengen für das Training verwendet.

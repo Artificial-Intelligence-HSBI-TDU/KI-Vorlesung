@@ -33,6 +33,7 @@ no_beamer: true
 # Kurze Übersicht
 
 ## Formalisierung
+
 *   Ausgabe $y$ ist reelle Zahl aus dem stetigen Bereich $(0,1)$
 *   Die **Hypothesenfunktion** ist:
     $$h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) \tag{1}$$
@@ -46,6 +47,7 @@ no_beamer: true
 
 
 ## Gradientenabstieg
+
 *   Der Gradient für einen Datenpunkt $\mathbf{x}$:
     $$\frac{\partial \mathcal{L}}{\partial w} = (a-y)x \tag{4}$$
 *   Der Gradient für alle Datenpunkte $X$ in Matrix-Notation:
@@ -53,6 +55,7 @@ no_beamer: true
 
 
 ## Graphische Übersicht
+
 *   Logistische Regression
     ![](images/log_reg_nn.png)
 *   Lineare Regression

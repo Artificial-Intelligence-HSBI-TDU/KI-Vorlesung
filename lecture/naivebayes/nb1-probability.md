@@ -379,7 +379,7 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2017, Ex. 7.9, S. 135] an!
 \bigskip
 
 *   Zwei Ereignisse $A$ und $B$ sind **unabhängig**, wenn
-    $$ P(A|B) = P(A) $$
+    $$P(A|B) = P(A)$$
 
     \smallskip
 
@@ -393,7 +393,7 @@ Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):
 
 Daraus folgt:
 
-$$ P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z) $$
+$$P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$$
 :::
 
 

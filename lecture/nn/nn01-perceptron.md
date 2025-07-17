@@ -37,6 +37,7 @@ no_beamer: true
 # Kurze Übersicht
 
 ## Definition "Maschinelles Lernen"
+
 Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959)
 
 ## Arten des Lernens
@@ -57,6 +58,7 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 
 
 ## Das Perzeptron
+
 Ein einfaches Modell für die **binäre Klassifizierung**
 
 *   Bilde gewichtete Summe (Linearkombination) der Merkmale
