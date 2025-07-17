@@ -176,7 +176,7 @@ Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsno
 werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
 
 Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
-**Für Details siehe [Prüfung & Noten @TDU](admin/exams-tdu.md)**.
+**Für Details siehe [Prüfung & Noten @ TDU](admin/exams-tdu.md)**.
 
 
 # Materialien
