@@ -110,7 +110,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 \bigskip
 \bigskip
 
-::: cbox
+::: center
 Abbruch, wenn kein Platz mehr zwischen Alpha und Beta
 :::
 

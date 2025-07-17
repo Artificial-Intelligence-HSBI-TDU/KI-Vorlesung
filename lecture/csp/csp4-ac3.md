@@ -158,7 +158,7 @@ Einschränkung der Ausgangswertemengen (kanten-konsistent)
 
 $D_a=\lbrace 1,2,3 \rbrace$, $D_b=\lbrace 1,2 \rbrace$, $D_c=\lbrace 1,2 \rbrace$, $D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 2,3 \rbrace$
 
-::: cbox
+::: center
 => Kantenkonsistenz ist nur **lokale** Konsistenz!
 :::
 

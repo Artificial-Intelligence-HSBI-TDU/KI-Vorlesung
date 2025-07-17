@@ -85,7 +85,7 @@ Beispiel: Stundenplan
 
 # Pseudoalgorithmus Gradientensuche
 
-::: cbox
+::: center
 "*Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust*"
 :::
 

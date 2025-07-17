@@ -38,7 +38,7 @@ fhmedia:
 \bigskip
 \bigskip
 
-::: cbox
+::: center
 **Wie funktioniert's?**
 :::
 

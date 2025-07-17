@@ -83,7 +83,7 @@ challenges: |
 *   Zufallsvariable $V$ => mögliche Werte $v_k$
 *   Wahrscheinlichkeit für $v_k$ sei $p_k = P(v_k)$
 
-::: cbox
+::: center
 $H(V) = -\sum_k p_k \log_2 p_k$
 :::
 
@@ -113,7 +113,7 @@ $\log_2 x = \frac{\log_{10} x}{\log_{10} 2} = \frac{\log x}{\log 2}$
 
 # Beispiele Entropie: faire Münze
 
-::: cbox
+::: center
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
 :::
 
@@ -138,7 +138,7 @@ $\log_2 0.5 = -1$
 
 # Beispiele Entropie: unfaire Münze
 
-::: cbox
+::: center
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
 :::
 
@@ -169,7 +169,7 @@ $\log_2 0.99 \approx -0,014$
 
 # Beispiele Entropie: 4-seitiger Würfel
 
-::: cbox
+::: center
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
 :::
 
