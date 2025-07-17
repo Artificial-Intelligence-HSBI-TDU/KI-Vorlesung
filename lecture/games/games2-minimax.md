@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Minimax"
 author: "Carsten Gips (HSBI)"
 readings:

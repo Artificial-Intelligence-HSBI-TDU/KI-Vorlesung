@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Lösen von diskreten CSP"
 author: "Carsten Gips (HSBI)"
 readings:

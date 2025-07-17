@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "CAL2"
 author: "Carsten Gips (HSBI)"
 readings:

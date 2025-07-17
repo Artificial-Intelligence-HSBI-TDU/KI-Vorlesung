@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN05 - Multilayer Perzeptron"
 linkTitle: "NN05 - MLP"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

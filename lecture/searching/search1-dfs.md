@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Suche mit Tiefensuche"
 linkTitle: "Tiefensuche"
 author: "Carsten Gips (HSBI)"

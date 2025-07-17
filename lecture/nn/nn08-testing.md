@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN08 - Performanzanalyse"
 linkTitle: "NN08 - Performanzanalyse"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

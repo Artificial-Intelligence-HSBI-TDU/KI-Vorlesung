@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN04 - Overfitting und Regularisierung"
 linkTitle: "NN04 - Overfitting"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

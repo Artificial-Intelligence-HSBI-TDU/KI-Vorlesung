@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Machine Learning 101"
 author: "Carsten Gips (HSBI)"
 readings:

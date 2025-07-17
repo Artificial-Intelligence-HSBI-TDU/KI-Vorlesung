@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Suche mit `A*`{=markdown}"
 linkTitle: "`A*`{=markdown}"
 author: "Carsten Gips (HSBI)"

@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Einführung Optimale Spiele"
 linkTitle: "Optimale Spiele"
 author: "Carsten Gips (HSBI)"

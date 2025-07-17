@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN01 - Das Perzeptron"
 linkTitle: "NN01 - Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

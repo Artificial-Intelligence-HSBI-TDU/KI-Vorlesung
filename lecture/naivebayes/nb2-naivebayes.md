@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Klassifikation mit Naive Bayes"
 linkTitle: "Naive Bayes"
 author: "Carsten Gips (HSBI)"

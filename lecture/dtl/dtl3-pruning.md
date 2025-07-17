@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Pruning"
 author: "Carsten Gips (HSBI)"
 readings:

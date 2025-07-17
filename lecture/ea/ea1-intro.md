@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Einführung Evolutionäre Algorithmen"
 linkTitle: "Intro EA/GA"
 author: "Carsten Gips (HSBI)"

@@ -1,5 +1,4 @@
 ---
-archetype: assignment
 title: "Übungsblatt: Lineare / Logistische Regression & Gradientenabstieg"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"

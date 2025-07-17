@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN09 - Large Language Models"
 linkTitle: "NN09 - LLM"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

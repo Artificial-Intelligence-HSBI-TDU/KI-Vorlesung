@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Resolutionsbeweise"
 linkTitle: "Resolution"
 author: "Carsten Gips (HSBI)"

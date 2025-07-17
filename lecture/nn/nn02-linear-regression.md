@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN02 - Lineare Regression und Gradientenabstieg"
 linkTitle: "NN02 - Lineare Regression & Gradientenabstieg"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

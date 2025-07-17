@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Einführung Logik"
 linkTitle: "Intro"
 author: "Carsten Gips (HSBI)"

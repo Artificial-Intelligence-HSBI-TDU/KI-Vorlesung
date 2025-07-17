@@ -1,5 +1,4 @@
 ---
-archetype: "default"
 title: "Constraintsolving"
 linkTitle: "CSP"
 ---

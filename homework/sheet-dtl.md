@@ -1,5 +1,4 @@
 ---
-archetype: assignment
 title: "Übungsblatt: Entscheidungsbäume (Decision Tree Learner DTL)"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"

@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Suche mit Breitensuche"
 linkTitle: "Breitensuche"
 author: "Carsten Gips (HSBI)"

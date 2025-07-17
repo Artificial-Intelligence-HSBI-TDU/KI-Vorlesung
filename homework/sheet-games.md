@@ -1,5 +1,4 @@
 ---
-archetype: assignment
 title: "Übungsblatt: Spiele"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"

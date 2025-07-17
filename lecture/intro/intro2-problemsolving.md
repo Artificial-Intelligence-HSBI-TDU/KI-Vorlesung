@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Problemlösen"
 author: "Carsten Gips (HSBI)"
 readings:

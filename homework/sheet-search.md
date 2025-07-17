@@ -1,5 +1,4 @@
 ---
-archetype: assignment
 title: "Übungsblatt: Problemlösen, Suche"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"

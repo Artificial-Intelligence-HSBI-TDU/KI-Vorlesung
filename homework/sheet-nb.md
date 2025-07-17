@@ -1,5 +1,4 @@
 ---
-archetype: assignment
 title: "Übungsblatt: Naive Bayes"
 author: "Carsten Gips (HSBI)"
 points: "10 Punkte"

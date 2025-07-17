@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN06 - Backpropagation"
 linkTitle: "NN06 - Backpropagation"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

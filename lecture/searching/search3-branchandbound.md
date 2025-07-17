@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Suche mit Branch-and-Bound"
 linkTitle: "Branch-and-Bound"
 author: "Carsten Gips (HSBI)"

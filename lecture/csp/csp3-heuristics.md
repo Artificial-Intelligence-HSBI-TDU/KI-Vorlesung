@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Heuristiken"
 author: "Carsten Gips (HSBI)"
 readings:

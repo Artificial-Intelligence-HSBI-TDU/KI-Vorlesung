@@ -1,5 +1,4 @@
 ---
-archetype: "home"
 title: "IFM 3.2 (PO23) / IFM 5.14 (PO18) / INF701: Künstliche Intelligenz (Winter 2024/25)"
 ---
 

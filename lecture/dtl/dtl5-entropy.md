@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Entropie"
 author: "Carsten Gips (HSBI)"
 readings:

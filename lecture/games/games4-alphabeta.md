@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Alpha-Beta-Pruning"
 author: "Carsten Gips (HSBI)"
 readings:

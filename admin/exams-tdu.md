@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "Prüfung & Noten (TDU)"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 
@@ -30,7 +29,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 *   Benennen Sie Ihre Dateien wie folgt, benutzen Sie dabei Ihren vollen Namen:
     *   **Vorname_Nachname_UE1.pdf**
     *   **Vorname_Nachname_UE1.ipnyb**
-*   Die Bearbeitung der Aufgaben erfolgt individuell.  
+*   Die Bearbeitung der Aufgaben erfolgt individuell.
     *   Das Diskutieren der Themen untereinander ist vorteilhaft, das Teilen von Lösungen nicht!
 
 #### Gelöste Aufgaben ankreuzen

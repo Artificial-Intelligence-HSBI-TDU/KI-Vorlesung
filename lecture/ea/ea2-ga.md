@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Modellierung mit Genetischen Algorithmen"
 linkTitle: "Genetische Algorithmen"
 author: "Carsten Gips (HSBI)"

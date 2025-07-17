@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Intro: Was ist Künstliche Intelligenz?"
 linkTitle: "Einführung KI"
 author: "Carsten Gips (HSBI)"

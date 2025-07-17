@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cy
 title: "NN10 - Vorschau Deep Learning (CNN, RNN)"
 linkTitle: "NN10 - CNN"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"

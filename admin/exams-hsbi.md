@@ -1,5 +1,4 @@
 ---
-archetype: lecture-cg
 title: "Prüfungsvorbereitung (HSBI)"
 author: "Carsten Gips (HSBI)"
 tldr: |
