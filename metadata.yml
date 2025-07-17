@@ -31,8 +31,6 @@ inLanguage:
   - de
 about:
   - https://w3id.org/kim/hochschulfaechersystematik/n079
-image: >-
-  https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/static/images/logo.png?raw=true
 learningResourceType:
   - https://w3id.org/kim/hcrt/course
   - https://w3id.org/kim/hcrt/drill_and_practice
