@@ -83,7 +83,7 @@ challenges: |
 
 *   $S_1 = 4, S_2 = 0.7$
 
-[[Tafelbeispiel CAL3]{.bsp}]{.slides}
+[[Tafelbeispiel CAL3]{.ex}]{.slides}
 
 \bigskip
 \pause

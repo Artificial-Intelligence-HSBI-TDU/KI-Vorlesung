@@ -104,7 +104,7 @@ Varianten:
 :::
 ::::::
 
-[[Tafelbeispiel A* (Graph-Search, nur Anfang/Schreibweise)]{.bsp}]{.slides}
+[[Tafelbeispiel A* (Graph-Search, nur Anfang/Schreibweise)]{.ex}]{.slides}
 
 
 ::: notes

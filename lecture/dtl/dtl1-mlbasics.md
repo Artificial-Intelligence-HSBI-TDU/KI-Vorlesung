@@ -95,7 +95,7 @@ challenges: |
 => Lernen wichtige Eigenschaft lebender Wesen :-)
 :::
 
-[[Warum Lernen?]{.bsp}]{.slides}
+[[Warum Lernen?]{.ex}]{.slides}
 
 
 ## Learning Agent
@@ -123,7 +123,7 @@ challenges: |
     *   Bewertung der Aktionen des Agenten am Ende einer Aktionsfolge
 
 
-[[Analogie Lernen beim Kleinkind]{.bsp}]{.slides}
+[[Analogie Lernen beim Kleinkind]{.ex}]{.slides}
 
 ::: notes
 **Beispiel Kleinkind**: Lernen von Klassen/Konzepten durch Beispiele
@@ -357,7 +357,7 @@ Attribute hat einen Typ und damit eine bestimmte Anzahl erlaubter Werte
 
 *   Tupel aus Merkmalsvektor und zugehöriger Klasse: $\left(\mathbf{x}(v), k\right)$
 
-[[Analogie Konstruktor Klasse $x$]{.bsp}]{.slides}
+[[Analogie Konstruktor Klasse $x$]{.ex}]{.slides}
 
 
 ## Wrap-Up

@@ -227,7 +227,7 @@ h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | k
 => Klasse "krank" gewinnt ...
 :::
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 
 ## Textklassifikation mit NB
@@ -261,7 +261,7 @@ h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | k
         :::
 
 ::: slides
-[[Hinweise: Naivität, Laplace, Floating Point Underflow, Maximum Likelihood]{.bsp}]{.slides}
+[[Hinweise: Naivität, Laplace, Floating Point Underflow, Maximum Likelihood]{.ex}]{.slides}
 :::
 
 

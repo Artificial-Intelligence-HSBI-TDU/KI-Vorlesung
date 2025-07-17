@@ -100,7 +100,7 @@ Nach Zuweisung eines Wertes an Variable $X$:
     *   Falls Constraints zw. $X$ und $Y$, dann ...
     *   ... entferne alle inkonsistenten Werte aus dem Wertebereich von $Y$.
 
-[[Tafelbeispiel:  Forward Checking (A=red, D=green)]{.bsp}]{.slides}
+[[Tafelbeispiel:  Forward Checking (A=red, D=green)]{.ex}]{.slides}
 
 ::: notes
 Beispiel:
@@ -151,7 +151,7 @@ $\mathrm{C} = \lbrace ((a,b), \ne), ((b,c), \ne), ((a,c), \ne), ((c,d), =), ((b,
 
 $D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$, $D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 1,2,3 \rbrace$
 
-[[Tafelbeispiel Kantenkonsistenz]{.bsp}]{.slides}
+[[Tafelbeispiel Kantenkonsistenz]{.ex}]{.slides}
 
 \pause
 \bigskip

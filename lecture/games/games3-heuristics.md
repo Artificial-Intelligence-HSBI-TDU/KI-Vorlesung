@@ -90,7 +90,7 @@ fhmedia:
 ![](images/minimax3.png){width="50%"}
 :::
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 ::: notes
 Hier maximiert jeder Spieler sein eigenes Ergebnis.  Im Grunde müsste diese
@@ -131,7 +131,7 @@ annotiert wird.
 
 => Für Zufallsknoten **erwarteten** Minimax-Wert (*Expectimax*) nutzen
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 
 ## Minimax mit Zufall: Expectimax

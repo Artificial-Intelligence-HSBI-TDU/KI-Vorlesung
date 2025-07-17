@@ -101,7 +101,7 @@ challenges: |
 
 **Aufgabe:** Das Buch aus der Bibliothek holen und in den Kopiererraum bringen.
 
-[[Hinweis Agent, Umwelt, Modellierung]{.bsp}]{.slides}
+[[Hinweis Agent, Umwelt, Modellierung]{.ex}]{.slides}
 
 ::: notes
 Bemerkungen zur Umwelt:
@@ -142,7 +142,7 @@ Ergebnis:
 
 ![](images/state-space.png){width="60%"}
 
-[[Tafel: Skizze Suchbaum, mit und ohne Wdhlg.]{.bsp}]{.slides}
+[[Tafel: Skizze Suchbaum, mit und ohne Wdhlg.]{.ex}]{.slides}
 
 ::: notes
 *   Durch die Suche im Problemgraphen wird ein Suchbaum aufgespannt
@@ -277,7 +277,7 @@ bilden die Grenze zwischen dem bereits untersuchten Teil des Graphen und dem
 noch unbekannten Teil des Graphen (deshalb auch "Frontier").
 :::
 
-[[Tafel: Bezug zum Bibliotheks-Beispiel]{.bsp}]{.slides}
+[[Tafel: Bezug zum Bibliotheks-Beispiel]{.ex}]{.slides}
 
 
 ## Erweiterung der Suche: Vermeiden von Wiederholungen

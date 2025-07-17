@@ -44,7 +44,7 @@ fhmedia:
 [**Wie funktioniert's?**]{.alert}
 :::
 
-[[kurze Diskussion]{.bsp}]{.slides}
+[[kurze Diskussion]{.ex}]{.slides}
 
 
 ## EA -- Zutaten und Mechanismen
@@ -84,7 +84,7 @@ und die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehe
 zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
 :::
 
-[[Beispiel mit 4-Queens-Puzzle]{.bsp}]{.slides}
+[[Beispiel mit 4-Queens-Puzzle]{.ex}]{.slides}
 
 
 ## EA -- Strömungen

@@ -75,7 +75,7 @@ challenges: |
     => reduziert den Verzweigungsgrad
     :::
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 ::: notes
 Beispiel:
@@ -103,7 +103,7 @@ Beispiel:
     => reduziert den Verzweigungsgrad in späteren Schritten
     :::
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 ::: notes
 Beispiel:
@@ -135,7 +135,7 @@ Beispiel:
     => verringert die Wahrscheinlichkeit für Backtracking
     :::
 
-[[Tafelbeispiel]{.bsp}]{.slides}
+[[Tafelbeispiel]{.ex}]{.slides}
 
 ::: notes
 Beispiel:

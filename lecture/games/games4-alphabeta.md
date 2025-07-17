@@ -77,7 +77,7 @@ challenges: |
 \bigskip
 => **Minimax-Baum**: [Verbesserungen möglich?]{.alert}
 
-[[Tafelbeispiel: Baum und Verbesserungen]{.bsp}]{.slides}
+[[Tafelbeispiel: Baum und Verbesserungen]{.ex}]{.slides}
 
 
 ## Alpha-beta-Pruning
@@ -95,7 +95,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 1.  $\alpha$ für MAX-Knoten wird nie kleiner
 2.  $\beta$ für MIN-Knoten wird nie größer
 
-[[Tafelbeispiel: Beste Werte einzeichnen]{.bsp}]{.slides}
+[[Tafelbeispiel: Beste Werte einzeichnen]{.ex}]{.slides}
 
 
 ## Pruning-Regeln
@@ -156,7 +156,7 @@ modifiziert werden und als Rückgabewert dienen. Das *kann* zu anderen oder fals
 Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 :::
 
-[[Tafelbeispiel Handsimulation]{.bsp}]{.slides}
+[[Tafelbeispiel Handsimulation]{.ex}]{.slides}
 
 
 ## Alpha-beta-Pruning -- Eigenschaften

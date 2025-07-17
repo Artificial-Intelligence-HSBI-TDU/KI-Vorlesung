@@ -182,7 +182,7 @@ zu lernen :-)
 | 1     | 1     | 2     | B   |
 | 0     | 0     | 3     | A   |
 
-[[Tafelbeispiel CAL2]{.bsp}]{.slides}
+[[Tafelbeispiel CAL2]{.ex}]{.slides}
 
 \bigskip
 \pause

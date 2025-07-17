@@ -75,7 +75,7 @@ rollt in anderes Tal
 Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 :::
 
-[[Gedankenexperiment: Problem "drehen" und Ball in Zustandsraum-Landschaft werfen]{.bsp}]{.slides}
+[[Gedankenexperiment: Problem "drehen" und Ball in Zustandsraum-Landschaft werfen]{.ex}]{.slides}
 
 
 ::: notes
@@ -129,7 +129,7 @@ Wahrscheinlichkeit ist bei hohen Temperaturen `temp` eher hoch, und sinkt, je ni
 Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert Null (wird also nicht negativ).
 :::
 
-[[Anmerkung: Akzeptieren von Verschlechterungen]{.bsp}]{.slides}
+[[Anmerkung: Akzeptieren von Verschlechterungen]{.ex}]{.slides}
 
 
 ::: notes
@@ -188,7 +188,7 @@ eines solchen Abkühlungsplans.
 Voraussetzung: geeigneter Abkühlungsplan
 :::
 
-[[Eigenschaften: Vollständig und Optimal mit Wahrscheinlichkeit]{.bsp}]{.slides}
+[[Eigenschaften: Vollständig und Optimal mit Wahrscheinlichkeit]{.ex}]{.slides}
 
 
 ::: notes

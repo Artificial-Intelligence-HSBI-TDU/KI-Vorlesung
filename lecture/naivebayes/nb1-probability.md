@@ -144,7 +144,7 @@ kontinuierliche Variablen wird die Verteilung mit Hilfe einer
     $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{|\lbrace 2,4,6 \rbrace|}{|\lbrace 1,2,3,4,5,6 \rbrace|} = \frac{3}{6} = 0.5$
 :::
 
-[[Tafel: Würfeln]{.bsp}]{.slides}
+[[Tafel: Würfeln]{.ex}]{.slides}
 
 
 ## Rechenregeln: Kolmogorov Axiome
@@ -179,7 +179,7 @@ Daraus folgt (u.a.):
 *   $A \subseteq B$: $P(A) \le P(B)$
 :::
 
-[[Tafel: Würfeln: Elementar, gerade Zahl]{.bsp}]{.slides}
+[[Tafel: Würfeln: Elementar, gerade Zahl]{.ex}]{.slides}
 
 
 ## Verbundwahrscheinlichkeiten
