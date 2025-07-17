@@ -30,15 +30,15 @@ youtube:
   - link: "https://youtu.be/m-TnM13I-no"
     name: "NN2.6 - Skalierung der Merkmale"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN02-Lineare_Regression.pdf"
+  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN02-Lineare_Regression.pdf"
     name: "NN02-Lineare_Regression.pdf"
 challenges: |
     **Skalierung der Merkmale**
 
     Abbildung 1 und Abbildung 2 zeigen die [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
 
-    ![Abbildung 1](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_a.png){width="40%"}
-    ![Abbildung 2](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/images/contour_plot_b.png){width="40%"}
+    ![Abbildung 1](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/images/contour_plot_a.png){width="40%"}
+    ![Abbildung 2](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/images/contour_plot_b.png){width="40%"}
 
     *   Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg Algorithmus ist. Wo liegt der Nachteil?
     Wie kann die Merkmalskalierung dem genannten Nachteil entgegenwirken?

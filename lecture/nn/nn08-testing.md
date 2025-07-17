@@ -26,7 +26,7 @@ youtube:
   - link: "https://youtu.be/vsmoYiArtrA"
     name: "NN8.5 - Harmonisches Mittel- Intuition"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN08-Performanzanalyse.pdf"
+  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN08-Performanzanalyse.pdf"
     name: "NN08-Performanzanalyse.pdf"
 ---
 

@@ -15,7 +15,7 @@ youtube:
   - link: "https://youtu.be/TODO"
     name: "NN10.2 - TODO"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN10-CNN.pdf"
+  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN10-CNN.pdf"
     name: "NN10-CNN.pdf"
 
 sketch: true

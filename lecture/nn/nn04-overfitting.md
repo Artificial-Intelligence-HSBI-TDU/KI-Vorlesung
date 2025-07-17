@@ -19,7 +19,7 @@ youtube:
   - link: "https://youtu.be/BW91MYPUH_k"
     name: "NN4.2 - Overfitting und Regularisierung"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
+  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
     name: "NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
 ---
 

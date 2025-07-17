@@ -44,12 +44,12 @@ challenges: |
 
     Ist die Kante zwischen a und b konsistent?
 
-    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_a.png)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png)
 
 
     Wann ist der Graph lokal konsistent?
 
-    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_b.png)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png)
 
     - a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
     - a {1,2}; b {2,3}; c {3}; d {1,2}
@@ -59,7 +59,7 @@ challenges: |
 
     Wie sieht die Queue im nächsten Schritt mit AC3 aus?
 
-    ![](https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/csp/images/csp_challenge_c.png)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png)
 
     Aktuelle Queue: [ab, ac, ba, bc, ca, cb]
 

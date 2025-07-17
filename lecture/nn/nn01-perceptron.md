@@ -28,7 +28,7 @@ youtube:
   - link: "https://youtu.be/JD8Qsg8_kQI"
     name: "NN1.5 - Der Perzeptron Lernalgorithmus"
 attachments:
-  - link: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/master/lecture/nn/files/NN01-Das_Perzeptron.pdf"
+  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN01-Das_Perzeptron.pdf"
     name: "NN01-Das_Perzeptron.pdf"
 ---
 
