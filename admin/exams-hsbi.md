@@ -2,7 +2,7 @@
 title: "Prüfungsvorbereitung (HSBI)"
 author: "Carsten Gips (HSBI)"
 tldr: |
-    ### Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)
+    **Durchführung: Präsenz oder Open-Book (je nach Corona-Lage)**
 
     Die Klausur wird dieses Semester elektronisch stattfinden. Dazu werden wir den Prüfungs-ILIAS der
     HSBI nutzen.
@@ -22,13 +22,13 @@ tldr: |
     Die Entscheidung über die konkrete Durchführung wird spätestens zwei Wochen vor der Prüfung getroffen
     und Ihnen per EMail über das LSF mitgeteilt.
 
-    ### Ablauf der Klausur
+    **Ablauf der Klausur**
 
     Die Prüfung (das ILIAS-Objekt) selbst schalte ich erst zum Start der Prüfung online. Bei der Durchführung
     als Open-Book-Ausarbeitung wird parallel zur Prüfung eine Zoom-Sitzung laufen, in der Sie Fragen stellen
     können.
 
-    ### Hilfsmittel und Themen
+    **Hilfsmittel und Themen**
 
     Bei der Durchführung in Präsenz am Campus Minden ist ein Spickzettel (DIN A4, beidseitig beschrieben)
     als Hilfsmittel zugelassen.
@@ -43,19 +43,20 @@ tldr: |
 youtube:
     - link: "https://youtu.be/warjJ9ZXvEM"
       name: "Hinweise zur Prüfung: Fragetypen-Demo"
-    - link: "`https://youtu.be/_cVhJX-D6zM`{=markdown}"
+    - link: "https://youtu.be/_cVhJX-D6zM"
       name: "Hinweise zur Prüfung: Technische Vorbereitung"
 fhmedia:
     - link: "https://www.hsbi.de/medienportal/m/4f7c425ae13cec9dc1b3bed28c1cadd666e4ba87c4afd9fe131913187fe110d2296ef62b36696efc3f19e151c7f18fe1bd4b83aad9f86eb9a5f384d38f2a7fbf"
       name: "Hinweise zur Prüfung: Fragetypen-Demo"
     - link: "https://www.hsbi.de/medienportal/m/66febead31c0b01deec2ffb47adf8abfa247b51a76a539b6681423d9206f819e4df8c93ee7affd4be3f7144e035dfbaf997af8cd9314d4dbc65244bf11cd9de8"
       name: "Hinweise zur Prüfung: Technische Vorbereitung"
+no_beamer: true
 ---
 
 
-## Elektronische Klausur: Termin, Materialien
+# Elektronische Klausur: Termin, Materialien
 
-### Termin
+## Termin
 
 Die schriftliche Prüfung erfolgt durch eine Klausur, die als digitale Prüfung auf einem
 Prüfungs-ILIAS durchgeführt wird.
@@ -72,12 +73,11 @@ Dauer jeweils 90 Minuten.
 *   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im Home-Office)]{.notes}
     wird Ihnen [spätestens]{.notes} zwei Wochen vor der Prüfung über das LSF bekanntgegeben
 
-### Zugelassene Hilfsmittel
+## Zugelassene Hilfsmittel
 
-:::::: {.tabs groupid="modus"}
-::: {.tab title="Präsenz (in Minden)"}
+::: {.details title="Präsenz (in Minden)"}
 
-**Zugelassene Materialien**: [**DIN-A4-Spickzettel (beidseitig)**]{.alert}
+**Zugelassene Materialien**: **DIN-A4-Spickzettel (beidseitig)**
 
 Sie dürfen **einen** Spickzettel im **DIN-A4**-Format benutzen, der beidseitig beschrieben
 sein kann.
@@ -87,7 +87,8 @@ Ich möchte Sie hier noch einmal ermuntern, diesen Zettel tatsächlich manuell z
 Lerneffekt bewirkt!
 
 :::
-::: {.tab title="Open-Book-Ausarbeitung (Homeoffice)"}
+
+::: {.details title="Open-Book-Ausarbeitung (Homeoffice)"}
 
 Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden sollte, dürfen
 Sie alle Unterlagen benutzen.
@@ -98,17 +99,15 @@ Sie alle Unterlagen benutzen.
     mit Dritten ist in keinem Fall zugelassen und wird als Täuschungsversuch gewertet.
 
 :::
-::::::
 
-### Einsicht
+## Einsicht
 
 *   Prüfungseinsicht: Zeitnah; Bekanntgabe per Mail
 
 
-## Technische Vorbereitungen
+# Technische Vorbereitungen
 
-:::::: {.tabs groupid="modus"}
-::: {.tab title="Präsenz (in Minden)"}
+::: {.details title="Präsenz (in Minden)"}
 
 Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räumen am Campus Minden.
 
@@ -126,7 +125,8 @@ Diese Bemerkungen betreffen die Durchführung als Präsenzprüfung in den Räume
     bereit.
 
 :::
-::: {.tab title="Open-Book-Ausarbeitung (Homeoffice)"}
+
+::: {.details title="Open-Book-Ausarbeitung (Homeoffice)"}
 
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware. Bei der
 Durchführung in Präsenz in den Räumen am Campus Minden werden die technischen Details von uns
@@ -171,16 +171,15 @@ für Sie vorbereitet sein.
     Dazu benötigen Sie ihre HSBI-Zugangsdaten, mit denen Sie sich auch im "normalen" ILIAS anmelden.
 
 :::
-::::::
 
 
-## Bearbeitung des E-Assessment
+# Bearbeitung des E-Assessment
 
 1.  Lesen Sie sich die Hinweise auf der Startseite durch
 
 2.  Bearbeiten Sie die Aufgaben in **einem einzigen** Browser-Tab
 
-    [**Öffnen Sie die Aufgaben _NICHT_ in parallelen Tabs!**]{.alert}
+    **Öffnen Sie die Aufgaben _NICHT_ in parallelen Tabs!**
     Es kann sonst zu Fehlfunktionen von ILIAS kommen.
 
     Bewegen Sie sich nicht per Browser-Navigation ("vor", "zurück" im Browser)
@@ -206,7 +205,7 @@ für Sie vorbereitet sein.
         Täuschungsversuch gewertet werden, vgl. RPO §22a (4))]{.notes}
 
 
-## Fragetypen-Demo
+# Fragetypen-Demo
 
 In Ihrem ILIAS-Kurs finden Sie eine
 [**Fragetypen-Demo**](https://www.hsbi.de/elearning/goto.php?target=tst_1352273&client_id=FH-Bielefeld)
@@ -215,7 +214,7 @@ Sie sich die Kommentare bei den einzelnen Aufgaben an. Sie können die Demo bei 
 wiederholen.
 
 
-## Hinweise zu den Inhalten
+# Hinweise zu den Inhalten
 
 *   Klausurrelevant: Vorlesung und Praktikum
 *   Für Verständnis u.U. hilfreich: Studium der vertiefenden Literaturangaben
@@ -229,13 +228,13 @@ wiederholen.
         möglich ist und (wie) gefragt werden könnte :)
 
 ::: center
-[**Können vor Kennen :-)**]{.alert}
+**Können vor Kennen :-)**
 :::
 
 
-## Beispiele für mögliche Fragen
+# Beispiele für mögliche Fragen
 
-### Breitensuche
+## Breitensuche
 
 Betrachten Sie den folgenden Graphen:
 
@@ -248,14 +247,14 @@ Führen Sie eine Handsimulation der Breitensuche durch. Start ist
 
 Geben Sie den Zustand der Queue in jedem Schritt an.
 
-### Suche
+## Suche
 
 *   Worin liegt der Unterschied zwischen einem Knoten und einem Zustand?
 *   Was ist ein Suchbaum? Wo liegt der Unterschied zum Zustandsraum?
 *   Muss der Suchbaum über eine eigene Datenstruktur realisiert werden?
 *   Was bedeutet Kantenkonsistenz?
 
-### Handsimulation Perzeptron
+## Handsimulation Perzeptron
 
 Führen Sie den Perzeptron-Lernalgorithmus in Handsimulation durch.
 Lernen Sie die Boolesche Funktion OR. Die Trainingsmenge ist: ...
@@ -286,7 +285,7 @@ $$
 Zeichnen Sie eine geometrische Interpretation Ihres Perzeptrons nach dem
 Lernen (Trennebene,  Gewichtsvektor, Trainingsbeispiele).
 
-### Entscheidungsbäume mit ID3
+## Entscheidungsbäume mit ID3
 
 Gegeben sei folgender Trainingsdatensatz ...
 
@@ -300,7 +299,7 @@ bestimmt sich die Reihenfolge der weiteren Attribute?
 
 Als Hilfe gegeben: Einige wichtige Logarithmen zur Basis 2
 
-### CSP
+## CSP
 
 Betrachten Sie das folgende Constraintproblem:
 
@@ -321,7 +320,7 @@ Zeichnen Sie den zugehörigen Constraintgraphen.
 Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise
 Kantenkonsistenz herstellt.
 
-### Backpropagation
+## Backpropagation
 
 In der Vorlesung wurde die Delta-Regel bzw. die Gewichtsupdates bei der
 Backpropagation für die Ausgabeschicht und die davor liegende letzte
