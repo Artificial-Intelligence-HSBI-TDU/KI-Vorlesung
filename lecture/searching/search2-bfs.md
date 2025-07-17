@@ -38,7 +38,7 @@ fhmedia:
 :::
 
 ::: notes
-=> [**Problemlösen == Suche im Graphen**]{.alert}
+=> **Problemlösen == Suche im Graphen**
 :::
 
 \bigskip
@@ -46,7 +46,7 @@ fhmedia:
 
 **Uninformierte ("blinde") Suche**:
 
-Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} (Anzahl der Schritte) zählt.
+Keine Informationen über die Kosten eines Pfades: Nur die Pfadlänge (Anzahl der Schritte) zählt.
 
 ::: notes
 Varianten:
@@ -72,7 +72,7 @@ Varianten:
 4.  Gehe zu Schritt 2
 
 \bigskip
-=> Was passiert, wenn wir eine [**Queue**]{.alert} einsetzen?
+=> Was passiert, wenn wir eine **Queue** einsetzen?
 
 :::::: notes
 :::center
@@ -92,7 +92,7 @@ Varianten:
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
 
-*   Suchalgorithmus mit [**Queue**]{.alert} als Datenstruktur => **Breitensuche**
+*   Suchalgorithmus mit **Queue** als Datenstruktur => **Breitensuche**
     *   Zu betrachtender Knoten in Schritt 2 wird *vorn* aus der Queue genommen
     *   Expandierte Knoten werden in Schritt 2.a *hinten* in die Queue eingefügt
         Dabei i.A. die vorgegebene  Reihenfolge der Nachfolgeknoten beachten!
@@ -182,7 +182,7 @@ Annahme: $b=10$, 10.000 Knoten/s, 1.000 Byte/Knoten
 **Tiefensuche**:
 Annahme: längster Pfad (Tiefe) $m=1000$
 
-=> Speicherbedarf [**ca. 10 MB**]{.alert}
+=> Speicherbedarf **ca. 10 MB**
 
 
 ## Wrap-Up

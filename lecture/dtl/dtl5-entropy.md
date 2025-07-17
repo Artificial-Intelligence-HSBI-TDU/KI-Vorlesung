@@ -55,14 +55,14 @@ challenges: |
 
 *   Zyklische Iteration durch die Trainingsmenge
 *   Ausschließlich aktuelles Objekt betrachtet
-*   [Reihenfolge]{.alert} der "richtigen" Attributwahl bei Verzweigung unklar
+*   Reihenfolge der "richtigen" Attributwahl bei Verzweigung unklar
 
 => Betrachte stattdessen die komplette Trainingsmenge!
 :::
 
 ### Relevanz => Informationsgehalt
 
-*   Shannon/Weaver (1949): [**Entropie**]{.alert}
+*   Shannon/Weaver (1949): **Entropie**
     *   Maß für die Unsicherheit einer Zufallsvariablen
     *   Anzahl der Bits zur Darstellung der Ergebnisse eines Zufallsexperiments
 
@@ -97,7 +97,7 @@ $H(V) = -\sum_k p_k \log_2 p_k$
 :::::: columns
 ::: {.column width="40%"}
 
-[Hinweis]{.alert}:
+Hinweis:
 $\log_2 x = \frac{\log_{10} x}{\log_{10} 2} = \frac{\log x}{\log 2}$
 
 :::

@@ -41,7 +41,7 @@ fhmedia:
 \bigskip
 
 ::: cbox
-[**Wie funktioniert's?**]{.alert}
+**Wie funktioniert's?**
 :::
 
 [[kurze Diskussion]{.ex}]{.slides}

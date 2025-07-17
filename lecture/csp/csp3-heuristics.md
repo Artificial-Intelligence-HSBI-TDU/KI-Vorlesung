@@ -64,7 +64,7 @@ challenges: |
 \bigskip
 
 ::: notes
-[**VARIABLES**]{.alert}: Welche Variable zuerst ausprobieren?
+**VARIABLES**: Welche Variable zuerst ausprobieren?
 :::
 
 **Minimum Remaining Values (MRV)**: (vgl. [@Russell2020, S. 177])
@@ -92,7 +92,7 @@ Beispiel:
 \bigskip
 
 ::: notes
-[**VARIABLES**]{.alert}: Welche Variable zuerst ausprobieren?
+**VARIABLES**: Welche Variable zuerst ausprobieren?
 :::
 
 **Gradheuristik**: Erweiterung von *MRV* bei *Gleichstand* (vgl. [@Russell2020, S. 177])
@@ -123,7 +123,7 @@ Beispiel:
 \bigskip
 
 ::: notes
-[**VALUES**]{.alert}: Welchen Wert zuerst ausprobieren?
+**VALUES**: Welchen Wert zuerst ausprobieren?
 :::
 
 **Least Constraining Value (LCV)**: (vgl. [@Russell2020, S. 177])

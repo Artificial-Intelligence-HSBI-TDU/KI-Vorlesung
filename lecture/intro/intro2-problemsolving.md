@@ -165,7 +165,7 @@ Ergebnis:
 \bigskip
 \bigskip
 
-[**Geeignete Abstraktionen wählen für Zustände und Aktionen!**]{.alert}
+**Geeignete Abstraktionen wählen für Zustände und Aktionen!**
 
 ::: notes
 **Anmerkung:**

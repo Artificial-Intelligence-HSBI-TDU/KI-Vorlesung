@@ -45,7 +45,7 @@ challenges: |
 :::
 
 ::: notes
-=> [**Problemlösen == Suche im Graphen**]{.alert}
+=> **Problemlösen == Suche im Graphen**
 :::
 
 \bigskip
@@ -71,7 +71,7 @@ Varianten:
 
 ## Best-First (*BF*, *BFS*)
 
-*   Idee: Expandiere den partiellen Weg, der [verspricht]{.alert}, dem Ziel am
+*   Idee: Expandiere den partiellen Weg, der verspricht, dem Ziel am
     nächsten zu sein (**Heuristik**)
 
 \smallskip

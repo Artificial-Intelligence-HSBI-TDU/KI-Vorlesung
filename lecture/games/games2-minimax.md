@@ -57,7 +57,7 @@ challenges: |
 ### Terminologie
 
 *   Zwei abwechselnd spielende Spieler: `MAX` und `MIN`, wobei `MAX` beginnt
-    *   Beide Spieler spielen in jedem Zug [optimal]{.alert}
+    *   Beide Spieler spielen in jedem Zug optimal
     *   Spielergebnis wird aus Sicht von `MAX` bewertet:
         *   $+1$, wenn Spieler `MAX` gewinnt
         *   $-1$, wenn Spieler `MIN` gewinnt

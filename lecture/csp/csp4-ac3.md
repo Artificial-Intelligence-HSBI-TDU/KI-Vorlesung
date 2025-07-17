@@ -91,7 +91,7 @@ Zuweisung eines Wertes an Variable $X$:
 \bigskip
 
 ::: notes
-[**Inference**]{.alert}: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [@Russell2020, S. 178])
+**Inference**: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [@Russell2020, S. 178])
 :::
 
 Nach Zuweisung eines Wertes an Variable $X$:
@@ -134,7 +134,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 ## Definition Kantenkonsistenz (Arc Consistency)
 
-> Eine Kante von $X$ nach $Y$ ist "[konsistent]{.alert}", wenn für jeden Wert
+> Eine Kante von $X$ nach $Y$ ist "konsistent", wenn für jeden Wert
 > $x \in D_X$ und für alle Constraints zwischen $X$ und $Y$ jeweils ein Wert
 > $y \in D_Y$ existiert, so dass der betrachtete Constraint durch $(x,y)$
 > erfüllt ist.

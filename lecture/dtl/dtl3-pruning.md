@@ -46,7 +46,7 @@ fhmedia:
 
 \smallskip
 \pause
-$x_1$ ist [bedingt irrelevant]{.alert}
+$x_1$ ist bedingt irrelevant
 => Vereinfachung: $\alpha = x_2(A, B)$
 
 \pause
@@ -57,7 +57,7 @@ $x_1$ ist [bedingt irrelevant]{.alert}
 
 *   Sei $\tilde{x}$ Weg zu Nichtendknoten $x_t$
 *   Baum dort $\alpha/\tilde{x} = x_t(\alpha_1, \ldots, \alpha_{m_t})$
-*   $x_t$ ist [**bedingt irrelevant**]{.alert} unter der Bedingung
+*   $x_t$ ist **bedingt irrelevant** unter der Bedingung
     $\tilde{x}$, wenn $\alpha_1 = \alpha_2 = \ldots = \alpha_{m_t}$
 *   **Vereinfachung**: Ersetze in $\alpha/\tilde{x}$ den Test $x_t$ durch $\alpha_1$
 
@@ -67,7 +67,7 @@ Der durch das Entfernen von bedingt irrelevanten Attributen entstandene Baum
 hat **exakt** die selbe Aussage (Klassifikation) wie der Baum vor dem Pruning.
 
 **Anmerkung**:
-$x_1$ im obigen Beispiel ist sogar [**global** irrelevant]{.alert}, da es sich hier
+$x_1$ im obigen Beispiel ist sogar **global** irrelevant, da es sich hier
 um die Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der leere
 Weg ...
 :::
@@ -79,7 +79,7 @@ Weg ...
 
 \smallskip
 \pause
-$x_1$ ist [bedingt redundant]{.alert}
+$x_1$ ist bedingt redundant
 => Vereinfachung: $\alpha = x_2(A, B)$
 
 \pause
@@ -90,7 +90,7 @@ $x_1$ ist [bedingt redundant]{.alert}
 
 *   Sei $\tilde{x}$ Weg zu Nichtendknoten $x_t$
 *   Baum dort $\alpha/\tilde{x} = x_t(\ast, \ldots, \ast, \alpha_i, \ast, \ldots, \ast)$ \quad (mit $\alpha_i \neq \ast$)
-*   $x_t$ ist [**bedingt redundant**]{.alert} unter der Bedingung $\tilde{x}$
+*   $x_t$ ist **bedingt redundant** unter der Bedingung $\tilde{x}$
 *   **Vereinfachung**: Ersetze in $\alpha/\tilde{x}$ den Test $x_t$ durch $\alpha_i$
 
 ::: notes
@@ -102,7 +102,7 @@ ausgegeben. Der Klassifikationsfehler erhöht sich aber **nicht**, da hier ein
 `*` wie ein falsches Klassensymbol zu werten ist.
 
 **Anmerkung**:
-$x_1$ im obigen Beispiel ist sogar [**global** redundant]{.alert}, da es sich
+$x_1$ im obigen Beispiel ist sogar **global** redundant, da es sich
 hier um die Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall
 der leere Weg ...
 :::

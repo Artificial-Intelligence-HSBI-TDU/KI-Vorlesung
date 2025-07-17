@@ -109,7 +109,7 @@ challenges: |
     *   Lernen durch Beobachtung
     *   Vorgabe von Beispielen:  Ein- und Ausgabewerte
 
-    => Regression, [Klassifikation]{.alert}
+    => Regression, Klassifikation
 
 \bigskip
 
@@ -183,7 +183,7 @@ Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beis
 \bigskip
 
 *   Aufgabe: Baue Hypothese $\operatorname{h}$ auf, so dass $\operatorname{h} \approx \operatorname{f}$.
-    *   Benutze dazu Menge von Beispielen => [**Trainingsdaten**]{.alert}.
+    *   Benutze dazu Menge von Beispielen => **Trainingsdaten**.
 
 \bigskip
 
@@ -297,7 +297,7 @@ Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe $\operatorn
 
 **Merkmalsvektoren**:
 
-*   Zusammenfassen der [relevanten Merkmale]{.alert} zu [Vektoren]{.alert}
+*   Zusammenfassen der relevanten Merkmale zu Vektoren
 
 
 ## Beispiel: Schwimmen im See

@@ -54,11 +54,11 @@ challenges: |
 Bisher betrachtete Suchverfahren:
 
 *   Systematische Erkundung des Suchraums
-*   [**Weg**]{.alert} zur Lösung wichtig
+*   **Weg** zur Lösung wichtig
 
 \smallskip
 
-=> Oft aber nur das [**Ziel**]{.alert} **an sich** interessant! \newline
+=> Oft aber nur das **Ziel an sich** interessant! \newline
 (Und nicht, wie man dort hin gelangt.)
 
 \bigskip
@@ -74,7 +74,7 @@ Beispiel: Stundenplan
 \bigskip
 
 **Gradienten-Suche**:
-"Gehe in Richtung des [steilsten Anstiegs]{.alert} der [Zielfunktion]{.alert}."
+"Gehe in Richtung des steilsten Anstiegs der Zielfunktion."
 
 => Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)
 
@@ -121,7 +121,7 @@ Beispiel: Stundenplan
 Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 
 **Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
-=> "[vollständige Zustandsformulierung]{.alert}"
+=> "vollständige Zustandsformulierung"
 
 ### Eigenschaften 8-Damen-Problem ($n=8$)
 
@@ -145,14 +145,14 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 
 \smallskip
 
-[**Zielfunktion (Bewertung) nötig!**]{.alert}
+**Zielfunktion (Bewertung) nötig!**
 :::
 
 ![](images/hill-climbing.png){width="60%"}
 
 \bigskip
 
-[**Problem**]{.alert}: lokale Maxima und Plateaus
+**Problem**: lokale Maxima und Plateaus
 
 ::: notes
 *   Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung

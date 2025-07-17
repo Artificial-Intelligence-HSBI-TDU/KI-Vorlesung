@@ -63,7 +63,7 @@ Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilric
 :::
 
 ::: notes
-=> [**Problemlösen == Suche im Graphen**]{.alert}
+=> **Problemlösen == Suche im Graphen**
 :::
 
 \bigskip
@@ -71,7 +71,7 @@ Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilric
 
 **Uninformierte ("blinde") Suche**:
 
-Keine Informationen über die Kosten eines Pfades: Nur die [Pfadlänge]{.alert} (Anzahl der Schritte) zählt.
+Keine Informationen über die Kosten eines Pfades: Nur die Pfadlänge (Anzahl der Schritte) zählt.
 
 ::: notes
 Varianten:
@@ -112,7 +112,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 4.  Gehe zu Schritt 2
 
 \bigskip
-=> Was passiert, wenn wir einen [**Stack**]{.alert} einsetzen?
+=> Was passiert, wenn wir einen **Stack** einsetzen?
 
 :::::: notes
 :::center
@@ -133,7 +133,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
 
-*   Suchalgorithmus mit [**Stack**]{.alert} als Datenstruktur => **Tiefensuche**
+*   Suchalgorithmus mit **Stack** als Datenstruktur => **Tiefensuche**
     *   Zu betrachtender Knoten in Schritt 2 wird *oben* vom Stack genommen
     *   Expandierte Knoten werden in Schritt 2.a *oben* auf den Stack gelegt
         Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!

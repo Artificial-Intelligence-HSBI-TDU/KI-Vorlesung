@@ -41,7 +41,7 @@ fhmedia:
 
 \bigskip
 
-[**Problem**]{.alert}: lokale Maxima und Plateaus
+**Problem**: lokale Maxima und Plateaus
 
 ::: notes
 *   Lokale Maxima/Minima: Algorithmus findet nur eine suboptimale Lösung
@@ -68,7 +68,7 @@ Mögliche Lösungen:
 \bigskip
 \bigskip
 \pause
-=> "[**Schütteln**]{.alert} der Landschaft" -- Ball springt aus dem Tal und
+=> "**Schütteln** der Landschaft" -- Ball springt aus dem Tal und
 rollt in anderes Tal
 
 \smallskip
@@ -95,7 +95,7 @@ Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 *   Schrittweises "Abkühlen" => "Schütteln" im Laufe der Zeit
     verringern
 
-=> [**Simulated Annealing**]{.alert}
+=> **Simulated Annealing**
 :::
 
 

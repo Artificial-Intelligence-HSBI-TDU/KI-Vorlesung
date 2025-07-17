@@ -34,7 +34,7 @@ fhmedia:
 [Quelle: ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 ::: notes
-Zwei Spieler, ein Spielstand und ein Würfelergebnis: [**Was ist jetzt der beste Zug?!**]{.alert}
+Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste Zug?!**
 :::
 
 
@@ -45,7 +45,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: [**Was ist jetzt der beste
 \pause
 
 \bigskip
-=> Mehrere [**konkurrierende**]{.alert} Agenten an Suche beteiligt!
+=> Mehrere **konkurrierende** Agenten an Suche beteiligt!
 
 => (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
 

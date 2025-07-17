@@ -55,7 +55,7 @@ Erinnerung: CAL2/CAL3
 
 *   Zyklische Iteration durch die Trainingsmenge
 *   Ausschließlich aktuelles Objekt betrachtet
-*   [Reihenfolge]{.alert} der "richtigen" Attributwahl bei Verzweigung unklar
+*   Reihenfolge der "richtigen" Attributwahl bei Verzweigung unklar
 
 => Betrachte stattdessen die **komplette** Trainingsmenge!
 

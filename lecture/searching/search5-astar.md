@@ -59,7 +59,7 @@ challenges: |
 :::
 
 ::: notes
-=> [**Problemlösen == Suche im Graphen**]{.alert}
+=> **Problemlösen == Suche im Graphen**
 :::
 
 \bigskip
@@ -134,7 +134,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 
 ## A\*-Suche -- Anforderungen an Heuristik (Tree-Search)
 
-**Tree-Search-Variante**: Die Heuristik muss [**zulässig**]{.alert} sein:
+**Tree-Search-Variante**: Die Heuristik muss **zulässig** sein:
 
 *   Seien $h^\star(n)$ die tatsächlichen optimalen Restkosten von einem Knoten
     $n$ zum nächsten Ziel.
@@ -183,7 +183,7 @@ Beweis siehe Übung :-)
 
 ## A\*-Suche -- Anforderungen an Heuristik (Graph-Search)
 
-**Graph-Search-Variante**: Die Heuristik muss [**konsistent**]{.alert} sein:
+**Graph-Search-Variante**: Die Heuristik muss **konsistent** sein:
 
 Für jeden Knoten $n$ und jeden durch eine Aktion $a$ erreichten Nachfolger $m$
 gilt: $$h(n) \le c(n,a,m) + h(m)$$ mit $c(n,a,m)$ Schrittkosten für den Weg von

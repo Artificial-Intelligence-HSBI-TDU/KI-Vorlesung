@@ -41,7 +41,7 @@ fhmedia:
 :::
 
 ::: notes
-=> [**Problemlösen == Suche im Graphen**]{.alert}
+=> **Problemlösen == Suche im Graphen**
 :::
 
 \bigskip
@@ -70,7 +70,7 @@ Varianten:
 
 Variante der Breitensuche mit Kosten
 
-*   Idee: Expandiere den *bisher* [günstigsten]{.alert} partiellen Weg
+*   Idee: Expandiere den *bisher* günstigsten partiellen Weg
 
 \smallskip
 
@@ -79,7 +79,7 @@ Variante der Breitensuche mit Kosten
 
 \smallskip
 
-*   Voraussetzung: [alle Aktionen]{.alert} haben [positive Kosten]{.alert}
+*   Voraussetzung: alle Aktionen haben positive Kosten
     [(jeden Knoten $n$ gilt: $g(n) > 0$)]{.notes}
 
 ::: notes

@@ -75,7 +75,7 @@ challenges: |
 :::
 
 \bigskip
-=> **Minimax-Baum**: [Verbesserungen möglich?]{.alert}
+=> **Minimax-Baum**: Verbesserungen möglich?
 
 [[Tafelbeispiel: Baum und Verbesserungen]{.ex}]{.slides}
 
@@ -112,7 +112,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 \bigskip
 
 ::: cbox
-[Abbruch, wenn kein Platz mehr zwischen Alpha und Beta]{.alert}
+Abbruch, wenn kein Platz mehr zwischen Alpha und Beta
 :::
 
 
