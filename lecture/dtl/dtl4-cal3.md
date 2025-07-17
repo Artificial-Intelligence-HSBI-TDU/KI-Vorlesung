@@ -122,17 +122,3 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 *   CAL3: Erweiterung von CAL2 für überlappende Klassen
     *   Parameter $S_1$ (Anzahl Objekte bis Entscheidung), $S_2$ (Dominanz?)
     *   Trainingsfehler wg. überlappender Klassen!
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-:::

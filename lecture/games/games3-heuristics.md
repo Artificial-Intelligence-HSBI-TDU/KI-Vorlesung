@@ -172,20 +172,3 @@ Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger arbeiten.
     *   Kriterien zur Begrenzung der Suchtiefe, Bewertung `Eval` statt `Utility`
     *   Erweiterung auf $>2$ Spieler
     *   Erweiterung auf Spiele mit Zufall: *Expectimax*
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-### Exceptions
-*   Image ["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))
-:::

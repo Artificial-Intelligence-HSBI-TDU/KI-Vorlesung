@@ -400,17 +400,3 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
     *   Klassifikation durch Nutzung der geschätzten Wahrscheinlichkeiten
     *   Hinweis auf Naivität der Annahme, dennoch sehr gute Erfolge in Praxis
     *   Hinweis auf Probleme mit niedrigen Wahrscheinlichkeiten
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-:::

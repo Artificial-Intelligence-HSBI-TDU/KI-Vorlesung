@@ -210,22 +210,3 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
     *   Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
         Kostenfunktion => **Hill-Climbing**
     *   Achtung: Probleme mit lokalen Minima => **Simulated Annealing**
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-
-\bigskip
-
-### Exceptions
-*   Figure ["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz, reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/Public_domain))
-:::

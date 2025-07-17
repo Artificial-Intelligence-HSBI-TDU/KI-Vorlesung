@@ -347,17 +347,3 @@ Lehrveranstaltung kurz als "Graph-Search"-Algorithmus bezeichnet.
     *   Unterschiedliche Kostenfunktionen möglich
     *   Suchalgorithmen: Einfache Basisvariante, Erweiterung mit Vermeidung von Redundanzen
     *   Beurteilung der Suchverfahren: Optimalität, Vollständigkeit, Komplexität
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-:::
