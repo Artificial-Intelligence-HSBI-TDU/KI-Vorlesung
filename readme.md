@@ -1,5 +1,6 @@
 ---
 title: "IFM 3.2 (PO23) / IFM 5.14 (PO18) / INF701: Künstliche Intelligenz (Winter 2024/25)"
+has_license: true
 ---
 
 
@@ -480,15 +481,10 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]: https://www.digikos.de
 
 
+---
 
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
 ## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-:::
+[![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Unless otherwise noted, [this work](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung) by [Canan Yıldız](https://github.com/cyildiz), [Carsten Gips](https://github.com/cagix) and [contributors](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors) is licensed under [CC BY-SA 4.0](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md). See the [credits](CREDITS.md) for a detailed list of contributing projects.
