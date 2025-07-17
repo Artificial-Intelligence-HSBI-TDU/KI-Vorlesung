@@ -1,5 +1,5 @@
 ---
-title: "IFM 3.2 (PO23) / IFM 5.14 (PO18) / INF701: Künstliche Intelligenz (Winter 2024/25)"
+title: "IFM 3.2 (PO23) / INF701: Künstliche Intelligenz (Winter 2024/25)"
 has_license: true
 no_beamer: true
 ---
@@ -78,27 +78,6 @@ Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Sem
 Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 
 :::
-::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
-
-**Vorlesung (2 SWS)**
-
-| 07.10. - 24.01.                     |
-|:------------------------------------|
-| Mo, 11:00 - 12:30 Uhr (DE) (online) |
-| (*Flipped Classroom*)               |
-
-**Praktikum (2 SWS)**
-
-| Praktikumsgruppe | 07.10. - 24.01.                       |
-|:-----------------|:--------------------------------------|
-| G1               | Mi, 11:30 bis 13:00 Uhr (DE) (online) |
-| G2               | Mi, 14:00 bis 15:30 Uhr (DE) (online) |
-| G3               | Fr, 11:30 bis 13:00 Uhr (DE) (online) |
-
-Online-Sitzungen per Zoom (**Zugangsdaten siehe [ILIAS IFM 5.14 KI (PO18, 5. Semester)]**).
-Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
-
-:::
 ::: {.tab title="INF701 KI (TDU)"}
 
 **Vorlesung (2 SWS)**
@@ -124,7 +103,6 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 ::::::
 
 [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
-[ILIAS IFM 5.14 KI (PO18, 5. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400604&client_id=FH-Bielefeld
 [Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
 
 
@@ -132,59 +110,6 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
-
-`{{% notice style="note" title="News" %}}`{=markdown}
-`{{% expand title="17.02.25" %}}`{=markdown}
-
-**Planung Klausur GKI (01.04.25)**
-
-Die Klausur in GKI wird am Dienstag, den 01.04.25 zwischen **10:00 bis 16:00 Uhr**
-im B40 stattfinden. Die genaue Verteilung der Startzeit erfolgt per Mail über das
-LSF ca. eine Woche vorher.
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="24.01.25" %}}`{=markdown}
-
-**Planung Klausur GKI (04.02.25)**
-
-Die Klausur in GKI wird am Dienstag, den 04.02.25 von **10:00 bis ca. 11:30 Uhr**
-im B40 stattfinden.
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="09.12.24" %}}`{=markdown}
-
-Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
-bereits angekündigte offene Sprechstunde.
-
-Das Thema Deep Learning ist nicht prüfungsrelevant (aber trotzdem spannend ;).
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="04.12.24" %}}`{=markdown}
-
-Da die Projektwoche (16.-20.12.2024) mangels Interesse nicht stattfinden wird, biete ich eine
-zusätzliche Sprechstunde im Vorlesungsslot am 16.12. an.
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="29.11.24" %}}`{=markdown}
-
-**Projektwoche**: Vom 16.-20.12.2024 findet unsere gemeinsame Projektwoche des ersten und
-dritten Semesters statt. Sie können in einem Team an spannenden Aufgaben arbeiten. In den
-teilnehmenden Veranstaltungen entfallen deshalb die Vorlesungen und Übungen - wir nehmen
-mit "Grundlagen der KI" (GKI) an der Projektwoche teil :-)
-
-Wenn Sie in Ihr Projekt nachweislich Inhalte aus "Grundlagen der KI" (GKI) einbringen, zählt
-das wie ein zusätzliches Übungsblatt. Sie haben also eine zusätzliche Chance für das Testat
-(6 aus 11 Blättern) ...
-
-Melden Sie sich bis zum 04.12. unter https://www.hsbi.de/elearning/goto.php?target=crs_1460449
-an. Dort finden Sie auch weitere Informationen zum Ablauf.
-
-`{{% /expand %}}`{=markdown}
-`{{% /notice %}}`{=markdown}
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
@@ -212,71 +137,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 | _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
 :::
-::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
-
-`{{% notice style="note" title="News" %}}`{=markdown}
-`{{% expand title="17.02.25" %}}`{=markdown}
-
-**Planung Klausur KI (01.04.25)**
-
-Die Klausur in KI wird am Dienstag, den 01.04.25 zwischen **10:00 bis 14:00 Uhr**
-im B40 stattfinden. Die genaue Verteilung der Startzeit erfolgt per Mail über das
-LSF ca. eine Woche vorher.
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="24.01.25" %}}`{=markdown}
-
-**Planung Klausur KI (04.02.25)**
-
-Die Klausur in KI wird am Dienstag, den 04.02.25 von **12:00 bis ca. 13:30 Uhr**
-im B40 stattfinden.
-
-`{{% /expand %}}`{=markdown}
-
-`{{% expand title="09.12.24" %}}`{=markdown}
-
-Am 16.12. wird es in der Vorlesung eine Einführung ins Deep Learning geben sowie die
-bereits angekündigte offene Sprechstunde.
-
-Das Thema Deep Learning ist nicht prüfungsrelevant (aber trotzdem spannend ;).
-
-`{{% /expand %}}`{=markdown}
-`{{% /notice %}}`{=markdown}
-
-Hier finden Sie einen abonnierbaren [Google Kalender IFM 5.14 KI (PO18, 5. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
-
-Abgabe der Übungsblätter jeweils **Mittwoch bis 11:00 Uhr** [im ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420536&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
-
-| Monat                | Woche | Vorlesung                                                                                                    | Lead           | Abgabe Aufgabenblatt          | Vorstellung Praktikum |
-|:---------------------|:------|:-------------------------------------------------------------------------------------------------------------|:---------------|:------------------------------|:----------------------|
-| Oktober              | 41    | 07.: [Orga] (*Zoom*); [Einführung KI], [Problemlösen]; [Machine Learning 101], [Perzeptron]                  | Carsten, Canan |                               |                       |
-|                      | 42    | 14.: [Lineare Regression]                                                                                    | Canan          | 16.: [Blatt: Perzeptron]      | 16. / 18.             |
-|                      | 43    | 21.: [Logistische Regression]                                                                                | Canan          |                               |                       |
-|                      | 44    | 28.: [Overfitting], [Multilayer Perceptron]                                                                  | Canan          |                               |                       |
-| November             | 45    | 04.: [Backpropagation]                                                                                       | Canan          | 06.: [Blatt: Regression]      | 06. / 08.             |
-|                      | 46    | 11.: [Training & Testing], [Performanzanalyse]                                                               | Canan          | 13.: [Blatt: MLP]             | 13. / 15.             |
-|                      | 47    | 18.: [Machine Learning 101], [CAL2], [Pruning], [CAL3], [Entropie], [ID3 und C4.5]                           | Carsten        | 20.: [Blatt: Backpropagation] | 20. / 22.             |
-|                      | 48    | 25.: [Tiefensuche], [Breitensuche], [Branch-and-Bound], [Best First], [A-Stern]                              | Carsten        | 27.: [Blatt: DTL]             | 27. / 29.             |
-| Dezember             | 49    | 02.: [Gradientensuche], [Simulated Annealing]; [Intro EA/GA], [Genetische Algorithmen]                       | Carsten        | 04.: [Blatt: Suche]           | 04. / 06.             |
-|                      | 50    | 09.: [Optimale Spiele], [Games mit Minimax], [Minimax und Heuristiken], [Alpha-Beta-Pruning]                 | Carsten        | 11.: [Blatt: EA/GA]           | 11. / 13.             |
-|                      | 51    | 16.: ~~Projektwoche Semester 1+3~~ Intro Deep Learning und offene Sprechstunde                               | Canan, Carsten | 18.: [Blatt: Games]           | 18. / 20.             |
-|                      | 52    | 23.: _Weihnachtspause_                                                                                       |                |                               |                       |
-|                      | 01    | 30.: _Weihnachtspause_                                                                                       |                |                               |                       |
-| Januar               | 02    | 06.: [Einführung Constraints], [Lösen von diskreten CSP], [CSP und Heuristiken], [Kantenkonsistenz und AC-3] | Carsten        |                               |                       |
-|                      | 03    | 13.: [Wahrscheinlichkeitstheorie], [Naive Bayes]                                                             | Carsten        | 15.: [Blatt: CSP]             | 15. / 17.             |
-|                      | 04    | 20.: Rückblick (*Zoom*), [Prüfungsvorbereitung HSBI]                                                         | Carsten        | 22.: [Blatt: Naive Bayes]     | 22. / 24.             |
-| _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 10-18 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
-| _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
-
-:::
 ::: {.tab title="INF701 KI (TDU)"}
-
-<!--
-`{{% notice style="note" title="News" %}}`{=markdown}
-Here be dragons ...
-`{{% /notice %}}`{=markdown}
--->
 
 | KW | Monat | Tag                            | Vorlesung                                                                                               | Lead           | Abgabe Übung             |
 |:---|:------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|
@@ -301,7 +162,6 @@ Here be dragons ...
 ::::::
 
 [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)]: https://calendar.google.com/calendar/ical/552fdc6c19e64eda7b36b2d16a88bf4b7e593af2c520afbe1aeeb0bb4f43107d%40group.calendar.google.com/public/basic.ics
-[Google Kalender IFM 5.14 KI (PO18, 5. Semester)]: https://calendar.google.com/calendar/ical/5ad0fbba66a7823a0687b9ed373dcb3bdc1cc8d87139f755e7188face897f129%40group.calendar.google.com/public/basic.ics
 
 [Orga]: https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#überblick-modulinhalte
 
@@ -393,32 +253,6 @@ Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 01. April 2025
 angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
 Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für GKI findet zwischen
 **10 Uhr bis 16 Uhr** statt (Bekanntgabe der konkreten Startzeit per Mail ca. eine Woche
-vor dem Termin) und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
-zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs
-(Winter 2024/25). Weitere Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
-
-:::
-::: {.tab title="IFM 5.14 KI (HSBI, PO18, 5. Semester)"}
-
-**Klausur plus Testat**, 5 ECTS
-
-*   **Testat**: Vergabe der Credit-Points
-
-    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
-
-    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams),
-    je mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
-    Vorstellung der Lösungen im Praktikum)
-
-*   **Klausur**: => Modulnote
-
-    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
-    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
-
-Die nächste Klausur für "Künstliche Intelligenz" wird am **Dienstag, 01. April 2025**
-angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für KI findet zwischen
-**10 Uhr bis 14 Uhr** statt (Bekanntgabe der konkreten Startzeit per Mail ca. eine Woche
 vor dem Termin) und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als Hilfsmittel
 zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt durchgeführten Kurs
 (Winter 2024/25). Weitere Informationen siehe [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
