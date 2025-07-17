@@ -1,5 +1,6 @@
 ---
 title: "Suche"
+no_pdf: true
 ---
 
 

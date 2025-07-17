@@ -1,5 +1,6 @@
 ---
 title: "Spiele"
+no_pdf: true
 ---
 
 

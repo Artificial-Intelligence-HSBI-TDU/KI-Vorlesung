@@ -1,5 +1,6 @@
 ---
 title: "Entscheidungsbäume (Decision Tree Learner - DTL)"
+no_pdf: true
 ---
 
 

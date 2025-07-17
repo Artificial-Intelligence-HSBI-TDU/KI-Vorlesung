@@ -1,5 +1,6 @@
 ---
 title: "Einführung KI"
+no_pdf: true
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: "Genetische Algorithmen"
+no_pdf: true
 ---
 
 

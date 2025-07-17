@@ -1,5 +1,6 @@
 ---
 title: "Praktikum/Übung"
+no_pdf: true
 ---
 
 

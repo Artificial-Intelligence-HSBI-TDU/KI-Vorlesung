@@ -1,5 +1,6 @@
 ---
 title: "Naive Bayes"
+no_pdf: true
 ---
 
 
