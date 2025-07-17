@@ -13,20 +13,3 @@ Einen Entscheidungsbaum kann man zur Klassifikation eines Objekts schrittweise d
 jeden Knoten fragt man die Ausprägung des Merkmals im Objekt ab und wählt den passenden Ausgang
 aus dem Knoten. Wenn man am Blatt angekommen ist, hat man die Antwort des Baumes auf das Objekt,
 d.h. üblicherweise die Klasse.
-
-
-`{{< children showhidden="true" >}}`{=markdown}
-
-
-
-
-
-
-
-<!-- DO NOT REMOVE - THIS IS A LAST SLIDE TO INDICATE THE LICENSE AND POSSIBLE EXCEPTIONS (IMAGES, ...). -->
-::: slides
-## LICENSE
-![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-
-Unless otherwise noted, this work is licensed under CC BY-SA 4.0.
-:::
