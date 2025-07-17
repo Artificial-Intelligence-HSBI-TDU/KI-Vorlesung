@@ -35,7 +35,7 @@ fhmedia:
 ---
 
 
-## Motivation: Einfärben von Landkarten
+# Motivation: Einfärben von Landkarten
 
 ![](images/map.png){width="50%"}
 
@@ -47,7 +47,7 @@ grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
 :::
 
 
-## Einfärben von Landkarten: Formalisierung
+# Einfärben von Landkarten: Formalisierung
 
 :::::: slides
 ![](images/map_numbered.png){width="30%"}
@@ -67,7 +67,7 @@ grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
     \operatorname{D} = red, \operatorname{E} = blue, \operatorname{F} = blue \rbrace$
 
 
-## Definition: Constraint Satisfaction Problem (CSP)
+# Definition: Constraint Satisfaction Problem (CSP)
 
 *   Ein CSP $\langle V, D, C \rangle$ besteht aus:
     *   Menge von **Variablen** $V = \lbrace V_1, V_2, \ldots, V_n \rbrace$
@@ -89,7 +89,7 @@ grenzende Länder müssen unterschiedliche Farben bekommen (=> *Constraint*).
 *   **Lösung** eines CSP: Vollständige und konsistente Belegung
 
 
-## Constraint-Graph
+# Constraint-Graph
 
 ![](images/map_graph.png){width="80%"}
 
@@ -100,7 +100,7 @@ bekannten Algorithmen anwenden ...
 :::
 
 
-## Constraints -- Arität
+# Constraints -- Arität
 
 ::: notes
 Die *Arität* betrifft hier die "Stelligkeit": Wie viele Variablen stehen in
@@ -128,7 +128,7 @@ ein Constraint?)
     Abbildung über Gewichtung => Constraint-Optimierungsproblem (COP)
 
 
-## Constraints -- Wertebereiche
+# Constraints -- Wertebereiche
 
 *   **Endliche Domänen**: $d$ Werte => $O(d^n)$ mögliche Zuweisungen \newline
     (exponentiell in der Zahl der Variablen)
@@ -148,7 +148,7 @@ ein Constraint?)
 *   **Constraint Solving**: unendliche Domänen
 
 
-## CSP sind überall ...
+# CSP sind überall ...
 
 *   Stundenpläne (Klassen, Räume, Zeiten)
 *   Konfiguration (Computer, Autos, ...)
@@ -158,7 +158,7 @@ ein Constraint?)
 *   ...
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Definitionen und Begriffe:
     *   Variable, (un-) endliche Domänen, Wertemenge

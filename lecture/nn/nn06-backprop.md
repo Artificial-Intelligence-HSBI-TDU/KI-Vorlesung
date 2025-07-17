@@ -29,9 +29,9 @@ attachments:
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Forwärts- und Rückwärtslauf
+## Forwärts- und Rückwärtslauf
 
 *   Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner **Forwärtsschritt** von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet:
     $$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1}$$
@@ -55,7 +55,7 @@ attachments:
     *   Der Rückwärtschritt übernimmt $dA^{[l]}$ von dem vorherigen Schritt und gibt $dA^{[l-1]}$ an den nächsten Rückwärtsschritt weiter.
 
 
-### Parameteraktualisierung
+## Parameteraktualisierung
 
 *   Die Aktualisierung der Parameter in Schicht $l$ erfolgt wie gewohnt durch:
     $$W^{[l]} = W^{[l]} - \alpha \text{ } dW^{[l]} \tag{7}$$

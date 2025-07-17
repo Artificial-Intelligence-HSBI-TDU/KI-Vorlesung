@@ -42,7 +42,7 @@ fhmedia:
 ---
 
 
-## Was ist (künstliche) Intelligenz?
+# Was ist (künstliche) Intelligenz?
 
 ![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%"}
 
@@ -57,7 +57,7 @@ fhmedia:
 [[Diskussion]{.ex}]{.slides}
 
 
-## Definition Intelligenz
+# Definition Intelligenz
 
 > Intelligenz (von lat. *intellegere* "verstehen", wörtlich "wählen zwischen ..."
 > von lat. *inter* "zwischen" und *legere* "lesen, wählen") ist in der
@@ -107,7 +107,7 @@ kognitiven Fähigkeiten wie Glaube und Wille spielen derzeit keine Rolle in der 
 :::
 
 
-## Versuch einer Definition für "KI"
+# Versuch einer Definition für "KI"
 
 > Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als
 > verfügten sie über Intelligenz.
@@ -179,7 +179,7 @@ Lesen Sie selbst: [VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DE
 :::
 
 
-## Alan Turing 1950: Turing-Test (begründet Zweige der KI)
+# Alan Turing 1950: Turing-Test (begründet Zweige der KI)
 
 ::: notes
 *   Wann verhält sich eine Maschine intelligent?
@@ -209,9 +209,9 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 :::
 
 
-## Starke vs. schwache KI
+# Starke vs. schwache KI
 
-### "Schwache KI"
+## "Schwache KI"
 *   Simulation intelligenten Verhaltens
 *   Lösung konkreter Probleme
 *   Adaptives Verhalten ("Lernen")
@@ -220,7 +220,7 @@ nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 \bigskip
 \bigskip
 
-### "Starke KI"
+## "Starke KI"
 *   Eigenschaften der "schwachen KI"
 *   Intelligenz nach menschlichen Maßstäben (auf "Augenhöhe")
 *   Bewusstsein
@@ -234,7 +234,7 @@ Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
 :::
 
 
-## Typische Ansätze in der KI
+# Typische Ansätze in der KI
 
 ![](images/dimensionen-ki.png){width="60%"}
 
@@ -262,7 +262,7 @@ Damit erhält man vier Kombinationen:
 *   Menschliches Verhalten
 
 
-### Menschliches Denken: Kognitive Modellierung
+## Menschliches Denken: Kognitive Modellierung
 
 *   Welche kognitiven Fähigkeiten sind für intelligentes Verhalten nötig?
     Wie laufen Denkprozesse im Gehirn ab?
@@ -284,7 +284,7 @@ kann diese Tradition aktuell große Erfolge vorzeigen.
 `{{% /notice %}}`{=markdown}
 
 
-### Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? => Wie sollen wir denken?
+## Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? => Wie sollen wir denken?
 
 Beispiel:
 
@@ -308,7 +308,7 @@ realen Welt.
 `{{% /notice %}}`{=markdown}
 
 
-### Rationales Verhalten: Das "Richtige" tun
+## Rationales Verhalten: Das "Richtige" tun
 
 *   Das "Richtige": Verhalten zum Erzielen des besten (erwarteten)
     Ergebnisses (unter Berücksichtigung der verfügbaren Informationen)
@@ -334,12 +334,12 @@ Gesundheitswesen, Finanzen, Marketing und vielen weiteren.
 `{{% /notice %}}`{=markdown}
 
 
-### Menschliches Verhalten: Na ja, Sie wissen schon ;-)
+## Menschliches Verhalten: Na ja, Sie wissen schon ;-)
 :::::::::
 
 
 ::: notes
-## Modelle, Lernen und Vorhersagen
+# Modelle, Lernen und Vorhersagen
 
 In der Informatik allgemein und auch in der KI versuchen wir, Probleme der realen Welt mit
 Hilfe von künstlichen Systemen (Algorithmen, Software) zu lösen. Dafür brauchen wir zunächst
@@ -397,7 +397,7 @@ ich in diesem Skript diesen Begriff nicht für das Generieren einer Vorhersage n
 
 
 ::: notes
-## Modellkomplexität
+# Modellkomplexität
 
 In der KI werden sehr unterschiedliche Modelle betrachtet, die auch eine sehr unterschiedliche
 Komplexität aufweisen.
@@ -438,7 +438,7 @@ Programmiersprache Prolog.
 :::
 
 
-## Kurzer Geschichtsüberblick -- Wichtigste Meilensteine
+# Kurzer Geschichtsüberblick -- Wichtigste Meilensteine
 
 *   1943: McCulloch/Pitts: binäres Modell eines Neurons
 *   1950: Turing-Test
@@ -457,7 +457,7 @@ Programmiersprache Prolog.
 
 Siehe auch Abbildung 1.3 in [@Ertel2017, S.8] ...
 
-## Wrap-Up
+# Wrap-Up
 
 *   Definition von "Intelligenz" nicht ganz einfach
 *   Dimensionen: Denken vs. Verhalten, menschlich vs. rational

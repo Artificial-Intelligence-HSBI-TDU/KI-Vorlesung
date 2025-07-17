@@ -51,7 +51,7 @@ challenges: |
 ---
 
 
-## Hole das Buch
+# Hole das Buch
 
 :::center
 ![](images/graph.png){width="60%"}
@@ -82,7 +82,7 @@ Varianten:
 *   **A\***
 :::
 
-## A\*-Suche
+# A\*-Suche
 
 *   Kombination aus Branch-and-Bound und Best-First-Suche
 
@@ -107,7 +107,7 @@ Varianten:
 
 
 ::: notes
-## Konventionen für diese Lehrveranstaltung
+# Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -131,7 +131,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 :::
 
 
-## A\*-Suche -- Anforderungen an Heuristik (Tree-Search)
+# A\*-Suche -- Anforderungen an Heuristik (Tree-Search)
 
 **Tree-Search-Variante**: Die Heuristik muss **zulässig** sein:
 
@@ -151,7 +151,7 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 :::
 
 
-## A\* ist optimal
+# A\* ist optimal
 
 A\* (Tree-Search-Variante) mit zulässiger Heuristik ist optimal.
 
@@ -165,7 +165,7 @@ Beweis siehe Übungsblatt "Blatt 01" :-)
 Beweis siehe Übung :-)
 :::
 
-## Einfache Verbesserungen A\* (Tree-Search)
+# Einfache Verbesserungen A\* (Tree-Search)
 
 *   Dynamische Programmierung: Behalte von mehreren Pfaden zum gleichen Knoten
     nur den günstigsten in der Queue
@@ -180,7 +180,7 @@ Beweis siehe Übung :-)
     => Achtung: Dann schärfere Anforderungen an Heuristik (Konsistenz)
 
 
-## A\*-Suche -- Anforderungen an Heuristik (Graph-Search)
+# A\*-Suche -- Anforderungen an Heuristik (Graph-Search)
 
 **Graph-Search-Variante**: Die Heuristik muss **konsistent** sein:
 
@@ -203,7 +203,7 @@ Außerdem muss gelten:
 :::
 
 
-## Eigenschaften Branch-and-Bound, Best-First, A\* {#vergleich-bnb-bf-astar}
+# Eigenschaften Branch-and-Bound, Best-First, A\* {#vergleich-bnb-bf-astar}
 
 <!-- XXX Tabelle doppelt: optimierter Umbruch für Slides -->
 
@@ -232,7 +232,7 @@ Außerdem muss gelten:
 [^5]: gilt für Tree-Search-Variante; vollständig bei Graph-Search und endlichen Problemräumen
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Informierte Suchverfahren
     *   Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten

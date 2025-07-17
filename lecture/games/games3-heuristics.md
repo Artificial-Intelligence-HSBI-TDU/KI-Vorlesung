@@ -38,7 +38,7 @@ fhmedia:
 ---
 
 
-## Wenn die Zeit nicht reicht: Suchtiefe begrenzen
+# Wenn die Zeit nicht reicht: Suchtiefe begrenzen
 
 *   Einführung neuer Funktionen:
     1.  `Cutoff-Test` statt `Terminal-Test`
@@ -58,7 +58,7 @@ fhmedia:
     2.  Schnell zu berechnen (!)
 
 
-## Beispiel Schach
+# Beispiel Schach
 
 *   Mögliche Evaluierungskriterien:
     *   Materialwert: Bauer 1, Läufer/Springer 3, Turm  5, Dame 9
@@ -78,7 +78,7 @@ fhmedia:
     => Lookup mit $\operatorname{Eval}(s)$ [(statt Berechnung zur Laufzeit)]{.notes}
 
 
-## Minimax mit mehreren Spielern
+# Minimax mit mehreren Spielern
 
 ::: slides
 \bigskip
@@ -101,7 +101,7 @@ der für einen der Mitspieler günstiger ist.
 :::
 
 
-## Zufallsspiele
+# Zufallsspiele
 
 ![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
@@ -110,7 +110,7 @@ der für einen der Mitspieler günstiger ist.
 Backgammon: Was ist in dieser Situation der optimale Zug?
 
 
-## Minimax mit Zufallsspielen: ZUFALLS-Knoten
+# Minimax mit Zufallsspielen: ZUFALLS-Knoten
 
 ::: slides
 \bigskip
@@ -133,7 +133,7 @@ annotiert wird.
 [[Tafelbeispiel]{.ex}]{.slides}
 
 
-## Minimax mit Zufall: Expectimax
+# Minimax mit Zufall: Expectimax
 
 Expectimax-Wert für Zufallsknoten $C$:
 
@@ -165,7 +165,7 @@ Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger arbeiten.
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Minimax:
     *   Kriterien zur Begrenzung der Suchtiefe, Bewertung `Eval` statt `Utility`

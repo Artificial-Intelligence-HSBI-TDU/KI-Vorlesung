@@ -24,14 +24,14 @@ attachments:
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Nichtlineare Modelle
+## Nichtlineare Modelle
 *   Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der ursprünglichen Merkmale
 *   Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen Beziehungen
 *   **Bemerkung**: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird weiterhin logistische Regression in einem **erweiterten** Merkmalraum durchgeführt.
 
-### Überanpassung und Regularisierung
+## Überanpassung und Regularisierung
 
 *   Die **Überanpassung** (engl. Overfitting) ist eines der häufigsten und wichtigsten Probleme in ML und DL
 *   "Was im Bereich des maschinellen Lernens Professionelle von Amateuren unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen." [@AbuMostafa2012, S. 119]

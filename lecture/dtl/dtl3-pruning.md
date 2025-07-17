@@ -38,7 +38,7 @@ fhmedia:
 ---
 
 
-## Pruning: Bedingt irrelevante Attribute
+# Pruning: Bedingt irrelevante Attribute
 
 **Baum**: $\alpha = x_1(x_2(A, B),  x_2(A, B),  x_2(A, B))$
 
@@ -71,7 +71,7 @@ Weg ...
 :::
 
 
-## Pruning: Bedingt redundante Attribute
+# Pruning: Bedingt redundante Attribute
 
 **Baum**: $\alpha = x_1(\ast,  \ast,  x_2(A, B))$
 
@@ -106,14 +106,14 @@ der leere Weg ...
 :::
 
 
-## Allgemeine Transformationsregel
+# Allgemeine Transformationsregel
 
 $$
     x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))
 $$
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Pruning: Entfernen bedingt redundanter und irrelevanter Tests
 *   Transformationsregel zum Umbauen von Entscheidungsbäumen

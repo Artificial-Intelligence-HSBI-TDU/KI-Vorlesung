@@ -68,7 +68,7 @@ challenges: |
 ---
 
 
-## Was ist Lernen?
+# Was ist Lernen?
 
 \pause
 
@@ -81,7 +81,7 @@ challenges: |
 
 
 ::: notes
-## Warum Lernen?
+# Warum Lernen?
 
 *   Nicht alle Situationen vorhersehbar
 *   Nicht alle Details modellierbar
@@ -97,12 +97,12 @@ challenges: |
 [[Warum Lernen?]{.ex}]{.slides}
 
 
-## Learning Agent
+# Learning Agent
 
 ![](images/learning.png){width="80%"}
 
 
-## Feedback während des Lernens
+# Feedback während des Lernens
 
 *   **Überwachtes Lernen**
     *   Lernen durch Beobachtung
@@ -132,7 +132,7 @@ challenges: |
 :::
 
 
-## Beispiel: Kreditrisiko
+# Beispiel: Kreditrisiko
 
 *   Bankkunde beantragt Kredit
 *   Soll er aus Sicht der Bank den Kredit bekommen?
@@ -151,7 +151,7 @@ challenges: |
     *   **Regression**: Vorhersage Gewinn/Verlust für die Bank  [(Höhe des Gewinns/Verlusts interessant)]{.notes}
 
 
-## Beispiel: Autoreparatur
+# Beispiel: Autoreparatur
 
 *   **Gegeben**: Eigenschaften eines Autos
 
@@ -164,7 +164,7 @@ challenges: |
     => Hypothese über den Merkmalen (Funktion $\operatorname{h}$)
 
 
-## Lernen durch Beobachten: Lernen einer Funktion $\operatorname{f}$
+# Lernen durch Beobachten: Lernen einer Funktion $\operatorname{f}$
 
 ::: notes
 Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beispielen
@@ -196,7 +196,7 @@ Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beis
 :::
 
 
-## Konstruieren einer konsistenten Hypothese
+# Konstruieren einer konsistenten Hypothese
 
 ![](images/occams1.png){width="60%"}
 
@@ -206,7 +206,7 @@ Wir haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
 :::
 
 
-## Konstruieren einer konsistenten Hypothese (cnt.)
+# Konstruieren einer konsistenten Hypothese (cnt.)
 
 ![](images/occams2.png){width="60%"}
 
@@ -217,7 +217,7 @@ relativ hohen (Trainings-) Fehler.
 :::
 
 
-## Konstruieren einer konsistenten Hypothese (cnt.)
+# Konstruieren einer konsistenten Hypothese (cnt.)
 
 ![](images/occams3.png){width="60%"}
 
@@ -228,7 +228,7 @@ oder ein Ausreißer ist, den man gefahrlos ignorieren kann?
 :::
 
 
-## Konstruieren einer konsistenten Hypothese (cnt.)
+# Konstruieren einer konsistenten Hypothese (cnt.)
 
 ![](images/occams4.png){width="60%"}
 
@@ -243,7 +243,7 @@ keine Ausreißer o.ä. gibt.)
 :::
 
 
-## Konstruieren einer konsistenten Hypothese (cnt.)
+# Konstruieren einer konsistenten Hypothese (cnt.)
 
 ![](images/occams5.png){width="60%"}
 
@@ -260,7 +260,7 @@ den Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
 :::
 
 
-## Occam's Razor
+# Occam's Razor
 
 \large
 
@@ -277,7 +277,7 @@ den Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
 :::
 
 
-## Trainingsdaten und Merkmalsvektoren
+# Trainingsdaten und Merkmalsvektoren
 
 Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe $\operatorname{f}(\mathbf{x})$
 
@@ -299,7 +299,7 @@ Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe $\operatorn
 *   Zusammenfassen der relevanten Merkmale zu Vektoren
 
 
-## Beispiel: Schwimmen im See
+# Beispiel: Schwimmen im See
 
 Beschreibung der Faktoren, wann ich im See schwimmen möchte:
 
@@ -330,7 +330,7 @@ für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
 :::
 
 
-## Trainingsdaten -- Merkmalsvektoren
+# Trainingsdaten -- Merkmalsvektoren
 
 **Generell**: Merkmalsvektor für Objekt $v$:
 $$
@@ -359,7 +359,7 @@ Attribute hat einen Typ und damit eine bestimmte Anzahl erlaubter Werte
 [[Analogie Konstruktor Klasse $x$]{.ex}]{.slides}
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Lernen ist Verhaltensänderung, Ziel: Optimierung einer Gütefunktion
     *   Aufbau einer Hypothese, die beobachtete Daten erklären soll

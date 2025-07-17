@@ -45,10 +45,10 @@ challenges: |
 ---
 
 
-## Wie Attribute wählen?
+# Wie Attribute wählen?
 
 ::: notes
-### Erinnerung: CAL2/CAL3
+## Erinnerung: CAL2/CAL3
 
 *   Zyklische Iteration durch die Trainingsmenge
 *   Ausschließlich aktuelles Objekt betrachtet
@@ -57,7 +57,7 @@ challenges: |
 => Betrachte stattdessen die komplette Trainingsmenge!
 :::
 
-### Relevanz => Informationsgehalt
+## Relevanz => Informationsgehalt
 
 *   Shannon/Weaver (1949): **Entropie**
     *   Maß für die Unsicherheit einer Zufallsvariablen
@@ -65,7 +65,7 @@ challenges: |
 
 \bigskip
 
-### Beispiele
+## Beispiele
 
 *   Münze, die immer auf dem Rand landet: keine Unsicherheit, 0 Bit
 *   Faire Münze: Kopf oder Zahl: Entropie 1 Bit
@@ -76,7 +76,7 @@ challenges: |
 => Anzahl der Ja/Nein-Fragen, um zur gleichen Information zu kommen
 
 
-## Definition der Entropie $H(V)$ für Zufallsvariable $V$
+# Definition der Entropie $H(V)$ für Zufallsvariable $V$
 
 \bigskip
 
@@ -111,7 +111,7 @@ $\log_2 x = \frac{\log_{10} x}{\log_{10} 2} = \frac{\log x}{\log 2}$
 :::
 
 
-## Beispiele Entropie: faire Münze
+# Beispiele Entropie: faire Münze
 
 ::: cbox
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
@@ -136,7 +136,7 @@ $\log_2 0.5 = -1$
 ::::::
 
 
-## Beispiele Entropie: unfaire Münze
+# Beispiele Entropie: unfaire Münze
 
 ::: cbox
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
@@ -167,7 +167,7 @@ $\log_2 0.99 \approx -0,014$
 ::::::
 
 
-## Beispiele Entropie: 4-seitiger Würfel
+# Beispiele Entropie: 4-seitiger Würfel
 
 ::: cbox
 Entropie: $H(V) = -\sum_k p_k \log_2 p_k$
@@ -194,7 +194,7 @@ $\log_2 0.25 = -2$
 ::::::
 
 
-## Entropie der Trainingsmenge: Häufigkeit der Klassen zählen
+# Entropie der Trainingsmenge: Häufigkeit der Klassen zählen
 
 :::::: columns
 ::: {.column width="35%"}
@@ -236,7 +236,7 @@ $$
 $$
 
 
-## Mittlere Entropie nach Betrachtung von Attribut $A$
+# Mittlere Entropie nach Betrachtung von Attribut $A$
 
 \large
 
@@ -256,7 +256,7 @@ $$
 :::
 
 
-## Entropie der Trainingsmenge nach Attributwahl
+# Entropie der Trainingsmenge nach Attributwahl
 
 :::::: columns
 ::: {.column width="40%"}
@@ -301,7 +301,7 @@ $$
 
 
 ::: notes
-## Ausblick: Gini Impurity
+# Ausblick: Gini Impurity
 
 Wir haben hier die [Entropie](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain)
 als Maß für den Informationsgehalt einer Trainingsmenge genutzt. $R(S,A)$ als die mittlere
@@ -324,7 +324,7 @@ Hierzu drei lesenswerte Blog-Einträge:
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Begriff und Berechnung der Entropie: Maß für die Unsicherheit
 *   Begriff und Berechnung des Informationsgewinns

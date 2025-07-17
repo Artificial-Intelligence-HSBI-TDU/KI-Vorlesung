@@ -56,7 +56,7 @@ challenges: |
 ---
 
 
-## VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?
+# VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?
 
 ![](images/bt_search_mrv.png){width="65%"}
 
@@ -84,7 +84,7 @@ Beispiel:
 :::
 
 
-## VARIABLES: Gleichstand bei MRV
+# VARIABLES: Gleichstand bei MRV
 
 ![](images/bt_search_mrv.png){width="65%"}
 
@@ -115,7 +115,7 @@ Beispiel:
 :::
 
 
-## VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?
+# VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?
 
 ![](images/bt_search_lcv.png){width="65%"}
 
@@ -156,6 +156,6 @@ Aufwand entsteht.
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV

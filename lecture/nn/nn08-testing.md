@@ -31,11 +31,11 @@ attachments:
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Performanzmetriken für Klassifizierungsprobleme
+## Performanzmetriken für Klassifizierungsprobleme
 
-#### Wahrheitsmatrix (engl. Confusion Matrix)
+### Wahrheitsmatrix (engl. Confusion Matrix)
 *   Gibt eine Übersicht über die Anzahl von richtig und falsch klassifizierten Datenpunkten (bei binärer Klassifizierung)
     *   $TP =$ # True Positives $=$ Anzahl richtiger 1-Vorhersagen
     *   $FP =$ # False Positives $=$ Anzahl falscher 1-Vorhersagen
@@ -45,7 +45,7 @@ attachments:
 
 ![Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung](images/nn8-1.png)
 
-#### Treffergenauigkeit (engl. Accuracy)
+### Treffergenauigkeit (engl. Accuracy)
 *   Anzahl richtig klassifizierter Datenpunkte, Erfolgsrate (engl. correct rate)
     $$Accuracy = \frac{TP+TN}{TP+TN+FP+FN}$$
 
@@ -54,7 +54,7 @@ attachments:
     *   Klasse 1 hat 10, Klasse 0 hat 990 Beispiele.
     *   Ein Modell, das immer 0 ausgibt, hat $990/1000 = 0.99$ Treffergenauigkeit, ist aber offensichtlich kein gutes Modell!
 
-#### Precision
+### Precision
 
 *   Positive Predictive Value (PPV)
 *   Antwort auf: Von allen **positiven Vorhersagen**, wie viele sind richtig?
@@ -63,7 +63,7 @@ attachments:
 *   Je näher an 1, desto besser.
 *   Accuracy of **positive predictions**.
 
-#### Recall
+### Recall
 
 *   True Positive Rate, auch Sensitivität (engl. Sensitivity)
 *   Antwort auf: Von allen **positiven Beispielen**, wie viele wurden richtig klassifiziert?
@@ -72,14 +72,14 @@ attachments:
 *   Je näher an 1, desto besser.
 *   Accuracy of **positive examples**.
 
-#### Precision-Recall Trade-off
+### Precision-Recall Trade-off
 *   Ein gutes Modell sollte hohe Precision und zugleich hohes Recall haben.
 *   Man kann die Precision eines Modells beliebig erhöhen (durch das Vergrößern des Schwellenwertes bei der Klassifizierung), jedoch wird dabei der Recall abnehmen.
 *   Genau so kann man den Recall eines Modells beliebig erhöhen (durch das Verkleinern des Schwellenwertes bei der Klassifizierung), jedoch wird dabei die Precision abnehmen.
 *   Es gilt ein gutes Trade-off zu finden.
 *   Eine Zwei-Zahlen-Metrik erschwert den Entscheidungsprozess bei Evaluierung und Modellauswahl.
 
-#### $F_1$-Score (Harmonisches Mittel)
+### $F_1$-Score (Harmonisches Mittel)
 
 *   Fasst Precision (P) und Recall (R) in einer Metrik zusammen (Harmonisches Mittel von P und R):
     $$F_1-Score = \frac{2}{\frac{1}{P} + \frac{1}{R}} = 2 \cdot \frac{PR}{P + R}$$

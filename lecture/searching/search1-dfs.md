@@ -34,7 +34,7 @@ fhmedia:
 ---
 
 
-## Hole das Buch
+# Hole das Buch
 
 :::center
 ![](images/scene.png){width="60%"}
@@ -55,7 +55,7 @@ Es stehen zwei Aktionen zur Verfügung:
 Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen (Pfeilrichtung).
 :::
 
-## Problemgraph zum Kopiererbeispiel
+# Problemgraph zum Kopiererbeispiel
 
 :::center
 ![](images/graph.png){width="60%"}
@@ -79,7 +79,7 @@ Varianten:
 :::
 
 ::: notes
-## Anmerkungen Wegesuche (Landkarte)
+# Anmerkungen Wegesuche (Landkarte)
 
 Bei der Wegesuche hat man den Problemgraphen bereits durch die Orte und die Verbindungen (Straßen)
 zwischen ihnen gegeben. Es gibt nur eine ausführbare Aktion: "*fahre nach*".
@@ -96,7 +96,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 :::
 
 
-## Tiefensuche (*TS*, *DFS*)
+# Tiefensuche (*TS*, *DFS*)
 
 ::: notes
 **Erinnerung Tree-Search**
@@ -128,7 +128,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
 -->
 
 ::::::::: notes
-## Bemerkungen
+# Bemerkungen
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
 
@@ -149,7 +149,7 @@ In dieser Veranstaltung ist dies die alphabetische Reihenfolge der Knoten (Orte)
     aktuellen Weg mit noch offenen Alternativen ...
 
 
-## Konventionen für diese Lehrveranstaltung
+# Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -164,7 +164,7 @@ nicht modifiziert werden. (Bei "echten" Problemen wird die Reihenfolge der expan
 Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)
 
 
-## Weitere Hinweise
+# Weitere Hinweise
 
 *   Die Tiefensuche wurde zufällig am Beispiel Tree-Search eingeführt. Man kann auch Graph-Search
     einsetzen. Wichtig ist nur, dass als Datenstruktur ein **Stack** genutzt wird.
@@ -178,7 +178,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 :::::::::
 
 
-## Tiefensuche (rekursive Variante)
+# Tiefensuche (rekursive Variante)
 
 1.  Startknoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
 2.  Für jeden Nachfolger des Startknotens:
@@ -187,7 +187,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 3.  Abbruch, melde "*nicht gefunden*"
 
 ::: notes
-### Bemerkungen
+## Bemerkungen
 
 *   Eigenschaften wie "normale" Tiefensuche
 *   Einfacher zu implementieren: Nutzung des Stacks wird auf den Compiler
@@ -198,13 +198,13 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 
 
 ::: notes
-## Eigenschaften der Tiefensuche
+# Eigenschaften der Tiefensuche
 
 Siehe [Breitensuche](search2-bfs.md)
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Uninformierte Suchverfahren
     *   Keine weiteren Pfadkosten (nur Anzahl der Schritte)

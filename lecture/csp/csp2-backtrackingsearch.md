@@ -24,14 +24,14 @@ fhmedia:
 ---
 
 
-## Einfärben von Landkarten als CSP
+# Einfärben von Landkarten als CSP
 
 ![](images/map_graph.png){width="80%"}
 
 [[Tafelbeispiel: Suche nach Lösung]{.ex}]{.slides}
 
 
-## Endliche Domänen: Formulierung als Suchproblem
+# Endliche Domänen: Formulierung als Suchproblem
 
 ``` python
 def BT_Search(assignment, csp):
@@ -61,7 +61,7 @@ Backtracking.
 :::
 
 
-## BT-Suche für CSP am Beispiel Landkartenfärbeproblem
+# BT-Suche für CSP am Beispiel Landkartenfärbeproblem
 
 ::::::::: slides
 :::::: columns
@@ -79,6 +79,6 @@ Backtracking.
 :::::::::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Lösung von CSP mit endlichen Domänen mit Hilfe der Backtracking-Suche

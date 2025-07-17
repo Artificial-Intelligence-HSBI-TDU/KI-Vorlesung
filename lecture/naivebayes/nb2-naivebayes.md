@@ -87,7 +87,7 @@ challenges: |
 ---
 
 
-## Medizinische Diagnostik mit NB
+# Medizinische Diagnostik mit NB
 
 *   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet: $P(S|A) = 0.8$
 *   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
@@ -98,7 +98,7 @@ challenges: |
 => Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 
-## Textklassifikation mit NB
+# Textklassifikation mit NB
 
 *   Mails, manuell markiert:
     *   D1: ("Sieben Zwerge fraßen sieben Ziegen", OK)
@@ -118,7 +118,7 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
 :::
 
 
-## Naive Bayes
+# Naive Bayes
 
 *   Verallgemeinerte Bayes Regel
     $$
@@ -147,7 +147,7 @@ wenden Sie diesen auf die beiden Test-Dokumente an.
     :::
 
 
-## Bayes'sches Lernen
+# Bayes'sches Lernen
 
 $$
 h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
@@ -170,7 +170,7 @@ $$
 *   $h_{MAP} = \operatorname{argmax}_{h \in H} P(h) \prod_{x \in \mathbf{x}} P(x | h)$
 
 
-## Beispiel Klassifikation mit NB
+# Beispiel Klassifikation mit NB
 
 \bigskip
 
@@ -228,7 +228,7 @@ h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | k
 [[Tafelbeispiel]{.ex}]{.slides}
 
 
-## Textklassifikation mit NB
+# Textklassifikation mit NB
 
 *   Texte als Trainingsmenge:
     *   Text zerlegen in Terme (Wörter, sonstige relevante Token)
@@ -264,7 +264,7 @@ h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | k
 
 
 ::: notes
-## Naivität im Naive Bayes
+# Naivität im Naive Bayes
 
 *   Unabhängigkeit der Attribute oft nicht gegeben
 
@@ -286,7 +286,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 
 ::: notes
-## Laplace-Schätzer
+# Laplace-Schätzer
 
 *   Problem: Attribut-Ausprägung  für bestimmte Klasse nicht in Trainingsmenge:
     *   => Bedingte Wahrscheinlichkeit ist 0
@@ -316,7 +316,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 
 ::: notes
-## Probleme mit Floating Point Underflow
+# Probleme mit Floating Point Underflow
 
 *   MAP berechnet Produkt mit vielen Termen
 *   Problem: Bei kleinen Zahlen kann **Floating Point Underflow** auftreten!
@@ -338,7 +338,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 
 ::: notes
-## Maximum Likelihood
+# Maximum Likelihood
 
 *   **Maximum a Posteriori**
     $$
@@ -360,7 +360,7 @@ in der Trainingsmenge zu hoch gewichtet werden.
 
 
 ::: notes
-## Ausblick: Kontinuierliche Attribute
+# Ausblick: Kontinuierliche Attribute
 
 Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen
 Attributen hat man zwei Möglichkeiten:
@@ -377,7 +377,7 @@ Attributen hat man zwei Möglichkeiten:
 
 
 ::: notes
-## Hinweis zum Sprachgebrauch
+# Hinweis zum Sprachgebrauch
 
 In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 
@@ -390,7 +390,7 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Klassifikation mit Naive Bayes
     *   Annahme von Unabhängigkeit => "Naive" Bayes Klassifikation

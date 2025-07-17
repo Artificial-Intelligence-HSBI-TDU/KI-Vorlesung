@@ -48,9 +48,9 @@ challenges: |
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Formalisierung
+## Formalisierung
 *   Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis)
 *   Die **Hypothesenfunktion** ist eine gewichtete Summe der Merkmale $x_i$ plus eine Konstante $w_0$:
     $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n$$
@@ -60,7 +60,7 @@ challenges: |
     $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$
 
 
-### Der Gradient
+## Der Gradient
 *   Der **Gradientenvektor** $\nabla J(\mathbf{w})$ setzt sich zusammen aus den partiellen Ableitungen der Kostenfunktion $J$ nach den Gewichten $w_i$ und zeigt in jedem Punkt $\mathbf{w}$ in die **Richtung des steilsten Aufstiegs**:
     $$\nabla J = [ \partial J / \partial w_0
     \quad \partial J / \partial w_1 \quad \ldots
@@ -69,7 +69,7 @@ challenges: |
 *   **IDEE**: Bewege $\mathbf{w}$ in Richtung $-\nabla J(\mathbf{w})$, um die Kosten $J$ möglichst schnell zu senken.
 
 
-### Der Gradientenabstieg (engl. Gradient Descent)
+## Der Gradientenabstieg (engl. Gradient Descent)
 1.   Starte mit zufälligen Gewichten $\mathbf{w}$
 2.   Berechne den Gradientenvektor im aktuellen Punkt $\mathbf{w}$
 3.   **Gewichtsaktualisierung**: Gehe einen *kleinen* Schritt in Richtung $-\nabla J(\mathbf{w})$
@@ -78,7 +78,7 @@ challenges: |
 4.  Wiederhole Schritte 2-3, bis das globale Minimum von $J$ erreicht ist.
 
 
-### Graphische Übersicht
+## Graphische Übersicht
 *   Lineare Regression
     ![](images/lin_reg_nn.png)
 *   Perzeptron

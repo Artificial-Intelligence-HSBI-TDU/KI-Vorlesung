@@ -33,7 +33,7 @@ fhmedia:
 ---
 
 
-## Hole das Buch
+# Hole das Buch
 
 :::center
 ![](images/graph.png){width="60%"}
@@ -65,7 +65,7 @@ Varianten:
 :::
 
 
-## Branch-and-Bound (*BnB*)
+# Branch-and-Bound (*BnB*)
 
 Variante der Breitensuche mit Kosten
 
@@ -86,7 +86,7 @@ Variante der Breitensuche mit Kosten
 der "Uniformen Suche" auf ...
 :::
 
-## BnB: Finde einen Weg von A nach H
+# BnB: Finde einen Weg von A nach H
 
 ![](images/tafelbeispiel.png){width="90%"}
 
@@ -94,7 +94,7 @@ der "Uniformen Suche" auf ...
 
 
 ::::::::: notes
-## Bemerkungen zu BnB mit Graph-Search
+# Bemerkungen zu BnB mit Graph-Search
 
 Graph-Search fordert: Expandierte Nachfolgerknoten, die schon in der Queue
 sind, sollen nicht (erneut) in die Queue aufgenommen werden.
@@ -120,7 +120,7 @@ zu einem bereits gefärbten Knoten kommt, kann der neue Weg nicht günstiger sei
 (positive Kosten vorausgesetzt).
 
 
-## Konventionen für diese Lehrveranstaltung
+# Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -141,13 +141,13 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 
 
 ::: notes
-## Eigenschaften von BnB
+# Eigenschaften von BnB
 
 Siehe [A*](search5-astar.md)
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Informierte Suchverfahren
     *   Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten

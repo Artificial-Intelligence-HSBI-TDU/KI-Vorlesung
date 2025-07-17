@@ -70,7 +70,7 @@ challenges: |
 ---
 
 
-## Problem bei BT-Suche
+# Problem bei BT-Suche
 
 Zuweisung eines Wertes an Variable $X$:
 
@@ -83,7 +83,7 @@ Zuweisung eines Wertes an Variable $X$:
 **Lösung**: Nach Zuweisung alle *nicht zugewiesenen Nachbarvariablen* prüfen
 
 
-## INFERENCE: Vorab-Prüfung (Forward Checking)
+# INFERENCE: Vorab-Prüfung (Forward Checking)
 
 ![](images/bt_search_inference.png){width="65%"}
 
@@ -110,7 +110,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 :::
 
 
-## Forward Checking findet nicht alle Inkonsistenzen!
+# Forward Checking findet nicht alle Inkonsistenzen!
 
 ![](images/forward_checking.png){width="55%"}
 
@@ -121,7 +121,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 *   B und C sind aber benachbart
 
 
-## Übergang von Forward Checking zu Kantenkonsistenz
+# Übergang von Forward Checking zu Kantenkonsistenz
 
 *   Forward Checking erzeugt Konsistenz für alle Constraints der \newline
     **gerade betrachteten (belegten) Variablen**.
@@ -131,7 +131,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 *   Idee: Ausdehnen auf alle Kanten ... => Einschränken der Wertemengen
 
 
-## Definition Kantenkonsistenz (Arc Consistency)
+# Definition Kantenkonsistenz (Arc Consistency)
 
 > Eine Kante von $X$ nach $Y$ ist "konsistent", wenn für jeden Wert
 > $x \in D_X$ und für alle Constraints zwischen $X$ und $Y$ jeweils ein Wert
@@ -142,7 +142,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 Ein CSP ist kanten-konsistent, wenn für alle Kanten des CSP Konsistenz herrscht.
 
 
-## Beispiel Kantenkonsistenz
+# Beispiel Kantenkonsistenz
 
 $V = \lbrace a,b,c,d,e \rbrace$
 
@@ -169,7 +169,7 @@ $D_a=\lbrace 1,2,3 \rbrace$, $D_b=\lbrace 1,2 \rbrace$, $D_c=\lbrace 1,2 \rbrace
 $\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$
 
 
-## AC-3 Algorithmus: Herstellen von Kantenkonsistenz
+# AC-3 Algorithmus: Herstellen von Kantenkonsistenz
 
 ``` python
 def AC3(csp):
@@ -206,7 +206,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 :::
 
 
-## Einsatz des AC-3 Algorithmus
+# Einsatz des AC-3 Algorithmus
 
 1.  Vorverarbeitung: Reduktion der Wertemengen *vor* BT-Suche
     *   Nach AC-3 evtl. bereits Lösung gefunden (oder ausgeschlossen)
@@ -220,7 +220,7 @@ Herstellung von Kantenkonsistenz interpretieren.
     *   Anschließend rekursiver Aufruf von BT-Suche
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Anwendung von Forward Checking und ...
 *   ... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz

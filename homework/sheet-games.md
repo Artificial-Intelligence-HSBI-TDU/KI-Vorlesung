@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-games.md  -o xxx.md  -->
 
-## Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P)
+# Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P)
 
 ![][1]
 
@@ -24,7 +24,7 @@ points: "10 Punkte"
 
 *Thema*: Minimax und alpha-beta-Pruning
 
-## Games.02: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
+# Games.02: Optimale Spiele: Minimax und alpha-beta-Pruning (4P)
 
 1.  (2P) Implementieren Sie den Minimax-Algorithmus (wie in der VL besprochen) am Beispiel
     *Tic Tac Toe* in einer Sprache Ihrer Wahl.
@@ -36,7 +36,7 @@ points: "10 Punkte"
 
 *Thema*: Anwendung Minimax und alpha-beta-Pruning
 
-## Games.03: Minimax vereinfachen (1P)
+# Games.03: Minimax vereinfachen (1P)
 
 Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die Eigenschaft
 *Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value` und `Max-Value` in eine
@@ -47,7 +47,7 @@ Minimax-Algorithmus und durch Ihren vereinfachten Algorithmus.
 
 *Thema*: Nullsummenspiel, Minimax
 
-## Games.04: Suchtiefe begrenzen (1P)
+# Games.04: Suchtiefe begrenzen (1P)
 
 Die Verwendung der Suchtiefenbeschränkung erfordert den Einsatz einer Evaluierungsfunktion.
 
@@ -61,7 +61,7 @@ Zusammenhang mit *Tic-Tac-Toe* sinnvoll sein kann.
 
 *Thema*: Suchtiefenbegrenzung und Evaluierungsfunktion
 
-## Games.05: Minimax generalisiert (1P)
+# Games.05: Minimax generalisiert (1P)
 
 Betrachten Sie nun das Problem, den Spielbaum eines Drei-Personen-Spiels zu evaluieren, das
 nicht notwendigerweise die Nullsummenbedingung erfüllt.

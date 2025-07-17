@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-ea.md  -o xxx.md  -->
 
-## EA.01: Modellierung von GA (2P)
+# EA.01: Modellierung von GA (2P)
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung [CSP:
 Intro]). Starten Sie beim Färbeproblem mit fünf verschiedenen Farben, Ziel sollte eine
@@ -21,7 +21,7 @@ können?
 
 *Thema*: Modellierung für GA und Gradientensuche
 
-## EA.02: Implementierung (5P)
+# EA.02: Implementierung (5P)
 
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den Algorithmus
 nacheinander auf beide Probleme an. Sie können gern auch die Java-Klassen im Paket
@@ -34,7 +34,7 @@ Sie die besprochenen Kennzahlen.
 
 Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
-## EA.03: Anwendungen (3P)
+# EA.03: Anwendungen (3P)
 
 1.  Analysieren Sie die Implementierung von [Randal Olson "Here's Waldo: Computing the optimal
     search strategy for finding Waldo"] ([Direktlink]).

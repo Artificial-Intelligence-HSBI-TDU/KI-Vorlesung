@@ -41,15 +41,15 @@ challenges: |
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Multilayer Perzeptron (MLP)
+## Multilayer Perzeptron (MLP)
 *   Das Perzeptron kann nur linear separable Daten korrekt klassifizieren.
 *   Durch das Zusammenschließen von mehreren Perzeptronen kann man ein mehrschichtiges Perzeptron (engl. Multilayer Perceptron) aufstellen, das komplexere Funktionen modellieren kann.
 *   Ein MLP wird oft auch als **Feed Forward Neural Network** oder  als **Fully Connected Neural Network** bezeichnet.
 *   Die "inneren" Schichten eines solchen Netzwerkes sind sogenannte **versteckte Schichten** (engl. hidden layer). Das sind alle Schichten ausgenommen die Eingangs- und Ausgangsschicht.
 
-### Graphische Übersicht und Vorwärtslauf
+## Graphische Übersicht und Vorwärtslauf
 *   Ein Multi-Layer Perzeptron
     ![](images/mlp.png)
     Ein Vorwärtslauf (forward pass):

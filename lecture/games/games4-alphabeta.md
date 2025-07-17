@@ -61,7 +61,7 @@ challenges: |
 ---
 
 
-## Verbesserung Minimax-Algorithmus
+# Verbesserung Minimax-Algorithmus
 
 ::: slides
 \bigskip
@@ -79,7 +79,7 @@ challenges: |
 [[Tafelbeispiel: Baum und Verbesserungen]{.ex}]{.slides}
 
 
-## Alpha-beta-Pruning
+# Alpha-beta-Pruning
 
 Minimax-Algorithmus mit zusätzlichen Informationen:
 
@@ -97,7 +97,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 [[Tafelbeispiel: Beste Werte einzeichnen]{.ex}]{.slides}
 
 
-## Pruning-Regeln
+# Pruning-Regeln
 
 1.  Schneide (unter) MIN-Knoten ab, deren $\beta$ $\le$ dem
     $\alpha$ des MAX-Vorgängers ist.
@@ -115,7 +115,7 @@ Abbruch, wenn kein Platz mehr zwischen Alpha und Beta
 :::
 
 
-## Alpha-beta-Pruning -- Der Algorithmus (Skizze)
+# Alpha-beta-Pruning -- Der Algorithmus (Skizze)
 
 ```python
 def Max-Value(state, alpha, beta):
@@ -158,7 +158,7 @@ Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 [[Tafelbeispiel Handsimulation]{.ex}]{.slides}
 
 
-## Alpha-beta-Pruning -- Eigenschaften
+# Alpha-beta-Pruning -- Eigenschaften
 
 1.  Pruning beeinflusst nicht das Endergebnis!
 
@@ -170,7 +170,7 @@ Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 Für Schach immer noch zu aufwändig ...
 
 
-## Verbesserungen für Alpha-beta-Pruning
+# Verbesserungen für Alpha-beta-Pruning
 
 *   "Killer-Move": Maximale Effizienz nur wenn **optimaler Zug immer zuerst** [untersucht]{.notes} \newline
     => Zu untersuchende Züge **sortieren/priorisieren**, zb. Schach:
@@ -193,7 +193,7 @@ Für Schach immer noch zu aufwändig ...
     *   Berücksichtigung von Symmetrien
 
 
-## Beispiel DeepBlue (IBM, 1997)
+# Beispiel DeepBlue (IBM, 1997)
 
 *   Alpha-beta-Pruning mit Tiefenbeschränkung: ca. 14 Halbzüge
 *   Dynamische Tiefenbeschränkung (stellungsabhängig, max. ca. 40 Züge)
@@ -206,7 +206,7 @@ Für Schach immer noch zu aufwändig ...
 [[@Russell2014, p. 185]]{.origin}
 
 
-## Beispiel AlphaGo (Google, 2016)
+# Beispiel AlphaGo (Google, 2016)
 
 *   Beschränkung der Suchtiefe: Bewertung der Stellung durch *"Value Network"*
 *   Beschränkung der Verzweigungsbreite: Bestimmung von Zugkandidaten durch
@@ -222,7 +222,7 @@ Für Schach immer noch zu aufwändig ...
 [[@Silver2016], siehe auch [deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.origin}
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Alpha-beta-Pruning:
     *   Mitführen der bisher besten Werte für MAX und MIN: $\alpha$ und $\beta$

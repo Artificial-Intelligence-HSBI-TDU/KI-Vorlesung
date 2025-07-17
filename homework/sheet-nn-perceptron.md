@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 
 
-## Bonus: Möglichkeiten und Grenzen sowie Auswirkungen der KI (2P)
+# Bonus: Möglichkeiten und Grenzen sowie Auswirkungen der KI (2P)
 
 Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden können und welche aktuell noch ungelöst sind.
@@ -18,7 +18,7 @@ durch autonomes Fahren oder durch _Large Language Models_ (LLM).
 
 
 
-## NN.Perzeptron.01: Entscheidungsgrenze (2P)
+# NN.Perzeptron.01: Entscheidungsgrenze (2P)
 
 *   (1P) Betrachten Sie das durch den Gewichtsvektor $(w_0,w_1,w_2)^T = (2,1,1)^T$ gegebene Perzeptron. Zeichnen Sie die Trennebene und markieren Sie den Bereich, der mit $+1$ klassifiziert wird.
 *   (1P) Welche der folgenden Perzeptrons haben die selbe Trennebene? Welche weisen exakt die gleiche Klassifikation auf?
@@ -31,7 +31,7 @@ durch autonomes Fahren oder durch _Large Language Models_ (LLM).
 
 
 
-## NN.Perzeptron.02: Logische Funktionen als Perzeptron (2P)
+# NN.Perzeptron.02: Logische Funktionen als Perzeptron (2P)
 
 *   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
 *   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für diese Einschränkung.
@@ -40,27 +40,27 @@ durch autonomes Fahren oder durch _Large Language Models_ (LLM).
 
 
 
-## NN.Perzeptron.03: Perzeptron Lernalgorithmus (6P)
+# NN.Perzeptron.03: Perzeptron Lernalgorithmus (6P)
 
 Ziel dieser Aufgabe ist es, mit Hilfe eines Experiments ein Gefühl für die Laufzeit des Perzeptron-Lernalgorithmus zu bekommen und eine Art empirische Approximation zu bestimmen.
 
-### Datensatz (1P)
+## Datensatz (1P)
 *   Konstruieren Sie Ihren eigenen Datensatz $\mathcal{D}$ mit $m=10$ gleichförmig verteilten Zufallspunkten aus dem Bereich $\mathcal{X}=[−1, 1]\times[−1, 1]$.
 *   Wählen Sie auf ähnliche Weise zwei zufällige, gleichmäßig verteilte Punkte aus dem Bereich $[−1, 1]\times[−1, 1]$. Verwenden Sie die Gerade, die durch diese zwei Punkte verläuft, als die Entscheidungsgrenze Ihrer Zielfunktion $f$. Sie können die positiv beschriftete Seite beliebig festlegen.
 *   Werten Sie die Zielfunktion für jeden Datenpunkt $\mathbf{x}^{(j)}$ aus, um die entsprechenden Beschriftungen (Ausgangslabel) $y^{(j)}$ zu erhalten.
 
-### Training (3P)
+## Training (3P)
 Führen Sie nun den Perzeptron-Lernalgorithmus $1000$ mal hintereinander aus. Initialisieren Sie jedes Mal die Gewichte mit $0$. Wählen Sie in jedem Lernschritt einen Punkt $\mathbf{x}^{(i)}$ *zufällig* aus der Menge der falsch klassifizierten Punkte und aktualisieren Sie die Gewichte entsprechend der folgenden Formel:
 $$\mathbf{w}:=\mathbf{w}+\alpha ( y^{(i)} - h(\mathbf{x}^{(i)}) ) \mathbf{x}^{(i)}$$
 
 Nehmen Sie $\alpha=1$ als Lernrate. Halten Sie für jeden Durchlauf fest, wie viele Schritte der Algorithmus benötigt, um zu der endgültigen Hypothese $h^{*}(\mathbf{x})$ zu konvergieren. Berechnen Sie am Ende die durchschnittliche Anzahl von benötigten Schritten. In welcher Größenordnung liegt sie?
 
-### Experimente (2P)
+## Experimente (2P)
 Wiederholen Sie das obige Experiment mit $m=100$ und $m=1000$ Datenpunkten, jeweils ein Mal mit den Lernraten $\alpha=1$ und $\alpha=0.1$. In welcher Größenordnung liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
 
 Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 
-### Visualisierung (optional)
+## Visualisierung (optional)
 *   Halten Sie während des Trainings die Anzahl der falsch klassifizierten Punkte fest und veranschaulichen Sie anschließend den Lernprozess mit Hilfe eines zweidimensionalen Plots.
 *   Visualisieren Sie (auf eine geeignete Weise) Meilenstein 2.1, wie sich die Entscheidungsrenze während des Trainings verändert.
 

@@ -54,7 +54,7 @@ fhmedia:
 ---
 
 
-## Ereignisse und Wahrscheinlichkeit
+# Ereignisse und Wahrscheinlichkeit
 
 ::: notes
 **Hinweis**: Die folgende Darstellung zur Einführung in die
@@ -64,7 +64,7 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
 :::
 
 ::: notes
-### Ereignisse
+## Ereignisse
 :::
 
 *   **Ereignisse** $\Omega = \lbrace \omega_1, \omega_2, \ldots, \omega_n \rbrace$:
@@ -75,7 +75,7 @@ Sie kann und soll keine entsprechende mathematische Einführung ersetzen!
     *   schließen sich gegenseitig aus
 
 ::: notes
-### Regeln
+## Regeln
 
 *   Wenn $A$ und $B$ Ereignisse sind, dann auch $A \cup B$
 *   $\Omega$ wird als **sicheres Ereignis** bezeichnet: Enthält
@@ -91,7 +91,7 @@ endlichem Wertebereich!
 \bigskip
 
 ::: notes
-### Wahrscheinlichkeit
+## Wahrscheinlichkeit
 :::
 
 *   **Wahrscheinlichkeit**:
@@ -116,7 +116,7 @@ endlichem Wertebereich!
     :::
 
 ::: notes
-### Verteilung
+## Verteilung
 
 Den Vektor mit den Wahrscheinlichkeiten aller Elementarereignisse
 nennt man auch *Verteilung*.
@@ -129,7 +129,7 @@ kontinuierliche Variablen wird die Verteilung mit Hilfe einer
 :::
 
 ::: notes
-### Beispiel
+## Beispiel
 
 *   Einmaliges Würfeln mit einem Spielwürfel: $\Omega = \lbrace 1,2,3,4,5,6 \rbrace$
 *   Elementarereignisse: $\lbrace 1,2,3,4,5,6 \rbrace$
@@ -145,7 +145,7 @@ kontinuierliche Variablen wird die Verteilung mit Hilfe einer
 [[Tafel: Würfeln]{.ex}]{.slides}
 
 
-## Rechenregeln: Kolmogorov Axiome
+# Rechenregeln: Kolmogorov Axiome
 
 \bigskip
 
@@ -180,7 +180,7 @@ Daraus folgt (u.a.):
 [[Tafel: Würfeln: Elementar, gerade Zahl]{.ex}]{.slides}
 
 
-## Verbundwahrscheinlichkeiten
+# Verbundwahrscheinlichkeiten
 
 $$P(A,B) = P(B,A) = \text{ Wahrscheinlichkeit, dass A und B gleichzeitig auftreten }$$
 
@@ -207,7 +207,7 @@ und dienen lediglich zur Verdeutlichung der Wahrscheinlichkeitsbegriffe!
 :::
 
 
-## Bedingte Wahrscheinlichkeit
+# Bedingte Wahrscheinlichkeit
 
 ::: notes
 **Definition**:
@@ -232,7 +232,7 @@ Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
 :::
 
 
-## Marginalisierung
+# Marginalisierung
 
 |                   | Halsschmerzen | $\neg$  Halsschmerzen | $\sum$ |
 |-------------------|---------------|-----------------------|--------|
@@ -257,7 +257,7 @@ Quaders auf eine Seitenfläche vergleichbar ist.
 :::
 
 
-## Kettenregel
+# Kettenregel
 
 *   **Produktregel**: Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$
     gilt $P(A,B) = P(A|B)P(B)$
@@ -277,7 +277,7 @@ Quaders auf eine Seitenfläche vergleichbar ist.
     $$
 
 
-## Bayes-Regel
+# Bayes-Regel
 
 Bedingte Wahrscheinlichkeit: $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
 
@@ -321,7 +321,7 @@ gegeben bestimmte Symptome berechnen.
 :::
 
 
-## Beispiel Bayes
+# Beispiel Bayes
 
 *   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet
 *   Eine von 10.000 Personen hat Arthrose
@@ -370,7 +370,7 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2017, Ex. 7.9, S. 135] an!
 :::
 
 
-## Unabhängige Ereignisse
+# Unabhängige Ereignisse
 
 *   $P(\text{Halsschmerzen},\text{ Regen}) = P(\text{Regen }|\text{ Halsschmerzen})P(\text{Halsschmerzen})$
 *   $P(\text{Regen }|\text{ Halsschmerzen}) = \text{ ?? }$ \pause $= P(\text{Regen})$
@@ -397,7 +397,7 @@ $$ P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z) $$
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Grundlagen der Wahrscheinlichkeitstheorie
     *   Elementarereignisse und Wahrscheinlichkeit

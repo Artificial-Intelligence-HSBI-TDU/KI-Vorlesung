@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-csp.md  -o xxx.md  -->
 
-## CSP.01: Logikrätsel (2P)
+# CSP.01: Logikrätsel (2P)
 
 Betrachten Sie die Variante des berühmten ["Einstein-Rätsels"] auf Wikipedia.
 
@@ -19,7 +19,7 @@ Schreiben Sie die Constraints als (unäre bzw. binäre) Relationen auf.
 
 *Thema*: Formulierung von Problemen als CSP
 
-## CSP.02: Framework für Constraint Satisfaction (2P)
+# CSP.02: Framework für Constraint Satisfaction (2P)
 
 Lösen Sie nun das obige Rätsel (aus CSP.01):
 
@@ -34,7 +34,7 @@ Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementie
 gern auch die Java-Klassen im Paket [`aima.core.search.csp`] bzw. die Python-Klassen in
 [`csp.py`] als Ausgangspunkt nutzen.[^1]
 
-## CSP.03: Kantenkonsistenz mit AC-3 (3P)
+# CSP.03: Kantenkonsistenz mit AC-3 (3P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 
@@ -58,7 +58,7 @@ mit
 
 *Thema*: Handsimulation des AC-3-Algorithmus
 
-## CSP.04: Forward Checking und Kantenkonsistenz (2P)
+# CSP.04: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
@@ -76,7 +76,7 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-## CSP.05: Anwendungen (1P)
+# CSP.05: Anwendungen (1P)
 
 Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
 Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die Algorithmen

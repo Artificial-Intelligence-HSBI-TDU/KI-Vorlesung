@@ -43,7 +43,7 @@ challenges: |
 ---
 
 
-## CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen
+# CAL3: Erweiterung von CAL2 für nicht-disjunkte Klassen
 
 1)  Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
 
@@ -70,7 +70,7 @@ challenges: |
         Symbol $k$ mit Anzahl 1 an Position $i$ wenn $x_{t+1}(v) = i$
 
 
-## Beispiel mit CAL3
+# Beispiel mit CAL3
 
 | $x_1$ | $x_2$ | $k$ |
 |:------|:------|:----|
@@ -97,7 +97,7 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 :::
 
 
-## CAL3: Abbruchbedingungen und Parameter
+# CAL3: Abbruchbedingungen und Parameter
 
 *   **Parameter**:
     *   $S_1$: Statistikschwelle, problemabhängig wählen
@@ -116,7 +116,7 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
     *   Lernschrittzahl überschritten
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   CAL3: Erweiterung von CAL2 für überlappende Klassen
     *   Parameter $S_1$ (Anzahl Objekte bis Entscheidung), $S_2$ (Dominanz?)

@@ -26,7 +26,7 @@ fhmedia:
 ---
 
 
-## Backgammon: Zwei Spieler, was ist der beste Zug?
+# Backgammon: Zwei Spieler, was ist der beste Zug?
 
 ![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 
@@ -37,7 +37,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
 :::
 
 
-## Motivation: Unterschied zu Suche?!
+# Motivation: Unterschied zu Suche?!
 
 ![](images/tttEnd.png){width="30%"}
 
@@ -49,7 +49,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
 => (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
 
 
-## Spiele und Umgebungen
+# Spiele und Umgebungen
 
 |                      | Deterministisch   | Zufallskomponente        |
 |:---------------------|:------------------|:-------------------------|
@@ -61,7 +61,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
 => Bis auf Roboterfußball in KI traditionell keine physischen Spiele!
 
 
-## Brettspiele sind interessant für KI
+# Brettspiele sind interessant für KI
 
 *   Brettspiele gut abstrakt darstellbar:
     *   Zustände einfach repräsentierbar
@@ -81,7 +81,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
     [[@Russell2020, pp. 193-196]]{.origin}
 
 
-## Eigenschaften guter Spielalgorithmen
+# Eigenschaften guter Spielalgorithmen
 
 *   Zeit begrenzt
     *   Irgendeine gute Entscheidung treffen! => Bewertungsfunktion [(auch für Zwischenzustände)]{.notes}
@@ -97,7 +97,7 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
 *   Strategien nötig
     *   Vorausschauend spielen (Züge "vorhersehen")
 
-## Wrap-Up
+# Wrap-Up
 
 *   Spiele kann man als Suchproblem betrachten
 *   Merkmale:

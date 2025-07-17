@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-nb.md  -o xxx.md  -->
 
-## NB.01: Wahlkampf mit Naive Bayes (4P)
+# NB.01: Wahlkampf mit Naive Bayes (4P)
 
 Betrachten Sie erneut das Szenerio von [Aufgabe DTL.01].
 
@@ -15,7 +15,7 @@ Betrachten Sie erneut das Szenerio von [Aufgabe DTL.01].
 (2P) Welchen Kandidaten würde der Klassifikator einem Wähler ($< 35$, niedrig, Bachelor)
 zuordnen? Erklären Sie die Arbeitsweise des Klassifikators.
 
-## NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
+# NB.02: Textklassifikation mit Naive Bayes: Spam-Erkennung (6P)
 
 Laden Sie sich den Datensatz ["Spam Mails Dataset" (Kaggle)] herunter. Dieser besteht aus
 knapp 5000 vorklassifizierten Einträgen (Mails mit den Klassen `ham` bzw. `spam`).

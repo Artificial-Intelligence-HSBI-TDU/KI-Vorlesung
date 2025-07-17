@@ -37,7 +37,7 @@ challenges: |
 ---
 
 
-## Unterschiede in den Suchproblemen?
+# Unterschiede in den Suchproblemen?
 
 ::::: columns
 ::: {.column width="46%"}
@@ -65,7 +65,7 @@ Beispiel: Stundenplan
 :::
 
 
-## Analogie: Bergsteigen ohne Karte und Pfade
+# Analogie: Bergsteigen ohne Karte und Pfade
 
 ![](images/hill-climbing.png){width="50%"}
 
@@ -83,7 +83,7 @@ Beispiel: Stundenplan
 :::
 
 
-## Pseudoalgorithmus Gradientensuche
+# Pseudoalgorithmus Gradientensuche
 
 ::: cbox
 "*Wie Bergsteigen am Mount Everest in dickem Nebel mit Gedächtnisverlust*"
@@ -111,7 +111,7 @@ Beispiel: Stundenplan
 
 
 ::: notes
-## Beispiel Gradientensuche: $n$-Damen
+# Beispiel Gradientensuche: $n$-Damen
 
 *   **Ziel**: Setze $n$ Damen auf ein $n \times n$-Spielfeld ohne Konflikte
 *   **Start**: Setze $n$ Damen auf ein $n \times n$-Spielfeld (mit Konflikten)
@@ -122,7 +122,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 **Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
 => "vollständige Zustandsformulierung"
 
-### Eigenschaften 8-Damen-Problem ($n=8$)
+## Eigenschaften 8-Damen-Problem ($n=8$)
 
 *   Zustandsraum: $8^8 \approx 17$ Millionen Zustände!
 *   Beginnend mit zufällig erzeugtem Startzustand:
@@ -135,7 +135,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 :::
 
 
-## Eigenschaften Gradientensuche
+# Eigenschaften Gradientensuche
 
 ::: notes
 *   Vollständigkeit: nein
@@ -159,7 +159,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 

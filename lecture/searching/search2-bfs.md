@@ -30,7 +30,7 @@ fhmedia:
 ---
 
 
-## Hole das Buch
+# Hole das Buch
 
 :::center
 ![](images/graph.png){width="60%"}
@@ -54,7 +54,7 @@ Varianten:
 :::
 
 
-## Breitensuche (*BS*, *BFS*)
+# Breitensuche (*BS*, *BFS*)
 
 ::: notes
 **Erinnerung Graph-Search**
@@ -87,7 +87,7 @@ Varianten:
 -->
 
 ::::::::: notes
-## Bemerkungen
+# Bemerkungen
 
 *   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
 
@@ -102,7 +102,7 @@ Varianten:
     => Aufwand!
 
 
-## Konventionen für diese Lehrveranstaltung
+# Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -117,7 +117,7 @@ nicht modifiziert werden. (Bei "echten" Problemen wird die Reihenfolge der expan
 Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)
 
 
-## Weitere Hinweise
+# Weitere Hinweise
 
 *   Die Breitensuche wurde zufällig am Beispiel Graph-Search eingeführt.
     Man kann auch die Tree-Search-Variante einsetzen. Wichtig ist nur, dass als
@@ -133,7 +133,7 @@ Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen besti
 :::::::::
 
 
-## Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
+# Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
 
 |                     | **Tiefensuche** | **Breitensuche** |
 |:--------------------|:----------------|:-----------------|
@@ -162,7 +162,7 @@ Länge d. längsten Pfades
 [^3]: $O(b^{d})$ mit vorgezogener Zielprüfung (vgl. [@Russell2020])
 
 
-## Praxisvergleich Breitensuche vs. Tiefensuche
+# Praxisvergleich Breitensuche vs. Tiefensuche
 
 **Breitensuche**:
 Annahme: $b=10$, 10.000 Knoten/s, 1.000 Byte/Knoten
@@ -184,7 +184,7 @@ Annahme: längster Pfad (Tiefe) $m=1000$
 => Speicherbedarf **ca. 10 MB**
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Uninformierte Suchverfahren
     *   Keine weiteren Pfadkosten (nur Anzahl der Schritte)

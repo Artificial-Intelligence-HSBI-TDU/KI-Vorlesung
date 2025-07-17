@@ -33,19 +33,19 @@ attachments:
 ---
 
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Definition "Maschinelles Lernen"
+## Definition "Maschinelles Lernen"
 Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959)
 
-### Arten des Lernens
+## Arten des Lernens
 
 *   Überwachtes Lernen (e.g. Klassifizierung, Regression)
 *   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
 *   Bestärkendes Lernen (e.g. Schach spielen)
 
 
-### Formalisierung
+## Formalisierung
 
 *   Zielfunktion $f$
 *   Merkmalraum (input space)
@@ -55,7 +55,7 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 *   Lernalgorithmus $\mathcal{A}$
 
 
-### Das Perzeptron
+## Das Perzeptron
 Ein einfaches Modell für die **binäre Klassifizierung**
 
 *   Bilde gewichtete Summe (Linearkombination) der Merkmale

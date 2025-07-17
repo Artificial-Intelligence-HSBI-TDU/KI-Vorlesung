@@ -29,7 +29,7 @@ fhmedia:
 ---
 
 
-## Evolution sehr erfolgreich bei Anpassung
+# Evolution sehr erfolgreich bei Anpassung
 
 ![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
 
@@ -45,7 +45,7 @@ fhmedia:
 [[kurze Diskussion]{.ex}]{.slides}
 
 
-## EA -- Zutaten und Mechanismen
+# EA -- Zutaten und Mechanismen
 
 *   Zutaten:
     *   **Individuen**: Kodierung möglicher Lösungen
@@ -60,12 +60,12 @@ fhmedia:
     *   Mutation
 
 
-## EA -- Allgemeiner Ablauf
+# EA -- Allgemeiner Ablauf
 
 ![](images/ea_prinz.png){width="80%"}
 
 
-## EA -- Beispiel
+# EA -- Beispiel
 
 ![](images/4-queens-example.png){width="40%"}
 
@@ -85,7 +85,7 @@ zwei neue Anordnungen der Königinnen (zwei neue Spielfelder).
 [[Beispiel mit 4-Queens-Puzzle]{.ex}]{.slides}
 
 
-## EA -- Strömungen
+# EA -- Strömungen
 
 1.  **Genetische Algorithmen** (GA)
     *   Holland und Goldberg (ab 1960)
@@ -113,7 +113,7 @@ finden jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
 :::
 
 
-## Anwendungsbeispiele für Evolutionäre Algorithmen
+# Anwendungsbeispiele für Evolutionäre Algorithmen
 
 *   Berechnung und Konstruktion komplexer Bauteile: beispielsweise
     Tragflächenprofile (Flugzeuge), Brücken oder Fahrzeugteile unter
@@ -124,7 +124,7 @@ finden jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
 *   Layout elektronischer Schaltkreise
 
 
-## Wrap-Up
+# Wrap-Up
 
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 

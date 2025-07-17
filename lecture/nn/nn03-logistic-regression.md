@@ -29,9 +29,9 @@ attachments:
     name: "NN03-Logistische_Regression.pdf"
 ---
 
-## Kurze Übersicht
+# Kurze Übersicht
 
-### Formalisierung
+## Formalisierung
 *   Ausgabe $y$ ist reelle Zahl aus dem stetigen Bereich $(0,1)$
 *   Die **Hypothesenfunktion** ist:
     $$h(\mathbf{x}) = \sigma (\mathbf{w}^T\mathbf{x}) = \sigma (w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n) \tag{1}$$
@@ -44,14 +44,14 @@ attachments:
     $$J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{3}$$
 
 
-### Gradientenabstieg
+## Gradientenabstieg
 *   Der Gradient für einen Datenpunkt $\mathbf{x}$:
     $$\frac{\partial \mathcal{L}}{\partial w} = (a-y)x \tag{4}$$
 *   Der Gradient für alle Datenpunkte $X$ in Matrix-Notation:
     $$\nabla J = \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{5}$$
 
 
-### Graphische Übersicht
+## Graphische Übersicht
 *   Logistische Regression
     ![](images/log_reg_nn.png)
 *   Lineare Regression

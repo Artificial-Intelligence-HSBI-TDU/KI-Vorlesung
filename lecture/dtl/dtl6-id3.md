@@ -46,7 +46,7 @@ challenges: |
 ---
 
 
-## Wie Attribute wählen?
+# Wie Attribute wählen?
 
 Erinnerung: CAL2/CAL3
 
@@ -58,7 +58,7 @@ Erinnerung: CAL2/CAL3
 
 
 
-## Erinnerung Entropie: Maß für die Unsicherheit
+# Erinnerung Entropie: Maß für die Unsicherheit
 
 *   Entropie $H(S)$ der Trainingsmenge $S$: [relative]{.notes} Häufigkeit der Klassen zählen
 
@@ -89,7 +89,7 @@ partitionierten Trainingsmenge **nach** Betrachtung von Attribut $A$ ...
 => Je kleiner $R(S,A)$, um so größer der Informationsgewinn
 
 
-## Informationsgewinn: Kriterium zur Auswahl von Attributen
+# Informationsgewinn: Kriterium zur Auswahl von Attributen
 
 1)  Informationsgewinn für alle Attribute berechnen
 2)  Nehme Attribut mit größtem Informationsgewinn als nächsten Test
@@ -135,7 +135,7 @@ $$
 Informationsgewinn für $x_2$ am höchsten => wähle $x_2$ als nächsten Test
 
 
-## Entscheidungsbaumlerner ID3 (Quinlan, 1986)
+# Entscheidungsbaumlerner ID3 (Quinlan, 1986)
 
 \bigskip
 
@@ -169,7 +169,7 @@ anderes Klassensymbol als "`A`" sein ...
 :::
 
 ::: notes
-### Beispiel ID3
+## Beispiel ID3
 
 | Nr. | $x_1$ | $x_2$ | $x_3$ | $k$ |
 |-----|-------|-------|-------|-----|
@@ -189,7 +189,7 @@ anderes Klassensymbol als "`A`" sein ...
 [[Tafelbeispiel Anfang ID3]{.ex}]{.slides}
 
 
-## Beobachtung: $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+# Beobachtung: $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
 
 *   Faire Münze:
     *   Entropie = $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
@@ -213,7 +213,7 @@ einfach wegen der größeren Anzahl an Ausprägungen rechnerisch bevorzugt würd
 :::
 
 
-## C4.5 als Verbesserung zu ID3
+# C4.5 als Verbesserung zu ID3
 
 Normierter Informationsgewinn: $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A)$
 
@@ -247,7 +247,7 @@ Hierzu drei lesenswerte Blog-Einträge:
 :::
 
 
-## Beispiele zur Normierung bei C4.5
+# Beispiele zur Normierung bei C4.5
 
 *   Faire Münze:
     *   Entropie = $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
@@ -272,7 +272,7 @@ Normierung in C4.5 aufgehoben wird.
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Entscheidungsbaumlerner **ID3**
     *   Nutze *Information Gain* zur Auswahl des nächsten Attributs

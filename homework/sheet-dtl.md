@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-dtl.md  -o xxx.md  -->
 
-## DTL.01: Entscheidungsbäume mit CAL3 und ID3 (6P)
+# DTL.01: Entscheidungsbäume mit CAL3 und ID3 (6P)
 
 Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft. Die
 folgende Tabelle zeigt die Präferenzen von sieben Wählern.
@@ -29,7 +29,7 @@ Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementie
 gern auch die Java-Klassen im Paket [`aima.core.learning`] bzw. die Python-Klassen in
 [`learning.py`] als Ausgangspunkt nutzen.[^1]
 
-## DTL.02: Pruning (1P)
+# DTL.02: Pruning (1P)
 
 Vereinfachen Sie schrittweise den Baum
 
@@ -41,7 +41,7 @@ Nutzen Sie die linearisierte Schreibweise. Geben Sie die jeweils verwendete Rege
 
 *Thema*: Anwendung der Transformations- und Pruning-Regeln
 
-## DTL.03: Machine Learning mit Weka (3P)
+# DTL.03: Machine Learning mit Weka (3P)
 
 Weka ([waikato.github.io/weka-wiki/]) ist eine beliebte Sammlung von (in Java implementierten)
 Algorithmen aus dem Bereich des Maschinellen Lernens. Laden Sie sich das Tool in der aktuellen

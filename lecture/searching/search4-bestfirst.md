@@ -37,7 +37,7 @@ challenges: |
 ---
 
 
-## Hole das Buch
+# Hole das Buch
 
 :::center
 ![](images/graph.png){width="60%"}
@@ -68,7 +68,7 @@ Varianten:
 *   [A*](search5-astar.md)
 :::
 
-## Best-First (*BF*, *BFS*)
+# Best-First (*BF*, *BFS*)
 
 *   Idee: Expandiere den partiellen Weg, der verspricht, dem Ziel am
     nächsten zu sein (**Heuristik**)
@@ -86,7 +86,7 @@ Varianten:
 
 
 ::::::::: notes
-## Konventionen BF
+# Konventionen BF
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege
 in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies
@@ -107,13 +107,13 @@ Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum se
 
 
 ::: notes
-## Eigenschaften von BF
+# Eigenschaften von BF
 
 Siehe [A*](search5-astar.md)
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Informierte Suchverfahren
     *   Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten

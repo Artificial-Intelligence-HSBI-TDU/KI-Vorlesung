@@ -79,7 +79,7 @@ challenges: |
 ---
 
 
-## Entscheidungsbäume: Klassifikation
+# Entscheidungsbäume: Klassifikation
 
 ![](images/xor-decision-tree.png){width="80%"}
 
@@ -105,7 +105,7 @@ Eine andere Sichtweise ist die Nutzung als Checkliste für eine Reparatur ...
 :::
 
 
-## Definition Entscheidungsbaum
+# Definition Entscheidungsbaum
 
 \bigskip
 
@@ -150,7 +150,7 @@ Damit werden die Unterbäume beim Erzeugen des Knotens übergeben.
 :::
 
 
-## Induktion von Entscheidungsbäumen: CAL2
+# Induktion von Entscheidungsbäumen: CAL2
 
 1)  Anfangsschritt: $\alpha^{(0)} = \ast$ (totales Unwissen)
 
@@ -171,7 +171,7 @@ zu lernen :-)
 :::
 
 
-## Beispiel mit CAL2
+# Beispiel mit CAL2
 
 | $x_1$ | $x_2$ | $x_3$ | $k$ |
 |:------|:------|:------|:----|
@@ -201,7 +201,7 @@ Referenzen vom Typ `Baum` sein).
 :::
 
 
-## CAL2: Bemerkungen
+# CAL2: Bemerkungen
 
 *   Nur für diskrete Merkmale und disjunkte Klassen
 
@@ -215,7 +215,7 @@ Referenzen vom Typ `Baum` sein).
     *   (Lernschrittzahl überschritten)
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Darstellung der Hypothese als Entscheidungsbaum
 *   CAL2: diskrete Attribute, disjunkte Klassen

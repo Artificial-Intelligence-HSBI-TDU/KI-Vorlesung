@@ -34,7 +34,7 @@ fhmedia:
 ---
 
 
-## Motivation
+# Motivation
 
 ![](images/hill-climbing.png){width="60%"}
 
@@ -55,7 +55,7 @@ Mögliche Lösungen:
 
 
 ::: notes
-## Gedankenexperiment: Ausweg aus lokalen Minima
+# Gedankenexperiment: Ausweg aus lokalen Minima
 
 *   "Drehen der Landschaft": Minimieren statt Maximieren
 *   Ball wird in Zustandsraum-Landschaft gesetzt.
@@ -78,7 +78,7 @@ Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 
 
 ::: notes
-## Analogie Härten von Metall
+# Analogie Härten von Metall
 
 *   Metall erhitzen bis Atome frei beweglich
 *   Langsam abkühlen
@@ -88,7 +88,7 @@ Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 
 
 ::: notes
-## Übertragen der Idee
+# Übertragen der Idee
 
 *   Starkes "Schütteln" (hohe "Temperatur") am Anfang
 *   Schrittweises "Abkühlen" => "Schütteln" im Laufe der Zeit
@@ -98,7 +98,7 @@ Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 :::
 
 
-## Pseudocode Simulated Annealing (Minimierungsproblem)
+# Pseudocode Simulated Annealing (Minimierungsproblem)
 
 ```python
 def simulated_annealing(problem):
@@ -132,7 +132,7 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 
 
 ::: notes
-## Detail: Akzeptieren von Verschlechterungen
+# Detail: Akzeptieren von Verschlechterungen
 
 :::center
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png){width="60%"}
@@ -158,7 +158,7 @@ Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
 :::
 
 
-## Abkühlungsplan problemabhängig wählen
+# Abkühlungsplan problemabhängig wählen
 
 *   Initiale Temperatur: So hoch, daß praktisch jede Änderung akzeptiert wird
 
@@ -179,7 +179,7 @@ eines solchen Abkühlungsplans.
 
 
 ::: notes
-## Eigenschaften Simulated Annealing
+# Eigenschaften Simulated Annealing
 
 *   Vollständigkeit: ja (mit gewisser Wahrscheinlichkeit)
 *   Optimalität: ja (mit gewisser Wahrscheinlichkeit)
@@ -191,7 +191,7 @@ Voraussetzung: geeigneter Abkühlungsplan
 
 
 ::: notes
-## Anwendungen von Simulated Annealing
+# Anwendungen von Simulated Annealing
 
 *   Flugplan-Scheduling
 *   Layout-Probleme (Chipentwurf, Leiterplatten)
@@ -199,7 +199,7 @@ Voraussetzung: geeigneter Abkühlungsplan
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 

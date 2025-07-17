@@ -6,7 +6,7 @@ points: "10 Punkte"
 
 <!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94 --reference-links=true  sheet-search.md  -o xxx.md  -->
 
-## Search.01: Problemformalisierung, Zustandsraum (3P)
+# Search.01: Problemformalisierung, Zustandsraum (3P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen
 überqueren. Es steht dazu ein Pferd zur Verfügung, welches maximal zwei Wesen tragen kann. Das
@@ -21,7 +21,7 @@ dort wartenden Elben, da es sonst zu Konflikten zwischen beiden Gruppen kommt.
 
 *Thema*: Formalisierung von Problemen, Problemgraph
 
-## Search.02: Suchverfahren (5P)
+# Search.02: Suchverfahren (5P)
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
@@ -54,7 +54,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 *Hinweis*: Reihenfolge bei gleichen $f(n)$-Kosten: alphabetische Reihenfolge, d.h. Mannheim
 käme vor München, Karlsruhe vor Kassel etc.
 
-## Search.03: Dominanz (1P)
+# Search.03: Dominanz (1P)
 
 Was bedeutet *"Eine Heuristik $h_1(n)$ dominiert eine Heuristik $h_2(n)$"*?
 
@@ -65,7 +65,7 @@ Geben Sie selbstgewählte Beispiele an.
 
 *Thema*: Begriff der dominierenden Heuristik (Selbststudium)
 
-## Search.04: Beweis der Optimalität von A\* (1P)
+# Search.04: Beweis der Optimalität von A\* (1P)
 
 Beweisen Sie, dass A\* in der Tree-Search-Variante bei Nutzung einer zulässigen Heuristik
 optimal ist.

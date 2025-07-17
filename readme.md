@@ -8,7 +8,7 @@ has_license: true
 [["künstliche intelligenz"](https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-netzwerk-3706562/) by [Gerd Altmann (geralt)](https://pixabay.com/de/users/geralt-9301/) on Pixabay.com ([Pixabay License](https://pixabay.com/de/service/license/))]{.origin}
 
 
-## Kursbeschreibung
+# Kursbeschreibung
 
 Ausgehend von den Fragen "Was ist _Intelligenz_?" und "Was ist _künstliche_ Intelligenz?"
 werden wir uns in diesem Modul mit **verschiedenen Teilgebieten der KI** beschäftigen und
@@ -19,7 +19,7 @@ Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis
 Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 
-## Überblick Modulinhalte
+# Überblick Modulinhalte
 
 1.  Problemlösen
     *   Zustände, Aktionen, Problemraum
@@ -44,14 +44,14 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
     *   ~~Ausblick: Anwendung in Prolog~~
 
 
-## Team
+# Team
 
 *   [Carsten Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips) (HSBI, Sprechstunde nach Vereinbarung)
 *   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 *   [Fulya Yenilmez](https://people.tau.edu.tr/people.show/fulya.yenilmez/de) (TDU)
 
 
-## Kursformat
+# Kursformat
 
 ![](admin/images/fahrplan.png){width="80%"}
 
@@ -127,7 +127,7 @@ Sitzungen per Google Meet (**Zugangsdaten siehe [Google Classroom]**)
 [Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
 
 
-## Fahrplan
+# Fahrplan
 
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
@@ -368,7 +368,7 @@ Here be dragons ...
 [Blatt: Backpropagation]: homework/sheet-nn-backprop.md
 
 
-## Prüfungsform, Note und Credits
+# Prüfungsform, Note und Credits
 
 :::::: {.tabs groupid="hochschule"}
 ::: {.tab title="IFM 3.2 GKI (HSBI, PO23, 3. Semester)"}
@@ -441,7 +441,7 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
 ::::::
 
 
-## Materialien
+# Materialien
 
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/) (_AIMA_).
     Russell, S. und Norvig, P., Pearson, 2020.
@@ -456,9 +456,9 @@ Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Üb
     DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
 
 
-## Förderungen und Kooperationen
+# Förderungen und Kooperationen
 
-### Kooperation zw. HSBI und TDU
+## Kooperation zw. HSBI und TDU
 
 Über das Projekt ["Digital Mobil @ FH Bielefeld"] der Fachhochschule Bielefeld (HSBI) ist
 im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in Istanbul (TDU)
@@ -470,7 +470,7 @@ Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
 
 ["Digital Mobil @ FH Bielefeld"]: https://www.hsbi.de/en/digitalmobil
 
-### Kooperation mit dem DigikoS-Projekt
+## Kooperation mit dem DigikoS-Projekt
 
 Diese Vorlesung wurde zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes Selbststudium"]
 (_DigikoS_) unterstützt. Ein vom DigikoS-Projekt ausgebildeter Digital Learning Scout hat
@@ -483,7 +483,7 @@ von der Stiftung Innovation in der Hochschullehre gefördert.
 
 ---
 
-## LICENSE
+# LICENSE
 
 [`<img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png">`{=markdown}](https://creativecommons.org/licenses/by-sa/4.0/)
 

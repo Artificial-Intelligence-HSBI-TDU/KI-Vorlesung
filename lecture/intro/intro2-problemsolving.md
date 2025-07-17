@@ -71,7 +71,7 @@ challenges: |
 ---
 
 
-## Motivation: Roboter in einer Bibliothek
+# Motivation: Roboter in einer Bibliothek
 
 ![](images/problem.png){width="40%"}
 
@@ -118,7 +118,7 @@ Bemerkungen zur Umwelt:
 :::
 
 
-## Zustände der Bibliotheks-Welt
+# Zustände der Bibliotheks-Welt
 
 ![](images/states.png){width="55%"}
 
@@ -137,7 +137,7 @@ Ergebnis:
 :::
 
 
-## Suche im Problemgraphen
+# Suche im Problemgraphen
 
 ![](images/state-space.png){width="60%"}
 
@@ -150,7 +150,7 @@ Ergebnis:
 :::
 
 
-## Definition Zustand und Aktion
+# Definition Zustand und Aktion
 
 **Zustand:**
 :   (Formale) Beschreibung eines Zustandes der Welt
@@ -175,7 +175,7 @@ wird lediglich etwas Flexibilität genommen bzw. Komplexität vermieden (je nach
 :::
 
 
-## Definition Problem
+# Definition Problem
 
 ::: notes
 Ein Problem besteht aus:
@@ -212,7 +212,7 @@ Ein Problem besteht aus:
 
 
 ::: notes
-## Hinweis: Unterschied Zustand und Knoten bzw. Zustandsraum und Problemgraph
+# Hinweis: Unterschied Zustand und Knoten bzw. Zustandsraum und Problemgraph
 
 *   Zustände und Aktionen kann man als einen Graph darstellen: **Problemgraph**
     *   Zustände werden als Knoten im Graphen abgebildet
@@ -229,7 +229,7 @@ was gemeint ist.
 :::
 
 
-## Definition Problemlösen
+# Definition Problemlösen
 
 Problemlösen
 :   Wegesuche im Graph vom Startknoten zu einem Zielknoten
@@ -244,7 +244,7 @@ Problemlösen
     [Ergebnis des Problemlösens]{.notes}
 
 
-## Suche: Einfache Basisvariante
+# Suche: Einfache Basisvariante
 
 1.  Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein
 2.  Entnehme Knoten aus der Datenstruktur:
@@ -279,7 +279,7 @@ noch unbekannten Teil des Graphen (deshalb auch "Frontier").
 [[Tafel: Bezug zum Bibliotheks-Beispiel]{.ex}]{.slides}
 
 
-## Erweiterung der Suche: Vermeiden von Wiederholungen
+# Erweiterung der Suche: Vermeiden von Wiederholungen
 
 1.  Füge Startknoten in leere Datenstruktur (Stack, Queue, ...) ein
 2.  Entnehme Knoten aus der Datenstruktur:
@@ -312,7 +312,7 @@ Lehrveranstaltung kurz als "Graph-Search"-Algorithmus bezeichnet.
 :::
 
 
-## Bewertung von Suchalgorithmen
+# Bewertung von Suchalgorithmen
 
 **Vollständigkeit**
 :   Findet der Algorithmus eine Lösung, wenn es eine gibt?
@@ -335,7 +335,7 @@ Lehrveranstaltung kurz als "Graph-Search"-Algorithmus bezeichnet.
 *   **m**: Länge des längsten Pfades
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Begriffe "Problem", "Zustand", "Aktion", "Zustandsraum", "Problemgraph", "Suchbaum"
 

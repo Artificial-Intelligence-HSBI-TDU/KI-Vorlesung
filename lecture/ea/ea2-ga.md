@@ -57,12 +57,12 @@ challenges: |
 ---
 
 
-## EA -- Allgemeiner Ablauf
+# EA -- Allgemeiner Ablauf
 
 ![](images/ea_prinz.png){width="80%"}
 
 
-## Kodierung Individuen
+# Kodierung Individuen
 
 *   Binäre Lösungsrepräsentation (Bitstring):
     $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
@@ -96,7 +96,7 @@ challenges: |
     :::
 
 
-## Selektion: Erstelle Matingpool mit $\mu$ Individuen
+# Selektion: Erstelle Matingpool mit $\mu$ Individuen
 
 *   Fitnessproportionale Selektion (*Roulette Wheel Selection*):\newline
     Auswahlwahrscheinlichkeit für Individuum
@@ -131,7 +131,7 @@ Nachfolger sich wieder dort aufhalten.
 :::
 
 
-## Crossover: Erzeuge zwei Nachkommen aus zwei Eltern
+# Crossover: Erzeuge zwei Nachkommen aus zwei Eltern
 
 Festlegung der Crossover-Wahrscheinlichkeit $p_{cross}$
 (typisch: $p_{cross} \ge 0.6$)
@@ -178,7 +178,7 @@ Mitteln) der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft
 :::
 
 
-## Mutation
+# Mutation
 
 *   Mutationswahrscheinlichkeit $p_{mut}$\newline
     (typische Werte: $p_{mut} = 0.01$ oder $p_{mut} = 0.001$)
@@ -215,7 +215,7 @@ parameterweise mutiert.
 
 
 ::: notes
-## Bewertungskriterien
+# Bewertungskriterien
 
 Vorsicht: Es handelt sich um Zufallsexperimente. Wenn man nicht nur direkt
 nach einer Lösung sucht, sondern beispielsweise Parametereinstellungen oder
@@ -238,7 +238,7 @@ Die SR liegt im Intervall $[0, 1]$.
 :::
 
 
-## Typische Läufe
+# Typische Läufe
 
 :::::: columns
 ::: {.column width="50%"}
@@ -269,7 +269,7 @@ unnötige weitere "Suche" ...
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 

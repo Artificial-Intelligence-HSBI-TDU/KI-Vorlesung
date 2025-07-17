@@ -50,10 +50,10 @@ challenges: |
 ---
 
 
-## Spiele als Suchproblem: Minimax
+# Spiele als Suchproblem: Minimax
 
 ::: notes
-### Terminologie
+## Terminologie
 
 *   Zwei abwechselnd spielende Spieler: `MAX` und `MIN`, wobei `MAX` beginnt
     *   Beide Spieler spielen in jedem Zug optimal
@@ -91,14 +91,14 @@ Spielers $\ne$ Verlust des anderen Spielers), liefert der Minimax-Algorithmus
 nicht unbedingt eine optimale Strategie.
 
 
-### Spielbaum TTT
+## Spielbaum TTT
 :::
 
 ![](images/tttSpielbaum.png){width="50%"}
 
 
 ::: notes
-### Minimax (Idee)
+## Minimax (Idee)
 
 1)  Erzeuge kompletten Suchbaum mit Tiefensuche
 2)  Wende Nutzenfunktion (*Utility*) auf jeden Endzustand an
@@ -114,7 +114,7 @@ nicht unbedingt eine optimale Strategie.
 :::
 
 
-## Minimax-Algorithmus: Funktionen für MAX- und MIN-Knoten
+# Minimax-Algorithmus: Funktionen für MAX- und MIN-Knoten
 
 ```python
 def Max-Value(state):
@@ -157,7 +157,7 @@ gespeichert und als Rückgabe zurückgeliefert.
 :::
 
 
-## Minimax-Algorithmus: Sonderbehandlung Startknoten
+# Minimax-Algorithmus: Sonderbehandlung Startknoten
 
 ```python
 def Minimax(state):
@@ -175,7 +175,7 @@ def Minimax(state):
 :::
 
 
-## Minimax Beispiel
+# Minimax Beispiel
 
 ::: slides
 \bigskip
@@ -191,7 +191,7 @@ def Minimax(state):
 
 
 ::: notes
-### Aufwand Minimax
+## Aufwand Minimax
 
 *   maximale Tiefe des Spielbaums: $m$
 *   in jedem Zustand $b$ gültige Züge
@@ -208,7 +208,7 @@ Gedankenexperiment:
 :::
 
 
-## Wrap-Up
+# Wrap-Up
 
 *   Minimax: Entwickelt Spielbaum, bewertet Zustände entsprechend `Max` und `Min`
     -   Gewinn von `Max`: +1, Gewinn von `Min`: -1
