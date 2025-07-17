@@ -1,5 +1,5 @@
 ---
-title: "IFM 3.2 (PO23): Grundlagen der KI (Winter 2025/26)"
+title: "HSBI: IFM 3.2 (PO23): Grundlagen der KI (Winter 2025/26)"
 no_beamer: true
 ---
 
@@ -51,7 +51,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 *   N.N.(TDU)
 
 
-# Kursformat
+# Kursformat (HSBI)
 
 ![](admin/images/fahrplan.png){width="80%"}
 
@@ -76,7 +76,7 @@ Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
 [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
 
 
-# Fahrplan
+# Fahrplan (HSBI)
 
 Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
@@ -171,7 +171,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 [Blatt: Backpropagation]: homework/sheet-nn-backprop.md
 
 
-# Prüfungsform, Note und Credits
+# Prüfungsform, Note und Credits (HSBI)
 
 **Klausur plus Testat**, 5 ECTS
 

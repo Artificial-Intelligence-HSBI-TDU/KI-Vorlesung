@@ -19,9 +19,9 @@ betrachten. Sie erarbeiten sich im Laufe der Veranstaltung einen **Methoden-Bauk
 Lösung unterschiedlichster Probleme und erwerben ein grundlegendes Verständnis für die
 Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
-[zur TDU-Variante](readme_tdu.md)
+[**zur TDU-Variante**](readme_tdu.md)
 
-[zur HSBI-Variante](readme_hsbi.md)
+[**zur HSBI-Variante**](readme_hsbi.md)
 
 
 # Förderungen und Kooperationen

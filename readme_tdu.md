@@ -1,5 +1,5 @@
 ---
-title: "INF701: Künstliche Intelligenz (Winter 2025/26)"
+title: "TDU: INF701: Künstliche Intelligenz (Winter 2025/26)"
 no_beamer: true
 ---
 
@@ -51,7 +51,7 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 *   N.N. (TDU)
 
 
-# Kursformat
+# Kursformat (TDU)
 
 ![](admin/images/fahrplan.png){width="80%"}
 
@@ -77,7 +77,7 @@ Sitzungen per **Google Meet** (Zugangsdaten siehe [Google Classroom])
 [Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
 
 
-# Fahrplan
+# Fahrplan (TDU)
 
 | KW | Monat | Tag                            | Vorlesung                                                                                               | Lead           | Abgabe Übung             |
 |:---|:------|:-------------------------------|:--------------------------------------------------------------------------------------------------------|:---------------|:-------------------------|
@@ -164,7 +164,7 @@ Sitzungen per **Google Meet** (Zugangsdaten siehe [Google Classroom])
 [Blatt: Backpropagation]: homework/sheet-nn-backprop.md
 
 
-# Prüfungsform, Note und Credits
+# Prüfungsform, Note und Credits (TDU)
 
 | Prüfung         | Gewicht                       |
 |:----------------|-------------------------------|
