@@ -1,4 +1,5 @@
 name: TESTS
+
 on:
   # triggered by pull requests
   pull_request:
@@ -7,25 +8,57 @@ on:
 
 jobs:
   # try building slides (pandoc, beamer)
-  test_slides:
+  test_beamer:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: cagix/pandoc-lecture@master
         with:
-          texlive: 'true'
+          fetch-depth: 0
+      - uses: cagix/pandoc-lecture-zen@master
+        with:
+          mktarget: beamer
+          pandoc_data: .pandoc
+          metadata: ki.yaml
+          publish_dir: _beamer
 
-      - run: make slides
-
-  # try building lecture notes (hugo)
-  test_hugo:
+  # try building lecture notes (gfm)
+  test_gfm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: cagix/pandoc-lecture@master
         with:
-          hugo: 'true'
+          fetch-depth: 0
+      - uses: cagix/pandoc-lecture-zen@master
+        with:
+          mktarget: gfm
+          pandoc_data: .pandoc
+          metadata: ki.yaml
+          publish_dir: _gfm
 
-      - run: make web
+  # try building lecture notes (docsify)
+  test_docsify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: cagix/pandoc-lecture-zen@master
+        with:
+          mktarget: docsify
+          pandoc_data: .pandoc
+          metadata: ki.yaml
+          publish_dir: _docsify
+
+  # try building lecture notes (pdf)
+  test_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: cagix/pandoc-lecture-zen@master
+        with:
+          mktarget: pdf
+          pandoc_data: .pandoc
+          metadata: ki.yaml
+          publish_dir: _pdf

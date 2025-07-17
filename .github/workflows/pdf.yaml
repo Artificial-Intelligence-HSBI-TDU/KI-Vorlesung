@@ -1,0 +1,28 @@
+name: PDF Handout
+
+on:
+  # push on master branch
+  push:
+    branches: [master]
+  # triggered manually
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: cagix/pandoc-lecture-zen@master
+        with:
+          mktarget: pdf
+          pandoc_data: .pandoc
+          metadata: ki.yaml
+          publish_dir: _pdf
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _pdf
+          publish_branch: _pdf
+          force_orphan: true
