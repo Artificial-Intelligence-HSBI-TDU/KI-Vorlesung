@@ -30,6 +30,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN01-Das_Perzeptron.pdf"
     name: "NN01-Das_Perzeptron.pdf"
+no_beamer: true
 ---
 
 

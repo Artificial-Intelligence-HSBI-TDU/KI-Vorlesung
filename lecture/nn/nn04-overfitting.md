@@ -21,6 +21,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
     name: "NN04-Nichtlineare_Modelle_und_Overfitting.pdf"
+no_beamer: true
 ---
 
 

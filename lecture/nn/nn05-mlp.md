@@ -38,6 +38,7 @@ challenges: |
     * Stellen Sie dieses Netzwerk graphisch dar. Was ist die Anzahl der Zellen in den einzelnen Schichten?
     * Berechnen Sie die Ausgabe für eine Beispiel-Eingabe Ihrer Wahl.
     * Stellen Sie ein ein-schichtiges Netz auf, das für jede Eingabe die gleiche Ausgabe wie das obige Netzwerk berechnet und es somit ersetzen könnte.
+no_beamer: true
 ---
 
 

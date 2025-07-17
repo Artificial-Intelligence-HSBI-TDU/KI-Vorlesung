@@ -17,8 +17,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN10-CNN.pdf"
     name: "NN10-CNN.pdf"
-
-sketch: true
+no_beamer: true
 ---
 
 

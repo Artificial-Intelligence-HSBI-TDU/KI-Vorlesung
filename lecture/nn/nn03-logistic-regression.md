@@ -27,6 +27,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN03-Logistische_Regression.pdf"
     name: "NN03-Logistische_Regression.pdf"
+no_beamer: true
 ---
 
 # Kurze Übersicht

@@ -25,6 +25,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN07-Testing-Validierung.pdf"
     name: "NN07-Testing-Validierung.pdf"
+no_beamer: true
 ---
 
 

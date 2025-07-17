@@ -17,8 +17,7 @@ youtube:
 attachments:
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN9-LLM.pdf"
     name: "NN9-LLM.pdf"
-
-sketch: true
+no_beamer: true
 ---
 
 

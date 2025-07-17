@@ -26,6 +26,7 @@ attachments:
     name: "NN06-MLP_Backpropagation.pdf"
   - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN06.2-MLP_Backpropagation_Beispiel.pdf"
     name: "NN06.2-MLP_Backpropagation_Beispiel.pdf"
+no_beamer: true
 ---
 
 
