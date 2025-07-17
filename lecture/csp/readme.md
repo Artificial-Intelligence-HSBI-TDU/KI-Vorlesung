@@ -1,6 +1,7 @@
 ---
 title: "Constraintsolving"
 no_pdf: true
+no_beamer: true
 ---
 
 

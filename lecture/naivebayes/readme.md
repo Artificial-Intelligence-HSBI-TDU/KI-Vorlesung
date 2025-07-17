@@ -1,6 +1,7 @@
 ---
 title: "Naive Bayes"
 no_pdf: true
+no_beamer: true
 ---
 
 

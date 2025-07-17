@@ -2,6 +2,7 @@
 title: "Übungsblatt: Perzeptron"
 author: "Canan Yıldız (Türkisch-Deutsche Universität)"
 points: "10 Punkte"
+no_beamer: true
 ---
 
 

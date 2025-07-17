@@ -1,6 +1,7 @@
 ---
 title: "NN: Einführung in Neuronale Netze"
 no_pdf: true
+no_beamer: true
 ---
 
 
