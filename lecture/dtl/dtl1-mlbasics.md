@@ -342,7 +342,7 @@ $$
 *   Ausprägung von $v$ bzgl. $x_t$: $\quad x_t(v) = i \quad$ (mit $i = 1 \ldots m_t$)
 
 ::: notes
-*Anmerkung*: Stellen Sie sich den Merkmalsvektor \mathbf{x} vielleicht wie
+*Anmerkung*: Stellen Sie sich den Merkmalsvektor $\mathbf{x}$ vielleicht wie
 einen Konstruktor einer Klasse `x` vor: Die einzelnen Attribute $x_t$ sind
 die Parameter, aus denen der Merkmalsvektor aufgebaut ist/wird. Jedes der
 Attribute hat einen Typ und damit eine bestimmte Anzahl erlaubter Werte
