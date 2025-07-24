@@ -1,5 +1,5 @@
 ---
-title: "HSBI: IFM 3.2 (PO23): Grundlagen der KI (Winter 2025/26)"
+title: "HSBI: IFM 3.2: Grundlagen der KI (Winter 2025/26)"
 no_beamer: true
 ---
 

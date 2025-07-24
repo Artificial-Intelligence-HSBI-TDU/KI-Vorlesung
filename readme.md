@@ -1,5 +1,5 @@
 ---
-title: "IFM 3.2 (PO23) / INF701: Künstliche Intelligenz (Winter 2025/26)"
+title: "IFM 3.2 / INF701: Künstliche Intelligenz (Winter 2025/26)"
 has_license: true
 no_beamer: true
 ---
