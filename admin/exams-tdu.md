@@ -14,7 +14,7 @@ no_beamer: true
 | Übung           | 10 % Bonus für Endprüfung        |
 
 
-Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Endprüfungsnote ≥40**),
+Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Endprüfungsnote $\ge$ 40**),
 werden **10 % der Übungspunkte als Bonus** zu der Endprüfungsnote hinzugefügt.
 
 # Übungspunkte

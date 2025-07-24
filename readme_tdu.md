@@ -172,7 +172,7 @@ Sitzungen per **Google Meet** (Zugangsdaten siehe [Google Classroom])
 | Endprüfung      | **60 %**                      |
 | Übung           | **10 % Bonus für Endprüfung** |
 
-Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsnote ≥40**),
+Wenn in der Endprüfung die 40 Punkte Mindestgrenze erreicht wird (**Prüfungsnote $\ge$ 40**),
 werden **10 % der Übungspunkte als Bonus** zu der Prüfungsnote hinzugefügt.
 
 Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung** erforderlich.
