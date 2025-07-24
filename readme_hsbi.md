@@ -58,15 +58,16 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-| Vorlesung (2 SWS)                   | Praktikum (2 SWS)                       |
-|:------------------------------------|:----------------------------------------|
-| Mo, 08:00 - 09:30 Uhr (DE) (online) | G1: Fr, 09:45 - 11:15 Uhr (DE) (online) |
-| (*Flipped Classroom*)               | G2: Fr, 11:30 - 13:00 Uhr (DE) (online) |
-|                                     | G3: Fr, 09:45 - 11:15 Uhr (DE) (online) |
-|                                     | G4: Fr, 11:30 - 13:00 Uhr (DE) (online) |
+| Vorlesung (2 SWS): 06.10. - 24.10. | Vorlesung (2 SWS): 27.10. - 23.01. | Praktikum (2 SWS): 06.10. - 23.01. |
+|:-----------------------------------|:-----------------------------------|:-----------------------------------|
+| Mo, 09:00 - 10:30 Uhr (DE)         | Mo, 08:00 - 09:30 Uhr (DE)         | G1: Fr, 09:45 - 11:15 Uhr (DE)     |
+| (online, Zoom)                     | (online, Zoom)                     | G2: Fr, 11:30 - 13:00 Uhr (DE)     |
+|                                    |                                    | G3: Fr, 09:45 - 11:15 Uhr (DE)     |
+|                                    |                                    | G4: Fr, 11:30 - 13:00 Uhr (DE)     |
+|                                    |                                    | (online, Zoom)                     |
 
-Online-Sitzungen per **Zoom** (Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld)).
-Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
+Durchführung der Vorlesung als *Flipped Classroom*. Alle Online-Sitzungen per Zoom.
+(Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld))
 
 
 # Fahrplan (HSBI)
