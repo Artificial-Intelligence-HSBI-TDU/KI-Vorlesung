@@ -6,6 +6,7 @@ no_beamer: true
 
 
 ![](https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg){width="60%"}
+
 [["künstliche intelligenz"](https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-netzwerk-3706562/) by [Gerd Altmann (geralt)](https://pixabay.com/de/users/geralt-9301/) on Pixabay.com ([Pixabay License](https://pixabay.com/de/service/license/))]{.origin}
 
 
