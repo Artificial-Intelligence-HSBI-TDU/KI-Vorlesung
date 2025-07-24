@@ -26,11 +26,13 @@ dort wartenden Elben, da es sonst zu Konflikten zwischen beiden Gruppen kommt.
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-![][1]
+<!-- TODO
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png){width="40%"}
+-->
 
 [[MapGermanyGraph.svg] by [Regnaron] and [Jahobr] on Wikimedia Commons ([Public Domain])]{.origin}
 
-![][2]
+![](images/MapGermanyGraph-Kosten.png){width="40%"}
 
 1.  Finden Sie nacheinander mit Tiefensuche (1P) und Breitensuche (1P) (jeweils in der
     Graph-Search-Variante) sowie A\* (2P) (in der Tree-Search-Variante mit der Verbesserung
@@ -75,12 +77,11 @@ optimal ist.
 
 [^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht genießen!
 
-  [1]: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png
-  {width="40%"}
+
+
   [MapGermanyGraph.svg]: https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg
   [Regnaron]: https://de.wikipedia.org/wiki/Benutzer:Regnaron
   [Jahobr]: https://commons.wikimedia.org/wiki/User:Jahobr
   [Public Domain]: https://en.wikipedia.org/wiki/en:public_domain
-  [2]: images/MapGermanyGraph-Kosten.png {width="40%"}
   [`aima.core.search`]: https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search
   [`search.py`]: https://github.com/aimacode/aima-python/blob/master/search.py
