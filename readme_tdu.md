@@ -58,26 +58,17 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-**Vorlesung (2 SWS)**
+| Vorlesung (2 SWS): 30.09. - 15.01. | Übung (2 SWS): 30.09. - 15.01. |
+|:-----------------------------------|:-------------------------------|
+| Mo, 12:00 - 13:30 Uhr (TR)         | G1: wird bekanntgegeben        |
+| (online, Zoom)                     | G2: wird bekanntgegeben        |
+|                                    | G3: wird bekanntgegeben        |
+|                                    | G4: wird bekanntgegeben        |
+|                                    | (online, Google Meet)          |
 
-| 30.09. - 25.10.            | 28.10. - 15.01.            |
-|:---------------------------|:---------------------------|
-| Mo, 12:00 - 13:30 Uhr (TR) | Mo, 13:00 - 14:30 Uhr (TR) |
-| online                     | online                     |
-
-Durchführung als *Flipped Classroom*: Sitzungen per **Zoom** (Zugangsdaten siehe [Google Classroom])
-
-**Übung (2 SWS)**
-
-| Übungsgruppe | 30.09. - 15.01.     |
-|:-------------|:--------------------|
-| G1 / G2      | wird bekanntgegeben |
-| G3 / G4      | wird bekanntgegeben |
-|              | online              |
-
-Sitzungen per **Google Meet** (Zugangsdaten siehe [Google Classroom])
-
-[Google Classroom]: https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3
+Durchführung der Vorlesung als *Flipped Classroom*: Sitzungen per Zoom,
+Übungen per Google Meet.
+(Zugangsdaten siehe [Google Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 
 
 # Fahrplan (TDU)
