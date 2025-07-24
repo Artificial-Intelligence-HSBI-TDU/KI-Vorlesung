@@ -58,30 +58,20 @@ Anwendung in Spielen, Navigation, Planung, smarten Assistenten, autonomen Fahrze
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-**Vorlesung (2 SWS)**
+| Vorlesung (2 SWS)                   | Praktikum (2 SWS)                       |
+|:------------------------------------|:----------------------------------------|
+| Mo, 08:00 - 09:30 Uhr (DE) (online) | G1: Fr, 09:45 - 11:15 Uhr (DE) (online) |
+| (*Flipped Classroom*)               | G2: Fr, 11:30 - 13:00 Uhr (DE) (online) |
+|                                     | G3: Fr, 09:45 - 11:15 Uhr (DE) (online) |
+|                                     | G4: Fr, 11:30 - 13:00 Uhr (DE) (online) |
 
-| 07.10. - 24.01.                     |
-|:------------------------------------|
-| Mo, 11:00 - 12:30 Uhr (DE) (online) |
-| (*Flipped Classroom*)               |
-
-**Praktikum (2 SWS)**
-
-| Praktikumsgruppe | 07.10. - 24.01.                       |
-|:-----------------|:--------------------------------------|
-| G1               | Mo, 17:00 bis 18:30 Uhr (DE) (online) |
-| G2               | Mo, 15:15 bis 16:45 Uhr (DE) (online) |
-| G3               | Di, 09:45 bis 11:15 Uhr (DE) (online) |
-
-Online-Sitzungen per **Zoom** (Zugangsdaten siehe [ILIAS IFM 3.2 GKI (PO23, 3. Semester)]).
+Online-Sitzungen per **Zoom** (Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld)).
 Sie _können_ hierzu den Raum J101 bzw. J102 (siehe Stundenplan) nutzen.
-
-[ILIAS IFM 3.2 GKI (PO23, 3. Semester)]: https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld
 
 
 # Fahrplan (HSBI)
 
-Hier finden Sie einen abonnierbaren [Google Kalender IFM 3.2 GKI (PO23, 3. Semester)] mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
+Hier finden Sie einen abonnierbaren [Google Kalender](https://calendar.google.com/calendar/ical/552fdc6c19e64eda7b36b2d16a88bf4b7e593af2c520afbe1aeeb0bb4f43107d%40group.calendar.google.com/public/basic.ics) mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1420535&client_id=FH-Bielefeld). Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
@@ -106,8 +96,6 @@ Abgabe der Übungsblätter jeweils **Montag bis 11:00 Uhr** im [ILIAS](https://w
 | _(Prüfungsphase I)_  |       | **Klausur**: Di, 04. Feb 2025, 10-18 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 | _(Prüfungsphase II)_ |       | **Klausur**: Di, 01. Apr 2025, 10-16 Uhr (je Klausur 90', Vergabe ca. 2 Wochen vorher)                       |                |                               |                       |
 
-
-[Google Kalender IFM 3.2 GKI (PO23, 3. Semester)]: https://calendar.google.com/calendar/ical/552fdc6c19e64eda7b36b2d16a88bf4b7e593af2c520afbe1aeeb0bb4f43107d%40group.calendar.google.com/public/basic.ics
 
 [Orga]: https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1358898/index.html#überblick-modulinhalte
 
