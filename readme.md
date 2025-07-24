@@ -4,6 +4,8 @@ has_license: true
 no_beamer: true
 ---
 
+<!--  pandoc -s -f markdown -t markdown+smart-grid_tables-multiline_tables-simple_tables --columns=94  readme.md  -o xxx.md  -->
+
 
 ![](https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg){width="60%"}
 
