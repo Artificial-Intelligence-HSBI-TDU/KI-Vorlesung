@@ -26,3 +26,4 @@ jobs:
           publish_dir: _docsify
           publish_branch: _docsify
           force_orphan: true
+          commit_message: ${{ github.event.head_commit.message }}

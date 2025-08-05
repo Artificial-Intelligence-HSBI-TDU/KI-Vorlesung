@@ -26,3 +26,4 @@ jobs:
           publish_dir: _gfm
           publish_branch: _gfm
           force_orphan: true
+          commit_message: ${{ github.event.head_commit.message }}

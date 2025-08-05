@@ -26,3 +26,4 @@ jobs:
           publish_dir: _pdf
           publish_branch: _pdf
           force_orphan: true
+          commit_message: ${{ github.event.head_commit.message }}
