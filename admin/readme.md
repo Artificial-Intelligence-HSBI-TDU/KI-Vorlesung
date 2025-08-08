@@ -1,5 +1,6 @@
 ---
-title: "Organisatorisches"
-no_pdf: true
 no_beamer: true
+no_pdf: true
+title: Organisatorisches
 ---
+
