@@ -42,10 +42,10 @@ Erinnerung: CAL2/CAL3
 
 -   Informationsgewinn durch Betrachtung von Attribut $A$
 
-    $$\begin{array}{rcl}
+    $$\begin{eqnarray}{rcl}
         \operatorname{Gain}(S, A) &=& H(S) - R(S, A)\\[5pt]
                                 &=& H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
-    \end{array}$$
+    \end{eqnarray}$$
 
 ::: notes
 $R(S,A)$ ist die Unsicherheit/nötige Bits nach Auswahl von Attribut A. Je kleiner $R(S,A)$, um so kleiner die
@@ -78,13 +78,13 @@ Trainingsmenge **nach** Betrachtung von Attribut $A$ ...
 
 $H(S) = 0.92 \operatorname{Bit}$
 
-$$\begin{array}{rcl}
+$$\begin{eqnarray}{rcl}
 \operatorname{Gain}(S, x_1) &=& 0.92 - 0.87 = 0.05 \operatorname{Bit}\\
 \operatorname{Gain}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
                             &=& 0.25 \operatorname{Bit}\\
 \operatorname{Gain}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
                             &=& 0.13 \operatorname{Bit}
-\end{array}$$
+\end{eqnarray}$$
 
 \normalsize
 :::

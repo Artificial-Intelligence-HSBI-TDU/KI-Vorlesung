@@ -136,10 +136,10 @@ $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
 Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$, $P(\text{Nase=0}|\text{gesund})$, ...
 
 Wähle Klasse
-$$\begin{array}{rl}
+$$\begin{eqnarray}{rl}
 h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0}|h) \cdot P(\text{Husten=1}|h) \\
     & \cdot P(\text{Haut=0}|h) \cdot P(\text{Fieber=1}|h)
-\end{array}$$
+\end{eqnarray}$$
 
 ::: notes
 **Ergebnis**: (nur die für den zu klassifizierenden Beispiel-Vektor nötigen Werte, die restlichen müssten aber auch beim
@@ -262,11 +262,11 @@ Fehlerrate, da bestimmte Eigenschaften in der Trainingsmenge zu hoch gewichtet w
 
     Erinnerung: $\log(x \cdot y) = \log(x) + \log(y)$ und Logarithmus streng monoton
 
-    $$\begin{array}{rcl}
+    $$\begin{eqnarray}{rcl}
     h_{MAP} &=& \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i | h))]
-    \end{array}$$
+    \end{eqnarray}$$
 :::
 
 ::: notes
