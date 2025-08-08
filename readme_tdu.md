@@ -31,7 +31,7 @@ Planung, smarten Assistenten, autonomen Fahrzeugen, ...
     -   Entscheidungsbäume: CAL2, CAL3, ID3, C4.5
     -   Neuronale Netze
         -   Perzeptron, Lernregel
-        -   Feedforward Multilayer Perzeptron (MLP), Backpropagation, Trainings- vs. Generalisierungsfehler
+        -   Feedforward Multilayer Perzeptron (MLP), Backpropagation, Trainings- vs. Generalisierungsfehler
         -   Steuerung des Trainings: Kreuzvalidierung, Regularisierung
         -   Ausblick: Support-Vektor-Maschinen
     -   Naive Bayes Klassifikator

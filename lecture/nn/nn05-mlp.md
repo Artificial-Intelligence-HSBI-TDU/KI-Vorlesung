@@ -51,7 +51,7 @@ Gegeben sei ein MLP mit linearen Aktivierungsfunktionen, d.h. für jedes Neuron 
 gewichtete Summe der Inputs: $y = g(w^T x)$, wobei $g(z) = z$ gilt, also $y = w^T x$. Zeigen Sie, dass dieses Netz durch
 eine einzige Schicht mit linearen Neuronen ersetzt werden kann.
 
-Betrachten Sie dazu ein zwei-schichtiges Netz (i.e. bestehend aus Eingabe-Schicht, Ausgabe-Schicht und einer versteckten
+Betrachten Sie dazu ein zwei-schichtiges Netz (i.e. bestehend aus Eingabe-Schicht, Ausgabe-Schicht und einer versteckten
 Schicht) und schreiben Sie die Gleichung auf, die die Ausgabe als Funktion der Eingabe darstellt.
 
 Als Beispiel sei das zwei-schichtige MLP mit den folgenden Gewichten und Bias-Werten gegeben:

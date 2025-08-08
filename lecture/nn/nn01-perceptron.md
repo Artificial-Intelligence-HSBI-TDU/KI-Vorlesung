@@ -24,9 +24,9 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 
 ## Arten des Lernens
 
--   Überwachtes Lernen (e.g. Klassifizierung, Regression)
--   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
--   Bestärkendes Lernen (e.g. Schach spielen)
+-   Überwachtes Lernen (e.g. Klassifizierung, Regression)
+-   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
+-   Bestärkendes Lernen (e.g. Schach spielen)
 
 ## Formalisierung
 

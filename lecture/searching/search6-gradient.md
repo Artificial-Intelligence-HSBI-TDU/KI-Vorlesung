@@ -105,7 +105,7 @@ Zustandsformulierung"
 -   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach durchschnittlich 3 Schritten
     stecken.
 
-[nach [@Russell2020, p. 131]]{.origin}
+[nach [@Russell2020, p. 131]]{.origin}
 :::
 
 # Eigenschaften Gradientensuche

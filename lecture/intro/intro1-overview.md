@@ -13,8 +13,8 @@ Der *Turing-Test* (Alan Turin, 1950) hat gewissermaßen die modernen Zweige der 
 *Wissensrepräsentation*, *Logisches Schließen*, *Maschinelles Lernen*, *Verarbeitung natürlicher Sprache*, *Computer
 Vision* und *Robotik*. Dabei ist zwischen *starker KI* und *schwacher KI* zu unterscheiden.
 
-Häufig werden die Gebiete in einem Diagramm eingeordnet, wobei die x-Achse Verhalten vs. Denken und die y-Achse Rational
-vs. Menschlich aufspannen. So kann man beispielsweise Logik dem rationalen Denken zuordnen oder die Erforschung
+Häufig werden die Gebiete in einem Diagramm eingeordnet, wobei die x-Achse Verhalten vs. Denken und die y-Achse Rational
+vs. Menschlich aufspannen. So kann man beispielsweise Logik dem rationalen Denken zuordnen oder die Erforschung
 kognitiver Prozesse dem Quadranten menschliches Denken.
 
 Wenn man sich die Geschichte der KI anschaut, beobachtet man bei fast allen Themen, dass sie in der Vergangenheit eine
@@ -50,7 +50,7 @@ Erwartungen.
 > Menschen. Da einzelne kognitive Fähigkeiten unterschiedlich stark ausgeprägt sein können und keine Einigkeit besteht,
 > wie diese zu bestimmen und zu unterscheiden sind, gibt es **keine allgemeingültige Definition der Intelligenz**.
 >
-> `\hfill`{=tex} [["Intelligenz"](https://de.wikipedia.org/wiki/Intelligenz) by
+> `\hfill`{=tex} [["Intelligenz"](https://de.wikipedia.org/wiki/Intelligenz) by
 > [Cumtempore](https://de.wikipedia.org/wiki/Benutzer:Cumtempore) and
 > [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de) on Wikipedia ([CC
 > BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
@@ -73,7 +73,7 @@ Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an
 > **Argumentation**, die Introspektion, der Wille, das Glauben und einige mehr. Auch Emotionen haben einen wesentlichen
 > kognitiven Anteil.
 >
-> `\hfill`{=tex} [["Kognition"](https://de.wikipedia.org/wiki/Kognition) by
+> `\hfill`{=tex} [["Kognition"](https://de.wikipedia.org/wiki/Kognition) by
 > [Arbraxan](https://de.wikipedia.org/wiki/User:Arbraxan) and
 > [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de) on Wikipedia ([CC
 > BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
@@ -93,7 +93,7 @@ Fähigkeiten wie Glaube und Wille spielen derzeit keine Rolle in der KI.
 
 > Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.
 >
-> `\hfill`{=tex} -- John McCarthy (1955)
+> `\hfill`{=tex} -- John McCarthy (1955)
 
 ::: notes
 Einwand: [Braitenberg-Vehikel](https://en.wikipedia.org/wiki/Braitenberg_vehicle) zeigen so etwas wie "intelligentes"
@@ -106,7 +106,7 @@ Verhalten, sind aber noch lange nicht intelligent! Bezieht sich nur auf *Verhalt
 > KI ist die Fähigkeit digitaler Computer oder computergesteuerter Roboter, Aufgaben zu lösen, die normalerweise mit den
 > höheren intellektuellen Verarbeitungsfähigkeiten von Menschen in Verbindung gebracht werden ...
 >
-> `\hfill`{=tex} -- Encyclopedia Britannica
+> `\hfill`{=tex} -- Encyclopedia Britannica
 
 ::: notes
 Einwand: Dann wäre aber auch Auswendig-Lernen oder das Multiplizieren langer Zahlen als intelligent zu betrachten!
@@ -118,9 +118,9 @@ Bezieht sich vor allem auf "*Denken*"!
 
 > Artificial Intelligence is the study of how to make computers do things at which, at the moment, people are better.
 >
-> `\hfill`{=tex} -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
+> `\hfill`{=tex} -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[nach [@Ertel2017, pp. 1-3]]{.origin}
+[nach [@Ertel2017, pp. 1-3]]{.origin}
 
 ::: notes
 Dazu gehört auch
@@ -193,7 +193,7 @@ Außerdem wird durch den Turing-Test im Wesentlichen nur Funktionalität geprüf
 vorhanden ist.
 :::
 
-# Starke vs. schwache KI
+# Starke vs. schwache KI
 
 ## "Schwache KI"
 
@@ -231,8 +231,8 @@ Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
 ::: notes
 Untersuchung von
 
--   Verhalten vs. Denken
--   Rational vs. menschlich
+-   Verhalten vs. Denken
+-   Rational vs. menschlich
 
 Motivation dabei
 :::
@@ -422,7 +422,7 @@ Siehe auch Abbildung 1.3 in [@Ertel2017, S.8] ...
 # Wrap-Up
 
 -   Definition von "Intelligenz" nicht ganz einfach
--   Dimensionen: Denken vs. Verhalten, menschlich vs. rational
+-   Dimensionen: Denken vs. Verhalten, menschlich vs. rational
 -   Ziele der KI: Verständnis menschlicher Fähigkeiten, Übertragen auf künstliche Systeme
 
 ::: notes
@@ -439,7 +439,7 @@ CS221](https://youtu.be/J8Eh7RqggsU) an. (Vorsicht: Das ist recht lang.)
 -   k1: Aspekte, die zur Intelligenz gerechnet werden
 -   k1: Turing-Test: Aufbau, Gebiete, Kritik
 -   k1: Gebiete der KI sowie deren Zielsetzung
--   k1: Starke vs. schwache KI
+-   k1: Starke vs. schwache KI
 -   k1: Wichtige Strömungen in der KI und ihre zeitliche Einordnung
 :::
 

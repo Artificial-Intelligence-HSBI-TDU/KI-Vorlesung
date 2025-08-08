@@ -139,7 +139,7 @@ def ARC_Reduce(csp, x, y):
     return change
 ```
 
-[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171, fig. 5.3]]{.origin}
+[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171, fig. 5.3]]{.origin}
 
 ::: notes
 *Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten: Jedes Element kann nur genau einmal in

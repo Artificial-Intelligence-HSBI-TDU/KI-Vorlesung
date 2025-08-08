@@ -111,7 +111,7 @@ expandierten Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Oper
     diesem Fall "nur" $O(b^{d})$.
 :::
 
-# Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
+# Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
 
 |                     | **Tiefensuche** | **Breitensuche** |
 |:--------------------|:----------------|:-----------------|
@@ -130,11 +130,11 @@ expandierten Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Oper
 \vfill
 \footnotesize
 
-**b**: Verzweigungsfaktor, **d**: Ebene d. höchsten Lösungsknotens, **m**: Länge d. längsten Pfades
+**b**: Verzweigungsfaktor, **d**: Ebene d. höchsten Lösungsknotens, **m**: Länge d. längsten Pfades
 
 \normalsize
 
-# Praxisvergleich Breitensuche vs. Tiefensuche
+# Praxisvergleich Breitensuche vs. Tiefensuche
 
 **Breitensuche**: Annahme: $b=10$, 10.000 Knoten/s, 1.000 Byte/Knoten
 
