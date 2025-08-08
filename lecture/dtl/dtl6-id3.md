@@ -42,7 +42,7 @@ Erinnerung: CAL2/CAL3
 
 -   Informationsgewinn durch Betrachtung von Attribut $A$
 
-    $$\begin{eqnarray}{rcl}
+    $$\begin{eqnarray}
         \operatorname{Gain}(S, A) &=& H(S) - R(S, A)\\[5pt]
                                 &=& H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
     \end{eqnarray}$$
@@ -78,7 +78,7 @@ Trainingsmenge **nach** Betrachtung von Attribut $A$ ...
 
 $H(S) = 0.92 \operatorname{Bit}$
 
-$$\begin{eqnarray}{rcl}
+$$\begin{eqnarray}
 \operatorname{Gain}(S, x_1) &=& 0.92 - 0.87 = 0.05 \operatorname{Bit}\\
 \operatorname{Gain}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
                             &=& 0.25 \operatorname{Bit}\\

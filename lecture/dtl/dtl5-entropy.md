@@ -181,7 +181,7 @@ Wahrscheinlichkeit für $B$: $p_B = 2/6 = 0.333$
 \bigskip
 \pause
 
-$$\begin{eqnarray}{rcl}
+$$\begin{eqnarray}
     H(S) &=& -\sum_k p_k \log_2 p_k\\
          &=& -(4/6 \cdot \log_2 4/6 + 2/6 \cdot \log_2 2/6)\\
          &=& -(-0.39 -0.53) = 0.92 \operatorname{Bit}
@@ -234,7 +234,7 @@ $$    R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)$$
 \pause
 
 
-$$\begin{eqnarray}{rcl}
+$$\begin{eqnarray}
     R(S, A) &=& \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)\\
          &=& 4/6 \cdot H(\lbrace 1,3,5,6 \rbrace) + 2/6 \cdot H(\lbrace 2,4 \rbrace)\\
          &=& 4/6\cdot(-3/4 \cdot \log_2 3/4 - 1/4 \cdot \log_2 1/4) +\\

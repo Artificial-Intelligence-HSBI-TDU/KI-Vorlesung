@@ -136,7 +136,7 @@ $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
 Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$, $P(\text{Nase=0}|\text{gesund})$, ...
 
 Wähle Klasse
-$$\begin{eqnarray}{rl}
+$$\begin{eqnarray}
 h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0}|h) \cdot P(\text{Husten=1}|h) \\
     & \cdot P(\text{Haut=0}|h) \cdot P(\text{Fieber=1}|h)
 \end{eqnarray}$$
@@ -262,7 +262,7 @@ Fehlerrate, da bestimmte Eigenschaften in der Trainingsmenge zu hoch gewichtet w
 
     Erinnerung: $\log(x \cdot y) = \log(x) + \log(y)$ und Logarithmus streng monoton
 
-    $$\begin{eqnarray}{rcl}
+    $$\begin{eqnarray}
     h_{MAP} &=& \operatorname{argmax}_{h \in H} P(h|D_1, \ldots, D_n) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h) \\[5pt]
             &=& \operatorname{argmax}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i | h))]

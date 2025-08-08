@@ -222,7 +222,7 @@ sie mit einer Projektion eines Quaders auf eine Seitenfläche vergleichbar ist.
 \bigskip
 
 -   Verallgemeinerung (**Kettenregel**):
-    $$\begin{eqnarray}{rcl}
+    $$\begin{eqnarray}
     P(A_1,A_2,\ldots,A_n) &=& P(A_n,\ldots,A_2,A_1)\\
         & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1},\ldots,A_1)\\
         & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1}|A_{n-2},\ldots,A_1)P(A_{n-2},\ldots,A_1)\\
