@@ -7,11 +7,11 @@ title: Suche mit Breitensuche
 Die Breitensuche gehört zu den "Uninformierten Suchverfahren": Es werden keine
 weiteren Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.
 
-Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
-Datenstruktur eine **Queue** benutzt: Expandierte Nachfolger werden immer **hinten**
-in die Queue eingefügt, und der nächste zu expandierende Knoten wird **vorn** aus der
-Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum ebenenweise
-entwickelt.
+Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für
+die Datenstruktur eine **Queue** benutzt: Expandierte Nachfolger werden immer
+**hinten** in die Queue eingefügt, und der nächste zu expandierende Knoten wird
+**vorn** aus der Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum
+ebenenweise entwickelt.
 :::
 
 ::: youtube
@@ -53,8 +53,9 @@ Varianten:
 2.  Entnehme Knoten aus der Datenstruktur:
     -   Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
     -   Markiere aktuellen Knoten, und
-    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten Nachfolger,
-        die noch nicht in der Datenstruktur sind, in die Datenstruktur ein
+    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten
+        Nachfolger, die noch nicht in der Datenstruktur sind, in die Datenstruktur
+        ein
 3.  Falls die Datenstruktur leer ist: Abbruch, melde "*nicht gefunden*"
 4.  Gehe zu Schritt 2
 
@@ -95,10 +96,11 @@ Varianten:
 # Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
-partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
-im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
-den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
-Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
+Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
+Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte
 Knoten sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur
@@ -116,10 +118,10 @@ der anwendbaren Operationen bestimmt.)
 -   Im [@Russell2020] wird die Breitensuche ebenfalls auf der Basis des
     Graph-Search-Algorithmus eingeführt. Allerdings wird die Abbruchbedingung
     modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search eigentlich
-    definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird, sondern bereits
-    bei der Erzeugung der Nachfolgerknoten (vor dem Einfügen in die Queue). Dadurch
-    spart man sich die Expansion einer zusätzlichen Ebene: Die Komplexität wäre in
-    diesem Fall "nur" $O(b^{d})$.
+    definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird, sondern
+    bereits bei der Erzeugung der Nachfolgerknoten (vor dem Einfügen in die Queue).
+    Dadurch spart man sich die Expansion einer zusätzlichen Ebene: Die Komplexität
+    wäre in diesem Fall "nur" $O(b^{d})$.
 :::
 
 # Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}

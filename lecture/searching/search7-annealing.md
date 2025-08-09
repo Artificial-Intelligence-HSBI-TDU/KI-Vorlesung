@@ -4,18 +4,18 @@ title: "Lokale Suche: Simulated Annealing"
 ---
 
 ::: tldr
-Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
-das Erreichen des Ziels.
+Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern
+nur das Erreichen des Ziels.
 
 Das Problem bei der Gradientensuche ist, dass man eine Kostenfunktion benötigt und
-diese auch **lokale Minima** enthalten kann. Mit der reinen Gradientensuche würde man
-bei Erreichen lokaler Minima die Suche abbrechen (müssen), da es keine weitere
+diese auch **lokale Minima** enthalten kann. Mit der reinen Gradientensuche würde
+man bei Erreichen lokaler Minima die Suche abbrechen (müssen), da es keine weitere
 Verbesserung unter den Nachfolgern mehr geben kann. In Anlehnung an das Abkühlen von
-Metall kann hier eine Variante der lokalen Suche helfen: **Simulated Annealing**. Man
-führt einen "Temperatur"-Parameter ein, der im Laufe der Suche immer kleiner wird und
-schließlich gegen Null geht. In Abhängigkeit von dieser "Temperatur" wird mit einer
-bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer hohen
-Temperatur ist diese Wahrscheinlichkeit höher, bei einer niedrigen Temperatur
+Metall kann hier eine Variante der lokalen Suche helfen: **Simulated Annealing**.
+Man führt einen "Temperatur"-Parameter ein, der im Laufe der Suche immer kleiner
+wird und schließlich gegen Null geht. In Abhängigkeit von dieser "Temperatur" wird
+mit einer bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer
+hohen Temperatur ist diese Wahrscheinlichkeit höher, bei einer niedrigen Temperatur
 niedriger, so dass das Verfahren in ein normales Hill-Climbing übergeht. Damit kann
 man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.
 :::
@@ -49,7 +49,8 @@ Mögliche Lösungen:
 -   Ball wird in Zustandsraum-Landschaft gesetzt.
 -   Folge:
     -   rollt steilsten Abstieg hinunter
-    -   rollt evtl. in Tal auf halber Höhe (lokales Minimum) =\> bleibt dort gefangen
+    -   rollt evtl. in Tal auf halber Höhe (lokales Minimum) =\> bleibt dort
+        gefangen
 
 \bigskip
 \bigskip
@@ -107,8 +108,8 @@ def simulated_annealing(problem):
 Wenn `dE` positiv ist, dann ist der Nachfolger "besser" (hier: kleiner bewertet) als
 der aktuelle Knoten und wird immer als nächster Knoten übernommen.
 
-Wenn `dE` negativ ist, dann ist der betrachtete Nachfolger "schlechter" (hier: größer
-bewertet) als der aktuelle Knoten. Dann wird er mit einer Wahrscheinlichkeit
+Wenn `dE` negativ ist, dann ist der betrachtete Nachfolger "schlechter" (hier:
+größer bewertet) als der aktuelle Knoten. Dann wird er mit einer Wahrscheinlichkeit
 `math.exp(dE/temp)` als nächster Knoten übernommen. Diese Wahrscheinlichkeit ist bei
 hohen Temperaturen `temp` eher hoch, und sinkt, je niedriger die Temperatur `temp`
 wird.
@@ -152,9 +153,9 @@ Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
     und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h. die
     Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
 -   Temperatur $\text{temp}$ wird kleiner und geht gegen Null:
-    $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h. $\exp(a)$
-    geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$ geht gegen
-    0
+    $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
+    $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$
+    geht gegen 0
 ::::
 
 # Abkühlungsplan problemabhängig wählen
@@ -165,7 +166,8 @@ Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
 
 -   Abkühlen: $T_k = \alpha T_{k-1}$ mit $0.8 \le \alpha \le 0.99$
     -   Ausreichend langsam abkühlen!
-    -   Typisch: jede Stufe so lange halten, daß etwa 10 Änderungen akzeptiert wurden
+    -   Typisch: jede Stufe so lange halten, daß etwa 10 Änderungen akzeptiert
+        wurden
 
 \smallskip
 

@@ -9,8 +9,8 @@ weiteren Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.
 
 Die Tiefensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
 Datenstruktur einen **Stack** benutzt: Expandierte Nachfolger werden immer **oben**
-auf den Stack gelegt, und der nächste zu expandierende Knoten wird **oben** vom Stack
-genommen. Dadurch verfolgt die Tiefensuche einen Pfad immer erst in die Tiefe.
+auf den Stack gelegt, und der nächste zu expandierende Knoten wird **oben** vom
+Stack genommen. Dadurch verfolgt die Tiefensuche einen Pfad immer erst in die Tiefe.
 
 Bei Sackgassen erfolgt automatisch ein Backtracking, d.h. es wird zum letzten Knoten
 mit einer Alternative zurückgegangen. Dies liegt daran, dass bei einer Sackgasse
@@ -28,12 +28,12 @@ keine Nachfolger expandiert und oben auf den Stack gelegt werden.
 :::
 
 ::: notes
-Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek und
-einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für den
+Das Beispiel ist ein Büroflur in der Uni. Neben den Büros gibt es eine Bibliothek
+und einen Kopiererraum, wo auch der Roboter sich gerade aufhält. Die Aufgabe für den
 Roboter lautet: Hole das Buch aus der Bibliothek (und bringe es zum Kopier). (Damit
 das Beispiel und der sich daraus ergebende Problemgraph nicht zu groß und zu
-unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch in
-der Bibliothek aufnimmt.)
+unübersichtlich werden, soll das Ziel hier darin liegen, dass der Roboter das Buch
+in der Bibliothek aufnimmt.)
 
 Es stehen zwei Aktionen zur Verfügung:
 
@@ -83,8 +83,8 @@ braucht) und landet damit bei der "informierten Suche".
 
 Normalerweise hat man eine Ordnung auf den Aktionen, d.h. für einen Knoten ergibt
 sich daraus eine Reihenfolge, in der die Aktionen angewendet werden und die
-Nachfolger expandiert werden. Bei der Wegesuche hat man dies nicht, insofern muss man
-willkürlich eine Ordnung festlegen. In dieser Veranstaltung ist dies die
+Nachfolger expandiert werden. Bei der Wegesuche hat man dies nicht, insofern muss
+man willkürlich eine Ordnung festlegen. In dieser Veranstaltung ist dies die
 alphabetische Reihenfolge der Knoten (Orte).
 :::
 
@@ -146,10 +146,11 @@ alphabetische Reihenfolge der Knoten (Orte).
 # Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
-partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
-im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
-den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
-Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
+Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
+Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte
 Knoten sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur

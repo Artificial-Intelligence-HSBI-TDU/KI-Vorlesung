@@ -24,8 +24,8 @@ in Übungsstunde vorstellen.
 
 ## Aufgaben lösen
 
--   Lösen Sie die Aufgaben auf dem jeweiligen Übungsblatt und laden Sie Ihre Lösungen
-    im Google Classroom hoch.
+-   Lösen Sie die Aufgaben auf dem jeweiligen Übungsblatt und laden Sie Ihre
+    Lösungen im Google Classroom hoch.
 -   Bei Textaufgaben laden Sie Ihre Lösungen als **eine PDF-Datei** im Google
     Classroom hoch.
 -   Lösen Sie Programmieraufgaben in einem Jupyter Notebook auf Google Colaboratory
@@ -39,8 +39,8 @@ in Übungsstunde vorstellen.
 
 ## Gelöste Aufgaben ankreuzen
 
--   Geben Sie im Google Classroom über das bereitgestellte Google Formular an, welche
-    Aufgaben Sie gelöst haben.
+-   Geben Sie im Google Classroom über das bereitgestellte Google Formular an,
+    welche Aufgaben Sie gelöst haben.
 -   Sie müssen in der Lage sein, Ihre Lösungen zu den angekreuzten Aufgaben in der
     Übungsstunde vorzustellen.
 -   Die Lösung muss nicht unbedingt 100% korrekt sein, muss aber eine intensive

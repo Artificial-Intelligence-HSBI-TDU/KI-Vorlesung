@@ -16,10 +16,10 @@ nicht alle Inkonsistenzen.
 
 Bei der **Kantenkonsistenz** prüft man, ob zu jedem Wert aus dem Wertebereich einer
 Variablen in den Nachbarvariablen mindestens ein passender (konsistenter) Wert
-existiert. Dabei werden die Constraints nacheinander betrachtet (nicht gleichzeitig).
-Wenn dies nicht der Fall ist, wird der Wert aus dem Wertebereich der betrachteten
-Variablen entfernt. Der AC-3-Algorithmus erzeugt schrittweise Kantenkonsistenz für
-ein CSP.
+existiert. Dabei werden die Constraints nacheinander betrachtet (nicht
+gleichzeitig). Wenn dies nicht der Fall ist, wird der Wert aus dem Wertebereich der
+betrachteten Variablen entfernt. Der AC-3-Algorithmus erzeugt schrittweise
+Kantenkonsistenz für ein CSP.
 
 Man kann den AC-3 als Vorverarbeitung nutzen und die Wertemengen *vor* der BT-Suche
 reduzieren. Eventuell findet man dabei bereits eine Lösung oder kann eine Lösung
@@ -154,13 +154,13 @@ fig. 5.3]]{.origin}
 ::: notes
 *Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten:
 Jedes Element kann nur genau einmal in einer Menge enthalten sein. D.h. wenn man bei
-`queue.enqueue(z,x)` die Rückkanten von den Nachbarn in die Queue aufnimmt, sorgt die
-Queue eigenständig dafür, dass es keine doppelten Vorkommen einer Kante in der Queue
-gibt. (Falls die verwendete Queue in einer Programmiersprache das nicht unterstützt,
-müsste man bei `queue.enqueue(z,x)` stets abfragen, ob die Kante `(z,x)` bereits in
-der Queue ist und diese dann nicht erneut hinzufügen.) AC-3 hat eine Laufzeit von
-$O(d^3n^2)$ ($n$ Knoten, maximal $d$ Elemente pro Domäne). Leider findet auch AC-3
-nicht alle Inkonsistenzen ... (NP-hartes Problem).
+`queue.enqueue(z,x)` die Rückkanten von den Nachbarn in die Queue aufnimmt, sorgt
+die Queue eigenständig dafür, dass es keine doppelten Vorkommen einer Kante in der
+Queue gibt. (Falls die verwendete Queue in einer Programmiersprache das nicht
+unterstützt, müsste man bei `queue.enqueue(z,x)` stets abfragen, ob die Kante
+`(z,x)` bereits in der Queue ist und diese dann nicht erneut hinzufügen.) AC-3 hat
+eine Laufzeit von $O(d^3n^2)$ ($n$ Knoten, maximal $d$ Elemente pro Domäne). Leider
+findet auch AC-3 nicht alle Inkonsistenzen ... (NP-hartes Problem).
 
 *Hinweis*: In gewisser Weise kann man Forward Checking als ersten Schritt bei der
 Herstellung von Kantenkonsistenz interpretieren.

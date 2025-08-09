@@ -5,9 +5,9 @@ title: Klassifikation mit Naive Bayes
 
 ::: tldr
 Mit Hilfe der (verallgemeinerten) Bayes-Regel kann man Klassifikation durchführen.
-Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den Trainingsdaten
-geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die Nutzung der beim
-"Training" berechneten bedingten Wahrscheinlichkeiten:
+Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den
+Trainingsdaten geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die
+Nutzung der beim "Training" berechneten bedingten Wahrscheinlichkeiten:
 
 $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n) =
 \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)$$
@@ -36,8 +36,8 @@ sich einige Schwierigkeiten:
     Reihenfolge der Hypothesen bleibt aber erhalten. Da wir nur nach der Hypothese
     suchen, die einen höheren Wert als die anderen hat, und nicht den absoluten Wert
     an sich benötigen, kann man so vorgehen. Durch den Logarithmus wird aus dem
-    Produkt eine Summe, wo die kleinen Werte der bedingten Wahrscheinlichkeiten nicht
-    so starke Auswirkungen haben wie im Produkt.
+    Produkt eine Summe, wo die kleinen Werte der bedingten Wahrscheinlichkeiten
+    nicht so starke Auswirkungen haben wie im Produkt.
 
 Oft nimmt man zusätzlich an, dass für alle Hypothesen (Klassen) $h$ der Prior $P(h)$
 gleich ist. Dann kann man diesen Faktor ebenfalls aus der Berechnung entfernen.
@@ -46,8 +46,8 @@ Dieses Verfahren nennt man auch "**Maximum Likelihood**".
 Der NB-Klassifikator wird gern für die Textklassifikation eingesetzt. Hier muss man
 einem Text ein Label zuordnen. In einer Vorverarbeitung wird zunächst eine Menge der
 relevanten Wörter über alle Trainingstexte gebildet (*Bag-of-Words*). Der
-Bag-of-Words entspricht einem Merkmalsvektor, wobei die Merkmale die einzelnen Wörter
-sind. Dann kann jeder Text der Trainingsmenge über so einen Merkmalsvektor
+Bag-of-Words entspricht einem Merkmalsvektor, wobei die Merkmale die einzelnen
+Wörter sind. Dann kann jeder Text der Trainingsmenge über so einen Merkmalsvektor
 dargestellt werden: Entweder man gibt pro Merkmal an, ob es da (1) oder nicht da (0)
 ist oder man zählt die Häufigkeit des Auftretens. Dann kann man mit dem
 NB-Klassifikator die bedingten Wahrscheinlichkeiten schätzen und einen neuen Text
@@ -201,9 +201,9 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
 
     -   Likelihood der Daten (Terme):
         -   $P(t|c) = \dfrac{\operatorname{count}(t,c)}{\sum_{v \in V} \operatorname{count}(v,c)}$
-            `\newline`{=tex} mit $\operatorname{count}(t,c)$ Anzahl der Vorkommen von
-            Term $t$ in allen Dokumenten der Klasse $c$ und $V$ die Vereinigung aller
-            Terme aller Dokumente (als Menge)
+            `\newline`{=tex} mit $\operatorname{count}(t,c)$ Anzahl der Vorkommen
+            von Term $t$ in allen Dokumenten der Klasse $c$ und $V$ die Vereinigung
+            aller Terme aller Dokumente (als Menge)
 
         \smallskip
 
@@ -233,8 +233,8 @@ Likelihood]{.ex}]{.slides}
     Wichtig: Solange die **Maximierung** über alle Hypothesen die selben Ergebnisse
     liefert, müssen die konkreten Schätzungen/Werte nicht exakt stimmen ...
 
-Wenn Attribute nicht (bedingt) unabhängig sind, kann sich der NB verschätzen, d.h. es
-kommt dann u.U. zu einer höheren Fehlerrate, da bestimmte Eigenschaften in der
+Wenn Attribute nicht (bedingt) unabhängig sind, kann sich der NB verschätzen, d.h.
+es kommt dann u.U. zu einer höheren Fehlerrate, da bestimmte Eigenschaften in der
 Trainingsmenge zu hoch gewichtet werden.
 :::
 
@@ -262,8 +262,8 @@ Trainingsmenge zu hoch gewichtet werden.
     -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x|h)$
 
         Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*:
-        $p_i = 1/|D_i|$ (Wahrscheinlichkeit für eine Attributausprägung ist 1/(Anzahl
-        der Ausprägungen des Attributs))
+        $p_i = 1/|D_i|$ (Wahrscheinlichkeit für eine Attributausprägung ist
+        1/(Anzahl der Ausprägungen des Attributs))
 
     =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
     Trainingsbeispiele)
@@ -308,13 +308,13 @@ Trainingsmenge zu hoch gewichtet werden.
 ::: notes
 # Ausblick: Kontinuierliche Attribute
 
-Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen Attributen
-hat man zwei Möglichkeiten:
+Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen
+Attributen hat man zwei Möglichkeiten:
 
 -   Diskretisierung der Attribute: Aufteilung in Intervalle und Bezeichnung der
     Intervalle mit einem Namen
--   Einsatz einer Verteilungsannahme und deren Dichtefunktion, beispielsweise Annahme
-    von **normalverteilten** Daten mit der Dichtefunktion
+-   Einsatz einer Verteilungsannahme und deren Dichtefunktion, beispielsweise
+    Annahme von **normalverteilten** Daten mit der Dichtefunktion
     $$f(x) = \frac{1}{\sqrt{2 \pi \sigma}} e^{- \frac{(x - \mu)^2}{2 \sigma^2}}$$
     wobei $\mu$ der Mittelwert und $\sigma^2$ die Varianz der Daten sind.
 :::

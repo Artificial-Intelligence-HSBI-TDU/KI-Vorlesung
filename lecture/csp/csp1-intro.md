@@ -9,8 +9,8 @@ Ein Constraintproblem (CSP) besteht aus Variablen, die über Einschränkungen
 zugeordnet.
 
 Die Constraints können sich auf eine einzelne Variable beziehen ("unäre
-Constraints"), auf zwei Variablen ("binäre Constraints") oder auf mehr Variablen. Ein
-CSP kann als Graph dargestellt werden.
+Constraints"), auf zwei Variablen ("binäre Constraints") oder auf mehr Variablen.
+Ein CSP kann als Graph dargestellt werden.
 
 Eine "Belegung" ist eine Zuweisung von Werten an Variablen aus deren Domäne. Eine
 "konsistente" Belegung erfüllt die Constraints, eine "vollständige" Belegung belegt
@@ -80,9 +80,9 @@ Länder müssen unterschiedliche Farben bekommen (=\> *Constraint*).
 ![](images/map_graph.png){width="80%"}
 
 ::: notes
-Ein CSP kann man auch als Constraint-Graph darstellen. Die Variablen werden zu Knoten
-im Graph, die Constraints zu Kanten zwischen den Knoten. Dadurch kann man die aus dem
-Problemlösen bekannten Algorithmen anwenden ...
+Ein CSP kann man auch als Constraint-Graph darstellen. Die Variablen werden zu
+Knoten im Graph, die Constraints zu Kanten zwischen den Knoten. Dadurch kann man die
+aus dem Problemlösen bekannten Algorithmen anwenden ...
 :::
 
 # Constraints -- Arität

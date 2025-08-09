@@ -35,8 +35,8 @@ Erinnerung: CAL2/CAL3
 
 # Erinnerung Entropie: Maß für die Unsicherheit
 
--   Entropie $H(S)$ der Trainingsmenge $S$: [relative]{.notes} Häufigkeit der Klassen
-    zählen
+-   Entropie $H(S)$ der Trainingsmenge $S$: [relative]{.notes} Häufigkeit der
+    Klassen zählen
 
 -   Mittlere Entropie nach Betrachtung von Attribut $A$
 
@@ -127,11 +127,11 @@ def ID3(examples, attr, default):
 $\operatorname{Importance}(a, examples)$ als
 $\operatorname{InformationGain}(examples, attr)$ implementiert/nutzt.
 
-**Hinweis**: Mit der Zeile `if examples.each(class == A):  return A` soll ausgedrückt
-werden, dass alle ankommenden Trainingsbeispiele die selbe Klasse haben und dass
-diese dann als Ergebnis zurückgeliefert wird. Das "`A`" steht im obigen Algorithmus
-nur symbolisch für die selbe Klasse! Es kann also auch ein anderes Klassensymbol als
-"`A`" sein ...
+**Hinweis**: Mit der Zeile `if examples.each(class == A):  return A` soll
+ausgedrückt werden, dass alle ankommenden Trainingsbeispiele die selbe Klasse haben
+und dass diese dann als Ergebnis zurückgeliefert wird. Das "`A`" steht im obigen
+Algorithmus nur symbolisch für die selbe Klasse! Es kann also auch ein anderes
+Klassensymbol als "`A`" sein ...
 :::
 
 ::: notes
@@ -233,7 +233,8 @@ Hierzu drei lesenswerte Blog-Einträge:
 -   4-seitiger Würfel:
     -   Entropie =
         $H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
-    -   Normierung: $1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$
+    -   Normierung:
+        $1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$
     -   Normierter Informationsgewinn:
         $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$
 

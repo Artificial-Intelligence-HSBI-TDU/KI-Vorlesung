@@ -4,26 +4,26 @@ title: CAL2
 ---
 
 ::: tldr
-Eine Hypothese kann im einfachsten Fall als Entscheidungsbaum dargestellt werden. Die
-Merkmale bilden dabei die Knoten im Baum, und je Ausprägung gibt es eine Kante zu
-einem Nachfolgerknoten. Ein Merkmal bildet die Wurzel des Baums, an den Blättern sind
-die Klassen zugeordnet.
+Eine Hypothese kann im einfachsten Fall als Entscheidungsbaum dargestellt werden.
+Die Merkmale bilden dabei die Knoten im Baum, und je Ausprägung gibt es eine Kante
+zu einem Nachfolgerknoten. Ein Merkmal bildet die Wurzel des Baums, an den Blättern
+sind die Klassen zugeordnet.
 
 Einen Entscheidungsbaum kann man zur Klassifikation eines Objekts schrittweise
 durchlaufen: Für jeden Knoten fragt man die Ausprägung des Merkmals im Objekt ab und
-wählt den passenden Ausgang aus dem Knoten. Wenn man am Blatt angekommen ist, hat man
-die Antwort des Baumes auf das Objekt, d.h. üblicherweise die Klasse.
+wählt den passenden Ausgang aus dem Knoten. Wenn man am Blatt angekommen ist, hat
+man die Antwort des Baumes auf das Objekt, d.h. üblicherweise die Klasse.
 
 Den Baum kann man mit dem Algorithmus CAL2 schrittweise aufbauen. Man startet mit
 "Nichtwissen" (symbolisiert mit einem "\*") und iteriert durch alle
 Trainingsbeispiele, bis der Baum sich nicht mehr verändert. Wenn der Baum auf ein
 Beispiel einen "\*" ausgibt, dann ersetzt man diesen "\*" mit der Klasse des eben
-betrachteten Beispiels. Wenn der Baum bei einem Beispiel die passende Klasse ausgibt,
-macht man mit dem nächsten Beispiel weiter. Wenn der Baum bei einem Beispiel eine
-andere Klasse ausgibt, muss das Klassensymbol im Baum (an der Stelle, wo das Objekt
-gelandet ist) durch den nächsten Test ersetzt werden: Hierzu nimmt man das nächste,
-auf diesem konkreten Pfad noch nicht verwendete Merkmal. CAL2 kann nur mit diskreten
-Attributen und disjunkten Klassen einen fehlerfreien Baum erzeugen.
+betrachteten Beispiels. Wenn der Baum bei einem Beispiel die passende Klasse
+ausgibt, macht man mit dem nächsten Beispiel weiter. Wenn der Baum bei einem
+Beispiel eine andere Klasse ausgibt, muss das Klassensymbol im Baum (an der Stelle,
+wo das Objekt gelandet ist) durch den nächsten Test ersetzt werden: Hierzu nimmt man
+das nächste, auf diesem konkreten Pfad noch nicht verwendete Merkmal. CAL2 kann nur
+mit diskreten Attributen und disjunkten Klassen einen fehlerfreien Baum erzeugen.
 :::
 
 ::: youtube
@@ -105,7 +105,8 @@ Erzeugen des Knotens übergeben.
     -   $\kappa \neq k$: Fehler
         -   Ersetze $\kappa$ mit neuem Test:
             $\kappa \gets x_{t+1}(\ast, \ldots, \ast, k, \ast, \ldots, \ast)$
-        -   $x_{t+1}$: nächstes Attribut, auf dem aktuellen Pfad noch nicht verwendet
+        -   $x_{t+1}$: nächstes Attribut, auf dem aktuellen Pfad noch nicht
+            verwendet
         -   Symbol $k$ an Position $i$ wenn $x_{t+1}(v) = i$
 
 ::: notes
@@ -161,8 +162,8 @@ Aufruf übergeben (müssen also Referenzen vom Typ `Baum` sein).
 -   CAL2: diskrete Attribute, disjunkte Klassen
 
 ::: readings
--   @Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und
-    wird nicht mehr verlegt)
+-   @Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen
+    und wird nicht mehr verlegt)
 :::
 
 ::: outcomes

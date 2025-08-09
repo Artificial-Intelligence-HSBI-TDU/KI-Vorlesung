@@ -7,8 +7,8 @@ title: Suche mit Branch-and-Bound
 Branch-and-Bound gehört zu den "Informierten Suchverfahren": Es werden (reale)
 Pfadkosten statt der Anzahl der Schritte berücksichtigt.
 
-Branch-and-Bound entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
-Datenstruktur eine sortierte **Queue** (Prioritätsqueue) benutzt: Expandierte
+Branch-and-Bound entsteht, wenn man bei der Tree-Search oder der Graph-Search für
+die Datenstruktur eine sortierte **Queue** (Prioritätsqueue) benutzt: Expandierte
 Nachfolger werden immer **hinten** in die Queue eingefügt, diese wird nach den
 **Kosten der partiellen Pfade sortiert** und der nächste zu expandierende Knoten
 (d.h. der bisher günstigste partielle Weg) wird **vorn** aus der Queue genommen.
@@ -40,8 +40,8 @@ Wege.
 ::: notes
 -   $n \in S$ auf aktuellem Weg erreichter Knoten
 -   $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$
--   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird auch
-    "heuristische Funktion" oder "Heuristik" genannt
+-   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird
+    auch "heuristische Funktion" oder "Heuristik" genannt
 :::
 
 ::: notes
@@ -90,9 +90,9 @@ sollen nicht (erneut) in die Queue aufgenommen werden.
 
 -   Lösung (vgl. Optimierungsmöglichkeiten für A\*):
 
-    Füge zunächst alle neu expandierten partiellen Pfade (mit unmarkierten Endknoten)
-    in die Queue ein, sortiere diese und behalte von mehreren Pfaden zum gleichen
-    Knoten nur den jeweils günstigsten in der Queue
+    Füge zunächst alle neu expandierten partiellen Pfade (mit unmarkierten
+    Endknoten) in die Queue ein, sortiere diese und behalte von mehreren Pfaden zum
+    gleichen Knoten nur den jeweils günstigsten in der Queue
 
 Pfade, deren Endknoten bereits früher im Pfad vorkommt (Schleifen), werden bei
 Graph-Search in Schritt 2 nicht in die Queue aufgenommen (der Endknoten wäre bei
@@ -108,10 +108,11 @@ Kosten vorausgesetzt).
 # Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
-partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
-im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
-den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
-Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
+Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
+Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf
 verzichten, wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen.
@@ -120,8 +121,8 @@ Wer nicht mit Unterstreichen arbeiten will, muss eben dann manuell sortieren ...
 Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
 bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in
 der Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den
-analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum
-selben (Zwischen-/End-) Knoten eingefügt werden soll.
+analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg
+zum selben (Zwischen-/End-) Knoten eingefügt werden soll.
 :::
 
 ::: notes

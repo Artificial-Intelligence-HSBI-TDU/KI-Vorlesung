@@ -35,8 +35,8 @@ Bielefeld"](https://www.hsbi.de/en/digitalmobil) der Fachhochschule Bielefeld (H
 ist im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in
 Istanbul (TDU) im Modul "Künstliche Intelligenz" gestartet.
 
-Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder im
-Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
+Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder
+im Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
 gemeinsam (TDU und HSBI) teil.
 
 ## Kooperation mit dem DigikoS-Projekt
@@ -44,11 +44,11 @@ gemeinsam (TDU und HSBI) teil.
 Diese Vorlesung wurde zudem vom Projekt ["Digitalbaukasten für kompetenzorientiertes
 Selbststudium"](https://www.digikos.de) (*DigikoS*) unterstützt. Ein vom
 DigikoS-Projekt ausgebildeter Digital Learning Scout hat insbesondere die
-Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der Postersessions
-in ILIAS technisch und inhaltlich begleitet. DigikoS wird als Verbundprojekt von der
-Stiftung Innovation in der Hochschullehre gefördert.
+Koordination der digitalen Gruppenarbeiten, des Peer-Feedbacks und der
+Postersessions in ILIAS technisch und inhaltlich begleitet. DigikoS wird als
+Verbundprojekt von der Stiftung Innovation in der Hochschullehre gefördert.
 
--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 # LICENSE
 

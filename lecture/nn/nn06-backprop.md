@@ -21,8 +21,9 @@ title: NN06 - Backpropagation
 
 -   Im Forwärtslauf (engl. forward pass oder forward propagation) wird ein einzelner
     **Forwärtsschritt** von Schicht $[l-1]$ auf Schicht $[l]$ wie folgt berechnet:
-    $$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1}$$ $$A^{[l]} = g(Z^{[l]}) \tag{2}$$
-    Dabei bezeichnet $g$ die Aktivierungsfunktion (z.B. Sigmoid oder ReLU).
+    $$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l]} \tag{1}$$
+    $$A^{[l]} = g(Z^{[l]}) \tag{2}$$ Dabei bezeichnet $g$ die Aktivierungsfunktion
+    (z.B. Sigmoid oder ReLU).
 
 -   Im Rückwärtslauf (engl. *backpropagation*) werden in einem einzelnen
     **Rückwärtsschritt** von Schicht $[l]$ auf Schicht $[l-1]$ die folgenden
@@ -40,8 +41,8 @@ title: NN06 - Backpropagation
 
 -   Beachten Sie:
 
-    -   Der Forwärtsschirtt übernimmt $A^{[l-1]}$ von dem vorherigen Schritt und gibt
-        $A^{[l]}$ an den nächsten Schritt weiter.
+    -   Der Forwärtsschirtt übernimmt $A^{[l-1]}$ von dem vorherigen Schritt und
+        gibt $A^{[l]}$ an den nächsten Schritt weiter.
     -   Der Rückwärtschritt übernimmt $dA^{[l]}$ von dem vorherigen Schritt und gibt
         $dA^{[l-1]}$ an den nächsten Rückwärtsschritt weiter.
 

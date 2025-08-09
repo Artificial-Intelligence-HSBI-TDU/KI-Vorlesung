@@ -24,8 +24,8 @@ sich $P(A|B) = \frac{P(A,B)}{P(B)}$.
 Daraus kann man die **Bayes-Regel** ableiten: $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 Dabei nennt man
 
--   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die Wahrscheinlichkeit
-    für $A$ ohne weiteres Wissen),
+-   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
+    Wahrscheinlichkeit für $A$ ohne weiteres Wissen),
 -   $P(B|A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$, gegeben
     $A$?),
 -   $P(A|B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"** (Wie
@@ -227,12 +227,13 @@ $P(S) = P(S,H) + P(S, \neg H)$
 \pause
 
 [Allgemein:]{.notes} Seien $B_1, \ldots, B_n$ Elementarereignisse mit
-$\bigcup_i B_i = \Omega$. Dann ist $$P(A) = \sum_i P(A,B_i) = \sum_i P(A|B_i)P(B_i)$$
+$\bigcup_i B_i = \Omega$. Dann ist
+$$P(A) = \sum_i P(A,B_i) = \sum_i P(A|B_i)P(B_i)$$
 
 ::: notes
 Diesen Vorgang nennt man **Marginalisierung**. Die resultierende Verteilung $P(A)$
-nennt man auch *"Randverteilung"*, da sie mit einer Projektion eines Quaders auf eine
-Seitenfläche vergleichbar ist.
+nennt man auch *"Randverteilung"*, da sie mit einer Projektion eines Quaders auf
+eine Seitenfläche vergleichbar ist.
 :::
 
 # Kettenregel
@@ -262,8 +263,8 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 \bigskip
 \bigskip
 
--   $P(A)$ nennt man **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** [(Das ist die
-    Wahrscheinlichkeit für $A$ ohne weiteres Wissen)]{.notes}
+-   $P(A)$ nennt man **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** [(Das ist
+    die Wahrscheinlichkeit für $A$ ohne weiteres Wissen)]{.notes}
 -   $P(B|A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten von
     $B$, gegeben $A$?)]{.notes}
 -   $P(A|B)$ nennt man **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"**

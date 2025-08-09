@@ -4,11 +4,11 @@ title: "Intro: Was ist Künstliche Intelligenz?"
 ---
 
 ::: tldr
-KI ist ein altes und modernes Forschungsgebiet, welches periodisch Hype-Zeiten erlebt
-hat und sich aktuell wieder in einer Hoch-Phase befindet. Wer heute "KI" sagt, meint
-meist Maschinelles Lernen oder (noch genauer) eine Form von *Deep Learning*. Dabei
-gibt es in der KI viele weitere Gebiete: Suche (Problemlösen), Spiele,
-Constraintprobleme, Entscheidungsbäume, ..., um nur einige zu nennen.
+KI ist ein altes und modernes Forschungsgebiet, welches periodisch Hype-Zeiten
+erlebt hat und sich aktuell wieder in einer Hoch-Phase befindet. Wer heute "KI"
+sagt, meint meist Maschinelles Lernen oder (noch genauer) eine Form von *Deep
+Learning*. Dabei gibt es in der KI viele weitere Gebiete: Suche (Problemlösen),
+Spiele, Constraintprobleme, Entscheidungsbäume, ..., um nur einige zu nennen.
 
 Der *Turing-Test* (Alan Turin, 1950) hat gewissermaßen die modernen Zweige der KI
 begründet, u.a. *Wissensrepräsentation*, *Logisches Schließen*, *Maschinelles
@@ -42,7 +42,8 @@ Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
 
 ::: notes
 -   Was ist (künstliche) Intelligenz?
--   Ist [Commander Data](https://en.wikipedia.org/wiki/Data_(Star_Trek)) intelligent?
+-   Ist [Commander Data](https://en.wikipedia.org/wiki/Data_(Star_Trek))
+    intelligent?
 -   Woran erkennen Sie das?
 :::
 
@@ -50,11 +51,11 @@ Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
 
 # Definition Intelligenz
 
-> Intelligenz (von lat. *intellegere* "verstehen", wörtlich "wählen zwischen ..." von
-> lat. *inter* "zwischen" und *legere* "lesen, wählen") ist in der Psychologie ein
-> Sammelbegriff für die **kognitive Leistungsfähigkeit** des Menschen. Da einzelne
-> kognitive Fähigkeiten unterschiedlich stark ausgeprägt sein können und keine
-> Einigkeit besteht, wie diese zu bestimmen und zu unterscheiden sind, gibt es
+> Intelligenz (von lat. *intellegere* "verstehen", wörtlich "wählen zwischen ..."
+> von lat. *inter* "zwischen" und *legere* "lesen, wählen") ist in der Psychologie
+> ein Sammelbegriff für die **kognitive Leistungsfähigkeit** des Menschen. Da
+> einzelne kognitive Fähigkeiten unterschiedlich stark ausgeprägt sein können und
+> keine Einigkeit besteht, wie diese zu bestimmen und zu unterscheiden sind, gibt es
 > **keine allgemeingültige Definition der Intelligenz**.
 >
 > `\hfill`{=tex} [["Intelligenz"](https://de.wikipedia.org/wiki/Intelligenz) by
@@ -93,10 +94,10 @@ Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an
 ::: notes
 Zu den kognitiven Fähigkeiten und damit zur Intelligenz zählen also eine Reihe von
 Fähigkeiten, die man Menschen im allgemeinen zuschreibt. Lernen und Problemlösen und
-Planen sind Dinge, die vermutlich jeder direkt mit dem Begriff Intelligenz verbindet.
-Interessanterweise gehören auf auch Aufmerksamkeit und Wahrnehmung und Orientierung
-mit dazu -- Fähigkeiten, die beispielsweise in der Robotik sehr wichtig sind.
-Kreativität und Vorstellung zählen aber auch mit in den Bereich der kognitiven
+Planen sind Dinge, die vermutlich jeder direkt mit dem Begriff Intelligenz
+verbindet. Interessanterweise gehören auf auch Aufmerksamkeit und Wahrnehmung und
+Orientierung mit dazu -- Fähigkeiten, die beispielsweise in der Robotik sehr wichtig
+sind. Kreativität und Vorstellung zählen aber auch mit in den Bereich der kognitiven
 Fähigkeiten und damit zum Begriff Intelligenz. In der KI werden diese Gebiete
 zunehmend interessant, etwa beim Komponieren von Musik und beim Erzeugen von Bildern
 oder Texten. Mit Emotionen beschäftigt sich die KI-Forschung aktuell nur am Rande,
@@ -156,9 +157,9 @@ Dazu gehört auch
 ::: tip
 **KI-Grundverordnung der EU**
 
-Die EU hat am 13. Juni 2024 die sogenannte "KI-Verordnung" verabschiedet ("VERORDNUNG
-(EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES", \[Document 32024R1689:
-Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom
+Die EU hat am 13. Juni 2024 die sogenannte "KI-Verordnung" verabschiedet
+("VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES RATES", \[Document
+32024R1689: Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom
 
 13. Juni 2024 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz
     und zur Änderung der Verordnungen (EG) Nr. 300/2008, (EU) Nr. 167/2013, (EU) Nr.
@@ -171,9 +172,9 @@ Dort finden Sie unter Artikel 3 "Begriffsbestimmungen" unter Absatz 1 eine
 Begriffsdefinition. Ein "KI-System" wird darin als ein maschinengestütztes System
 definiert, in irgendeiner Art für einen autonomen Betrieb ausgelegt ist und eine
 gewisse Anpassungsfähigkeit haben kann. Zusätzlich soll das "KI-System" aus den
-Eingaben Vorhersagen und Entscheidungen zu treffen oder auch Inhalte erzeugen und mit
-der physischen oder digitalen Umwelt interagieren können. [[VERORDNUNG (EU) 2024/1689
-DES EUROPÄISCHEN PARLAMENTS UND DES
+Eingaben Vorhersagen und Entscheidungen zu treffen oder auch Inhalte erzeugen und
+mit der physischen oder digitalen Umwelt interagieren können. [[VERORDNUNG (EU)
+2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES
 RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689), Art. 3
 Abs. 1]{.origin}
 
@@ -181,9 +182,9 @@ Interessant ist, dass dabei nicht explizit auf Softwaresysteme eingegangen wird.
 Später im Text finden sich Hinweise, dass sich ein KI-System vermutlich als Software
 repräsentiert, auch kommen Modelle und Daten vor. Bei den Modellen kommt der Begriff
 des Lernens vor, in allen derzeit üblichen Varianten (überwachtes Lernen,
-unüberwachtes Lernen, Reinforcement Learning). Große Teile des Dokuments beschäftigen
-sich mit weitreichenden Bestimmungen für Akteure, die ein KI-System zur Verfügung
-stellen wollen.
+unüberwachtes Lernen, Reinforcement Learning). Große Teile des Dokuments
+beschäftigen sich mit weitreichenden Bestimmungen für Akteure, die ein KI-System zur
+Verfügung stellen wollen.
 
 Lesen Sie selbst: [VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES
 RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
@@ -210,10 +211,10 @@ Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
     **Wissensbasierte Systeme**
 -   *Logisches Schließen*: Beantworten von Fragen mit Hilfe des vorhandenen Wissens
     **=\>** **Logik, Resolution**
--   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld **=\>** **Musteranalyse
-    und Mustererkennung und Mustervorhersage**
--   *Verarbeitung natürlicher Sprache*: Erfolgreiche Kommunikation, beispielsweise in
-    Englisch **=\>** **NLP**
+-   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld **=\>**
+    **Musteranalyse und Mustererkennung und Mustervorhersage**
+-   *Verarbeitung natürlicher Sprache*: Erfolgreiche Kommunikation, beispielsweise
+    in Englisch **=\>** **NLP**
 
 "Totaler Turing-Test": zusätzlich **Computer Vision** (Erkennen von Objekten) und
 **Robotik** (Manipulation von Objekten)
@@ -221,8 +222,8 @@ Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
 Damit begründet der Turing-Test die Gebiete der KI.
 
 **Problem**: Der Turing-Test ist nicht reproduzierbar, nicht konstruktiv und nicht
-mathematisch analysierbar ... Außerdem wird durch den Turing-Test im Wesentlichen nur
-Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
+mathematisch analysierbar ... Außerdem wird durch den Turing-Test im Wesentlichen
+nur Funktionalität geprüft, nicht ob Intention oder Bewusstsein vorhanden ist.
 :::
 
 # Starke vs. schwache KI
@@ -329,8 +330,8 @@ der realen Welt.
 
 ## Rationales Verhalten: Das "Richtige" tun
 
--   Das "Richtige": Verhalten zum Erzielen des besten (erwarteten) Ergebnisses (unter
-    Berücksichtigung der verfügbaren Informationen)
+-   Das "Richtige": Verhalten zum Erzielen des besten (erwarteten) Ergebnisses
+    (unter Berücksichtigung der verfügbaren Informationen)
 
     Ein System ist rational, wenn es das seinen Kenntnissen nach "Richtige" macht.
 
@@ -364,12 +365,12 @@ Gesundheitswesen, Finanzen, Marketing und vielen weiteren.
 In der Informatik allgemein und auch in der KI versuchen wir, Probleme der realen
 Welt mit Hilfe von künstlichen Systemen (Algorithmen, Software) zu lösen. Dafür
 brauchen wir zunächst ein abstraktes mathematisches **Modell** der Welt, in der wir
-uns bewegen. Das Modell sollte alle für das zu lösende Problem relevanten Aspekte der
-Welt repräsentieren - und möglichst nicht mehr als diese, um unnötige Komplexität zu
-vermeiden. Es kommt häufig vor, dass selbst die relevanten Aspekte zu umfangreich
-oder teilweise sogar unbekannt sind und nicht vollständig dargestellt werden können.
-Modelle stellen also eine Abstraktion der echten Welt dar und sind *verlustbehaftet*.
-Es gibt viele verschiedene Modelle.
+uns bewegen. Das Modell sollte alle für das zu lösende Problem relevanten Aspekte
+der Welt repräsentieren - und möglichst nicht mehr als diese, um unnötige
+Komplexität zu vermeiden. Es kommt häufig vor, dass selbst die relevanten Aspekte zu
+umfangreich oder teilweise sogar unbekannt sind und nicht vollständig dargestellt
+werden können. Modelle stellen also eine Abstraktion der echten Welt dar und sind
+*verlustbehaftet*. Es gibt viele verschiedene Modelle.
 
 *Beispiel*: Wir möchten von Bielefeld nach Minden fahren. Neben den offensichtlichen
 Parametern (Womit wollen wir fahren? Wo genau ist der Startpunkt, wo genau der
@@ -379,9 +380,9 @@ exakte Positionen auf der Straße/im Ort ... Sind diese wirklich relevant für d
 Problem? Am Ende wird es wichtig sein, eine abstrakte Darstellung zu finden, die
 irgendwie die Städte und Dörfer repräsentiert und die Verbindungen dazwischen. Und
 vermutlich muss ich wissen, wie lang die Strecken jeweils sind (oder wie lange ich
-brauche oder wieviel Geld mich das Abfahren kostet). Es scheint also so zu sein, dass
-eine Abstraktion des Problems als *Graph* sinnvoll ist: Die Knoten entsprechen den
-Orten, die Kanten den Straßen (oder Bahnlinien o.ä.). An den Kanten sind Kosten
+brauche oder wieviel Geld mich das Abfahren kostet). Es scheint also so zu sein,
+dass eine Abstraktion des Problems als *Graph* sinnvoll ist: Die Knoten entsprechen
+den Orten, die Kanten den Straßen (oder Bahnlinien o.ä.). An den Kanten sind Kosten
 annotiert (Kilometer, Zeit, ...). Damit ignorieren wir die Komplexität der realen
 Welt und fokussieren uns auf die Aspekte, die zur Lösung des Problems wichtig sind.
 Behalten Sie im Gedächtnis, dass unser Modell verlustbehaftet ist und wir damit
@@ -409,11 +410,11 @@ ist), dann gibt es keinen Grund für den Einsatz von adaptiven Systemen!
 
 Mit dem Modell der Welt kann nun das Problem gelöst werden. Dazu wird das Modell mit
 Daten versorgt (im obigen Beispiel: Start und Ziel) und ein passender Algorithmus
-kann auf dem Modell die Lösung berechnen. Dies kann eine **Vorhersage** sein, welchen
-Weg ich nehmen soll, wie lange es dauern wird, welchen Spielzug ich als nächstes
-machen sollte, ob in einem Bild eine Katze zu sehen ist, ... Es könnte aber auch im
-Fall von sogenannten *generativen Modellen* ein erzeugter Text oder ein erzeugtes
-Bild sein.
+kann auf dem Modell die Lösung berechnen. Dies kann eine **Vorhersage** sein,
+welchen Weg ich nehmen soll, wie lange es dauern wird, welchen Spielzug ich als
+nächstes machen sollte, ob in einem Bild eine Katze zu sehen ist, ... Es könnte aber
+auch im Fall von sogenannten *generativen Modellen* ein erzeugter Text oder ein
+erzeugtes Bild sein.
 
 *Hinweis*: In manchen Quellen wird dieser Vorgang auch "Inferenz" genannt. Da dieser
 Begriff aus der Logik stammt und mit bestimmten Prozessen zur Schlussfolgerung
@@ -439,8 +440,8 @@ Deep Neural Networks.
 
 In der nächst komplexeren Stufe haben die Modelle einen internen Zustand
 ("*state-based models*"). Darüber wird ein Zustand der betrachteten Welt modelliert.
-Zwischen den Zuständen gibt es Übergänge (sogenannte Aktionen), so dass sich hier ein
-Graph aufspannt (der sogenannte Problemgraph, vgl.
+Zwischen den Zuständen gibt es Übergänge (sogenannte Aktionen), so dass sich hier
+ein Graph aufspannt (der sogenannte Problemgraph, vgl.
 [Problemlösen](intro2-problemsolving.md)). In diese Klasse fallen die typischen
 Suchprobleme (wie [Breitensuche](../searching/search2-bfs.md),
 [Tiefensuche](../searching/search1-dfs.md), [A\*](../searching/search5-astar.md)),
@@ -449,19 +450,20 @@ Mitspielern.
 
 Noch eine Stufe komplexer sind Modelle mit Variablen ("*variable-based models*").
 Während es bei den zustandsbasierten Modellen immer (auch) um den Weg zwischen den
-Zuständen geht und damit um eine prozedurale Beschreibung, wie von einem Startzustand
-zu einem Zielzustand zu gelangen ist, steht bei Modellen mit Variablen nur die Lösung
-im Vordergrund: Das Modell enthält verschiedene Variablen, denen ein passender Wert
-aus einem Wertebereich zugeordnet werden muss. Wie diese Belegung entsteht, ist am
-Ende nicht mehr so interessant. Denken Sie beispielsweise an ein Sudoku oder die
-Erstellung eines Stundenplans. Die Variablen sind entsprechend die einzelnen Felder,
-gesucht ist eine insgesamt korrekte Belegung aller Felder. In diese Klasse fallen
-[Constraint Satisfaction Probleme (CSP)](../csp/readme.md), aber auch Bayes'sche
-Netze und die sogenannte ["lokale Suche"](../searching/search6-gradient.md).
+Zuständen geht und damit um eine prozedurale Beschreibung, wie von einem
+Startzustand zu einem Zielzustand zu gelangen ist, steht bei Modellen mit Variablen
+nur die Lösung im Vordergrund: Das Modell enthält verschiedene Variablen, denen ein
+passender Wert aus einem Wertebereich zugeordnet werden muss. Wie diese Belegung
+entsteht, ist am Ende nicht mehr so interessant. Denken Sie beispielsweise an ein
+Sudoku oder die Erstellung eines Stundenplans. Die Variablen sind entsprechend die
+einzelnen Felder, gesucht ist eine insgesamt korrekte Belegung aller Felder. In
+diese Klasse fallen [Constraint Satisfaction Probleme (CSP)](../csp/readme.md), aber
+auch Bayes'sche Netze und die sogenannte ["lokale
+Suche"](../searching/search6-gradient.md).
 
-Auf der höchsten Komplexitätsstufe stehen logische Modelle. Hier wird Wissen über die
-Welt in Form von Fakten und Regeln modelliert, und über eine entsprechende Anfrage
-wird daraus mit Hilfe von formal definierten Beweisen eine korrekte Antwort
+Auf der höchsten Komplexitätsstufe stehen logische Modelle. Hier wird Wissen über
+die Welt in Form von Fakten und Regeln modelliert, und über eine entsprechende
+Anfrage wird daraus mit Hilfe von formal definierten Beweisen eine korrekte Antwort
 generiert. Dies nennt man auch "*Inferenz*". Hier kommt beispielsweise das
 Prädikatenkalkül zum Einsatz oder die Programmiersprache Prolog.
 :::

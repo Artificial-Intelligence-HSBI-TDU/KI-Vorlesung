@@ -7,17 +7,18 @@ title: Modellierung mit Genetischen Algorithmen
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 
 Evolutionäre Algorithmen sind lokale Suchverfahren, wobei gleichzeitig an mehreren
-Stellen im Problemraum gesucht wird. Sie bedienen sich Mechanismen aus der Evolution:
-Es gibt eine Population von Individuen, die jedes das Problem kodieren ("vollständige
-Zustandsbeschreibung") und damit im Laufe der Suche zu einer möglichen Lösung werden
-können.
+Stellen im Problemraum gesucht wird. Sie bedienen sich Mechanismen aus der
+Evolution: Es gibt eine Population von Individuen, die jedes das Problem kodieren
+("vollständige Zustandsbeschreibung") und damit im Laufe der Suche zu einer
+möglichen Lösung werden können.
 
 Die Individuen werden mit Hilfe einer Fitnessfunktion bewertet, wie gut sie bereits
 an das Problem angepasst sind (bzw. wie sehr sie bereits der gesuchten Lösung
 entsprechen). Über eine fitnessproportionale Selektion werden Individuen ausgewählt,
 aus denen mittels Rekombination (auch "Crossover" genannt) neue Individuen mit
-Eigenschaften der Eltern erzeugt werden. Über eine Mutation werden dann noch Elemente
-der neuen Individuen leicht verändert, bevor diese zur neuen Population werden ...
+Eigenschaften der Eltern erzeugt werden. Über eine Mutation werden dann noch
+Elemente der neuen Individuen leicht verändert, bevor diese zur neuen Population
+werden ...
 
 Durch das Anwenden von Rekombination und Mutation springt man im Problemraum umher.
 Auch wenn als Basis die fitteren (angepassteren) Individuen dienen, kann es wie bei
@@ -78,8 +79,8 @@ allen lokalen Suchverfahren vorkommen, dass sich der Algorithmus in lokalen Mini
 
 -   Turnier-Selektion (*Tournament Selection*):
     -   Turniergröße $\xi$
-    -   Turnier: ziehe $\xi$ Individuen gleichverteilt (mit Zurücklegen!) und kopiere
-        fittestes Individuum in den Matingpool
+    -   Turnier: ziehe $\xi$ Individuen gleichverteilt (mit Zurücklegen!) und
+        kopiere fittestes Individuum in den Matingpool
     -   Führe $\mu$ Turniere durch
 
 ::: notes
@@ -135,8 +136,8 @@ $p_{cross} \ge 0.6$)
 ::: notes
 Mit einer kleinen Wahrscheinlichkeit sind die Kinder also identisch zu den Eltern.
 Dies ist im Sinne der lokalen Suche wichtig, um bereits erreichte gute Positionen im
-Suchraum nicht zu verlieren: Es könnte sein, dass die Nachfolger alle schlechter sind
-...
+Suchraum nicht zu verlieren: Es könnte sein, dass die Nachfolger alle schlechter
+sind ...
 
 Varianten: $N$-Punkt-Crossover, Shuffle-Crossover
 
@@ -180,8 +181,8 @@ parameterweise mutiert.
 ::: notes
 # Bewertungskriterien
 
-Vorsicht: Es handelt sich um Zufallsexperimente. Wenn man nicht nur direkt nach einer
-Lösung sucht, sondern beispielsweise Parametereinstellungen oder die Wahl der
+Vorsicht: Es handelt sich um Zufallsexperimente. Wenn man nicht nur direkt nach
+einer Lösung sucht, sondern beispielsweise Parametereinstellungen oder die Wahl der
 Fitnessfunktion für ein Problem vergleichen will, muss man jeweils mehrere
 Experimente mit der selben Einstellung machen und Kenngrößen berechnen.
 
@@ -222,8 +223,9 @@ $\mu$ und $\lambda$ führen dazu, dass man bei kleinen Problemen mit hoher
 Wahrscheinlichkeit bereits am Anfang eine Lösung "würfelt", also gar kein GA nutzt.
 Wenn dies allerdings nicht passiert, sorgt eine hohe Populationsgröße dafür, dass
 jeder Schritt sehr lange dauert. Die Abbruchgrenze ist ebenfalls mit Augenmaß zu
-wählen: Ein zu kleiner Wert sorgt für zu frühen Abbruch (keine Lösung!), ein zu hoher
-Wert sorgt beim Festfressen des Algorithmus für eine unnötige weitere "Suche" ...
+wählen: Ein zu kleiner Wert sorgt für zu frühen Abbruch (keine Lösung!), ein zu
+hoher Wert sorgt beim Festfressen des Algorithmus für eine unnötige weitere "Suche"
+...
 :::
 
 # Wrap-Up

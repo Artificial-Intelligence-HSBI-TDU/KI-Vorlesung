@@ -17,8 +17,8 @@ dann jeder Spieler für sich, das Ergebnis des Spiels (aus seiner Sicht) zu
 maximieren.
 
 Bei Spielen mit Zufall (Würfelereignisse) kann man jedem Würfelereignis eine
-Wahrscheinlichkeit zuordnen und damit den jeweils erreichbaren `Max`- oder `Min`-Wert
-gewichten. Die Summe dieser gewichteten Bewertungen ist die Bewertung des
+Wahrscheinlichkeit zuordnen und damit den jeweils erreichbaren `Max`- oder
+`Min`-Wert gewichten. Die Summe dieser gewichteten Bewertungen ist die Bewertung des
 entsprechenden "Chance"-Knotens, der dann in der darüberliegenden Ebene nach dem
 Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 :::
@@ -97,7 +97,8 @@ der Mitspieler günstiger ist.
 -->
 
 [["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
-by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY
+by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC
+BY
 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 Backgammon: Was ist in dieser Situation der optimale Zug?
@@ -140,7 +141,8 @@ $$    \operatorname{Expectimax}(C) = \sum_i P(i) \operatorname{Expectimax}(s_i)$
 Für die normalen Min- und Max-Knoten liefert `Expectimax()` die üblichen Aufrufe von
 `Min-Value()` bwz. `Max-Value()`.
 
-Auf [wikipedia.org/wiki/Expectiminimax](https://en.wikipedia.org/wiki/Expectiminimax)
+Auf
+[wikipedia.org/wiki/Expectiminimax](https://en.wikipedia.org/wiki/Expectiminimax)
 finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer
 bestimmten Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version,
 wo man beim Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine
@@ -150,8 +152,8 @@ Funktionen `Expectimax()`, `Min-Value()` und `Max-Value()` in eine einzige Funkt
 Eine ähnliche geschlossene Darstellung finden Sie im [@Russell2020, S. 212].
 
 **Hinweis**: Üblicherweise sind die Nachfolger der Zufallsknoten gleich
-wahrscheinlich. Dann kann man einfach mit dem Mittelwert der Bewertung der Nachfolger
-arbeiten.
+wahrscheinlich. Dann kann man einfach mit dem Mittelwert der Bewertung der
+Nachfolger arbeiten.
 :::
 
 # Wrap-Up

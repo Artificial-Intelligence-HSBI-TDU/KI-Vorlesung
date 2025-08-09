@@ -57,8 +57,8 @@ title: NN07 - Training & Testing
         Hypothese eingesetzt werden, weder bei der Berechnung der Parameter
         (Training), noch bei der Bestimmung der Hyperparameter
         (Hyperparameter-Tuning).
-    -   Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst, kann
-        sie nicht mehr als "Gütesiegel" eingesetzt werden.\
+    -   Sobald der Testfehler die Auswahl der endgültigen Hypothese beeinflusst,
+        kann sie nicht mehr als "Gütesiegel" eingesetzt werden.\
         **CHECK**: Hätte man zufällig andere Testdaten gewählt, könnte sich dadurch
         die endgültige Hypothese ändern?
 
@@ -77,23 +77,23 @@ title: NN07 - Training & Testing
     Ein Modell im aktuellen Kontext ist als ein Paar $(\mathcal{H},\mathcal{A})$ von
     Hypothesenraum (bzw. **Modellarchitektur**) und **Lernalgorithmus** definiert.
 
-    -   Die Auswahl eines Modells kann aus einer Menge von Modellen unterschiedlicher
-        Art erfolgen (z.B. lineare Modelle, polynomiale Modelle, neuronale Netze),
-        oder von Modellen derselben Art aber mit unterschiedlichen Hyperparametern
-        (z.B. Neuronale Netze mit unterschiedlicher Anzahl von versteckten
-        Schichten).
+    -   Die Auswahl eines Modells kann aus einer Menge von Modellen
+        unterschiedlicher Art erfolgen (z.B. lineare Modelle, polynomiale Modelle,
+        neuronale Netze), oder von Modellen derselben Art aber mit unterschiedlichen
+        Hyperparametern (z.B. Neuronale Netze mit unterschiedlicher Anzahl von
+        versteckten Schichten).
     -   Außerdem kann dieselbe Modellarchitektur $\mathcal{H}$ mit unterschiedlichen
         Lernalgorithmen trainiert werden, was wiederum die endgültige Hypothese
-        beeinflussen kann. Die Bestimmung der Hyperparameter von ${\mathcal{A}}$ (wie
-        z.B. Optimierungsfunktion, Lernrate, Kostenfunktion,
+        beeinflussen kann. Die Bestimmung der Hyperparameter von ${\mathcal{A}}$
+        (wie z.B. Optimierungsfunktion, Lernrate, Kostenfunktion,
         Regularisierungsparameter usw.) sind daher auch Teil der Modellauswahl.
 
 -   Der **Validierungsfehler $E_{val}$** kann nun als Entscheidungsgrundlage an
     verschiedenen Stellen des Lernrpozesses eingesetzt werden, wie zum Beispiel:
 
     -   Bei der **Auswahl geeigneter Hyperparameter** wie z.B. Anzahl Schichten,
-        Anzahl Zellen/Schicht, Aktivierungsfunktion, Regularisierungsparameter (siehe
-        Abbildung 1).
+        Anzahl Zellen/Schicht, Aktivierungsfunktion, Regularisierungsparameter
+        (siehe Abbildung 1).
 
     ![Abbildung 1 - Einsatz der Validierung für das
     Hyperparameter-Tuning](images/val1.png)
@@ -105,8 +105,8 @@ title: NN07 - Training & Testing
     ![Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen
     Hypothese](images/val2.png)
 
-    -   Bei der graphischen **Darstellung von Lernkurven** für die Diagnose von Über-
-        und Unteranpassung (siehe Abbildung 3).
+    -   Bei der graphischen **Darstellung von Lernkurven** für die Diagnose von
+        Über- und Unteranpassung (siehe Abbildung 3).
 
     ![Abbildung 3 - Lernkurven](images/val3.png)
 

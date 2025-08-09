@@ -22,12 +22,13 @@ title: NN02 - Lineare Regression und Gradientenabstieg
 ## Formalisierung
 
 -   Ausgabe $y$ ist reelle Zahl aus einem stetigen Bereich (zum Beispiel Hauspreis)
--   Die **Hypothesenfunktion** ist eine gewichtete Summe der Merkmale $x_i$ plus eine
-    Konstante $w_0$:
+-   Die **Hypothesenfunktion** ist eine gewichtete Summe der Merkmale $x_i$ plus
+    eine Konstante $w_0$:
     $$h(\mathbf{x}) = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n$$
 -   Der **Verlust** (engl. loss) für einen Datenpunkt $\mathbf{x}$ ist das
     **Fehlerquadrat**: $$\mathcal{L} = (\hat{y} - y)^2 = (h(\mathbf{x}) - y)^2$$
--   Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle Datenpunkte:
+-   Die Kosten (engl. cost) sind der durchschnittliche Verlust über alle
+    Datenpunkte:
     $$J = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y} - y)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h(\mathbf{x}) - y)^2$$
 
 ## Der Gradient

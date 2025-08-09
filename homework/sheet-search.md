@@ -38,8 +38,8 @@ by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 
 1.  Finden Sie nacheinander mit Tiefensuche (1P) und Breitensuche (1P) (jeweils in
     der Graph-Search-Variante) sowie A\* (2P) (in der Tree-Search-Variante mit der
-    Verbesserung "keine Zyklen", siehe Vorlesung) jeweils einen Weg von Würzburg nach
-    München.
+    Verbesserung "keine Zyklen", siehe Vorlesung) jeweils einen Weg von Würzburg
+    nach München.
 
     Vergleichen Sie die drei Algorithmen: Wie viele Einträge gibt es in der
     Datenstruktur maximal, wie oft wird die Hauptschleife durchlaufen (also ein

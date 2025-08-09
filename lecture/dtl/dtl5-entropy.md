@@ -248,8 +248,8 @@ $$\begin{eqnarray}
 # Ausblick: Gini Impurity
 
 Wir haben hier die
-[Entropie](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain) als
-Maß für den Informationsgehalt einer Trainingsmenge genutzt. $R(S,A)$ als die
+[Entropie](https://en.wikipedia.org/wiki/Decision_tree_learning#Information_gain)
+als Maß für den Informationsgehalt einer Trainingsmenge genutzt. $R(S,A)$ als die
 mittlere Entropie nach Betrachtung von Attribut $A$ wird von typischen
 Entscheidungsbaumverfahren wie ID3 und C4.5 genutzt, um bei einer Verzweigung das
 nächste möglichst aussagekräftige Merkmal auszuwählen.

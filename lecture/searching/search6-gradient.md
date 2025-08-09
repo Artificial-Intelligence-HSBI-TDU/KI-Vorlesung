@@ -4,8 +4,8 @@ title: "Lokale Suche: Gradientensuche"
 ---
 
 ::: tldr
-Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
-das Erreichen des Ziels.
+Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern
+nur das Erreichen des Ziels.
 
 In Analogie zum Bergsteigen: Gehe in Richtung des stärksten Anstiegs kann man die
 Suche so formulieren, dass man in jedem Suchschritt den Nachfolgeknoten nach dem
@@ -106,8 +106,8 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 -   Beginnend mit zufällig erzeugtem Startzustand:
     -   bleibt in 86% der Fälle stecken, d.h.
     -   findet Lösung nur in 14% der Fälle.
--   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach
-    durchschnittlich 3 Schritten stecken.
+-   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
+    nach durchschnittlich 3 Schritten stecken.
 
 [nach [@Russell2020, p. 131]]{.origin}
 :::

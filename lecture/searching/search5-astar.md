@@ -9,13 +9,13 @@ realen Pfadkosten als auch die Schätzungen der Restkosten, d.h. die Kostenfunkt
 für A\* ist $f(n) = g(n)+h(n)$.
 
 A\* ist vollständig und optimal, allerdings muss die Heuristik bei der
-Tree-Search-Variante **zulässig** sein (d.h. sie muss *unterschätzen*, beispielsweise
-die Luft-Linie) und bei der Graph-Search-Variante muss sie **konsistent** sein (d.h.
-für jeden Knoten die Dreiecks-Ungleichung erfüllen).
+Tree-Search-Variante **zulässig** sein (d.h. sie muss *unterschätzen*,
+beispielsweise die Luft-Linie) und bei der Graph-Search-Variante muss sie
+**konsistent** sein (d.h. für jeden Knoten die Dreiecks-Ungleichung erfüllen).
 
 A\* hat wie BnB exponentiellen Aufwand. Durch die zusätzliche Verwendung der
-Heuristik werden die partiellen Pfade in der Queue aber geschickter sortiert, so dass
-A\* in der Regel mit weniger Suchschritten als BnB auskommt.
+Heuristik werden die partiellen Pfade in der Queue aber geschickter sortiert, so
+dass A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 :::
 
 ::: youtube
@@ -42,8 +42,8 @@ A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 ::: notes
 -   $n \in S$ auf aktuellem Weg erreichter Knoten
 -   $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$
--   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird auch
-    "heuristische Funktion" oder "Heuristik" genannt
+-   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird
+    auch "heuristische Funktion" oder "Heuristik" genannt
 :::
 
 ::: notes
@@ -81,10 +81,11 @@ Varianten:
 # Konventionen für diese Lehrveranstaltung
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
-partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
-im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
-den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
-Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
+Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
+Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Notieren Sie die Bestandteile der Kosten für jeden partiellen Weg in der Queue
 einzeln: "$g(n) + h(n) = f(n)$". Das erleichtert Ihnen die weiteren Schritte, da Sie
@@ -98,8 +99,8 @@ Wer nicht mit Unterstreichen arbeiten will, muss eben dann manuell sortieren ...
 Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
 bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in
 der Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den
-analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum
-selben (Zwischen-/End-) Knoten eingefügt werden soll.
+analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg
+zum selben (Zwischen-/End-) Knoten eingefügt werden soll.
 :::
 
 # A\*-Suche -- Anforderungen an Heuristik (Tree-Search)
@@ -191,7 +192,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 ::: notes
 |  | **Branch-and-Bound** | **Best-First** | **A\*** |
-|:------------|:-----------------------|:------------------------|:------------------------|
+|:------------|:----------------------|:-----------------------|:-----------------------|
 | Kosten | $f(n) = g(n)$ | $f(n) = h(n)$ | $f(n) = g(n) + h(n)$ |
 | Vollständigkeit | ja[^3] | nein[^4] | ja |
 | Optimalität | ja | nein | ja |

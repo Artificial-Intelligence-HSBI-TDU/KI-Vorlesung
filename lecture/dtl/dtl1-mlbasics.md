@@ -8,20 +8,21 @@ Lernen wird in der KI oft als Verhaltensänderung (eines Systems) aufgefasst. Da
 soll eine Gütefunktion optimiert werden.
 
 Je nach verfügbarem Feedback eines "Lehrers" werden typischerweise drei Arten von
-Lernen unterschieden: Überwachtes Lernen, Unüberwachtes Lernen, Reinforcement Lernen.
-Dabei stellt der Lehrer beim überwachten Lernen Trainingsbeispiele plus eine Vorgabe
-(Klasse, Funktionswert) zur Verfügung, während beim unüberwachten Lernen nur die
-Trainingsbeispiele bereitgestellt werden und der Algorithmus selbst Zusammenhänge in
-den Daten erkennen soll. Beim Reinforcement Learning erfolgt das Feedback am Ende
-einer Kette von Aktionen, d.h. der Algorithmus muss diese Bewertung auf die einzelnen
-Aktionen zurückrechnen.
+Lernen unterschieden: Überwachtes Lernen, Unüberwachtes Lernen, Reinforcement
+Lernen. Dabei stellt der Lehrer beim überwachten Lernen Trainingsbeispiele plus eine
+Vorgabe (Klasse, Funktionswert) zur Verfügung, während beim unüberwachten Lernen nur
+die Trainingsbeispiele bereitgestellt werden und der Algorithmus selbst
+Zusammenhänge in den Daten erkennen soll. Beim Reinforcement Learning erfolgt das
+Feedback am Ende einer Kette von Aktionen, d.h. der Algorithmus muss diese Bewertung
+auf die einzelnen Aktionen zurückrechnen.
 
 Beim überwachten Lernen soll eine Hypothese aufgebaut werden, die der echten (zu
 lernenden) Funktion möglichst nahe kommt. Eine konsistente Hypothese erklärt die
 Trainingsdaten, eine generalisierende Hypothese kann auch unbekannte Daten (die aus
-der selben Quelle stammen, also zum selben Problem gehören) korrekt bewerten. Es wird
-unterschieden zwischen Klassifikation (einige wenige diskrete Label/Klassen, die den
-Trainingsbeispielen zugeordnet sind) und Regression (Lernen eines Funktionsverlaufs).
+der selben Quelle stammen, also zum selben Problem gehören) korrekt bewerten. Es
+wird unterschieden zwischen Klassifikation (einige wenige diskrete Label/Klassen,
+die den Trainingsbeispielen zugeordnet sind) und Regression (Lernen eines
+Funktionsverlaufs).
 
 Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte, d.h. jedes
 Objekt kann über einen Merkmalsvektor beschrieben werden. Trainingsdaten sind
@@ -159,8 +160,8 @@ Beispielen
 ![](images/occams1.png){width="60%"}
 
 ::: notes
-Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ... Wir
-haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
+Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ...
+Wir haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -188,12 +189,13 @@ ist, den man gefahrlos ignorieren kann?
 ![](images/occams4.png){width="60%"}
 
 ::: notes
-Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt aber alle
-Datenpunkte. D.h. hier wäre der Trainingsfehler Null. Zwischen den Trainingsdaten
-zeigt das Modell eine "glatte" Approximation, d.h. es wird auch neue Daten, die es
-beim Training nicht gesehen hat, relativ gut erklären. (Dabei liegt freilich die
-Annahme zugrunde, dass alle relevanten Daten in der Trainingsmenge vorhanden sind,
-d.h. dass es insbesondere zwischen den Datenpunkten keine Ausreißer o.ä. gibt.)
+Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt aber
+alle Datenpunkte. D.h. hier wäre der Trainingsfehler Null. Zwischen den
+Trainingsdaten zeigt das Modell eine "glatte" Approximation, d.h. es wird auch neue
+Daten, die es beim Training nicht gesehen hat, relativ gut erklären. (Dabei liegt
+freilich die Annahme zugrunde, dass alle relevanten Daten in der Trainingsmenge
+vorhanden sind, d.h. dass es insbesondere zwischen den Datenpunkten keine Ausreißer
+o.ä. gibt.)
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -204,12 +206,12 @@ d.h. dass es insbesondere zwischen den Datenpunkten keine Ausreißer o.ä. gibt.
 Diese Hypothese erklärt ebenfalls sämtliche Trainingsdaten. Allerdings schwingt die
 Funktion zwischen den Daten stark hin und her. Vermutlich entspricht dies nicht dem
 zu lernenden Funktionsverlauf. Der Trainingsfehler wäre wie bei der deutlich
-einfacheren Hypthese aus dem letzten Schritt Null. Der Generalisierungsfehler (sprich
-die Abweichung, wenn man das Modell nach Daten zwischen den Trainingspunkten fragt)
-dürfte erheblich höher liegen.
+einfacheren Hypthese aus dem letzten Schritt Null. Der Generalisierungsfehler
+(sprich die Abweichung, wenn man das Modell nach Daten zwischen den Trainingspunkten
+fragt) dürfte erheblich höher liegen.
 
-D.h. hier hat das Modell einfach die Trainingsdaten auswendig gelernt, aber nicht den
-Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
+D.h. hier hat das Modell einfach die Trainingsdaten auswendig gelernt, aber nicht
+den Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
 :::
 
 # Occam's Razor
@@ -266,18 +268,18 @@ Beschreibung der Faktoren, wann ich im See schwimmen möchte:
 
 ::: notes
 Dabei wird davon ausgegangen, dass jeder Faktor (jedes Merkmal) an einer bestimmten
-Stelle im Merkmalsvektor aufgeführt ist. Beispielsweise gehört das `sonnig` zur Frage
-"Scheint die Sonne", `warm` jeweils zur Wasser- und zur Lufttemperatur.
+Stelle im Merkmalsvektor aufgeführt ist. Beispielsweise gehört das `sonnig` zur
+Frage "Scheint die Sonne", `warm` jeweils zur Wasser- und zur Lufttemperatur.
 
-Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen Zustand
-der Welt mit den relevanten Dingen beschrieben. Diesem Zustand kann man
+Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen
+Zustand der Welt mit den relevanten Dingen beschrieben. Diesem Zustand kann man
 beispielsweise ein Label (Klasse) verpassen, hier in diesem Fall "ja, in dieser Welt
 möchte ich schwimmen".
 
 Die Trainingsmenge baut sich dann beim überwachten Lernen aus vielen solcher Paare
-(Merkmalsvektor, Klasse) auf, und die Algorithmen sollen diese Zuordnung lernen, d.h.
-ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und darüber hinaus
-für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
+(Merkmalsvektor, Klasse) auf, und die Algorithmen sollen diese Zuordnung lernen,
+d.h. ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und darüber
+hinaus für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
 :::
 
 # Trainingsdaten -- Merkmalsvektoren
@@ -287,7 +289,8 @@ $$    \mathbf{x}(v) = (x_1, x_2, \ldots, x_n)$$
 
 -   $n$ Merkmale (Attribute)
 -   Attribut $x_t$ hat $m_t$ mögliche Ausprägungen
--   Ausprägung von $v$ bzgl. $x_t$: $\quad x_t(v) = i \quad$ (mit $i = 1 \ldots m_t$)
+-   Ausprägung von $v$ bzgl. $x_t$: $\quad x_t(v) = i \quad$ (mit
+    $i = 1 \ldots m_t$)
 
 ::: notes
 *Anmerkung*: Stellen Sie sich den Merkmalsvektor $\mathbf{x}$ vielleicht wie einen
@@ -314,8 +317,8 @@ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
 \smallskip
 
 -   Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte
--   Trainingsdaten: Beispielobjekte (durch Merkmalsvektoren beschrieben) plus Vorgabe
-    vom Lehrer
+-   Trainingsdaten: Beispielobjekte (durch Merkmalsvektoren beschrieben) plus
+    Vorgabe vom Lehrer
 
 ::: readings
 -   @Russell2020: Lernen: Abschnitte 19.1 und 19.2

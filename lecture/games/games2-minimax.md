@@ -7,15 +7,15 @@ title: Minimax
 Mit dem Minimax-Algorithmus können optimale Züge berechnet werden. Dabei wird von
 zwei Spielern `Max` und `Min` ausgegangen, die abwechselnd ziehen und beide optimal
 spielen. Wenn `Max` gewonnen hat, wird der Spielausgang mit +1 bewertet, wenn `Min`
-gewonnen hat mit -1, und mit 0 sonst. Damit hat man ein sogenanntes "Nullsummenspiel"
-(der Gewinn des einen Spielers ist der Verlust des anderen) und kann den Algorithmus
-so gestalten, dass `Max` stets den Zug wählt, der das Spielergebnis maximiert und
-`Min` entsprechend den Zug wählt, der das Spielergebnis minimiert (daher auch die
-Namen der Spieler).
+gewonnen hat mit -1, und mit 0 sonst. Damit hat man ein sogenanntes
+"Nullsummenspiel" (der Gewinn des einen Spielers ist der Verlust des anderen) und
+kann den Algorithmus so gestalten, dass `Max` stets den Zug wählt, der das
+Spielergebnis maximiert und `Min` entsprechend den Zug wählt, der das Spielergebnis
+minimiert (daher auch die Namen der Spieler).
 
 Minimax baut den gesamten Spielbaum bis zu den Blättern auf. Die Blätter
-(Spielausgang) werden mit einer `Utility`-Funktion bewertet, und diese Bewertung wird
-dann im Spielbaum nach oben gereicht.
+(Spielausgang) werden mit einer `Utility`-Funktion bewertet, und diese Bewertung
+wird dann im Spielbaum nach oben gereicht.
 :::
 
 ::: youtube
@@ -45,12 +45,12 @@ dann im Spielbaum nach oben gereicht.
 
     =\> Startzustand und anwendbare Aktionen definieren den Zustandsraum.
 
--   Nutzenfunktion: $\operatorname{UTILITY}(s,p)$: Wert des Spiels für Spieler $p$ im
-    Spielzustand $s$
+-   Nutzenfunktion: $\operatorname{UTILITY}(s,p)$: Wert des Spiels für Spieler $p$
+    im Spielzustand $s$
 
 -   Strategie: Spieler benötigen **Strategie**, um zu gewünschtem Endzustand zu
-    kommen *(unabhängig von den Entscheidungen des Gegenspielers)* =\> einfacher Pfad
-    von Start zu Ziel reicht nicht
+    kommen *(unabhängig von den Entscheidungen des Gegenspielers)* =\> einfacher
+    Pfad von Start zu Ziel reicht nicht
 
 *Hinweis*: Nullsummenspiel! (Der Gewinn des einen Spielers ist der Verlust des
 anderen Spielers.)
@@ -111,11 +111,11 @@ def Min-Value(state):
 
 ::: notes
 **Hinweis I**: Auf
-[wikipedia.org/wiki/Minimax](https://en.wikipedia.org/wiki/Minimax#Pseudocode) finden
-Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer bestimmten
-Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version, wo man beim
-Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine `Eval()`-Funktion
-braucht (vgl. [Minimax: Heuristiken](games3-heuristics.md)).
+[wikipedia.org/wiki/Minimax](https://en.wikipedia.org/wiki/Minimax#Pseudocode)
+finden Sie eine Variante mit einem zusätzlichen Tiefenparameter, um bei einer
+bestimmten Suchtiefe abbrechen zu können. Dies ist bereits eine erweiterte Version,
+wo man beim Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine
+`Eval()`-Funktion braucht (vgl. [Minimax: Heuristiken](games3-heuristics.md)).
 
 Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen Parameter
 nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!
@@ -203,9 +203,9 @@ Gedankenexperiment:
 ::: challenges
 **Optimale Spiele und MiniMax**
 
-Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß und
-Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss mind.
-ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat
+Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß
+und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss
+mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat
 verloren. Zu Beginn ist Weiß am Zug.
 
 1.  Spielbaum

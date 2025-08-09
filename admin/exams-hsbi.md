@@ -71,8 +71,8 @@ Prüfungsamt bekannt gegeben.
 Dauer jeweils 90 Minuten.
 
 -   Die konkrete Durchführungsform [(in Präsenz am Campus Minden oder im
-    Home-Office)]{.notes} wird Ihnen [spätestens]{.notes} zwei Wochen vor der Prüfung
-    über das LSF bekanntgegeben
+    Home-Office)]{.notes} wird Ihnen [spätestens]{.notes} zwei Wochen vor der
+    Prüfung über das LSF bekanntgegeben
 
 ## Zugelassene Hilfsmittel
 
@@ -91,8 +91,8 @@ einen gewissen Lerneffekt bewirkt!
 Falls die Prüfung als Open-Book-Ausarbeitung im Home-Office durchgeführt werden
 sollte, dürfen Sie alle Unterlagen benutzen.
 
--   Ausnahme: **Keine Hilfe durch Dritte!** (insbesondere keine Zusammenarbeit, keine
-    Kommunikation)
+-   Ausnahme: **Keine Hilfe durch Dritte!** (insbesondere keine Zusammenarbeit,
+    keine Kommunikation)
 
     Sie sollen die Prüfung eigenständig bearbeiten. Hilfe von Dritten sowie jegliche
     Kommunikation mit Dritten ist in keinem Fall zugelassen und wird als
@@ -125,15 +125,15 @@ Campus Minden.
 
 ::: {.details title="Open-Book-Ausarbeitung (Homeoffice)"}
 Diese Bemerkungen betreffen die Durchführung aus dem Home-Office mit Ihrer Hardware.
-Bei der Durchführung in Präsenz in den Räumen am Campus Minden werden die technischen
-Details von uns für Sie vorbereitet sein.
+Bei der Durchführung in Präsenz in den Räumen am Campus Minden werden die
+technischen Details von uns für Sie vorbereitet sein.
 
 -   **Rechner**: Nutzen Sie für die Prüfung einen stationären Rechner oder ein
     Notebook.
 
     Vermeiden Sie die Verwendung von Tablets und Smartphones! Bei der Verwendung von
-    Tablets kann es unter Umständen zu Darstellungsproblemen kommen. Smartphones sind
-    aufgrund des kleinen Bildschirms für die Prüfungsdurchführung schlicht
+    Tablets kann es unter Umständen zu Darstellungsproblemen kommen. Smartphones
+    sind aufgrund des kleinen Bildschirms für die Prüfungsdurchführung schlicht
     ungeeignet.
 
     Bei fehlendem Zugang zu einem entsprechenden Endgerät kontaktieren Sie bitte
@@ -160,8 +160,8 @@ Details von uns für Sie vorbereitet sein.
     Cookies müssen aktiviert/erlaubt sein.
 
     Deaktivieren Sie sämtliche Browser-Erweiterungen wie z.B. Ad-Blocker
-    (AdBlockPlus, uBlock, ...) oder JavaScript-Blocker (No-Script, Ghostery, ...) für
-    den Prüfungszeitraum.
+    (AdBlockPlus, uBlock, ...) oder JavaScript-Blocker (No-Script, Ghostery, ...)
+    für den Prüfungszeitraum.
 
     **Nutzen Sie Ihren Browser nicht im Privacy-Modus!**
 
@@ -183,20 +183,21 @@ Details von uns für Sie vorbereitet sein.
     Fehlfunktionen von ILIAS kommen.
 
     Bewegen Sie sich nicht per Browser-Navigation ("vor", "zurück" im Browser) durch
-    die Aufgaben, sondern nutzen Sie dafür die Buttons "nächste Frage", "Weiter" oder
-    "Zurück" vom ILIAS!
+    die Aufgaben, sondern nutzen Sie dafür die Buttons "nächste Frage", "Weiter"
+    oder "Zurück" vom ILIAS!
 
 3.  Hinweis zu Anzeige der restlichen Bearbeitungsdauer
 
-    Wenn Sie den Browser bzw. das Tab mit der Prüfung im Laufe der Prüfung verlassen,
-    wird Ihnen bei der Rückkehr unter Umständen eine falsche restliche
+    Wenn Sie den Browser bzw. das Tab mit der Prüfung im Laufe der Prüfung
+    verlassen, wird Ihnen bei der Rückkehr unter Umständen eine falsche restliche
     Bearbeitungsdauer angezeigt. Sie können die Anzeige korrigieren/aktualisieren,
     indem Sie einfach zu einer vorigen oder nächsten Aufgabe navigieren.
 
     Hinweis: Die restliche Bearbeitungsdauer wird im Test nur dann angezeigt, wenn
     diese Funktion von den Prüfenden aktiviert wurde.
 
-4.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen stellen
+4.  Parallel zum E-Assessment läuft eine Zoom-Session, dort können Sie Fragen
+    stellen
 
 5.  Verbindungsprobleme (Home-Office):
 
@@ -223,8 +224,8 @@ können die Demo bei Bedarf beliebig oft wiederholen.
 -   **Fragen**:
     -   Schauen Sie sich die Challenges und/oder Quizzes an ...
     -   Schauen Sie sich die Praktikumsaufgaben an ...
-    -   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung möglich
-        ist und (wie) gefragt werden könnte :)
+    -   Überlegen Sie sich, was zu einem Themengebiet im Rahmen einer Prüfung
+        möglich ist und (wie) gefragt werden könnte :)
 
 ::: center
 **Können vor Kennen :-)**
@@ -266,10 +267,10 @@ Lerntabelle an.
 
 \smallskip
 
-Anders als in der Vorlesung besprochen, sollen die Gewichte $w_1$ und $w_2$ sowie die
-Schwelle $\theta$ jeweils mit dem Wert $0$ initialisiert werden. Die Lernschrittweite
-$\alpha$ sei $0.5$. Nutzen Sie die $\operatorname{sign}$-Funktion als
-Aktivierungsfunktion: $$\operatorname{sign}(x) = \left\{
+Anders als in der Vorlesung besprochen, sollen die Gewichte $w_1$ und $w_2$ sowie
+die Schwelle $\theta$ jeweils mit dem Wert $0$ initialisiert werden. Die
+Lernschrittweite $\alpha$ sei $0.5$. Nutzen Sie die $\operatorname{sign}$-Funktion
+als Aktivierungsfunktion: $$\operatorname{sign}(x) = \left\{
     \begin{array}{ll}
     0 & \text{falls } x<0\\
     1 & \text{sonst}
@@ -311,8 +312,8 @@ Zeichnen Sie den zugehörigen Constraintgraphen.
 
 \bigskip
 
-Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise Kantenkonsistenz
-herstellt.
+Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise
+Kantenkonsistenz herstellt.
 
 ## Backpropagation
 

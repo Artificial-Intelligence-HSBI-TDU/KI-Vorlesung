@@ -27,7 +27,8 @@ anschauen).
 -->
 
 [["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
-by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY
+by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC
+BY
 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 ::: notes

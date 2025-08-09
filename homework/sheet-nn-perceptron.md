@@ -34,8 +34,8 @@ autonomes Fahren oder durch *Large Language Models* (LLM).
 -   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen
     verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und
     KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
--   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es die
-    EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für
+-   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es
+    die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für
     diese Einschränkung.
 
 *Thema*: Verständnis Perzeptron
@@ -73,12 +73,12 @@ Anzahl von benötigten Schritten. In welcher Größenordnung liegt sie?
 ## Experimente (2P)
 
 Wiederholen Sie das obige Experiment mit $m=100$ und $m=1000$ Datenpunkten, jeweils
-ein Mal mit den Lernraten $\alpha=1$ und $\alpha=0.1$. In welcher Größenordnung liegt
-die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
+ein Mal mit den Lernraten $\alpha=1$ und $\alpha=0.1$. In welcher Größenordnung
+liegt die durchschnittliche Anzahl von benötigten Schritten in diesen Fällen?
 
-Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment mehrfach
-mit anderen zufällig generierten Datensätzen derselben Größe $m$ wiederholen und
-danach den Durchschnitt über alle Wiederholungen betrachten.
+Um eine zuverlässigere Schätzung zu erhalten, können Sie dasselbe Experiment
+mehrfach mit anderen zufällig generierten Datensätzen derselben Größe $m$
+wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 
 ## Visualisierung (optional)
 

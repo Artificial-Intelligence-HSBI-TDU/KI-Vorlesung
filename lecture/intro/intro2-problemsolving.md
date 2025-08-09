@@ -47,8 +47,8 @@ untersuchten Teil des Graphen und dem unbekannten Teil des Graphen bildet. Je na
 Art der Datenstruktur und je nach den betrachteten Kosten ergeben sich eine Reihe
 unterschiedlicher Suchalgorithmen, die wir in einer späteren Sitzung betrachten.
 
-Die Suchverfahren können im Hinblick auf Optimalität, Vollständigkeit und Komplexität
-beurteilt werden.
+Die Suchverfahren können im Hinblick auf Optimalität, Vollständigkeit und
+Komplexität beurteilt werden.
 :::
 
 ::: youtube
@@ -152,8 +152,8 @@ Ergebnis:
 
 ::: notes
 **Anmerkung:** [@Russell2020] unterscheidet zw. Aktionen und Transitionsmodell; hier
-nur Aktionen! D.h. die Aktionen und das Übergangsmodell aus dem [@Russell2020] werden
-direkt zusammen betrachtet. Bei den hier diskutierten Problemen ist das ohne
+nur Aktionen! D.h. die Aktionen und das Übergangsmodell aus dem [@Russell2020]
+werden direkt zusammen betrachtet. Bei den hier diskutierten Problemen ist das ohne
 Nachteile möglich, es wird lediglich etwas Flexibilität genommen bzw. Komplexität
 vermieden (je nach Sichtweise :-) ...
 :::
@@ -206,8 +206,8 @@ Ein Problem besteht aus:
 
 Das bedeutet, dass der Problemgraph eine Repräsentation des Zustandsraumes ist.
 
-Die beiden Begriffe werden normalerweise synonym verwendet, sofern eindeutig ist, was
-gemeint ist.
+Die beiden Begriffe werden normalerweise synonym verwendet, sofern eindeutig ist,
+was gemeint ist.
 :::
 
 # Definition Problemlösen
@@ -237,11 +237,11 @@ Problemlösen
 4.  Gehe zu Schritt 2
 
 ::: notes
-Für die in dieser Veranstaltung betrachteten deterministischen Probleme mit diskreten
-Zuständen ist diese Basisvariante der Suche eine Art generischer Suchalgorithmus:
-Durch die Variation der eingesetzten Datenstruktur und durch die Betrachtung
-unterschiedlicher Kosten erhält man die in den nächsten Sitzungen betrachteten
-verschiedenen klassischen Suchalgorithmen.
+Für die in dieser Veranstaltung betrachteten deterministischen Probleme mit
+diskreten Zuständen ist diese Basisvariante der Suche eine Art generischer
+Suchalgorithmus: Durch die Variation der eingesetzten Datenstruktur und durch die
+Betrachtung unterschiedlicher Kosten erhält man die in den nächsten Sitzungen
+betrachteten verschiedenen klassischen Suchalgorithmen.
 
 **Anmerkung**: Für Handsimulation besserer Überblick, wenn statt der Knoten immer
 **partielle Wege** in Datenstruktur gespeichert werden!
@@ -266,8 +266,9 @@ Graphen (deshalb auch "Frontier").
 2.  Entnehme Knoten aus der Datenstruktur:
     -   Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
     -   Markiere aktuellen Knoten, und
-    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten Nachfolger,
-        die noch nicht in der Datenstruktur sind, in die Datenstruktur ein
+    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten
+        Nachfolger, die noch nicht in der Datenstruktur sind, in die Datenstruktur
+        ein
 3.  Falls die Datenstruktur leer ist: Abbruch, melde "*nicht gefunden*"
 4.  Gehe zu Schritt 2
 
@@ -279,9 +280,9 @@ Dieser Algorithmus ist eine Erweiterung der einfachen Basisvariante der Suche:
     aufnehmen).
 2.  Außerdem vermeidet man, dass ein Knoten mehrfach in der Datenstruktur vorkommt:
     Dies würde bedeuten, dass man hier verschiedene Wege vom Start zu diesem Knoten
-    in der Datenstruktur hat, die dann auch alle weiter untersucht werden müssten. In
-    der Regel reicht aber ein Weg vom Start zu einem Zwischenknoten (meist wird der
-    kürzeste genommen, dazu in einer späteren Sitzung mehr).
+    in der Datenstruktur hat, die dann auch alle weiter untersucht werden müssten.
+    In der Regel reicht aber ein Weg vom Start zu einem Zwischenknoten (meist wird
+    der kürzeste genommen, dazu in einer späteren Sitzung mehr).
 
 **Anmerkung**: Für Handsimulation besserer Überblick, wenn statt der Knoten immer
 **partielle Wege** in Datenstruktur gespeichert werden!

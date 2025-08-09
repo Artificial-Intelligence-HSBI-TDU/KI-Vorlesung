@@ -8,8 +8,8 @@ Pruning ist das Entfernen redundanter und irrelevanter Tests (Merkmale).
 
 Irrelevante Merkmale spielen keine Rolle bei der Klassifikation, an jedem Ausgang
 eines irrelevanten Merkmals findet sich exakt der selbe Baum. Diese Tests kann man
-einfach entfernen und durch einen ihrer Teilbäume ersetzen; dadurch ändert sich nicht
-die Klassifikation des Baumes.
+einfach entfernen und durch einen ihrer Teilbäume ersetzen; dadurch ändert sich
+nicht die Klassifikation des Baumes.
 
 Bei redundanten Tests sind alle Ausgänge bis auf einen noch mit "Nichtwissen" ("\*")
 markiert. Hier kann man den Test durch den einen bekannten Ausgang ersetzen, wodurch
@@ -80,10 +80,10 @@ $x_1$ ist bedingt redundant =\> Vereinfachung: $\alpha = x_2(A, B)$
 
 ::: notes
 *Anmerkung*: Der durch das Entfernen von bedingt redundanten Attributen entstandene
-Baum hat eine etwas andere Klassifikation als der Baum vor dem Pruning. Wo vorher ein
-`*` ausgegeben wurde, wird nach dem Pruning u.U. ein Klassensymbol ausgegeben. Der
-Klassifikationsfehler erhöht sich aber **nicht**, da hier ein `*` wie ein falsches
-Klassensymbol zu werten ist.
+Baum hat eine etwas andere Klassifikation als der Baum vor dem Pruning. Wo vorher
+ein `*` ausgegeben wurde, wird nach dem Pruning u.U. ein Klassensymbol ausgegeben.
+Der Klassifikationsfehler erhöht sich aber **nicht**, da hier ein `*` wie ein
+falsches Klassensymbol zu werten ist.
 
 **Anmerkung**: $x_1$ im obigen Beispiel ist sogar **global** redundant, da es sich
 hier um die Wurzel des Baumes handelt. Der Weg $\tilde{x}$ ist in diesem Fall der

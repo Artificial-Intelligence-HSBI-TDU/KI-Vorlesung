@@ -4,8 +4,9 @@ title: Suche mit Best First
 ---
 
 ::: tldr
-Best First gehört wie Branch-and-Bound zu den "Informierten Suchverfahren": Es werden
-Pfadkosten (in diesem Fall Schätzungen) statt der Anzahl der Schritte berücksichtigt.
+Best First gehört wie Branch-and-Bound zu den "Informierten Suchverfahren": Es
+werden Pfadkosten (in diesem Fall Schätzungen) statt der Anzahl der Schritte
+berücksichtigt.
 
 Best First arbeitet algorithmisch wie Branch-and-Bound, allerdings werden immer nur
 die geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.
@@ -35,8 +36,8 @@ die geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.
 ::: notes
 -   $n \in S$ auf aktuellem Weg erreichter Knoten
 -   $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$
--   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird auch
-    "heuristische Funktion" oder "Heuristik" genannt
+-   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird
+    auch "heuristische Funktion" oder "Heuristik" genannt
 :::
 
 ::: notes
@@ -49,8 +50,8 @@ Varianten:
 
 # Best-First (*BF*, *BFS*)
 
--   Idee: Expandiere den partiellen Weg, der verspricht, dem Ziel am nächsten zu sein
-    (**Heuristik**)
+-   Idee: Expandiere den partiellen Weg, der verspricht, dem Ziel am nächsten zu
+    sein (**Heuristik**)
 
 \smallskip
 
@@ -67,10 +68,11 @@ Varianten:
 # Konventionen BF
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
-partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
-im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
-den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
-Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
+Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
+Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
+aufzuschreiben.
 
 Auf dem Papier sortiert sich die Queue schlecht, deshalb können Sie darauf
 verzichten, wenn Sie den im nächsten Schritt zu expandierenden Weg unterstreichen.
@@ -79,8 +81,8 @@ Wer nicht mit Unterstreichen arbeiten will, muss eben dann manuell sortieren ...
 Wenn bei der Graph-Search-Variante ein Weg nicht in die Queue aufgenommen wird, weil
 bereits ein anderer (günstigerer) Weg zum selben (Zwischen-/End-) Knoten bereits in
 der Queue enthalten ist, schreiben Sie dies geeignet auf. Dies gilt auch für den
-analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg zum
-selben (Zwischen-/End-) Knoten eingefügt werden soll.
+analogen Fall, wenn ein Weg aus der Queue entfernt wird, weil ein günstigerer Weg
+zum selben (Zwischen-/End-) Knoten eingefügt werden soll.
 :::
 
 ::: notes

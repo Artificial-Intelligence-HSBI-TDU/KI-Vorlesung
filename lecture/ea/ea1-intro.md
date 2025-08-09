@@ -7,10 +7,10 @@ title: Einführung Evolutionäre Algorithmen
 Lokale Suchverfahren: Nur das Ergebnis zählt!
 
 Evolutionäre Algorithmen sind lokale Suchverfahren, wobei gleichzeitig an mehreren
-Stellen im Problemraum gesucht wird. Sie bedienen sich Mechanismen aus der Evolution:
-Es gibt eine Population von Individuen, die jedes das Problem kodieren ("vollständige
-Zustandsbeschreibung") und damit im Laufe der Suche zu einer möglichen Lösung werden
-können.
+Stellen im Problemraum gesucht wird. Sie bedienen sich Mechanismen aus der
+Evolution: Es gibt eine Population von Individuen, die jedes das Problem kodieren
+("vollständige Zustandsbeschreibung") und damit im Laufe der Suche zu einer
+möglichen Lösung werden können.
 :::
 
 ::: youtube
@@ -60,9 +60,9 @@ License](https://unsplash.com/license))]{.origin}
 Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**
 Königinnen =\> **Vollständige Zustandsbeschreibung**.
 
-Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen Spalte
-des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher Zeile in
-dieser Spalte eine Königin ist.
+Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen
+Spalte des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher
+Zeile in dieser Spalte eine Königin ist.
 
 Crossover: Die ausgewählten Individuen werden an der selben Stelle aufgetrennt und
 die Hälften verkreuzt zu zwei neuen Individuen zusammengesetzt. Es entstehen zwei
@@ -97,15 +97,15 @@ neue Anordnungen der Königinnen (zwei neue Spielfelder).
 *Hinweis*: Häufig finden sich Mischformen, beispielsweise GA mit reellwertigen
 Parametern
 
-*Hinweis*: Im Folgenden werden **Genetische Algorithmen** (GA) betrachtet. Sie finden
-jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
+*Hinweis*: Im Folgenden werden **Genetische Algorithmen** (GA) betrachtet. Sie
+finden jeweils Hinweise auf die Gestaltung der Operatoren bei ES.
 :::
 
 # Anwendungsbeispiele für Evolutionäre Algorithmen
 
--   Berechnung und Konstruktion komplexer Bauteile: beispielsweise Tragflächenprofile
-    (Flugzeuge), Brücken oder Fahrzeugteile unter Berücksichtigung bestimmter
-    Nebenbedingungen
+-   Berechnung und Konstruktion komplexer Bauteile: beispielsweise
+    Tragflächenprofile (Flugzeuge), Brücken oder Fahrzeugteile unter
+    Berücksichtigung bestimmter Nebenbedingungen
 -   Scheduling-Probleme: Erstellung von Stunden- und Raumplänen oder Fahrplänen
 -   Berechnung verteilter Netzwerktopologien: Wasserversorgung, Stromversorgung,
     Mobilfunk

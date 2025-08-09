@@ -12,28 +12,29 @@ Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorl
 verschiedenen Farben, Ziel sollte eine konfliktfreie Einfärbung mit einer minimalen
 Anzahl an Farben sein.
 
-Geben Sie für beide Probleme je eine geeignete **Kodierung** der Individuen, passende
-Operatoren (**Crossover**, **Mutation**) und eine geeignete **Fitnessfunktion** an,
-damit die Probleme mit einem GA gelöst werden können. Begründen Sie Ihre Wahl!
+Geben Sie für beide Probleme je eine geeignete **Kodierung** der Individuen,
+passende Operatoren (**Crossover**, **Mutation**) und eine geeignete
+**Fitnessfunktion** an, damit die Probleme mit einem GA gelöst werden können.
+Begründen Sie Ihre Wahl!
 
-Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated Annealing
-lösen zu können?
+Was würden Sie noch benötigen, um die obigen Probleme jeweils mit Simulated
+Annealing lösen zu können?
 
 *Thema*: Modellierung für GA und Gradientensuche
 
 # EA.02: Implementierung (5P)
 
 Implementieren Sie den in der Vorlesung besprochenen GA und wenden Sie den
-Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die Java-Klassen
-im Paket
+Algorithmus nacheinander auf beide Probleme an. Sie können gern auch die
+Java-Klassen im Paket
 [`aima.core.search.local`](https://github.com/aimacode/aima-java/tree/AIMA3e/aima-core/src/main/java/aima/core/search/local)
 bzw. die Python-Klassen in
 [`search.py`](https://github.com/aimacode/aima-python/blob/master/search.py) als
 Ausgangspunkt nutzen.[^1]
 
 Untersuchen Sie **systematisch** unterschiedliche Varianten/Einstellungen der in der
-VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind. 100 Läufe durch
-und messen Sie die besprochenen Kennzahlen.
+VL vorgestellten Operatoren. Führen Sie pro Einstellung jeweils mind. 100 Läufe
+durch und messen Sie die besprochenen Kennzahlen.
 
 Erstellen Sie eine geeignete (systematische!) Auswertung Ihrer Experimente.
 
@@ -53,7 +54,8 @@ Welche Fitnessfunktion wurden in den drei Beispielen jeweils genutzt, wie die
 Individuen und die Operatoren codiert?
 
 Recherchieren Sie, in welchen *anderen* Anwendungen Evolutionäre Algorithmen
-eingesetzt werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt werden.
+eingesetzt werden. Erklären Sie kurz, wie und wofür die EA/GA jeweils genutzt
+werden.
 
 *Thema*: Analyse von GA-Implementierungen
 

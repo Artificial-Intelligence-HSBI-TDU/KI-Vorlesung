@@ -38,9 +38,10 @@ rechts.
 
 # Games.03: Minimax vereinfachen (1P)
 
-Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die Eigenschaft
-*Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value` und `Max-Value` in
-eine einzige Funktion ohne explizite Unterscheidung der Spieler zusammenfassen.
+Vereinfachen Sie den Minimax-Algorithmus aus der Vorlesung, indem Sie die
+Eigenschaft *Nullsummenspiel* berücksichtigen und die Funktionen `Min-Value` und
+`Max-Value` in eine einzige Funktion ohne explizite Unterscheidung der Spieler
+zusammenfassen.
 
 Überlegen Sie sich einen Beispielbaum und zeigen Sie anhand dessen die Bewertung
 durch den Minimax-Algorithmus und durch Ihren vereinfachten Algorithmus.

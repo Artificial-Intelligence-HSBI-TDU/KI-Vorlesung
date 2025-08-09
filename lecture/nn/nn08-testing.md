@@ -39,7 +39,8 @@ title: NN08 - Performanzanalyse
 -   Anzahl richtig klassifizierter Datenpunkte, Erfolgsrate (engl. correct rate)
     $$Accuracy = \frac{TP+TN}{TP+TN+FP+FN}$$
 
--   Accuracy vermittelt ein falsches Bild des Erfolges bei unausgewogenen Datensätzen
+-   Accuracy vermittelt ein falsches Bild des Erfolges bei unausgewogenen
+    Datensätzen
 
     Beispiel:
 
