@@ -1,12 +1,11 @@
 ---
-title: "Naive Bayes"
-no_pdf: true
 no_beamer: true
+no_pdf: true
+title: Naive Bayes
 ---
 
-
-Ich habe Symptome beobachtet. Kann ich die Ursache (also die Krankheit)
-bestimmen, wenn ich etwas Hintergrundwissen habe:
+Ich habe Symptome beobachtet. Kann ich die Ursache (also die Krankheit) bestimmen,
+wenn ich etwas Hintergrundwissen habe:
 
 -   Wie häufig treten verschieden Krankheiten auf
 -   Welche Krankheit zeigt welche Symptome (und wie oft treten die dann auf)

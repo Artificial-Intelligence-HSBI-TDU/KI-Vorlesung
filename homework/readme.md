@@ -1,9 +1,8 @@
 ---
-title: "Praktikum/Übung"
-no_pdf: true
 no_beamer: true
+no_pdf: true
+title: Praktikum/Übung
 ---
-
 
 Hier finden Sie die Übungsblätter.
 
