@@ -92,7 +92,7 @@ leere Weg ...
 
 # Allgemeine Transformationsregel
 
-$$    x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))$$
+$$x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))$$
 
 # Wrap-Up
 
