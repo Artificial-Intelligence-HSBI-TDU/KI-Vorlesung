@@ -187,7 +187,7 @@ Fitnessfunktion für ein Problem vergleichen will, muss man jeweils mehrere
 Experimente mit der selben Einstellung machen und Kenngrößen berechnen.
 
 **Geschwindigkeit: AES** *Average Evaluations to a Solution*
-$$    \mbox{AES } = \frac{\sum\limits_{i \in \mbox{erfolgreiche Läufe}} \mbox{Generationen von Lauf } i}{\mbox{Anzahl der erfolgreichen Läufe}}$$
+$$\mbox{AES } = \frac{\sum\limits_{i \in \mbox{erfolgreiche Läufe}} \mbox{Generationen von Lauf } i}{\mbox{Anzahl der erfolgreichen Läufe}}$$
 
 Die AES liegt im Intervall $[0, maxGen]$.
 
