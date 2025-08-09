@@ -1,28 +1,27 @@
 ---
-title: "NN09 - Large Language Models"
-author: "Canan Yıldız (Türkisch-Deutsche Universität)"
-outcomes:
-  - k2: "TODO"
-  - k2: "TODO"
-  - k3: "TODO"
-  - k3: "TODO"
-# readings:
-#   - "@Russell2020: Kapitel 2 und 3"
-#   - "@Ertel2017"
-youtube:
-  - link: "https://youtu.be/TODO"
-    name: "NN9.1 - TODO"
-  - link: "https://youtu.be/TODO"
-    name: "NN9.2 - TODO"
-attachments:
-  - link: "https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN9-LLM.pdf"
-    name: "NN9-LLM.pdf"
+author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
+title: NN09 - Large Language Models
 ---
 
+::: youtube
+-   [NN9.1 - TODO](https://youtu.be/TODO)
+-   [NN9.2 - TODO](https://youtu.be/TODO)
+:::
+
+::: attachments
+-   [NN9-LLM.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN9-LLM.pdf)
+:::
 
 # Kurze Übersicht
 
 ## TODO
 
 TODO
+
+::: outcomes
+-   k2: TODO
+-   k2: TODO
+-   k3: TODO
+-   k3: TODO
+:::
