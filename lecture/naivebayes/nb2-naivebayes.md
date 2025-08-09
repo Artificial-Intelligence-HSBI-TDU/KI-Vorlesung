@@ -4,42 +4,54 @@ title: Klassifikation mit Naive Bayes
 ---
 
 ::: tldr
-Mit Hilfe der (verallgemeinerten) Bayes-Regel kann man Klassifikation durchführen. Dazu werden beim "Training" die
-bedingten Wahrscheinlichkeiten aus den Trainingsdaten geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die
-Nutzung der beim "Training" berechneten bedingten Wahrscheinlichkeiten:
+Mit Hilfe der (verallgemeinerten) Bayes-Regel kann man Klassifikation durchführen.
+Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den Trainingsdaten
+geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die Nutzung der beim
+"Training" berechneten bedingten Wahrscheinlichkeiten:
 
 $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h|D_1,  \ldots, D_n) =
 \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i|h)$$
 
-Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior $P(h|D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse,
-deren Wert dabei am höchsten ist, "gewinnt", d.h. die Klasse mit dem größten Posterior wird ausgegeben. (Deshalb wird
+Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior
+$P(h|D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
+"gewinnt", d.h. die Klasse mit dem größten Posterior wird ausgegeben. (Deshalb wird
 das Verfahren oft auch "MAP" -- *Maximum a Posteriori* -- genannt.)
 
-Bei der Berechnung wird angenommen, dass die betrachteten Merkmale (bedingt) unabhängig sind (dies geht in die obige
-Formel ein). Diese Annahme trifft aber oft nicht zu, deshalb auch der Name "*Naive* Bayes Klassifikation". Man berechnet
-in diesem Fall falsche Werte. Dennoch zeigt der Algorithmus in der Praxis sehr gute Ergebnisse.
+Bei der Berechnung wird angenommen, dass die betrachteten Merkmale (bedingt)
+unabhängig sind (dies geht in die obige Formel ein). Diese Annahme trifft aber oft
+nicht zu, deshalb auch der Name "*Naive* Bayes Klassifikation". Man berechnet in
+diesem Fall falsche Werte. Dennoch zeigt der Algorithmus in der Praxis sehr gute
+Ergebnisse.
 
-Durch den Einsatz der bedingten Wahrscheinlichkeiten in der Produktformel ergeben sich einige Schwierigkeiten:
+Durch den Einsatz der bedingten Wahrscheinlichkeiten in der Produktformel ergeben
+sich einige Schwierigkeiten:
 
-1.  Wenn beim "Training" Ausprägungen fehlen, ist die bedingte Wahrscheinlichkeit Null. Dadurch wird das gesamte Produkt
-    Null. Zur Abhilfe kann man den **Laplace-Schätzer** nutzen, der (gesteuert über einen Parameter) gewissermaßen
+1.  Wenn beim "Training" Ausprägungen fehlen, ist die bedingte Wahrscheinlichkeit
+    Null. Dadurch wird das gesamte Produkt Null. Zur Abhilfe kann man den
+    **Laplace-Schätzer** nutzen, der (gesteuert über einen Parameter) gewissermaßen
     virtuelle Trainingsbeispiele beisteuert.
-2.  Durch das Produkt vieler kleiner Werte kann es schnell zu *Floating Point*-Underflows kommen. Hier kann man einen
-    Trick nutzen: Man berechnet den Logarithmus der Produktformel. Dadurch ändern sich zwar die absoluten Werte, die
-    Reihenfolge der Hypothesen bleibt aber erhalten. Da wir nur nach der Hypothese suchen, die einen höheren Wert als
-    die anderen hat, und nicht den absoluten Wert an sich benötigen, kann man so vorgehen. Durch den Logarithmus wird
-    aus dem Produkt eine Summe, wo die kleinen Werte der bedingten Wahrscheinlichkeiten nicht so starke Auswirkungen
-    haben wie im Produkt.
+2.  Durch das Produkt vieler kleiner Werte kann es schnell zu *Floating
+    Point*-Underflows kommen. Hier kann man einen Trick nutzen: Man berechnet den
+    Logarithmus der Produktformel. Dadurch ändern sich zwar die absoluten Werte, die
+    Reihenfolge der Hypothesen bleibt aber erhalten. Da wir nur nach der Hypothese
+    suchen, die einen höheren Wert als die anderen hat, und nicht den absoluten Wert
+    an sich benötigen, kann man so vorgehen. Durch den Logarithmus wird aus dem
+    Produkt eine Summe, wo die kleinen Werte der bedingten Wahrscheinlichkeiten nicht
+    so starke Auswirkungen haben wie im Produkt.
 
-Oft nimmt man zusätzlich an, dass für alle Hypothesen (Klassen) $h$ der Prior $P(h)$ gleich ist. Dann kann man diesen
-Faktor ebenfalls aus der Berechnung entfernen. Dieses Verfahren nennt man auch "**Maximum Likelihood**".
+Oft nimmt man zusätzlich an, dass für alle Hypothesen (Klassen) $h$ der Prior $P(h)$
+gleich ist. Dann kann man diesen Faktor ebenfalls aus der Berechnung entfernen.
+Dieses Verfahren nennt man auch "**Maximum Likelihood**".
 
-Der NB-Klassifikator wird gern für die Textklassifikation eingesetzt. Hier muss man einem Text ein Label zuordnen. In
-einer Vorverarbeitung wird zunächst eine Menge der relevanten Wörter über alle Trainingstexte gebildet (*Bag-of-Words*).
-Der Bag-of-Words entspricht einem Merkmalsvektor, wobei die Merkmale die einzelnen Wörter sind. Dann kann jeder Text der
-Trainingsmenge über so einen Merkmalsvektor dargestellt werden: Entweder man gibt pro Merkmal an, ob es da (1) oder
-nicht da (0) ist oder man zählt die Häufigkeit des Auftretens. Dann kann man mit dem NB-Klassifikator die bedingten
-Wahrscheinlichkeiten schätzen und einen neuen Text klassifizieren.
+Der NB-Klassifikator wird gern für die Textklassifikation eingesetzt. Hier muss man
+einem Text ein Label zuordnen. In einer Vorverarbeitung wird zunächst eine Menge der
+relevanten Wörter über alle Trainingstexte gebildet (*Bag-of-Words*). Der
+Bag-of-Words entspricht einem Merkmalsvektor, wobei die Merkmale die einzelnen Wörter
+sind. Dann kann jeder Text der Trainingsmenge über so einen Merkmalsvektor
+dargestellt werden: Entweder man gibt pro Merkmal an, ob es da (1) oder nicht da (0)
+ist oder man zählt die Häufigkeit des Auftretens. Dann kann man mit dem
+NB-Klassifikator die bedingten Wahrscheinlichkeiten schätzen und einen neuen Text
+klassifizieren.
 :::
 
 ::: youtube
@@ -48,7 +60,8 @@ Wahrscheinlichkeiten schätzen und einen neuen Text klassifizieren.
 
 # Medizinische Diagnostik mit NB
 
--   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet: $P(S|A) = 0.8$
+-   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet:
+    $P(S|A) = 0.8$
 -   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
 -   Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$
 
@@ -71,8 +84,8 @@ Wahrscheinlichkeiten schätzen und einen neuen Text klassifizieren.
     -   T2: ("Sieben Zwerge traten sieben Ziegen")
 
 ::: notes
-Lernen Sie mit Hilfe der Trainingsmenge einen Naive-Bayes-Klassifikator und wenden Sie diesen auf die beiden
-Test-Dokumente an.
+Lernen Sie mit Hilfe der Trainingsmenge einen Naive-Bayes-Klassifikator und wenden
+Sie diesen auf die beiden Test-Dokumente an.
 :::
 
 # Naive Bayes
@@ -93,7 +106,8 @@ Test-Dokumente an.
     = \operatorname{argmax}_{h \in H} P(h) \prod_i P(D_i | h)$$
 
     ::: notes
-    Naive Bayes: Wähle die plausibelste Hypothese, die von den Daten unterstützt wird.
+    Naive Bayes: Wähle die plausibelste Hypothese, die von den Daten unterstützt
+    wird.
     :::
 
 # Bayes'sches Lernen
@@ -107,8 +121,8 @@ $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
 
 -   Für jede Klasse $h$:
     -   Schätze $P(h) = \dfrac{|S(h)|}{|S|}$
-    -   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: `\newline`{=tex} Schätze
-        $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+    -   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: `\newline`{=tex}
+        Schätze $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
 
 \bigskip
 
@@ -133,17 +147,17 @@ $$h_{MAP} = \operatorname{argmax}_{h \in H} P(h | D_1, \ldots, D_n)
 \pause
 \bigskip
 
-Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$, $P(\text{Nase=0}|\text{gesund})$, ...
+Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$,
+$P(\text{Nase=0}|\text{gesund})$, ...
 
-Wähle Klasse
-$$\begin{eqnarray}
+Wähle Klasse $$\begin{eqnarray}
 h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0}|h) \cdot P(\text{Husten=1}|h) \\
     & \cdot P(\text{Haut=0}|h) \cdot P(\text{Fieber=1}|h)
 \end{eqnarray}$$
 
 ::: notes
-**Ergebnis**: (nur die für den zu klassifizierenden Beispiel-Vektor nötigen Werte, die restlichen müssten aber auch beim
-"Training" berechnet werden!)
+**Ergebnis**: (nur die für den zu klassifizierenden Beispiel-Vektor nötigen Werte,
+die restlichen müssten aber auch beim "Training" berechnet werden!)
 
     P(gesund) = 2/5 = 0.4
     P(krank)  = 3/5 = 0.6
@@ -186,9 +200,10 @@ h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P
     \smallskip
 
     -   Likelihood der Daten (Terme):
-        -   $P(t|c) = \dfrac{\operatorname{count}(t,c)}{\sum_{v \in V} \operatorname{count}(v,c)}$ `\newline`{=tex} mit
-            $\operatorname{count}(t,c)$ Anzahl der Vorkommen von Term $t$ in allen Dokumenten der Klasse $c$ und $V$ die
-            Vereinigung aller Terme aller Dokumente (als Menge)
+        -   $P(t|c) = \dfrac{\operatorname{count}(t,c)}{\sum_{v \in V} \operatorname{count}(v,c)}$
+            `\newline`{=tex} mit $\operatorname{count}(t,c)$ Anzahl der Vorkommen von
+            Term $t$ in allen Dokumenten der Klasse $c$ und $V$ die Vereinigung aller
+            Terme aller Dokumente (als Menge)
 
         \smallskip
 
@@ -198,7 +213,8 @@ h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P
         :::
 
 ::: slides
-[[Hinweise: Naivität, Laplace, Floating Point Underflow, Maximum Likelihood]{.ex}]{.slides}
+[[Hinweise: Naivität, Laplace, Floating Point Underflow, Maximum
+Likelihood]{.ex}]{.slides}
 :::
 
 ::: notes
@@ -214,11 +230,12 @@ h_{MAP} = \operatorname{argmax}_{h \in \lbrace \text{gesund, krank} \rbrace} & P
 
 -   Praxis: Dennoch häufig sehr gute Ergebnisse
 
-    Wichtig: Solange die **Maximierung** über alle Hypothesen die selben Ergebnisse liefert, müssen die konkreten
-    Schätzungen/Werte nicht exakt stimmen ...
+    Wichtig: Solange die **Maximierung** über alle Hypothesen die selben Ergebnisse
+    liefert, müssen die konkreten Schätzungen/Werte nicht exakt stimmen ...
 
-Wenn Attribute nicht (bedingt) unabhängig sind, kann sich der NB verschätzen, d.h. es kommt dann u.U. zu einer höheren
-Fehlerrate, da bestimmte Eigenschaften in der Trainingsmenge zu hoch gewichtet werden.
+Wenn Attribute nicht (bedingt) unabhängig sind, kann sich der NB verschätzen, d.h. es
+kommt dann u.U. zu einer höheren Fehlerrate, da bestimmte Eigenschaften in der
+Trainingsmenge zu hoch gewichtet werden.
 :::
 
 ::: notes
@@ -244,10 +261,12 @@ Fehlerrate, da bestimmte Eigenschaften in der Trainingsmenge zu hoch gewichtet w
 
     -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x|h)$
 
-        Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*: $p_i = 1/|D_i|$ (Wahrscheinlichkeit für
-        eine Attributausprägung ist 1/(Anzahl der Ausprägungen des Attributs))
+        Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*:
+        $p_i = 1/|D_i|$ (Wahrscheinlichkeit für eine Attributausprägung ist 1/(Anzahl
+        der Ausprägungen des Attributs))
 
-    =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen Trainingsbeispiele)
+    =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
+    Trainingsbeispiele)
 :::
 
 ::: notes
@@ -289,11 +308,13 @@ Fehlerrate, da bestimmte Eigenschaften in der Trainingsmenge zu hoch gewichtet w
 ::: notes
 # Ausblick: Kontinuierliche Attribute
 
-Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen Attributen hat man zwei Möglichkeiten:
+Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen Attributen
+hat man zwei Möglichkeiten:
 
--   Diskretisierung der Attribute: Aufteilung in Intervalle und Bezeichnung der Intervalle mit einem Namen
--   Einsatz einer Verteilungsannahme und deren Dichtefunktion, beispielsweise Annahme von **normalverteilten** Daten mit
-    der Dichtefunktion
+-   Diskretisierung der Attribute: Aufteilung in Intervalle und Bezeichnung der
+    Intervalle mit einem Namen
+-   Einsatz einer Verteilungsannahme und deren Dichtefunktion, beispielsweise Annahme
+    von **normalverteilten** Daten mit der Dichtefunktion
     $$f(x) = \frac{1}{\sqrt{2 \pi \sigma}} e^{- \frac{(x - \mu)^2}{2 \sigma^2}}$$
     wobei $\mu$ der Mittelwert und $\sigma^2$ die Varianz der Daten sind.
 :::
@@ -303,9 +324,11 @@ Bisher sind wir von diskreten Attributen ausgegangen. Bei kontinuierlichen Attri
 
 In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 
--   "multinominalem" NB: Attribute umfassen mehrere Kategorien (verschiedene Ausprägungen, wie im "Wahlkampf"-Beispiel:
-    Attribut "Bildung" hat die Ausprägungen "Abitur", "Bachelor" und "Master")
--   Bernoulli NB: Attribute sind binär (Ausprägung 0 oder 1), typischerweise bei der Textklassifikation
+-   "multinominalem" NB: Attribute umfassen mehrere Kategorien (verschiedene
+    Ausprägungen, wie im "Wahlkampf"-Beispiel: Attribut "Bildung" hat die
+    Ausprägungen "Abitur", "Bachelor" und "Master")
+-   Bernoulli NB: Attribute sind binär (Ausprägung 0 oder 1), typischerweise bei der
+    Textklassifikation
 -   Gauss'sches NB: Annahme einer Normalverteilung der Attribut-Ausprägungen
 :::
 
@@ -328,7 +351,8 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 -   k2: Naivität der Annahme, dennoch sehr gute Erfolge in Praxis
 -   k2: Probleme mit niedrigen Wahrscheinlichkeiten
 -   k3: Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten
--   k3: Klassifikation mit Naive Bayes durch Nutzung der geschätzten Wahrscheinlichkeiten
+-   k3: Klassifikation mit Naive Bayes durch Nutzung der geschätzten
+    Wahrscheinlichkeiten
 :::
 
 ::: quizzes

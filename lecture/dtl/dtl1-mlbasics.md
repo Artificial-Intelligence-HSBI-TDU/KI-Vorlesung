@@ -4,25 +4,29 @@ title: Machine Learning 101
 ---
 
 ::: tldr
-Lernen wird in der KI oft als Verhaltensänderung (eines Systems) aufgefasst. Dabei soll eine Gütefunktion optimiert
-werden.
+Lernen wird in der KI oft als Verhaltensänderung (eines Systems) aufgefasst. Dabei
+soll eine Gütefunktion optimiert werden.
 
-Je nach verfügbarem Feedback eines "Lehrers" werden typischerweise drei Arten von Lernen unterschieden: Überwachtes
-Lernen, Unüberwachtes Lernen, Reinforcement Lernen. Dabei stellt der Lehrer beim überwachten Lernen Trainingsbeispiele
-plus eine Vorgabe (Klasse, Funktionswert) zur Verfügung, während beim unüberwachten Lernen nur die Trainingsbeispiele
-bereitgestellt werden und der Algorithmus selbst Zusammenhänge in den Daten erkennen soll. Beim Reinforcement Learning
-erfolgt das Feedback am Ende einer Kette von Aktionen, d.h. der Algorithmus muss diese Bewertung auf die einzelnen
+Je nach verfügbarem Feedback eines "Lehrers" werden typischerweise drei Arten von
+Lernen unterschieden: Überwachtes Lernen, Unüberwachtes Lernen, Reinforcement Lernen.
+Dabei stellt der Lehrer beim überwachten Lernen Trainingsbeispiele plus eine Vorgabe
+(Klasse, Funktionswert) zur Verfügung, während beim unüberwachten Lernen nur die
+Trainingsbeispiele bereitgestellt werden und der Algorithmus selbst Zusammenhänge in
+den Daten erkennen soll. Beim Reinforcement Learning erfolgt das Feedback am Ende
+einer Kette von Aktionen, d.h. der Algorithmus muss diese Bewertung auf die einzelnen
 Aktionen zurückrechnen.
 
-Beim überwachten Lernen soll eine Hypothese aufgebaut werden, die der echten (zu lernenden) Funktion möglichst nahe
-kommt. Eine konsistente Hypothese erklärt die Trainingsdaten, eine generalisierende Hypothese kann auch unbekannte Daten
-(die aus der selben Quelle stammen, also zum selben Problem gehören) korrekt bewerten. Es wird unterschieden zwischen
-Klassifikation (einige wenige diskrete Label/Klassen, die den Trainingsbeispielen zugeordnet sind) und Regression
-(Lernen eines Funktionsverlaufs).
+Beim überwachten Lernen soll eine Hypothese aufgebaut werden, die der echten (zu
+lernenden) Funktion möglichst nahe kommt. Eine konsistente Hypothese erklärt die
+Trainingsdaten, eine generalisierende Hypothese kann auch unbekannte Daten (die aus
+der selben Quelle stammen, also zum selben Problem gehören) korrekt bewerten. Es wird
+unterschieden zwischen Klassifikation (einige wenige diskrete Label/Klassen, die den
+Trainingsbeispielen zugeordnet sind) und Regression (Lernen eines Funktionsverlaufs).
 
-Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte, d.h. jedes Objekt kann über einen
-Merkmalsvektor beschrieben werden. Trainingsdaten sind ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben)
-plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.
+Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte, d.h. jedes
+Objekt kann über einen Merkmalsvektor beschrieben werden. Trainingsdaten sind
+ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorgabe
+(Klasse oder Funktionswert) vom Lehrer.
 :::
 
 ::: youtube
@@ -34,8 +38,8 @@ plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.
 \pause
 \Large
 
-> Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals (Bewertungsfunktion) durch
-> Erfahrung.
+> Verhaltensänderung eines Agenten in Richtung der Optimierung eines Gütefunktionals
+> (Bewertungsfunktion) durch Erfahrung.
 
 \normalsize
 
@@ -84,7 +88,8 @@ plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.
 **Beispiel Kleinkind**: Lernen von Klassen/Konzepten durch Beispiele
 
 -   Zuerst ist alles "Katze" (Übergeneralisierung)
--   Differenzierung durch Feedback der Umwelt; Erkennung unterschiedlicher Ausprägungen
+-   Differenzierung durch Feedback der Umwelt; Erkennung unterschiedlicher
+    Ausprägungen
 :::
 
 # Beispiel: Kreditrisiko
@@ -102,8 +107,10 @@ plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.
 \bigskip
 
 -   Bewertung des Kreditrisikos:
-    -   **Klassifikation**: Guter oder schlechter Kunde [(Binäre Entscheidung: 2 Klassen)]{.notes}
-    -   **Regression**: Vorhersage Gewinn/Verlust für die Bank [(Höhe des Gewinns/Verlusts interessant)]{.notes}
+    -   **Klassifikation**: Guter oder schlechter Kunde [(Binäre Entscheidung: 2
+        Klassen)]{.notes}
+    -   **Regression**: Vorhersage Gewinn/Verlust für die Bank [(Höhe des
+        Gewinns/Verlusts interessant)]{.notes}
 
 # Beispiel: Autoreparatur
 
@@ -120,7 +127,8 @@ plus die Vorgabe (Klasse oder Funktionswert) vom Lehrer.
 # Lernen durch Beobachten: Lernen einer Funktion $\operatorname{f}$
 
 ::: notes
-Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beispielen
+Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von
+Beispielen
 :::
 
 -   Ein Beispiel ist ein Tupel $(\mathbf{x}, \operatorname{f}(\mathbf{x}))$, etwa
@@ -132,7 +140,8 @@ Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beis
 
 \bigskip
 
--   Aufgabe: Baue Hypothese $\operatorname{h}$ auf, so dass $\operatorname{h} \approx \operatorname{f}$.
+-   Aufgabe: Baue Hypothese $\operatorname{h}$ auf, so dass
+    $\operatorname{h} \approx \operatorname{f}$.
     -   Benutze dazu Menge von Beispielen =\> **Trainingsdaten**.
 
 \bigskip
@@ -150,8 +159,8 @@ Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von Beis
 ![](images/occams1.png){width="60%"}
 
 ::: notes
-Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ... Wir haben für einige x-Werte die
-zugehörigen y-Werte vorgegeben.
+Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ... Wir
+haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -159,8 +168,9 @@ zugehörigen y-Werte vorgegeben.
 ![](images/occams2.png){width="60%"}
 
 ::: notes
-Die einfachste Approximation wäre eine lineare Funktion. Allerdings werden hierbei einige Werte mehr oder weniger stark
-nicht korrekt widergegeben, d.h. man hat einen relativ hohen (Trainings-) Fehler.
+Die einfachste Approximation wäre eine lineare Funktion. Allerdings werden hierbei
+einige Werte mehr oder weniger stark nicht korrekt widergegeben, d.h. man hat einen
+relativ hohen (Trainings-) Fehler.
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -168,8 +178,9 @@ nicht korrekt widergegeben, d.h. man hat einen relativ hohen (Trainings-) Fehler
 ![](images/occams3.png){width="60%"}
 
 ::: notes
-Die Hyperbel erklärt die Trainingsdaten bis auf den einen Punkt sehr gut. Die Frage ist, ob dieser eine Punkt zum zu
-lernenden Zusammenhang gehört oder ein Ausreißer ist, den man gefahrlos ignorieren kann?
+Die Hyperbel erklärt die Trainingsdaten bis auf den einen Punkt sehr gut. Die Frage
+ist, ob dieser eine Punkt zum zu lernenden Zusammenhang gehört oder ein Ausreißer
+ist, den man gefahrlos ignorieren kann?
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -177,11 +188,12 @@ lernenden Zusammenhang gehört oder ein Ausreißer ist, den man gefahrlos ignori
 ![](images/occams4.png){width="60%"}
 
 ::: notes
-Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt aber alle Datenpunkte. D.h. hier wäre der
-Trainingsfehler Null. Zwischen den Trainingsdaten zeigt das Modell eine "glatte" Approximation, d.h. es wird auch neue
-Daten, die es beim Training nicht gesehen hat, relativ gut erklären. (Dabei liegt freilich die Annahme zugrunde, dass
-alle relevanten Daten in der Trainingsmenge vorhanden sind, d.h. dass es insbesondere zwischen den Datenpunkten keine
-Ausreißer o.ä. gibt.)
+Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt aber alle
+Datenpunkte. D.h. hier wäre der Trainingsfehler Null. Zwischen den Trainingsdaten
+zeigt das Modell eine "glatte" Approximation, d.h. es wird auch neue Daten, die es
+beim Training nicht gesehen hat, relativ gut erklären. (Dabei liegt freilich die
+Annahme zugrunde, dass alle relevanten Daten in der Trainingsmenge vorhanden sind,
+d.h. dass es insbesondere zwischen den Datenpunkten keine Ausreißer o.ä. gibt.)
 :::
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
@@ -189,13 +201,15 @@ Ausreißer o.ä. gibt.)
 ![](images/occams5.png){width="60%"}
 
 ::: notes
-Diese Hypothese erklärt ebenfalls sämtliche Trainingsdaten. Allerdings schwingt die Funktion zwischen den Daten stark
-hin und her. Vermutlich entspricht dies nicht dem zu lernenden Funktionsverlauf. Der Trainingsfehler wäre wie bei der
-deutlich einfacheren Hypthese aus dem letzten Schritt Null. Der Generalisierungsfehler (sprich die Abweichung, wenn man
-das Modell nach Daten zwischen den Trainingspunkten fragt) dürfte erheblich höher liegen.
+Diese Hypothese erklärt ebenfalls sämtliche Trainingsdaten. Allerdings schwingt die
+Funktion zwischen den Daten stark hin und her. Vermutlich entspricht dies nicht dem
+zu lernenden Funktionsverlauf. Der Trainingsfehler wäre wie bei der deutlich
+einfacheren Hypthese aus dem letzten Schritt Null. Der Generalisierungsfehler (sprich
+die Abweichung, wenn man das Modell nach Daten zwischen den Trainingspunkten fragt)
+dürfte erheblich höher liegen.
 
-D.h. hier hat das Modell einfach die Trainingsdaten auswendig gelernt, aber nicht den Zusammenhang zwischen den Daten!
-Dies ist in der Regel unerwünscht!
+D.h. hier hat das Modell einfach die Trainingsdaten auswendig gelernt, aber nicht den
+Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
 :::
 
 # Occam's Razor
@@ -207,25 +221,27 @@ Dies ist in der Regel unerwünscht!
 \normalsize
 
 ::: notes
-1.  Wenn es mehrere mögliche Erklärungen für einen Sachverhalt gibt, ist die einfachste Erklärung allen anderen
-    vorzuziehen.
-2.  Eine Erklärung ist "einfach", wenn sie möglichst wenige Variablen und Annahmen enthält und wenn diese in klaren
-    logischen Beziehungen zueinander stehen, aus denen der zu erklärende Sachverhalt logisch folgt.
+1.  Wenn es mehrere mögliche Erklärungen für einen Sachverhalt gibt, ist die
+    einfachste Erklärung allen anderen vorzuziehen.
+2.  Eine Erklärung ist "einfach", wenn sie möglichst wenige Variablen und Annahmen
+    enthält und wenn diese in klaren logischen Beziehungen zueinander stehen, aus
+    denen der zu erklärende Sachverhalt logisch folgt.
 :::
 
 # Trainingsdaten und Merkmalsvektoren
 
-Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe $\operatorname{f}(\mathbf{x})$
+Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe
+$\operatorname{f}(\mathbf{x})$
 
 \smallskip
 
--   Ausgabe: typischerweise Skalar (Funktionswert oder Klasse) `\newline`{=tex} =\> Beispiel: Bewertung eines
-    Spielstandes bei TicTacToe
+-   Ausgabe: typischerweise Skalar (Funktionswert oder Klasse) `\newline`{=tex} =\>
+    Beispiel: Bewertung eines Spielstandes bei TicTacToe
 
 \smallskip
 
--   Eingabe: (Beschreibung des) Objekt(s) oder Situation, die zur Ausgabe gehört `\newline`{=tex} =\> Beispiel:
-    Spielstand bei TicTacToe
+-   Eingabe: (Beschreibung des) Objekt(s) oder Situation, die zur Ausgabe gehört
+    `\newline`{=tex} =\> Beispiel: Spielstand bei TicTacToe
 
 \bigskip
 \bigskip
@@ -249,17 +265,19 @@ Beschreibung der Faktoren, wann ich im See schwimmen möchte:
     -   Ausgabe: Klasse `ja`
 
 ::: notes
-Dabei wird davon ausgegangen, dass jeder Faktor (jedes Merkmal) an einer bestimmten Stelle im Merkmalsvektor aufgeführt
-ist. Beispielsweise gehört das `sonnig` zur Frage "Scheint die Sonne", `warm` jeweils zur Wasser- und zur
-Lufttemperatur.
+Dabei wird davon ausgegangen, dass jeder Faktor (jedes Merkmal) an einer bestimmten
+Stelle im Merkmalsvektor aufgeführt ist. Beispielsweise gehört das `sonnig` zur Frage
+"Scheint die Sonne", `warm` jeweils zur Wasser- und zur Lufttemperatur.
 
-Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen Zustand der Welt mit den relevanten Dingen
-beschrieben. Diesem Zustand kann man beispielsweise ein Label (Klasse) verpassen, hier in diesem Fall "ja, in dieser
-Welt möchte ich schwimmen".
+Damit hat man in einem Vektor eine Situation komplett beschrieben, d.h. einen Zustand
+der Welt mit den relevanten Dingen beschrieben. Diesem Zustand kann man
+beispielsweise ein Label (Klasse) verpassen, hier in diesem Fall "ja, in dieser Welt
+möchte ich schwimmen".
 
-Die Trainingsmenge baut sich dann beim überwachten Lernen aus vielen solcher Paare (Merkmalsvektor, Klasse) auf, und die
-Algorithmen sollen diese Zuordnung lernen, d.h. ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und
-darüber hinaus für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
+Die Trainingsmenge baut sich dann beim überwachten Lernen aus vielen solcher Paare
+(Merkmalsvektor, Klasse) auf, und die Algorithmen sollen diese Zuordnung lernen, d.h.
+ein Modell für diese Daten erzeugen, welches die Daten gut erklärt und darüber hinaus
+für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
 :::
 
 # Trainingsdaten -- Merkmalsvektoren
@@ -272,9 +290,10 @@ $$    \mathbf{x}(v) = (x_1, x_2, \ldots, x_n)$$
 -   Ausprägung von $v$ bzgl. $x_t$: $\quad x_t(v) = i \quad$ (mit $i = 1 \ldots m_t$)
 
 ::: notes
-*Anmerkung*: Stellen Sie sich den Merkmalsvektor $\mathbf{x}$ vielleicht wie einen Konstruktor einer Klasse `x` vor: Die
-einzelnen Attribute $x_t$ sind die Parameter, aus denen der Merkmalsvektor aufgebaut ist/wird. Jedes der Attribute hat
-einen Typ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
+*Anmerkung*: Stellen Sie sich den Merkmalsvektor $\mathbf{x}$ vielleicht wie einen
+Konstruktor einer Klasse `x` vor: Die einzelnen Attribute $x_t$ sind die Parameter,
+aus denen der Merkmalsvektor aufgebaut ist/wird. Jedes der Attribute hat einen Typ
+und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
 :::
 
 \bigskip
@@ -295,7 +314,8 @@ einen Typ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
 \smallskip
 
 -   Merkmalsvektoren gruppieren Eigenschaften des Problems bzw. der Objekte
--   Trainingsdaten: Beispielobjekte (durch Merkmalsvektoren beschrieben) plus Vorgabe vom Lehrer
+-   Trainingsdaten: Beispielobjekte (durch Merkmalsvektoren beschrieben) plus Vorgabe
+    vom Lehrer
 
 ::: readings
 -   @Russell2020: Lernen: Abschnitte 19.1 und 19.2
@@ -308,19 +328,21 @@ einen Typ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
 :::
 
 ::: quizzes
--   [Selbsttest Intro ML (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld)
+-   [Selbsttest Intro ML
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld)
 :::
 
 ::: challenges
 **Modellierung**
 
-Sie stehen vor der Entscheidung, ob Sie sich zur Vorbereitung auf die Flipped-Classroom-Sitzung noch das Skript
-anschauen. Welche Attribute benötigen Sie, um die Situation zu beschreiben?
+Sie stehen vor der Entscheidung, ob Sie sich zur Vorbereitung auf die
+Flipped-Classroom-Sitzung noch das Skript anschauen. Welche Attribute benötigen Sie,
+um die Situation zu beschreiben?
 
 **Metriken für Klassifikatoren**
 
-Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft. Die folgende Tabelle zeigt die
-Präferenzen von sieben Wählern.
+Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft.
+Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
 
 | Nr. | Alter    | Einkommen | Bildung  | Kandidat | Vorhersage |
 |:----|:---------|:----------|:---------|:---------|:-----------|
@@ -332,8 +354,8 @@ Präferenzen von sieben Wählern.
 | 6   | $< 35$   | hoch      | Bachelor | O        | M          |
 | 7   | $< 35$   | niedrig   | Abitur   | M        | O          |
 
-Auf diesem Datensatz wurde ein Klassifikator trainiert, die Trainingsergebnisse sind in der Tabelle unter "Vorhersage"
-angegeben.
+Auf diesem Datensatz wurde ein Klassifikator trainiert, die Trainingsergebnisse sind
+in der Tabelle unter "Vorhersage" angegeben.
 
 Bewerten Sie den Klassifikator.
 :::

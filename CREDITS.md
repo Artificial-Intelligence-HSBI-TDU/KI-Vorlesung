@@ -5,8 +5,9 @@ no_pdf: true
 
 # Credits
 
-This is a list of external projects used to build the lecture slides and the lecture notes for the teaching material.
-These are licensed under their own licences and are not part of the CC BY-SA 4.0 licence of this project.
+This is a list of external projects used to build the lecture slides and the lecture
+notes for the teaching material. These are licensed under their own licences and are
+not part of the CC BY-SA 4.0 licence of this project.
 
 ## Building the Lecture Slides
 
@@ -31,6 +32,8 @@ These are licensed under their own licences and are not part of the CC BY-SA 4.0
 
 ## Contributors
 
-[This project](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung) has been created and is being
-maintained by the authors [Canan Yıldız](https://github.com/cyildiz), and [Carsten Gips](https://github.com/cagix), and
-various [contributors](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors).
+[This project](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung) has
+been created and is being maintained by the authors [Canan
+Yıldız](https://github.com/cyildiz), and [Carsten Gips](https://github.com/cagix),
+and various
+[contributors](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors).

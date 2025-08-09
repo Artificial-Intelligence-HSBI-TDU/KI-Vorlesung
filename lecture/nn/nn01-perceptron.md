@@ -24,9 +24,9 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 
 ## Arten des Lernens
 
--   Überwachtes Lernen (e.g. Klassifizierung, Regression)
--   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
--   Bestärkendes Lernen (e.g. Schach spielen)
+-   Überwachtes Lernen (e.g. Klassifizierung, Regression)
+-   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
+-   Bestärkendes Lernen (e.g. Schach spielen)
 
 ## Formalisierung
 
@@ -45,12 +45,13 @@ Ein einfaches Modell für die **binäre Klassifizierung**
 -   Vergleiche das Ergebnis mit einem Schwellenwert
     -   Positiv, falls über dem Schwellenwert
     -   Negativ, falls unter dem Schwellenwert
--   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu lernen gilt \> siehe **Perzeptron
-    Lernalgorithmus**
+-   Gewichte und Schwellenwert sind unbekannte Parameter des Modells, die es zu
+    lernen gilt \> siehe **Perzeptron Lernalgorithmus**
 
 ::: outcomes
 -   k2: Arten des maschinellen Lernens
--   k2: Formalisierung eines ML-Problems, insbesondere Klassifizierung: Datensatz, Merkmalraum, Hyphotesenfunktion, Zielfunktion
+-   k2: Formalisierung eines ML-Problems, insbesondere Klassifizierung: Datensatz,
+    Merkmalraum, Hyphotesenfunktion, Zielfunktion
 -   k2: Perzeptron als linearer Klassifizierer
 -   k2: Entscheidungsgrenze
 -   k3: Berechnung der Entscheidungsgrenze
@@ -58,5 +59,6 @@ Ein einfaches Modell für die **binäre Klassifizierung**
 :::
 
 ::: quizzes
--   [Selbsttest Intro ML (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld)
+-   [Selbsttest Intro ML
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106589&client_id=FH-Bielefeld)
 :::

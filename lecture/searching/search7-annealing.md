@@ -4,16 +4,20 @@ title: "Lokale Suche: Simulated Annealing"
 ---
 
 ::: tldr
-Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur das Erreichen des Ziels.
+Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
+das Erreichen des Ziels.
 
-Das Problem bei der Gradientensuche ist, dass man eine Kostenfunktion benötigt und diese auch **lokale Minima**
-enthalten kann. Mit der reinen Gradientensuche würde man bei Erreichen lokaler Minima die Suche abbrechen (müssen), da
-es keine weitere Verbesserung unter den Nachfolgern mehr geben kann. In Anlehnung an das Abkühlen von Metall kann hier
-eine Variante der lokalen Suche helfen: **Simulated Annealing**. Man führt einen "Temperatur"-Parameter ein, der im
-Laufe der Suche immer kleiner wird und schließlich gegen Null geht. In Abhängigkeit von dieser "Temperatur" wird mit
-einer bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer hohen Temperatur ist diese
-Wahrscheinlichkeit höher, bei einer niedrigen Temperatur niedriger, so dass das Verfahren in ein normales Hill-Climbing
-übergeht. Damit kann man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.
+Das Problem bei der Gradientensuche ist, dass man eine Kostenfunktion benötigt und
+diese auch **lokale Minima** enthalten kann. Mit der reinen Gradientensuche würde man
+bei Erreichen lokaler Minima die Suche abbrechen (müssen), da es keine weitere
+Verbesserung unter den Nachfolgern mehr geben kann. In Anlehnung an das Abkühlen von
+Metall kann hier eine Variante der lokalen Suche helfen: **Simulated Annealing**. Man
+führt einen "Temperatur"-Parameter ein, der im Laufe der Suche immer kleiner wird und
+schließlich gegen Null geht. In Abhängigkeit von dieser "Temperatur" wird mit einer
+bestimmten Wahrscheinlichkeit eine Verschlechterung akzeptiert: Bei einer hohen
+Temperatur ist diese Wahrscheinlichkeit höher, bei einer niedrigen Temperatur
+niedriger, so dass das Verfahren in ein normales Hill-Climbing übergeht. Damit kann
+man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.
 :::
 
 ::: youtube
@@ -51,14 +55,16 @@ Mögliche Lösungen:
 \bigskip
 \pause
 
-=\> "**Schütteln** der Landschaft" -- Ball springt aus dem Tal und rollt in anderes Tal
+=\> "**Schütteln** der Landschaft" -- Ball springt aus dem Tal und rollt in anderes
+Tal
 
 \smallskip
 
 Nicht zu stark schütteln -- sonst wird u.U. globales Minimum verlassen!
 :::
 
-[[Gedankenexperiment: Problem "drehen" und Ball in Zustandsraum-Landschaft werfen]{.ex}]{.slides}
+[[Gedankenexperiment: Problem "drehen" und Ball in Zustandsraum-Landschaft
+werfen]{.ex}]{.slides}
 
 ::: notes
 # Analogie Härten von Metall
@@ -98,14 +104,17 @@ def simulated_annealing(problem):
 ```
 
 ::: notes
-Wenn `dE` positiv ist, dann ist der Nachfolger "besser" (hier: kleiner bewertet) als der aktuelle Knoten und wird immer
-als nächster Knoten übernommen.
+Wenn `dE` positiv ist, dann ist der Nachfolger "besser" (hier: kleiner bewertet) als
+der aktuelle Knoten und wird immer als nächster Knoten übernommen.
 
-Wenn `dE` negativ ist, dann ist der betrachtete Nachfolger "schlechter" (hier: größer bewertet) als der aktuelle Knoten.
-Dann wird er mit einer Wahrscheinlichkeit `math.exp(dE/temp)` als nächster Knoten übernommen. Diese Wahrscheinlichkeit
-ist bei hohen Temperaturen `temp` eher hoch, und sinkt, je niedriger die Temperatur `temp` wird.
+Wenn `dE` negativ ist, dann ist der betrachtete Nachfolger "schlechter" (hier: größer
+bewertet) als der aktuelle Knoten. Dann wird er mit einer Wahrscheinlichkeit
+`math.exp(dE/temp)` als nächster Knoten übernommen. Diese Wahrscheinlichkeit ist bei
+hohen Temperaturen `temp` eher hoch, und sinkt, je niedriger die Temperatur `temp`
+wird.
 
-Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert Null (wird also nicht negativ).
+Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert Null
+(wird also nicht negativ).
 :::
 
 [[Anmerkung: Akzeptieren von Verschlechterungen]{.ex}]{.slides}
@@ -118,8 +127,9 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png){width="60%"}
 -->
 
-[["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz, reworked by
-[Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on Wikimedia Commons ([Public
+[["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz,
+reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on
+Wikimedia Commons ([Public
 Domain](https://en.wikipedia.org/wiki/Public_domain))]{.origin}
 :::
 
@@ -133,14 +143,18 @@ $\exp(a)$ bzw. $e^a$:
 -   $a=0$: 1
 -   $a>0$: steil (exponentiell) gegen Unendlich ...
 
-Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet. Damit ergibt sich wegen $dE$ negativ:
+Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet. Damit ergibt sich wegen
+$dE$ negativ:
 $\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$.
 Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
 
--   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und klein (nahe Null), d.h.
-    $\exp(a)$ nahe 1 (oder größer), d.h. die Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
--   Temperatur $\text{temp}$ wird kleiner und geht gegen Null: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und
-    wird größer, d.h. $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$ geht gegen 0
+-   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv
+    und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h. die
+    Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
+-   Temperatur $\text{temp}$ wird kleiner und geht gegen Null:
+    $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h. $\exp(a)$
+    geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$ geht gegen
+    0
 ::::
 
 # Abkühlungsplan problemabhängig wählen
@@ -158,8 +172,8 @@ Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
 -   Stop: Keine Verbesserungen in 3 aufeinander folgenden Temperaturen
 
 ::: notes
-Der Abkühlungsplan muss problemabhängig gewählt werden. Das Beispiel zeigt typische Elementes eines solchen
-Abkühlungsplans.
+Der Abkühlungsplan muss problemabhängig gewählt werden. Das Beispiel zeigt typische
+Elementes eines solchen Abkühlungsplans.
 :::
 
 ::: notes
@@ -188,7 +202,8 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 \bigskip
 
 -   Gradientenverfahren
-    -   Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der Kostenfunktion =\> **Hill-Climbing**
+    -   Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
+        Kostenfunktion =\> **Hill-Climbing**
     -   Achtung: Probleme mit lokalen Minima =\> **Simulated Annealing**
 
 ::: readings

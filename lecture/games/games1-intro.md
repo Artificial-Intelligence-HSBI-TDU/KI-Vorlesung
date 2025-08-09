@@ -4,13 +4,16 @@ title: Einführung Optimale Spiele
 ---
 
 ::: tldr
-Spiele können als Suchproblem betrachtet werden. Dabei sind in der Regel mehrere Spieler ("Agenten") beteiligt. Bei
-manchen Spielen ist die Umgebung (der Spielzustand) vollständig einsehbar, bei anderen nur teilweise (Kartenspiele). Bei
+Spiele können als Suchproblem betrachtet werden. Dabei sind in der Regel mehrere
+Spieler ("Agenten") beteiligt. Bei manchen Spielen ist die Umgebung (der
+Spielzustand) vollständig einsehbar, bei anderen nur teilweise (Kartenspiele). Bei
 manchen Spielen kommt eine Zufallskomponente zum Wirken.
 
-Spiele sind in der KI deshalb so interessant, weil bei der Suche riesige Suchbäume entstehen (bzw. durchsucht werden
-müssten). Da die Ressourcen normalerweise begrenzt sind (denken Sie an die Reaktionszeit auf einen Zug des Gegners),
-muss man hier intelligente Lösungen finden. (Einige davon werden wir in den folgenden Sitzungen anschauen).
+Spiele sind in der KI deshalb so interessant, weil bei der Suche riesige Suchbäume
+entstehen (bzw. durchsucht werden müssten). Da die Ressourcen normalerweise begrenzt
+sind (denken Sie an die Reaktionszeit auf einen Zug des Gegners), muss man hier
+intelligente Lösungen finden. (Einige davon werden wir in den folgenden Sitzungen
+anschauen).
 :::
 
 ::: youtube
@@ -23,12 +26,13 @@ muss man hier intelligente Lösungen finden. (Einige davon werden wir in den fol
 ![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
 -->
 
-[["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625) by
-[serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY
+[["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
+by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC BY
 2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
 
 ::: notes
-Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste Zug?!**
+Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste
+Zug?!**
 :::
 
 # Motivation: Unterschied zu Suche?!
@@ -71,12 +75,13 @@ Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste 
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
-    [[@Russell2020, pp. 193-196]]{.origin}
+    [[@Russell2020, pp. 193-196]]{.origin}
 
 # Eigenschaften guter Spielalgorithmen
 
 -   Zeit begrenzt
-    -   Irgendeine gute Entscheidung treffen! =\> Bewertungsfunktion [(auch für Zwischenzustände)]{.notes}
+    -   Irgendeine gute Entscheidung treffen! =\> Bewertungsfunktion [(auch für
+        Zwischenzustände)]{.notes}
 
 \smallskip
 

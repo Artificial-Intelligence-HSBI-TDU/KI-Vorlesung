@@ -4,12 +4,15 @@ title: CAL3
 ---
 
 ::: tldr
-CAL3 ist eine einfache Erweiterung von CAL2 für nicht-disjunkte (überlappende) Klassen. Statt beim Baumaufbau bei einer
-Fehlklassifikation sofort zu verzweigen, werden hier zunächst die im entsprechenden Pfad aufgelaufenen Klassensymbole
-gezählt. Wenn ausreichend viele davon gesehen wurden (Schwelle $S_1$), wird eine Entscheidung getroffen: Wenn eine
-Klasse in diesem temporären Blatt dominiert (ihre Häufigkeit über einer Schwelle $S_2$ liegt), dann entscheidet man sich
-in diesem Blatt fest für diese Klasse. Ansonsten (die Häufigkeit aller Klassen in dem Blatt liegt unter $S_2$) nimmt man
-analog zu CAL2 den nächsten, auf diesem Pfad noch nicht verwendeten Test hinzu.
+CAL3 ist eine einfache Erweiterung von CAL2 für nicht-disjunkte (überlappende)
+Klassen. Statt beim Baumaufbau bei einer Fehlklassifikation sofort zu verzweigen,
+werden hier zunächst die im entsprechenden Pfad aufgelaufenen Klassensymbole gezählt.
+Wenn ausreichend viele davon gesehen wurden (Schwelle $S_1$), wird eine Entscheidung
+getroffen: Wenn eine Klasse in diesem temporären Blatt dominiert (ihre Häufigkeit
+über einer Schwelle $S_2$ liegt), dann entscheidet man sich in diesem Blatt fest für
+diese Klasse. Ansonsten (die Häufigkeit aller Klassen in dem Blatt liegt unter $S_2$)
+nimmt man analog zu CAL2 den nächsten, auf diesem Pfad noch nicht verwendeten Test
+hinzu.
 :::
 
 ::: youtube
@@ -22,25 +25,29 @@ analog zu CAL2 den nächsten, auf diesem Pfad noch nicht verwendeten Test hinzu.
 
 2)  $n$-ter Lernschritt: Objekt $v$ mit Klasse $k$
 
-    -   Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse $/k1/$
+    -   Rückweisung (Endknoten mit $\ast$): Ersetze $\ast$ durch Vereinigungsklasse
+        $/k1/$
 
     -   Endknoten mit Vereinigungsklasse:
 
         -   Zähler für $k$ erhöhen, bzw.
         -   $k$ mit Anzahl $1$ in Vereinigungsklasse einfügen
 
-    Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$ (Statistikschwelle):
+    Falls nun die Summe aller Klassen am Endknoten größer/gleich $S_1$
+    (Statistikschwelle):
 
-    -   Für **genau eine** Klasse gilt: $P(k | \tilde{x}) \ge S_2$: `\newline`{=tex} =\> Abschluss: Ersetze
-        Vereinigungsklasse durch $k$ (für immer!)
+    -   Für **genau eine** Klasse gilt: $P(k | \tilde{x}) \ge S_2$: `\newline`{=tex}
+        =\> Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)
 
         \smallskip
 
-    -   Für **alle** Klassen gilt: $P(k | \tilde{x}) < S_2$: `\newline`{=tex} =\> Differenzierung: Ersetze
-        Vereinigungsklasse durch neuen Test: $\kappa \gets x_{t+1}(\ast, \ldots, \ast, /k1/, \ast, \ldots, \ast)$
+    -   Für **alle** Klassen gilt: $P(k | \tilde{x}) < S_2$: `\newline`{=tex} =\>
+        Differenzierung: Ersetze Vereinigungsklasse durch neuen Test:
+        $\kappa \gets x_{t+1}(\ast, \ldots, \ast, /k1/, \ast, \ldots, \ast)$
 
-        $x_{t+1}$: nächstes Attribut, auf dem aktuellen Pfad $\tilde{x}$ noch nicht verwendet `\newline`{=tex} Symbol
-        $k$ mit Anzahl 1 an Position $i$ wenn $x_{t+1}(v) = i$
+        $x_{t+1}$: nächstes Attribut, auf dem aktuellen Pfad $\tilde{x}$ noch nicht
+        verwendet `\newline`{=tex} Symbol $k$ mit Anzahl 1 an Position $i$ wenn
+        $x_{t+1}(v) = i$
 
 # Beispiel mit CAL3
 
@@ -66,7 +73,8 @@ analog zu CAL2 den nächsten, auf diesem Pfad noch nicht verwendeten Test hinzu.
 Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 
 ::: notes
-**Hinweis**: Bei nicht überlappenden Klassen erzeugt CAL3 u.U. andere Bäume als CAL2 ...
+**Hinweis**: Bei nicht überlappenden Klassen erzeugt CAL3 u.U. andere Bäume als CAL2
+...
 :::
 
 # CAL3: Abbruchbedingungen und Parameter
@@ -81,7 +89,8 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 \smallskip
 
 -   **Abbruch**:
-    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} =\> Kein Fehler in einem kompletten Durchlauf
+    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} =\> Kein Fehler
+        in einem kompletten Durchlauf
     -   Alle Endknoten mit eindeutigen Klassensymbolen belegt
     -   Differenzierung nötig, aber alle Merkmale verbraucht
     -   Lernschrittzahl überschritten
@@ -93,7 +102,8 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
     -   Trainingsfehler wg. überlappender Klassen!
 
 ::: readings
--   @Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und wird nicht mehr verlegt)
+-   @Unger1981: Der Vollständigkeit halber aufgeführt (Werk ist leider vergriffen und
+    wird nicht mehr verlegt)
 :::
 
 ::: outcomes
@@ -101,7 +111,8 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 :::
 
 ::: quizzes
--   [Selbsttest CAL3 (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld)
+-   [Selbsttest CAL3
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106576&client_id=FH-Bielefeld)
 :::
 
 ::: challenges
@@ -117,6 +128,7 @@ Betrachten Sie die folgenden Aussagen:
 
 Aufgaben:
 
-1.  Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL3 ($S_1=4, S_2=0.6$).
+1.  Trainieren Sie auf diesem Datensatz einen Klassifikator mit CAL3
+    ($S_1=4, S_2=0.6$).
 2.  Ist Patient F krank? Er hat Husten, aber kein Fieber.
 :::

@@ -4,12 +4,14 @@ title: Suche mit Breitensuche
 ---
 
 ::: tldr
-Die Breitensuche gehört zu den "Uninformierten Suchverfahren": Es werden keine weiteren Pfadkosten, sondern nur die
-Anzahl der Schritte berücksichtigt.
+Die Breitensuche gehört zu den "Uninformierten Suchverfahren": Es werden keine
+weiteren Pfadkosten, sondern nur die Anzahl der Schritte berücksichtigt.
 
-Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die Datenstruktur eine **Queue**
-benutzt: Expandierte Nachfolger werden immer **hinten** in die Queue eingefügt, und der nächste zu expandierende Knoten
-wird **vorn** aus der Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum ebenenweise entwickelt.
+Die Breitensuche entsteht, wenn man bei der Tree-Search oder der Graph-Search für die
+Datenstruktur eine **Queue** benutzt: Expandierte Nachfolger werden immer **hinten**
+in die Queue eingefügt, und der nächste zu expandierende Knoten wird **vorn** aus der
+Queue genommen. Dadurch wird bei der Breitensuche der Suchbaum ebenenweise
+entwickelt.
 :::
 
 ::: youtube
@@ -31,7 +33,8 @@ wird **vorn** aus der Queue genommen. Dadurch wird bei der Breitensuche der Such
 
 **Uninformierte ("blinde") Suche**:
 
-Keine Informationen über die Kosten eines Pfades: Nur die Pfadlänge (Anzahl der Schritte) zählt.
+Keine Informationen über die Kosten eines Pfades: Nur die Pfadlänge (Anzahl der
+Schritte) zählt.
 
 ::: notes
 Varianten:
@@ -50,8 +53,8 @@ Varianten:
 2.  Entnehme Knoten aus der Datenstruktur:
     -   Knoten ist gesuchtes Element: Abbruch, melde "*gefunden*"
     -   Markiere aktuellen Knoten, und
-    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten Nachfolger, die noch nicht in der
-        Datenstruktur sind, in die Datenstruktur ein
+    -   Expandiere alle Nachfolger des Knotens und füge alle unmarkierten Nachfolger,
+        die noch nicht in der Datenstruktur sind, in die Datenstruktur ein
 3.  Falls die Datenstruktur leer ist: Abbruch, melde "*nicht gefunden*"
 4.  Gehe zu Schritt 2
 
@@ -75,43 +78,51 @@ Varianten:
 ::: notes
 # Bemerkungen
 
--   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare Zustände
+-   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare
+    Zustände
 
 -   Suchalgorithmus mit **Queue** als Datenstruktur =\> **Breitensuche**
 
     -   Zu betrachtender Knoten in Schritt 2 wird *vorn* aus der Queue genommen
-    -   Expandierte Knoten werden in Schritt 2.a *hinten* in die Queue eingefügt Dabei i.A. die vorgegebene Reihenfolge
-        der Nachfolgeknoten beachten!
+    -   Expandierte Knoten werden in Schritt 2.a *hinten* in die Queue eingefügt
+        Dabei i.A. die vorgegebene Reihenfolge der Nachfolgeknoten beachten!
 
     Auswirkung: Suchbaum wird **ebenenweise** aufgebaut (deshalb "Breitensuche")
 
--   Graph-Search: Markierte Knoten müssen geeignet gespeichert werden: separate Datenstruktur =\> Aufwand!
+-   Graph-Search: Markierte Knoten müssen geeignet gespeichert werden: separate
+    Datenstruktur =\> Aufwand!
 
 # Konventionen für diese Lehrveranstaltung
 
-In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der partiellen Wege in den Datenstrukturen
-mitgeführt (das gilt auch für die Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die
-Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die Konvention eingeführt, immer die
-**partiellen Wege** aufzuschreiben.
+In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
+partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die Beschreibung
+im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man die Queue oder
+den Stack schrittweise aufschreibt. Deshalb wird für diese Veranstaltung die
+Konvention eingeführt, immer die **partiellen Wege** aufzuschreiben.
 
-Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte Knoten sollen alphabetisch sortiert
-an der korrekten Stelle in der Datenstruktur auftauchen, dabei soll aber natürlich die Reihenfolge der ursprünglich in
-der Datenstruktur enthaltenen Knoten nicht modifiziert werden. (Bei "echten" Problemen wird die Reihenfolge der
-expandierten Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Operationen bestimmt.)
+Nicht Bestandteil der Algorithmen, dient aber der Nachvollziehbarkeit: Expandierte
+Knoten sollen alphabetisch sortiert an der korrekten Stelle in der Datenstruktur
+auftauchen, dabei soll aber natürlich die Reihenfolge der ursprünglich in der
+Datenstruktur enthaltenen Knoten nicht modifiziert werden. (Bei "echten" Problemen
+wird die Reihenfolge der expandierten Nachfolger in der Regel durch eine Reihenfolge
+der anwendbaren Operationen bestimmt.)
 
 # Weitere Hinweise
 
--   Die Breitensuche wurde zufällig am Beispiel Graph-Search eingeführt. Man kann auch die Tree-Search-Variante
-    einsetzen. Wichtig ist nur, dass als Datenstruktur eine Queue genutzt wird.
+-   Die Breitensuche wurde zufällig am Beispiel Graph-Search eingeführt. Man kann
+    auch die Tree-Search-Variante einsetzen. Wichtig ist nur, dass als Datenstruktur
+    eine Queue genutzt wird.
 
--   Im [@Russell2020] wird die Breitensuche ebenfalls auf der Basis des Graph-Search-Algorithmus eingeführt. Allerdings
-    wird die Abbruchbedingung modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search eigentlich definiert)
-    geprüft, wenn ein Knoten aus der Queue entnommen wird, sondern bereits bei der Erzeugung der Nachfolgerknoten (vor
-    dem Einfügen in die Queue). Dadurch spart man sich die Expansion einer zusätzlichen Ebene: Die Komplexität wäre in
+-   Im [@Russell2020] wird die Breitensuche ebenfalls auf der Basis des
+    Graph-Search-Algorithmus eingeführt. Allerdings wird die Abbruchbedingung
+    modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search eigentlich
+    definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird, sondern bereits
+    bei der Erzeugung der Nachfolgerknoten (vor dem Einfügen in die Queue). Dadurch
+    spart man sich die Expansion einer zusätzlichen Ebene: Die Komplexität wäre in
     diesem Fall "nur" $O(b^{d})$.
 :::
 
-# Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
+# Eigenschaften Breitensuche vs. Tiefensuche {#vergleich-ts-bs}
 
 |                     | **Tiefensuche** | **Breitensuche** |
 |:--------------------|:----------------|:-----------------|
@@ -130,11 +141,12 @@ expandierten Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Oper
 \vfill
 \footnotesize
 
-**b**: Verzweigungsfaktor, **d**: Ebene d. höchsten Lösungsknotens, **m**: Länge d. längsten Pfades
+**b**: Verzweigungsfaktor, **d**: Ebene d. höchsten Lösungsknotens, **m**: Länge
+d. längsten Pfades
 
 \normalsize
 
-# Praxisvergleich Breitensuche vs. Tiefensuche
+# Praxisvergleich Breitensuche vs. Tiefensuche
 
 **Breitensuche**: Annahme: $b=10$, 10.000 Knoten/s, 1.000 Byte/Knoten
 
@@ -171,10 +183,12 @@ expandierten Nachfolger in der Regel durch eine Reihenfolge der anwendbaren Oper
 :::
 
 ::: quizzes
--   [Selbsttest Breitensuche (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld)
+-   [Selbsttest Breitensuche
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106597&client_id=FH-Bielefeld)
 :::
 
-[^1]: gilt für Tree-Search-Variante; vollständig in Graph-Search-Variante bei endlichem Suchraum
+[^1]: gilt für Tree-Search-Variante; vollständig in Graph-Search-Variante bei
+    endlichem Suchraum
 
 [^2]: falls *b* endlich
 

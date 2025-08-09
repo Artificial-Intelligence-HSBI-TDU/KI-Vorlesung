@@ -4,10 +4,11 @@ title: Lösen von diskreten CSP
 ---
 
 ::: tldr
-CSP's mit endlichen Domänen lassen sich mit einer Backtracking-Suche lösen. Dabei wird schrittweise eine Variablen
-ausgewählt und dann ein Wert aus deren Wertebereich für die Belegung ausgewählt. Danach ruft sich die Backtracking-Suche
-rekursiv auf. Falls dabei keine Lösung gefunden werden kann, erfolgt Backtracking und die Belegung wird schließlich
-rückgängig gemacht und durch die nächste Möglichkeit ersetzt.
+CSP's mit endlichen Domänen lassen sich mit einer Backtracking-Suche lösen. Dabei
+wird schrittweise eine Variablen ausgewählt und dann ein Wert aus deren Wertebereich
+für die Belegung ausgewählt. Danach ruft sich die Backtracking-Suche rekursiv auf.
+Falls dabei keine Lösung gefunden werden kann, erfolgt Backtracking und die Belegung
+wird schließlich rückgängig gemacht und durch die nächste Möglichkeit ersetzt.
 :::
 
 ::: youtube
@@ -41,11 +42,13 @@ def BT_Search(assignment, csp):
     return failure
 ```
 
-[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176, fig. 5.5]]{.origin}
+[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176,
+fig. 5.5]]{.origin}
 
 ::: notes
-Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem Assignment und weise schrittweise
-Variablen passende Werte zu und mache notfalls Backtracking.
+Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem
+Assignment und weise schrittweise Variablen passende Werte zu und mache notfalls
+Backtracking.
 :::
 
 # BT-Suche für CSP am Beispiel Landkartenfärbeproblem

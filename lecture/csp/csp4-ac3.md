@@ -4,22 +4,27 @@ title: Kantenkonsistenz und AC-3
 ---
 
 ::: tldr
-Bei der Backtracking-Suche werden schrittweise Variablen belegt. Dabei kann eine Belegung eine Lösung im weiteren
-Verlauf der Suche unmöglich machen, so dass (viel) Backtracking notwendig wird.
+Bei der Backtracking-Suche werden schrittweise Variablen belegt. Dabei kann eine
+Belegung eine Lösung im weiteren Verlauf der Suche unmöglich machen, so dass (viel)
+Backtracking notwendig wird.
 
-Beim **Forward Checking** entfernt man nach der Belegung einer Variablen in allen Nachbarvariablen die durch die
-aktuelle Belegung inkonsistent gewordenen Werte. Wenn dabei ein Wertebereich leer wird, führt die aktuelle Belegung
-nicht zu einer Lösung und kann sofort zurückgenommen werden. Allerdings findet man mit Forward Checking nicht alle
-Inkonsistenzen.
+Beim **Forward Checking** entfernt man nach der Belegung einer Variablen in allen
+Nachbarvariablen die durch die aktuelle Belegung inkonsistent gewordenen Werte. Wenn
+dabei ein Wertebereich leer wird, führt die aktuelle Belegung nicht zu einer Lösung
+und kann sofort zurückgenommen werden. Allerdings findet man mit Forward Checking
+nicht alle Inkonsistenzen.
 
-Bei der **Kantenkonsistenz** prüft man, ob zu jedem Wert aus dem Wertebereich einer Variablen in den Nachbarvariablen
-mindestens ein passender (konsistenter) Wert existiert. Dabei werden die Constraints nacheinander betrachtet (nicht
-gleichzeitig). Wenn dies nicht der Fall ist, wird der Wert aus dem Wertebereich der betrachteten Variablen entfernt. Der
-AC-3-Algorithmus erzeugt schrittweise Kantenkonsistenz für ein CSP.
+Bei der **Kantenkonsistenz** prüft man, ob zu jedem Wert aus dem Wertebereich einer
+Variablen in den Nachbarvariablen mindestens ein passender (konsistenter) Wert
+existiert. Dabei werden die Constraints nacheinander betrachtet (nicht gleichzeitig).
+Wenn dies nicht der Fall ist, wird der Wert aus dem Wertebereich der betrachteten
+Variablen entfernt. Der AC-3-Algorithmus erzeugt schrittweise Kantenkonsistenz für
+ein CSP.
 
-Man kann den AC-3 als Vorverarbeitung nutzen und die Wertemengen *vor* der BT-Suche reduzieren. Eventuell findet man
-dabei bereits eine Lösung oder kann eine Lösung ausschließen. Man kann den AC-3 auch als Inferenzschritt in die BT-Suche
-einbetten ("MAC").
+Man kann den AC-3 als Vorverarbeitung nutzen und die Wertemengen *vor* der BT-Suche
+reduzieren. Eventuell findet man dabei bereits eine Lösung oder kann eine Lösung
+ausschließen. Man kann den AC-3 auch als Inferenzschritt in die BT-Suche einbetten
+("MAC").
 :::
 
 ::: youtube
@@ -31,7 +36,8 @@ einbetten ("MAC").
 Zuweisung eines Wertes an Variable $X$:
 
 -   Passt zu aktueller Belegung
--   Berücksichtigt aber nicht **restliche** Constraints `\newline`{=tex} =\> macht weitere Suche u.U. unmöglich/schwerer
+-   Berücksichtigt aber nicht **restliche** Constraints `\newline`{=tex} =\> macht
+    weitere Suche u.U. unmöglich/schwerer
 
 \bigskip
 
@@ -76,8 +82,8 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 # Übergang von Forward Checking zu Kantenkonsistenz
 
--   Forward Checking erzeugt Konsistenz für alle Constraints der `\newline`{=tex} **gerade betrachteten (belegten)
-    Variablen**.
+-   Forward Checking erzeugt Konsistenz für alle Constraints der `\newline`{=tex}
+    **gerade betrachteten (belegten) Variablen**.
 
 \bigskip
 
@@ -85,8 +91,9 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 # Definition Kantenkonsistenz (Arc Consistency)
 
-> Eine Kante von $X$ nach $Y$ ist "konsistent", wenn für jeden Wert $x \in D_X$ und für alle Constraints zwischen $X$
-> und $Y$ jeweils ein Wert $y \in D_Y$ existiert, so dass der betrachtete Constraint durch $(x,y)$ erfüllt ist.
+> Eine Kante von $X$ nach $Y$ ist "konsistent", wenn für jeden Wert $x \in D_X$ und
+> für alle Constraints zwischen $X$ und $Y$ jeweils ein Wert $y \in D_Y$ existiert,
+> so dass der betrachtete Constraint durch $(x,y)$ erfüllt ist.
 
 \bigskip
 
@@ -98,7 +105,8 @@ $V = \lbrace a,b,c,d,e \rbrace$
 
 $\mathrm{C} = \lbrace ((a,b), \ne), ((b,c), \ne), ((a,c), \ne), ((c,d), =), ((b,e), <) \rbrace$
 
-$D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$, $D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 1,2,3 \rbrace$
+$D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$, $D_d=\lbrace 1,2 \rbrace$,
+$D_e=\lbrace 1,2,3 \rbrace$
 
 [[Tafelbeispiel Kantenkonsistenz]{.ex}]{.slides}
 
@@ -107,8 +115,8 @@ $D_a=D_b=D_c=\lbrace 1,2,3 \rbrace$, $D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 1,2
 
 Einschränkung der Ausgangswertemengen (kanten-konsistent)
 
-$D_a=\lbrace 1,2,3 \rbrace$, $D_b=\lbrace 1,2 \rbrace$, $D_c=\lbrace 1,2 \rbrace$, $D_d=\lbrace 1,2 \rbrace$,
-$D_e=\lbrace 2,3 \rbrace$
+$D_a=\lbrace 1,2,3 \rbrace$, $D_b=\lbrace 1,2 \rbrace$, $D_c=\lbrace 1,2 \rbrace$,
+$D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 2,3 \rbrace$
 
 ::: center
 =\> Kantenkonsistenz ist nur **lokale** Konsistenz!
@@ -117,7 +125,8 @@ $D_e=\lbrace 2,3 \rbrace$
 \bigskip
 \pause
 
-*Anmerkung*: $((a,b), \ne)$ ist Kurzform für $\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$
+*Anmerkung*: $((a,b), \ne)$ ist Kurzform für
+$\left((a,b), \lbrace (x,y) \in D_a \times D_b | x \ne y \rbrace\right)$
 
 # AC-3 Algorithmus: Herstellen von Kantenkonsistenz
 
@@ -139,19 +148,22 @@ def ARC_Reduce(csp, x, y):
     return change
 ```
 
-[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171, fig. 5.3]]{.origin}
+[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171,
+fig. 5.3]]{.origin}
 
 ::: notes
-*Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten: Jedes Element kann nur genau einmal in
-einer Menge enthalten sein. D.h. wenn man bei `queue.enqueue(z,x)` die Rückkanten von den Nachbarn in die Queue
-aufnimmt, sorgt die Queue eigenständig dafür, dass es keine doppelten Vorkommen einer Kante in der Queue gibt. (Falls
-die verwendete Queue in einer Programmiersprache das nicht unterstützt, müsste man bei `queue.enqueue(z,x)` stets
-abfragen, ob die Kante `(z,x)` bereits in der Queue ist und diese dann nicht erneut hinzufügen.) AC-3 hat eine Laufzeit
-von $O(d^3n^2)$ ($n$ Knoten, maximal $d$ Elemente pro Domäne). Leider findet auch AC-3 nicht alle Inkonsistenzen ...
-(NP-hartes Problem).
+*Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten:
+Jedes Element kann nur genau einmal in einer Menge enthalten sein. D.h. wenn man bei
+`queue.enqueue(z,x)` die Rückkanten von den Nachbarn in die Queue aufnimmt, sorgt die
+Queue eigenständig dafür, dass es keine doppelten Vorkommen einer Kante in der Queue
+gibt. (Falls die verwendete Queue in einer Programmiersprache das nicht unterstützt,
+müsste man bei `queue.enqueue(z,x)` stets abfragen, ob die Kante `(z,x)` bereits in
+der Queue ist und diese dann nicht erneut hinzufügen.) AC-3 hat eine Laufzeit von
+$O(d^3n^2)$ ($n$ Knoten, maximal $d$ Elemente pro Domäne). Leider findet auch AC-3
+nicht alle Inkonsistenzen ... (NP-hartes Problem).
 
-*Hinweis*: In gewisser Weise kann man Forward Checking als ersten Schritt bei der Herstellung von Kantenkonsistenz
-interpretieren.
+*Hinweis*: In gewisser Weise kann man Forward Checking als ersten Schritt bei der
+Herstellung von Kantenkonsistenz interpretieren.
 :::
 
 # Einsatz des AC-3 Algorithmus
@@ -161,10 +173,11 @@ interpretieren.
 
 \bigskip
 
-2.  Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche `\newline`{=tex} (**MAC** -- Maintaining Arc
-    Consistency)
+2.  Propagation: Einbetten von AC-3 als Inferenzschritt in BT-Suche `\newline`{=tex}
+    (**MAC** -- Maintaining Arc Consistency)
     -   Nach jeder Zuweisung an $X_i$ Aufruf von AC-3-Variante:
-        -   Initial nur Kanten von $X_i$ zu allen noch nicht zugewiesenen Nachbarvariablen
+        -   Initial nur Kanten von $X_i$ zu allen noch nicht zugewiesenen
+            Nachbarvariablen
     -   Anschließend rekursiver Aufruf von BT-Suche
 
 # Wrap-Up
@@ -186,7 +199,8 @@ interpretieren.
 :::
 
 ::: quizzes
--   [Selbsttest CSP, AC-3 (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld)
+-   [Selbsttest CSP, AC-3
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106574&client_id=FH-Bielefeld)
 :::
 
 ::: challenges

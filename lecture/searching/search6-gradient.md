@@ -4,11 +4,13 @@ title: "Lokale Suche: Gradientensuche"
 ---
 
 ::: tldr
-Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur das Erreichen des Ziels.
+Lokale Suchverfahren: Nur das Ergebnis zählt! Nicht der Weg ist das Ziel, sondern nur
+das Erreichen des Ziels.
 
-In Analogie zum Bergsteigen: Gehe in Richtung des stärksten Anstiegs kann man die Suche so formulieren, dass man in
-jedem Suchschritt den Nachfolgeknoten nach dem stärksten Anstieg der Kostenfunktion auswählen. Dieses Verfahren nennt
-sich auch **Hill-Climbing** (bzw. Gradientensuche).
+In Analogie zum Bergsteigen: Gehe in Richtung des stärksten Anstiegs kann man die
+Suche so formulieren, dass man in jedem Suchschritt den Nachfolgeknoten nach dem
+stärksten Anstieg der Kostenfunktion auswählen. Dieses Verfahren nennt sich auch
+**Hill-Climbing** (bzw. Gradientensuche).
 :::
 
 ::: youtube
@@ -35,7 +37,8 @@ Bisher betrachtete Suchverfahren:
 
 \smallskip
 
-=\> Oft aber nur das **Ziel an sich** interessant! `\newline`{=tex} (Und nicht, wie man dort hin gelangt.)
+=\> Oft aber nur das **Ziel an sich** interessant! `\newline`{=tex} (Und nicht, wie
+man dort hin gelangt.)
 
 \bigskip
 
@@ -71,8 +74,8 @@ Beispiel: Stundenplan
 2.  `currNode` ist gesuchtes Element: Abbruch, melde "*gefunden*"
     -   Expandiere alle Nachfolger von `currNode`
     -   Setze `nextNode` auf Nachfolger mit höchster Bewertung
-    -   Falls Bewertung von `nextNode` $\leq$ Bewertung von `currNode`: `\newline`{=tex} Abbruch, melde "*nicht
-        gefunden*"
+    -   Falls Bewertung von `nextNode` $\leq$ Bewertung von `currNode`:
+        `\newline`{=tex} Abbruch, melde "*nicht gefunden*"
     -   Setze `currNode` auf `nextNode`
 3.  Gehe zu Schritt 2
 
@@ -89,12 +92,13 @@ Beispiel: Stundenplan
 
 -   **Ziel**: Setze $n$ Damen auf ein $n \times n$-Spielfeld ohne Konflikte
 -   **Start**: Setze $n$ Damen auf ein $n \times n$-Spielfeld (mit Konflikten)
--   **Suche**: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert wird
+-   **Suche**: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert
+    wird
 
 Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 
-**Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben =\> "vollständige
-Zustandsformulierung"
+**Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
+=\> "vollständige Zustandsformulierung"
 
 ## Eigenschaften 8-Damen-Problem ($n=8$)
 
@@ -102,10 +106,10 @@ Zustandsformulierung"
 -   Beginnend mit zufällig erzeugtem Startzustand:
     -   bleibt in 86% der Fälle stecken, d.h.
     -   findet Lösung nur in 14% der Fälle.
--   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach durchschnittlich 3 Schritten
-    stecken.
+-   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt nach
+    durchschnittlich 3 Schritten stecken.
 
-[nach [@Russell2020, p. 131]]{.origin}
+[nach [@Russell2020, p. 131]]{.origin}
 :::
 
 # Eigenschaften Gradientensuche
@@ -160,12 +164,13 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
 -->
 
-[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg) by
-[Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr)
-on Wikimedia Commons ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
+[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
+by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
+[Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
+([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
 
 ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenge.png?raw=true)
 
-Finden Sie mit der **Gradienten-Suche** jeweils einen Weg von Würzburg nach München. Vergleichen Sie das Ergebnis mit
-der Best-First-Suche.
+Finden Sie mit der **Gradienten-Suche** jeweils einen Weg von Würzburg nach München.
+Vergleichen Sie das Ergebnis mit der Best-First-Suche.
 :::

@@ -17,21 +17,27 @@ title: NN04 - Overfitting und Regularisierung
 
 ## Nichtlineare Modelle
 
--   Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der ursprünglichen Merkmale
--   Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen Beziehungen
--   **Bemerkung**: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird weiterhin logistische Regression in
-    einem **erweiterten** Merkmalraum durchgeführt.
+-   Einführung von neuen Merkmalen in Form von nichtlienaren Kombinationen der
+    ursprünglichen Merkmale
+-   Erhöhung der Komplexität des Modells ermöglicht das Erfassen von nichtlinearen
+    Beziehungen
+-   **Bemerkung**: Die Hypothesenfunktion bleibt linear in den Gewichten, es wird
+    weiterhin logistische Regression in einem **erweiterten** Merkmalraum
+    durchgeführt.
 
 ## Überanpassung und Regularisierung
 
--   Die **Überanpassung** (engl. Overfitting) ist eines der häufigsten und wichtigsten Probleme in ML und DL
--   "Was im Bereich des maschinellen Lernens Professionelle von Amateuren unterscheidet, ist ihre Fähigkeit mit
-    Überanpassung umzugehen." [@AbuMostafa2012, S. 119]
--   Anzeichen von Überanpassung sind geringe Trainingskosten und hohe **Testkosten** (Kosten auf nicht-gesehenen Daten).
--   Regularisierung ist eine Maßnahme gegen Überanpassung. Man kann es sich als eine Reduktion in der Komplexität des
-    Modells vorstellen.
--   Der Regularisierungsparameter $\lambda$ ist ein Hyperparameter. Je größer der $\lambda$-Wert, desto größer der
-    Regularisierungseffekt.
+-   Die **Überanpassung** (engl. Overfitting) ist eines der häufigsten und
+    wichtigsten Probleme in ML und DL
+-   "Was im Bereich des maschinellen Lernens Professionelle von Amateuren
+    unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen."
+    [@AbuMostafa2012, S. 119]
+-   Anzeichen von Überanpassung sind geringe Trainingskosten und hohe **Testkosten**
+    (Kosten auf nicht-gesehenen Daten).
+-   Regularisierung ist eine Maßnahme gegen Überanpassung. Man kann es sich als eine
+    Reduktion in der Komplexität des Modells vorstellen.
+-   Der Regularisierungsparameter $\lambda$ ist ein Hyperparameter. Je größer der
+    $\lambda$-Wert, desto größer der Regularisierungseffekt.
 -   Die **Kostentenfunktion** bei regulariserter logistischer Regression:
     $$J = \frac{1}{m} \left\lbrack \sum_{i=1}^m \left( -y^{[i]}log(a^{[i]})-(1-y^{[i]})log(1-a^{[i]}) \right) + \frac{\lambda}{2} \sum_{j=1}^n (w^2_j)  \right\rbrack \tag{1}$$
 -   Die **Gewichtsaktualisierung** mit Regularisierungsterm:
@@ -42,12 +48,14 @@ title: NN04 - Overfitting und Regularisierung
 :::
 
 ::: outcomes
--   k2: Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer Ordnung
+-   k2: Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer
+    Ordnung
 -   k2: Unter- und Überanpassung
 -   k2: Regularisierung (Auswirkung auf Gewichte und Modell)
 -   k3: Gradientenabstieg für regularisierte logistische Regression
 :::
 
 ::: quizzes
--   [Selbsttest Overfitting (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld)
+-   [Selbsttest Overfitting
+    (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106595&client_id=FH-Bielefeld)
 :::
