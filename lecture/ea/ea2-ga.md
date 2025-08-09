@@ -192,7 +192,7 @@ $$\mbox{AES } = \frac{\sum\limits_{i \in \mbox{erfolgreiche Läufe}} \mbox{Gener
 Die AES liegt im Intervall $[0, maxGen]$.
 
 **Lösungswahrscheinlichkeit: SR** *Success Rate*
-$$    \mbox{SR } = \frac{\mbox{Anzahl der erfolgreichen Läufe}}{\mbox{Anzahl aller Läufe}}$$
+$$\mbox{SR } = \frac{\mbox{Anzahl der erfolgreichen Läufe}}{\mbox{Anzahl aller Läufe}}$$
 
 Die SR liegt im Intervall $[0, 1]$.
 :::
