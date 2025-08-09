@@ -71,7 +71,7 @@ Eine andere Sichtweise ist die Nutzung als Checkliste für eine Reparatur ...
 \smallskip
 
 -   **Alphabet** für Baum:
-    $$    \lbrace x_t | t=1,\ldots,n \rbrace \cup \lbrace \kappa | \kappa = \ast,A,B,C,\ldots \rbrace \cup \lbrace (,) \rbrace$$
+    $$\lbrace x_t | t=1,\ldots,n \rbrace \cup \lbrace \kappa | \kappa = \ast,A,B,C,\ldots \rbrace \cup \lbrace (,) \rbrace$$
 
 \smallskip
 
