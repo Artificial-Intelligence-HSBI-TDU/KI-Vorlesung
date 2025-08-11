@@ -11,7 +11,7 @@ jobs:
   test_beamer:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: cagix/pandoc-lecture-zen@master
@@ -25,7 +25,7 @@ jobs:
   test_gfm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: cagix/pandoc-lecture-zen@master
@@ -39,7 +39,7 @@ jobs:
   test_docsify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: cagix/pandoc-lecture-zen@master
@@ -53,7 +53,7 @@ jobs:
   test_pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: cagix/pandoc-lecture-zen@master
