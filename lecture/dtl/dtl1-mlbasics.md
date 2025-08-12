@@ -123,17 +123,17 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
 
 -   **Gesucht**: Diagnose und Reparaturanleitung
 
-    =\> Hypothese über den Merkmalen (Funktion $\operatorname{h}$)
+    =\> Hypothese über den Merkmalen (Funktion $\mathop{\text{h}}$)
 
-# Lernen durch Beobachten: Lernen einer Funktion $\operatorname{f}$
+# Lernen durch Beobachten: Lernen einer Funktion $\mathop{\text{f}}$
 
 ::: notes
-Funktionsapproximation: Lernen einer Funktion $\operatorname{f}$ anhand von
+Funktionsapproximation: Lernen einer Funktion $\mathop{\text{f}}$ anhand von
 Beispielen
 :::
 
--   Ein Beispiel ist ein Tupel $(\mathbf{x}, \operatorname{f}(\mathbf{x}))$, etwa
-    $$(\mathbf{x}, \operatorname{f}(\mathbf{x})) = \left(\begin{array}{ccc}
+-   Ein Beispiel ist ein Tupel $(\mathbf{x}, \mathop{\text{f}}(\mathbf{x}))$, etwa
+    $$(\mathbf{x}, \mathop{\text{f}}(\mathbf{x})) = \left(\begin{array}{ccc}
     O & O & X \\
     . & X & . \\
     X & . & .
@@ -141,8 +141,8 @@ Beispielen
 
 \bigskip
 
--   Aufgabe: Baue Hypothese $\operatorname{h}$ auf, so dass
-    $\operatorname{h} \approx \operatorname{f}$.
+-   Aufgabe: Baue Hypothese $\mathop{\text{h}}$ auf, so dass
+    $\mathop{\text{h}} \approx \mathop{\text{f}}$.
     -   Benutze dazu Menge von Beispielen =\> **Trainingsdaten**.
 
 \bigskip
@@ -233,7 +233,7 @@ den Zusammenhang zwischen den Daten! Dies ist in der Regel unerwünscht!
 # Trainingsdaten und Merkmalsvektoren
 
 Lehrer gibt Beispiele vor: Eingabe $\mathbf{x}$ und passende Ausgabe
-$\operatorname{f}(\mathbf{x})$
+$\mathop{\text{f}}(\mathbf{x})$
 
 \smallskip
 

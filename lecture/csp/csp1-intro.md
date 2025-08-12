@@ -50,8 +50,8 @@ Länder müssen unterschiedliche Farben bekommen (=\> *Constraint*).
 \smallskip
 
 -   **Mögliche Lösung**: Zuweisung an Variablen ("Belegung")
-    $\lbrace \operatorname{A} = red, \operatorname{B} = blue, \operatorname{C} = green,
-    \operatorname{D} = red, \operatorname{E} = blue, \operatorname{F} = blue \rbrace$
+    $\lbrace \mathop{\text{A}} = red, \mathop{\text{B}} = blue, \mathop{\text{C}} = green,
+    \mathop{\text{D}} = red, \mathop{\text{E}} = blue, \mathop{\text{F}} = blue \rbrace$
 
 # Definition: Constraint Satisfaction Problem (CSP)
 
@@ -93,12 +93,12 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
 :::
 
 -   **unär**: betrifft einzelne Variablen `\newline`{=tex} Beispiel:
-    $\operatorname{A} \neq red$
+    $\mathop{\text{A}} \neq red$
 
 \smallskip
 
 -   **binär**: betrifft Paare von Variablen `\newline`{=tex} Beispiel:
-    $\operatorname{A} \neq \operatorname{B}$
+    $\mathop{\text{A}} \neq \mathop{\text{B}}$
 
 \smallskip
 

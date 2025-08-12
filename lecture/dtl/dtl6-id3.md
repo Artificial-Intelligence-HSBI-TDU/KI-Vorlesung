@@ -40,15 +40,15 @@ Erinnerung: CAL2/CAL3
 
 -   Mittlere Entropie nach Betrachtung von Attribut $A$
 
-    $$    R(S, A) = \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)$$
+    $$    R(S, A) = \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)$$
 
 \bigskip
 
 -   Informationsgewinn durch Betrachtung von Attribut $A$
 
     $$\begin{eqnarray}
-        \operatorname{Gain}(S, A) &=& H(S) - R(S, A)\\[5pt]
-                                &=& H(S) - \sum_{v \in \operatorname{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+        \mathop{\text{Gain}}(S, A) &=& H(S) - R(S, A)\\[5pt]
+                                &=& H(S) - \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)
     \end{eqnarray}$$
 
 ::: notes
@@ -81,14 +81,14 @@ Betrachtung von Attribut $A$ ...
 \vspace{8mm}
 \small
 
-$H(S) = 0.92 \operatorname{Bit}$
+$H(S) = 0.92 \mathop{\text{Bit}}$
 
 $$\begin{eqnarray}
-\operatorname{Gain}(S, x_1) &=& 0.92 - 0.87 = 0.05 \operatorname{Bit}\\
-\operatorname{Gain}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
-                            &=& 0.25 \operatorname{Bit}\\
-\operatorname{Gain}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
-                            &=& 0.13 \operatorname{Bit}
+\mathop{\text{Gain}}(S, x_1) &=& 0.92 - 0.87 = 0.05 \mathop{\text{Bit}}\\
+\mathop{\text{Gain}}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
+                            &=& 0.25 \mathop{\text{Bit}}\\
+\mathop{\text{Gain}}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
+                            &=& 0.13 \mathop{\text{Bit}}
 \end{eqnarray}$$
 
 \normalsize
@@ -124,8 +124,8 @@ def ID3(examples, attr, default):
 ::: notes
 @Russell2020: Man erhält aus dem "Learn-Decision-Tree"-Algorithmus [@Russell2020, S.
 678, Fig. 19.5] den hier vorgestellten ID3-Algorithmus, wenn man die Funktion
-$\operatorname{Importance}(a, examples)$ als
-$\operatorname{InformationGain}(examples, attr)$ implementiert/nutzt.
+$\mathop{\text{Importance}}(a, examples)$ als
+$\mathop{\text{InformationGain}}(examples, attr)$ implementiert/nutzt.
 
 **Hinweis**: Mit der Zeile `if examples.each(class == A):  return A` soll
 ausgedrückt werden, dass alle ankommenden Trainingsbeispiele die selbe Klasse haben
@@ -154,21 +154,21 @@ Klassensymbol als "`A`" sein ...
 
 [[Tafelbeispiel Anfang ID3]{.ex}]{.slides}
 
-# Beobachtung: $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+# Beobachtung: $\mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
 
 -   Faire Münze:
     -   Entropie =
-        $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
+        $H(\mathop{\text{Fair}}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \mathop{\text{Bit}}$
 
 \smallskip
 
 -   4-seitiger Würfel:
     -   Entropie =
-        $H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
+        $H(\mathop{\text{Dice}}) = -4\cdot(0.25 \log_2 0.25) = 2 \mathop{\text{Bit}}$
 
 \bigskip
 
-=\> $\operatorname{Gain}$ ist bei mehrwertigen Attributen höher
+=\> $\mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
 
 ::: notes
 Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben
@@ -176,7 +176,7 @@ als andere.
 
 *Anmerkung*: Im obigen Beispiel wurde einfach die Entropie für zwei "Attribute" mit
 unterschiedlich vielen Ausprägungen betrachtet, das ist natürlich kein
-$\operatorname{Gain}(S, A)$. Aber es sollte deutlich machen, dass Merkmale mit mehr
+$\mathop{\text{Gain}}(S, A)$. Aber es sollte deutlich machen, dass Merkmale mit mehr
 Ausprägungen bei der Berechnung des Gain für eine Trainingsmenge einfach wegen der
 größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.
 :::
@@ -184,10 +184,10 @@ größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.
 # C4.5 als Verbesserung zu ID3
 
 Normierter Informationsgewinn:
-$\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A)$
+$\mathop{\text{Gain}}(S, A) \cdot \mathop{\text{Normalisation}}(A)$
 
-$$    \operatorname{Normalisation}(A) = \frac{1}{
-        \sum_{v \in \operatorname{Values}(A)} p_v \log_2 \frac{1}{p_v}
+$$    \mathop{\text{Normalisation}}(A) = \frac{1}{
+        \sum_{v \in \mathop{\text{Values}}(A)} p_v \log_2 \frac{1}{p_v}
     }$$
 
 ::: notes
@@ -222,28 +222,28 @@ Hierzu drei lesenswerte Blog-Einträge:
 
 -   Faire Münze:
     -   Entropie =
-        $H(\operatorname{Fair}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \operatorname{Bit}$
+        $H(\mathop{\text{Fair}}) = -(0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \mathop{\text{Bit}}$
     -   Normierung:
         $1/(0.5 \log_2 (1/0.5) + 0.5 \log_2 (1/0.5)) = 1/(0.5 \cdot 1 + 0.5 \cdot 1) = 1$
     -   Normierter Informationsgewinn:
-        $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 1 \operatorname{Bit} \cdot 1 = 1 \operatorname{Bit}$
+        $\mathop{\text{Gain}}(S, A) \cdot \mathop{\text{Normalisation}}(A) = 1 \mathop{\text{Bit}} \cdot 1 = 1 \mathop{\text{Bit}}$
 
 \smallskip
 
 -   4-seitiger Würfel:
     -   Entropie =
-        $H(\operatorname{Dice}) = -4\cdot(0.25 \log_2 0.25) = 2 \operatorname{Bit}$
+        $H(\mathop{\text{Dice}}) = -4\cdot(0.25 \log_2 0.25) = 2 \mathop{\text{Bit}}$
     -   Normierung:
         $1/(4\cdot 0.25 \log_2 (1/0.25)) = 1/(4\cdot 0.25 \cdot 2) = 0.5$
     -   Normierter Informationsgewinn:
-        $\operatorname{Gain}(S, A) \cdot \operatorname{Normalisation}(A) = 2 \operatorname{Bit} \cdot 0.5 = 1 \operatorname{Bit}$
+        $\mathop{\text{Gain}}(S, A) \cdot \mathop{\text{Normalisation}}(A) = 2 \mathop{\text{Bit}} \cdot 0.5 = 1 \mathop{\text{Bit}}$
 
 \bigskip
 
 =\> Normierung sorgt für fairen Vergleich der Attribute
 
 ::: notes
-*Anmerkung*: Auch hier ist die Entropie natürlich kein $\operatorname{Gain}(S, A)$.
+*Anmerkung*: Auch hier ist die Entropie natürlich kein $\mathop{\text{Gain}}(S, A)$.
 Das Beispiel soll nur übersichtlich deutlich machen, dass der "Vorteil" von
 Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 :::

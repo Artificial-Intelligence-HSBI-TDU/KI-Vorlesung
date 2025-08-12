@@ -269,8 +269,8 @@ Lerntabelle an.
 
 Anders als in der Vorlesung besprochen, sollen die Gewichte $w_1$ und $w_2$ sowie
 die Schwelle $\theta$ jeweils mit dem Wert $0$ initialisiert werden. Die
-Lernschrittweite $\alpha$ sei $0.5$. Nutzen Sie die $\operatorname{sign}$-Funktion
-als Aktivierungsfunktion: $$\operatorname{sign}(x) = \left\{
+Lernschrittweite $\alpha$ sei $0.5$. Nutzen Sie die $\mathop{\text{sign}}$-Funktion
+als Aktivierungsfunktion: $$\mathop{\text{sign}}(x) = \left\{
     \begin{array}{ll}
     0 & \text{falls } x<0\\
     1 & \text{sonst}
