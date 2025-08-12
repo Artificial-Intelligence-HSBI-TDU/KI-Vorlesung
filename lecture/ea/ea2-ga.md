@@ -158,8 +158,8 @@ der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft "Rekombinatio
 
         $$g_i^{(t+1)} = \left\{
         \begin{array}{ll}
-            \neg g_i^{(t)} & \mbox{ falls } \chi_i \le p_{mut}\\[5pt]
-            \phantom{\neg} g_i^{(t)} & \mbox{ sonst }
+            \neg g_i^{(t)} & \text{ falls } \chi_i \le p_{mut}\\[5pt]
+            \phantom{\neg} g_i^{(t)} & \text{ sonst }
         \end{array}
         \right.$$
 
@@ -187,12 +187,12 @@ Fitnessfunktion für ein Problem vergleichen will, muss man jeweils mehrere
 Experimente mit der selben Einstellung machen und Kenngrößen berechnen.
 
 **Geschwindigkeit: AES** *Average Evaluations to a Solution*
-$$\mbox{AES } = \frac{\sum\limits_{i \in \mbox{erfolgreiche Läufe}} \mbox{Generationen von Lauf } i}{\mbox{Anzahl der erfolgreichen Läufe}}$$
+$$\text{AES } = \frac{\sum\limits_{i \in \text{erfolgreiche Läufe}} \text{Generationen von Lauf } i}{\text{Anzahl der erfolgreichen Läufe}}$$
 
 Die AES liegt im Intervall $[0, maxGen]$.
 
 **Lösungswahrscheinlichkeit: SR** *Success Rate*
-$$\mbox{SR } = \frac{\mbox{Anzahl der erfolgreichen Läufe}}{\mbox{Anzahl aller Läufe}}$$
+$$\text{SR } = \frac{\text{Anzahl der erfolgreichen Läufe}}{\text{Anzahl aller Läufe}}$$
 
 Die SR liegt im Intervall $[0, 1]$.
 :::
