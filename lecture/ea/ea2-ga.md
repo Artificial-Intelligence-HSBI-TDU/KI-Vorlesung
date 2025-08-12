@@ -157,9 +157,9 @@ der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft "Rekombinatio
     -   Mutiere jedes Gen eines Individuums mit $p_{mut}$:
 
         $$g_i^{(t+1)} = \left\{
-        \begin{array}{ll}
-            \neg g_i^{(t)} & \text{ falls } \chi_i \le p_{mut}\\[5pt]
-            \phantom{\neg} g_i^{(t)} & \text{ sonst }
+        \begin{array}{rll}
+            \neg & g_i^{(t)} & \text{ falls } \chi_i \le p_{mut}\\[5pt]
+            & g_i^{(t)} & \text{ sonst }
         \end{array}
         \right.$$
 
