@@ -56,7 +56,7 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 \smallskip
 
 -   Nutzung gewichteter Features $f_i$:
-    `\quad`{=tex}$\operatorname{Eval}(s) = w_1f_1(s) + w_2f_2(s) + \ldots$
+    `\quad`{=tex}$\mathop{\text{Eval}}(s) = w_1f_1(s) + w_2f_2(s) + \ldots$
 
     -   [Beispiel:]{.notes} $w_1 = 9$ und $f_1(s)$ = (# weiße Königinnen) - (#
         schwarze Königinnen)
@@ -64,7 +64,7 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 \bigskip
 
 -   **Alternativ**: Speicherung von Positionen plus Bewertung in Datenbanken
-    `\newline`{=tex} =\> Lookup mit $\operatorname{Eval}(s)$ [(statt Berechnung zur
+    `\newline`{=tex} =\> Lookup mit $\mathop{\text{Eval}}(s)$ [(statt Berechnung zur
     Laufzeit)]{.notes}
 
 # Minimax mit mehreren Spielern
@@ -129,7 +129,7 @@ einen Ausgang, an dem die Wahrscheinlichkeit $P(i)$ dieses Ausgangs annotiert wi
 
 Expectimax-Wert für Zufallsknoten $C$:
 
-$$    \operatorname{Expectimax}(C) = \sum_i P(i) \operatorname{Expectimax}(s_i)$$
+$$    \mathop{\text{Expectimax}}(C) = \sum_i P(i) \mathop{\text{Expectimax}}(s_i)$$
 
 \bigskip
 

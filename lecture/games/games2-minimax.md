@@ -45,7 +45,7 @@ wird dann im Spielbaum nach oben gereicht.
 
     =\> Startzustand und anwendbare Aktionen definieren den Zustandsraum.
 
--   Nutzenfunktion: $\operatorname{UTILITY}(s,p)$: Wert des Spiels für Spieler $p$
+-   Nutzenfunktion: $\mathop{\text{UTILITY}}(s,p)$: Wert des Spiels für Spieler $p$
     im Spielzustand $s$
 
 -   Strategie: Spieler benötigen **Strategie**, um zu gewünschtem Endzustand zu

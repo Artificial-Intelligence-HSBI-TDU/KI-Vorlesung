@@ -168,7 +168,7 @@ Ein Problem besteht aus:
 :   Menge $S_A \subset S$
 
 **Aktionen**
-:   Menge von Funktionen $\operatorname{op}: S \to S$
+:   Menge von Funktionen $\mathop{\text{op}}: S \to S$
 
 **Zustandsraum**
 :   Menge aller Zustände $S$, die durch (wiederholte) Anwendung von Aktionen von den
@@ -177,10 +177,10 @@ Ein Problem besteht aus:
 \bigskip
 
 **Zieltest**
-:   Funktion $\operatorname{goal}: S \to \{0,1\}$
+:   Funktion $\mathop{\text{goal}}: S \to \{0,1\}$
 
 **Zielzustände**
-:   Menge $S_E \subseteq S$ mit $\forall x \in S_E : \operatorname{goal}(x)=1$
+:   Menge $S_E \subseteq S$ mit $\forall x \in S_E : \mathop{\text{goal}}(x)=1$
 
 \bigskip
 

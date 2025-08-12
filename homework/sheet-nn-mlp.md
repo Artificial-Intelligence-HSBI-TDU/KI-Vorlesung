@@ -9,7 +9,7 @@ title: "Übungsblatt: Overfitting & MLP"
 
 Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen
 $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit
-+1 klassifiziert. Benutzen Sie die $\operatorname{sign}$-Funktion als
++1 klassifiziert. Benutzen Sie die $\mathop{\text{sign}}$-Funktion als
 Aktivierungsfunktion.
 
 ![Abbildung 1](images/perzeptron_netz.png){width="60%"}
