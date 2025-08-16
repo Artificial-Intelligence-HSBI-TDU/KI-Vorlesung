@@ -72,7 +72,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 # Forward Checking findet nicht alle Inkonsistenzen!
 
-![](images/forward_checking.png){width="55%" web_width="45%"}
+![](images/forward_checking.png){width="55%" web_width="40%"}
 
 \bigskip
 \bigskip
@@ -212,7 +212,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 
 2.  Wann ist der Graph lokal konsistent?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="20%"}
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="15%"}
 
     -   a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
     -   a {1,2}; b {2,3}; c {3}; d {1,2}
@@ -221,7 +221,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 
 3.  Wie sieht die Queue im nächsten Schritt mit AC3 aus?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="20%"}
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="25%"}
 
     Aktuelle Queue: \[ab, ac, ba, bc, ca, cb\]
 
