@@ -80,5 +80,5 @@ Backtracking.
 :::
 
 ::: outcomes
--   k3: Lösung von CSP mit endlichen Domänen mit Hilfe der BT-Suche
+-   k3: Ich kann CSP mit endlichen Domänen mit Hilfe der BT-Suche lösen
 :::
