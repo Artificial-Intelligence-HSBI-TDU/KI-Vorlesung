@@ -206,27 +206,27 @@ Herstellung von Kantenkonsistenz interpretieren.
 ::: challenges
 **Fingerübungen**
 
-Ist die Kante zwischen a und b konsistent?
+1.  Ist die Kante zwischen a und b konsistent?
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png?raw=true)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png?raw=true){web_width="80%"}
 
-Wann ist der Graph lokal konsistent?
+2.  Wann ist der Graph lokal konsistent?
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="80%"}
 
--   a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
--   a {1,2}; b {2,3}; c {3}; d {1,2}
--   a {1,3}; b {2,3}; c {1,3}; d {1,2,3}
--   a {1,2}; b {2,3}; c {1,3}; d {1,2,3}
+    -   a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
+    -   a {1,2}; b {2,3}; c {3}; d {1,2}
+    -   a {1,3}; b {2,3}; c {1,3}; d {1,2,3}
+    -   a {1,2}; b {2,3}; c {1,3}; d {1,2,3}
 
-Wie sieht die Queue im nächsten Schritt mit AC3 aus?
+3.  Wie sieht die Queue im nächsten Schritt mit AC3 aus?
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true)
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="80%"}
 
-Aktuelle Queue: \[ab, ac, ba, bc, ca, cb\]
+    Aktuelle Queue: \[ab, ac, ba, bc, ca, cb\]
 
--   \[bc, ba, ca, cb, ab, ac\]
--   \[ab, ac, ba, bc, ca, cb\]
--   \[ac, ba, bc, ca, cb\]
--   \[ac, ba, bc, ca, cb, ba\]
+    -   \[bc, ba, ca, cb, ab, ac\]
+    -   \[ab, ac, ba, bc, ca, cb\]
+    -   \[ac, ba, bc, ca, cb\]
+    -   \[ac, ba, bc, ca, cb, ba\]
 :::
