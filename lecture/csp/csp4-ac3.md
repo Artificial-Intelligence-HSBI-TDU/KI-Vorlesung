@@ -208,11 +208,11 @@ Herstellung von Kantenkonsistenz interpretieren.
 
 1.  Ist die Kante zwischen a und b konsistent?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png?raw=true){web_width="80%"}
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png?raw=true){web_width="30%"}
 
 2.  Wann ist der Graph lokal konsistent?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="80%"}
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="30%"}
 
     -   a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
     -   a {1,2}; b {2,3}; c {3}; d {1,2}
@@ -221,7 +221,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 
 3.  Wie sieht die Queue im nächsten Schritt mit AC3 aus?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="80%"}
+    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="30%"}
 
     Aktuelle Queue: \[ab, ac, ba, bc, ca, cb\]
 
