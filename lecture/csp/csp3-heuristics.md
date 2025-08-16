@@ -138,7 +138,7 @@ dass bei der Umsetzung nur wenig zusätzlicher Aufwand entsteht.
 :::
 
 ::: outcomes
--   k3: Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV
+-   k3: Ich kann die BT-Suche mit verschiedenen Heuristiken verbessern: MRV, Gradheuristik, LCV
 :::
 
 ::: quizzes
