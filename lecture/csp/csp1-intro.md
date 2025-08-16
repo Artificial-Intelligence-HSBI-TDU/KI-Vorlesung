@@ -154,8 +154,8 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
 :::
 
 ::: outcomes
--   k1: Definitionen: Variable, Domäne, Constraint, Arität, CSP, Zuweisung
--   k3: Formulierung von CSP
+-   k2: Ich kann die Definitionen im Zusammenhang mit Constraints und CSP erklären: Variable, Domäne, Constraint, Arität, CSP, Zuweisung
+-   k3: Ich kann Probleme als CSP formulieren
 :::
 
 ::: quizzes
