@@ -148,7 +148,7 @@ def ARC_Reduce(csp, x, y):
     return change
 ```
 
-[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171,
+[AC-3 Algorithmus: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171,
 fig. 5.3]]{.origin}
 
 ::: notes
