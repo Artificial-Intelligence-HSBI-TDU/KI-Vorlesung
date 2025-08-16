@@ -72,7 +72,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 # Forward Checking findet nicht alle Inkonsistenzen!
 
-![](images/forward_checking.png){width="55%"}
+![](images/forward_checking.png){width="55%" web_width="45%"}
 
 \bigskip
 \bigskip
