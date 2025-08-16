@@ -192,10 +192,10 @@ Herstellung von Kantenkonsistenz interpretieren.
 :::
 
 ::: outcomes
--   k2: Forward Checking (FC)
--   k2: Erweiterung von FC auf alle Kanten: Kantenkonsistenz
--   k2: Kantenkonsistenz bedeutet nicht globale Konsistenz
--   k3: AC-3 Algorithmus
+-   k2: Ich kann "Forward Checking" (FC) erklären
+-   k2: Ich kann die Erweiterung von FC auf alle Kanten erklären (Kantenkonsistenz)
+-   k2: Ich kann an einem Beispiel erklären, dass Kantenkonsistenz nicht globale Konsistenz bedeutet
+-   k3: Ich kann den AC-3 Algorithmus anwenden
 :::
 
 ::: quizzes
