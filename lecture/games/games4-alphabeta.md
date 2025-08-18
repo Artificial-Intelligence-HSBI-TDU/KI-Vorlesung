@@ -207,11 +207,12 @@ Für Schach immer noch zu aufwändig ...
 :::
 
 ::: outcomes
--   k2: Optimierungsmöglichkeit: Sortierung der Nachfolger =\> Heuristik
--   k2: Optimierungsmöglichkeit: Suchtiefe beschränken =\> Übergang zu
-    Bewertungsfunktion
--   k2: Optimierungsmöglichkeit: Bewertung über Spieldatenbanken
--   k3: alpha-beta-Pruning
+-   k3: Ich  kann Alpha-Beta-Pruning implementieren und anwenden
+-   k2: Ich kann die Anwendung verschiedener von Minimax her bekannter
+    Optimierungsmöglichkeiten auf Alpha-Beta-Pruning erklären: Sortierung der
+    Nachfolger, Suchtiefe beschränken (Übergang zu Bewertungsfunktion),
+    Spielzug-Bewertung über Spieldatenbanken
+
 :::
 
 ::: quizzes
