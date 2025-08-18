@@ -30,7 +30,7 @@ title: NN05 - Multilayer Perzeptron
 
 -   Ein Multi-Layer Perzeptron
 
-    ![](images/mlp.png){width="80%"}
+    ![](images/mlp.png){width="65%"}
 
     Ein Vorwärtslauf (forward pass):
     $$a^{[1]} = ReLU \left( W^{[1]} \cdot \mathbb{x} + b^{[1]} \right) \tag{1}$$
