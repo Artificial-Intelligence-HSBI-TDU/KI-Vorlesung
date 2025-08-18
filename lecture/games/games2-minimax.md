@@ -146,16 +146,10 @@ def Minimax(state):
 
 # Minimax Beispiel
 
-::: slides
 \bigskip
 \bigskip
 
-![](images/minimaxBeispiel.png){width="90%"}
-:::
-
-::: notes
-![](images/minimaxBeispiel.png){width="50%"}
-:::
+![](images/minimaxBeispiel.png){width="90%" web_width="35%"}
 
 [[Tafelbeispiel Handsimulation]{.ex}]{.slides}
 
