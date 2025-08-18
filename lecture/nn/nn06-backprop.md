@@ -54,11 +54,12 @@ title: NN06 - Backpropagation
     $\alpha$ die Lernrate.
 
 ::: outcomes
--   k2: Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren Datenpunkten als
-    Eingabe
--   k2: Ableitung der Aktivierungsfunktionen
--   k3: Berechnung der partiellen Ableitungen
--   k3: Rückwärtslauf (backpropagation) für ein gegebenes MLP
+-   k2: Ich kann den Forwärts- und Rückwärtslauf in Matrix Notation mit mehreren
+    Datenpunkten als Eingabe erklären
+-   k3: Ich kann Aktivierungsfunktionen ableiten
+-   k3: Ich kann die Berechnung der partiellen Ableitungen durchführen
+-   k3: Ich kann den Rückwärtslauf (backpropagation) für ein gegebenes MLP
+    durchführen
 :::
 
 ::: quizzes
