@@ -33,7 +33,7 @@ title: NN04 - Overfitting und Regularisierung
     > "Was im Bereich des maschinellen Lernens Professionelle von Amateuren
     > unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen."
     >
-    > `\hfill`{=tex} -- [@AbuMostafa2012, S. 119]
+    > `\hfill`{=tex} -- [[@AbuMostafa2012, S. 119]]{.origin}
 
 -   Anzeichen von Überanpassung sind geringe Trainingskosten und hohe **Testkosten**
     (Kosten auf nicht-gesehenen Daten).
