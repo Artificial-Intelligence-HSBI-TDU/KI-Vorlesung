@@ -210,10 +210,14 @@ Siehe [Breitensuche](search2-bfs.md)
 :::
 
 ::: outcomes
--   k2: Verwendete Datenstrukturen
--   k2: Algorithmische Abläufe, Terminierung
--   k2: Optimalität, Vollständigkeit und Komplexität
--   k3: Uninformierte Suchverfahren: Tiefensuche
+-   k2: Ich kann erklären, welche Datenstrukturen in der Tiefensuche verwendet
+    werden und wie diese sich auswirken
+-   k2: Ich kann die algorithmische Abläufe und die Terminierung der Tiefensuche
+    erklären
+-   k2: Ich kann Optimalität, Vollständigkeit und Komplexität für die Tiefensuche
+    erklären
+-   k3: Ich kann die Tiefensuche implementieren und auf ein konkretes Beispiel
+    anwenden
 :::
 
 ::: quizzes
