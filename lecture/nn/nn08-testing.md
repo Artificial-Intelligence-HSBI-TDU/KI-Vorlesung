@@ -32,7 +32,7 @@ title: NN08 - Performanzanalyse
     die in Position $(i,j)$ die Anzahl der Klasse-$j$-Beispiele enthält, die als
     Klasse-$i$ vorhergesagt wurden.
 
-![Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung](images/nn8-1.png)
+![Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung](images/nn8-1.png){width="80%"}
 
 ### Treffergenauigkeit (engl. Accuracy)
 
