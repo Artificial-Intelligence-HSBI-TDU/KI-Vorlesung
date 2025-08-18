@@ -36,16 +36,10 @@ Datenbanken gespeicherten Positionen und Bewertungen abgleichen.
 
 # Verbesserung Minimax-Algorithmus
 
-::: slides
 \bigskip
 \bigskip
 
-![](images/minimax.png){width="80%"}
-:::
-
-::: notes
-![](images/minimax.png){width="40%"}
-:::
+![](images/minimax.png){width="80%" web_width="35%"}
 
 \bigskip
 
