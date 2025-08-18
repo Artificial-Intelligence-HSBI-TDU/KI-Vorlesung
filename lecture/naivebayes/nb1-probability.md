@@ -124,7 +124,7 @@ beispielsweise der Gauss'schen Funktion.
     $P(A \in \lbrace 1 \rbrace) = P(A=1) = \frac{1}{6}$.
 
     *Anmerkung*: Man schreibt statt $P(A \in \lbrace 1 \rbrace)$ oft einfach $P(1)$.
-    
+
 -   Wahrscheinlichkeit, eine gerade Zahl zu würfeln:
     $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{|\lbrace 2,4,6 \rbrace|}{|\lbrace 1,2,3,4,5,6 \rbrace|} = \frac{3}{6} = 0.5$
 :::
@@ -382,12 +382,13 @@ $$P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$$
 :::
 
 ::: outcomes
--   k2: Elementarereignisse und Wahrscheinlichkeit
--   k2: Bedingte Wahrscheinlichkeit und Verbundwahrscheinlichkeit
--   k2: (Bedingte) Unabhängigkeit
--   k3: Rechenregeln
--   k3: Marginalisierung
--   k3: Bayes'sche Regel
+-   k2: Ich kann die Begriffe Elementarereignisse und Wahrscheinlichkeit erklären
+-   k2: Ich kann bedingte Wahrscheinlichkeit und Verbundwahrscheinlichkeit erklären
+-   k2: Ich kann (bedingte) Unabhängigkeit erklären
+-   k3: Ich kann die Rechenregeln für Wahrscheinlichkeit anwenden
+-   k3: Ich kann Marginalisierung an einem Beispiel anwenden
+-   k3: Ich verstehe die Bayes'sche Regel und kann sie an einem Beispiel
+    demonstrieren
 :::
 
 ::: quizzes
