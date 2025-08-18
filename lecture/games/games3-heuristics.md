@@ -157,12 +157,13 @@ Nachfolger arbeiten.
 :::
 
 ::: outcomes
--   k2: Minimax für mehr als zwei Spieler
--   k2: Minimax mit Zufallskomponente
--   k2: Optimierungsmöglichkeit: Sortierung der Nachfolger =\> Heuristik
--   k2: Optimierungsmöglichkeit: Suchtiefe beschränken =\> Übergang zu
-    Bewertungsfunktion
--   k2: Optimierungsmöglichkeit: Bewertung über Spieldatenbanken
--   k3: Minimax-Algorithmus
--   k3: Tiefenbeschränkung und Bewertungsfunktion bei Minimax
+-   k2: Ich kann die Erweiterung von Minimax für mehr als zwei Spieler erklären
+-   k2: Ich kann die Erweiterung von Minimax mit Zufallskomponenten erklären
+-   k2: Ich kann die Heuristik erklären: Sortierung der Nachfolger
+-   k2: Ich kann erklären, wie die Suchtiefe beschränkt werden kann durch den
+    Übergang zu Bewertungsfunktion
+-   k2: Ich kann erklären, wie eine Stellungsbewertung über Spieldatenbanken
+    funktioniert
+-   k3: Ich kann den Minimax-Algorithmus implementieren
+-   k3: Ich kann Tiefenbeschränkung und Bewertungsfunktion bei Minimax einsetzen
 :::
