@@ -177,7 +177,7 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
     h = gesund: P(gesund) * P(Nase=0 | gesund) * P(Husten=1 | gesund) * P(Haut=0 | gesund) * P(Fieber=1 | gesund) = 0.4*0.5*0*1*0              = 0
     h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | krank)  * P(Fieber=1 | krank)  = 0.6*0.333*0.667*0.33*0.333 = 0.015
 
-=\> Klasse "krank" gewinnt ...
+=\> Klasse "krank" gewinnt (Wert für $P(\text{krank})$ ist der höchste der beiden Hypothesen) ...
 :::
 
 [[Tafelbeispiel]{.ex}]{.slides}
