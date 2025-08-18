@@ -102,10 +102,13 @@ Siehe [A\*](search5-astar.md)
 :::
 
 ::: outcomes
--   k1: Verwendete Datenstrukturen
--   k2: Algorithmische Abläufe, Terminierung
--   k2: Optimalität, Vollständigkeit und Komplexität
--   k3: Informierte Suchverfahren Best-First
+-   k2: Ich kann erklären, welche Datenstrukturen in Best First verwendet werden und
+    wie diese sich auswirken
+-   k2: Ich kann die algorithmische Abläufe und die Terminierung von Best First
+    erklären
+-   k2: Ich kann Optimalität, Vollständigkeit und Komplexität für Best First
+    erklären
+-   k3: Ich kann Best First implementieren und auf ein konkretes Beispiel anwenden
 :::
 
 ::: quizzes
