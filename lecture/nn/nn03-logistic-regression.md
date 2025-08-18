@@ -57,12 +57,15 @@ title: NN03 - Logistische Regression
     ![](images/perzeptron_nn.png){width="65%"}
 
 ::: outcomes
--   k2: Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung,
-    Vergleich mit Perzeptron und linearer Regression
--   k2: Formalisierung
--   k2: Sigmoid-Aktivierungsfunktion
--   k2: Verlust- und Kosten (Cross-Entropy Loss)
--   k3: Gradientenabstieg für logistische Regression
+-   k2: Ich kann die logistische Regression aus Sicht neuronaler Netze erklären und
+    dabei auf die graphische Darstellung und den Vergleich mit Perzeptron und
+    linearer Regression eingehen
+-   k2: Ich kann die Formalisierung der logistische Regression erklären
+-   k2: Ich kann die Sigmoid-Aktivierungsfunktion erklären und an einem Beispiel
+    demonstrieren
+-   k2: Ich kann Verlust- und Kosten (Cross-Entropy Loss) erklären
+-   k3: Ich kann den Gradientenabstieg für logistische Regression an einem Beispiel
+    anwenden
 :::
 
 ::: quizzes
