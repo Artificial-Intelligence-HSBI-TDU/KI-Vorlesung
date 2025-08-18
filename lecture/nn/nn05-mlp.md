@@ -37,10 +37,11 @@ title: NN05 - Multilayer Perzeptron
     $$\hat{y} := a^{[2]} = \sigma \left( W^{[2]} \cdot a^{[1]} + b^{[2]} \right) \tag{2}$$
 
 ::: outcomes
--   k2: Multi-Layer Perzeptron (MLP): Graphische Darstellung, Vorwärtslauf
--   k2: Aktivierungsfunktionen (insbesondere ReLU)
--   k3: Vorwärtslauf (forward pass) für ein gegebenes MLP
--   k3: Berechnung der einzelnen Aktivierungen
+-   k2: Ich kann das Multi-Layer Perzeptron (MLP) erläutern und dabei auf die
+    graphische Darstellung eingehen und den Vorwärtslauf erklären
+-   k2: Ich kann verschiedene Aktivierungsfunktionen (insbesondere ReLU) erklären
+-   k3: Ich kann den Vorwärtslauf (forward pass) für ein gegebenes MLP anwenden
+-   k3: Ich kann die Berechnung der einzelnen Aktivierungen durchführen
 :::
 
 ::: quizzes
