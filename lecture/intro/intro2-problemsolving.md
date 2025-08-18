@@ -335,10 +335,11 @@ kurz als "Graph-Search"-Algorithmus bezeichnet.
 :::
 
 ::: outcomes
--   k2: Definition Problem: Begriffe Zustand, Aktion, Zustandsraum, Problemgraph,
-    Suchbaum
--   k2: Problemlösen als Suche nach Wegen im Problemgraph =\> Suchbaum
--   k2: Unterschied zw. Tree-Search und Graph-Search
+-   k2: Ich kann die Definition "Problem" erklären und dabei die Begriffe Zustand,
+    Aktion, Zustandsraum, Problemgraph und Suchbaum erläutern
+-   k2: Ich kann Problemlösen als Suche nach Wegen im Problemgraph erklären
+-   k2: Ich kann den Unterschied zw. Tree-Search und Graph-Search an einem Beispiel
+    erklären
 :::
 
 ::: quizzes
