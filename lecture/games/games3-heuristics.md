@@ -69,15 +69,9 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 
 # Minimax mit mehreren Spielern
 
-::: slides
 \bigskip
 
-![](images/minimax3.png){width="90%"}
-:::
-
-::: notes
-![](images/minimax3.png){width="50%"}
-:::
+![](images/minimax3.png){width="90%" web_width="35%"}
 
 [[Tafelbeispiel]{.ex}]{.slides}
 
@@ -105,15 +99,9 @@ Backgammon: Was ist in dieser Situation der optimale Zug?
 
 # Minimax mit Zufallsspielen: ZUFALLS-Knoten
 
-::: slides
 \bigskip
 
-![](images/expectimax.png){width="90%"}
-:::
-
-::: notes
-![](images/expectimax.png){width="50%"}
-:::
+![](images/expectimax.png){width="90%" web_width="35%"}
 
 ::: notes
 Zusätzlich zu den MIN- und MAX-Knoten führt man noch Zufalls-Knoten ein, um das
@@ -129,7 +117,7 @@ einen Ausgang, an dem die Wahrscheinlichkeit $P(i)$ dieses Ausgangs annotiert wi
 
 Expectimax-Wert für Zufallsknoten $C$:
 
-$$    \mathop{\text{Expectimax}}(C) = \sum_i P(i) \mathop{\text{Expectimax}}(s_i)$$
+$$\mathop{\text{Expectimax}}(C) = \sum_i P(i) \mathop{\text{Expectimax}}(s_i)$$
 
 \bigskip
 
