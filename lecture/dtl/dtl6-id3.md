@@ -86,9 +86,9 @@ $H(S) = 0.92 \mathop{\text{Bit}}$
 $$\begin{eqnarray}
 \mathop{\text{Gain}}(S, x_1) &=& 0.92 - 0.87 = 0.05 \mathop{\text{Bit}}\\
 \mathop{\text{Gain}}(S, x_2) &=& 0.92 - 2/6  \cdot 0 - 4/6 \cdot 1\\
-                            &=& 0.25 \mathop{\text{Bit}}\\
+                             &=& 0.25 \mathop{\text{Bit}}\\
 \mathop{\text{Gain}}(S, x_3) &=& 0.92 - 3/6 \cdot 0.92 - 2/6 \cdot 1 - 1/6 \cdot 0\\
-                            &=& 0.13 \mathop{\text{Bit}}
+                             &=& 0.13 \mathop{\text{Bit}}
 \end{eqnarray}$$
 
 \normalsize
@@ -262,7 +262,8 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 :::
 
 ::: outcomes
--   k3: Entscheidungsbaumalgorithmen ID3 und C4.5
+-   k3: Ich kann die Entscheidungsbaumalgorithmen ID3 und C4.5 auf konkrete Daten
+    anwenden.
 :::
 
 ::: challenges
