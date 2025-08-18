@@ -19,7 +19,9 @@ möglichen Lösung werden können.
 
 # Evolution sehr erfolgreich bei Anpassung
 
+<!-- TODO
 ![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
+-->
 
 [[Photo](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes
 Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash
@@ -50,11 +52,11 @@ License](https://unsplash.com/license))]{.origin}
 
 # EA -- Allgemeiner Ablauf
 
-![](images/ea_prinz.png){width="80%"}
+![](images/ea_prinz.png){width="80%" web_width="60%"}
 
 # EA -- Beispiel
 
-![](images/4-queens-example.png){width="40%"}
+![](images/4-queens-example.png){width="40%" web_width="25%"}
 
 ::: notes
 Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**
