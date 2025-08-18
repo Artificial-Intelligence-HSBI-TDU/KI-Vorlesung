@@ -71,7 +71,7 @@ Varianten:
 
 :::: notes
 ::: center
-![](images/tafelbeispiel.png){width="90%"}
+![](images/tafelbeispiel.png){width="90%" web_width="60%"}
 :::
 ::::
 
@@ -241,7 +241,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 Betrachten Sie folgendes Problem:
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenges_robby.png?raw=true)
+![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenges_robby.png?raw=true){width="60%"}
 
 Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur.
 Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang
