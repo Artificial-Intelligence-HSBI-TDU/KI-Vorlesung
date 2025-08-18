@@ -347,12 +347,13 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 :::
 
 ::: outcomes
--   k2: Annahme von Unabhängigkeit =\> 'Naive' Bayes Klassifikation
--   k2: Naivität der Annahme, dennoch sehr gute Erfolge in Praxis
--   k2: Probleme mit niedrigen Wahrscheinlichkeiten
--   k3: Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten
--   k3: Klassifikation mit Naive Bayes durch Nutzung der geschätzten
-    Wahrscheinlichkeiten
+-   k2: Ich kann die Unabhängigkeits-Annahme in der 'Naive' Bayes Klassifikation
+    erklären
+-   k2: Ich kann die Probleme mit niedrigen Wahrscheinlichkeiten erklären
+-   k3: Ich kann die bedingten Wahrscheinlichkeiten aus konkreten Trainingsdaten
+    schätzen
+-   k3: Ich kann die Klassifikation mit Naive Bayes durch Nutzung der geschätzten
+    Wahrscheinlichkeiten durchführen
 :::
 
 ::: quizzes
