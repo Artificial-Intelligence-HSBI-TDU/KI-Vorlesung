@@ -107,7 +107,7 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
 :::
 
 ::: outcomes
--   k3: Meta-Algorithmus CAL3 für überlappende Klassen
+-   k3: Ich kann den Meta-Algorithmus CAL3 für überlappende Klassen anwenden
 :::
 
 ::: quizzes
