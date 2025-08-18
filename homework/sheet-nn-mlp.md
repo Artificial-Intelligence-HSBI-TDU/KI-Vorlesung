@@ -12,7 +12,7 @@ $x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche 
 +1 klassifiziert. Benutzen Sie die $\mathop{\text{sign}}$-Funktion als
 Aktivierungsfunktion.
 
-![Abbildung 1](images/perzeptron_netz.png){width="60%"}
+![Abbildung 1](images/perzeptron_netz.png){width="50%"}
 
 # NN.MLP.02: Vorwärtslauf im MLP (2P)
 
