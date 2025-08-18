@@ -65,13 +65,14 @@ title: NN02 - Lineare Regression und Gradientenabstieg
     ![](images/perzeptron_nn.png){width="65%"}
 
 ::: outcomes
--   k2: Lineare Regression aus Sicht neuronaler Netze: Graphische Darstellung,
-    Vergleich mit Perzeptron
--   k2: Formalisierung
--   k2: Verlust- und Kostenfunktion
--   k2: Gradientenvektor
--   k2: Lernrate
--   k3: Gradientenabstieg
+-   k2: Ich kann die lineare Regression aus Sicht neuronaler Netze erklären und
+    dabei auf die graphische Darstellung und den Vergleich mit dem Perzeptron
+    eingehen
+-   k2: Ich kann die Formalisierung von linearer Regression erklären
+-   k2: Ich kann den Begriff Verlust- und Kostenfunktion erklären
+-   k2: Ich kann den Gradientenvektor an einem Beispiel erklären
+-   k2: Ich kann den Begriff Lernrate erklären
+-   k3: Ich kann den Gradientenabstieg an einem Beispiel anwenden
 :::
 
 ::: quizzes
