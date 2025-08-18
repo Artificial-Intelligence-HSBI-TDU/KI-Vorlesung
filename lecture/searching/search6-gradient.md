@@ -21,11 +21,11 @@ stärksten Anstieg der Kostenfunktion auswählen. Dieses Verfahren nennt sich au
 
 ::::: columns
 ::: {.column width="46%"}
-![](images/graph.png){width="80%"}
+![](images/graph.png){width="80%" web_width="60%"}
 :::
 
 ::: {.column width="46%"}
-![](images/screenshot_stundenplan.png){width="80%"}
+![](images/screenshot_stundenplan.png){width="80%" web_width="60%"}
 :::
 :::::
 
@@ -81,7 +81,7 @@ Beispiel: Stundenplan
 
 :::: notes
 ::: center
-![](images/tafelbeispiel.png){width="90%"}
+![](images/tafelbeispiel.png){width="90%" web_width="60%"}
 :::
 ::::
 
@@ -164,7 +164,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
 -->
 
-[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
+[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg){width="40%"}
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
 ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
