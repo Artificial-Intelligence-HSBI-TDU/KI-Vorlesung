@@ -224,11 +224,12 @@ Heuristik** auch "**consistent heuristic**" genannt.
 :::
 
 ::: outcomes
--   k2: Verwendete Datenstrukturen
--   k2: Algorithmische Abläufe, Terminierung
--   k2: Optimalität, Vollständigkeit und Komplexität
--   k2: Bedingung(en) an Restkostenabschätzung bei A\*
--   k3: Informierte Suchverfahren A\*
+-   k2: Ich kann erklären, welche Datenstrukturen in A\* verwendet werden und wie
+    diese sich auswirken
+-   k2: Ich kann die algorithmische Abläufe und die Terminierung von A\* erklären
+-   k2: Ich kann Optimalität, Vollständigkeit und Komplexität für A\* erklären
+-   k2: Ich kann die Bedingung(en) an Restkostenabschätzung bei A\* erklären
+-   k3: Ich kann A\* implementieren und auf ein konkretes Beispiel anwenden
 :::
 
 ::: quizzes
