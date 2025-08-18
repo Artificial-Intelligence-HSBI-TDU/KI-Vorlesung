@@ -325,9 +325,11 @@ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
 :::
 
 ::: outcomes
--   k1: Definition und Arten des Lernens
--   k2: Überwachtes Lernen: Lernen durch Beobachten (mit Lehrer)
--   k2: Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge
+-   k1: Ich kann den Begriff "(maschinelles) Lernen" definieren und verschiedene
+    Arten unterscheiden
+-   k2: Ich kann "Überwachtes Lernen" erklären: Lernen durch Beobachten (mit Lehrer)
+-   k2: Ich kann wichtige Elemente des (maschinellen) Lernens erklären:
+    Merkmalsvektoren, Eigenschaften, Ausprägung, Objekte, Trainingsmenge
 :::
 
 ::: quizzes
