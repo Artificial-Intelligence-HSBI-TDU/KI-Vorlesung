@@ -64,6 +64,7 @@ Als Beispiel sei das zwei-schichtige MLP mit den folgenden Gewichten und Bias-We
 gegeben:
 
 Schicht 1: $W_1 = [[2, 2],[3, -2]]$, $b_1 = [[1],[-1]]$
+
 Schicht 2: $W_2 = [[-2, 2]]$, $b_2 = [[-1]]$
 
 -   Stellen Sie dieses Netzwerk graphisch dar. Was ist die Anzahl der Zellen in den
