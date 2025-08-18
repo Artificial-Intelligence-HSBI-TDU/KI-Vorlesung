@@ -32,7 +32,7 @@ allen lokalen Suchverfahren vorkommen, dass sich der Algorithmus in lokalen Mini
 
 # EA -- Allgemeiner Ablauf
 
-![](images/ea_prinz.png){width="80%"}
+![](images/ea_prinz.png){width="80%" web_width="60%"}
 
 # Kodierung Individuen
 
@@ -201,11 +201,11 @@ Die SR liegt im Intervall $[0, 1]$.
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_fail.png){width="80%"}
+![](images/typischerLauf_ritterIII_mG500M15L100_fail.png){width="80%" web_width="60%"}
 :::
 
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_success.png){width="80%"}
+![](images/typischerLauf_ritterIII_mG500M15L100_success.png){width="80%" web_width="60%"}
 :::
 :::::
 
