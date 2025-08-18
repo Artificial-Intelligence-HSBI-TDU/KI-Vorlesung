@@ -204,20 +204,22 @@ verloren. Zu Beginn ist Weiß am Zug.
 
 1.  Spielbaum
 
-Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils die
-Zahl der genommenen und der verbleibenden Hölzer an.
+    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils
+    die Zahl der genommenen und der verbleibenden Hölzer an.
 
-*Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht
-an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler am Zug ist.
+    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben,
+    steht an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler
+    am Zug ist.
 
 2.  Minimax
 
-Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an.
-Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls
-Schwarz gewonnen hat.
+    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus
+    an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit
+    -1, falls Schwarz gewonnen hat.
 
 3.  Optimaler Zug
 
-Mit welchem Zug muss Weiß beginnen, um das Spiel garantiert zu gewinnen (beide
-Spieler verhalten sich stets optimal)? Argumentieren Sie mit der Minimax-Bewertung.
+    Mit welchem Zug muss Weiß beginnen, um das Spiel garantiert zu gewinnen (beide
+    Spieler verhalten sich stets optimal)? Argumentieren Sie mit der
+    Minimax-Bewertung.
 :::
