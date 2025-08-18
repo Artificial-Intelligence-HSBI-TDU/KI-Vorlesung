@@ -9,8 +9,8 @@ Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den
 Trainingsdaten geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die
 Nutzung der beim "Training" berechneten bedingten Wahrscheinlichkeiten:
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h|D_1,  \ldots, D_n) =
-\mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i|h)$$
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h|D_1,  \ldots, D_n) =
+\mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i|h)$
 
 Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior
 $P(h|D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
