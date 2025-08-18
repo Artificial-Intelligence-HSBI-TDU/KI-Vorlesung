@@ -75,7 +75,7 @@ Variante der Breitensuche mit Kosten
 
 # BnB: Finde einen Weg von A nach H
 
-![](images/tafelbeispiel.png){width="90%"}
+![](images/tafelbeispiel.png){width="90%" web_width="60%"}
 
 [[Tafelbeispiel Branch-and-Bound (Graph-Search)]{.ex}]{.slides}
 
