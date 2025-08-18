@@ -507,11 +507,11 @@ Das ist recht lang.)
 :::
 
 ::: outcomes
--   k1: Aspekte, die zur Intelligenz gerechnet werden
--   k1: Turing-Test: Aufbau, Gebiete, Kritik
--   k1: Gebiete der KI sowie deren Zielsetzung
--   k1: Starke vs. schwache KI
--   k1: Wichtige Strömungen in der KI und ihre zeitliche Einordnung
+-   k1: Ich kenne verschiedene Aspekte, die zur Intelligenz gerechnet werden
+-   k1: Ich kenne den Turing-Test und kann Aufbau, Gebiete, Kritik wiedergeben
+-   k1: Ich kenne verschiedene Gebiete der KI sowie deren Zielsetzung
+-   k1: Ich kann starke vs. schwache KI unterscheiden
+-   k1: Ich kenne wichtige Strömungen in der KI und ihre zeitliche Einordnung
 :::
 
 ::: quizzes
