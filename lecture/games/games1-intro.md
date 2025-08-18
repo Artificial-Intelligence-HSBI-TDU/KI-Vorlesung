@@ -38,7 +38,7 @@ Zug?!**
 
 # Motivation: Unterschied zu Suche?!
 
-![](images/tttEnd.png){width="30%"}
+![](images/tttEnd.png){width="30%" web_width="10%"}
 
 \pause
 \bigskip
