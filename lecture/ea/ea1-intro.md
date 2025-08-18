@@ -130,7 +130,9 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 :::
 
 ::: outcomes
--   k2: Problematik der lokalen Minima bei Gradientenverfahren
--   k2: Überblick über die verschiedenen Strömungen
--   k2: Prinzipieller Ablauf von Genetischen Algorithmen
+-   k2: Ich kann die Problematik der lokalen Minima bei Gradientenverfahren erklären
+-   k2: Ich kann einen Überblick über die verschiedenen Strömungen bei EA/GA
+    darstellen
+-   k2: Ich kann den prinzipiellen Ablauf von Genetischen Algorithmen an einem
+    Beispiel erklären
 :::
