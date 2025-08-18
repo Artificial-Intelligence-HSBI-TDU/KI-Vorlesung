@@ -105,9 +105,9 @@ $$x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))$$
 :::
 
 ::: outcomes
--   k3: Pruning: Entfernen bedingt irrelevanter Tests
--   k3: Pruning: Entfernen bedingt redundanter Tests
--   k3: Umformen von Entscheidungsbäumen mit Transformationsregel
+-   k3: Ich kann Pruning anwenden und bedingt irrelevante Tests entfernen
+-   k3: Ich kann Pruning anwenden und bedingt redundante Tests entfernen
+-   k3: Ich kann Entscheidungsbäume mit Hilfe der Transformationsregel umformen
 :::
 
 ::: quizzes
