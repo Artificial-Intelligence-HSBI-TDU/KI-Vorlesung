@@ -29,9 +29,12 @@ title: NN04 - Overfitting und Regularisierung
 
 -   Die **Überanpassung** (engl. Overfitting) ist eines der häufigsten und
     wichtigsten Probleme in ML und DL
--   "Was im Bereich des maschinellen Lernens Professionelle von Amateuren
-    unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen."
-    [@AbuMostafa2012, S. 119]
+
+    > "Was im Bereich des maschinellen Lernens Professionelle von Amateuren
+    > unterscheidet, ist ihre Fähigkeit mit Überanpassung umzugehen."
+    >
+    > `\hfill`{=tex} -- [@AbuMostafa2012, S. 119]
+
 -   Anzeichen von Überanpassung sind geringe Trainingskosten und hohe **Testkosten**
     (Kosten auf nicht-gesehenen Daten).
 -   Regularisierung ist eine Maßnahme gegen Überanpassung. Man kann es sich als eine
