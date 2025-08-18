@@ -186,7 +186,7 @@ Gedankenexperiment:
 :::
 
 ::: outcomes
--   k3: Minimax-Algorithmus
+-   k3: Ich kann den Minimax-Algorithmus auf ein Beispiel anwenden
 :::
 
 ::: quizzes
