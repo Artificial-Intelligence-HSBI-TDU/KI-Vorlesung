@@ -44,9 +44,17 @@ title: NN03 - Logistische Regression
 
 ## Graphische Übersicht
 
--   Logistische Regression ![](images/log_reg_nn.png)
--   Lineare Regression ![](images/lin_reg_nn.png)
--   Perzeptron ![](images/perzeptron_nn.png)
+-   **Logistische Regression**
+
+    ![](images/log_reg_nn.png){width="65%"}
+
+-   **Lineare Regression**
+
+    ![](images/lin_reg_nn.png){width="65%"}
+
+-   **Perzeptron**
+
+    ![](images/perzeptron_nn.png){width="65%"}
 
 ::: outcomes
 -   k2: Logistische Regression aus Sicht neuronaler Netze: Graphische Darstellung,
