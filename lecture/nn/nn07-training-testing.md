@@ -162,11 +162,11 @@ title: NN07 - Training & Testing
     Testdaten evaluiert.
 
 ::: outcomes
--   k2: Trainings-, Validierungs- und Testfehler
--   k2: Zweck einer Testmenge
--   k2: Kreuzvalidierung
--   k2: Hyperparameter-Tuning
--   k2: Lernkurven
+-   k2: Ich kann die Begriffe Trainings-, Validierungs- und Testfehler erklären
+-   k2: Ich kann den Zweck einer Testmenge erläutern
+-   k2: Ich kann das Verfahren der Kreuzvalidierung erklären
+-   k2: Ich kann den Begriff Hyperparameter-Tuning erklären
+-   k3: Ich kann verschiedene Lernkurven interpretieren
 :::
 
 ::: quizzes
