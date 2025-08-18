@@ -101,19 +101,19 @@ title: NN07 - Training & Testing
         (siehe Abbildung 1).
 
     ![Abbildung 1 - Einsatz der Validierung für das
-    Hyperparameter-Tuning](images/val1.png)
+    Hyperparameter-Tuning](images/val1.png){width="80%"}
 
     -   Bei der **Auswahl der endgültigen Hypothese** ($\rightarrow$
         Parameterauswahl!): unter allen Hypothesen, die während des Trainings
         durchlafen werden, wähle jene mit kleinstem $E_{val}$ (siehe Abbildung 2).
 
     ![Abbildung 2 - Einsatz der Validierung bei der Auswahl der entgültigen
-    Hypothese](images/val2.png)
+    Hypothese](images/val2.png){width="80%"}
 
     -   Bei der graphischen **Darstellung von Lernkurven** für die Diagnose von
         Über- und Unteranpassung (siehe Abbildung 3).
 
-    ![Abbildung 3 - Lernkurven](images/val3.png)
+    ![Abbildung 3 - Lernkurven](images/val3.png){width="80%"}
 
 -   Übliche train/val/test Aufteilung der Daten (in Prozent):
 
@@ -153,8 +153,8 @@ title: NN07 - Training & Testing
         Abbildung 4).
         $$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$
 
-    ![Abbildung 4 - Kreuzvalidierung](images/val4.png)
-    
+    ![Abbildung 4 - Kreuzvalidierung](images/val4.png){width="80%"}
+
 -   Bemerkung: Die Kreuzvalidierung wird nur bei der Modellauswahl eingesetzt: es
     liefert verlässlichere Näherungen für $E_{out}$ und führt daher zu besseren
     Entscheidungen. Das zuletzt ausgewählte Modell wird danach wie gewohnt auf den
