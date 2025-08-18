@@ -62,7 +62,7 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
 
 # Learning Agent
 
-![](images/learning.png){width="80%"}
+![](images/learning.png){width="80%" web_width="70%"}
 
 # Feedback während des Lernens
 
@@ -157,7 +157,7 @@ Beispielen
 
 # Konstruieren einer konsistenten Hypothese
 
-![](images/occams1.png){width="60%"}
+![](images/occams1.png){width="60%" web_width="40%"}
 
 ::: notes
 Welcher Zusammenhang ist hier dargestellt? Offenbar eine Art Funktionsverlauf ...
@@ -166,7 +166,7 @@ Wir haben für einige x-Werte die zugehörigen y-Werte vorgegeben.
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
 
-![](images/occams2.png){width="60%"}
+![](images/occams2.png){width="60%" web_width="40%"}
 
 ::: notes
 Die einfachste Approximation wäre eine lineare Funktion. Allerdings werden hierbei
@@ -176,7 +176,7 @@ relativ hohen (Trainings-) Fehler.
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
 
-![](images/occams3.png){width="60%"}
+![](images/occams3.png){width="60%" web_width="40%"}
 
 ::: notes
 Die Hyperbel erklärt die Trainingsdaten bis auf den einen Punkt sehr gut. Die Frage
@@ -186,7 +186,7 @@ ist, den man gefahrlos ignorieren kann?
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
 
-![](images/occams4.png){width="60%"}
+![](images/occams4.png){width="60%" web_width="40%"}
 
 ::: notes
 Die grüne Hypothese ist von allen bisher gezeigten die komplexeste, erklärt aber
@@ -200,7 +200,7 @@ o.ä. gibt.)
 
 # Konstruieren einer konsistenten Hypothese (cnt.)
 
-![](images/occams5.png){width="60%"}
+![](images/occams5.png){width="60%" web_width="40%"}
 
 ::: notes
 Diese Hypothese erklärt ebenfalls sämtliche Trainingsdaten. Allerdings schwingt die
