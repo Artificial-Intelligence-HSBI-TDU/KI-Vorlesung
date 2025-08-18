@@ -91,13 +91,15 @@ title: NN08 - Performanzanalyse
     Hinsicht gibt diese Metrik ein akkurates Bild über den Erfolg eines Modells.
 
 ::: outcomes
--   k2: Performanzmetriken für die Evaluierung von Klassifizierungsmodellen
--   k2: Wahrheitsmatrix (engl. Confusion Matrix)
--   k2: Treffergenauigkeit (engl. Accuracy)
--   k2: Precision (engl. Precision)
--   k2: Recall
--   k2: F_1-Score (Harmonisches Mittel)
--   k3: Berechnung und Deutung von Precision und Recall
--   k3: Berechnung und Deutung des F_1-Scores
--   k3: Einsatz bei Evaluierung und Auswahl von Modellen
+-   k2: Ich kann die betrachteten Performanzmetriken für die Evaluierung von
+    Klassifizierungsmodellen erläutern
+-   k2: Ich kann die Wahrheitsmatrix (engl. Confusion Matrix) erklären
+-   k2: Ich kann den Begriff Treffergenauigkeit (engl. Accuracy) erklären
+-   k2: Ich kann den Begriff Precision (engl. Precision) erklären
+-   k2: Ich kann den Begriff Recall erklären
+-   k2: Ich kann den Begriff F_1-Score (Harmonisches Mittel) erklären
+-   k3: Ich kann Precision und Recall berechnen und deuten
+-   k3: Ich kann den F_1-Score berechnen und deuten
+-   k3: Ich kann die Performanzmetriken bei der Evaluierung und Auswahl von
+    Modellen einsetzen
 :::
