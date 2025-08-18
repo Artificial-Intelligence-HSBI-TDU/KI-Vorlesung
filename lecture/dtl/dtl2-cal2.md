@@ -32,7 +32,7 @@ mit diskreten Attributen und disjunkten Klassen einen fehlerfreien Baum erzeugen
 
 # Entscheidungsbäume: Klassifikation
 
-![](images/xor-decision-tree.png){width="80%"}
+![](images/xor-decision-tree.png){width="80%" web_width="60%"}
 
 \bigskip
 
