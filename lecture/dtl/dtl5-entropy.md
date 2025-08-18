@@ -277,7 +277,8 @@ Hierzu drei lesenswerte Blog-Einträge:
 :::
 
 ::: outcomes
--   k3: Berechnung der Entropie und des Information Gain
+-   k3: Ich kann für konkrete Beispiele die Entropie und den Information Gain
+    ausrechnen
 :::
 
 ::: quizzes
