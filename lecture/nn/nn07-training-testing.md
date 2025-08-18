@@ -33,9 +33,13 @@ title: NN07 - Training & Testing
     -   $E_{test}$ bezeichnet den Fehler auf dem Testset und ist eine **Näherung**
         für $E_{out}$.
 
-    > Analogie:\
-    > $E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.\
-    > $E_{test}$ : Erfolg in Endprüfung.
+    ::: tip
+    **Analogie**:
+
+    $E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
+    
+    $E_{test}$ : Erfolg in Endprüfung.
+    :::
 
 -   Die Näherung $E_{test}$ sollte möglichst genau sein, damit es als ein
     verlässliches **Gütesiegel** dienen kann.
