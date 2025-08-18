@@ -48,11 +48,13 @@ title: NN04 - Overfitting und Regularisierung
 :::
 
 ::: outcomes
--   k2: Erhöhung der Modell-Komplexität durch Einführung von Merkmalen höherer
-    Ordnung
--   k2: Unter- und Überanpassung
--   k2: Regularisierung (Auswirkung auf Gewichte und Modell)
--   k3: Gradientenabstieg für regularisierte logistische Regression
+-   k2: Ich kann die Erhöhung der Modell-Komplexität durch Einführung von Merkmalen
+    höherer Ordnung erklären
+-   k2: Ich kann die Begriffe Unter- und Überanpassung an einem Beispiel erklären
+-   k2: Ich kann den Begriff Regularisierung erklären und die Auswirkung auf die
+    Gewichte und das Modell erläutern
+-   k3: Ich kann den Gradientenabstieg für regularisierte logistische Regression
+    an einem Beispiel anwenden
 :::
 
 ::: quizzes
