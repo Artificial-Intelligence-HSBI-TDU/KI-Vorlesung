@@ -21,7 +21,8 @@ Wahrscheinlichkeit, dass $A$ und $B$ gleichzeitig auftreten.
 Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A|B)$ und berechnet
 sich $P(A|B) = P(A,B)/P(B)$.
 
-Daraus kann man die **Bayes-Regel** ableiten: $P(A|B) = P(B|A)P(A)/P(B)$
+Daraus kann man die **Bayes-Regel** ableiten: $P(A|B) = P(B|A)P(A)/P(B)$.
+
 Dabei nennt man
 
 -   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
@@ -120,8 +121,10 @@ beispielsweise der Gauss'schen Funktion.
     ($B = \lbrace 1,2,3,4 \rbrace$), da
     $A \cap B = \lbrace 2,4 \rbrace \ne \emptyset$
 -   Wahrscheinlichkeit, eine 1 zu würfeln:
-    $P(A \in \lbrace 1 \rbrace) = P(A=1) = \frac{1}{6}$. *Anmerkung*: Man schreibt
-    statt $P(A \in \lbrace 1 \rbrace)$ oft einfach $P(1)$.
+    $P(A \in \lbrace 1 \rbrace) = P(A=1) = \frac{1}{6}$.
+
+    *Anmerkung*: Man schreibt statt $P(A \in \lbrace 1 \rbrace)$ oft einfach $P(1)$.
+    
 -   Wahrscheinlichkeit, eine gerade Zahl zu würfeln:
     $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{|\lbrace 2,4,6 \rbrace|}{|\lbrace 1,2,3,4,5,6 \rbrace|} = \frac{3}{6} = 0.5$
 :::
