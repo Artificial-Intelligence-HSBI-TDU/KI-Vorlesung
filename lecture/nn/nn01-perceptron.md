@@ -49,13 +49,16 @@ Ein einfaches Modell für die **binäre Klassifizierung**
     lernen gilt \> siehe **Perzeptron Lernalgorithmus**
 
 ::: outcomes
--   k2: Arten des maschinellen Lernens
--   k2: Formalisierung eines ML-Problems, insbesondere Klassifizierung: Datensatz,
-    Merkmalraum, Hyphotesenfunktion, Zielfunktion
--   k2: Perzeptron als linearer Klassifizierer
--   k2: Entscheidungsgrenze
--   k3: Berechnung der Entscheidungsgrenze
--   k3: Perzeptron Lernalgorithmus
+-   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
+-   k2: Ich kann die Formalisierung eines ML-Problems, insbesondere der
+    Klassifizierung erklären und dabei insbesondere die Begriffe Datensatz,
+    Merkmalraum, Hyphotesenfunktion und Zielfunktion an einem Beispiel
+    erläutern
+-   k2: Ich kann das Perzeptron als linearen Klassifizierer verstehen und
+    erklären
+-   k2: Ich kann den Begriff der Entscheidungsgrenze erklären
+-   k3: Ich kann die Entscheidungsgrenze für ein konkretes Beispiel berechnen
+-   k3: Ich kann den Perzeptron Lernalgorithmus implementieren und anwenden
 :::
 
 ::: quizzes
