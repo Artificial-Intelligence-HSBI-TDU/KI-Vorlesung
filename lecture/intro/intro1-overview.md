@@ -33,7 +33,7 @@ mit vernünftigen Erwartungen.
 
 # Was ist (künstliche) Intelligenz?
 
-![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%"}
+![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%" web_width="60%"}
 
 [[AvB - RoboCup 2013 -
 Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
@@ -197,7 +197,7 @@ RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
 -   Wann verhält sich eine Maschine intelligent?
 :::
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%"}
+![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%" web_width="20%"}
 
 [[Turing Test version
 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by
@@ -256,7 +256,7 @@ Wie würden Sie Systeme wie ChatGPT einordnen? Woran machen Sie das fest?
 
 # Typische Ansätze in der KI
 
-![](images/dimensionen-ki.png){width="60%"}
+![](images/dimensionen-ki.png){width="60%" web_width="40%"}
 
 \bigskip
 \bigskip
