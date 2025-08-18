@@ -37,7 +37,7 @@ title: NN07 - Training & Testing
     **Analogie**:
 
     $E_{in}$ : Erfolg in Übungsaufgaben und Probeprüfungen.
-    
+
     $E_{test}$ : Erfolg in Endprüfung.
     :::
 
@@ -76,7 +76,8 @@ title: NN07 - Training & Testing
     set*) beiseitelegen und nicht für das Training (i.e. Minimierung des
     Trainingsfehlers $E_{in}$) verwenden!
 
--   **Bemerkung**:\
+-   **Bemerkung**:
+
     Das Wort **Modell** kann je nach Kontext unterschiedliche Bedeutungen annehmen.\
     Ein Modell im aktuellen Kontext ist als ein Paar $(\mathcal{H},\mathcal{A})$ von
     Hypothesenraum (bzw. **Modellarchitektur**) und **Lernalgorithmus** definiert.
@@ -119,7 +120,8 @@ title: NN07 - Training & Testing
     -   bei $|D| \approx 100.000 \rightarrow$ ca. 60/20/20
     -   bei $|D| \approx 10.000.000 \rightarrow$ ca. 98/1/1
 
--   **Bemerkung**:\
+-   **Bemerkung**:
+
     Das Modell ist trainiert für gute Ergebnisse auf Trainingsdaten und "fine-tuned"
     für gute Ergebnisse auf den Validierungsdaten. Ergebnisse auf Testdaten werden
     mit hoher wahrscheinlichkeit schlechter ausfallen, als auf Validierungsdaten
@@ -152,6 +154,7 @@ title: NN07 - Training & Testing
         $$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$
 
     ![Abbildung 4 - Kreuzvalidierung](images/val4.png)
+    
 -   Bemerkung: Die Kreuzvalidierung wird nur bei der Modellauswahl eingesetzt: es
     liefert verlässlichere Näherungen für $E_{out}$ und führt daher zu besseren
     Entscheidungen. Das zuletzt ausgewählte Modell wird danach wie gewohnt auf den
