@@ -167,7 +167,7 @@ Aufruf übergeben (müssen also Referenzen vom Typ `Baum` sein).
 :::
 
 ::: outcomes
--   k3: Entscheidungsbaumlerner CAL2
+-   k3: Ich kann den Entscheidungsbaumlerner CAL2 auf ein Beispiel anwenden
 :::
 
 ::: quizzes
