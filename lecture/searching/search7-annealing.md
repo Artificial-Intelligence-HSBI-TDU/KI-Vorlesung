@@ -210,7 +210,8 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 :::
 
 ::: outcomes
--   k2: Funktionsweise Simulated Annealing
+-   k3: Ich kann die Funktionsweise von Simulated Annealing erklären und den
+    Algorithmus auf ein konkretes Problem anwenden
 :::
 
 ::: quizzes
