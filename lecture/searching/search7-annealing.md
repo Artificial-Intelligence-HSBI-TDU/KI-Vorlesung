@@ -135,27 +135,24 @@ Domain](https://en.wikipedia.org/wiki/Public_domain))]{.origin}
 :::
 
 -   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: `math.exp(dE/temp)`
--   $dE$ negativ =\>
-    $\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$
+-   Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet
+-   Wenn $dE$ negativ, dann gilt (Umformung):
 
-$\exp(a)$ bzw. $e^a$:
+    $$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$$
 
--   $a<0$: geht gegen 0
--   $a=0$: 1
--   $a>0$: steil (exponentiell) gegen Unendlich ...
+-   Betrachtung von $\exp(a)$ bzw. $e^a$:
+    -   $a<0$: geht gegen 0
+    -   $a=0$: 1
+    -   $a>0$: steil (exponentiell) gegen Unendlich ...
 
-Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet. Damit ergibt sich wegen
-$dE$ negativ:
-$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$.
-Betrachtung für $dE$ (nur negativer Fall!) und $\text{temp}$:
-
--   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv
-    und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h. die
-    Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
--   Temperatur $\text{temp}$ wird kleiner und geht gegen Null:
-    $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
-    $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit $1/\exp(a)$
-    geht gegen 0
+-   Damit ergibt sich für $dE$ (nur negativer Fall!) und $\text{temp}$:
+    -   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist
+        positiv und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h.
+        die Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
+    -   Temperatur $\text{temp}$ wird kleiner und geht gegen Null:
+        $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
+        $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit
+        $1/\exp(a)$ geht gegen 0
 ::::
 
 # Abkühlungsplan problemabhängig wählen
