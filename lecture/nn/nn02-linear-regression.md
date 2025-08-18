@@ -56,8 +56,13 @@ title: NN02 - Lineare Regression und Gradientenabstieg
 
 ## Graphische Übersicht
 
--   Lineare Regression ![](images/lin_reg_nn.png)
--   Perzeptron ![](images/perzeptron_nn.png)
+-   **Lineare Regression**
+
+    ![](images/lin_reg_nn.png){width="65%"}
+
+-   **Perzeptron**
+
+    ![](images/perzeptron_nn.png){width="65%"}
 
 ::: outcomes
 -   k2: Lineare Regression aus Sicht neuronaler Netze: Graphische Darstellung,
