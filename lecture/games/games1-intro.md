@@ -112,6 +112,6 @@ Zug?!**
 :::
 
 ::: outcomes
--   k2: Spiele als Suchproblem
--   k2: Eigenschaften guter Spielalgorithmen
+-   k2: Ich kann Spiele als Suchproblem formulieren
+-   k2: Ich kann Eigenschaften guter Spielalgorithmen erklären
 :::
