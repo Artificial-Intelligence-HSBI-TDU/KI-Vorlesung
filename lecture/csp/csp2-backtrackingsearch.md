@@ -42,7 +42,7 @@ def BT_Search(assignment, csp):
     return failure
 ```
 
-[Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176,
+[Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176,
 fig. 5.5]]{.origin}
 
 ::: notes
