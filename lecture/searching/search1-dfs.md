@@ -108,7 +108,7 @@ alphabetische Reihenfolge der Knoten (Orte).
 
 :::: notes
 ::: center
-![](images/tafelbeispiel.png){width="90%"}
+![](images/tafelbeispiel.png){width="90%" web_width="60%"}
 :::
 ::::
 
