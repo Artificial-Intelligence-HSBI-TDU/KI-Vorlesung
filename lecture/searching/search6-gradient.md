@@ -148,8 +148,9 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 :::
 
 ::: outcomes
--   k2: Problematik der lokalen Minima bei Gradientenverfahren
--   k3: Lokale Suche (Gradientenabstieg)
+-   k2: Ich kann die Problematik der lokalen Minima bei Gradientenverfahren erklären
+-   k3: Ich kann die lokale Suche (Gradientenabstieg) auf ein konkretes Problem
+    anwenden
 :::
 
 ::: quizzes
