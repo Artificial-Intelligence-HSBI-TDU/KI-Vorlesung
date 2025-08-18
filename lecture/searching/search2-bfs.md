@@ -178,10 +178,14 @@ d. längsten Pfades
 :::
 
 ::: outcomes
--   k2: Verwendete Datenstrukturen
--   k2: Algorithmische Abläufe, Terminierung
--   k2: Optimalität, Vollständigkeit und Komplexität
--   k3: Uninformierte Suchverfahren: Breitensuche
+-   k2: Ich kann erklären, welche Datenstrukturen in der Breitensuche verwendet
+    werden und wie diese sich auswirken
+-   k2: Ich kann die algorithmische Abläufe und die Terminierung der Breitensuche
+    erklären
+-   k2: Ich kann Optimalität, Vollständigkeit und Komplexität für die Breitensuche
+    erklären
+-   k3: Ich kann die Breitensuche implementieren und auf ein konkretes Beispiel
+    anwenden
 :::
 
 ::: quizzes
