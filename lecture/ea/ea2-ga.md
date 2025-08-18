@@ -248,7 +248,8 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 :::
 
 ::: outcomes
--   k3: GA: Kodierung, Fitnessfunktion, Ablauf, Operatoren, Auswertung
+-   k3: Ich kann GA anwenden, insbesondere für ein Beispiel passende Kodierung,
+    Fitnessfunktion, Operatoren und Auswertung formulieren und den Ablauf erklären
 :::
 
 ::: quizzes
