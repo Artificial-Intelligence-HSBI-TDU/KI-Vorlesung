@@ -76,7 +76,7 @@ Zug?!**
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
-    [[@Russell2020, pp. 193-196]]{.origin}
+    [[@Russell2020, pp. 193-196]]{.origin nolist=true}
 
 # Eigenschaften guter Spielalgorithmen
 

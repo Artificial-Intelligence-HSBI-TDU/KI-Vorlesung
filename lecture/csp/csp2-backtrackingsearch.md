@@ -43,7 +43,7 @@ def BT_Search(assignment, csp):
 ```
 
 [Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176,
-fig. 5.5]]{.origin}
+fig. 5.5]]{.origin nolist=true}
 
 ::: notes
 Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem

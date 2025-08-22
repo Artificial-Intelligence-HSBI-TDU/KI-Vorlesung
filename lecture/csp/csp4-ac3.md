@@ -149,7 +149,7 @@ def ARC_Reduce(csp, x, y):
 ```
 
 [AC-3 Algorithmus: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171,
-fig. 5.3]]{.origin}
+fig. 5.3]]{.origin nolist=true}
 
 ::: notes
 *Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten:

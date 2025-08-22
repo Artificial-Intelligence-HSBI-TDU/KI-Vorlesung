@@ -168,7 +168,7 @@ Für Schach immer noch zu aufwändig ...
     -   ca. 700.000 Spielsituationen (von Experten bewertet)
     -   Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen
 
-[[@Russell2014, p. 185]]{.origin}
+[[@Russell2014, p. 185]]{.origin nolist=true}
 
 # Beispiel AlphaGo (Google, 2016)
 
@@ -184,7 +184,7 @@ Für Schach immer noch zu aufwändig ...
         -   Züge mit Monte-Carlo-Baumsuche ausgewählt
 
 [[@Silver2016], siehe auch
-[deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.origin}
+[deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.origin nolist=true}
 
 # Wrap-Up
 
