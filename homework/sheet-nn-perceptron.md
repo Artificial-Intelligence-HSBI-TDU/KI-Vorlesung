@@ -93,4 +93,4 @@ Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blo
 als Startpunkt benutzen.
 
 [*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012.
-Learning From Data. AMLBook.]{.origin nolist=true}
+Learning From Data. AMLBook.]{.credits nolist=true}

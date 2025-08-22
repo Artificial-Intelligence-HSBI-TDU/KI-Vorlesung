@@ -38,7 +38,7 @@ mit vernünftigen Erwartungen.
 [[AvB - RoboCup 2013 -
 Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
 [RoboCup2013](https://www.flickr.com/photos/80267257@N05) on Flickr.com ([CC BY
-2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
+2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.credits}
 
 ::: notes
 -   Was ist (künstliche) Intelligenz?
@@ -62,7 +62,7 @@ Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
 > [Cumtempore](https://de.wikipedia.org/wiki/Benutzer:Cumtempore) and
 > [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Intelligenz?uselang=de)
 > on Wikipedia ([CC BY-SA
-> 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
+> 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.credits}
 
 ::: notes
 Das ist spannend: Es gibt keine allgemeingültige Definition für den Begriff
@@ -89,7 +89,7 @@ Schauen wir uns nun noch die Definition von "kognitiven Fähigkeiten" genauer an
 > [Arbraxan](https://de.wikipedia.org/wiki/User:Arbraxan) and
 > [others](https://xtools.wmflabs.org/articleinfo-authorship/de.wikipedia.org/Kognition?uselang=de)
 > on Wikipedia ([CC BY-SA
-> 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.origin}
+> 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode))]{.credits}
 
 ::: notes
 Zu den kognitiven Fähigkeiten und damit zur Intelligenz zählen also eine Reihe von
@@ -140,7 +140,7 @@ als intelligent zu betrachten! Bezieht sich vor allem auf "*Denken*"!
 >
 > `\hfill`{=tex} -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[nach [@Ertel2017, pp. 1-3]]{.origin nolist=true}
+[nach [@Ertel2017, pp. 1-3]]{.credits nolist=true}
 
 ::: notes
 Dazu gehört auch
@@ -175,7 +175,7 @@ mit der physischen oder digitalen Umwelt interagieren können.
 
 [[VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES
 RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689), Art. 3
-Abs. 1]{.origin nolist=true}
+Abs. 1]{.credits nolist=true}
 
 Interessant ist, dass dabei nicht explizit auf Softwaresysteme eingegangen wird.
 Später im Text finden sich Hinweise, dass sich ein KI-System vermutlich als Software
@@ -201,7 +201,7 @@ RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
 [[Turing Test version
 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by
 [Bilby](https://commons.wikimedia.org/wiki/User:Bilby) on Wikimedia Commons ([Public
-Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
+Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 ::: notes
 Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:

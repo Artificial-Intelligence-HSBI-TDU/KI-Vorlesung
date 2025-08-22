@@ -109,7 +109,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 -   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
     nach durchschnittlich 3 Schritten stecken.
 
-[nach [@Russell2020, p. 131]]{.origin nolist=true}
+[nach [@Russell2020, p. 131]]{.credits nolist=true}
 :::
 
 # Eigenschaften Gradientensuche
@@ -168,7 +168,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg){width="40%"}
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
-([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
+([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenge.png?raw=true)
 

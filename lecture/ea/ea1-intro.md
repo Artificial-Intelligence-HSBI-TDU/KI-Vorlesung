@@ -25,7 +25,7 @@ möglichen Lösung werden können.
 
 [[Photo Evolution](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes
 Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash
-License](https://unsplash.com/license))]{.origin}
+License](https://unsplash.com/license))]{.credits}
 
 \bigskip
 \bigskip

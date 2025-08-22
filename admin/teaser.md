@@ -14,7 +14,7 @@ title: Modulvorstellung Künstliche Intelligenz (Wahlfach Liste 1)
 [[AvB - RoboCup 2013 -
 Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
 [RoboCup2013](https://www.flickr.com/photos/80267257@N05) on Flickr.com ([CC BY
-2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
+2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.credits}
 
 # Überblick über wichtige Methoden & Gebiete der KI
 

@@ -29,7 +29,7 @@ anschauen).
 [["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
 by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC
 BY
-2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
+2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.credits}
 
 ::: notes
 Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste
@@ -76,7 +76,7 @@ Zug?!**
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
-    [[@Russell2020, pp. 193-196]]{.origin nolist=true}
+    [[@Russell2020, pp. 193-196]]{.credits nolist=true}
 
 # Eigenschaften guter Spielalgorithmen
 

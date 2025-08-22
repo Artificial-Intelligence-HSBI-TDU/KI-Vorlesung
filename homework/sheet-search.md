@@ -32,7 +32,7 @@ Betrachten Sie folgende Landkarte und Restwegschätzungen:
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
-([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.origin}
+([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 ![](images/MapGermanyGraph-Kosten.png){width="40%"}
 

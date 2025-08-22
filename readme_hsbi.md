@@ -8,7 +8,7 @@ title: "HSBI: IFM 3.2: Grundlagen der KI (Winter 2025/26)"
 [["künstliche
 intelligenz"](https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-netzwerk-3706562/)
 by [Gerd Altmann (geralt)](https://pixabay.com/de/users/geralt-9301/) on Pixabay.com
-([Pixabay License](https://pixabay.com/de/service/license/))]{.origin}
+([Pixabay License](https://pixabay.com/de/service/license/))]{.credits}
 
 # Kursbeschreibung
 

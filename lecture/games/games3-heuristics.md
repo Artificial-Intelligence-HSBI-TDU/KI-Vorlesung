@@ -93,7 +93,7 @@ der Mitspieler günstiger ist.
 [["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
 by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC
 BY
-2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.origin}
+2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.credits}
 
 Backgammon: Was ist in dieser Situation der optimale Zug?
 

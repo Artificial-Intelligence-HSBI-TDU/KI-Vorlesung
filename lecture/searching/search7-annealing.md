@@ -131,7 +131,7 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 [["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz,
 reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on
 Wikimedia Commons ([Public
-Domain](https://en.wikipedia.org/wiki/Public_domain))]{.origin}
+Domain](https://en.wikipedia.org/wiki/Public_domain))]{.credits}
 :::
 
 -   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: `math.exp(dE/temp)`
