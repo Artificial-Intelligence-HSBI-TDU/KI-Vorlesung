@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Lokale Suche: Simulated Annealing"
+title: "Search: Lokale Suche - Simulated Annealing"
 ---
 
 ::: tldr

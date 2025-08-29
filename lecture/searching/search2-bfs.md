@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Suche mit Breitensuche
+title: "Search: Suche mit Breitensuche"
 ---
 
 ::: tldr

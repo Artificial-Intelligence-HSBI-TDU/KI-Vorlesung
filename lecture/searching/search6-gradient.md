@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Lokale Suche: Gradientensuche"
+title: "Search: Lokale Suche - Gradientensuche"
 ---
 
 ::: tldr
