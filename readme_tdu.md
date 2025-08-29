@@ -59,7 +59,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 | Vorlesung (2 SWS)          | Übung (2 SWS)           |
 |:---------------------------|:------------------------|
-| Mo, 12:00 - 13:30 Uhr (TR) | G1: wird bekanntgegeben |
+| Mo, 10:00 - 11:30 Uhr (TR) | G1: wird bekanntgegeben |
 | (online, Zoom)             | G2: wird bekanntgegeben |
 |                            | G3: wird bekanntgegeben |
 |                            | G4: wird bekanntgegeben |
