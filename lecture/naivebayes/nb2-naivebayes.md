@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Klassifikation mit Naive Bayes
+title: "NB: Klassifikation mit Naive Bayes"
 ---
 
 ::: tldr
