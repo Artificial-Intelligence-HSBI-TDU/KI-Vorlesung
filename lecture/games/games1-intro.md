@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Einführung Optimale Spiele
+title: "Games: Einführung Optimale Spiele"
 ---
 
 ::: tldr

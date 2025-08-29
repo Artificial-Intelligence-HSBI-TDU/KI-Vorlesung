@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Heuristiken
+title: "Games: Heuristiken"
 ---
 
 ::: tldr
