@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Modellierung mit Genetischen Algorithmen
+title: "EA: Modellierung mit Genetischen Algorithmen"
 ---
 
 ::: tldr

@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Einführung Evolutionäre Algorithmen
+title: "EA: Einführung Evolutionäre Algorithmen"
 ---
 
 ::: tldr
