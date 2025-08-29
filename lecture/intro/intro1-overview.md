@@ -196,7 +196,9 @@ RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
 -   Wann verhält sich eine Maschine intelligent?
 :::
 
+<!-- TODO
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%" web_width="20%"}
+-->
 
 [[Turing Test version
 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by
