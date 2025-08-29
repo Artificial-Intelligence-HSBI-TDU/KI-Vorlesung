@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN06 - Backpropagation
+title: "NN06: Backpropagation"
 ---
 
 ::: youtube

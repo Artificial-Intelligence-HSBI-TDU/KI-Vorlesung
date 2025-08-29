@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN07 - Training & Testing
+title: "NN07: Training & Testing"
 ---
 
 ::: youtube

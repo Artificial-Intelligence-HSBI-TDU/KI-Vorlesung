@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN09 - Large Language Models
+title: "NN09: Large Language Models"
 ---
 
 ::: youtube

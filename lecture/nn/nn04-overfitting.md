@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN04 - Overfitting und Regularisierung
+title: "NN04: Overfitting und Regularisierung"
 ---
 
 ::: youtube

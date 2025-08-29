@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN08 - Performanzanalyse
+title: "NN08: Performanzanalyse"
 ---
 
 ::: youtube

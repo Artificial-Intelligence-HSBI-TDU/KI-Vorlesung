@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN05 - Multilayer Perzeptron
+title: "NN05: Multilayer Perzeptron"
 ---
 
 ::: youtube

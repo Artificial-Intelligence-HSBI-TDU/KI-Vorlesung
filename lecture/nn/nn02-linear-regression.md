@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN02 - Lineare Regression und Gradientenabstieg
+title: "NN02: Lineare Regression und Gradientenabstieg"
 ---
 
 ::: youtube

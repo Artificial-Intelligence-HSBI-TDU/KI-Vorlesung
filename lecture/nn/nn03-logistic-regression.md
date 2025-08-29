@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN03 - Logistische Regression
+title: "NN03: Logistische Regression"
 ---
 
 ::: youtube

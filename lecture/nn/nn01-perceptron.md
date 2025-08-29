@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN01 - Das Perzeptron
+title: "NN01: Das Perzeptron"
 ---
 
 ::: youtube

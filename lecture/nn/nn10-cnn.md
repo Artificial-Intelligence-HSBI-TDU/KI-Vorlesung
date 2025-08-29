@@ -1,7 +1,7 @@
 ---
 author: Canan Yıldız (Türkisch-Deutsche Universität)
 no_beamer: true
-title: NN10 - Vorschau Deep Learning (CNN, RNN)
+title: "NN10: Vorschau Deep Learning (CNN, RNN)"
 ---
 
 ::: youtube
