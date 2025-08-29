@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Lösen von diskreten CSP
+title: "CSP: Lösen von diskreten CSP"
 ---
 
 ::: tldr

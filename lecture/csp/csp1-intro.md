@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Einführung Constraints
+title: "CSP: Einführung Constraints"
 ---
 
 ::: tldr

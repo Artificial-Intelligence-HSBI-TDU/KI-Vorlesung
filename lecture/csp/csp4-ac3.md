@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Kantenkonsistenz und AC-3
+title: "CSP: Kantenkonsistenz und AC-3"
 ---
 
 ::: tldr

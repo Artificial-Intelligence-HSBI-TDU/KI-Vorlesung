@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Heuristiken
+title: "CSP: Heuristiken"
 ---
 
 ::: tldr
@@ -147,7 +147,7 @@ dass bei der Umsetzung nur wenig zusätzlicher Aufwand entsteht.
 :::
 
 ::: challenges
-Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch $\langle 
+Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch $\langle
 \lbrace v_1, v_2, v_3, v_4 \rbrace, \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
 \lbrace c_1, c_2, c_3, c_4 \rbrace \rangle$
 
