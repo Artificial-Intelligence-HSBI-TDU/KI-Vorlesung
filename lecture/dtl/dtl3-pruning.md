@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Pruning
+title: "DTL: Pruning"
 ---
 
 ::: tldr
