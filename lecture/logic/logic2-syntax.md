@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Einführung Syntax und Semantik
+title: "Logic: Einführung Syntax und Semantik"
 ---
 
 ::: tldr

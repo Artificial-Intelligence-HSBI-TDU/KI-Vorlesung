@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Modelle
+title: "Logic: Modelle"
 ---
 
 ::: tldr

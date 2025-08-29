@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Resolutionsbeweise
+title: "Logic: Resolutionsbeweise"
 ---
 
 ::: tldr

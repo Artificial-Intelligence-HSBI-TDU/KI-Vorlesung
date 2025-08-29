@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: Einführung Logik
+title: "Logic: Einführung Logik"
 ---
 
 ::: tldr
