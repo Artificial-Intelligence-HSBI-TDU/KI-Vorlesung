@@ -25,9 +25,7 @@ Gruppen kommt.
 
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-<!-- TODO
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png){width="40%"}
--->
 
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and

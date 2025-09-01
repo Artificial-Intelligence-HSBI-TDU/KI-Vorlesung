@@ -119,9 +119,7 @@ Siehe [A\*](search5-astar.md)
 ::: challenges
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-<!-- TODO
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
--->
 
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and

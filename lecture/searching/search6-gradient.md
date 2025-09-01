@@ -161,9 +161,7 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 ::: challenges
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-<!-- TODO
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
--->
 
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg){width="40%"}
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
