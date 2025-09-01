@@ -124,9 +124,7 @@ Die Temperatur `temp` bewegt sich dabei von hohen positiven Werten auf den Wert 
 # Detail: Akzeptieren von Verschlechterungen
 
 ::: center
-<!-- TODO
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Exp_e.svg/524px-Exp_e.svg.png){width="60%"}
--->
 
 [["Exp e.svg"](https://commons.wikimedia.org/wiki/File:Exp_e.svg) by Marcel Marnitz,
 reworked by [Georg-Johann](https://commons.wikimedia.org/wiki/User:Georg-Johann) on
