@@ -19,9 +19,7 @@ möglichen Lösung werden können.
 
 # Evolution sehr erfolgreich bei Anpassung
 
-<!-- TODO
 ![](https://images.unsplash.com/flagged/photo-1552863473-6e5ffe5e052f?fm=png&crop=entropy&cs=tinysrgb){width="60%"}
--->
 
 [[Photo Evolution](https://unsplash.com/photos/aWDgqexSxA0) by [Johannes
 Plenio](https://unsplash.com/@jplenio) on Unsplash.com ([Unsplash
