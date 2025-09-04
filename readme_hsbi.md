@@ -107,6 +107,7 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
     Kriterien je Person:
 
     1.  Aktive Teilnahme an der Internationalen Projektwoche "AI Connect"
+        (Team-Building, Kick-Off, Teamarbeit, Vortrag/Video)
     2.  Mind. fünf der neun Übungsblätter erfolgreich bearbeitet[^1]
     3.  Video-Vortrag über Mini-Projekt ("AI Connect") am Fr, 19.12., ab 10:30 Uhr,
         pro Team ca. 2 Minuten
