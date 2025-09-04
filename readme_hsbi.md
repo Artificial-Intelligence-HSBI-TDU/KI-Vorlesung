@@ -100,29 +100,41 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
 # Prüfungsform, Note und Credits (HSBI)
 
-**Klausur plus Testat**, 5 ECTS
+**(Digitale) Klausur plus Studienleistung**, 5 ECTS
 
--   **Testat**: Vergabe der Credit-Points
+-   **Studienleistung**: "Portfolio"
 
-    Kriterien: Mindestens 6 der 10 Aufgabenblätter erfolgreich bearbeitet.
+    Kriterien je Person:
 
-    ("erfolgreich bearbeitet": Bearbeitung individuell (also in 1er Teams), je
-    mindestens 60% bearbeitet, fristgerechte Abgabe der Lösungen im ILIAS,
-    Vorstellung der Lösungen im Praktikum)
+    1.  Aktive Teilnahme an der Internationalen Projektwoche "AI Connect"
+    2.  Mind. fünf der neun Übungsblätter erfolgreich bearbeitet[^1]
+    3.  Video-Vortrag über Mini-Projekt ("AI Connect") am Fr, 19.12., ab 10:30 Uhr,
+        pro Team ca. 2 Minuten
 
--   **Klausur**: =\> Modulnote
+    Je Kriterium: Abgabe eines Post Mortem[^2] im ILIAS (**jede Person
+    individuell**)
 
-    Schriftliche Prüfung ("**Klausur**") am Ende des Semesters (in beiden
-    Prüfungszeiträumen; [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)).
+-   **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
 
-Die nächste Klausur für "Grundlagen der KI" wird am **Dienstag, 01. April 2025**
-angeboten. Die Klausur wird als digitale Klausur auf dem Prüfungs-ILIAS der HSBI in
-Präsenz vor Ort in **Minden im Raum B40** durchgeführt. Die Prüfung für GKI findet
-zwischen **10 Uhr bis 16 Uhr** statt (Bekanntgabe der konkreten Startzeit per Mail
-ca. eine Woche vor dem Termin) und **dauert 90 Minuten**. Ein DIN-A4-Zettel ist als
-Hilfsmittel zugelassen. Der geprüfte Stoff bezieht sich auf den zuletzt
-durchgeführten Kurs (Winter 2024/25). Weitere Informationen siehe
-[Prüfungsvorbereitung HSBI](admin/exams-hsbi.md).
+[^1]: "erfolgreich bearbeitet": Bearbeitung in individuell, alle Aufgaben/Punkte
+    bearbeitet, fristgerechte Abgabe des ausreichenden Post Mortems im ILIAS
+
+[^2]: **Post Mortem**: Jede Person beschreibt in der ILIAS-Abgabe individuell(!) die
+    Bearbeitung des jeweiligen Kriteriums bzw. die Teilnahme am
+    "AI Connect"-Mini-Projekt zurückblickend mit mind. 200 bis max. 400 Wörtern
+    (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie dabei
+    aussagekräftig und nachvollziehbar auf folgende Punkte ein:
+
+    1.  Zusammenfassung: Was wurde gemacht?
+    2.  Details: Kurze Beschreibung besonders interessanter Aspekte der Umsetzung.
+    3.  Reflexion: Was war der schwierigste Teil bei der Bearbeitung? Wie haben Sie
+        dieses Problem gelöst?
+    4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
+    5.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
+        Vortrag, ...).
+
+    Siehe auch
+    https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/3.
 
 # Materialien
 
