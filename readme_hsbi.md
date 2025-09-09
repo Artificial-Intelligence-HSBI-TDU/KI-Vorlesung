@@ -59,10 +59,10 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 | Vorlesung (2 SWS): bis 26.10. | Vorlesung (2 SWS): ab 26.10. | Praktikum (2 SWS)              |
 |:------------------------------|:-----------------------------|:-------------------------------|
-| Mo, 09:00 - 10:30 Uhr (DE)    | Mo, 08:00 - 09:30 Uhr (DE)   | G1: Mo, xx:xx - xx:xx Uhr (DE) |
-| (online, Zoom)                | (online, Zoom)               | G2: Mo, xx:xx - xx:xx Uhr (DE) |
-|                               |                              | G3: Mo, xx:xx - xx:xx Uhr (DE) |
-|                               |                              | G4: Mo, xx:xx - xx:xx Uhr (DE) |
+| Mo, 09:00 - 10:30 Uhr (DE)    | Mo, 08:00 - 09:30 Uhr (DE)   | G1: Mo, 10:30 - 12:00 Uhr (DE) |
+| (online, Zoom)                | (online, Zoom)               | G2: Mo, 13:30 - 15:00 Uhr (DE) |
+|                               |                              | G3: Mo, 15:00 - 16:30 Uhr (DE) |
+|                               |                              | G4: Mo, 16:30 - 18:00 Uhr (DE) |
 |                               |                              | (online, Zoom)                 |
 
 Durchführung der Vorlesung als *Flipped Classroom*. Alle Online-Sitzungen per Zoom.
