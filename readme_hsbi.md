@@ -66,7 +66,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 |                               |                              | (online, Zoom)                 |
 
 Durchführung der Vorlesung als *Flipped Classroom*. Alle Online-Sitzungen per Zoom.
-(Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1555856))
+Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1555856).
 
 # Fahrplan (HSBI)
 
