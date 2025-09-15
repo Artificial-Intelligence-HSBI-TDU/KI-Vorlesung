@@ -25,7 +25,7 @@ wird schließlich rückgängig gemacht und durch die nächste Möglichkeit erset
 
 ``` python
 def BT_Search(assignment, csp):
-    if complete(assignment): return assignment
+    if complete(assignment, csp): return assignment
 
     var = VARIABLES(csp, assignment)
 
