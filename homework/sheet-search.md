@@ -10,8 +10,8 @@ title: "Übungsblatt: Problemlösen, Suche"
 Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
 gelöst werden können und welche aktuell noch ungelöst sind.
 
-Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa durch
-autonomes Fahren oder durch *Large Language Models* (LLM).
+Recherchieren und diskutieren Sie Auswirkungen auf die Gesellschaft durch die KI,
+etwa durch autonomes Fahren oder durch *Large Language Models* (LLM).
 
 Hier ein paar Startpunkte:
 
