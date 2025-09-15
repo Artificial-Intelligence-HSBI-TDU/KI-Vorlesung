@@ -24,6 +24,8 @@ Hier ein paar Startpunkte:
     (https://www.zeit.de/digital/2024-07/ki-filme-videos-newsletter-kuenstliche-intelligenz)
 -   "Police pulls over a driverless Waymo car"
     (https://www.reddit.com/r/Damnthatsinteresting/comments/1dvsod6/phoenix_police_officer_pulls_over_a_driverless)
+-   "AI is making it up. Your authoritative source is the documentation"
+    (https://github.com/jgm/pandoc/discussions/10994)
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
