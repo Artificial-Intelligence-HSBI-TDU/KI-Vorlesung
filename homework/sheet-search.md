@@ -22,7 +22,8 @@ Hier ein paar Startpunkte:
     (https://www.reddit.com/r/artificial/comments/1m1oup8/zuckerberg_says_meta_will_build_data_center_the)
 -   "Mach dir selbst ein Video"
     (https://www.zeit.de/digital/2024-07/ki-filme-videos-newsletter-kuenstliche-intelligenz)
-
+-   "Police pulls over a driverless Waymo car"
+    (https://www.reddit.com/r/Damnthatsinteresting/comments/1dvsod6/phoenix_police_officer_pulls_over_a_driverless)
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
