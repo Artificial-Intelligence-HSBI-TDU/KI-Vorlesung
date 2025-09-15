@@ -17,7 +17,7 @@ Hier ein paar Startpunkte:
 
 -   "Empirical evidence of Large Language Model's influence on human spoken
     communication" (https://arxiv.org/abs/2409.01754) - Gut? Schlecht? Egal?
-
+-   "AI and Cognitive Decline" (https://www.reddit.com/r/Professors/s/Otxpcpe65L)
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
