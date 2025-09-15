@@ -27,6 +27,30 @@ Hier ein paar Startpunkte:
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
+# Bonus: ChatGPT Taboo (2P)
+
+Spielen Sie [Tabu](https://en.wikipedia.org/wiki/Taboo_(game)) mit Ihrem
+Lieblings-Chatbot und bringen Sie den Bot dazu, ein bestimmtes Wort oder einen Satz
+zu sagen. Sie haben dabei eine Liste mit Wörtern, die Sie nicht verwenden dürfen.
+
+Geben Sie einen Bericht darüber ab, was Sie versucht haben, wie leicht/schwer es war
+und eine vollständige Historie des "Gesprächs". (Grenze: nicht länger als 30
+Minuten, nicht mehr als 5 Seiten)
+
+*Thema*: Interaktion mit Chatbots
+
+# Bonus: Verlässlichkeit von ChatGPT (2P)
+
+Vergleichen Sie Informationen aus zuverlässigen Quellen mit Informationen aus einem
+LLM. Beurteilen Sie, ob die vom Model generierte Information korrekt ist oder ob
+Dinge fehlen oder Halluzinationen vorliegen.
+
+Beispiel I: Erstellung einer Zeitleiste eines historischen Ereignisses.
+
+Beispiel II: Erstellen von Quellcode zu einem Standardproblem aus der Informatik.
+
+*Thema*: Qualität und Zuverlässigkeit von generierten Inhalten
+
 # Search.01: Problemformalisierung, Zustandsraum (3P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen
