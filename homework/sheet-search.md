@@ -20,6 +20,8 @@ Hier ein paar Startpunkte:
 -   "AI and Cognitive Decline" (https://www.reddit.com/r/Professors/s/Otxpcpe65L)
 -   "Data Center the Size of Manhattan"
     (https://www.reddit.com/r/artificial/comments/1m1oup8/zuckerberg_says_meta_will_build_data_center_the)
+-   "Mach dir selbst ein Video"
+    (https://www.zeit.de/digital/2024-07/ki-filme-videos-newsletter-kuenstliche-intelligenz)
 
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
