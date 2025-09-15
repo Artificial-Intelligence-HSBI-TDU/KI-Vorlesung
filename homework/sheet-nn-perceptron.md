@@ -5,16 +5,6 @@ points: 10 Punkte
 title: "Übungsblatt: Perzeptron"
 ---
 
-# Bonus: Möglichkeiten und Grenzen sowie Auswirkungen der KI (2P)
-
-Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
-gelöst werden können und welche aktuell noch ungelöst sind.
-
-Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa durch
-autonomes Fahren oder durch *Large Language Models* (LLM).
-
-*Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
-
 # NN.Perzeptron.01: Entscheidungsgrenze (2P)
 
 -   (1P) Betrachten Sie das durch den Gewichtsvektor $(w_0,w_1,w_2)^T = (2,1,1)^T$

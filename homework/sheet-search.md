@@ -5,6 +5,16 @@ points: 10 Punkte
 title: "Übungsblatt: Problemlösen, Suche"
 ---
 
+# Bonus: Möglichkeiten und Grenzen sowie Auswirkungen der KI (2P)
+
+Recherchieren Sie, welche Probleme bereits mittels Computer- bzw. Robotereinsatz
+gelöst werden können und welche aktuell noch ungelöst sind.
+
+Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa durch
+autonomes Fahren oder durch *Large Language Models* (LLM).
+
+*Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
+
 # Search.01: Problemformalisierung, Zustandsraum (3P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen
