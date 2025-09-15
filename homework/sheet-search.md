@@ -13,6 +13,12 @@ gelöst werden können und welche aktuell noch ungelöst sind.
 Recherchieren Sie Auswirkungen auf die Gesellschaft durch die KI, etwa durch
 autonomes Fahren oder durch *Large Language Models* (LLM).
 
+Hier ein paar Startpunkte:
+
+-   "Empirical evidence of Large Language Model's influence on human spoken
+    communication" (https://arxiv.org/abs/2409.01754) - Gut? Schlecht? Egal?
+
+
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
 # Search.01: Problemformalisierung, Zustandsraum (3P)
