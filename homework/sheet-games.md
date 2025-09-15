@@ -5,6 +5,18 @@ points: 10 Punkte
 title: "Übungsblatt: Spiele"
 ---
 
+# Bonus: Verlässlichkeit von ChatGPT (2P)
+
+Vergleichen Sie Informationen aus zuverlässigen Quellen mit Informationen aus einem
+LLM. Beurteilen Sie, ob die vom Model generierte Information korrekt ist oder ob
+Dinge fehlen oder Halluzinationen vorliegen.
+
+Beispiel I: Erstellung einer Zeitleiste eines historischen Ereignisses.
+
+Beispiel II: Erstellen von Quellcode zu einem Standardproblem aus der Informatik.
+
+*Thema*: Qualität und Zuverlässigkeit von generierten Inhalten
+
 # Games.01: Handsimulation: Minimax und alpha-beta-Pruning (3P)
 
 ![](images/alphabeta.png)

@@ -29,45 +29,6 @@ Hier ein paar Startpunkte:
 
 *Thema*: Gefühl für bereits realisierbare Aufgaben, Chancen und Risiken, Ethik
 
-# Bonus: ChatGPT Taboo (2P)
-
-Spielen Sie [Tabu](https://en.wikipedia.org/wiki/Taboo_(game)) mit Ihrem
-Lieblings-Chatbot und bringen Sie den Bot dazu, ein bestimmtes Wort oder einen Satz
-zu sagen. Sie haben dabei eine Liste mit Wörtern, die Sie nicht verwenden dürfen.
-
-Geben Sie einen Bericht darüber ab, was Sie versucht haben, wie leicht/schwer es war
-und eine vollständige Historie des "Gesprächs". (Grenze: nicht länger als 30
-Minuten, nicht mehr als 5 Seiten)
-
-*Thema*: Interaktion mit Chatbots
-
-# Bonus: Verlässlichkeit von ChatGPT (2P)
-
-Vergleichen Sie Informationen aus zuverlässigen Quellen mit Informationen aus einem
-LLM. Beurteilen Sie, ob die vom Model generierte Information korrekt ist oder ob
-Dinge fehlen oder Halluzinationen vorliegen.
-
-Beispiel I: Erstellung einer Zeitleiste eines historischen Ereignisses.
-
-Beispiel II: Erstellen von Quellcode zu einem Standardproblem aus der Informatik.
-
-*Thema*: Qualität und Zuverlässigkeit von generierten Inhalten
-
-# Bonus: Starke vs. Schwache KI (2P)
-
-Recherchieren Sie und diskutieren Sie folgende Punkte:
-
--   Ist ein System wie ChatGPT "intelligent"? Was ist der Kern des Systems?
--   Gibt es Systeme, die intelligent sind? Was tun diese, wie arbeiten sie?
--   Brauchen wir wirklich Intelligenz in Systemen? Reicht auch schwache KI, d.h.
-    reichen intelligent *wirkende* Systeme?
--   Absicht vs. Auswirkung: vorteilhafte Anwendungen vs. Unfälle (Robustheit und
-    falsche Korrelationen, Fairness, Sicherheit) vs. Missbrauch (Spam, Betrug,
-    Spear-Phishing, Desinformation) vs. doppelte Verwendung ("*dual use*": Raketen,
-    Kernkraft, Genbearbeitung, ...) vs. *Bias* (Voreingenommenheit)
-
-*Thema*: Schwache vs. starke KI, Auswirkungen und Nutzen
-
 # Search.01: Problemformalisierung, Zustandsraum (3P)
 
 Drei Elben und drei Orks befinden sich an einem Ufer eines Flusses und wollen diesen

@@ -5,6 +5,18 @@ points: 10 Punkte
 title: "Übungsblatt: Lokale Suche, GA"
 ---
 
+# Bonus: ChatGPT Taboo (2P)
+
+Spielen Sie [Tabu](https://en.wikipedia.org/wiki/Taboo_(game)) mit Ihrem
+Lieblings-Chatbot und bringen Sie den Bot dazu, ein bestimmtes Wort oder einen Satz
+zu sagen. Sie haben dabei eine Liste mit Wörtern, die Sie nicht verwenden dürfen.
+
+Geben Sie einen Bericht darüber ab, was Sie versucht haben, wie leicht/schwer es war
+und eine vollständige Historie des "Gesprächs". (Grenze: nicht länger als 30
+Minuten, nicht mehr als 5 Seiten)
+
+*Thema*: Interaktion mit Chatbots
+
 # EA.01: Modellierung von GA (2P)
 
 Betrachten Sie das 8-Queens-Problem sowie das Landkarten-Färbeproblem (aus Vorlesung
