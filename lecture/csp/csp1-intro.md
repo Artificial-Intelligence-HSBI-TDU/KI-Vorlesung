@@ -160,3 +160,13 @@ Lesen Sie in [@Russell2020] bitte den Abschnitt 5.1 "Defining Constraint Satisfa
 -   [Selbsttest Intro CSP
     (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106572&client_id=FH-Bielefeld)
 :::
+
+::: challenges
+Drei Personen - Paul, George und John - sind zu einem Abendessen eingeladen und
+sollen an einer Seite des Tisches auf drei nebeneinander liegenden Plätzen platziert
+werden. George und John können sich nicht besonders gut leiden, weshalb sie nicht
+direkt nebeneinander gesetzt werden dürfen.
+
+Formulieren Sie das Platzierungsproblem als Constraint-Problem. Geben Sie Variablen,
+Domänen und Constraints an.
+:::
