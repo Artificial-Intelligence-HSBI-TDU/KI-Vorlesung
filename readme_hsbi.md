@@ -113,7 +113,7 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
 -   **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
 
-*Hinweise*:
+::: {.details title="Hinweise"}
 
 -   Die Bearbeitung der Leistungen erfolgt individuell (außer "AI Connect"
     Projektwoche).
@@ -149,6 +149,8 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
     Siehe auch
     https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/3.
+
+:::
 
 # Materialien
 
