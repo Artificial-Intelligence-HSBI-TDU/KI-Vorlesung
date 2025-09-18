@@ -34,6 +34,8 @@ Lösen Sie nun das obige Rätsel (aus CSP.01):
     eine Lösung (bzw. Unlösbarkeit)? Falls nicht, wenden Sie anschließend den
     ergänzten Algorithmus aus Schritt (2) an. Vergleichen Sie wieder die Ergebnisse
     und die Laufzeiten.
+4.  Implementieren Sie das Rätsel nun in [MiniZinc](https://www.minizinc.org/).
+    Vergleichen Sie wieder die Ergebnisse und die Laufzeiten.
 
 Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
 Sie können gern auch die Java-Klassen im Paket
