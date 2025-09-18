@@ -148,9 +148,7 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
     -   Zuweisung, Lösung, ...
 
 ::: readings
--   @Russell2020: CSP: Abschnitt 5.1
--   @Kumar1992
--   @Bartak2001
+Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.1 nach.
 :::
 
 ::: outcomes
