@@ -99,39 +99,53 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
 # Prüfungsform, Note und Credits (HSBI)
 
-**(Digitale) Klausur plus Studienleistung**, 5 ECTS
+**(Digitale) Klausur plus Studienleistung (Portfolio)**, 5 ECTS
 
--   **Studienleistung**: "Portfolio"
+-   **Studienleistung**: "Portfolio" - Kriterien je Person:
 
-    Kriterien je Person:
+    1.  Teilnahme an der Internationalen Projektwoche "AI Connect" mit aktiver
+        Beteiligung (Team-Building, Kick-Off, Teamarbeit, Vortrag/Video)
+    2.  Mind. fünf Übungsblätter erfolgreich bearbeitet
+    3.  Video-Vortrag zum erfolgreich bearbeiteten Mini-Projekt ("AI Connect") am
+        Fr, 19.12., ab 10:30 Uhr, a 2 Minuten (pro Team)
 
-    1.  Aktive Teilnahme an der Internationalen Projektwoche "AI Connect"
-        (Team-Building, Kick-Off, Teamarbeit, Vortrag/Video)
-    2.  Mind. fünf der neun Übungsblätter erfolgreich bearbeitet[^1]
-    3.  Video-Vortrag über Mini-Projekt ("AI Connect") am Fr, 19.12., ab 10:30 Uhr,
-        pro Team ca. 2 Minuten
-
-    Je Kriterium: Abgabe eines Post Mortem[^2] im ILIAS (**jede Person
-    individuell**)
+    Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
 
 -   **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
 
-[^1]: "erfolgreich bearbeitet": Bearbeitung in individuell, alle Aufgaben/Punkte
-    bearbeitet, fristgerechte Abgabe des ausreichenden Post Mortems im ILIAS
+*Hinweise*:
 
-[^2]: **Post Mortem**: Jede Person beschreibt in der ILIAS-Abgabe individuell(!) die
-    Bearbeitung des jeweiligen Kriteriums bzw. die Teilnahme am
-    "AI Connect"-Mini-Projekt zurückblickend mit mind. 200 bis max. 400 Wörtern
-    (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie dabei
-    aussagekräftig und nachvollziehbar auf folgende Punkte ein:
+-   Die Bearbeitung der Leistungen erfolgt individuell (außer "AI Connect"
+    Projektwoche).
+-   Für die "AI Connect" Projektwoche werden gemischte Teams aus den beteiligten
+    Hochschulen gebildet.
+-   Die Post Mortems sind individuell zu erstellen und abzugeben.
+-   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
+    Anwesenheit/Beteiligung werden dokumentiert.
+-   "Erfolgreiche Bearbeitung" eines Blattes umfasst Bearbeitung aller Aufgaben des
+    Blattes und fristgerechte Abgabe des ausreichenden Post Mortems im ILIAS. Die
+    intensive Beschäftigung mit den Aufgaben muss erkennbar sein.
+-   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
+    jeweiligen Kriteriums bzw. die Teilnahme am "AI Connect"-Mini-Projekt
+    zurückblickend mit mind. 200 bis max. 400 Wörtern (Nutzlast; Überschriften und
+    Links zählen nicht mit). Gehen Sie dabei aussagekräftig und nachvollziehbar auf
+    folgende Punkte ein:
 
-    1.  Zusammenfassung: Was wurde gemacht?
-    2.  Details: Kurze Beschreibung besonders interessanter Aspekte der Umsetzung.
-    3.  Reflexion: Was war der schwierigste Teil bei der Bearbeitung? Wie haben Sie
-        dieses Problem gelöst?
+    1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
+        besprochen?
+    2.  Details: Kurze Beschreibung besonders interessanter Aspekte.
+    3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
+        gelöst?
     4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
-    5.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
+    5.  Team: Mit wem haben Sie zusammengearbeitet?
+    6.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
         Vortrag, ...).
+
+    Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
+    entsprechend inhaltlich an, (6) entfällt.
+
+    Die Post Mortems geben Sie bitte pro Person bis spätestens zur jeweiligen
+    Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797) ab.
 
     Siehe auch
     https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/3.
