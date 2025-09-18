@@ -186,9 +186,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 -   ... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz
 
 ::: readings
--   @Russell2020: CSP, AC-3: Abschnitt 5.2
--   @Kumar1992
--   @Bartak2001
+Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.2 nach.
 :::
 
 ::: outcomes
