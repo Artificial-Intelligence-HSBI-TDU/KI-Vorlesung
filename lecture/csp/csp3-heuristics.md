@@ -145,6 +145,8 @@ Lesen Sie in [@Russell2020] bitte den Abschnitt 5.3 "Backtracking Search for CSP
 :::
 
 ::: challenges
+**Problem 1**
+
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch $\langle
 \lbrace v_1, v_2, v_3, v_4 \rbrace, \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
 \lbrace c_1, c_2, c_3, c_4 \rbrace \rangle$
@@ -160,4 +162,25 @@ mit
 2.  Welche Variable würde bei der Anwendung von *MRV* und *Gradheuristik* im ersten
     Schritt bei der Suche mit der BT-Search ausgewählt?
 3.  Geben Sie eine Lösung für das Problem an.
+
+**Problem 2**
+
+Sei ein Constraintproblem definiert durch $V = \lbrace a, b, c, d, e \rbrace$,
+$D_{a} = D_{b} = D_{c} = D_{e} = \lbrace 1,2,3 \rbrace, D_{d} = \lbrace 1,2 \rbrace$,
+und $C = \lbrace c_1, c_2, c_3, c_4, c_5 \rbrace$
+
+mit
+
+-   $c_1=\left((a,b), \ne\right)$,
+-   $c_2=\left((b,c), \ne\right)$,
+-   $c_3=\left((a,c), \ne\right)$,
+-   $c_4=\left((c,d), =\right)$, und
+-   $c_5=\left((b,e), <\right)$.
+
+1.  Zeichen Sie den Constraint-Graph.
+2.  Welche Variable würde bei der Anwendung der Heuristik *MRV* im ersten Schritt
+    bei der Suche mit der BT-Search ausgewählt?
+3.  Gegeben die (partielle) Belegung $d=1$ und $c=1$, welche Variable würde mit
+    *MRV* ausgewählt werden?
+4.  Was würde die *Gradheuristik* jeweils ändern?
 :::
