@@ -21,7 +21,7 @@ auf.
 
 *Thema*: Formulierung von Problemen als CSP
 
-# CSP.02: Framework für Constraint Satisfaction (2P)
+# CSP.02: Framework für Constraint Satisfaction (3P)
 
 Lösen Sie nun das obige Rätsel (aus CSP.01):
 
@@ -44,7 +44,7 @@ bzw. die Python-Klassen in
 [`csp.py`](https://github.com/aimacode/aima-python/blob/master/csp.py) als
 Ausgangspunkt nutzen.[^1]
 
-# CSP.03: Kantenkonsistenz mit AC-3 (3P)
+# CSP.03: Kantenkonsistenz mit AC-3 (2P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 
@@ -68,7 +68,7 @@ mit
 
 *Thema*: Handsimulation des AC-3-Algorithmus
 
-# CSP.04: Forward Checking und Kantenkonsistenz (2P)
+# CSP.04: Forward Checking und Kantenkonsistenz (1P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
@@ -87,7 +87,7 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-# CSP.05: Sudoku (4P)
+# CSP.05: Sudoku (2P)
 
 Formulieren Sie [Sudoku](https://en.wikipedia.org/wiki/Sudoku) als CSP und geben Sie
 Variablen, Domänen und Constraints an.
@@ -104,17 +104,6 @@ Vergleichen Sie beide Algorithmen. Wie aufwändig ist die Repräsentation in Min
 im Vergleich?
 
 *Thema*: BT-Suche plus AC-3 vs. lokale Suche mit Min-Conflicts
-
-# CSP.06: Ternäre Constraints (1P)
-
-Betrachten Sie das Problem
-[ex_6](https://github.com/aimacode/aima-exercises/blob/master/markdown/6-Constraint-Satisfaction-Problems/exercises/ex_6/question.md)
-aus den [AIMA Excercises](https://github.com/aimacode/aima-exercises).
-
-Diskutieren Sie die erste Frage (Umformung von ternären Constraints) und geben Sie
-Lösungsvorschläge an.
-
-*Thema*: Umformung von Constraints
 
 [^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht
     genießen!
