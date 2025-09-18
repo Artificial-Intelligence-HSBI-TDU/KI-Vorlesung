@@ -162,6 +162,8 @@ Lesen Sie in [@Russell2020] bitte den Abschnitt 5.1 "Defining Constraint Satisfa
 :::
 
 ::: challenges
+**Problem 1**
+
 Drei Personen - Paul, George und John - sind zu einem Abendessen eingeladen und
 sollen an einer Seite des Tisches auf drei nebeneinander liegenden Plätzen platziert
 werden. George und John können sich nicht besonders gut leiden, weshalb sie nicht
@@ -169,4 +171,15 @@ direkt nebeneinander gesetzt werden dürfen.
 
 Formulieren Sie das Platzierungsproblem als Constraint-Problem. Geben Sie Variablen,
 Domänen und Constraints an.
+
+**Problem 2**
+
+<!-- Formulierung n-Queens -->
+
+Betrachten Sie das Problem
+[ex_2](https://github.com/aimacode/aima-exercises/blob/master/markdown/6-Constraint-Satisfaction-Problems/exercises/ex_2/question.md)
+aus den [AIMA Excercises](https://github.com/aimacode/aima-exercises).
+
+Sei $n=3$. Diskutieren Sie die Fragen (1), (2) und (3) und geben Sie
+Lösungsvorschläge an.
 :::
