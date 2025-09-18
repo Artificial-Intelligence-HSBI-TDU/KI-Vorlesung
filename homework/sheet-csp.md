@@ -95,7 +95,11 @@ Implementieren Sie *MAC* (BT-Search plus AC-3) und lösen Sie das Sudoku-CSP dam
 Implementieren Sie den *Min-Conflicts* Algorithmus und lösen Sie das Sudoku-CSP
 damit.
 
-Vergleichen Sie beide Algorithmen.
+Implementieren Sie das Problem in [MiniZinc](https://www.minizinc.org/) und lösen
+Sie das selbe Rätsel.
+
+Vergleichen Sie beide Algorithmen. Wie aufwändig ist die Repräsentation in MiniZinc
+im Vergleich?
 
 *Thema*: BT-Suche plus AC-3 vs. lokale Suche mit Min-Conflicts
 
