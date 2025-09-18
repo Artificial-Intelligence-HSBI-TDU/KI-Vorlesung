@@ -182,4 +182,9 @@ aus den [AIMA Excercises](https://github.com/aimacode/aima-exercises).
 
 Sei $n=3$. Diskutieren Sie die Fragen (1), (2) und (3) und geben Sie
 Lösungsvorschläge an.
+
+**Problem 3**
+
+Formulieren Sie [Sudoku](https://en.wikipedia.org/wiki/Sudoku) als CSP und geben Sie
+Variablen, Domänen und Constraints an.
 :::

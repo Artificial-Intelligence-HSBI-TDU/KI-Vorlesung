@@ -44,7 +44,7 @@ bzw. die Python-Klassen in
 [`csp.py`](https://github.com/aimacode/aima-python/blob/master/csp.py) als
 Ausgangspunkt nutzen.[^1]
 
-# CSP.03: Kantenkonsistenz mit AC-3 (2P)
+# CSP.03: Kantenkonsistenz mit AC-3 (1P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 
@@ -87,23 +87,34 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-# CSP.05: Sudoku (2P)
+# CSP.05: Planung von Indoor-Spielplätzen (3P)
 
-Formulieren Sie [Sudoku](https://en.wikipedia.org/wiki/Sudoku) als CSP und geben Sie
-Variablen, Domänen und Constraints an.
+Sie sind für die Planung von Indoor-Spielplätzen zuständig.
 
-Implementieren Sie *MAC* (BT-Search plus AC-3) und lösen Sie das Sudoku-CSP damit.
+Ein Spielplatz hat eine rechteckige Form, etwa 40x100 m. Zur Vereinfachung wird
+diese Fläche in ein gleichmäßiges Raster unterteilt, beispielsweise 10x10 cm.
+Es gibt am Rand mehrere Türen (normaler Eingang, Notausgänge).
 
-Implementieren Sie den *Min-Conflicts* Algorithmus und lösen Sie das Sudoku-CSP
-damit.
+Auf dieser Grundfläche sollen verschiedene Spielgeräte angeordnet werden,
+beispielsweise Go-Kart-Bahnen, Hüpfburgen und Kletterberge. Diese Spielgeräte haben
+selbst eine rechteckige Grundfläche, wobei die Abmessungen rastergenau sein sollen
+(also Vielfache der Rastergröße). Weiterhin gibt es eine Bar, die als größerer
+rechteckiger Bereich modelliert werden kann (keine Unterscheidung in Tresen plus
+Tische plus Stühle o.ä. notwendig).
 
-Implementieren Sie das Problem in [MiniZinc](https://www.minizinc.org/) und lösen
-Sie das selbe Rätsel.
+Die Aufgabe besteht darin, die Spielgeräte und den Bar-Bereich nach bestimmten
+Randbedingungen anzuordnen. Zu diesen Vorgaben gehört, dass sich die Spielgeräte
+nicht überlappen oder berühren, dass bestimmte Sicherheitsabstände eingehalten
+werden (1m zw. den Spielgeräten), dass Entspannungszonen eingerichtet werden und
+dass Sichtlinien gewährleistet sind (z.B. sollten die Aktivitäten am Kletterberg vom
+Barbereich aus beobachtet werden können). Die Bar ist bevorzugt direkt am Eingang zu
+finden. Notausgänge dürfen nicht verstellt werden.
 
-Vergleichen Sie beide Algorithmen. Wie aufwändig ist die Repräsentation in MiniZinc
-im Vergleich?
+Abstrahieren Sie das gegebene Problem angemessen und geben Sie eine geeignete
+Modellierung als CSP an. Definieren Sie sich ein paar Spielgeräte und lösen Sie das
+Problem mit Hilfe von [MiniZinc](https://www.minizinc.org/).
 
-*Thema*: BT-Suche plus AC-3 vs. lokale Suche mit Min-Conflicts
+*Thema*: Modellierung eines Real-World-Problems
 
 [^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht
     genießen!
