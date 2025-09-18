@@ -186,7 +186,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 -   ... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz
 
 ::: readings
-Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.2 nach.
+Lesen Sie in [@Russell2020] bitte den Abschnitt 5.2 "Constraint Propagation".
 :::
 
 ::: outcomes

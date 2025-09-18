@@ -148,7 +148,7 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
     -   Zuweisung, Lösung, ...
 
 ::: readings
-Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.1 nach.
+Lesen Sie in [@Russell2020] bitte den Abschnitt 5.1 "Defining Constraint Satisfaction Problems".
 :::
 
 ::: outcomes

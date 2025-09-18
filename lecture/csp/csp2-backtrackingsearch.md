@@ -74,7 +74,7 @@ Backtracking.
 -   Lösung von CSP mit endlichen Domänen mit Hilfe der Backtracking-Suche
 
 ::: readings
-Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.3 nach.
+Lesen Sie in [@Russell2020] bitte den Abschnitt 5.3 "Backtracking Search for CSPs".
 :::
 
 ::: outcomes
