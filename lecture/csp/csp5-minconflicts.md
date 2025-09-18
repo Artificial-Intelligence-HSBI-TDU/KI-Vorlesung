@@ -160,7 +160,7 @@ problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem).
 -   Typische Probleme mit Plateaus
 
 ::: readings
--   @Russell2020: CSP, Min-Conflicts Heuristik: Abschnitt 5.4
+Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.5 (Min-Conflicts Heuristik) nach.
 :::
 
 ::: outcomes
