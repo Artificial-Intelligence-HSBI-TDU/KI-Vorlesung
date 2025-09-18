@@ -132,9 +132,7 @@ dass bei der Umsetzung nur wenig zusätzlicher Aufwand entsteht.
 -   Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV
 
 ::: readings
--   @Russell2020: CSP, Backtracking/Heuristiken: Abschnitt 5.3
--   @Kumar1992
--   @Bartak2001
+Lesen Sie in [@Russell2020] zur Vertiefung Abschnitt 5.3 nach.
 :::
 
 ::: outcomes
