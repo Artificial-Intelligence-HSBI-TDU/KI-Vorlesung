@@ -99,5 +99,16 @@ Vergleichen Sie beide Algorithmen.
 
 *Thema*: BT-Suche plus AC-3 vs. lokale Suche mit Min-Conflicts
 
+# CSP.06: Ternäre Constraints (1P)
+
+Betrachten Sie das Problem
+[ex_6](https://github.com/aimacode/aima-exercises/blob/master/markdown/6-Constraint-Satisfaction-Problems/exercises/ex_6/question.md)
+aus den [AIMA Excercises](https://github.com/aimacode/aima-exercises).
+
+Diskutieren Sie die erste Frage (Umformung von ternären Constraints) und geben Sie
+Lösungsvorschläge an.
+
+*Thema*: Umformung von Constraints
+
 [^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht
     genießen!
