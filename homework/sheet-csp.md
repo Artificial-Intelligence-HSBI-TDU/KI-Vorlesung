@@ -85,13 +85,19 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-# CSP.05: Anwendungen (1P)
+# CSP.05: Sudoku (4P)
 
-Recherchieren Sie, in welchen Anwendungen CSP vorkommen und mit der BT-Suche (plus
-Heuristiken) oder sogar AC-3 gelöst werden. Erklären Sie kurz, wie und wofür die
-Algorithmen jeweils genutzt werden.
+Formulieren Sie [Sudoku](https://en.wikipedia.org/wiki/Sudoku) als CSP und geben Sie
+Variablen, Domänen und Constraints an.
 
-*Thema*: Anwendungen von CSP, BT-Suche und AC-3
+Implementieren Sie *MAC* (BT-Search plus AC-3) und lösen Sie das Sudoku-CSP damit.
+
+Implementieren Sie den *Min-Conflicts* Algorithmus und lösen Sie das Sudoku-CSP
+damit.
+
+Vergleichen Sie beide Algorithmen.
+
+*Thema*: BT-Suche plus AC-3 vs. lokale Suche mit Min-Conflicts
 
 [^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht
     genießen!
