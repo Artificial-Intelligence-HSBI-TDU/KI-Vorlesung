@@ -80,3 +80,20 @@ Lesen Sie in [@Russell2020] bitte den Abschnitt 5.3 "Backtracking Search for CSP
 ::: outcomes
 -   k3: Ich kann CSP mit endlichen Domänen mit Hilfe der BT-Suche lösen
 :::
+
+::: challenges
+Sei ein Constraintproblem definiert durch $V = \lbrace a, b, c, d, e \rbrace$,
+$D_{a} = D_{b} = D_{c} = D_{e} = \lbrace 1,2,3 \rbrace, D_{d} = \lbrace 1,2 \rbrace$,
+und $C = \lbrace c_1, c_2, c_3, c_4, c_5 \rbrace$
+
+mit
+
+-   $c_1=\left((a,b), \ne\right)$,
+-   $c_2=\left((b,c), \ne\right)$,
+-   $c_3=\left((a,c), \ne\right)$,
+-   $c_4=\left((c,d), =\right)$, und
+-   $c_5=\left((b,e), <\right)$.
+
+1.  Zeichen Sie den Constraint-Graph.
+2.  Zeigen Sie, wie der BT-Search-Algorithmus eine Lösung für das Problem findet.
+:::
