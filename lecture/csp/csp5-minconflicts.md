@@ -61,7 +61,9 @@ Heuristiken einsetzt.
 
 # Beispiel: Einfärben von Landkarten
 
-![](images/map_graph.png){width="80%"}
+Ausgangszustand:
+
+![](images/map_graph.png){width="75%"}
 
 ::: slides
 # Beispiel (cnt.)
@@ -86,16 +88,6 @@ Schritt 2: "Schütteln"
 
 **Lösung erreicht.**
 
-::: notes
-**Beispiel aus der Praxis**:
-
-Nach [Min-conflicts algorithm \>
-Example](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example) konnte die
-Rechenzeit für die Planungen der Beobachtungen für eine Woche für das
-Hubble-Weltraum-Teleskop von **drei Wochen** durch Einsatz der Min-Conflicts
-Heuristik **auf 10 Minuten gesenkt** werden.
-:::
-
 # Min-Conflicts Heuristik
 
 ``` python
@@ -116,10 +108,11 @@ Min-Conflicts(csp, maxSteps):
 fig. 5.8]]{.credits nolist="true"}
 
 ::: notes
-**Hinweis**: Wenn es mehrere gleichwertige Möglichkeiten gibt, nimm eine beliebige
-davon.
+## Hinweis
 
-**Beobachtungen**:
+Wenn es mehrere gleichwertige Möglichkeiten gibt, nimm eine beliebige davon.
+
+## Beobachtungen
 
 -   Algorithmus braucht i.d.R. sehr wenige Schritte bis zur Lösung
 -   Plateaus können häufig auftreten
@@ -134,6 +127,14 @@ davon.
         (vgl. [GA/EA](../ea/ea2-ga.md))
 -   Weitere Verbesserung: Statt einer beliebigen Variable diejenige mit den meisten
     Konflikten auswählen
+
+## Beispiel aus der Praxis
+
+Mit der Min-Conflicts Heuristik konnte die Rechenzeit für die Planungen für eine
+Woche Beobachtungen für das Hubble-Weltraum-Teleskop von **drei Wochen** auf **10
+Minuten** gesenkt werden. [Wikipedia: [Min-conflicts algorithm \>
+Example](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example)]{.credits
+nolist="true"}
 :::
 
 # Diskussion
