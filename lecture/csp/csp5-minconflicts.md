@@ -132,9 +132,9 @@ Wenn es mehrere gleichwertige Möglichkeiten gibt, nimm eine beliebige davon.
 
 Mit der Min-Conflicts Heuristik konnte die Rechenzeit für die Planungen für eine
 Woche Beobachtungen für das Hubble-Weltraum-Teleskop von **drei Wochen** auf **10
-Minuten** gesenkt werden. [Wikipedia: [Min-conflicts algorithm \>
-Example](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example)]{.credits
-nolist="true"}
+Minuten** gesenkt werden.
+([[Wikipedia](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example)]{.credits
+nolist="true"})
 :::
 
 # Diskussion
