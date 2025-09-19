@@ -95,7 +95,7 @@ Min-Conflicts(csp, maxSteps):
     assignment = random_complete_assignment(csp)
 
     for step in 1..maxSteps:
-        if complete(assignment, csp): return assignment
+        if complete_consistent(assignment, csp): return assignment
 
         var = random_conflicted_variable(csp, assignment)
         value = choose_val_min_conflicts(csp, assignment, var)
@@ -150,7 +150,7 @@ MAC (Maintaining Arc Consistency: BT-Search plus AC-3):
 
 \smallskip
 
-Min-Conflict Heuristik:
+Min-Conflicts Heuristik:
 
 -   Lokale Repair‑Heuristik
 -   Startet mit kompletter und zufälliger Belegung
