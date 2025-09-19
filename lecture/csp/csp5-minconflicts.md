@@ -22,7 +22,7 @@ entgegenzuwirken versucht.
 :::
 
 ::: youtube
--   [VL CSP, Min-Conflicts Heuristik](TODO)
+-   [VL CSP, Min-Conflicts Heuristik](https://youtu.be/Z-Xk6oCBZJ0)
 :::
 
 # Problem bei BT-Suche
