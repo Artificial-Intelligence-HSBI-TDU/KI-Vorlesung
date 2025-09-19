@@ -39,15 +39,64 @@ selbst wenn man die in [CSP: Heuristiken](csp3-heuristics.md) besprochenen
 Heuristiken einsetzt.
 :::
 
-# Idee Min-Conflicts Heuristik
+# Idee: Würfeln und Schütteln
+
+1.  **Würfeln**: Erzeuge zufällige *vollständige* Belegung
+
+    ::: notes
+    Was würde passieren, wenn wir analog zu [GA/EA](../ea/ea2-ga.md) eine
+    *vollständige* Codierung wählen würden mit initial zufällig aus den Domänen
+    ausgewählten Werten?
+    :::
+
+\bigskip
+
+2.  **Schütteln**: Verändere schrittweise Werte
+
+    ::: notes
+    Was würde passieren, wenn wir danach die Konflikte "*heraus schütteln*"
+    (erinnert ein bisschen an [Simulated
+    Annealing](../searching/search7-annealing.md))?
+    :::
+
+# Beispiel: Einfärben von Landkarten
+
+![](images/map_graph.png){width="80%"}
+
+::: slides
+# Beispiel (cnt.)
+:::
+
+Schritt 1: "Würfeln" [(zufällige vollständige Belegung)]{.notes}
+
+![](images/min_conflicts1.png){width="50%"}
+
+**Problem**: Konflikt in Knoten B und C.
+
+::: slides
+# Beispiel (cnt.)
+:::
+
+Schritt 2: "Schütteln"
+
+-   Auswahl von Knoten B
+-   Auswahl einer anderen Farbe (grün - Anzahl der verbleibenden Konflikte = 0)
+
+![](images/min_conflicts2.png){width="50%"}
+
+**Lösung erreicht.**
 
 ::: notes
-Was würde passieren, wenn wir analog zu [GA/EA](../ea/ea2-ga.md) eine *vollständige*
-Codierung wählen würden mit initial zufällig aus den Domänen ausgewählten Werten?
+**Beispiel aus der Praxis**:
 
-Was würde passieren, wenn wir danach die Konflikte "*heraus schütteln*" (erinnert
-ein bisschen an [Simulated Annealing](../searching/search7-annealing.md))?
+Nach [Min-conflicts algorithm \>
+Example](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example) konnte die
+Rechenzeit für die Planungen der Beobachtungen für eine Woche für das
+Hubble-Weltraum-Teleskop von **drei Wochen** durch Einsatz der Min-Conflicts
+Heuristik **auf 10 Minuten gesenkt** werden.
 :::
+
+# Min-Conflicts Heuristik
 
 ``` python
 Min-Conflicts(csp, maxSteps):
@@ -85,37 +134,6 @@ davon.
         (vgl. [GA/EA](../ea/ea2-ga.md))
 -   Weitere Verbesserung: Statt einer beliebigen Variable diejenige mit den meisten
     Konflikten auswählen
-:::
-
-# Beispiel
-
-Schritt 1: Zufällige Belegung
-
-![](images/min_conflicts1.png){width="50%"}
-
-**Problem**: Konflikt in Knoten B und C.
-
-::: slides
-# Beispiel (cnt.)
-:::
-
-Schritt 2:
-
--   Auswahl von Knoten B
--   Auswahl einer anderen Farbe (grün - Anzahl der verbleibenden Konflikte = 0)
-
-![](images/min_conflicts2.png){width="50%"}
-
-**Lösung erreicht.**
-
-::: notes
-**Beispiel aus der Praxis**:
-
-Nach [Min-conflicts algorithm \>
-Example](https://en.wikipedia.org/wiki/Min-conflicts_algorithm#Example) konnte die
-Rechenzeit für die Planungen der Beobachtungen für eine Woche für das
-Hubble-Weltraum-Teleskop von **drei Wochen** durch Einsatz der Min-Conflicts
-Heuristik **auf 10 Minuten gesenkt** werden.
 :::
 
 # Diskussion
