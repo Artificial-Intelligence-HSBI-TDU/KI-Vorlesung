@@ -47,10 +47,10 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 # Team
 
+-   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 -   [Carsten
     Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
     (HSBI, Sprechstunde nach Vereinbarung)
--   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 -   N.N. (TDU)
 
 # Kursformat (TDU)
