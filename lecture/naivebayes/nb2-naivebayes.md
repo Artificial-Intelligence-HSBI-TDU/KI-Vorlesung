@@ -9,8 +9,8 @@ Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den
 Trainingsdaten geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die
 Nutzung der beim "Training" berechneten bedingten Wahrscheinlichkeiten:
 
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h|D_1,  \ldots, D_n) =
-\mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i|h)$
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h|D_1,  \ldots, D_n) =
+\mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i|h)$
 
 Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior
 $P(h|D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
@@ -102,8 +102,8 @@ Sie diesen auf die beiden Test-Dokumente an.
 \bigskip
 
 -   **Naive Bayes Klassifikator** bzw. **MAP** [("Maximum a Posteriori")]{.notes}
-    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h | D_1, \ldots, D_n)
-    = \mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i | h)$$
+    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
+    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
 
     ::: notes
     Naive Bayes: Wähle die plausibelste Hypothese, die von den Daten unterstützt
@@ -112,8 +112,8 @@ Sie diesen auf die beiden Test-Dokumente an.
 
 # Bayes'sches Lernen
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h | D_1, \ldots, D_n)
-= \mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i | h)$$
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
 
 \bigskip
 
@@ -128,7 +128,7 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h | D_1, \ldots, D_n)
 
 **Klassifikation**: Wähle wahrscheinlichste Klasse $h_{MAP}$ für Vektor $\mathbf{x}$
 
--   $h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h) \prod_{x \in \mathbf{x}} P(x | h)$
+-   $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
 
 # Beispiel Klassifikation mit NB
 
@@ -282,9 +282,9 @@ Trainingsmenge zu hoch gewichtet werden.
     Erinnerung: $\log(x \cdot y) = \log(x) + \log(y)$ und Logarithmus streng monoton
 
     $$\begin{eqnarray}
-    h_{MAP} &=& \mathop{\text{argmax}}_{h \in H} P(h|D_1, \ldots, D_n) \\[5pt]
-            &=& \mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i | h) \\[5pt]
-            &=& \mathop{\text{argmax}}_{h \in H} [\log(P(h)) + \sum_i \log(P(D_i | h))]
+    h_{MAP} &=& \mathop{\text{argmax}}_{h \in H} \: P(h|D_1, \ldots, D_n) \\[5pt]
+            &=& \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h) \\[5pt]
+            &=& \mathop{\text{argmax}}_{h \in H} \: [\log(P(h)) + \sum_i \log(P(D_i | h))]
     \end{eqnarray}$$
 :::
 
@@ -292,15 +292,15 @@ Trainingsmenge zu hoch gewichtet werden.
 # Maximum Likelihood
 
 -   **Maximum a Posteriori**
-    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} P(h | D_1, \ldots, D_n)
-    = \mathop{\text{argmax}}_{h \in H} P(h) \prod_i P(D_i | h)$$
+    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
+    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
 
 \bigskip
 
 -   Annahme: Klassen uniform verteilt =\> $P(h_i) = P(h_j)$
 
     **Maximum Likelihood**
-    $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \prod_i P(D_i | h)$$
+    $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \: \prod_i P(D_i | h)$$
 
     =\> Maximiere die Likelihood der Daten
 :::
