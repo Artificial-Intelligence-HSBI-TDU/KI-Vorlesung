@@ -190,7 +190,9 @@ Für die Terme ist jeweils die Gesamt-Anzahl des Vorkommens des Terms in den
 Dokumenten der jeweiligen Klasse angegeben.
 :::
 
+::: slides
 \footnotesize
+:::
 
 ::::: columns
 ::: column
@@ -228,7 +230,9 @@ Naive Bayes "trainieren"
 :::
 :::::
 
+::: slides
 \normalsize
+:::
 
 # Naive Bayes Klassifikation (Multinomial NB)
 
@@ -266,12 +270,16 @@ Entscheidung: OK
     1 ergibt.
 :::
 
+[[Beobachtungen]{.ex}]{.slides}
+
 # Naive Bayes mit Laplace-Glättung (Multinomial NB)
 
 $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$,
 Laplace: $\alpha = 1$
 
+::: slides
 \footnotesize
+:::
 
 -   A-priori-Wahrscheinlichkeit:
     -   $P(\text{OK}) = 3/4 = 0.75$
@@ -306,7 +314,9 @@ Laplace: $\alpha = 1$
     -   $P(\text{bock} | \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
         (vorher: **0.00**)
 
+::: slides
 \normalsize
+:::
 
 ::: slides
 # Naive Bayes mit Laplace-Glättung (Multinomial NB), cnt.
@@ -331,6 +341,8 @@ Laplace-Glättung führt zu leicht veränderten Schätzungen, die Berechnung der
 erscheint aber plausibler (keine Probleme durch Zero-Frequency-Terme im Training
 mehr).
 :::
+
+[[Beobachtungen]{.ex}]{.slides}
 
 # Naive Bayes mit Out-of-Vocabulary-Termen (OOV, Multinomial NB)
 
@@ -489,7 +501,9 @@ Für die Terme ist jeweils die Gesamt-Anzahl der Dokumente mit dem Term und der
 jeweiligen Klasse angegeben.
 :::
 
+::: slides
 \footnotesize
+:::
 
 ::::: columns
 ::: column
@@ -525,7 +539,9 @@ Naive Bayes "trainieren"
 :::
 :::::
 
+::: slides
 \normalsize
+:::
 
 ::: notes
 Bei Bernoulli NB wird auch explizit die Wahrscheinlichkeit für die Abwesenheit eines
@@ -578,6 +594,8 @@ Entscheidung: OK
     korrekt mit $P(lw=0 | h)$ bzw. $(1 - P(lw=1 | h))$ berücksichtigt. (Multinomial
     NB würde diese Terme mit dem Faktor 1 ignorieren.)
 :::
+
+[[Beobachtungen]{.ex}]{.slides}
 
 # Wrap-Up
 
