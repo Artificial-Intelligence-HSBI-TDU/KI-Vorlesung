@@ -321,7 +321,7 @@ und damit eine bestimmte Anzahl erlaubter Werte ("Ausprägungen") ...
     Vorgabe vom Lehrer
 
 ::: readings
--   @Russell2020: Lernen: Abschnitte 19.1 und 19.2
+-   @Russell2021: Lernen: Abschnitte 19.1 und 19.2
 :::
 
 ::: outcomes

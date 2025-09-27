@@ -104,7 +104,7 @@ Min-Conflicts(csp, maxSteps):
     return failure
 ```
 
-[Min-Conflicts: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 182,
+[Min-Conflicts: Eigener Code basierend auf einer Idee nach [@Russell2021, p. 182,
 fig. 5.8]]{.credits nolist="true"}
 
 ::: notes
@@ -179,7 +179,7 @@ problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem).
 -   Typische Probleme mit Plateaus
 
 ::: readings
-Lesen Sie in [@Russell2020] bitte den Abschnitt 5.4 "Local Search for CSPs".
+Lesen Sie in [@Russell2021] bitte den Abschnitt 5.4 "Local Search for CSPs".
 :::
 
 ::: outcomes

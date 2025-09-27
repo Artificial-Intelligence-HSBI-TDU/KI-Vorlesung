@@ -240,7 +240,7 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
     -   Bewertung mit Fitnessfunktion
 
 ::: readings
--   @Russell2020: GA: Abschnitt 4.1.4
+-   @Russell2021: GA: Abschnitt 4.1.4
 -   @Schwefel1995: Originalarbeit zu Evolutionsstrategien
 -   @Michalewicz1996
 -   @Baeck1996

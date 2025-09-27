@@ -202,7 +202,7 @@ Für Schach immer noch zu aufwändig ...
     -   Positionen mit Datenbank abgleichen
 
 ::: readings
--   @Russell2020: Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3
+-   @Russell2021: Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3
 -   @Ertel2017
 :::
 

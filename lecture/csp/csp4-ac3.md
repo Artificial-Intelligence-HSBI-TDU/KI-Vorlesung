@@ -50,7 +50,7 @@ Zuweisung eines Wertes an Variable $X$:
 \bigskip
 
 ::: notes
-**Inference**: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [@Russell2020, S. 178])
+**Inference**: Frühzeitiges Erkennen von Fehlschlägen! (vgl. [@Russell2021, S. 178])
 :::
 
 Nach Zuweisung eines Wertes an Variable $X$:
@@ -148,7 +148,7 @@ def ARC_Reduce(csp, x, y):
     return change
 ```
 
-[AC-3 Algorithmus: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 171,
+[AC-3 Algorithmus: Eigener Code basierend auf einer Idee nach [@Russell2021, p. 171,
 fig. 5.3]]{.credits nolist=true}
 
 ::: notes
@@ -186,7 +186,7 @@ Herstellung von Kantenkonsistenz interpretieren.
 -   ... die Erweiterung auf alle Kanten: AC-3, Kantenkonsistenz
 
 ::: readings
-Lesen Sie in [@Russell2020] bitte den Abschnitt 5.2 "Constraint Propagation".
+Lesen Sie in [@Russell2021] bitte den Abschnitt 5.2 "Constraint Propagation".
 :::
 
 ::: outcomes

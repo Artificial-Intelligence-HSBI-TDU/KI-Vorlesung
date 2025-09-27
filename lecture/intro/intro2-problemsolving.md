@@ -37,11 +37,11 @@ sein) gefunden werden.
 
 Zur Suche kann man bei den in dieser Veranstaltung betrachteten deterministischen
 Problemen mit diskreten Zuständen den einfachen "Tree-Search"-Algorithmus (Benennung
-in Anlehnung an [@Russell2020]) einsetzen, der allerdings Wiederholungen und
+in Anlehnung an [@Russell2021]) einsetzen, der allerdings Wiederholungen und
 Schleifen zulässt. Mit zwei Erweiterungen wird daraus der "Graph-Search"-Algorithmus
-(Benennung in Anlehnung an [@Russell2020]), der die wiederholte Untersuchung von
+(Benennung in Anlehnung an [@Russell2021]), der die wiederholte Untersuchung von
 bereits besuchten Knoten vermeidet. In beiden Algorithmen wird eine zentrale
-Datenstruktur eingesetzt (im [@Russell2020] auch "Frontier" genannt), die die als
+Datenstruktur eingesetzt (im [@Russell2021] auch "Frontier" genannt), die die als
 Nächstes zu untersuchenden Knoten hält und die damit die Grenze zwischen dem bereits
 untersuchten Teil des Graphen und dem unbekannten Teil des Graphen bildet. Je nach
 Art der Datenstruktur und je nach den betrachteten Kosten ergeben sich eine Reihe
@@ -151,8 +151,8 @@ Ergebnis:
 **Geeignete Abstraktionen wählen für Zustände und Aktionen!**
 
 ::: notes
-**Anmerkung:** [@Russell2020] unterscheidet zw. Aktionen und Transitionsmodell; hier
-nur Aktionen! D.h. die Aktionen und das Übergangsmodell aus dem [@Russell2020]
+**Anmerkung:** [@Russell2021] unterscheidet zw. Aktionen und Transitionsmodell; hier
+nur Aktionen! D.h. die Aktionen und das Übergangsmodell aus dem [@Russell2021]
 werden direkt zusammen betrachtet. Bei den hier diskutierten Problemen ist das ohne
 Nachteile möglich, es wird lediglich etwas Flexibilität genommen bzw. Komplexität
 vermieden (je nach Sichtweise :-) ...
@@ -246,12 +246,12 @@ betrachteten verschiedenen klassischen Suchalgorithmen.
 **Anmerkung**: Für Handsimulation besserer Überblick, wenn statt der Knoten immer
 **partielle Wege** in Datenstruktur gespeichert werden!
 
-**Anmerkung**: Im [@Russell2020, Abschnitt 3.3.3, S.92] wird ein Algorithmus mit den
+**Anmerkung**: Im [@Russell2021, Abschnitt 3.3.3, S.92] wird ein Algorithmus mit den
 vorgestellten Eigenschaften als "**tree-like search**" bezeichnet. In Anlehnung an
-[@Russell2020] wird diese Basisvariante der Suche in dieser Lehrveranstaltung kurz
+[@Russell2021] wird diese Basisvariante der Suche in dieser Lehrveranstaltung kurz
 als "Tree-Search"-Algorithmus bezeichnet.
 
-**Anmerkung**: Im [@Russell2020] wird für die Datenstruktur, mit der die Suche
+**Anmerkung**: Im [@Russell2021] wird für die Datenstruktur, mit der die Suche
 arbeitet, auch "*Frontier*" genannt. Hier werden alle Knoten gehalten, die in einem
 der nächsten Schritte betrachtet werden sollen, d.h. diese Knoten bilden die Grenze
 zwischen dem bereits untersuchten Teil des Graphen und dem noch unbekannten Teil des
@@ -287,9 +287,9 @@ Dieser Algorithmus ist eine Erweiterung der einfachen Basisvariante der Suche:
 **Anmerkung**: Für Handsimulation besserer Überblick, wenn statt der Knoten immer
 **partielle Wege** in Datenstruktur gespeichert werden!
 
-**Anmerkung**: Im [@Russell2020, Abschnitt 3.3.3, S.92] wird ein Algorithmus mit den
+**Anmerkung**: Im [@Russell2021, Abschnitt 3.3.3, S.92] wird ein Algorithmus mit den
 vorgestellten Eigenschaften als "**graph search**" bezeichnet. In Anlehnung an
-[@Russell2020] wird diese erweiterter Variante der Suche in dieser Lehrveranstaltung
+[@Russell2021] wird diese erweiterter Variante der Suche in dieser Lehrveranstaltung
 kurz als "Graph-Search"-Algorithmus bezeichnet.
 :::
 
@@ -331,7 +331,7 @@ kurz als "Graph-Search"-Algorithmus bezeichnet.
     -   Beurteilung der Suchverfahren: Optimalität, Vollständigkeit, Komplexität
 
 ::: readings
--   @Russell2020: Problemlösen: Kapitel 3.1 - 3.3
+-   @Russell2021: Problemlösen: Kapitel 3.1 - 3.3
 :::
 
 ::: outcomes

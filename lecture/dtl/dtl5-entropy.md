@@ -272,7 +272,7 @@ Hierzu drei lesenswerte Blog-Einträge:
 
 ::: readings
 -   @Ertel2017: Entscheidungsbäume: Abschnitt 8.4
--   @Russell2020: Entscheidungsbäume: Abschnitt 19.3
+-   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
 -   @Mitchell2010: ID3: Kapitel 3
 :::
 

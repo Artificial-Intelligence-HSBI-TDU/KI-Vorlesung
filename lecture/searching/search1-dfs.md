@@ -134,7 +134,7 @@ alphabetische Reihenfolge der Knoten (Orte).
 
     Auswirkung: Weg wird in die **Tiefe** verfolgt (deshalb "Tiefensuche")
 
--   Im [@Russell2020] wird die Datenstruktur zum Halten der zu expandierenden Knoten
+-   Im [@Russell2021] wird die Datenstruktur zum Halten der zu expandierenden Knoten
     (also hier im Fall der Tiefensuche der Stack) auch "**Frontier**" genannt.
 
 -   **Backtracking**: Wenn der Weg in eine Sackgasse führt, d.h. ein Knoten keine
@@ -147,7 +147,7 @@ alphabetische Reihenfolge der Knoten (Orte).
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
 partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
-Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+Beschreibung im [@Russell2021]). Dies erschwert die Nachvollziehbarkeit, wenn man
 die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
 Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
 aufzuschreiben.
@@ -169,7 +169,7 @@ der anwendbaren Operationen bestimmt.)
     im aktuell entwickelten Pfad sind also möglich! Außerdem sind mehrere Wege zum
     selben (Zwischen-/End-) Knoten in der Datenstruktur möglich!
 
--   Im [@Russell2020] wird der Begriff "Backtracking" für den rekursiven
+-   Im [@Russell2021] wird der Begriff "Backtracking" für den rekursiven
     Tiefensuche-Algorithmus verwendet. Dies steht im Gegensatz zum üblichen
     Sprachgebrauch in der KI!
 :::
@@ -206,7 +206,7 @@ Siehe [Breitensuche](search2-bfs.md)
     -   Backtracking bei Sackgassen (automatisch durch den Stack)
 
 ::: readings
--   @Russell2020: Tiefensuche: Abschnitt 3.4.3
+-   @Russell2021: Tiefensuche: Abschnitt 3.4.3
 :::
 
 ::: outcomes

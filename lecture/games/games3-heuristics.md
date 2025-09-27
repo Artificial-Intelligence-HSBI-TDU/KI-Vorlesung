@@ -137,7 +137,7 @@ wo man beim Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine
 `Eval()`-Funktion braucht. Zusätzlich kombiniert der dort gezeigte Algorithmus die
 Funktionen `Expectimax()`, `Min-Value()` und `Max-Value()` in eine einzige Funktion.
 
-Eine ähnliche geschlossene Darstellung finden Sie im [@Russell2020, S. 212].
+Eine ähnliche geschlossene Darstellung finden Sie im [@Russell2021, S. 212].
 
 **Hinweis**: Üblicherweise sind die Nachfolger der Zufallsknoten gleich
 wahrscheinlich. Dann kann man einfach mit dem Mittelwert der Bewertung der
@@ -152,7 +152,7 @@ Nachfolger arbeiten.
     -   Erweiterung auf Spiele mit Zufall: *Expectimax*
 
 ::: readings
--   @Russell2020: Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5
+-   @Russell2021: Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5
 -   @Ertel2017
 :::
 

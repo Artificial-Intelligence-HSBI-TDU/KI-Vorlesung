@@ -76,7 +76,7 @@ Zug?!**
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
-    [[@Russell2020, pp. 193-196]]{.credits nolist=true}
+    [[@Russell2021, pp. 193-196]]{.credits nolist=true}
 
 # Eigenschaften guter Spielalgorithmen
 
@@ -107,7 +107,7 @@ Zug?!**
 -   Umgang mit begrenzten Ressourcen (Zeit, Speicher)
 
 ::: readings
--   @Russell2020: Einführung Spiele: Abschnitt 6.1
+-   @Russell2021: Einführung Spiele: Abschnitt 6.1
 -   @Ertel2017
 :::
 

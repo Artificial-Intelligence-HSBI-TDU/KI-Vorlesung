@@ -35,7 +35,7 @@ zu den Nachbarn auswerten.
 **VARIABLES**: Welche Variable zuerst ausprobieren?
 :::
 
-**Minimum Remaining Values (MRV)**: (vgl. [@Russell2020, S. 177])
+**Minimum Remaining Values (MRV)**: (vgl. [@Russell2021, S. 177])
 
 -   Wähle Variable mit wenigsten freien Werten [(die am meisten eingeschränkte
     Variable)]{.notes}
@@ -64,7 +64,7 @@ Beispiel:
 **VARIABLES**: Welche Variable zuerst ausprobieren?
 :::
 
-**Gradheuristik**: Erweiterung von *MRV* bei *Gleichstand* (vgl. [@Russell2020, S.
+**Gradheuristik**: Erweiterung von *MRV* bei *Gleichstand* (vgl. [@Russell2021, S.
 177])
 
 -   Wähle Variable mit meisten Constraints auf offene [(noch nicht
@@ -98,7 +98,7 @@ Beispiel:
 **VALUES**: Welchen Wert zuerst ausprobieren?
 :::
 
-**Least Constraining Value (LCV)**: (vgl. [@Russell2020, S. 177])
+**Least Constraining Value (LCV)**: (vgl. [@Russell2021, S. 177])
 
 -   Wähle Wert, der für verbleibende Variablen die wenigsten Werte ungültig macht
 
@@ -132,7 +132,7 @@ dass bei der Umsetzung nur wenig zusätzlicher Aufwand entsteht.
 -   Verbesserung der BT-Suche mit Heuristiken: MRV, Gradheuristik, LCV
 
 ::: readings
-Lesen Sie in [@Russell2020] bitte den Abschnitt 5.3 "Backtracking Search for CSPs".
+Lesen Sie in [@Russell2021] bitte den Abschnitt 5.3 "Backtracking Search for CSPs".
 :::
 
 ::: outcomes

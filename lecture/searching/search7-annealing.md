@@ -204,7 +204,7 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
     -   Achtung: Probleme mit lokalen Minima =\> **Simulated Annealing**
 
 ::: readings
--   @Russell2020: Simulated Annealing: Abschnitt 4.1.2
+-   @Russell2021: Simulated Annealing: Abschnitt 4.1.2
 :::
 
 ::: outcomes

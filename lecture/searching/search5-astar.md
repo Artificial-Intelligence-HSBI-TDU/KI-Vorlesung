@@ -82,7 +82,7 @@ Varianten:
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
 partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
-Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+Beschreibung im [@Russell2021]). Dies erschwert die Nachvollziehbarkeit, wenn man
 die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
 Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
 aufzuschreiben.
@@ -119,7 +119,7 @@ zum selben (Zwischen-/End-) Knoten eingefügt werden soll.
 =\> Beispiel: Luftlinie als Abschätzung
 
 ::: notes
-**Hinweis**: Im der englischen Ausgabe des [@Russell2020] wird die **zulässige
+**Hinweis**: Im der englischen Ausgabe des [@Russell2021] wird die **zulässige
 Heuristik** auch "**admissible heuristic**" genannt.
 :::
 
@@ -171,7 +171,7 @@ Außerdem muss gelten:
 =\> Eine konsistente Heuristik ist gleichzeitig zulässig.
 
 ::: notes
-**Hinweis**: Im der englischen Ausgabe des [@Russell2020] wird die **konsistente
+**Hinweis**: Im der englischen Ausgabe des [@Russell2021] wird die **konsistente
 Heuristik** auch "**consistent heuristic**" genannt.
 :::
 
@@ -220,7 +220,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 :::
 
 ::: readings
--   @Russell2020: A\*: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6
+-   @Russell2021: A\*: Abschnitt 3.5.2, Heuristiken: Kapitel 3.6
 :::
 
 ::: outcomes

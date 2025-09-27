@@ -69,7 +69,7 @@ Varianten:
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
 partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
-Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+Beschreibung im [@Russell2021]). Dies erschwert die Nachvollziehbarkeit, wenn man
 die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
 Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
 aufzuschreiben.
@@ -98,7 +98,7 @@ Siehe [A\*](search5-astar.md)
     -   Best-First: nur Schätzungen $h(n)$
 
 ::: readings
--   @Russell2020: Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6
+-   @Russell2021: Best First: Abschnitt 3.5.1, Heuristiken: Kapitel 3.6
 :::
 
 ::: outcomes

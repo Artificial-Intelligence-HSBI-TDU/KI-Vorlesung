@@ -69,7 +69,7 @@ Variante der Breitensuche mit Kosten
     $g(n) > 0$)]{.notes}
 
 ::: notes
-*Hinweis*: Die Branch-and-Bound-Suche taucht im [@Russell2020] als Erweiterung der
+*Hinweis*: Die Branch-and-Bound-Suche taucht im [@Russell2021] als Erweiterung der
 "Uniformen Suche" auf ...
 :::
 
@@ -109,7 +109,7 @@ Kosten vorausgesetzt).
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
 partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
-Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+Beschreibung im [@Russell2021]). Dies erschwert die Nachvollziehbarkeit, wenn man
 die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
 Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
 aufzuschreiben.
@@ -138,7 +138,7 @@ Siehe [A\*](search5-astar.md)
     -   Branch-and-Bound: nur reale Pfadkosten $g(n)$
 
 ::: readings
--   @Russell2020: Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2
+-   @Russell2021: Branch-and-Bound (Uniforme Suche): Abschnitt 3.4.2
 :::
 
 ::: outcomes

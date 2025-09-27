@@ -443,7 +443,7 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
     -   Hinweis auf Probleme mit niedrigen Wahrscheinlichkeiten
 
 ::: readings
--   @Russell2020: Kapitel 12
+-   @Russell2021: Kapitel 12
 -   @Ertel2017: Abschnitt 8.7
 :::
 

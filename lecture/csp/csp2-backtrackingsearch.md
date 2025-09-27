@@ -42,7 +42,7 @@ def BT_Search(assignment, csp):
     return failure
 ```
 
-[Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2020, p. 176,
+[Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2021, p. 176,
 fig. 5.5]]{.credits nolist=true}
 
 ::: notes
@@ -74,7 +74,7 @@ Backtracking.
 -   Lösung von CSP mit endlichen Domänen mit Hilfe der Backtracking-Suche
 
 ::: readings
-Lesen Sie in [@Russell2020] bitte den Abschnitt 5.3 "Backtracking Search for CSPs".
+Lesen Sie in [@Russell2021] bitte den Abschnitt 5.3 "Backtracking Search for CSPs".
 :::
 
 ::: outcomes

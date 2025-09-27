@@ -501,7 +501,7 @@ Das ist recht lang.)
 :::
 
 ::: readings
--   @Russell2020: Kapitel 1: Introduction
+-   @Russell2021: Kapitel 1: Introduction
 -   @Ertel2017: Kapitel 1: Introduction
 :::
 

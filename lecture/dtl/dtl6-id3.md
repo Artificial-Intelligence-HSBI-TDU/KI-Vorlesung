@@ -122,7 +122,7 @@ def ID3(examples, attr, default):
 ```
 
 ::: notes
-@Russell2020: Man erhält aus dem "Learn-Decision-Tree"-Algorithmus [@Russell2020, S.
+@Russell2021: Man erhält aus dem "Learn-Decision-Tree"-Algorithmus [@Russell2021, S.
 678, Fig. 19.5] den hier vorgestellten ID3-Algorithmus, wenn man die Funktion
 $\mathop{\text{Importance}}(a, examples)$ als
 $\mathop{\text{InformationGain}}(examples, attr)$ implementiert/nutzt.
@@ -257,7 +257,7 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 
 ::: readings
 -   @Ertel2017: Entscheidungsbäume: Abschnitt 8.4
--   @Russell2020: Entscheidungsbäume: Abschnitt 19.3
+-   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
 -   @Mitchell2010: ID3: Kapitel 3
 :::
 

@@ -97,7 +97,7 @@ Varianten:
 
 In der Beschreibung der Algorithmen werden häufig nur die letzten Knoten der
 partiellen Wege in den Datenstrukturen mitgeführt (das gilt auch für die
-Beschreibung im [@Russell2020]). Dies erschwert die Nachvollziehbarkeit, wenn man
+Beschreibung im [@Russell2021]). Dies erschwert die Nachvollziehbarkeit, wenn man
 die Queue oder den Stack schrittweise aufschreibt. Deshalb wird für diese
 Veranstaltung die Konvention eingeführt, immer die **partiellen Wege**
 aufzuschreiben.
@@ -115,7 +115,7 @@ der anwendbaren Operationen bestimmt.)
     auch die Tree-Search-Variante einsetzen. Wichtig ist nur, dass als Datenstruktur
     eine Queue genutzt wird.
 
--   Im [@Russell2020] wird die Breitensuche ebenfalls auf der Basis des
+-   Im [@Russell2021] wird die Breitensuche ebenfalls auf der Basis des
     Graph-Search-Algorithmus eingeführt. Allerdings wird die Abbruchbedingung
     modifiziert: Die Zielbedingung wird nicht erst (wie bei Graph-Search eigentlich
     definiert) geprüft, wenn ein Knoten aus der Queue entnommen wird, sondern
@@ -174,7 +174,7 @@ d. längsten Pfades
     -   Breitensuche: Verfolge alle Pfade (baue den Suchbaum ebenenweise auf)
 
 ::: readings
--   @Russell2020: Breitensuche: Abschnitt 3.4.1
+-   @Russell2021: Breitensuche: Abschnitt 3.4.1
 :::
 
 ::: outcomes
@@ -198,4 +198,4 @@ d. längsten Pfades
 
 [^2]: falls *b* endlich
 
-[^3]: $O(b^{d})$ mit vorgezogener Zielprüfung (vgl. [@Russell2020])
+[^3]: $O(b^{d})$ mit vorgezogener Zielprüfung (vgl. [@Russell2021])

@@ -120,7 +120,7 @@ wo man beim Abbruch durch das Erreichen der Suchtiefe statt `Utility()` eine
 Wenn man ohne Suchtiefenbeschränkung arbeiten will, braucht man diesen Parameter
 nicht! Der Algorithmus terminiert auch ohne Suchtiefenbeschränkung!
 
-**Hinweis II**: Im [@Russell2020, S. 196, Abb. 6.3] findet sich eine Variante, die
+**Hinweis II**: Im [@Russell2021, S. 196, Abb. 6.3] findet sich eine Variante, die
 die auf der nächsten Folien gezeigte Startfunktion mit den hier gezeigten
 `Min-Value()`- und `Max-Value()`-Funktionen verschmilzt. Dabei wird in den beiden
 Hilfsfunktionen nicht nur der `min`- bzw. `max`-Wert optimiert, sondern auch der
@@ -181,7 +181,7 @@ Gedankenexperiment:
     -   Spielbaum wird bis zu den Blättern entwickelt, Bewertung mit `Utility`
 
 ::: readings
--   @Russell2020: Minimax: Abschnitt 6.2
+-   @Russell2021: Minimax: Abschnitt 6.2
 -   @Ertel2017
 :::
 

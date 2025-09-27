@@ -95,7 +95,7 @@ Beispiel: Stundenplan
 -   **Suche**: Bewege jeweils eine Dame so, daß die Anzahl der Konflikte reduziert
     wird
 
-Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
+Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2021 an!
 
 **Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
 =\> "vollständige Zustandsformulierung"
@@ -109,7 +109,7 @@ Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2020 an!
 -   Beobachtung: Lösung nach durchschnittlich 4 Schritten, oder Verfahren bleibt
     nach durchschnittlich 3 Schritten stecken.
 
-[nach [@Russell2020, p. 131]]{.credits nolist=true}
+[nach [@Russell2021, p. 131]]{.credits nolist=true}
 :::
 
 # Eigenschaften Gradientensuche
@@ -144,7 +144,7 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 -   Gradientenverfahren: Gehe in Richtung des stärksten Anstiegs der Kostenfunktion
 
 ::: readings
--   @Russell2020: Gradientenabstieg: Abschnitt 4.1.1
+-   @Russell2021: Gradientenabstieg: Abschnitt 4.1.1
 :::
 
 ::: outcomes
