@@ -377,8 +377,9 @@ $$P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$$
     -   Bayes'sche Regel
 
 ::: readings
--   @Russell2021: Kapitel 12
--   @Ertel2025: Abschnitt 7.1
+Lesen Sie in [@Russell2021] bitte die Abschnitte 12.2 bis (einschließlich) 12.5.
+Darüber hinaus ist Abschnitt "7.1 Rechnen mit Wahrscheinlichkeiten" [@Ertel2025]
+sehr empfehlenswert.
 :::
 
 ::: outcomes

@@ -443,8 +443,9 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
     -   Hinweis auf Probleme mit niedrigen Wahrscheinlichkeiten
 
 ::: readings
--   @Russell2021: Kapitel 12
--   @Ertel2025: Abschnitt 8.7
+Lesen Sie in [@Russell2021] bitte den Abschnitt 12.6 "Naive Bayes Models". Darüber
+hinaus ist Abschnitt "8.10 Der Naive Bayes Klassifikator" [@Ertel2025] sehr
+empfehlenswert.
 :::
 
 ::: outcomes
