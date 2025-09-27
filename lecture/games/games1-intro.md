@@ -108,7 +108,7 @@ Zug?!**
 
 ::: readings
 -   @Russell2021: Einführung Spiele: Abschnitt 6.1
--   @Ertel2017
+-   @Ertel2025
 :::
 
 ::: outcomes

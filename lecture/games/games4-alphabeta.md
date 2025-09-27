@@ -203,7 +203,7 @@ Für Schach immer noch zu aufwändig ...
 
 ::: readings
 -   @Russell2021: Alpha-beta-Pruning: Abschnitt 6.2.3, Erweiterungen: Abschnitt 6.3
--   @Ertel2017
+-   @Ertel2025
 :::
 
 ::: outcomes

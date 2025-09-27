@@ -337,7 +337,7 @@ lediglich zur Veranschaulichung der Bayes-Regel dienen!
 :::
 
 ::: notes
-Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2017, Ex. 7.9, S. 135] an!
+Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2025, Ex. 7.9, S. 135] an!
 :::
 
 # Unabhängige Ereignisse
@@ -378,7 +378,7 @@ $$P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$$
 
 ::: readings
 -   @Russell2021: Kapitel 12
--   @Ertel2017: Abschnitt 7.1
+-   @Ertel2025: Abschnitt 7.1
 :::
 
 ::: outcomes

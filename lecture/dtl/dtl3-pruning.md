@@ -100,7 +100,7 @@ $$x_1(x_2(a, b),  x_2(c, d))  \Leftrightarrow  x_2(x_1(a, c),  x_1(b, d))$$
 -   Transformationsregel zum Umbauen von Entscheidungsbäumen
 
 ::: readings
--   @Ertel2017: Entscheidungsbäume: Abschnitt 8.4
+-   @Ertel2025: Entscheidungsbäume: Abschnitt 8.4
 -   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
 :::
 

@@ -256,7 +256,7 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 -   Verbesserung durch Normierung des *Information Gain*: **C4.5**
 
 ::: readings
--   @Ertel2017: Entscheidungsbäume: Abschnitt 8.4
+-   @Ertel2025: Entscheidungsbäume: Abschnitt 8.4
 -   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
 -   @Mitchell2010: ID3: Kapitel 3
 :::

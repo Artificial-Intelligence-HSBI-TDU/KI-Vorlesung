@@ -444,7 +444,7 @@ In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
 
 ::: readings
 -   @Russell2021: Kapitel 12
--   @Ertel2017: Abschnitt 8.7
+-   @Ertel2025: Abschnitt 8.7
 :::
 
 ::: outcomes

@@ -140,7 +140,7 @@ als intelligent zu betrachten! Bezieht sich vor allem auf "*Denken*"!
 >
 > `\hfill`{=tex} -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[nach [@Ertel2017, pp. 1-3]]{.credits nolist=true}
+[nach [@Ertel2025, pp. 1-3]]{.credits nolist=true}
 
 ::: notes
 Dazu gehört auch
@@ -485,7 +485,7 @@ Prädikatenkalkül zum Einsatz oder die Programmiersprache Prolog.
 
 \bigskip
 
-Siehe auch Abbildung 1.3 in [@Ertel2017, S.8] ...
+Siehe auch Abbildung 1.3 in [@Ertel2025, S.8] ...
 
 # Wrap-Up
 
@@ -502,7 +502,7 @@ Das ist recht lang.)
 
 ::: readings
 -   @Russell2021: Kapitel 1: Introduction
--   @Ertel2017: Kapitel 1: Introduction
+-   @Ertel2025: Kapitel 1: Introduction
 :::
 
 ::: outcomes

@@ -271,7 +271,7 @@ Hierzu drei lesenswerte Blog-Einträge:
     -   Mittlere Entropie nach Wahl eines Attributs
 
 ::: readings
--   @Ertel2017: Entscheidungsbäume: Abschnitt 8.4
+-   @Ertel2025: Entscheidungsbäume: Abschnitt 8.4
 -   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
 -   @Mitchell2010: ID3: Kapitel 3
 :::

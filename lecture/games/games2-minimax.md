@@ -182,7 +182,7 @@ Gedankenexperiment:
 
 ::: readings
 -   @Russell2021: Minimax: Abschnitt 6.2
--   @Ertel2017
+-   @Ertel2025
 :::
 
 ::: outcomes
