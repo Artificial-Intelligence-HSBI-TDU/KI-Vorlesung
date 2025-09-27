@@ -12,10 +12,9 @@ Trainingstexte gebildet (*Bag-of-Words*). Der Bag-of-Words entspricht einem
 Merkmalsvektor, wobei die Merkmale die einzelnen Wörter sind. Dann kann jeder Text
 der Trainingsmenge über so einen Merkmalsvektor dargestellt werden: Entweder man
 gibt pro Merkmal an, ob es da (1) oder nicht da (0) ist (Variante Bernoulli NB) oder
-man zählt die Häufigkeit des Auftretens der Merkmale (Variante Multinomial NB).
-
-Dann kann man mit dem NB-Klassifikator die bedingten Wahrscheinlichkeiten schätzen
-und einen neuen Text klassifizieren.
+man zählt die Häufigkeit des Auftretens der Merkmale (Variante Multinomial NB). Dann
+kann man mit dem NB-Klassifikator die bedingten Wahrscheinlichkeiten schätzen und
+einen neuen Text klassifizieren.
 
 Bei beiden Varianten hat man das Problem mit Termen, die für eine Klasse im Training
 nicht vorkommen (Zero-Frequency-Problem). Dabei werden die geschätzten
@@ -111,7 +110,6 @@ Nach Vorverarbeitung:
     -   D4: (sieben, bock, treten, sieben, zwerg; OK)
 -   Testdaten (neue Mails):
     -   T1: (sieben, zwerg, fressen, sieben, wolf)
-    -   T2: (sieben, zwerg, treten, sieben, ziege)
 
 \bigskip
 
@@ -123,23 +121,19 @@ Nach Vorverarbeitung:
 
 # Bag of Words für Trainingsdaten
 
-::::: columns
-::: column
+::: slides
 -   D1: (sieben, zwerg, fressen, sieben, ziege; OK)
 -   D2: (sieben, ziege, treten, sieben, wolf; SPAM)
 -   D3: (sieben, wolf, fressen, sieben, bock; OK)
 -   D4: (sieben, bock, treten, sieben, zwerg; OK)
 :::
 
-::: column
 |     | sieben | zwerg | fressen | ziege | treten | wolf | bock | Klasse |
 |:----|:-------|:------|:--------|:------|:-------|:-----|:-----|:-------|
 | D1  | 2      | 1     | 1       | 1     | 0      | 0    | 0    | OK     |
 | D2  | 2      | 0     | 0       | 1     | 1      | 1    | 0    | SPAM   |
 | D3  | 2      | 0     | 1       | 0     | 0      | 1    | 1    | OK     |
 | D4  | 2      | 1     | 0       | 0     | 1      | 0    | 1    | OK     |
-:::
-:::::
 
 ::: notes
 Im *Bag of Words* (BoW) bekommt jeder Term des Vokabulars einen festen Platz. Die
@@ -148,13 +142,17 @@ werden, indem für jeder Term im BoW die Anzahl der Vorkommen im Trainings- oder
 Testvektor gezählt wird ("*Multinomial NB*").
 
 Es gibt auch die einfachere Form, die lediglich das Vorkommen vermerkt, also mit 0
-und 1 arbeitet und nicht durchzählt ("*Bernoulli NB*").
+und 1 arbeitet und nicht durchzählt ("*Bernoulli NB*", s.u.).
 :::
 
 # Naive Bayes Training (Multinomial NB)
 
 ::: notes
-Bei Multinomial NB zählen wir die Häufigkeiten der Vorkommen der einzelnen Terme.
+Bei Multinomial NB zählen wir die Häufigkeiten der Vorkommen der einzelnen Terme in
+den einzelnen Dokumenten der jeweiligen Klasse.
+
+Nachfolgend sind die entsprechenden Häufigkeiten im Traingsdatensatz zusammengefasst
+dargestellt.
 :::
 
 ::: slides
@@ -304,17 +302,22 @@ Entscheidung: OK
 
 Laplace-Glättung führt zu leicht veränderten Schätzungen, die Berechnung der Scores
 erscheint aber plausibler (keine Probleme durch Zero-Frequency-Terme im Training
-mehr)
+mehr).
 :::
 
 # Naive Bayes mit Out-of-Vocabulary-Termen (OOV, Multinomial NB)
+
+::: notes
+Was passiert, wenn bei der Klassifikation eines Testvektors Wörter vorkommen, die es
+beim Training nicht gab?
+:::
 
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   H = OK:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot P(\text{lecker} | \text{SPAM})^1$
 
 \bigskip
 
@@ -360,7 +363,7 @@ müssen entsprechend angepasst werden!
 :::
 
 | Klasse | sieben | zwerg | fressen | ziege | treten | wolf | bock | UNK | Anzahl Wörter | Anzahl Dokumente |
-|:------|:------|:------|:-------|:------|:------|:-----|:-----|:----|:------------|:--------------|
+|:-------|:-------|:------|:--------|:------|:-------|:-----|:-----|:----|:--------------|:-----------------|
 | OK     | 6      | 2     | 2       | 1     | 1      | 1    | 2    | 0   | 15            | 3                |
 | SPAM   | 2      | 0     | 0       | 1     | 1      | 1    | 0    | 0   | 5             | 1                |
 
@@ -368,13 +371,13 @@ müssen entsprechend angepasst werden!
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK}) = (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$
+    -   $P(\text{sieben} | \text{OK}) = (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$
         (vorher: 0.318)
-    -   $P(\text{sieben} | \text{SPAM}) = (2+\mathbf{1})/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$
+    -   $P(\text{sieben} | \text{SPAM}) = (2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$
         (vorher: 0.25)
     -   ...
-    -   $P(\text{UNK} | \text{OK}) = (0+\mathbf{1})/(15+\mathbf{8}) = 0.043$
-    -   $P(\text{UNK} | \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{8}) = 0.077$
+    -   $P(\text{UNK} | \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
+    -   $P(\text{UNK} | \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$
 
 \bigskip
 
@@ -390,7 +393,7 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 -   H = OK:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot P(\text{lecker} | \text{SPAM})^1$
 
 Mapping:
 
