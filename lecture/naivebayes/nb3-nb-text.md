@@ -367,7 +367,7 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
     $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
 \bigskip
@@ -449,7 +449,7 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
     $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
 \bigskip
