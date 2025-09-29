@@ -615,24 +615,26 @@ Entscheidung: OK
 -   **Multinomial NB**:
     -   Zähle die Vorkommen eines Terms:
         $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$
+
     -   Klassifikation mit
         $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathop{\text{count}}(w)}$
+
     -   Im Test nicht vorhandene Terme t aus V werden ignoriert (Faktor 1)
 
 -   **Bernoulli NB**:
     -   Prüfe das Vorkommen eines Terms:
         $P(t=1|c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
+
     -   Klassifikation mit
         $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$
+
     -   Im Test nicht vorhandene Terme t aus V werden korrekt mit $P(lw=0 | h)$
         berücksichtigt
 
 \bigskip
 
 -   Problem mit kleinen Faktoren: **Logarithmus**, Übergang zu Summe
-
 -   **Zero-Frequency-Problem**: Laplace-Glättung mit $\alpha=1$
-
 -   Klassifikation von **Out-of-Vocabulary-Termen**: UNK-Term trainieren
 
 ::: readings
