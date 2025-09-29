@@ -58,13 +58,11 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-| Vorlesung (2 SWS)          | Übung (2 SWS)           |
-|:---------------------------|:------------------------|
-| Mo, 10:00 - 11:30 Uhr (TR) | G1: wird bekanntgegeben |
-| (online, Zoom)             | G2: wird bekanntgegeben |
-|                            | G3: wird bekanntgegeben |
-|                            | G4: wird bekanntgegeben |
-|                            | (online, Google Meet)   |
+| Vorlesung (2 SWS)          | Übung (2 SWS)              |
+|:---------------------------|:---------------------------|
+| Mo, 10:00 - 11:30 Uhr (TR) | G1: Di, 15:30 - 17:30 (TR) |
+| (online, Zoom)             | G2: Do, 08:00 - 10:00 (TR) |
+|                            | (online, Google Meet)      |
 
 Durchführung der Vorlesung als *Flipped Classroom*: Sitzungen per Zoom, Übungen per
 Google Meet. (Zugangsdaten siehe [Google
