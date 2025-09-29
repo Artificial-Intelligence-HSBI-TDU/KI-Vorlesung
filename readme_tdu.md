@@ -51,7 +51,8 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 -   [Carsten
     Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
     (HSBI, Sprechstunde nach Vereinbarung)
--   N.N. (TDU)
+-   [Halit Canap Demir](https://people.tau.edu.tr/people.show/halit.demir/de) (TDU)
+-   [Seza Nihan Bekarlar](https://people.tau.edu.tr/people.show/nihan.bekarlar/de) (TDU)
 
 # Kursformat (TDU)
 
