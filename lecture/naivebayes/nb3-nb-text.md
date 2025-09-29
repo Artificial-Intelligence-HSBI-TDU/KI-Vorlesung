@@ -108,12 +108,12 @@ Sie diesen auf die Test-Dokumente an.
 
 Nach Vorverarbeitung:
 
--   Trainingsdaten: Mails, manuell markiert:
+-   Trainingsdaten (**Terme**):
     -   D1: (sieben, zwerg, fressen, sieben, ziege; OK)
     -   D2: (sieben, ziege, treten, sieben, wolf; SPAM)
     -   D3: (sieben, wolf, fressen, sieben, bock; OK)
     -   D4: (sieben, bock, treten, sieben, zwerg; OK)
--   Testdaten (neue Mails):
+-   Testdaten (**Terme**):
     -   T1: (sieben, zwerg, fressen, sieben, wolf)
 
 \bigskip
@@ -241,10 +241,13 @@ Naive Bayes "trainieren"
 $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
 
 \pause
+\bigskip
 
 Jedes Vorkommen eines Wortes im Testdatensatz ist ein $x$!
 
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathop{\text{count}}(w)}$
+::: center
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathbf{\mathop{\text{count}}(w)}}$
+:::
 
 \bigskip
 \smallskip
@@ -276,12 +279,16 @@ Entscheidung: OK
 
 # Naive Bayes mit Laplace-Glättung (Multinomial NB)
 
+::: center
 $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$,
 Laplace: $\alpha = 1$
+:::
 
 ::: slides
 \footnotesize
 :::
+
+\bigskip
 
 -   A-priori-Wahrscheinlichkeit:
     -   $P(\text{OK}) = 3/4 = 0.75$
@@ -332,7 +339,7 @@ T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   H = SPAM:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 = 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0,00001797598438$
-    (vorher: 0.00)
+    (vorher: **0.00**)
 
 Entscheidung: OK
 
@@ -356,17 +363,19 @@ beim Training nicht gab?
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
+
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot P(\text{lecker} | \text{SPAM})^1$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
 \bigskip
 
-$P(\text{lecker} | \text{OK})$ und $P(\text{lecker} | \text{SPAM})$ sind unbekannt!
+$\mathbf{P(\text{lecker} | \text{OK})}$ und $\mathbf{P(\text{lecker} | \text{SPAM})}$
+sind **unbekannt**!
 
 \bigskip
 
-Möglichkeiten:
+**Möglichkeiten**:
 
 1.  Da im Training nicht vorgekommen: 0 als Wert für $P(\text{lecker} | c)$ annehmen
 2.  Term ignorieren
@@ -434,12 +443,14 @@ Anzahl beachten!
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot P(\text{lecker} | \text{OK})^1$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot P(\text{lecker} | \text{SPAM})^1$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
-Mapping:
+\bigskip
+
+**Mapping**:
 
 -   $P(\text{lecker} | \text{OK})$ =\> $P(\text{UNK} | \text{OK}) = 0.043$
 -   $P(\text{lecker} | \text{SPAM})$ =\> $P(\text{UNK} | \text{SPAM}) = 0.077$
@@ -483,6 +494,10 @@ NB Variante kann man auch bei Bernoulli NB mit UNK-Termen arbeiten.
 | D4  | 1      | 1     | 0       | 0     | 1      | 0    | 1    | OK     |
 
 \bigskip
+
+::: notes
+Zusammengefasst ergibt sich damit pro Klasse:
+:::
 
 | Klasse | sieben | zwerg | fressen | ziege | treten | wolf | bock | Anzahl Dokumente |
 |:-------|:-------|:------|:--------|:------|:-------|:-----|:-----|:-----------------|
@@ -556,15 +571,15 @@ halber ist dies oben nicht explizit angegeben/ausgerechnet.
 $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
 
 \pause
+\bigskip
 
 Für jedes Wort $w$ im Vokabular $V$ gibt es die Beobachtung (Bernoulli-Variable)
-$lw \in \lbrace 0, 1 \rbrace$.
+$lw \in \lbrace 0, 1 \rbrace$. [($lw = 1$ wenn Wort $w$ im Testdokument vorkommt,
+$lw=0$ sonst.)]{.notes}
 
-::: notes
-$lw = 1$ wenn Wort $w$ im Testdokument vorkommt, $lw=0$ sonst.
-:::
-
+::: center
 $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$
+:::
 
 ::: notes
 Wenn ein Wort $w$ im Testdatensatz vorkommt, wird es mit $P(lw=1 | h)$
@@ -601,16 +616,16 @@ Entscheidung: OK
 
 # Wrap-Up
 
--   Vorverarbeitung: Tokenisierung, Vokabular, Bag of Words (BoW)
+-   **Vorverarbeitung**: Tokenisierung, Vokabular, Bag of Words (BoW)
 
--   Multinomial NB:
+-   **Multinomial NB**:
     -   Zähle die Vorkommen eines Terms:
         $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$
     -   Klassifikation mit
         $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathop{\text{count}}(w)}$
     -   Im Test nicht vorhandene Terme t aus V werden ignoriert (Faktor 1)
 
--   Bernoulli NB:
+-   **Bernoulli NB**:
     -   Prüfe das Vorkommen eines Terms:
         $P(t=1|c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
     -   Klassifikation mit
@@ -618,11 +633,13 @@ Entscheidung: OK
     -   Im Test nicht vorhandene Terme t aus V werden korrekt mit $P(lw=0 | h)$
         berücksichtigt
 
--   Problem mit kleinen Faktoren: Logarithmus, Übergang zu Summe
+\bigskip
 
--   Zero-Frequency-Problem: Laplace-Glättung mit $\alpha=1$
+-   Problem mit kleinen Faktoren: **Logarithmus**, Übergang zu Summe
 
--   Klassifikation mit Out-of-Vocabulary-Termen: UNK-Term trainieren
+-   **Zero-Frequency-Problem**: Laplace-Glättung mit $\alpha=1$
+
+-   Klassifikation von **Out-of-Vocabulary-Termen**: UNK-Term trainieren
 
 ::: readings
 Lesen Sie in [@Russell2021] bitte den Abschnitt 12.6 "Naive Bayes Models". Darüber
