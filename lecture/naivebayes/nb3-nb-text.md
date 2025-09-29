@@ -215,8 +215,8 @@ Naive Bayes "trainieren"
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK}) = (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1) = 6/15 = 0.40$
-    -   $P(\text{sieben} | \text{SPAM}) = (2)/(2+1+1+1) = 2/5 = 0.40$
+    -   $P(\text{sieben} | \text{OK})$ = $(2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1) = 6/15 = 0.40$
+    -   $P(\text{sieben} | \text{SPAM})$ = $(2)/(2+1+1+1) = 2/5 = 0.40$
     -   $P(\text{zwerg} | \text{OK}) = 2/15 = 0.133$
     -   $P(\text{zwerg} | \text{SPAM}) = 0/5 = 0.00$
     -   $P(\text{fressen} | \text{OK}) = 2/15 = 0.133$
@@ -253,10 +253,12 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 = 0.75*0.40*0.40*0.133*0.133*1*1*0.067*1 = 0.00014221956$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    = $0.75*0.40*0.40*0.133*0.133*1*1*0.067*1 = 0.00014221956$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 = 0.25*0.40*0.40*0.00*0.00*1*1*0.20*1 = 0.00$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
+    = $0.25*0.40*0.40*0.00*0.00*1*1*0.20*1 = 0.00$
 
 Entscheidung: OK
 
@@ -290,9 +292,9 @@ $$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\t
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK}) = (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7}) = 7/22 = 0.318$
+    -   $P(\text{sieben} | \text{OK})$ = $(2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7}) = 7/22 = 0.318$
         (vorher: 0.40)
-    -   $P(\text{sieben} | \text{SPAM}) = (2+\mathbf{1})/(2+1+1+1+\mathbf{7}) = 3/12 = 0.25$
+    -   $P(\text{sieben} | \text{SPAM})$ = $(2+\mathbf{1})/(2+1+1+1+\mathbf{7}) = 3/12 = 0.25$
         (vorher: 0.40)
     -   $P(\text{zwerg} | \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
@@ -330,11 +332,13 @@ $$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\t
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 = 0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    = $0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$
     (vorher: 0.00014221956)
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 = 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0,00001797598438$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
+    = $0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0,00001797598438$
     (vorher: **0.00**)
 
 Entscheidung: OK
@@ -359,10 +363,12 @@ beim Training nicht gab?
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0$
+    $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
 \bigskip
 
@@ -417,9 +423,9 @@ müssen entsprechend angepasst werden!
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK}) = (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$
+    -   $P(\text{sieben} | \text{OK})$ = $(2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$
         (vorher: 0.318)
-    -   $P(\text{sieben} | \text{SPAM}) = (2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$
+    -   $P(\text{sieben} | \text{SPAM})$ = $(2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$
         (vorher: 0.25)
     -   ...
     -   $P(\text{UNK} | \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
@@ -439,10 +445,12 @@ Anzahl beachten!
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0 \cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
+    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0 \cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
+    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0 \cdot  P(\text{bock} | \text{SPAM})^0$
+    $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
 \bigskip
 
@@ -586,10 +594,12 @@ berücksichtigt. Sonst mit $P(lw=0 | h) = (1 - P(lw=1 | h))$.
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   H = OK:
-    $P(\text{OK}) \cdot P(\text{sieben}=1 | \text{OK}) \cdot P(\text{zwerg}=1 | \text{OK}) \cdot P(\text{fressen}=1 | \text{OK}) \cdot P(\text{ziege}=0 | \text{OK}) \cdot P(\text{treten}=0 | \text{OK}) \cdot P(\text{wolf}=1 | \text{OK}) \cdot P(\text{bock}=0 | \text{OK}) = 0.75*0.80*0.60*0.60*(1-0.40)*(1-0.40)*0.40*(1-0.60) = 0.0124416$
+    $P(\text{OK}) \cdot P(\text{sieben}=1 | \text{OK}) \cdot P(\text{zwerg}=1 | \text{OK}) \cdot P(\text{fressen}=1 | \text{OK}) \cdot P(\text{ziege}=0 | \text{OK}) \cdot P(\text{treten}=0 | \text{OK}) \cdot P(\text{wolf}=1 | \text{OK}) \cdot P(\text{bock}=0 | \text{OK})$
+    = $0.75*0.80*0.60*0.60*(1-0.40)*(1-0.40)*0.40*(1-0.60) = 0.0124416$
 
 -   H = SPAM:
-    $P(\text{SPAM}) \cdot P(\text{sieben}=1 | \text{SPAM}) \cdot P(\text{zwerg}=1 | \text{SPAM}) \cdot P(\text{fressen}=1 | \text{SPAM}) \cdot P(\text{ziege}=0 | \text{SPAM}) \cdot P(\text{treten}=0 | \text{SPAM}) \cdot P(\text{wolf}=1 | \text{SPAM}) \cdot P(\text{bock}=0 | \text{SPAM}) = 0.25*0.667*0.333*0.333*(1-0.667)*(1-0.667)*0.667*(1-0.333) = 0.0009122091926$
+    $P(\text{SPAM}) \cdot P(\text{sieben}=1 | \text{SPAM}) \cdot P(\text{zwerg}=1 | \text{SPAM}) \cdot P(\text{fressen}=1 | \text{SPAM}) \cdot P(\text{ziege}=0 | \text{SPAM}) \cdot P(\text{treten}=0 | \text{SPAM}) \cdot P(\text{wolf}=1 | \text{SPAM}) \cdot P(\text{bock}=0 | \text{SPAM})$
+    = $0.25*0.667*0.333*0.333*(1-0.667)*(1-0.667)*0.667*(1-0.333) = 0.0009122091926$
 
 Entscheidung: OK
 
