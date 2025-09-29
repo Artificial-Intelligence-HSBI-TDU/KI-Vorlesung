@@ -245,9 +245,7 @@ $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x
 
 Jedes Vorkommen eines Wortes im Testdatensatz ist ein $x$!
 
-::: center
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathbf{\mathop{\text{count}}(w)}}$
-:::
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathbf{\mathop{\text{count}}(w)}}$$
 
 \bigskip
 \smallskip
@@ -279,10 +277,8 @@ Entscheidung: OK
 
 # Naive Bayes mit Laplace-Glättung (Multinomial NB)
 
-::: center
-$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$,
-Laplace: $\alpha = 1$
-:::
+$$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|},
+\quad \text{ bei Laplace: } \alpha = 1$$
 
 ::: slides
 \footnotesize
@@ -577,9 +573,7 @@ Für jedes Wort $w$ im Vokabular $V$ gibt es die Beobachtung (Bernoulli-Variable
 $lw \in \lbrace 0, 1 \rbrace$. [($lw = 1$ wenn Wort $w$ im Testdokument vorkommt,
 $lw=0$ sonst.)]{.notes}
 
-::: center
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$
-:::
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$$
 
 ::: notes
 Wenn ein Wort $w$ im Testdatensatz vorkommt, wird es mit $P(lw=1 | h)$
