@@ -30,11 +30,9 @@ trainiert (UNK steht für "unknown"). Bei der Klassifikation werden OOV-Terme ei
 auf den UNK-Term abgebildet und die dafür berechneten Wahrscheinlichkeiten genutzt.
 :::
 
-<!--
 ::: youtube
--   [VL Text-Klassifikation mit Naive Bayes](TODO)
+-   [VL Text-Klassifikation mit Naive Bayes](https://youtu.be/Gkg-SGnl9nY)
 :::
--->
 
 # Textklassifikation mit NB
 
