@@ -470,11 +470,11 @@ Stellen Sie sich vor, Sie haben eine Sammlung von 100 E-Mails (60 Spam, 40
 Nicht-Spam). Sie wissen, dass das Wort "Gewinn" in 45 Spam-E-Mails und in 5
 Nicht-Spam-E-Mails vorkommt.
 
-Berechnen Sie die Wahrscheinlichkeit, dass es eine E-Mail Spam ist, wenn das Wort
-"Gewinn" darin vorkommt.
+1.  Berechnen Sie die Wahrscheinlichkeit, dass es eine E-Mail Spam ist, wenn das
+    Wort "Gewinn" darin vorkommt.
 
-Wie würde die E-Mail mit dem Wort "Gewinn" durch einen Naive Bayes Klassifikator
-bewertet?
+2.  Wie würde die E-Mail mit dem Wort "Gewinn" durch einen Naive Bayes Klassifikator
+    bewertet?
 
 <!--
 ## Ansatz A
