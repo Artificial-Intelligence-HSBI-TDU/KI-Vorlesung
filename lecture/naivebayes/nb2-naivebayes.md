@@ -464,6 +464,107 @@ empfehlenswert.
 :::
 
 ::: challenges
+**Spam-Mails**
+
+Stellen Sie sich vor, Sie haben eine Sammlung von 100 E-Mails (60 Spam, 40
+Nicht-Spam). Sie wissen, dass das Wort "Gewinn" in 45 Spam-E-Mails und in 5
+Nicht-Spam-E-Mails vorkommt.
+
+Berechnen Sie die Wahrscheinlichkeit, dass es eine E-Mail Spam ist, wenn das Wort
+"Gewinn" darin vorkommt.
+
+Wie würde die E-Mail mit dem Wort "Gewinn" durch einen Naive Bayes Klassifikator
+bewertet?
+
+<!--
+## Ansatz A
+
+Um die Wahrscheinlichkeit zu berechnen, dass eine E-Mail Spam ist, wenn
+das Wort "Gewinn" darin vorkommt, verwenden wir das Bayessche Theorem.
+Wir definieren die Variablen wie folgt:
+
+-   **A**: Die E-Mail ist Spam.
+-   **B**: Das Wort "Gewinn" kommt in der E-Mail vor.
+
+Wir suchen $P(A|B)$, die Wahrscheinlichkeit, dass eine E-Mail Spam ist,
+gegeben dass das Wort "Gewinn" vorkommt.
+
+Nach dem Bayesschen Theorem gilt:
+
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
+
+### Schritt 1: Berechnung der Einzelwahrscheinlichkeiten
+
+1.  **Berechnung von $P(A)$**: Die Wahrscheinlichkeit, dass eine E-Mail
+    Spam ist:
+    $$P(A) = \frac{\text{Anzahl Spam-E-Mails}}{\text{Gesamtanzahl E-Mails}} = \frac{60}{100} = 0,6$$
+
+2.  **Berechnung von $P(B|A)$**: Die Wahrscheinlichkeit, dass das Wort
+    "Gewinn" in einer Spam-E-Mail vorkommt:
+    $$P(B|A) = \frac{\text{Anzahl Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Spam-E-Mails}} = \frac{45}{60} = 0,75$$
+
+3.  **Berechnung von $P(B)$**: Wir benötigen die totale
+    Wahrscheinlichkeit $P(B)$, dass das Wort "Gewinn" in irgendeiner
+    E-Mail vorkommt. Dies umfasst sowohl Spam- als auch
+    Nicht-Spam-E-Mails (Marginalisierung):
+
+    $$P(B) = P(B|A) \cdot P(A) + P(B|\neg A) \cdot P(\neg A)$$
+
+    Zuerst müssen wir $P(\neg A)$ und $P(B|\neg A)$ berechnen:
+
+    -   $P(\neg A)$ (Wahrscheinlichkeit, dass die E-Mail nicht Spam
+        ist): $$P(\neg A) = \frac{40}{100} = 0,4$$
+    -   $P(B|\neg A)$ (Wahrscheinlichkeit, dass das Wort "Gewinn" in
+        einer Nicht-Spam-E-Mail vorkommt):
+        $$P(B|\neg A) = \frac{\text{Anzahl Nicht-Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Nicht-Spam-E-Mails}} = \frac{5}{40} = 0,125$$
+
+    Jetzt können wir $P(B)$ berechnen:
+
+    $$P(B) = P(B|A) \cdot P(A) + P(B|\neg A) \cdot P(\neg A)$$
+
+    $$P(B) = (0,75 \cdot 0,6) + (0,125 \cdot 0,4)$$
+
+    $$P(B) = 0,45 + 0,05 = 0,50$$
+
+### Schritt 2: Berechnung von $P(A|B)$
+
+Jetzt setzen wir alles in die Formel für $P(A|B)$ ein:
+
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} = \frac{0,75 \cdot 0,6}{0,50}$$
+$$P(A|B) = \frac{0,45}{0,50} = 0,9$$
+
+### Ergebnis
+
+Die Wahrscheinlichkeit, dass eine E-Mail Spam ist, wenn das Wort
+"Gewinn" darin vorkommt, beträgt **90%**.
+
+
+## Ansatz B
+Wir rechnen einfach einen Bayes Klassifikator aus:
+
+### Prior
+
+P(Spam): 60/100 = 0.60
+P(Nicht-Spam): 40/100 = 0.4
+
+### Likelihoods
+
+P(Gewinn=0 | SPAM) = (60-45)/60 = 15/60 = 0.25
+P(Gewinn=0 | Nicht-Spam) = (40-5)/60 = 35/60 = 0.583
+
+P(Gewinn=1 | SPAM) = 45/60 = 0.75
+P(Gewinn=1 | Nicht-Spam) = 5/40 = 0.125
+
+### Klassifikation
+
+Wort "Gewinn" taucht in einer Mail auf.
+
+Hypothese 1: SPAM: P(SPAM)*P(Gewinn=1 | SPAM) = 0.60*0.75 = 0.45
+Hypothese 2: Nicht-Spam: P(Nicht-Spam)*P(Gewinn=1 | Nicht-Spam) = 0.4*0.125 = 0.05
+
+**Hypothese 1 gewinnt => SPAM**
+-->
+
 **Textklassifikation**
 
 Betrachten Sie die folgenden Aussagen:
