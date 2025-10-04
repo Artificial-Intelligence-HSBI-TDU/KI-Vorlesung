@@ -103,7 +103,8 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 -   **Studienleistung**: "Portfolio" - Kriterien je Person:
 
     1.  Teilnahme an der Internationalen Projektwoche "AI Connect" mit aktiver
-        Beteiligung (Team-Building, Kick-Off, Teamarbeit, Vortrag/Video)
+        Beteiligung (Meeting 1: Team-Building/Kick-Off, Meeting 2: Project Launch,
+        Teamarbeit, Meeting 3: Team-Präsentationen (Vortrag/Video))
     2.  Mind. fünf Übungsblätter erfolgreich bearbeitet
     3.  Video-Vortrag zum erfolgreich bearbeiteten Mini-Projekt ("AI Connect") am
         Fr, 19.12., ab 10:30 Uhr, a 2 Minuten (pro Team)
@@ -124,11 +125,14 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 -   "Erfolgreiche Bearbeitung" eines Blattes umfasst Bearbeitung aller Aufgaben des
     Blattes und fristgerechte Abgabe des ausreichenden Post Mortems im ILIAS. Die
     intensive Beschäftigung mit den Aufgaben muss erkennbar sein.
+
+\smallskip
+
 -   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
-    jeweiligen Kriteriums bzw. die Teilnahme am "AI Connect"-Mini-Projekt
-    zurückblickend mit mind. 200 bis max. 400 Wörtern (Nutzlast; Überschriften und
-    Links zählen nicht mit). Gehen Sie dabei aussagekräftig und nachvollziehbar auf
-    folgende Punkte ein:
+    jeweiligen Kriteriums bzw. die Teilnahme an den drei Meetings des "AI
+    Connect"-Mini-Projekts zurückblickend mit mind. 200 bis max. 400 Wörtern
+    (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie dabei
+    aussagekräftig und nachvollziehbar auf folgende Punkte ein:
 
     1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
         besprochen?
@@ -142,8 +146,8 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
     Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
     entsprechend inhaltlich an, (6) entfällt für die ersten beiden Meetings (für das
-    dritte Meeting (Projekt-Präsentation) geben Sie bitte einen Link zu Ihrem Repo
-    mit den Artefakten (Lösung, Vortrag, Video) an).
+    dritte Meeting (Team-Präsentation) geben Sie bitte einen Link zu Ihrem Repo mit
+    den Artefakten (Lösung, Vortrag, Video) an).
 
     Die Post Mortems geben Sie bitte pro Person bis spätestens zur jeweiligen
     Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797) ab.
