@@ -141,7 +141,9 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
         Vortrag, ...).
 
     Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
-    entsprechend inhaltlich an, (6) entfällt.
+    entsprechend inhaltlich an, (6) entfällt für die ersten beiden Meetings (für das
+    dritte Meeting (Projekt-Präsentation) geben Sie bitte einen Link zu Ihrem Repo
+    mit den Artefakten (Lösung, Vortrag, Video) an).
 
     Die Post Mortems geben Sie bitte pro Person bis spätestens zur jeweiligen
     Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797) ab.
