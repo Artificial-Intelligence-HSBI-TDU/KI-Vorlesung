@@ -61,7 +61,7 @@ mit
 -   $c_3=\left((v_1,v_3), \lbrace (x,y) \in D^2 | x \le y \rbrace\right)$ und
 -   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
 
-1.  Zeichen Sie den Constraint-Graph
+1.  Zeichnen Sie den Constraint-Graph
 2.  Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand der
     Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen
     $D_i$, für jede Iteration des Algorithmus an.
