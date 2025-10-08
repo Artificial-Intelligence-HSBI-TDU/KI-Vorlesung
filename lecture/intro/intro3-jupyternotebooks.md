@@ -9,5 +9,5 @@ title: "Intro: Einführung in Jupyter-Notebooks"
 :::
 
 ::: attachments
-[starter.ipynb](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/intro/files/starter.ipynb)
+[starter.ipynb](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/intro/files/jupyter_starter.ipynb)
 :::
