@@ -19,7 +19,7 @@ wird dann im Spielbaum nach oben gereicht.
 :::
 
 ::: youtube
--   [VL Minimax](https://youtu.be/)
+-   [VL Minimax](https://youtu.be/aKtF__lMMsw)
 :::
 
 # Spiele als Suchproblem: Minimax
