@@ -31,7 +31,7 @@ Datenbanken gespeicherten Positionen und Bewertungen abgleichen.
 :::
 
 ::: youtube
--   [VL Alpha-Beta-Pruning](https://youtu.be/)
+-   [VL Alpha-Beta-Pruning](https://youtu.be/_Hq-GCl__bU)
 :::
 
 # Verbesserung Minimax-Algorithmus
