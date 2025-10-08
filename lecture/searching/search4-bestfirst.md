@@ -13,7 +13,7 @@ die geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.
 :::
 
 ::: youtube
--   [VL Best First](https://youtu.be/)
+-   [VL Best First](https://youtu.be/dNyLOQuD_aI)
 :::
 
 # Hole das Buch
