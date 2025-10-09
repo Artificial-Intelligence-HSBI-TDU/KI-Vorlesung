@@ -5,7 +5,7 @@ title: "Intro: Einführung in Jupyter-Notebooks"
 ---
 
 ::: youtube
-Video-Mitschnitt "Einführung in Jupyter-Notebooks ... coming soon ...
+[Video-Mitschnitt "Einführung in Jupyter-Notebooks](https://youtu.be/TODO)
 :::
 
 ::: attachments
