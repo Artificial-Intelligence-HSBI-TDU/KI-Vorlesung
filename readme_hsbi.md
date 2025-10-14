@@ -140,12 +140,11 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
     3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
         gelöst?
     4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
-    5.  Team: Mit wem haben Sie zusammengearbeitet?
-    6.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
+    5.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
         Vortrag, ...).
 
-    Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
-    entsprechend inhaltlich an, (6) entfällt für die ersten beiden Meetings (für das
+    Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4)
+    entsprechend inhaltlich an, (5) entfällt für die ersten beiden Meetings (für das
     dritte Meeting (Team-Präsentation) geben Sie bitte einen Link zu Ihrem Repo mit
     den Artefakten (Lösung, Vortrag, Video) an).
 
