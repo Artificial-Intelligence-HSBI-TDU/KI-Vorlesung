@@ -11,8 +11,8 @@ title: "NN06: Backpropagation"
 :::
 
 ::: attachments
--   [NN06-MLP_Backpropagation.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN06-MLP_Backpropagation.pdf)
--   [NN06.2-MLP_Backpropagation_Beispiel.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN06.2-MLP_Backpropagation_Beispiel.pdf)
+-   [NN06-MLP_Backpropagation.pdf](files/NN06-MLP_Backpropagation.pdf)
+-   [NN06.2-MLP_Backpropagation_Beispiel.pdf](files/NN06.2-MLP_Backpropagation_Beispiel.pdf)
 :::
 
 # Kurze Übersicht
