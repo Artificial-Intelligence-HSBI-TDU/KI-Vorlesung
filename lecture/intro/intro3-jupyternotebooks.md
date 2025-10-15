@@ -9,5 +9,5 @@ Video-Mitschnitt "Einführung in Jupyter-Notebooks ... coming soon ...
 :::
 
 ::: attachments
-[starter.ipynb](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/intro/files/jupyter_starter.ipynb)
+[starter.ipynb](files/jupyter_starter.ipynb)
 :::
