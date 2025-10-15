@@ -126,7 +126,7 @@ by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
 ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenge.png?raw=true)
+![](images/challenge.png)
 
 Finden Sie mit der **Best-First-Suche** jeweils einen Weg von Würzburg nach München.
 Vergleichen Sie das Ergebnis mit der Gradienten-Suche.
