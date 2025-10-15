@@ -206,11 +206,11 @@ Lesen Sie in [@Russell2021] bitte den Abschnitt 5.2 "Constraint Propagation".
 
 1.  Ist die Kante zwischen a und b konsistent?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_a.png?raw=true){web_width="20%"}
+    ![](images/csp_challenge_a.png){web_width="20%"}
 
 2.  Wann ist der Graph lokal konsistent?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_b.png?raw=true){web_width="15%"}
+    ![](images/csp_challenge_b.png){web_width="15%"}
 
     -   a {1,2}; b {2,3}; c {1,2,3}; d {1,2,3}
     -   a {1,2}; b {2,3}; c {3}; d {1,2}
@@ -219,7 +219,7 @@ Lesen Sie in [@Russell2021] bitte den Abschnitt 5.2 "Constraint Propagation".
 
 3.  Wie sieht die Queue im nächsten Schritt mit AC3 aus?
 
-    ![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/csp/images/csp_challenge_c.png?raw=true){web_width="25%"}
+    ![](images/csp_challenge_c.png){web_width="25%"}
 
     Aktuelle Queue: \[ab, ac, ba, bc, ca, cb\]
 
