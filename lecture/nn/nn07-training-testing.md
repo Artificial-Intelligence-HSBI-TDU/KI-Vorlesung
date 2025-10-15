@@ -11,7 +11,7 @@ title: "NN07: Training & Testing"
 :::
 
 ::: attachments
--   [NN07-Testing-Validierung.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN07-Testing-Validierung.pdf)
+-   [NN07-Testing-Validierung.pdf](files/NN07-Testing-Validierung.pdf)
 :::
 
 # Kurze Übersicht
