@@ -9,7 +9,7 @@ title: "NN05: Multilayer Perzeptron"
 :::
 
 ::: attachments
--   [NN05-MLP.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN05-MLP.pdf)
+-   [NN05-MLP.pdf](files/NN05-MLP.pdf)
 :::
 
 # Kurze Übersicht
