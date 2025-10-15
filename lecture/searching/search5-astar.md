@@ -242,7 +242,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 Betrachten Sie folgendes Problem:
 
-![](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/searching/images/challenges_robby.png?raw=true){width="60%"}
+![](images/challenges_robby.png){width="60%"}
 
 Dargestellt ist eine typische Büroumgebung mit verschiedenen Räumen und einem Flur.
 Die Pfeile in den Durchgängen geben an, in welche Richtung der jeweilige Durchgang
