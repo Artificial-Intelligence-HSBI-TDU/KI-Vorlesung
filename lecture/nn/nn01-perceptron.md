@@ -13,7 +13,7 @@ title: "NN01: Das Perzeptron"
 :::
 
 ::: attachments
--   [NN01-Das_Perzeptron.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN01-Das_Perzeptron.pdf)
+-   [NN01-Das_Perzeptron.pdf](files/NN01-Das_Perzeptron.pdf)
 :::
 
 # Kurze Übersicht
