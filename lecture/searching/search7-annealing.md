@@ -216,3 +216,21 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 -   [Selbsttest Simulated Annealing
     (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld)
 :::
+
+
+::: challenges
+**Team-Planung**
+
+Sie haben 12 Personen mit Rollen/Skills und paarweisen Synergiewerten (positiv = gut, negativ = Konflikt).
+Es gibt die Rollen/Skills "Frontend" (FE), "Backend" (BE), "Fullstack" (FS) sowie "User Experience" (UX).
+Für die Synergie-Werte überlegen Sie sich einige passende Beispiele, etwa "Person A und B kommen gut miteinander aus" o.ä.
+
+Bilden Sie 3 Teams zu je 4 Personen, so dass
+-   die Summe der Synergien innerhalb der Teams maximiert wird,
+-   pro Team mindestens je 1x FE, 1x BE, 1x FS vorhanden ist (harte oder weiche Nebenbedingung),
+-   optional: UX in einem Team bringt Bonus.
+
+Es gibt exakt 12 Personen, darunter jeweils 3 FE, 3 BE, 3 FS, 3 UX.
+
+Modellieren Sie dieses Problem geeignet, damit Sie es mit Simulated Annealing lösen können.
+:::
