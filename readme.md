@@ -28,6 +28,16 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 # Förderungen und Kooperationen
 
+## Kooperation mit SEECS/NUST, CST/RUB, TDU und HSBI
+
+Im Winter 2025 laden wir Sie zur internationalen, online durchgeführten Projektwoche
+"AI Connect" mit spannenden Challenges rund um das Thema Künstliche Intelligenz ein,
+die wir gemeinsam mit der [Hochschule Bielefeld (HSBI)](https://www.hsbi.de/), der
+[Türkisch-Deutschen Universität in Istanbul (TDU)](https://www.tau.edu.tr/en), der
+[School of Electrical Engineering & Computer Science (SEECS/NUST) in
+Pakistan](https://seecs.nust.edu.pk/) und dem [College of Science and Technology in
+Bhutan (CST/RUB)](https://cst.edu.bt/) für unsere Studierenden organisieren.
+
 ## Kooperation zw. HSBI und TDU
 
 Über das Projekt ["Digital Mobil @ FH
