@@ -45,9 +45,8 @@ Bielefeld"](https://www.hsbi.de/en/digitalmobil) der Fachhochschule Bielefeld (H
 ist im Sommer 2020 eine Kooperation mit der Türkisch-Deutschen Universität in
 Istanbul (TDU) im Modul "Künstliche Intelligenz" gestartet.
 
-Wir werden in diesem Semester die Vorlesungen und auch die Übungen/Praktika wieder
-im Co-Teaching durchführen. In den Zoom-Sitzungen nehmen deshalb alle Studierenden
-gemeinsam (TDU und HSBI) teil.
+Wir werden in diesem Semester die Vorlesungen wieder im Co-Teaching durchführen. In
+den Zoom-Sitzungen nehmen deshalb alle Studierenden gemeinsam (TDU und HSBI) teil.
 
 ## Kooperation mit dem DigikoS-Projekt
 
