@@ -22,14 +22,11 @@ anschauen).
 
 # Backgammon: Zwei Spieler, was ist der beste Zug?
 
-<!-- TODO
-![](https://live.staticflickr.com/3670/11267311625_e4758ff425_o_d.jpg){width="60%"}
--->
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Backgammon_lg.png/960px-Backgammon_lg.png){width="40%"}
 
-[["position-backgammon-decembre"](https://www.flickr.com/photos/83436399@N04/11267311625)
-by [serialgamer_fr](https://www.flickr.com/photos/83436399@N04) on Flickr.com ([CC
-BY
-2.0](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich))]{.credits}
+[[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png)
+by [Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
+([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 ::: notes
 Zwei Spieler, ein Spielstand und ein Würfelergebnis: **Was ist jetzt der beste
