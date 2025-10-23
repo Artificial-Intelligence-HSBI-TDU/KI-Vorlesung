@@ -182,7 +182,7 @@ Gedankenexperiment:
 
 ::: readings
 -   @Russell2021: Minimax: Abschnitt 6.2
--   @Ertel2025
+-   @Ertel2025: Kapitel 6.4.1 "Minimax-Suche"
 :::
 
 ::: outcomes

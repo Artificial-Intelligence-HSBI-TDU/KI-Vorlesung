@@ -105,7 +105,7 @@ Zug?!**
 
 ::: readings
 -   @Russell2021: Einführung Spiele: Abschnitt 6.1
--   @Ertel2025
+-   @Ertel2025: Kapitel 6.4 "Spiele mit Gegner"
 :::
 
 ::: outcomes

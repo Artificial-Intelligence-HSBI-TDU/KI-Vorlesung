@@ -191,7 +191,7 @@ Nachfolger arbeiten.
 
 ::: readings
 -   @Russell2021: Erweiterungen und Heuristiken: Abschnitte 6.2.2, 6.3, 6.5
--   @Ertel2025
+-   @Ertel2025: Kapitel 6.5 "Heuristische Bewertungsfunktionen"
 :::
 
 ::: outcomes
