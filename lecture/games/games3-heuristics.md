@@ -72,6 +72,42 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
         zur Laufzeit also eine Art Klassifikation der aktuellen Position durch das
         MLP, welches die gelernte Bewertung ausgibt)]{.notes}
 
+::: notes
+Oft ist das vollständige Berechnen eines Zweiges im Suchbaum sehr zeitaufwändig und
+kostet viele Ressourcen (Speicher, Rechenkapazität). In einem laufenden Spiel hat
+man aber nur begrenzt Zeit, und oft laufen Spiele auf dedizierten Geräten mit eher
+beschränkter Hardware.
+
+Wenn die einzelnen Zweige nicht mehr bis zu den Blättern berechnet werden (können),
+muss man den aktuellen Zustand aber dennoch bewerten können. Dies wird im
+Algorithmus durch die Funktion $\mathop{\text{Eval}}(s)$ erledigt (für den Zustand
+$s$).
+
+Für diese Funktion kann man unterschiedliche Strategien anwenden:
+
+-   Oft gibt es Heuristiken, mit denen eine Stellung im Spiel ungefähr bewertet
+    werden kann (obiges Beispiel: Schach mit der Materialbewertung). Damit müssen
+    nicht alle Züge im Vorfeld durchgerechnet werden.
+-   Eine andere häufig genutzte Strategie ist das Berechnen von möglichst vielen
+    Positionen und der jeweiligen Bewertung vor dem Spiel und das Abspeichern der
+    Tupel (Position, Bewertung) in einer Datenbank. Im Spiel selbst kann man dann
+    relativ schnell die Bewertung der aktuellen Position aus der Datenbank holen.
+-   Eine weitere häufig angewendete Strategie ist das Trainieren eines neuronalen
+    Netzes (etwa Multilagen-Perzeptron, MLP) mit vorab berechneten Positionen und
+    Bewertungen. Im Spiel wird dann die aktuelle Position in das Netz gegeben und
+    der Output als Bewertung genutzt.
+-   Eine weitere Strategie ist die Monte Carlo Tree Search. In einer Position hat
+    man i.d.R. relativ viele Möglichkeiten, d.h. der Knoten im Suchbaum hat
+    entsprechend viele Ausgänge. Statt nun zeitaufwändig die vollständige Suche über
+    alle Ausgänge durchzuführen, wird die Berechnung nur für zufällig gewählte
+    Zweige durchgeführt und das Ergebnis gemittelt und als Schätzung für die
+    Bewertung des Knotens genutzt.
+-   Zum Berechnen der Bewertungen kann auch Reinforcement Learning herangezogen
+    werden. Hier machen die Agenten nacheinander ihre Züge und erst am Ende erfolgt
+    eine Bewertung durch den Trainer. Diese Bewertung wird dann auf die einzelnen
+    Züge zurückgerechnet, und durch mehrfaches Durchspielen immer weiter verbessert.
+:::
+
 # Minimax mit mehreren Spielern
 
 \bigskip
