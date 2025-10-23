@@ -66,6 +66,10 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 -   **Alternativ**: Speicherung von Positionen plus Bewertung in Datenbanken
     `\newline`{=tex} =\> Lookup mit $\mathop{\text{Eval}}(s)$ [(statt Berechnung zur
     Laufzeit)]{.notes}
+-   **Alternativ**: Training eines **ML-Modells** (Eingabe: Position, Ausgabe:
+    Bewertung) `\newline`{=tex} =\> Lookup mit $\mathop{\text{Eval}}(s)$ [(statt
+    Berechnung zur Laufzeit also eine Art Klassifikation der aktuellen Position
+    durch das MLP, welches die gelernte Bewertung ausgibt)]{.notes}
 
 # Minimax mit mehreren Spielern
 
