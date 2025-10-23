@@ -123,6 +123,17 @@ Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
 
 [[Tafelbeispiel Handsimulation]{.ex}]{.slides}
 
+::: notes
+Hier noch zwei Links zu Online-Simulatoren für Minimax und Alpha-Beta-Pruning:
+
+[homepage.ufp.pt/jtorres/ensino/ia/alfabeta.html](http://homepage.ufp.pt/jtorres/ensino/ia/alfabeta.html)
+
+[raphsilva.github.io/utilities/minimax_simulator/](https://raphsilva.github.io/utilities/minimax_simulator/#)
+(englische Variante von https://github.com/lerneumann/minimax)
+
+Vergleichen Sie die Ergebnisse im Simulator mit den selbst berechneten Werten.
+:::
+
 # Alpha-beta-Pruning -- Eigenschaften
 
 1.  Pruning beeinflusst nicht das Endergebnis!
