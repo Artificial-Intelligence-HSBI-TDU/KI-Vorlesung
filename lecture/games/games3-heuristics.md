@@ -86,7 +86,7 @@ der Mitspieler günstiger ist.
 
 # Zufallsspiele
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Backgammon_lg.png/960px-Backgammon_lg.png){width="40%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Backgammon_lg.png/960px-Backgammon_lg.png){width="60%"}
 
 [[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png)
 by [Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
