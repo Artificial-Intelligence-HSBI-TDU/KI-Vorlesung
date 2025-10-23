@@ -74,7 +74,7 @@ neue Anordnungen der Königinnen (zwei neue Spielfelder).
 # EA -- Strömungen
 
 1.  **Genetische Algorithmen** (GA)
-    -   Holland und Goldberg (ab 1960)
+    -   @holland1975 (@holland1992) und @goldberg1986
     -   Binäre Lösungsrepräsentation (Bitstring):
         $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
     -   Fitnessbasierte stochastische Selektion
@@ -83,7 +83,7 @@ neue Anordnungen der Königinnen (zwei neue Spielfelder).
 \smallskip
 
 2.  **Evolutionsstrategien** (ES)
-    -   Rechenberg und Schwefel (ab 1960)
+    -   @rechenberg1978 und @schwefel1975 (@Schwefel1995)
     -   Kodierung reellwertiger Parameter:
         $\mathbf{g} = (\mathbf{x}, \mathbf{\sigma})$ mit
         $\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n$
@@ -121,10 +121,7 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 
 ::: readings
 -   @Russell2021: GA: Abschnitt 4.1.4
--   @Schwefel1995: Originalarbeit zu Evolutionsstrategien
--   @Michalewicz1996
--   @Baeck1996
--   @Nissen1997
+-   @Weicker2015
 :::
 
 ::: outcomes
