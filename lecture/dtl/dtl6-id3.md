@@ -270,16 +270,7 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 **Games: Behaviour Trees**
 
 In einem Dungeon-Crawler wurden über mehrere Spiele Daten für die Aktionen eines
-Monsters aufgezeichnet. Dabei wurden die folgenden Merkmale für das Monster erfasst
-(mit entsprechenden Ausprägungen):
-
-*   Distanz: nah, mittel, fern
-*   HP: niedrig, mittel, hoch
-*   Mana: gering, genug
-
-Die Aktionen umfassen Angreifen, Heilen, Fliehen.
-
-Die in den vorangegangenen Spielen aufgezeichneten Daten sind:
+Monsters aufgezeichnet:
 
 | Nr. | Distanz | HP      | Mana   | Aktion    |
 |:----|:--------|:--------|:-------|:----------|
