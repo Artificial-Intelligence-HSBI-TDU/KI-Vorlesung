@@ -273,113 +273,98 @@ In einem Dungeon-Crawler wurden über mehrere Spiele Daten für die Aktionen ein
 Monsters aufgezeichnet. Dabei wurden die folgenden Merkmale für das Monster erfasst
 (mit entsprechenden Ausprägungen):
 
-*   Distanz: Nah, Mittel, Fern
-*   HP: Hoch, Niedrig
-*   Mana: Genug, Gering
-*   Fernwaffe: Ja, Nein
+*   Distanz: nah, mittel, fern
+*   HP: niedrig, mittel, hoch
+*   Mana: gering, genug
 
-Die Aktionen umfassen Nahkampf, Fernkampf, Zaubern, Flucht.
+Die Aktionen umfassen Angreifen, Heilen, Fliehen.
 
 Die in den vorangegangenen Spielen aufgezeichneten Daten sind:
 
-| Nr. | Distanz | HP      | Mana   | Fernwaffe | Aktion    |
-|:----|:--------|:--------|:-------|:----------|:----------|
-| 01  | Nah     | Niedrig | Gering | Nein      | Nahkampf  |
-| 02  | Nah     | Niedrig | Gering | Nein      | Flucht    |
-| 03  | Fern    | Hoch    | Gering | Ja        | Fernkampf |
-| 04  | Fern    | Hoch    | Genug  | Ja        | Zaubern   |
-| 05  | Mittel  | Hoch    | Genug  | Nein      | Zaubern   |
-| 06  | Mittel  | Hoch    | Gering | Ja        | Fernkampf |
-| 07  | Nah     | Hoch    | Genug  | Ja        | Nahkampf  |
-| 08  | Fern    | Niedrig | Gering | Nein      | Flucht    |
-| 09  | Mittel  | Niedrig | Genug  | Ja        | Zaubern   |
-| 10  | Mittel  | Niedrig | Gering | Ja        | Fernkampf |
+| Nr. | Distanz | HP      | Mana   | Aktion    |
+|:----|:--------|:--------|:-------|:----------|
+| 01  | nah     | niedrig | genug  | heilen    |
+| 02  | fern    | niedrig | gering | fliehen   |
+| 03  | nah     | hoch    | gering | angreifen |
+| 04  | nah     | hoch    | genug  | angreifen |
+| 05  | mittel  | mittel  | genug  | angreifen |
+| 06  | fern    | mittel  | gering | fliehen   |
 
 Trainieren Sie mit diesen Daten einen Entscheidungsbaum als *Behaviour Tree* für das
 Monster, so dass es in einer konkreten Spielsituation von nun an die optimale
-Entscheidung treffen kann. Nutzen Sie dafür ID3. Warum ist CAL2 hier ungeeignet?
+Entscheidung treffen kann. Nutzen Sie dafür ID3.
 
 <!--
 1.  H(S)
 
-    Anzahl Klasse `Nahkampf`:  2 => p_nah = 2/10 = 0.2
-    Anzahl Klasse `Fernkampf`: 3 => p_fern = 3/10 = 0.3
-    Anzahl Klasse `Zaubern`:   3 => p_magic = 3/10 = 0.3
-    Anzahl Klasse `Flucht`:    2 => p_flight = 2/10 = 0.2
+    Anzahl Klasse `angreifen`:  3 => 3/6
+    Anzahl Klasse `heilen`:     1 => 1/6
+    Anzahl Klasse `fliehen`:    2 => 2/6
 
-    H(S) = - sum(p_k * log2 p_k) = 1,971
+    H(S) = - sum(p_k * log2 p_k) = 1,4592
 
 2.  R(S, A) für die Wurzel
 
     Distanz:
-    nah: {1, 2, 7} => 3/10, H: {nah, flight, nah} = -2/3*log2 2/3 - 1/3*log2 1/3= 0,9183
-    mittel: {5, 6, 9, 10} => 4/10, H: {2x magic, 2x fern} = -2x 2/4*log2 2/4 = 1,0000
-    fern: {3, 4, 8} => 3/10, H: {fern, magic, flight} = -3x 1/3*log2 1/3 = 1,5849
-    R(S,A) = 0,3*H({1,2,7}) + 0,4*H({5,6,9,10}) + 0,3*H({3,4,8})
-           = 0,3*0,9183 + 0,4*1,0000 + 0,3*1,5849
-           = 1,1509
-    Gain: 0,820
+    nah: {1, 3, 4} => 3/6, H: {h, 2x a} = -1/3*log2 1/3 -2/3*log2 2/3 = 0,9183
+    mittel: {5} => 1/6, H: {a} = -1*log2 1 = 0
+    fern: {2, 6} => 2/6 H: {2x f} = -1*log2 1 = 0
+    R(S,A) = 3/6 * H({1,2,4}) + 1/6 * H({5}) + 2/6 * H({2,6}) = 0,45915
+    Gain: 0,99985
 
     HP:
-    niedrig: {1,2,8,9,10} => 5/10, H: {nah, 2x flight, magic, fern} = -3x 1/5*log2 1/5 - 2/5*log2 2/5 = 1,9219
-    hoch: {3,4,5,6,7} => 5/10, H: {nah, 2x fern, 2x magic} = -1/5*log2 1/5 - 2x 2/5*log2 2/5 = 1,5219
-    R(S,A) = 0,5*1,9219 + 0,5*1,5219 = 1,7219
-    Gain: 0,249
+    niedrig: {1, 2} => 2/6, H: {h, f} = -2x 1/2*log2 1/2 = 1
+    mittel: {5, 6} => 2/6, H: {a, f} = -2x 1/2*log2 1/2 = 1
+    hoch: {3, 4} => 2/6, H: {2x a} = -1*log2 1 = 0
+    R(S,A) = 2/6 * 1 + 2/6 * 1 + 2/6 * 0 = 0,66667
+    Gain: 0,7925
 
     Mana:
-    genug: {4,5,7,9} => 4/10, H: {3x magic, nah} = -3/4*log2 3/4 - 1/4*log2 1/4 = 0,8113
-    gering: {1,2,3,6,8,10} => 6/10, H: {nah, 3x fern, 2x flight} = -1/6*log2 1/6 - 3/6*log2 3/6 - 2/6*log2 2/6 = 1,4591
-    R(S,A) = 0,4*0,8113 + 0,6*1,4591 = 1,19998
-    Gain: 0,771
+    gering: {2,3,6} => 3/6, H: {a, 2x f} = -1/3*log2 1/3 -2/3*log2 2/3 = 0,9183
+    genug: {1,4,5} => 3/6, H: {2x a, h} = -2/3*log2 2/3 -1/3*log2 1/3 = 0,9183
+    R(S,A) = 3/6*0,9183 + 3/6*0,9183 = 0,9183
+    Gain: 0,5409
 
-    Fernwaffe:
-    ja: {3,4,6,7,9,10} => 6/10, H: {3x fern, 2x magic, nah} = -3/6*log2 3/6 - 2/6*log2 2/6 - 1/6*log2 1/6 = 1,4591
-    nein: {1,2,5,8} => 4/10, H: {2x flight, nah, magic} = -2/4 log2 2/4 - 2x 1/4*log2 1/4 = 1,5000
-    R(S,A)= 0,6*1,4591 + 0,4*1,5 = 1,47546
-    Gain: 0,496
+    => Wurzel: Distanz, Majorität: a
 
-    => Wurzel: Distanz
 
 3. Zweig Distanz "nah":
-   {1, 2, 7} = {nah, flight, nah}, H: -2/3*log2 2/3 - 1/3*log2 1/3 = 0,918
+   {1, 3, 4} = {h, 2x a}, H: -1/3*log2 1/3 -2/3*log2 2/3 = 0,9183
 
-   HP: niedrig {nah, flight}, hoch {nah} => 0,918 - 2/3* (2x 1/2*log 1/2) - 1/3*(1*log 1) = 0,918 - 0,666667 = 0,251
-   Mana: gering {nah, flight}, genug {nah} => 0,251
-   Fernwaffe: nein {nah, flight}, ja {nah} => 0,251
+| Nr. | Distanz | HP      | Mana   | Aktion    |
+|:----|:--------|:--------|:-------|:----------|
+| 01  | nah     | niedrig | genug  | heilen    |
+| 03  | nah     | hoch    | gering | angreifen |
+| 04  | nah     | hoch    | genug  | angreifen |
 
-   Gleichstand im Gain => zufällige Auswahl: Mana.
-   Mana = genug => Nahkampf
-   Mana = gering => {1, 2} verbleiben => nächste Runde: HP oder Fernwaffe, wieder Gleichstand (zufällige Auswahl)
-        => HP = hoch {} = Mehrheitsentscheid Ebene drüber (Mana) = Nahkampf
-        => HP = niedrig {1, 2} => nächste Runde => Fernwaffe
-            => Fernwaffe = ja {} => Mehrheitsentscheid Ebene drüber (HP) = Nahkampf (zufällig)
-            => Fernwaffe = nein {1,2} => Keine Attribute mehr, Mehrheitsentscheid = Nahkampf (zufällig)
+   HP: niedrig {01/h}, mittel {}, hoch {03/a, 04/a} => 0,9183 - 1/3*(1*log2 1) - 0*(0*log2 0) - 2/3*(1*log2 1) = 0,918 - 0 = 0,9183
+   Mana: gering {03/a}, genug {01/h, 04/a} => 0,9183 - 1/3*(1*log2 1) - 2/3*(2x 1/2*log2 1/2) = 0,9183 - 2/3 = 0,2516
 
-   => Idee: wenn bei der Abzweigung Mana=gering kein Gain möglich ist, dann Abbruch und Mehrheitsentscheid aus Knoten
-   darüber (ist aber nicht konform zu Russell/Norvig)
+   Mathematisch ist für nicht beobachtete Werte $lim_{p→0+} p·log2(p) = 0$, weshalb der Term rausfällt.
+
+   => HP hat den höheren Gain, Majorität: a
+
+   HP = niedrig => {01/h} => heilen (alle die selbe Klasse)
+   HP = mittel => {} => angreifen (Majorität eine Ebene höher, also auf der HP-Ebene)
+   HP = hoch => {03/a, 04/a} => angreifen (alle die selbe Klasse)
+
 
 4. Zweig Distanz "mittel":
-   {5, 6, 9, 10} = {2x magic, 2x fern}, H = 2x -2/4*log2 2/4 = 1
+   {5} = {a} => angreifen (alle selbe Klasse)
 
-   HP: niedrig {magic, fern}, hoch {magic, fern} => 1 - 2/4* (2x 1/2*log 1/2) - 2/4*(2x 1/2*log 1/2) = 1 - 1 = 0
-   Mana: gering {2x fern}, genug {2x magic} => 1 - 2/4*(1*log2 1) - 2/4*(1*log2 1) = 1
-   Fernwaffe: nein {magic}, ja {fern, 2x magic} => 1 - 1/4*(1*log2 1) - 3/4*(1/3*log2 1/3 + 2/3*log2 2/3) = 1 - 0,6887 = 0,311
+| Nr. | Distanz | HP      | Mana   | Aktion    |
+|:----|:--------|:--------|:-------|:----------|
+| 05  | mittel  | mittel  | genug  | angreifen |
 
-   Mana = gering => Fernkampf
-   Mana = genug => Magic
 
 5. Zweig Distanz "fern":
-   {3, 4, 8} = {fern, magic, flight}, H = 3x -1/3*log2 1/3 = 0,001436
+   {02, 06} = {2x f} => fliehen (alle selbe Klasse)
 
-   HP: niedrig {flight}, hoch {magic, fern} => 0,001436 - 1/3*0 - 2/3*1 = 1 - 1 = 0,665231
-   Mana: gering {fern, flight}, genug {magic} => 0,001436 - 2/3*1 - 1/3*0 = 0,665231
-   Fernwaffe: nein {flight}, ja {fern, magic} => 0,001436 - 1/3*0 - 2/3*1 = 0,665231
+| Nr. | Distanz | HP      | Mana   | Aktion    |
+|:----|:--------|:--------|:-------|:----------|
+| 02  | fern    | niedrig | gering | fliehen   |
+| 06  | fern    | mittel  | gering | fliehen   |
 
-   Gleichstand im Gain => zufällige Auswahl: Mana.
-   Mana = genug => Magic
-   Mana = gering => {3/fern, 8/flight} => Gleichstand HP und Fernwaffe => zufällige Auswahl
-        => HP = niedrig => Flucht
-           HP = hoch => Fernkampf
 -->
 
 **Textklassifikation**
