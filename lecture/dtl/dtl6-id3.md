@@ -267,6 +267,121 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 :::
 
 ::: challenges
+**Games: Behaviour Trees**
+
+In einem Dungeon-Crawler wurden über mehrere Spiele Daten für die Aktionen eines
+Monsters aufgezeichnet. Dabei wurden die folgenden Merkmale für das Monster erfasst
+(mit entsprechenden Ausprägungen):
+
+*   Distanz: Nah, Mittel, Fern
+*   HP: Hoch, Niedrig
+*   Mana: Genug, Gering
+*   Fernwaffe: Ja, Nein
+
+Die Aktionen umfassen Nahkampf, Fernkampf, Zaubern, Flucht.
+
+Die in den vorangegangenen Spielen aufgezeichneten Daten sind:
+
+| Nr. | Distanz | HP      | Mana   | Fernwaffe | Aktion    |
+|:----|:--------|:--------|:-------|:----------|:----------|
+| 01  | Nah     | Niedrig | Gering | Nein      | Nahkampf  |
+| 02  | Nah     | Niedrig | Gering | Nein      | Flucht    |
+| 03  | Fern    | Hoch    | Gering | Ja        | Fernkampf |
+| 04  | Fern    | Hoch    | Genug  | Ja        | Zaubern   |
+| 05  | Mittel  | Hoch    | Genug  | Nein      | Zaubern   |
+| 06  | Mittel  | Hoch    | Gering | Ja        | Fernkampf |
+| 07  | Nah     | Hoch    | Genug  | Ja        | Nahkampf  |
+| 08  | Fern    | Niedrig | Gering | Nein      | Flucht    |
+| 09  | Mittel  | Niedrig | Genug  | Ja        | Zaubern   |
+| 10  | Mittel  | Niedrig | Gering | Ja        | Fernkampf |
+
+Trainieren Sie mit diesen Daten einen Entscheidungsbaum als *Behaviour Tree* für das
+Monster, so dass es in einer konkreten Spielsituation von nun an die optimale
+Entscheidung treffen kann. Nutzen Sie dafür ID3. Warum ist CAL2 hier ungeeignet?
+
+<!--
+1.  H(S)
+
+    Anzahl Klasse `Nahkampf`:  2 => p_nah = 2/10 = 0.2
+    Anzahl Klasse `Fernkampf`: 3 => p_fern = 3/10 = 0.3
+    Anzahl Klasse `Zaubern`:   3 => p_magic = 3/10 = 0.3
+    Anzahl Klasse `Flucht`:    2 => p_flight = 2/10 = 0.2
+
+    H(S) = - sum(p_k * log2 p_k) = 1,971
+
+2.  R(S, A) für die Wurzel
+
+    Distanz:
+    nah: {1, 2, 7} => 3/10, H: {nah, flight, nah} = -2/3*log2 2/3 - 1/3*log2 1/3= 0,9183
+    mittel: {5, 6, 9, 10} => 4/10, H: {2x magic, 2x fern} = -2x 2/4*log2 2/4 = 1,0000
+    fern: {3, 4, 8} => 3/10, H: {fern, magic, flight} = -3x 1/3*log2 1/3 = 1,5849
+    R(S,A) = 0,3*H({1,2,7}) + 0,4*H({5,6,9,10}) + 0,3*H({3,4,8})
+           = 0,3*0,9183 + 0,4*1,0000 + 0,3*1,5849
+           = 1,1509
+    Gain: 0,820
+
+    HP:
+    niedrig: {1,2,8,9,10} => 5/10, H: {nah, 2x flight, magic, fern} = -3x 1/5*log2 1/5 - 2/5*log2 2/5 = 1,9219
+    hoch: {3,4,5,6,7} => 5/10, H: {nah, 2x fern, 2x magic} = -1/5*log2 1/5 - 2x 2/5*log2 2/5 = 1,5219
+    R(S,A) = 0,5*1,9219 + 0,5*1,5219 = 1,7219
+    Gain: 0,249
+
+    Mana:
+    genug: {4,5,7,9} => 4/10, H: {3x magic, nah} = -3/4*log2 3/4 - 1/4*log2 1/4 = 0,8113
+    gering: {1,2,3,6,8,10} => 6/10, H: {nah, 3x fern, 2x flight} = -1/6*log2 1/6 - 3/6*log2 3/6 - 2/6*log2 2/6 = 1,4591
+    R(S,A) = 0,4*0,8113 + 0,6*1,4591 = 1,19998
+    Gain: 0,771
+
+    Fernwaffe:
+    ja: {3,4,6,7,9,10} => 6/10, H: {3x fern, 2x magic, nah} = -3/6*log2 3/6 - 2/6*log2 2/6 - 1/6*log2 1/6 = 1,4591
+    nein: {1,2,5,8} => 4/10, H: {2x flight, nah, magic} = -2/4 log2 2/4 - 2x 1/4*log2 1/4 = 1,5000
+    R(S,A)= 0,6*1,4591 + 0,4*1,5 = 1,47546
+    Gain: 0,496
+
+    => Wurzel: Distanz
+
+3. Zweig Distanz "nah":
+   {1, 2, 7} = {nah, flight, nah}, H: -2/3*log2 2/3 - 1/3*log2 1/3 = 0,918
+
+   HP: niedrig {nah, flight}, hoch {nah} => 0,918 - 2/3* (2x 1/2*log 1/2) - 1/3*(1*log 1) = 0,918 - 0,666667 = 0,251
+   Mana: gering {nah, flight}, genug {nah} => 0,251
+   Fernwaffe: nein {nah, flight}, ja {nah} => 0,251
+
+   Gleichstand im Gain => zufällige Auswahl: Mana.
+   Mana = genug => Nahkampf
+   Mana = gering => {1, 2} verbleiben => nächste Runde: HP oder Fernwaffe, wieder Gleichstand (zufällige Auswahl)
+        => HP = hoch {} = Mehrheitsentscheid Ebene drüber (Mana) = Nahkampf
+        => HP = niedrig {1, 2} => nächste Runde => Fernwaffe
+            => Fernwaffe = ja {} => Mehrheitsentscheid Ebene drüber (HP) = Nahkampf (zufällig)
+            => Fernwaffe = nein {1,2} => Keine Attribute mehr, Mehrheitsentscheid = Nahkampf (zufällig)
+
+   => Idee: wenn bei der Abzweigung Mana=gering kein Gain möglich ist, dann Abbruch und Mehrheitsentscheid aus Knoten
+   darüber (ist aber nicht konform zu Russell/Norvig)
+
+4. Zweig Distanz "mittel":
+   {5, 6, 9, 10} = {2x magic, 2x fern}, H = 2x -2/4*log2 2/4 = 1
+
+   HP: niedrig {magic, fern}, hoch {magic, fern} => 1 - 2/4* (2x 1/2*log 1/2) - 2/4*(2x 1/2*log 1/2) = 1 - 1 = 0
+   Mana: gering {2x fern}, genug {2x magic} => 1 - 2/4*(1*log2 1) - 2/4*(1*log2 1) = 1
+   Fernwaffe: nein {magic}, ja {fern, 2x magic} => 1 - 1/4*(1*log2 1) - 3/4*(1/3*log2 1/3 + 2/3*log2 2/3) = 1 - 0,6887 = 0,311
+
+   Mana = gering => Fernkampf
+   Mana = genug => Magic
+
+5. Zweig Distanz "fern":
+   {3, 4, 8} = {fern, magic, flight}, H = 3x -1/3*log2 1/3 = 0,001436
+
+   HP: niedrig {flight}, hoch {magic, fern} => 0,001436 - 1/3*0 - 2/3*1 = 1 - 1 = 0,665231
+   Mana: gering {fern, flight}, genug {magic} => 0,001436 - 2/3*1 - 1/3*0 = 0,665231
+   Fernwaffe: nein {flight}, ja {fern, magic} => 0,001436 - 1/3*0 - 2/3*1 = 0,665231
+
+   Gleichstand im Gain => zufällige Auswahl: Mana.
+   Mana = genug => Magic
+   Mana = gering => {3/fern, 8/flight} => Gleichstand HP und Fernwaffe => zufällige Auswahl
+        => HP = niedrig => Flucht
+           HP = hoch => Fernkampf
+-->
+
 **Textklassifikation**
 
 Betrachten Sie die folgenden Aussagen:
