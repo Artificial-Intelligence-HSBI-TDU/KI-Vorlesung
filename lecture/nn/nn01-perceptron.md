@@ -14,6 +14,7 @@ title: "NN01: Das Perzeptron"
 
 ::: attachments
 -   [NN01-Das_Perzeptron.pdf](files/NN01-Das_Perzeptron.pdf)
+-   [Perzeptron_Lernalgorithmus.ipynb](files/Perzeptron_Lernalgorithmus.ipynb)
 :::
 
 # Kurze Übersicht
