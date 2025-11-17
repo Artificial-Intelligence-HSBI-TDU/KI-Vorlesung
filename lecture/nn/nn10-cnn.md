@@ -10,7 +10,7 @@ title: "NN10: Vorschau Deep Learning (CNN, RNN)"
 :::
 
 ::: attachments
--   [NN10-CNN.pdf](files/NN10-CNN.pdf)
+-   [NN10-CNN.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN10-CNN.pdf)
 :::
 
 # Kurze Übersicht

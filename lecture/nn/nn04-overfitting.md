@@ -10,7 +10,7 @@ title: "NN04: Overfitting und Regularisierung"
 :::
 
 ::: attachments
--   [NN04-Nichtlineare_Modelle_und_Overfitting.pdf](files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf)
+-   [NN04-Nichtlineare_Modelle_und_Overfitting.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN04-Nichtlineare_Modelle_und_Overfitting.pdf)
 :::
 
 # Kurze Übersicht

@@ -15,7 +15,7 @@ title: "NN03: Logistische Regression"
 :::
 
 ::: attachments
--   [NN03-Logistische_Regression.pdf](files/NN03-Logistische_Regression.pdf)
+-   [NN03-Logistische_Regression.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN03-Logistische_Regression.pdf)
 :::
 
 # Kurze Übersicht

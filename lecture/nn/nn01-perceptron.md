@@ -13,8 +13,8 @@ title: "NN01: Das Perzeptron"
 :::
 
 ::: attachments
--   [NN01-Das_Perzeptron.pdf](files/NN01-Das_Perzeptron.pdf)
--   [Perzeptron_Lernalgorithmus.ipynb](files/Perzeptron_Lernalgorithmus.ipynb)
+-   [NN01-Das_Perzeptron.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN01-Das_Perzeptron.pdf)
+-   [Perzeptron_Lernalgorithmus.ipynb](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Perzeptron_Lernalgorithmus.ipynb)
 :::
 
 # Kurze Übersicht

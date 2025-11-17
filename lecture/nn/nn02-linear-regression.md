@@ -14,7 +14,7 @@ title: "NN02: Lineare Regression und Gradientenabstieg"
 :::
 
 ::: attachments
--   [NN02-Lineare_Regression.pdf](files/NN02-Lineare_Regression.pdf)
+-   [NN02-Lineare_Regression.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN02-Lineare_Regression.pdf)
 :::
 
 # Kurze Übersicht
@@ -97,6 +97,6 @@ Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
     dem Bereich $[100, 300] \times [0, 2]$, wie sich Standardisierung, Min-Max
     Skalierung und Normalisierung auf die Daten auswirken. Vergleichen Sie dazu die
     jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende
-    [**Jupyter Notebook**](files/Feature_Scaling_Starter.ipynb) als Startpunkt
-    benutzen.
+    [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb)
+    als Startpunkt benutzen.
 :::

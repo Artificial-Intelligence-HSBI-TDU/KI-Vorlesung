@@ -13,7 +13,7 @@ title: "NN08: Performanzanalyse"
 :::
 
 ::: attachments
--   [NN08-Performanzanalyse.pdf](files/NN08-Performanzanalyse.pdf)
+-   [NN08-Performanzanalyse.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN08-Performanzanalyse.pdf)
 :::
 
 # Kurze Übersicht

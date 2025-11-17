@@ -10,7 +10,7 @@ title: "NN09: Large Language Models"
 :::
 
 ::: attachments
--   [NN9-LLM.pdf](files/NN9-LLM.pdf)
+-   [NN9-LLM.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN9-LLM.pdf)
 :::
 
 # Kurze Übersicht
