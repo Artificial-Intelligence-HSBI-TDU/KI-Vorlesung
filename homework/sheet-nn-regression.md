@@ -69,7 +69,7 @@ Wiederholen Sie das obige Experiment mit unterschiedlichen Lernraten, z.B.
 $\alpha=0.1$, $\alpha=0.01$ und $\alpha=0.001$. Vergleichen Sie die
 Kosten-Diagramme.
 
-Sie können das folgende [**Jupyter Notebook**](files/logistische_regression_starter.ipynb)
+Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/logistische_regression_starter.ipynb)
 als Startpunkt benutzen. Sie können alternativ auch eine andere Programmiersprache
 und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy
 and Scikit-Learn) verwenden.

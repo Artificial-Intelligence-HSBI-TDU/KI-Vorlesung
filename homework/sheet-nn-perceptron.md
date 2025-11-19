@@ -78,7 +78,7 @@ wiederholen und danach den Durchschnitt über alle Wiederholungen betrachten.
 -   Visualisieren Sie (auf eine geeignete Weise) Meilenstein 2.1, wie sich die
     Entscheidungsrenze während des Trainings verändert.
 
-Sie können das folgende [**Jupyter Notebook**](files/perzeptron_lernalgorithmus_starter.ipynb)
+Sie können das folgende [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/homework/files/perzeptron_lernalgorithmus_starter.ipynb)
 als Startpunkt benutzen.
 
 [*Idee nach* Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin. 2012.
