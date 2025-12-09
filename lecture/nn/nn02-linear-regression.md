@@ -15,6 +15,7 @@ title: "NN02: Lineare Regression und Gradientenabstieg"
 
 ::: attachments
 -   [NN02-Lineare_Regression.pdf](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/NN02-Lineare_Regression.pdf)
+-   [Lineare_Regression.ipynb](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Lineare_Regression.ipynb)
 :::
 
 # Kurze Übersicht
