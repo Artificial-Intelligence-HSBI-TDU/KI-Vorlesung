@@ -45,14 +45,19 @@ Das Perzeptron ist ein einfaches Modell für die **binäre Klassifizierung**.
 ### Hypothesenfunktion
 -  Die **Hypothesenfunktion** ist eine gewichtete Summe der Eingabemerkmale $x_i$ plus eine Konstante $w_0$, auf die als Aktivierung die Signumfunktion angewendet wird:
 
-$$h(\mathbf{x}) =\text{sgn}(w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n)\\
-= \text{sgn}(\mathbf{w}^T\mathbf{x})\\
-={\begin{cases}1&{\text{wenn }}\mathbf{w}^T\mathbf{x}\geq0,\\-1&{\text{wenn }}\mathbf{w}^T\mathbf{x}<0.\end{cases}}$$
-
 $$
-h(\mathbf{x}) &= \text{sgn}(w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n)\\
-&= \text{sgn}(\mathbf{w}^T\mathbf{x})\\
-&= {\begin{cases}1&{\text{wenn }}\mathbf{w}^T\mathbf{x}\geq0,\\-1&{\text{wenn }}\mathbf{w}^T\mathbf{x}<0.\end{cases}}
+\begin{aligned}
+h(\mathbf{x})
+&= \text{sgn}(w_0 + w_1 x_1 + w_2 x_2 + \ldots + w_n x_n) \\
+\\
+&= \text{sgn}(\mathbf{w}^T \mathbf{x}) \\
+\\
+&=
+\begin{cases}
+1, & \text{wenn } \mathbf{w}^T \mathbf{x} \ge 0, \\
+-1, & \text{wenn } \mathbf{w}^T \mathbf{x} < 0
+\end{cases}
+\end{aligned}
 $$
 
 -  Die **Ausgabe $\hat{y}$** des Modells ist somit eine Zahl aus der Menge $\{1, -1\}$.
