@@ -63,7 +63,7 @@ $$
 -  Die **Ausgabe $\hat{y}$** des Modells ist somit eine Zahl aus der Menge $\{1, -1\}$.
 -  $w_0, w_1, w_2, \ldots, w_n$ sind die Parameter des Modells, die es zu optimieren gilt.
 
-![Perzeptron Entscheidungsgrenze](images/perceptron-network.png){width="70%"}
+![Perzeptron Aufbau und Berechung](images/perceptron-network.png){width="70%"}
 
 
 ### Lineare Entscheidungsgrenze
