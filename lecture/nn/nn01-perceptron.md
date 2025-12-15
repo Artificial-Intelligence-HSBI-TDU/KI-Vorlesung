@@ -66,7 +66,7 @@ h(\mathbf{x})
 -   $w_0, w_1, w_2, \ldots, w_n$ sind die Parameter des Modells, die es zu
     optimieren gilt.
 
-![Perzeptron Aufbau und Berechung](images/perceptron-network.png){width="70%"}
+![Perzeptron Aufbau und Berechnung](images/perceptron-network.png){width="70%"}
 
 ### Lineare Entscheidungsgrenze
 
@@ -91,7 +91,7 @@ $$\mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n = 0$$
 
 Der Perzeptron Lernalgorithmus (PLA) startet mit zufälligen Gewichtsparametern und
 aktualisiert methodisch die Gewichte, bis die Daten alle richtig klassifiziert sind
-(oder eine festgelegte obere Schranke von Aktualisirungsschritten erreicht wird).
+(oder eine festgelegte obere Schranke von Aktualisierungsschritten erreicht wird).
 
 **Ablauf des PLA**:
 
@@ -135,8 +135,8 @@ $$-4 + x_1^2 + x_2^2 = 0.$$
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
 -   k2: Ich kann die Formalisierung eines ML-Problems, insbesondere der
     Klassifizierung erklären und dabei insbesondere die Begriffe Datensatz,
-    Merkmalraum, Hyphotesenfunktion und Zielfunktion an einem Beispiel erläutern
--   k2: Ich kann das Perzeptron als linearen Klassifizierer verstehen und erklären
+    Merkmalsraum, Hypothesenfunktion und Zielfunktion an einem Beispiel erläutern
+-   k2: Ich kann das Perzeptron als linearen Klassifikator verstehen und erklären
 -   k2: Ich kann den Begriff der Entscheidungsgrenze erklären
 -   k3: Ich kann die Entscheidungsgrenze für ein konkretes Beispiel berechnen
 -   k3: Ich kann den Perzeptron Lernalgorithmus implementieren und anwenden
