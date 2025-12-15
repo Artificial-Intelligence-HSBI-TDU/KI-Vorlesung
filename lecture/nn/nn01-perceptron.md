@@ -29,6 +29,8 @@ Fähigkeit zu lernen, ohne explizit programmiert zu werden. (Arthur Samuel, 1959
 -   Unüberwachtes Lernen (e.g. Clustering, Dimensionsreduktion)
 -   Bestärkendes Lernen (e.g. Schach spielen)
 
+Vergleiche auch [DTL: Machine Learning 101](../dtl/dtl1-mlbasics.md).
+
 ## Formalisierung
 
 -   Zielfunktion $f$
