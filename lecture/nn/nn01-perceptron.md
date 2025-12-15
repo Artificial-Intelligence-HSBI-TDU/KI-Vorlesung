@@ -63,7 +63,8 @@ $$
 -  Die **Ausgabe $\hat{y}$** des Modells ist somit eine Zahl aus der Menge $\{1, -1\}$.
 -  $w_0, w_1, w_2, \ldots, w_n$ sind die Parameter des Modells, die es zu optimieren gilt.
 
-    <img src="images/perceptron-network.png" width="500" align="center" alt="Perzeptron Entscheidungsgrenze"><br>
+![Perzeptron Entscheidungsgrenze](images/perceptron-network.png){width="80%"}
+
 
 ### Lineare Entscheidungsgrenze
 -  Das Perzeptron erzeugt eine **lineare Entscheidungsgrenze** im Merkmalraum, die durch die folgende Gleichung definiert ist:
@@ -75,8 +76,9 @@ $$\mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + w_2x_2 + \ldots + w_nx_n = 0$$
 -  Im zweidimensionalen Merkmalraum $\mathbb{R}^2$ entspricht die Entscheidungsgrenze einer **Geraden**. Die folgende Abbildung zeigt beispielsweise die Entscheidungsgrenze für die Parameter $w_0 = 0, w_1 = 2$ und $w_3 = -1$, entsprechend dem Modell $h(\mathbf{x}) = \text{sgn}(2x_1 - x_2)$.
 
 
-    <img src="images/perceptron-boundary.png" width="400" align="center" alt="Perzeptron Entscheidungsgrenze"><br>
-    
+![Perzeptron Entscheidungsgrenze](images/perceptron-boundary.png){width="80%"}
+
+
 
 ## Der Perzeptron Lernalgorithmus
 
@@ -104,9 +106,9 @@ Im Fall von zwei Merkmalen kann beispielsweise die folgende Hypothesenfunktion v
 
 $$h(\mathbf{x}) =\text{sgn}(w_0 + w_1x_1 + w_2x_2 + w_3x_1^2 + w_4x_2^2).$$
 
-Durch die Einbeziehung quadratischer Terme lassen sich nichtlineare Entscheidungsgrenzen modellieren, darunter insbesondere kreisförmige Entscheidungsgrenzen der Form  
+Durch die Einbeziehung quadratischer Terme lassen sich nichtlineare Entscheidungsgrenzen modellieren, darunter insbesondere kreisförmige Entscheidungsgrenzen der Form
 
-$$ -4 + x_1^2 + x_2^2 = 0.$$
+$$-4 + x_1^2 + x_2^2 = 0.$$
 
 ::: outcomes
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
