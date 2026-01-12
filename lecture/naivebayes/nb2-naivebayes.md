@@ -9,11 +9,11 @@ Dazu werden beim "Training" die bedingten Wahrscheinlichkeiten aus den
 Trainingsdaten geschätzt. Die Anwendung (Klassifikation) erfolgt dann durch die
 Nutzung der beim "Training" berechneten bedingten Wahrscheinlichkeiten:
 
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h|D_1,  \ldots, D_n) =
-\mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i|h)$
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1,  \ldots, D_n) =
+\mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$
 
 Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior
-$P(h|D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
+$P(h \mid D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
 "gewinnt", d.h. die Klasse mit dem größten Posterior wird ausgegeben. (Deshalb wird
 das Verfahren oft auch "MAP" -- *Maximum a Posteriori* -- genannt.)
 
@@ -61,7 +61,7 @@ klassifizieren.
 # Medizinische Diagnostik mit NB
 
 -   Bei Arthrose wird in 80 Prozent der Fälle ein steifes Gelenk beobachtet:
-    $P(S|A) = 0.8$
+    $P(S \mid A) = 0.8$
 -   Eine von 10.000 Personen hat Arthrose: $P(A) = 0.0001$
 -   Eine von 10 Personen hat ein steifes Gelenk: $P(S) = 0.1$
 
@@ -91,10 +91,10 @@ Sie diesen auf die beiden Test-Dokumente an.
 # Naive Bayes
 
 -   Verallgemeinerte Bayes Regel
-    $$P(H|D_1, \ldots, D_n) = \frac{P(D_1, \ldots, D_n | H)P(H)}{P(D_1, \ldots, D_n)}$$
+    $$P(H \mid D_1, \ldots, D_n) = \frac{P(D_1, \ldots, D_n \mid H)P(H)}{P(D_1, \ldots, D_n)}$$
 
 -   Annahme: $D_i$ sind bedingt unabhängig
-    $$P(D_1, \ldots, D_n | H) = P(D_1 | H) \cdot \ldots \cdot P(D_n | H) = \prod_i P(D_i | H)$$
+    $$P(D_1, \ldots, D_n \mid H) = P(D_1 \mid H) \cdot \ldots \cdot P(D_n \mid H) = \prod_i P(D_i \mid H)$$
 
 -   Beobachtung: $P(D_1, \ldots, D_n)$ für alle Hypothesen $h \in H$ gleich
 
@@ -102,8 +102,8 @@ Sie diesen auf die beiden Test-Dokumente an.
 \bigskip
 
 -   **Naive Bayes Klassifikator** bzw. **MAP** [("Maximum a Posteriori")]{.notes}
-    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
-    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
+    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
+    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$$
 
     ::: notes
     Naive Bayes: Wähle die plausibelste Hypothese, die von den Daten unterstützt
@@ -112,8 +112,8 @@ Sie diesen auf die beiden Test-Dokumente an.
 
 # Bayes'sches Lernen
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$$
 
 \bigskip
 
@@ -122,13 +122,13 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
 -   Für jede Klasse $h$:
     -   Schätze $P(h) = \dfrac{|S(h)|}{|S|}$
     -   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: `\newline`{=tex}
-        Schätze $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+        Schätze $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
 
 \bigskip
 
 **Klassifikation**: Wähle wahrscheinlichste Klasse $h_{MAP}$ für Vektor $\mathbf{x}$
 
--   $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
+-   $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x \mid h)$
 
 # Beispiel Klassifikation mit NB
 
@@ -147,12 +147,12 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
 \pause
 \bigskip
 
-Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0}|\text{krank})$,
-$P(\text{Nase=0}|\text{gesund})$, ...
+Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0} \mid \text{krank})$,
+$P(\text{Nase=0} \mid \text{gesund})$, ...
 
 Wähle Klasse $$\begin{eqnarray}
-h_{MAP} = \mathop{\text{argmax}}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0}|h) \cdot P(\text{Husten=1}|h) \\
-    & \cdot P(\text{Haut=0}|h) \cdot P(\text{Fieber=1}|h)
+h_{MAP} = \mathop{\text{argmax}}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0} \mid h) \cdot P(\text{Husten=1} \mid h) \\
+    & \cdot P(\text{Haut=0} \mid h) \cdot P(\text{Fieber=1} \mid h)
 \end{eqnarray}$$
 
 ::: notes
@@ -200,7 +200,7 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
     \smallskip
 
     -   Likelihood der Daten (Terme):
-        -   $P(t|c) = \dfrac{\mathop{\text{count}}(t,c)}{\sum_{v \in V} \mathop{\text{count}}(v,c)}$
+        -   $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c)}{\sum_{v \in V} \mathop{\text{count}}(v,c)}$
             `\newline`{=tex} mit $\mathop{\text{count}}(t,c)$ Anzahl der Vorkommen
             von Term $t$ in allen Dokumenten der Klasse $c$ und $V$ die Vereinigung
             aller Terme aller Dokumente (als Menge)
@@ -209,7 +209,7 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
 
         ::: notes
         -   Variante mit Laplace-Glättung (s.u.):
-            $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + 1}{\sum_{v \in V} \mathop{\text{count}}(v,c) + |V|}$
+            $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + 1}{\sum_{v \in V} \mathop{\text{count}}(v,c) + |V|}$
         :::
 
 ::: slides
@@ -222,7 +222,7 @@ Likelihood]{.ex}]{.slides}
 
 -   Unabhängigkeit der Attribute oft nicht gegeben
 
-    =\> $P(D_1, \ldots, D_n | H) \ne \prod_i P(D_i | H)$
+    =\> $P(D_1, \ldots, D_n \mid H) \ne \prod_i P(D_i \mid H)$
 
 -   A-posteriori-Wahrscheinlichkeiten oft unrealistisch nah an 1 oder 0
 
@@ -245,41 +245,41 @@ Trainingsmenge zu hoch gewichtet werden.
 Seien die beiden Merkmale $x_1$ und $x_2$ mit den folgenden Verteilungen gegeben:
 
 -   Klassen: $H \in \lbrace 0, 1 \rbrace$, $P(H = 0) = P(H = 1) = 0.5$
--   Bedingte Verteilungen $P(x_1, x_2 | H)$:
+-   Bedingte Verteilungen $P(x_1, x_2 \mid H)$:
     -   Für $H = 0$:
-        -   $P(x_1=0, x_2=0 | 0) = 0.30$
-        -   $P(x_1=0, x_2=1 | 0) = 0.35$
-        -   $P(x_1=1, x_2=0 | 0) = 0.15$
-        -   $P(x_1=1, x_2=1 | 0) = 0.20$
+        -   $P(x_1=0, x_2=0 \mid 0) = 0.30$
+        -   $P(x_1=0, x_2=1 \mid 0) = 0.35$
+        -   $P(x_1=1, x_2=0 \mid 0) = 0.15$
+        -   $P(x_1=1, x_2=1 \mid 0) = 0.20$
     -   Für $H = 1$:
-        -   $P(x_1=0, x_2=0 | 1) = 0.00$
-        -   $P(x_1=0, x_2=1 | 1) = 0.30$
-        -   $P(x_1=1, x_2=0 | 1) = 0.65$
-        -   $P(x_1=1, x_2=1 | 1) = 0.05$
+        -   $P(x_1=0, x_2=0 \mid 1) = 0.00$
+        -   $P(x_1=0, x_2=1 \mid 1) = 0.30$
+        -   $P(x_1=1, x_2=0 \mid 1) = 0.65$
+        -   $P(x_1=1, x_2=1 \mid 1) = 0.05$
 
 ### Analyse der gegebenen Daten
 
 Die Merkmale $x_1$ und $x_2$ sind *nicht* bedingt abhängig gegeben $H$.
 
 Erinnerung: Zwei Ereignisse $X$ und $Y$ sind bedingt unabhängig gegeben $Z$, wenn
-gilt $P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$.
+gilt $P(X,Y \mid Z) = P(X \mid Y,Z)P(Y \mid Z) = P(X \mid Z)P(Y \mid Z)$.
 
 Wir haben aber im Fall von $H=1$:
 
--   $P(x_1=0, x_2=0 | 1) = 0.00$
-    vs. $P(x_1=0 | 1) P(x_2=0 | 1) = (0.00+0.30) * (0.00+0.65) = 0.30 * 0.65 = 0.195$
--   $P(x_1=0, x_2=1 | 1) = 0.30$
-    vs. $P(x_1=0 | 1) P(x_2=1 | 1) = (0.00+0.30) * (0.30+0.05) = 0.30 * 0.35 = 0.105$
--   $P(x_1=1, x_2=0 | 1) = 0.65$
-    vs. $P(x_1=1 | 1) P(x_2=0 | 1) = (0.65+0.05) * (0.00+0.65) = 0.70 * 0.65 = 0.455$
--   $P(x_1=1, x_2=1 | 1) = 0.05$
-    vs. $P(x_1=1 | 1) P(x_2=1 | 1) = (0.65+0.05) * (0.30+0.05) = 0.70 * 0.35 = 0.245$
+-   $P(x_1=0, x_2=0 \mid 1) = 0.00$
+    vs. $P(x_1=0 \mid 1) P(x_2=0 \mid 1) = (0.00+0.30) * (0.00+0.65) = 0.30 * 0.65 = 0.195$
+-   $P(x_1=0, x_2=1 \mid 1) = 0.30$
+    vs. $P(x_1=0 \mid 1) P(x_2=1 \mid 1) = (0.00+0.30) * (0.30+0.05) = 0.30 * 0.35 = 0.105$
+-   $P(x_1=1, x_2=0 \mid 1) = 0.65$
+    vs. $P(x_1=1 \mid 1) P(x_2=0 \mid 1) = (0.65+0.05) * (0.00+0.65) = 0.70 * 0.65 = 0.455$
+-   $P(x_1=1, x_2=1 \mid 1) = 0.05$
+    vs. $P(x_1=1 \mid 1) P(x_2=1 \mid 1) = (0.65+0.05) * (0.30+0.05) = 0.70 * 0.35 = 0.245$
 
 (analog für $H=0$)
 
 Damit bekommen wir im Naive Bayes Klassifikator ein Problem. Dort wird von bedingt
 unabhängigen Merkmalen ausgegangen und deshalb die Vereinfachung von
-$P(x_1, x_2 | H)$ zu $P(x_1 | H) P(x_2 | H)$ vorgenommen. Da die Annahme nicht
+$P(x_1, x_2 \mid H)$ zu $P(x_1 \mid H) P(x_2 \mid H)$ vorgenommen. Da die Annahme nicht
 stimmt, werden die Merkmale falsch gewichtet und es kann zu Fehlklassifikationen
 kommen.
 
@@ -289,16 +289,16 @@ Wir machen nun die folgende Beobachtung: $X = (x_1=1, x_2=1)$.
 
 Die nötigen Marginalisierungen aus den Trainingsdaten für diese Beobachtung sind:
 
--   Für $H = 0$: $P(x_1=1|0) = 0.15 + 0.20 = 0.35$,
-    $P(x_2=1|0) = 0.35 + 0.20 = 0.55$
--   Für $H = 1$: $P(x_1=1|1) = 0.65 + 0.05 = 0.70$,
-    $P(x_2=1|1) = 0.30 + 0.05 = 0.35$
+-   Für $H = 0$: $P(x_1=1 \mid 0) = 0.15 + 0.20 = 0.35$,
+    $P(x_2=1 \mid 0) = 0.35 + 0.20 = 0.55$
+-   Für $H = 1$: $P(x_1=1 \mid 1) = 0.65 + 0.05 = 0.70$,
+    $P(x_2=1 \mid 1) = 0.30 + 0.05 = 0.35$
 
 Anwendung der Naive Bayes Klassifikation (mit Annahme bedingt unabhängige Merkmale):
-Wir nutzen $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$ und setzen unsere
-beiden Merkmale ein: $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1 | h) P(x_2 | h)$.
+Wir nutzen $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$ und setzen unsere
+beiden Merkmale ein: $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1 \mid h) P(x_2 \mid h)$.
 
 Damit bekommen wir folgende Entscheidung:
 
@@ -307,18 +307,18 @@ Damit bekommen wir folgende Entscheidung:
 -   Entscheidung für Klasse $H=1$
 
 Da die Merkmale nicht unabhängig sind, darf die Produktannahme nicht verwendet
-werden, sondern wir müssten eigentlich den Term $P(x_1, x_2 | h)$ nutzen:
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 | h)$.
+werden, sondern wir müssten eigentlich den Term $P(x_1, x_2 \mid h)$ nutzen:
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$.
 
 Aus den gegebenen Daten haben wir (einfach oben ablesen):
 
--   $P(x_1=1, x_2=1 | 0) = 0.20$
--   $P(x_1=1, x_2=1 | 1) = 0.05$
+-   $P(x_1=1, x_2=1 \mid 0) = 0.20$
+-   $P(x_1=1, x_2=1 \mid 1) = 0.05$
 
 Eingesetzt in die Formel
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 | h)$:
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
+= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$:
 
 -   $H=0: 0.5 * 0.20 = 0.10$
 -   $H=1: 0.5 * 0.05 = 0.025$
@@ -350,17 +350,17 @@ eine korrekte Klassifikation.
 
 -   Lösung: "Laplace-Schätzer" (auch "Laplace-Glättung")
 
-    Statt $P(D_i=x | h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+    Statt $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
 
     \smallskip
 
-    nutze $P(D_i=x|h) = \dfrac{|S_{D_i}(x) \cap S(h)| + m \cdot p_i}{|S(h)| + m}$
+    nutze $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)| + m \cdot p_i}{|S(h)| + m}$
 
     \smallskip
 
     -   mit $m$: frei wählbarer Faktor, und
 
-    -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x|h)$
+    -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x \mid h)$
 
         Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*:
         $p_i = 1/|D_i|$ (Wahrscheinlichkeit für eine Attributausprägung ist
@@ -383,9 +383,9 @@ eine korrekte Klassifikation.
     Erinnerung: $\log(x \cdot y) = \log(x) + \log(y)$ und Logarithmus streng monoton
 
     $$\begin{eqnarray}
-    h_{MAP} &=& \mathop{\text{argmax}}_{h \in H} \: P(h|D_1, \ldots, D_n) \\[5pt]
-            &=& \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h) \\[5pt]
-            &=& \mathop{\text{argmax}}_{h \in H} \: [\log(P(h)) + \sum_i \log(P(D_i | h))]
+    h_{MAP} &=& \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n) \\[5pt]
+            &=& \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h) \\[5pt]
+            &=& \mathop{\text{argmax}}_{h \in H} \: [\log(P(h)) + \sum_i \log(P(D_i \mid h))]
     \end{eqnarray}$$
 :::
 
@@ -393,15 +393,15 @@ eine korrekte Klassifikation.
 # Maximum Likelihood
 
 -   **Maximum a Posteriori**
-    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h | D_1, \ldots, D_n)
-    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i | h)$$
+    $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
+    = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$$
 
 \bigskip
 
 -   Annahme: Klassen uniform verteilt =\> $P(h_i) = P(h_j)$
 
     **Maximum Likelihood**
-    $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \: \prod_i P(D_i | h)$$
+    $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \: \prod_i P(D_i \mid h)$$
 
     =\> Maximiere die Likelihood der Daten
 :::
@@ -423,7 +423,7 @@ Attributen hat man zwei Möglichkeiten:
 ::: notes
 # Hinweis zum Sprachgebrauch
 
-In Abhängigkeit von der Verteilung der $P(D_i | h)$ spricht man von
+In Abhängigkeit von der Verteilung der $P(D_i \mid h)$ spricht man von
 
 -   "multinominalem" NB: Attribute umfassen mehrere Kategorien (verschiedene
     Ausprägungen, wie im "Wahlkampf"-Beispiel: Attribut "Bildung" hat die
@@ -486,12 +486,12 @@ Wir definieren die Variablen wie folgt:
 -   **A**: Die E-Mail ist Spam.
 -   **B**: Das Wort "Gewinn" kommt in der E-Mail vor.
 
-Wir suchen $P(A|B)$, die Wahrscheinlichkeit, dass eine E-Mail Spam ist,
+Wir suchen $P(A \mid B)$, die Wahrscheinlichkeit, dass eine E-Mail Spam ist,
 gegeben dass das Wort "Gewinn" vorkommt.
 
 Nach dem Bayesschen Theorem gilt:
 
-$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
+$$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
 
 ### Schritt 1: Berechnung der Einzelwahrscheinlichkeiten
 
@@ -499,39 +499,39 @@ $$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
     Spam ist:
     $$P(A) = \frac{\text{Anzahl Spam-E-Mails}}{\text{Gesamtanzahl E-Mails}} = \frac{60}{100} = 0,6$$
 
-2.  **Berechnung von $P(B|A)$**: Die Wahrscheinlichkeit, dass das Wort
+2.  **Berechnung von $P(B \mid A)$**: Die Wahrscheinlichkeit, dass das Wort
     "Gewinn" in einer Spam-E-Mail vorkommt:
-    $$P(B|A) = \frac{\text{Anzahl Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Spam-E-Mails}} = \frac{45}{60} = 0,75$$
+    $$P(B \mid A) = \frac{\text{Anzahl Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Spam-E-Mails}} = \frac{45}{60} = 0,75$$
 
 3.  **Berechnung von $P(B)$**: Wir benötigen die totale
     Wahrscheinlichkeit $P(B)$, dass das Wort "Gewinn" in irgendeiner
     E-Mail vorkommt. Dies umfasst sowohl Spam- als auch
     Nicht-Spam-E-Mails (Marginalisierung):
 
-    $$P(B) = P(B|A) \cdot P(A) + P(B|\neg A) \cdot P(\neg A)$$
+    $$P(B) = P(B \mid A) \cdot P(A) + P(B \mid \neg A) \cdot P(\neg A)$$
 
-    Zuerst müssen wir $P(\neg A)$ und $P(B|\neg A)$ berechnen:
+    Zuerst müssen wir $P(\neg A)$ und $P(B \mid \neg A)$ berechnen:
 
     -   $P(\neg A)$ (Wahrscheinlichkeit, dass die E-Mail nicht Spam
         ist): $$P(\neg A) = \frac{40}{100} = 0,4$$
-    -   $P(B|\neg A)$ (Wahrscheinlichkeit, dass das Wort "Gewinn" in
+    -   $P(B \mid \neg A)$ (Wahrscheinlichkeit, dass das Wort "Gewinn" in
         einer Nicht-Spam-E-Mail vorkommt):
-        $$P(B|\neg A) = \frac{\text{Anzahl Nicht-Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Nicht-Spam-E-Mails}} = \frac{5}{40} = 0,125$$
+        $$P(B \mid \neg A) = \frac{\text{Anzahl Nicht-Spam-E-Mails mit "Gewinn"}}{\text{Anzahl Nicht-Spam-E-Mails}} = \frac{5}{40} = 0,125$$
 
     Jetzt können wir $P(B)$ berechnen:
 
-    $$P(B) = P(B|A) \cdot P(A) + P(B|\neg A) \cdot P(\neg A)$$
+    $$P(B) = P(B \mid A) \cdot P(A) + P(B \mid \neg A) \cdot P(\neg A)$$
 
     $$P(B) = (0,75 \cdot 0,6) + (0,125 \cdot 0,4)$$
 
     $$P(B) = 0,45 + 0,05 = 0,50$$
 
-### Schritt 2: Berechnung von $P(A|B)$
+### Schritt 2: Berechnung von $P(A \mid B)$
 
-Jetzt setzen wir alles in die Formel für $P(A|B)$ ein:
+Jetzt setzen wir alles in die Formel für $P(A \mid B)$ ein:
 
-$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} = \frac{0,75 \cdot 0,6}{0,50}$$
-$$P(A|B) = \frac{0,45}{0,50} = 0,9$$
+$$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)} = \frac{0,75 \cdot 0,6}{0,50}$$
+$$P(A \mid B) = \frac{0,45}{0,50} = 0,9$$
 
 ### Ergebnis
 

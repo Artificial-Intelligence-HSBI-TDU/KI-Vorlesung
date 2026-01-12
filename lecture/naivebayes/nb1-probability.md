@@ -18,18 +18,18 @@ Wahrscheinlichkeit.
 Man kann eine **Verbundwahrscheinlichkeit** $P(A,B) = P(B,A)$ angeben, das ist die
 Wahrscheinlichkeit, dass $A$ und $B$ gleichzeitig auftreten.
 
-Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A|B)$ und berechnet
-sich $P(A|B) = P(A,B)/P(B)$.
+Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A \mid B)$ und berechnet
+sich $P(A \mid B) = P(A,B)/P(B)$.
 
-Daraus kann man die **Bayes-Regel** ableiten: $P(A|B) = P(B|A)P(A)/P(B)$.
+Daraus kann man die **Bayes-Regel** ableiten: $P(A \mid B) = P(B \mid A)P(A)/P(B)$.
 
 Dabei nennt man
 
 -   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
     Wahrscheinlichkeit für $A$ ohne weiteres Wissen),
--   $P(B|A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$, gegeben
+-   $P(B \mid A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$, gegeben
     $A$?),
--   $P(A|B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"** (Wie
+-   $P(A \mid B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"** (Wie
     wahrscheinlich ist $A$, wenn $B$ eingetreten ist?), und
 -   $P(B)$ ist ein Normierungsfaktor (Wie wahrscheinlich ist $B$ an sich?).
 :::
@@ -198,7 +198,7 @@ lediglich zur Verdeutlichung der Wahrscheinlichkeitsbegriffe!
 **Definition**: Bedingte Wahrscheinlichkeit für $A$ gegeben $B$:
 :::
 
-$$P(A|B) = \frac{P(A,B)}{P(B)}$$
+$$P(A \mid B) = \frac{P(A,B)}{P(B)}$$
 
 \bigskip
 
@@ -207,11 +207,11 @@ $$P(A|B) = \frac{P(A,B)}{P(B)}$$
 | Schnupfen        | 0.04          | 0.06                 |
 | $\neg$ Schnupfen | 0.01          | 0.89                 |
 
--   $P(\text{Schnupfen } | \text{ Halsschmerzen}) = \frac{P(S,H)}{P(H)} = \frac{0.04}{0.04+0.01} = 0.8$
--   $P(\text{Halsschmerzen } | \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
+-   $P(\text{Schnupfen }  \mid  \text{ Halsschmerzen}) = \frac{P(S,H)}{P(H)} = \frac{0.04}{0.04+0.01} = 0.8$
+-   $P(\text{Halsschmerzen }  \mid  \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
 
 ::: notes
-Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
+Wegen $P(A \mid B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A \mid B)P(B) = P(B \mid A)P(A)$
 (**Produkt-Regel**)!
 :::
 
@@ -231,7 +231,7 @@ $P(S) = P(S,H) + P(S, \neg H)$
 
 [Allgemein:]{.notes} Seien $B_1, \ldots, B_n$ Elementarereignisse mit
 $\bigcup_i B_i = \Omega$. Dann ist
-$$P(A) = \sum_i P(A,B_i) = \sum_i P(A|B_i)P(B_i)$$
+$$P(A) = \sum_i P(A,B_i) = \sum_i P(A \mid B_i)P(B_i)$$
 
 ::: notes
 Diesen Vorgang nennt man **Marginalisierung**. Die resultierende Verteilung $P(A)$
@@ -241,36 +241,36 @@ eine Seitenfläche vergleichbar ist.
 
 # Kettenregel
 
--   **Produktregel**: Wegen $P(A|B) = \dfrac{P(A,B)}{P(B)}$ gilt
-    $P(A,B) = P(A|B)P(B)$
+-   **Produktregel**: Wegen $P(A \mid B) = \dfrac{P(A,B)}{P(B)}$ gilt
+    $P(A,B) = P(A \mid B)P(B)$
 
 \bigskip
 
 -   Verallgemeinerung (**Kettenregel**): $$\begin{eqnarray}
     P(A_1,A_2,\ldots,A_n) &=& P(A_n,\ldots,A_2,A_1)\\
-        & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1},\ldots,A_1)\\
-        & = & P(A_n|A_{n-1},\ldots,A_1)P(A_{n-1}|A_{n-2},\ldots,A_1)P(A_{n-2},\ldots,A_1)\\
+        & = & P(A_n \mid A_{n-1},\ldots,A_1)P(A_{n-1},\ldots,A_1)\\
+        & = & P(A_n \mid A_{n-1},\ldots,A_1)P(A_{n-1} \mid A_{n-2},\ldots,A_1)P(A_{n-2},\ldots,A_1)\\
         & = & \ldots\\
-        & = & P(A_n|A_{n-1},\ldots,A_1) \ldots P(A_2|A_1)P(A_1)\\
-        & = & \prod_i P(A_i|A_1,\ldots,A_{i-1})
+        & = & P(A_n \mid A_{n-1},\ldots,A_1) \ldots P(A_2 \mid A_1)P(A_1)\\
+        & = & \prod_i P(A_i \mid A_1,\ldots,A_{i-1})
     \end{eqnarray}$$
 
 # Bayes-Regel
 
-Bedingte Wahrscheinlichkeit: $P(A,B) = P(A|B)P(B) = P(B|A)P(A)$
+Bedingte Wahrscheinlichkeit: $P(A,B) = P(A \mid B)P(B) = P(B \mid A)P(A)$
 
 \bigskip
 
-$$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
+$$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$$
 
 \bigskip
 \bigskip
 
 -   $P(A)$ nennt man **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** [(Das ist
     die Wahrscheinlichkeit für $A$ ohne weiteres Wissen)]{.notes}
--   $P(B|A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten von
+-   $P(B \mid A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten von
     $B$, gegeben $A$?)]{.notes}
--   $P(A|B)$ nennt man **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"**
+-   $P(A \mid B)$ nennt man **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"**
     [(Wie wahrscheinlich ist $A$, wenn $B$ eingetreten ist?)]{.notes}
 -   $P(B)$ ist ein Normierungsfaktor
 
@@ -280,13 +280,13 @@ betrachtet:
 
 -   $P(A)$: Wie wahrscheinlich ist eine bestimmte Klasse an sich
     (A-priori-Wahrscheinlichkeit der Klassen)?
--   $P(B|A)$: Wie wahrscheinlich sind bestimmte Daten, gegeben die Klasse $A$?
+-   $P(B \mid A)$: Wie wahrscheinlich sind bestimmte Daten, gegeben die Klasse $A$?
     (Likelihood der Daten)
--   $P(A|B)$: Gegeben die Daten $B$, wie wahrscheinlich ist die Klasse $A$?
+-   $P(A \mid B)$: Gegeben die Daten $B$, wie wahrscheinlich ist die Klasse $A$?
     (Posterior)
 
 In der Medizin hat sucht man i.d.R. die Ursache für beobachtete Symptome:
-$$P(\text{Ursache}|\text{Symptome}) = \frac{P(\text{Symptome}|\text{Ursache})P(\text{Ursache})}{P(\text{Symptome})}$$
+$$P(\text{Ursache} \mid \text{Symptome}) = \frac{P(\text{Symptome} \mid \text{Ursache})P(\text{Ursache})}{P(\text{Symptome})}$$
 
 Aus der A-priori-Wahrscheinlichkeit für bestimmte Krankheiten und der Likelihood der
 Symptome (wie wahrscheinlich sind Symptome, gegeben eine Krankheit) kann man die
@@ -304,12 +304,12 @@ berechnen.
 
 \pause
 
--   Gegeben: $P(A) = 0.0001,   P(S) = 0.1,   P(S|A) = 0.8$
--   Gesucht: $P(A|S)$
+-   Gegeben: $P(A) = 0.0001,   P(S) = 0.1,   P(S \mid A) = 0.8$
+-   Gesucht: $P(A \mid S)$
 
 \pause
 
-$$P(A|S) = \frac{P(S|A)P(A)}{P(S)} = \frac{0.8 \times 0.0001}{0.1} = 0.0008 = 0.08\%$$
+$$P(A \mid S) = \frac{P(S \mid A)P(A)}{P(S)} = \frac{0.8 \times 0.0001}{0.1} = 0.0008 = 0.08\%$$
 
 ::: notes
 Wenn ein steifes Gelenk vorliegt, ist die Wahrscheinlichkeit, dann an Arthrose
@@ -318,13 +318,13 @@ erkrankt zu sein, bei nur 0.08%. Kein Grund zur Sorge in diesem Fall :-)
 
 \pause
 
-=\> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also $P(S|\neg A$)?
+=\> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also $P(S \mid \neg A$)?
 
 \pause
 
-Mit Marginalisierung: $P(S) = P(S|A)P(A) + P(S|\neg A)P(\neg A)$, `\newline`{=tex}
-d.h. $0.1 = 0.8 \times 0.0001 + P(S|\neg A) \times (1-0.0001)$, d.h.
-$P(S|\neg A) = 0.0999$
+Mit Marginalisierung: $P(S) = P(S \mid A)P(A) + P(S \mid \neg A)P(\neg A)$, `\newline`{=tex}
+d.h. $0.1 = 0.8 \times 0.0001 + P(S \mid \neg A) \times (1-0.0001)$, d.h.
+$P(S \mid \neg A) = 0.0999$
 
 ::: notes
 In knapp 10 Prozent der Fälle würde man im obigen Beispiel bei der Diagnose "keine
@@ -342,28 +342,28 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2025, Ex. 7.9, S. 135] an!
 
 # Unabhängige Ereignisse
 
--   $P(\text{Halsschmerzen},\text{ Regen}) = P(\text{Regen }|\text{ Halsschmerzen})P(\text{Halsschmerzen})$
--   $P(\text{Regen }|\text{ Halsschmerzen}) = \text{ ?? }$
+-   $P(\text{Halsschmerzen},\text{ Regen}) = P(\text{Regen } \mid \text{ Halsschmerzen})P(\text{Halsschmerzen})$
+-   $P(\text{Regen } \mid \text{ Halsschmerzen}) = \text{ ?? }$
     `\pause`{=tex}$= P(\text{Regen})$
 
 \pause
 \bigskip
 
--   Zwei Ereignisse $A$ und $B$ sind **unabhängig**, wenn $$P(A|B) = P(A)$$
+-   Zwei Ereignisse $A$ und $B$ sind **unabhängig**, wenn $$P(A \mid B) = P(A)$$
 
     \smallskip
 
-    =\> $P(A,B) = P(A|B)P(B) = P(A)P(B)$
+    =\> $P(A,B) = P(A \mid B)P(B) = P(A)P(B)$
 
 ::: notes
 Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):
 
-> $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$), wenn $P(X|Y,Z) = P(X|Z)$ bzw.
-> $P(Y|X,Z) = P(Y|Z)$
+> $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$), wenn $P(X \mid Y,Z) = P(X \mid Z)$ bzw.
+> $P(Y \mid X,Z) = P(Y \mid Z)$
 
 Daraus folgt:
 
-$$P(X,Y|Z) = P(X|Y,Z)P(Y|Z) = P(X|Z)P(Y|Z)$$
+$$P(X,Y \mid Z) = P(X \mid Y,Z)P(Y \mid Z) = P(X \mid Z)P(Y \mid Z)$$
 :::
 
 # Wrap-Up

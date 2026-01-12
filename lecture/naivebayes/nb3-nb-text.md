@@ -204,7 +204,7 @@ Naive Bayes "trainieren"
     $P(c) = \dfrac{N_c}{N} = \dfrac{\text{Anzahl Dokumente in Klasse c}}{\text{Anzahl Dokumente}}$
 
 -   Likelihood der Daten (Terme):
-    $P(t|c) = \dfrac{\mathop{\text{count}}(t,c)}{\sum_{v \in V} \mathop{\text{count}}(v,c)}$
+    $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c)}{\sum_{v \in V} \mathop{\text{count}}(v,c)}$
     `\newline`{=tex} mit $\mathop{\text{count}}(t,c)$ Anzahl der Vorkommen von Term
     $t$ in allen Dokumenten der Klasse $c$ und $V$ die Vereinigung aller Terme aller
     Dokumente (Vokabular)
@@ -215,20 +215,20 @@ Naive Bayes "trainieren"
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK})$ $= (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1)$ $= 6/15 = 0.40$
-    -   $P(\text{sieben} | \text{SPAM})$ $= (2)/(2+1+1+1) = 2/5 = 0.40$
-    -   $P(\text{zwerg} | \text{OK}) = 2/15 = 0.133$
-    -   $P(\text{zwerg} | \text{SPAM}) = 0/5 = 0.00$
-    -   $P(\text{fressen} | \text{OK}) = 2/15 = 0.133$
-    -   $P(\text{fressen} | \text{SPAM}) = 0/5 = 0.00$
-    -   $P(\text{ziege} | \text{OK}) = 1/15 = 0.067$
-    -   $P(\text{ziege} | \text{SPAM}) = 1/5 = 0.20$
-    -   $P(\text{treten} | \text{OK}) = 1/15 = 0.067$
-    -   $P(\text{treten} | \text{SPAM}) = 1/5 = 0.20$
-    -   $P(\text{wolf} | \text{OK}) = 1/15 = 0.067$
-    -   $P(\text{wolf} | \text{SPAM}) = 1/5 = 0.20$
-    -   $P(\text{bock} | \text{OK}) = 2/15 = 0.133$
-    -   $P(\text{bock} | \text{SPAM}) = 0/5 = 0.00$
+    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1)$ $= 6/15 = 0.40$
+    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2)/(2+1+1+1) = 2/5 = 0.40$
+    -   $P(\text{zwerg} \mid \text{OK}) = 2/15 = 0.133$
+    -   $P(\text{zwerg} \mid \text{SPAM}) = 0/5 = 0.00$
+    -   $P(\text{fressen} \mid \text{OK}) = 2/15 = 0.133$
+    -   $P(\text{fressen} \mid \text{SPAM}) = 0/5 = 0.00$
+    -   $P(\text{ziege} \mid \text{OK}) = 1/15 = 0.067$
+    -   $P(\text{ziege} \mid \text{SPAM}) = 1/5 = 0.20$
+    -   $P(\text{treten} \mid \text{OK}) = 1/15 = 0.067$
+    -   $P(\text{treten} \mid \text{SPAM}) = 1/5 = 0.20$
+    -   $P(\text{wolf} \mid \text{OK}) = 1/15 = 0.067$
+    -   $P(\text{wolf} \mid \text{SPAM}) = 1/5 = 0.20$
+    -   $P(\text{bock} \mid \text{OK}) = 2/15 = 0.133$
+    -   $P(\text{bock} \mid \text{SPAM}) = 0/5 = 0.00$
 :::
 :::::
 
@@ -238,14 +238,14 @@ Naive Bayes "trainieren"
 
 # Naive Bayes Klassifikation (Multinomial NB)
 
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x \mid h)$
 
 \pause
 \bigskip
 
 Jedes Vorkommen eines Wortes im Testdatensatz ist ein $x$!
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}:\,\mathop{\text{count}}(w)>0} P(w | h)^{\mathop{\text{count}}(w)}$$
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}:\,\mathop{\text{count}}(w)>0} P(w \mid h)^{\mathop{\text{count}}(w)}$$
 
 \bigskip
 \smallskip
@@ -253,23 +253,23 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}:\,\
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   **h = OK**:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    $P(\text{OK}) \cdot P(\text{sieben} \mid \text{OK})^2 \cdot P(\text{zwerg} \mid \text{OK})^1 \cdot P(\text{fressen} \mid \text{OK})^1 \cdot P(\text{ziege} \mid \text{OK})^0 \cdot P(\text{treten} \mid \text{OK})^0 \cdot P(\text{wolf} \mid \text{OK})^1 \cdot P(\text{bock} \mid \text{OK})^0$
     $= 0.75*0.40*0.40*0.133*0.133*1*1*0.067*1 = 0.00014221956$
 
 -   **h = SPAM**:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
+    $P(\text{SPAM}) \cdot P(\text{sieben} \mid \text{SPAM})^2 \cdot P(\text{zwerg} \mid \text{SPAM})^1 \cdot P(\text{fressen} \mid \text{SPAM})^1 \cdot P(\text{ziege} \mid \text{SPAM})^0 \cdot P(\text{treten} \mid \text{SPAM})^0 \cdot P(\text{wolf} \mid \text{SPAM})^1 \cdot P(\text{bock} \mid \text{SPAM})^0$
     $= 0.25*0.40*0.40*0.00*0.00*1*1*0.20*1 = 0.00$
 
 Entscheidung: OK
 
 ::: notes
-**Hinweis**: $P(w | h)^{\mathop{\text{count}}(w)}$ muss so gelesen werden:
+**Hinweis**: $P(w \mid h)^{\mathop{\text{count}}(w)}$ muss so gelesen werden:
 - Wenn ein Term $w$ ein- oder mehrfach im Testvektor vorkommt, wird die zugehörige Likelihood entsprechend ein- bzw. mehrfach multipliziert.
 - Wenn ein Term $w$ nicht im Testvektor vorhanden ist ($\mathop{\text{count}}(w) = 0$), verschwindet die Likelihood und es wird automatisch ein Faktor 1 aufmultipliziert. Alternativ lässt man alle Terme mit $\mathop{\text{count}}(w) = 0$ einfach in der Formel weg.
 
 Nur tatsächlich vorhandene Terme im Testvektor ($\mathop{\text{count}}(w) > 0$) zahlen in das Ergebnis ein.
 
-Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der gesamte Ausdruck zu 0. Durch die beschriebene Lesart von $P(w | h)^{\mathop{\text{count}}(w)}$ ergibt sich dann bei $\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
+Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der gesamte Ausdruck zu 0. Durch die beschriebene Lesart von $P(w \mid h)^{\mathop{\text{count}}(w)}$ ergibt sich dann bei $\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
 :::
 
 ::: notes
@@ -289,7 +289,7 @@ Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der ge
 
 # Naive Bayes mit Laplace-Glättung (Multinomial NB)
 
-$$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|},
+$$P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|},
 \quad \text{ bei Laplace: } \alpha = 1$$
 
 ::: slides
@@ -302,33 +302,33 @@ $$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\t
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK})$ $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7})$ $= 7/22 = 0.318$
+    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7})$ $= 7/22 = 0.318$
         (vorher: 0.40)
-    -   $P(\text{sieben} | \text{SPAM})$ $= (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$ $= 3/12 = 0.25$
+    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$ $= 3/12 = 0.25$
         (vorher: 0.40)
-    -   $P(\text{zwerg} | \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
+    -   $P(\text{zwerg} \mid \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
-    -   $P(\text{zwerg} | \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
+    -   $P(\text{zwerg} \mid \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
         (vorher: **0.00**)
-    -   $P(\text{fressen} | \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
+    -   $P(\text{fressen} \mid \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
-    -   $P(\text{fressen} | \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
+    -   $P(\text{fressen} \mid \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
         (vorher: **0.00**)
-    -   $P(\text{ziege} | \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
+    -   $P(\text{ziege} \mid \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
         (vorher: 0.067)
-    -   $P(\text{ziege} | \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
+    -   $P(\text{ziege} \mid \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
         (vorher: 0.20)
-    -   $P(\text{treten} | \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
+    -   $P(\text{treten} \mid \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
         (vorher: 0.067)
-    -   $P(\text{treten} | \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
+    -   $P(\text{treten} \mid \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
         (vorher: 0.20)
-    -   $P(\text{wolf} | \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
+    -   $P(\text{wolf} \mid \text{OK}) = (1+\mathbf{1})/(15+\mathbf{7}) = 0.091$
         (vorher: 0.067)
-    -   $P(\text{wolf} | \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
+    -   $P(\text{wolf} \mid \text{SPAM}) = (1+\mathbf{1})/(5+\mathbf{7}) = 0.167$
         (vorher: 0.20)
-    -   $P(\text{bock} | \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
+    -   $P(\text{bock} \mid \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
-    -   $P(\text{bock} | \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
+    -   $P(\text{bock} \mid \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
         (vorher: **0.00**)
 
 ::: slides
@@ -342,12 +342,12 @@ $$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\t
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   **h = OK**:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
+    $P(\text{OK}) \cdot P(\text{sieben} \mid \text{OK})^2 \cdot P(\text{zwerg} \mid \text{OK})^1 \cdot P(\text{fressen} \mid \text{OK})^1 \cdot P(\text{ziege} \mid \text{OK})^0 \cdot P(\text{treten} \mid \text{OK})^0 \cdot P(\text{wolf} \mid \text{OK})^1 \cdot P(\text{bock} \mid \text{OK})^0$
     $= 0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$
     (vorher: 0.00014221956)
 
 -   **h = SPAM**:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
+    $P(\text{SPAM}) \cdot P(\text{sieben} \mid \text{SPAM})^2 \cdot P(\text{zwerg} \mid \text{SPAM})^1 \cdot P(\text{fressen} \mid \text{SPAM})^1 \cdot P(\text{ziege} \mid \text{SPAM})^0 \cdot P(\text{treten} \mid \text{SPAM})^0 \cdot P(\text{wolf} \mid \text{SPAM})^1 \cdot P(\text{bock} \mid \text{SPAM})^0$
     $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0.00001797598438$
     (vorher: **0.00**)
 
@@ -373,23 +373,23 @@ beim Training nicht gab?
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   **h = OK**:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
-    $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
+    $P(\text{OK}) \cdot P(\text{sieben} \mid \text{OK})^2 \cdot P(\text{zwerg} \mid \text{OK})^1 \cdot P(\text{fressen} \mid \text{OK})^1 \cdot P(\text{ziege} \mid \text{OK})^0 \cdot P(\text{treten} \mid \text{OK})^0 \cdot P(\text{wolf} \mid \text{OK})^1 \cdot P(\text{bock} \mid \text{OK})^0$
+    $\cdot \mathbf{P(\text{lecker} \mid \text{OK})^1}$
 
 -   **h = SPAM**:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
-    $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
+    $P(\text{SPAM}) \cdot P(\text{sieben} \mid \text{SPAM})^2 \cdot P(\text{zwerg} \mid \text{SPAM})^1 \cdot P(\text{fressen} \mid \text{SPAM})^1 \cdot P(\text{ziege} \mid \text{SPAM})^0 \cdot P(\text{treten} \mid \text{SPAM})^0 \cdot P(\text{wolf} \mid \text{SPAM})^1 \cdot P(\text{bock} \mid \text{SPAM})^0$
+    $\cdot \mathbf{P(\text{lecker} \mid \text{SPAM})^1}$
 
 \bigskip
 
-$\mathbf{P(\text{lecker} | \text{OK})}$ und $\mathbf{P(\text{lecker} | \text{SPAM})}$
+$\mathbf{P(\text{lecker} \mid \text{OK})}$ und $\mathbf{P(\text{lecker} \mid \text{SPAM})}$
 sind **unbekannt**!
 
 \bigskip
 
 **Möglichkeiten**:
 
-1.  Da im Training nicht vorgekommen: 0 als Wert für $P(\text{lecker} | c)$ annehmen
+1.  Da im Training nicht vorgekommen: 0 als Wert für $P(\text{lecker} \mid c)$ annehmen
 2.  Term ignorieren
 3.  Ad-hoc Laplace einführen
 4.  Mit UNK-Term arbeiten im Training/Klassifikation
@@ -433,13 +433,13 @@ müssen entsprechend angepasst werden!
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} | \text{OK})$ $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8})$ $= 7/23 = 0.304$
+    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8})$ $= 7/23 = 0.304$
         (vorher: 0.318)
-    -   $P(\text{sieben} | \text{SPAM})$ $= (2+1)/(2+1+1+1+\mathbf{8})$ $= 3/13 = 0.231$
+    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+1)/(2+1+1+1+\mathbf{8})$ $= 3/13 = 0.231$
         (vorher: 0.25)
     -   ...
-    -   $P(\text{UNK} | \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
-    -   $P(\text{UNK} | \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$
+    -   $P(\text{UNK} \mid \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
+    -   $P(\text{UNK} \mid \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$
 
 ::: slides
 # Naive Bayes mit UNK-Term (OOV, Multinomial NB), cnt.
@@ -455,19 +455,19 @@ Anzahl beachten!
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 -   **h = OK**:
-    $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
-    $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
+    $P(\text{OK}) \cdot P(\text{sieben} \mid \text{OK})^2 \cdot P(\text{zwerg} \mid \text{OK})^1 \cdot P(\text{fressen} \mid \text{OK})^1 \cdot P(\text{ziege} \mid \text{OK})^0 \cdot P(\text{treten} \mid \text{OK})^0 \cdot P(\text{wolf} \mid \text{OK})^1 \cdot P(\text{bock} \mid \text{OK})^0$
+    $\cdot \mathbf{P(\text{lecker} \mid \text{OK})^1}$
 
 -   **h = SPAM**:
-    $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
-    $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
+    $P(\text{SPAM}) \cdot P(\text{sieben} \mid \text{SPAM})^2 \cdot P(\text{zwerg} \mid \text{SPAM})^1 \cdot P(\text{fressen} \mid \text{SPAM})^1 \cdot P(\text{ziege} \mid \text{SPAM})^0 \cdot P(\text{treten} \mid \text{SPAM})^0 \cdot P(\text{wolf} \mid \text{SPAM})^1 \cdot P(\text{bock} \mid \text{SPAM})^0$
+    $\cdot \mathbf{P(\text{lecker} \mid \text{SPAM})^1}$
 
 \bigskip
 
 **Mapping**:
 
--   $P(\text{lecker} | \text{OK})$ =\> $P(\text{UNK} | \text{OK}) = 0.043$
--   $P(\text{lecker} | \text{SPAM})$ =\> $P(\text{UNK} | \text{SPAM}) = 0.077$
+-   $P(\text{lecker} \mid \text{OK})$ =\> $P(\text{UNK} \mid \text{OK}) = 0.043$
+-   $P(\text{lecker} \mid \text{SPAM})$ =\> $P(\text{UNK} \mid \text{SPAM}) = 0.077$
 
 ::: notes
 Mit dem UNK-Term kann man das Problem des Out-of-Vocabulary elegant lösen. Im
@@ -544,8 +544,8 @@ Naive Bayes "trainieren"
     $P(c) = \dfrac{N_c}{N} = \dfrac{\text{Anzahl Dokumente in Klasse c}}{\text{Anzahl Dokumente}}$
 
 -   Likelihood der Daten (Terme):
-    -   $P(t=1|c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
-    -   $P(t=0|c) = 1 - P(t=1|c)$
+    -   $P(t=1 \mid c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
+    -   $P(t=0 \mid c) = 1 - P(t=1 \mid c)$
 :::
 
 ::: column
@@ -553,20 +553,20 @@ Naive Bayes "trainieren"
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood $\alpha = 1$:
-    -   $P(\text{sieben}=1 | \text{OK}) = (3+1)/(3+2) = 4/5 = 0.80$
-    -   $P(\text{sieben}=1 | \text{SPAM}) = (1+1)/(1+2) = 2/3 = 0.667$
-    -   $P(\text{zwerg}=1 | \text{OK}) = 3/5 = 0.60$
-    -   $P(\text{zwerg}=1 | \text{SPAM}) = 1/3 = 0.333$
-    -   $P(\text{fressen}=1 | \text{OK}) = 3/5 = 0.60$
-    -   $P(\text{fressen}=1 | \text{SPAM}) = 1/3 = 0.333$
-    -   $P(\text{ziege}=1 | \text{OK}) = 2/5 = 0.40$
-    -   $P(\text{ziege}=1 | \text{SPAM}) = 2/3 = 0.667$
-    -   $P(\text{treten}=1 | \text{OK}) = 2/5 = 0.40$
-    -   $P(\text{treten}=1 | \text{SPAM}) = 2/3 = 0.667$
-    -   $P(\text{wolf}=1 | \text{OK}) = 2/5 = 0.40$
-    -   $P(\text{wolf}=1 | \text{SPAM}) = 2/3 = 0.667$
-    -   $P(\text{bock}=1 | \text{OK}) = 3/5 = 0.60$
-    -   $P(\text{bock}=1 | \text{SPAM}) = 1/3 = 0.333$
+    -   $P(\text{sieben}=1 \mid \text{OK}) = (3+1)/(3+2) = 4/5 = 0.80$
+    -   $P(\text{sieben}=1 \mid \text{SPAM}) = (1+1)/(1+2) = 2/3 = 0.667$
+    -   $P(\text{zwerg}=1 \mid \text{OK}) = 3/5 = 0.60$
+    -   $P(\text{zwerg}=1 \mid \text{SPAM}) = 1/3 = 0.333$
+    -   $P(\text{fressen}=1 \mid \text{OK}) = 3/5 = 0.60$
+    -   $P(\text{fressen}=1 \mid \text{SPAM}) = 1/3 = 0.333$
+    -   $P(\text{ziege}=1 \mid \text{OK}) = 2/5 = 0.40$
+    -   $P(\text{ziege}=1 \mid \text{SPAM}) = 2/3 = 0.667$
+    -   $P(\text{treten}=1 \mid \text{OK}) = 2/5 = 0.40$
+    -   $P(\text{treten}=1 \mid \text{SPAM}) = 2/3 = 0.667$
+    -   $P(\text{wolf}=1 \mid \text{OK}) = 2/5 = 0.40$
+    -   $P(\text{wolf}=1 \mid \text{SPAM}) = 2/3 = 0.667$
+    -   $P(\text{bock}=1 \mid \text{OK}) = 3/5 = 0.60$
+    -   $P(\text{bock}=1 \mid \text{SPAM}) = 1/3 = 0.333$
 :::
 :::::
 
@@ -576,13 +576,13 @@ Naive Bayes "trainieren"
 
 ::: notes
 Bei Bernoulli NB wird auch explizit die Wahrscheinlichkeit für die Abwesenheit eines
-Terms berechnet, dies ist einfach $P(t=0|c) = 1 - P(t=1|c)$. Der Übersichtlichkeit
+Terms berechnet, dies ist einfach $P(t=0 \mid c) = 1 - P(t=1 \mid c)$. Der Übersichtlichkeit
 halber ist dies oben nicht explizit angegeben/ausgerechnet.
 :::
 
 # Naive Bayes Klassifikation (Bernoulli NB)
 
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x | h)$
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x \mid h)$
 
 \pause
 \bigskip
@@ -591,11 +591,11 @@ Für jedes Wort $w$ im Vokabular $V$ gibt es die Beobachtung (Bernoulli-Variable
 $lw \in \lbrace 0, 1 \rbrace$. [($lw = 1$ wenn Wort $w$ im Testdokument vorkommt,
 $lw=0$ sonst.)]{.notes}
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$$
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 \mid h)^{lw} \cdot (1 - P(lw=1 \mid h))^{1-lw}$$
 
 ::: notes
-Wenn ein Wort $w$ im Testdatensatz vorkommt, wird es mit $P(lw=1 | h)$
-berücksichtigt. Sonst mit $P(lw=0 | h) = (1 - P(lw=1 | h))$.
+Wenn ein Wort $w$ im Testdatensatz vorkommt, wird es mit $P(lw=1 \mid h)$
+berücksichtigt. Sonst mit $P(lw=0 \mid h) = (1 - P(lw=1 \mid h))$.
 :::
 
 \bigskip
@@ -604,11 +604,11 @@ berücksichtigt. Sonst mit $P(lw=0 | h) = (1 - P(lw=1 | h))$.
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   **h = OK**:
-    $P(\text{OK}) \cdot P(\text{sieben}=1 | \text{OK}) \cdot P(\text{zwerg}=1 | \text{OK}) \cdot P(\text{fressen}=1 | \text{OK}) \cdot P(\text{ziege}=0 | \text{OK}) \cdot P(\text{treten}=0 | \text{OK}) \cdot P(\text{wolf}=1 | \text{OK}) \cdot P(\text{bock}=0 | \text{OK})$
+    $P(\text{OK}) \cdot P(\text{sieben}=1 \mid \text{OK}) \cdot P(\text{zwerg}=1 \mid \text{OK}) \cdot P(\text{fressen}=1 \mid \text{OK}) \cdot P(\text{ziege}=0 \mid \text{OK}) \cdot P(\text{treten}=0 \mid \text{OK}) \cdot P(\text{wolf}=1 \mid \text{OK}) \cdot P(\text{bock}=0 \mid \text{OK})$
     $= 0.75*0.80*0.60*0.60*(1-0.40)*(1-0.40)*0.40*(1-0.60) = 0.0124416$
 
 -   **h = SPAM**:
-    $P(\text{SPAM}) \cdot P(\text{sieben}=1 | \text{SPAM}) \cdot P(\text{zwerg}=1 | \text{SPAM}) \cdot P(\text{fressen}=1 | \text{SPAM}) \cdot P(\text{ziege}=0 | \text{SPAM}) \cdot P(\text{treten}=0 | \text{SPAM}) \cdot P(\text{wolf}=1 | \text{SPAM}) \cdot P(\text{bock}=0 | \text{SPAM})$
+    $P(\text{SPAM}) \cdot P(\text{sieben}=1 \mid \text{SPAM}) \cdot P(\text{zwerg}=1 \mid \text{SPAM}) \cdot P(\text{fressen}=1 \mid \text{SPAM}) \cdot P(\text{ziege}=0 \mid \text{SPAM}) \cdot P(\text{treten}=0 \mid \text{SPAM}) \cdot P(\text{wolf}=1 \mid \text{SPAM}) \cdot P(\text{bock}=0 \mid \text{SPAM})$
     $= 0.25*0.667*0.333*0.333*(1-0.667)*(1-0.667)*0.667*(1-0.333) = 0.0009122091926$
 
 Entscheidung: OK
@@ -622,7 +622,7 @@ Entscheidung: OK
     Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. =\>
     Laplace-Glättung einsetzen!
 3.  Im Testdatensatz nicht vorhandene Terme des Vokabulars werden automatisch
-    korrekt mit $P(lw=0 | h)$ bzw. $(1 - P(lw=1 | h))$ berücksichtigt. (Multinomial
+    korrekt mit $P(lw=0 \mid h)$ bzw. $(1 - P(lw=1 \mid h))$ berücksichtigt. (Multinomial
     NB würde diese Terme mit dem Faktor 1 ignorieren.)
 :::
 
@@ -634,21 +634,21 @@ Entscheidung: OK
 
 -   **Multinomial NB**:
     -   Zähle die Vorkommen eines Terms:
-        $P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$
+        $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$
 
     -   Klassifikation mit
-        $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathop{\text{count}}(w)}$
+        $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w \mid h)^{\mathop{\text{count}}(w)}$
 
     -   Im Test nicht vorhandene Terme t aus V werden ignoriert (Faktor 1)
 
 -   **Bernoulli NB**:
     -   Prüfe das Vorkommen eines Terms:
-        $P(t=1|c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
+        $P(t=1 \mid c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
 
     -   Klassifikation mit
-        $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 | h)^{lw} \cdot (1 - P(lw=1 | h))^{1-lw}$
+        $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(lw=1 \mid h)^{lw} \cdot (1 - P(lw=1 \mid h))^{1-lw}$
 
-    -   Im Test nicht vorhandene Terme t aus V werden korrekt mit $P(lw=0 | h)$
+    -   Im Test nicht vorhandene Terme t aus V werden korrekt mit $P(lw=0 \mid h)$
         berücksichtigt
 
 \bigskip
