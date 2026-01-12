@@ -162,6 +162,7 @@ dargestellt.
 :::
 
 ::: slides
+
 |     | sieben | zwerg | fressen | ziege | treten | wolf | bock | Klasse |
 |:----|:-------|:------|:--------|:------|:-------|:-----|:-----|:-------|
 | D1  | 2      | 1     | 1       | 1     | 0      | 0    | 0    | OK     |
@@ -251,11 +252,11 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(
 
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
--   **H = OK**:
+-   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
     $= 0.75*0.40*0.40*0.133*0.133*1*1*0.067*1 = 0.00014221956$
 
--   **H = SPAM**:
+-   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $= 0.25*0.40*0.40*0.00*0.00*1*1*0.20*1 = 0.00$
 
@@ -330,12 +331,12 @@ $$P(t|c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\t
 
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
--   **H = OK**:
+-   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
     $= 0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$
     (vorher: 0.00014221956)
 
--   **H = SPAM**:
+-   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0,00001797598438$
     (vorher: **0.00**)
@@ -361,11 +362,11 @@ beim Training nicht gab?
 
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
--   **H = OK**:
+-   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
--   **H = SPAM**:
+-   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
@@ -443,11 +444,11 @@ Anzahl beachten!
 
 T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
--   **H = OK**:
+-   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben} | \text{OK})^2 \cdot P(\text{zwerg} | \text{OK})^1 \cdot P(\text{fressen} | \text{OK})^1 \cdot P(\text{ziege} | \text{OK})^0 \cdot P(\text{treten} | \text{OK})^0 \cdot P(\text{wolf} | \text{OK})^1 \cdot P(\text{bock} | \text{OK})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{OK})^1}$
 
--   **H = SPAM**:
+-   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
     $\cdot \mathbf{P(\text{lecker} | \text{SPAM})^1}$
 
@@ -592,11 +593,11 @@ berücksichtigt. Sonst mit $P(lw=0 | h) = (1 - P(lw=1 | h))$.
 
 T1: (sieben, zwerg, fressen, sieben, wolf)
 
--   **H = OK**:
+-   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben}=1 | \text{OK}) \cdot P(\text{zwerg}=1 | \text{OK}) \cdot P(\text{fressen}=1 | \text{OK}) \cdot P(\text{ziege}=0 | \text{OK}) \cdot P(\text{treten}=0 | \text{OK}) \cdot P(\text{wolf}=1 | \text{OK}) \cdot P(\text{bock}=0 | \text{OK})$
     $= 0.75*0.80*0.60*0.60*(1-0.40)*(1-0.40)*0.40*(1-0.60) = 0.0124416$
 
--   **H = SPAM**:
+-   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben}=1 | \text{SPAM}) \cdot P(\text{zwerg}=1 | \text{SPAM}) \cdot P(\text{fressen}=1 | \text{SPAM}) \cdot P(\text{ziege}=0 | \text{SPAM}) \cdot P(\text{treten}=0 | \text{SPAM}) \cdot P(\text{wolf}=1 | \text{SPAM}) \cdot P(\text{bock}=0 | \text{SPAM})$
     $= 0.25*0.667*0.333*0.333*(1-0.667)*(1-0.667)*0.667*(1-0.333) = 0.0009122091926$
 
