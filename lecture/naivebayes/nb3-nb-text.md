@@ -263,6 +263,16 @@ T1: (sieben, zwerg, fressen, sieben, wolf)
 Entscheidung: OK
 
 ::: notes
+**Hinweis**: $P(w | h)^{\mathop{\text{count}}(w)}$ muss so gelesen werden:
+- Wenn ein Term $w$ ein- oder mehrfach im Testvektor vorkommt, wird die zugehörige Likelihood entsprechend ein- bzw. mehrfach multipliziert.
+- Wenn ein Term $w$ nicht im Testvektor vorhanden ist ($\mathop{\text{count}}(w) = 0$), verschwindet die Likelihood und es wird automatisch ein Faktor 1 aufmultipliziert. Alternativ lässt man alle Terme mit $\mathop{\text{count}}(w) = 0$ einfach in der Formel weg.
+
+Nur tatsächlich vorhandene Terme im Testvektor ($\mathop{\text{count}}(w) > 0$) zahlen in das Ergebnis ein.
+
+Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der gesamte Ausdruck zu 0. Durch die beschriebene Lesart von $P(w | h)^{\mathop{\text{count}}(w)}$ ergibt sich dann bei $\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
+:::
+
+::: notes
 **Beobachtungen**:
 
 1.  Viele kleine Faktoren ergeben ein immer kleineres Produkt =\> Logarithmus nutzen
