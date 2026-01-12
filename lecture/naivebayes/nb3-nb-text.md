@@ -157,7 +157,7 @@ und 1 arbeitet und nicht durchzählt ("*Bernoulli NB*", s.u.).
 Bei Multinomial NB zählen wir die Häufigkeiten der Vorkommen der einzelnen Terme in
 den einzelnen Dokumenten der jeweiligen Klasse.
 
-Nachfolgend sind die entsprechenden Häufigkeiten im Traingsdatensatz zusammengefasst
+Nachfolgend sind die entsprechenden Häufigkeiten im Trainingsdatensatz zusammengefasst
 dargestellt.
 :::
 
@@ -338,7 +338,7 @@ T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} | \text{SPAM})^2 \cdot P(\text{zwerg} | \text{SPAM})^1 \cdot P(\text{fressen} | \text{SPAM})^1 \cdot P(\text{ziege} | \text{SPAM})^0 \cdot P(\text{treten} | \text{SPAM})^0 \cdot P(\text{wolf} | \text{SPAM})^1 \cdot P(\text{bock} | \text{SPAM})^0$
-    $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0,00001797598438$
+    $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0.00001797598438$
     (vorher: **0.00**)
 
 Entscheidung: OK
@@ -407,7 +407,7 @@ unterschiedliche Auswirkungen:
 **Training**
 
 ::: notes
-Wir führen einen zusätzlichen Termin **UNK** ("unknown") ein und führen das Training
+Wir führen einen zusätzlichen Term **UNK** ("unknown") ein und führen das Training
 damit durch.
 
 **Achtung**: Das Vokabular wird dadurch um einen Eintrag größer - alle Likelihoods
