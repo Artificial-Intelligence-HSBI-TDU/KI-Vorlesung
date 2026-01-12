@@ -157,12 +157,11 @@ und 1 arbeitet und nicht durchzählt ("*Bernoulli NB*", s.u.).
 Bei Multinomial NB zählen wir die Häufigkeiten der Vorkommen der einzelnen Terme in
 den einzelnen Dokumenten der jeweiligen Klasse.
 
-Nachfolgend sind die entsprechenden Häufigkeiten im Trainingsdatensatz zusammengefasst
-dargestellt.
+Nachfolgend sind die entsprechenden Häufigkeiten im Trainingsdatensatz
+zusammengefasst dargestellt.
 :::
 
 ::: slides
-
 |     | sieben | zwerg | fressen | ziege | treten | wolf | bock | Klasse |
 |:----|:-------|:------|:--------|:------|:-------|:-----|:-----|:-------|
 | D1  | 2      | 1     | 1       | 1     | 0      | 0    | 0    | OK     |
@@ -215,7 +214,8 @@ Naive Bayes "trainieren"
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1)$ $= 6/15 = 0.40$
+    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1)$
+        $= 6/15 = 0.40$
     -   $P(\text{sieben} \mid \text{SPAM})$ $= (2)/(2+1+1+1) = 2/5 = 0.40$
     -   $P(\text{zwerg} \mid \text{OK}) = 2/15 = 0.133$
     -   $P(\text{zwerg} \mid \text{SPAM}) = 0/5 = 0.00$
@@ -264,12 +264,23 @@ Entscheidung: OK
 
 ::: notes
 **Hinweis**: $P(w \mid h)^{\mathop{\text{count}}(w)}$ muss so gelesen werden:
-- Wenn ein Term $w$ ein- oder mehrfach im Testvektor vorkommt, wird die zugehörige Likelihood entsprechend ein- bzw. mehrfach multipliziert.
-- Wenn ein Term $w$ nicht im Testvektor vorhanden ist ($\mathop{\text{count}}(w) = 0$), verschwindet die Likelihood und es wird automatisch ein Faktor 1 aufmultipliziert. Alternativ lässt man alle Terme mit $\mathop{\text{count}}(w) = 0$ einfach in der Formel weg.
 
-Nur tatsächlich vorhandene Terme im Testvektor ($\mathop{\text{count}}(w) > 0$) zahlen in das Ergebnis ein.
+-   Wenn ein Term $w$ ein- oder mehrfach im Testvektor vorkommt, wird die zugehörige
+    Likelihood entsprechend ein- bzw. mehrfach multipliziert.
+-   Wenn ein Term $w$ nicht im Testvektor vorhanden ist
+    ($\mathop{\text{count}}(w) = 0$), verschwindet die Likelihood und es wird
+    automatisch ein Faktor 1 aufmultipliziert. Alternativ lässt man alle Terme mit
+    $\mathop{\text{count}}(w) = 0$ einfach in der Formel weg.
 
-Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der gesamte Ausdruck zu 0. Durch die beschriebene Lesart von $P(w \mid h)^{\mathop{\text{count}}(w)}$ ergibt sich dann bei $\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
+Nur tatsächlich vorhandene Terme im Testvektor ($\mathop{\text{count}}(w) > 0$)
+zahlen in das Ergebnis ein.
+
+Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der
+gesamte Ausdruck zu 0. Durch die beschriebene Lesart von
+$P(w \mid h)^{\mathop{\text{count}}(w)}$ ergibt sich dann bei
+$\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar
+nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art
+Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
 :::
 
 ::: notes
@@ -302,10 +313,11 @@ $$P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \math
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7})$ $= 7/22 = 0.318$
+    -   $P(\text{sieben} \mid \text{OK})$
+        $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7})$ $= 7/22 = 0.318$
         (vorher: 0.40)
-    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$ $= 3/12 = 0.25$
-        (vorher: 0.40)
+    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$
+        $= 3/12 = 0.25$ (vorher: 0.40)
     -   $P(\text{zwerg} \mid \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
     -   $P(\text{zwerg} \mid \text{SPAM}) = (0+\mathbf{1})/(5+\mathbf{7}) = 0.083$
@@ -343,13 +355,12 @@ T1: (sieben, zwerg, fressen, sieben, wolf)
 
 -   **h = OK**:
     $P(\text{OK}) \cdot P(\text{sieben} \mid \text{OK})^2 \cdot P(\text{zwerg} \mid \text{OK})^1 \cdot P(\text{fressen} \mid \text{OK})^1 \cdot P(\text{ziege} \mid \text{OK})^0 \cdot P(\text{treten} \mid \text{OK})^0 \cdot P(\text{wolf} \mid \text{OK})^1 \cdot P(\text{bock} \mid \text{OK})^0$
-    $= 0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$
-    (vorher: 0.00014221956)
+    $= 0.75*0.318*0.318*0.136*0.136*1*1*0.091*1 = 0.0001276540836$ (vorher:
+    0.00014221956)
 
 -   **h = SPAM**:
     $P(\text{SPAM}) \cdot P(\text{sieben} \mid \text{SPAM})^2 \cdot P(\text{zwerg} \mid \text{SPAM})^1 \cdot P(\text{fressen} \mid \text{SPAM})^1 \cdot P(\text{ziege} \mid \text{SPAM})^0 \cdot P(\text{treten} \mid \text{SPAM})^0 \cdot P(\text{wolf} \mid \text{SPAM})^1 \cdot P(\text{bock} \mid \text{SPAM})^0$
-    $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0.00001797598438$
-    (vorher: **0.00**)
+    $= 0.25*0.25*0.25*0.083*0.083*1*1*0.167*1 = 0.00001797598438$ (vorher: **0.00**)
 
 Entscheidung: OK
 
@@ -382,14 +393,15 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 \bigskip
 
-$\mathbf{P(\text{lecker} \mid \text{OK})}$ und $\mathbf{P(\text{lecker} \mid \text{SPAM})}$
-sind **unbekannt**!
+$\mathbf{P(\text{lecker} \mid \text{OK})}$ und
+$\mathbf{P(\text{lecker} \mid \text{SPAM})}$ sind **unbekannt**!
 
 \bigskip
 
 **Möglichkeiten**:
 
-1.  Da im Training nicht vorgekommen: 0 als Wert für $P(\text{lecker} \mid c)$ annehmen
+1.  Da im Training nicht vorgekommen: 0 als Wert für $P(\text{lecker} \mid c)$
+    annehmen
 2.  Term ignorieren
 3.  Ad-hoc Laplace einführen
 4.  Mit UNK-Term arbeiten im Training/Klassifikation
@@ -433,10 +445,11 @@ müssen entsprechend angepasst werden!
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8})$ $= 7/23 = 0.304$
-        (vorher: 0.318)
-    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+1)/(2+1+1+1+\mathbf{8})$ $= 3/13 = 0.231$
-        (vorher: 0.25)
+    -   $P(\text{sieben} \mid \text{OK})$
+        $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8})$ $= 7/23 = 0.304$ (vorher:
+        0.318)
+    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+1)/(2+1+1+1+\mathbf{8})$
+        $= 3/13 = 0.231$ (vorher: 0.25)
     -   ...
     -   $P(\text{UNK} \mid \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
     -   $P(\text{UNK} \mid \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$
@@ -544,6 +557,7 @@ Naive Bayes "trainieren"
     $P(c) = \dfrac{N_c}{N} = \dfrac{\text{Anzahl Dokumente in Klasse c}}{\text{Anzahl Dokumente}}$
 
 -   Likelihood der Daten (Terme):
+
     -   $P(t=1 \mid c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
     -   $P(t=0 \mid c) = 1 - P(t=1 \mid c)$
 :::
@@ -576,8 +590,8 @@ Naive Bayes "trainieren"
 
 ::: notes
 Bei Bernoulli NB wird auch explizit die Wahrscheinlichkeit für die Abwesenheit eines
-Terms berechnet, dies ist einfach $P(t=0 \mid c) = 1 - P(t=1 \mid c)$. Der Übersichtlichkeit
-halber ist dies oben nicht explizit angegeben/ausgerechnet.
+Terms berechnet, dies ist einfach $P(t=0 \mid c) = 1 - P(t=1 \mid c)$. Der
+Übersichtlichkeit halber ist dies oben nicht explizit angegeben/ausgerechnet.
 :::
 
 # Naive Bayes Klassifikation (Bernoulli NB)
@@ -622,8 +636,8 @@ Entscheidung: OK
     Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. =\>
     Laplace-Glättung einsetzen!
 3.  Im Testdatensatz nicht vorhandene Terme des Vokabulars werden automatisch
-    korrekt mit $P(lw=0 \mid h)$ bzw. $(1 - P(lw=1 \mid h))$ berücksichtigt. (Multinomial
-    NB würde diese Terme mit dem Faktor 1 ignorieren.)
+    korrekt mit $P(lw=0 \mid h)$ bzw. $(1 - P(lw=1 \mid h))$ berücksichtigt.
+    (Multinomial NB würde diese Terme mit dem Faktor 1 ignorieren.)
 :::
 
 [[Beobachtungen]{.ex}]{.slides}
@@ -633,6 +647,7 @@ Entscheidung: OK
 -   **Vorverarbeitung**: Tokenisierung, Vokabular, Bag of Words (BoW)
 
 -   **Multinomial NB**:
+
     -   Zähle die Vorkommen eines Terms:
         $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot \lvert V \rvert}$
 
@@ -642,6 +657,7 @@ Entscheidung: OK
     -   Im Test nicht vorhandene Terme t aus V werden ignoriert (Faktor 1)
 
 -   **Bernoulli NB**:
+
     -   Prüfe das Vorkommen eines Terms:
         $P(t=1 \mid c) = \dfrac{\text{Anzahl Dokumente in Klasse c mit Term t} + \alpha}{\text{Anzahl Dokumente in Klasse c} + 2 \cdot \alpha}$
 

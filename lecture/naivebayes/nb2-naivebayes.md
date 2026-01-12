@@ -13,9 +13,9 @@ $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1,  \ldots, D_n) =
 \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$
 
 Für jede Hypothese $h$, d.h. für jede Klasse, wird der Posterior
-$P(h \mid D_1,  \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten ist,
-"gewinnt", d.h. die Klasse mit dem größten Posterior wird ausgegeben. (Deshalb wird
-das Verfahren oft auch "MAP" -- *Maximum a Posteriori* -- genannt.)
+$P(h \mid D_1, \ldots, D_n)$ ausgerechnet. Die Klasse, deren Wert dabei am höchsten
+ist, "gewinnt", d.h. die Klasse mit dem größten Posterior wird ausgegeben. (Deshalb
+wird das Verfahren oft auch "MAP" -- *Maximum a Posteriori* -- genannt.)
 
 Bei der Berechnung wird angenommen, dass die betrachteten Merkmale (bedingt)
 unabhängig sind (dies geht in die obige Formel ein). Diese Annahme trifft aber oft
@@ -122,7 +122,8 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
 -   Für jede Klasse $h$:
     -   Schätze $P(h) = \dfrac{\lvert S(h) \rvert}{\lvert S \rvert}$
     -   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: `\newline`{=tex}
-        Schätze $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
+        Schätze
+        $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
 
 \bigskip
 
@@ -147,8 +148,8 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
 \pause
 \bigskip
 
-Gesucht: $P(\text{krank})$, $P(\text{gesund})$, $P(\text{Nase=0} \mid \text{krank})$,
-$P(\text{Nase=0} \mid \text{gesund})$, ...
+Gesucht: $P(\text{krank})$, $P(\text{gesund})$,
+$P(\text{Nase=0} \mid \text{krank})$, $P(\text{Nase=0} \mid \text{gesund})$, ...
 
 Wähle Klasse $$\begin{eqnarray}
 h_{MAP} = \mathop{\text{argmax}}_{h \in \lbrace \text{gesund, krank} \rbrace} & P(h) \cdot P(\text{Nase=0} \mid h) \cdot P(\text{Husten=1} \mid h) \\
@@ -177,7 +178,8 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
     h = gesund: P(gesund) * P(Nase=0 | gesund) * P(Husten=1 | gesund) * P(Haut=0 | gesund) * P(Fieber=1 | gesund) = 0.4*0.5*0*1*0              = 0
     h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | krank)  * P(Fieber=1 | krank)  = 0.6*0.333*0.667*0.33*0.333 = 0.015
 
-=\> Klasse "krank" gewinnt (Wert für $P(\text{krank})$ ist der höchste der beiden Hypothesen) ...
+=\> Klasse "krank" gewinnt (Wert für $P(\text{krank})$ ist der höchste der beiden
+Hypothesen) ...
 :::
 
 [[Tafelbeispiel]{.ex}]{.slides}
@@ -279,9 +281,9 @@ Wir haben aber im Fall von $H=1$:
 
 Damit bekommen wir im Naive Bayes Klassifikator ein Problem. Dort wird von bedingt
 unabhängigen Merkmalen ausgegangen und deshalb die Vereinfachung von
-$P(x_1, x_2 \mid H)$ zu $P(x_1 \mid H) P(x_2 \mid H)$ vorgenommen. Da die Annahme nicht
-stimmt, werden die Merkmale falsch gewichtet und es kann zu Fehlklassifikationen
-kommen.
+$P(x_1, x_2 \mid H)$ zu $P(x_1 \mid H) P(x_2 \mid H)$ vorgenommen. Da die Annahme
+nicht stimmt, werden die Merkmale falsch gewichtet und es kann zu
+Fehlklassifikationen kommen.
 
 ### Klassifikation einer Beobachtung
 
@@ -297,7 +299,8 @@ Die nötigen Marginalisierungen aus den Trainingsdaten für diese Beobachtung si
 Anwendung der Naive Bayes Klassifikation (mit Annahme bedingt unabhängige Merkmale):
 Wir nutzen $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
 = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$ und setzen unsere
-beiden Merkmale ein: $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
+beiden Merkmale ein:
+$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
 = \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1 \mid h) P(x_2 \mid h)$.
 
 Damit bekommen wir folgende Entscheidung:
@@ -350,11 +353,13 @@ eine korrekte Klassifikation.
 
 -   Lösung: "Laplace-Schätzer" (auch "Laplace-Glättung")
 
-    Statt $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
+    Statt
+    $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
 
     \smallskip
 
-    nutze $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert + m \cdot p_i}{\lvert S(h) \rvert + m}$
+    nutze
+    $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert + m \cdot p_i}{\lvert S(h) \rvert + m}$
 
     \smallskip
 
@@ -363,8 +368,8 @@ eine korrekte Klassifikation.
     -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x \mid h)$
 
         Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*:
-        $p_i = 1/\lvert D_i \rvert$ (Wahrscheinlichkeit für eine Attributausprägung ist
-        1/(Anzahl der Ausprägungen des Attributs))
+        $p_i = 1/\lvert D_i \rvert$ (Wahrscheinlichkeit für eine Attributausprägung
+        ist 1/(Anzahl der Ausprägungen des Attributs))
 
     =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
     Trainingsbeispiele)

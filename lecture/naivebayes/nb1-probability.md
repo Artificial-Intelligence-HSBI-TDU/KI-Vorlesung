@@ -18,8 +18,8 @@ Wahrscheinlichkeit.
 Man kann eine **Verbundwahrscheinlichkeit** $P(A,B) = P(B,A)$ angeben, das ist die
 Wahrscheinlichkeit, dass $A$ und $B$ gleichzeitig auftreten.
 
-Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A \mid B)$ und berechnet
-sich $P(A \mid B) = P(A,B)/P(B)$.
+Die **bedingte** Wahrscheinlichkeit für $A$ gegeben $B$ ist $P(A \mid B)$ und
+berechnet sich $P(A \mid B) = P(A,B)/P(B)$.
 
 Daraus kann man die **Bayes-Regel** ableiten: $P(A \mid B) = P(B \mid A)P(A)/P(B)$.
 
@@ -27,8 +27,8 @@ Dabei nennt man
 
 -   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
     Wahrscheinlichkeit für $A$ ohne weiteres Wissen),
--   $P(B \mid A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$, gegeben
-    $A$?),
+-   $P(B \mid A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$,
+    gegeben $A$?),
 -   $P(A \mid B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"** (Wie
     wahrscheinlich ist $A$, wenn $B$ eingetreten ist?), und
 -   $P(B)$ ist ein Normierungsfaktor (Wie wahrscheinlich ist $B$ an sich?).
@@ -115,11 +115,14 @@ beispielsweise der Gauss'schen Funktion.
 ## Beispiel
 
 -   Einmaliges Würfeln mit einem Spielwürfel: $\Omega = \lbrace 1,2,3,4,5,6 \rbrace$
+
 -   Elementarereignisse: $\lbrace 1,2,3,4,5,6 \rbrace$
+
 -   Das Würfeln einer geraden Zahl ($A = \lbrace 2,4,6 \rbrace$) ist *kein*
     Elementarereignis, ebenso wie das Würfeln einer Zahl kleiner 5
     ($B = \lbrace 1,2,3,4 \rbrace$), da
     $A \cap B = \lbrace 2,4 \rbrace \ne \emptyset$
+
 -   Wahrscheinlichkeit, eine 1 zu würfeln:
     $P(A \in \lbrace 1 \rbrace) = P(A=1) = \frac{1}{6}$.
 
@@ -211,8 +214,8 @@ $$P(A \mid B) = \frac{P(A,B)}{P(B)}$$
 -   $P(\text{Halsschmerzen }  \mid  \text{ Schnupfen}) = \frac{P(H,S)}{P(S)} = \frac{0.04}{0.04+0.06} = 0.4$
 
 ::: notes
-Wegen $P(A \mid B) = \dfrac{P(A,B)}{P(B)}$ ist $P(A,B) = P(A \mid B)P(B) = P(B \mid A)P(A)$
-(**Produkt-Regel**)!
+Wegen $P(A \mid B) = \dfrac{P(A,B)}{P(B)}$ ist
+$P(A,B) = P(A \mid B)P(B) = P(B \mid A)P(A)$ (**Produkt-Regel**)!
 :::
 
 # Marginalisierung
@@ -268,10 +271,11 @@ $$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$$
 
 -   $P(A)$ nennt man **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** [(Das ist
     die Wahrscheinlichkeit für $A$ ohne weiteres Wissen)]{.notes}
--   $P(B \mid A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten von
-    $B$, gegeben $A$?)]{.notes}
--   $P(A \mid B)$ nennt man **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"**
-    [(Wie wahrscheinlich ist $A$, wenn $B$ eingetreten ist?)]{.notes}
+-   $P(B \mid A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten
+    von $B$, gegeben $A$?)]{.notes}
+-   $P(A \mid B)$ nennt man **"Posterior"** oder
+    **"A-posteriori-Wahrscheinlichkeit"** [(Wie wahrscheinlich ist $A$, wenn $B$
+    eingetreten ist?)]{.notes}
 -   $P(B)$ ist ein Normierungsfaktor
 
 ::: notes
@@ -318,12 +322,14 @@ erkrankt zu sein, bei nur 0.08%. Kein Grund zur Sorge in diesem Fall :-)
 
 \pause
 
-=\> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also $P(S \mid \neg A$)?
+=\> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also
+$P(S \mid \neg A$)?
 
 \pause
 
-Mit Marginalisierung: $P(S) = P(S \mid A)P(A) + P(S \mid \neg A)P(\neg A)$, `\newline`{=tex}
-d.h. $0.1 = 0.8 \times 0.0001 + P(S \mid \neg A) \times (1-0.0001)$, d.h.
+Mit Marginalisierung: $P(S) = P(S \mid A)P(A) + P(S \mid \neg A)P(\neg A)$,
+`\newline`{=tex} d.h.
+$0.1 = 0.8 \times 0.0001 + P(S \mid \neg A) \times (1-0.0001)$, d.h.
 $P(S \mid \neg A) = 0.0999$
 
 ::: notes
@@ -358,8 +364,8 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2025, Ex. 7.9, S. 135] an!
 ::: notes
 Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):
 
-> $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$), wenn $P(X \mid Y,Z) = P(X \mid Z)$ bzw.
-> $P(Y \mid X,Z) = P(Y \mid Z)$
+> $X$ und $Y$ sind *bedingt unabhängig* (gegeben $Z$), wenn
+> $P(X \mid Y,Z) = P(X \mid Z)$ bzw. $P(Y \mid X,Z) = P(Y \mid Z)$
 
 Daraus folgt:
 
