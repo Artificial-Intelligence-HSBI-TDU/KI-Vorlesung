@@ -115,6 +115,7 @@ Nach Vorverarbeitung:
     -   T1: (sieben, zwerg, fressen, sieben, wolf)
 
 \bigskip
+\pause
 
 **Vokabular**: V = {sieben, zwerg, fressen, ziege, treten, wolf, bock}
 
