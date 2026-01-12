@@ -262,7 +262,8 @@ T1: (sieben, zwerg, fressen, sieben, wolf)
 
 Entscheidung: OK
 
-::: notes
+:::: notes
+::: tip
 **Hinweis**: $P(w \mid h)^{\mathop{\text{count}}(w)}$ muss so gelesen werden:
 
 -   Wenn ein Term $w$ ein- oder mehrfach im Testvektor vorkommt, wird die zugehörige
@@ -282,6 +283,7 @@ $\mathop{\text{count}}(w) = 0$ auch kein $0^0$-Problem, weil die Likelihood gar
 nicht erst ausgewertet wird bzw. automatisch mit 1 ersetzt wurde. Dies ist eine Art
 Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
 :::
+::::
 
 ::: notes
 **Beobachtungen**:
