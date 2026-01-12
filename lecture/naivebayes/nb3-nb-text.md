@@ -245,7 +245,7 @@ $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{x \in \mathbf{x}} P(x
 
 Jedes Vorkommen eines Wortes im Testdatensatz ist ein $x$!
 
-$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w | h)^{\mathbf{\mathop{\text{count}}(w)}}$$
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}:\,\mathop{\text{count}}(w)>0} P(w | h)^{\mathop{\text{count}}(w)}$$
 
 \bigskip
 \smallskip
