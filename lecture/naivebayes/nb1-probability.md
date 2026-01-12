@@ -86,7 +86,7 @@ endlichem Wertebereich!
     Wahrscheinlichkeit $P(A)$ für ein Ereignis $A$ ist dann definiert als
     :::
 
-    $$P(A) = \frac{|A|}{|\Omega|} =
+    $$P(A) = \frac{\lvert A \rvert}{\lvert \Omega \rvert} =
     \frac{\text{Anzahl der für A günstigen Fälle}}{\text{Anzahl der möglichen Fälle}}$$
 
     ::: notes
@@ -126,7 +126,7 @@ beispielsweise der Gauss'schen Funktion.
     *Anmerkung*: Man schreibt statt $P(A \in \lbrace 1 \rbrace)$ oft einfach $P(1)$.
 
 -   Wahrscheinlichkeit, eine gerade Zahl zu würfeln:
-    $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{|\lbrace 2,4,6 \rbrace|}{|\lbrace 1,2,3,4,5,6 \rbrace|} = \frac{3}{6} = 0.5$
+    $P(A \in \lbrace 2,4,6 \rbrace) = P(A=2 \vee A=4 \vee A=6) = \frac{\lvert \lbrace 2,4,6 \rbrace \rvert}{\lvert \lbrace 1,2,3,4,5,6 \rbrace \rvert} = \frac{3}{6} = 0.5$
 :::
 
 [[Tafel: Würfeln]{.ex}]{.slides}

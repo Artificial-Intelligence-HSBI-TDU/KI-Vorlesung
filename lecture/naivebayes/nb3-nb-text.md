@@ -289,7 +289,7 @@ Wenn die Likelihood eines Terms 0 ist (Zero-Frequency-Problem), dann wird der ge
 
 # Naive Bayes mit Laplace-Glättung (Multinomial NB)
 
-$$P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|},
+$$P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot \lvert V \rvert},
 \quad \text{ bei Laplace: } \alpha = 1$$
 
 ::: slides
@@ -634,7 +634,7 @@ Entscheidung: OK
 
 -   **Multinomial NB**:
     -   Zähle die Vorkommen eines Terms:
-        $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot |V|}$
+        $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \alpha \cdot \lvert V \rvert}$
 
     -   Klassifikation mit
         $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_{w \in \mathbf{V}} P(w \mid h)^{\mathop{\text{count}}(w)}$

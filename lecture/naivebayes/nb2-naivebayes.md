@@ -120,9 +120,9 @@ $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
 **Training**: Bestimme die Wahrscheinlichkeiten aus Trainingsdaten $\mathbf{S}$
 
 -   Für jede Klasse $h$:
-    -   Schätze $P(h) = \dfrac{|S(h)|}{|S|}$
+    -   Schätze $P(h) = \dfrac{\lvert S(h) \rvert}{\lvert S \rvert}$
     -   Für jedes Attribut $D_i$ und jede Ausprägung $x \in D_i$: `\newline`{=tex}
-        Schätze $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+        Schätze $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
 
 \bigskip
 
@@ -209,7 +209,7 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
 
         ::: notes
         -   Variante mit Laplace-Glättung (s.u.):
-            $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + 1}{\sum_{v \in V} \mathop{\text{count}}(v,c) + |V|}$
+            $P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + 1}{\sum_{v \in V} \mathop{\text{count}}(v,c) + \lvert V \rvert}$
         :::
 
 ::: slides
@@ -350,11 +350,11 @@ eine korrekte Klassifikation.
 
 -   Lösung: "Laplace-Schätzer" (auch "Laplace-Glättung")
 
-    Statt $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)|}{|S(h)|}$
+    Statt $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert}{\lvert S(h) \rvert}$
 
     \smallskip
 
-    nutze $P(D_i=x \mid h) = \dfrac{|S_{D_i}(x) \cap S(h)| + m \cdot p_i}{|S(h)| + m}$
+    nutze $P(D_i=x \mid h) = \dfrac{\lvert S_{D_i}(x) \cap S(h) \rvert + m \cdot p_i}{\lvert S(h) \rvert + m}$
 
     \smallskip
 
@@ -363,7 +363,7 @@ eine korrekte Klassifikation.
     -   $p_i$: A-priori-Wahrscheinlichkeit für $P(D_i=x \mid h)$
 
         Hintergrundwissen oder einfach *uniforme Verteilung der Attributwerte*:
-        $p_i = 1/|D_i|$ (Wahrscheinlichkeit für eine Attributausprägung ist
+        $p_i = 1/\lvert D_i \rvert$ (Wahrscheinlichkeit für eine Attributausprägung ist
         1/(Anzahl der Ausprägungen des Attributs))
 
     =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
