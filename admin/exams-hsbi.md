@@ -268,10 +268,12 @@ Sie den folgenden Eingabevektor $x_0=1, x_1=1, x_2=0$ mit der Klasse $+1$. Geben
 für diesen Vektor folgende Werte an:
 
 (a) Skalarprodukt $\mathbf{w}^T \mathbf{x}$,
-(b) Aktivierung $\text{sgn}(\mathbf{w}^T \mathbf{x})$. Falls notwendig, führen Sie
-    einen Lernschritt durch, nutzen Sie dabei $\alpha=1$. Geben Sie die
-    resultierenden (neuen) Gewichte an (auch wenn Sie keinen Lernschritt durchführen
-    mussten).
+(b) Aktivierung $\text{sgn}(\mathbf{w}^T \mathbf{x})$.
+(c) Falls notwendig, führen Sie einen Lernschritt durch, nutzen Sie dabei
+    $\alpha=1$.
+
+Geben Sie die resultierenden (neuen) Gewichte an (auch wenn Sie keinen Lernschritt
+durchführen mussten).
 
 ## Entscheidungsbäume mit ID3
 
