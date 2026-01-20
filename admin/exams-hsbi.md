@@ -263,15 +263,15 @@ kleines Beispiel.
 
 ## Handsimulation Perzeptron
 
-Gegeben sei folgendes Perzeptron mit den Gewichten
-$w_0=0, w_1=0, w_2=0". Betrachten Sie den folgenden Eingabevektor$x_0=1, x_1=1,
-x_2=0\$ mit der Klasse $+1$. Geben Sie für diesen Vektor folgende Werte an:
+Gegeben sei folgendes Perzeptron mit den Gewichten $w_0=0, w_1=0, w_2=0$. Betrachten
+Sie den folgenden Eingabevektor $x_0=1, x_1=1, x_2=0$ mit der Klasse $+1$. Geben Sie
+für diesen Vektor folgende Werte an:
 
 (a) Skalarprodukt $\mathbf{w}^T \mathbf{x}$,
-(b) Aktivierung $\text{sgn}($`\mathbf{w}`{=tex}\^T `\mathbf{x}`{=tex}$)$. Falls
-    notwendig, führen Sie einen Lernschritt durch, nutzen Sie dabei $\alpha=1$.
-    Geben Sie die resultierenden (neuen) Gewichte an (auch wenn Sie keinen
-    Lernschritt durchführen mussten).
+(b) Aktivierung $\text{sgn}(\mathbf{w}^T \mathbf{x})$. Falls notwendig, führen Sie
+    einen Lernschritt durch, nutzen Sie dabei $\alpha=1$. Geben Sie die
+    resultierenden (neuen) Gewichte an (auch wenn Sie keinen Lernschritt durchführen
+    mussten).
 
 ## Entscheidungsbäume mit ID3
 
