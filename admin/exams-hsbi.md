@@ -305,3 +305,11 @@ Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise
 Kantenkonsistenz herstellt. Hier ist die Queue in einem bestimmten Schritt: ...
 Führen Sie einen Schritt durch und geben Sie die resultierende Queue an. Erklären
 Sie Ihr Ergebnis.
+
+## NB
+
+Betrachten Sie den folgenden Datensatz: ... "Trainieren" Sie für diesen Datensatz
+einen vollständigen Naive-Bayes-Klassifikator. Nutzen Sie die Variante "Multinomial
+NB". Geben Sie alle Bestandteile an. Erklären Sie Ihr Vorgehen nachvollziehbar.
+
+*Hinweis*: Sie brauchen die Brüche nicht ausrechnen.
