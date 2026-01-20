@@ -269,7 +269,7 @@ für diesen Vektor folgende Werte an:
 
 (a) Skalarprodukt $\mathbf{w}^T \mathbf{x}$,
 (b) Aktivierung $\text{sgn}(\mathbf{w}^T \mathbf{x})$.
-(c) Falls notwendig, führen Sie einen Lernschritt durch, nutzen Sie dabei
+(c) Falls notwendig, führen Sie einen Lernschritt durch. Nutzen Sie dabei
     $\alpha=1$.
 
 Geben Sie die resultierenden (neuen) Gewichte an (auch wenn Sie keinen Lernschritt
@@ -283,7 +283,7 @@ Mit Hilfe von ID3 soll für diesen Datensatz ein Entscheidungsbaum konstruiert
 werden. Der Algorithmus läuft schon und hat das Merkmal $x_2$ als Wurzelknoten
 ausgewählt. Beschreiben Sie detailliert, wie ID3 die nächste Ebene aufbaut. Gehen
 Sie dabei konkret auch auf den Algorithmus ein. Geben Sie die eingesetzten Formeln
-für Entropien und Gains an und erklären, Sie Ihr Vorgehen.
+für Entropien und Gains an und erklären Sie Ihr Vorgehen.
 
 *Hinweis*: Sie sollen die Formeln nur einsetzen, aber nicht ausrechnen.
 
