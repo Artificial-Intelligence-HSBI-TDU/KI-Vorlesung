@@ -239,60 +239,51 @@ Betrachten Sie den folgenden Graphen:
 
 ![](images/graph.png){width="60%"}
 
-Führen Sie eine Handsimulation der Breitensuche durch. Start ist "K", Ziel ist "B".
+Mittels Breitensuche (Variante "Tree-Search") soll der kürzeste Weg von "K" nach "B"
+gefunden werden. Die folgende Queue stellt den aktuellen Zustand der Suche dar:
 
-\bigskip
+`[KSF, KSP]`
 
-Geben Sie den Zustand der Queue in jedem Schritt an.
+Führen Sie den nächsten Schritt des Breitensuche-Algorithmus durch und geben Sie die
+resultierende Queue an. Achten Sie auf die korrekte Sortierung und halten Sie sich
+an die vorgegebene Notation.
 
-## Suche
+*Hinweis*: Die vorgegebene Queue kann willkürlich konstruiert sein und muss nicht
+viel mit Breitensuche zu tun haben.
+
+## Suche und Constraints
 
 -   Worin liegt der Unterschied zwischen einem Knoten und einem Zustand?
 -   Was ist ein Suchbaum? Wo liegt der Unterschied zum Zustandsraum?
 -   Muss der Suchbaum über eine eigene Datenstruktur realisiert werden?
 -   Was bedeutet Kantenkonsistenz?
 
+Erklären Sie die jeweiligen Begriffe nachvollziehbar. Nutzen Sie dazu ein eigenes
+kleines Beispiel.
+
 ## Handsimulation Perzeptron
 
-Führen Sie den Perzeptron-Lernalgorithmus in Handsimulation durch. Lernen Sie die
-Boolesche Funktion OR. Die Trainingsmenge ist: ...
+Gegeben sei folgendes Perzeptron mit den Gewichten
+$w_0=0, w_1=0, w_2=0". Betrachten Sie den folgenden Eingabevektor$x_0=1, x_1=1,
+x_2=0\$ mit der Klasse $+1$. Geben Sie für diesen Vektor folgende Werte an:
 
-Ihr Programm soll eine Tabelle mit den Spalten
-
-> $w_1$, $w_2$, $-\theta$, $x_1$, $x_2$, $k$, $\sum_{i=1}^n w_i x_i - \theta$,
-> Vorhersage, Änderung? (=,+,-)
-
-ausgeben, die eine Zeile für jeden Lernschritt enthält. Geben Sie die vollständige
-Lerntabelle an.
-
-\smallskip
-
-Anders als in der Vorlesung besprochen, sollen die Gewichte $w_1$ und $w_2$ sowie
-die Schwelle $\theta$ jeweils mit dem Wert $0$ initialisiert werden. Die
-Lernschrittweite $\alpha$ sei $0.5$. Nutzen Sie die $\mathop{\text{sign}}$-Funktion
-als Aktivierungsfunktion: $$\mathop{\text{sign}}(x) = \left\{
-    \begin{array}{ll}
-    0 & \text{falls } x<0\\
-    1 & \text{sonst}
-    \end{array}
-\right.$$
-
-Zeichnen Sie eine geometrische Interpretation Ihres Perzeptrons nach dem Lernen
-(Trennebene, Gewichtsvektor, Trainingsbeispiele).
+(a) Skalarprodukt $\mathbf{w}^T \mathbf{x}$,
+(b) Aktivierung $\text{sgn}($`\mathbf{w}`{=tex}\^T `\mathbf{x}`{=tex}$)$. Falls
+    notwendig, führen Sie einen Lernschritt durch, nutzen Sie dabei $\alpha=1$.
+    Geben Sie die resultierenden (neuen) Gewichte an (auch wenn Sie keinen
+    Lernschritt durchführen mussten).
 
 ## Entscheidungsbäume mit ID3
 
 Gegeben sei folgender Trainingsdatensatz ...
 
-\bigskip
+Mit Hilfe von ID3 soll für diesen Datensatz ein Entscheidungsbaum konstruiert
+werden. Der Algorithmus läuft schon und hat das Merkmal $x_2$ als Wurzelknoten
+ausgewählt. Beschreiben Sie detailliert, wie ID3 die nächste Ebene aufbaut. Gehen
+Sie dabei konkret auch auf den Algorithmus ein. Geben Sie die eingesetzten Formeln
+für Entropien und Gains an und erklären, Sie Ihr Vorgehen.
 
-Bauen Sie mit Hilfe von ID3 einen Entscheidungsbaum auf. Welches Attribut würde als
-erster Test verwendet werden und warum? Wie bestimmt sich die Reihenfolge der
-weiteren Attribute?
-
-\bigskip
-
-Als Hilfe gegeben: Einige wichtige Logarithmen zur Basis 2
+*Hinweis*: Sie sollen die Formeln nur einsetzen, aber nicht ausrechnen.
 
 ## CSP
 
@@ -308,20 +299,7 @@ Betrachten Sie das folgende Constraintproblem:
 
 \bigskip
 
-Zeichnen Sie den zugehörigen Constraintgraphen.
-
-\bigskip
-
 Zeigen Sie per Handsimulation, wie der Algorithmus AC-3 schrittweise
-Kantenkonsistenz herstellt.
-
-## Backpropagation
-
-In der Vorlesung wurde die Delta-Regel bzw. die Gewichtsupdates bei der
-Backpropagation für die Ausgabeschicht und die davor liegende letzte Hidden-Layer
-unter Verwendung der Transferfunktion $g(a) = 1/(1+\exp(-a))$ vorgerechnet.
-
-\bigskip
-
-Leiten Sie die Gewichtsupdates für die letzte und die vorletzte Schicht unter
-Verwendung der alternativen Transferfunktion $g(a) = \tanh(a)$ her.
+Kantenkonsistenz herstellt. Hier ist die Queue in einem bestimmten Schritt: ...
+Führen Sie einen Schritt durch und geben Sie die resultierende Queue an. Erklären
+Sie Ihr Ergebnis.
