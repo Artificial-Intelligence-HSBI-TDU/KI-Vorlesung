@@ -15,7 +15,7 @@ bibliography: ki.bib
 root_doc: readme.md
 
 # base url
-base_url: "https://raw.githubusercontent.com/Programmiermethoden-CampusMinden/Prog2-Lecture/_s26/"
+base_url: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/_w26/"
 
 # collect references (for use in filter/template)
 refs: |
