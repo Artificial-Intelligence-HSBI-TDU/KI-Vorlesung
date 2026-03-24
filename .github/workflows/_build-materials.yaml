@@ -1,0 +1,138 @@
+name: _build-materials (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      mktarget:
+        description: 'Make target to run'
+        type: string
+        required: true
+      publish_branch:
+        description: 'Name for orphan branch to push (__NO_PUBLISH__ for no publishing)'
+        type: string
+        required: false
+        default: "__NO_PUBLISH__"
+    secrets: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout lecture-repo (fully)
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fetch cagix/pandoc-lecture-zen@master
+        run: make update_tooling
+
+      - name: Build materials
+        run: make  ${{ inputs.mktarget }}  BUILD_DIR=${{ inputs.publish_branch }}
+
+      - name: Upload build artifact
+        if: ${{ inputs.publish_branch != '__NO_PUBLISH__' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: materials-${{ inputs.publish_branch }}
+          path: ${{ inputs.publish_branch }}
+          overwrite: true
+          retention-days: 1
+
+      - name: Check/Debug
+        run: |
+          ls -lags
+          ls -lags "${{ inputs.publish_branch }}"
+
+  publish:
+    if: ${{ inputs.publish_branch != '__NO_PUBLISH__' }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout lecture-repo (last commit)
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          clean: true
+
+      - name: Retrieve last commit message
+        id: message
+        run: |
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            msg="publish materials (manual trigger)"
+          else
+            msg="$(git log -n 1 --pretty=format:'%s' 2>/dev/null || echo 'unversioned')"
+            msg=${msg//\"/}
+            msg=${msg//\'/}
+            msg=${msg//\`/}
+            msg=${msg//\$/}
+          fi
+          echo "COMMIT_MESSAGE=$msg" >> "$GITHUB_OUTPUT"
+
+      - name: Create new orphan branch
+        run: |
+          git reset --hard
+          git clean -fd
+          git branch -D "${{ inputs.publish_branch }}" 2>/dev/null || true
+          git switch --orphan "${{ inputs.publish_branch }}"
+          git rm -r --cached . || true
+
+      - name: Clean working tree
+        run: |
+          find . -mindepth 1 -maxdepth 1  \
+            ! -name '.git'                \
+            -exec rm -rf {} +
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: materials-${{ inputs.publish_branch }}
+          path: ${{ inputs.publish_branch }}
+
+      - name: Copy files over
+        run: |
+          mv "${{ inputs.publish_branch }}"/* .
+          rm -rf "${{ inputs.publish_branch }}"
+
+      - name: Commit and push
+        env:
+          COMMIT_MESSAGE: ${{ steps.message.outputs.COMMIT_MESSAGE }}
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "cagix"
+            git config user.email "cagix@users.noreply.github.com"
+
+            git add -f .
+            git commit -m "$COMMIT_MESSAGE"
+            git push --force origin "${{ inputs.publish_branch }}"
+          else
+            echo "no changes to push"
+          fi
+
+      - name: Delete build artifact
+        if: ${{ success() }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const artifactName = 'materials-${{ inputs.publish_branch }}';
+            const { owner, repo } = context.repo;
+            const run_id = context.runId;
+
+            const { data } = await github.rest.actions.listWorkflowRunArtifacts({ owner, repo, run_id });
+            const matches = data.artifacts.filter(a => a.name === artifactName);
+
+            if (matches.length === 0) {
+              core.info(`No artifact found in this run named ${artifactName}`);
+              return;
+            }
+
+            for (const a of matches) {
+              core.info(`Deleting (this run) ${a.name} (id=${a.id})`);
+              await github.rest.actions.deleteArtifact({ owner, repo, artifact_id: a.id });
+            }
+
+      - name: Check/Debug
+        run: |
+          ls -lags

@@ -1,64 +1,21 @@
 name: TESTS
 
 on:
-  # triggered by pull requests
   pull_request:
-  # triggered manually
   workflow_dispatch:
 
 jobs:
-  # try building slides (pandoc, beamer)
   test_beamer:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: cagix/pandoc-lecture-zen@master
-        with:
-          mktarget: beamer
-          pandoc_data: .pandoc
-          metadata: ki.yaml
-          publish_dir: _beamer
+    uses: ./.github/workflows/_build-materials.yaml
+    with:
+      mktarget: beamer
 
-  # try building lecture notes (gfm)
-  test_gfm:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: cagix/pandoc-lecture-zen@master
-        with:
-          mktarget: gfm
-          pandoc_data: .pandoc
-          metadata: ki.yaml
-          publish_dir: _gfm
-
-  # try building lecture notes (docsify)
   test_docsify:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: cagix/pandoc-lecture-zen@master
-        with:
-          mktarget: docsify
-          pandoc_data: .pandoc
-          metadata: ki.yaml
-          publish_dir: _docsify
+    uses: ./.github/workflows/_build-materials.yaml
+    with:
+      mktarget: docsify
 
-  # try building lecture notes (pdf)
   test_pdf:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - uses: cagix/pandoc-lecture-zen@master
-        with:
-          mktarget: pdf
-          pandoc_data: .pandoc
-          metadata: ki.yaml
-          publish_dir: _pdf
+    uses: ./.github/workflows/_build-materials.yaml
+    with:
+      mktarget: pdf

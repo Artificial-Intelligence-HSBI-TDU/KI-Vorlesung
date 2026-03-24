@@ -1,4 +1,4 @@
-name: Beamer Slides
+name: Handout (Docsify plus PDF)
 
 on:
   push:
@@ -9,5 +9,5 @@ jobs:
   call:
     uses: ./.github/workflows/_build-materials.yaml
     with:
-      mktarget: beamer
-      publish_branch: _beamer
+      mktarget: handout
+      publish_branch: _w26

@@ -2,22 +2,28 @@
 lang: de-DE
 
 # author information
+author: "Canan Yıldız & Carsten Gips"
 institute: "Unless otherwise noted, this work is licensed under CC BY-SA 4.0."
+
+# build date
+date: "\\today"
 
 # bibtex file
 bibliography: ki.bib
+
+# root document
+root_doc: readme.md
+
+# base url
+base_url: "https://raw.githubusercontent.com/Programmiermethoden-CampusMinden/Prog2-Lecture/_s26/"
 
 # collect references (for use in filter/template)
 refs: |
    ::: {#refs}
    :::
 
-# root document
-root_doc: readme.md
-indexMD: readme
-
 # license footer
 license_footer: |
-    ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png){width="10%"}
+    ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
     Unless otherwise noted, this work is licensed under CC BY-SA 4.0.

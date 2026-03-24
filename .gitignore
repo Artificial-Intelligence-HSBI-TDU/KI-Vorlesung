@@ -35,11 +35,10 @@ pdf/
 local.yaml
 /data/readings.yaml
 .pandoc
-make.deps
-_gfm
-_docsify
-_pdf
-_beamer
+build
+deps.mk
+book.md
+_sidebar.md
 
 
 # JAVA, Scala #

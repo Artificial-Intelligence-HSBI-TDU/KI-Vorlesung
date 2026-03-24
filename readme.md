@@ -69,4 +69,4 @@ Yıldız](https://github.com/cyildiz), [Carsten Gips](https://github.com/cagix) 
 [contributors](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/graphs/contributors)
 is licensed under [CC BY-SA
 4.0](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/LICENSE.md).
-See the [credits](CREDITS.md) for a detailed list of contributing projects.
+See the [credits](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/CREDITS.md) for a detailed list of contributing projects.
