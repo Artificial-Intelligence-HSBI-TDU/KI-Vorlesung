@@ -8,15 +8,6 @@ institute: "Unless otherwise noted, this work is licensed under CC BY-SA 4.0."
 # build date
 date: "\\today"
 
-# bibtex file
-bibliography: ki.bib
-
-# root document
-root_doc: readme.md
-
-# base url
-base_url: "https://raw.githubusercontent.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/_w26/"
-
 # collect references (for use in filter/template)
 refs: |
    ::: {#refs}

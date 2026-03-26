@@ -6,16 +6,43 @@ on:
 
 jobs:
   test_beamer:
-    uses: ./.github/workflows/_build-materials.yaml
-    with:
-      mktarget: beamer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout lecture-repo (fully)
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fetch cagix/pandoc-lecture-zen@master
+        run: make update_tooling
+
+      - name: Build materials
+        run: make beamer
 
   test_docsify:
-    uses: ./.github/workflows/_build-materials.yaml
-    with:
-      mktarget: docsify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout lecture-repo (fully)
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fetch cagix/pandoc-lecture-zen@master
+        run: make update_tooling
+
+      - name: Build materials
+        run: make docsify
 
   test_pdf:
-    uses: ./.github/workflows/_build-materials.yaml
-    with:
-      mktarget: pdf
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout lecture-repo (fully)
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Fetch cagix/pandoc-lecture-zen@master
+        run: make update_tooling
+
+      - name: Build materials
+        run: make pdf
