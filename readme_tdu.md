@@ -3,6 +3,8 @@ no_beamer: true
 title: "TDU: INF701: Künstliche Intelligenz (Winter 2025/26)"
 ---
 
+# Syllabus TDU
+
 ![](https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg){width="60%"}
 
 [["künstliche
@@ -10,7 +12,7 @@ intelligenz"](https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-n
 by [Gerd Altmann (geralt)](https://pixabay.com/de/users/geralt-9301/) on Pixabay.com
 ([Pixabay License](https://pixabay.com/de/service/license/))]{.credits}
 
-# Kursbeschreibung
+## Kursbeschreibung
 
 Ausgehend von den Fragen "Was ist *Intelligenz*?" und "Was ist *künstliche*
 Intelligenz?" werden wir uns in diesem Modul mit **verschiedenen Teilgebieten der
@@ -21,7 +23,7 @@ der Veranstaltung einen **Methoden-Baukasten** zur Lösung unterschiedlichster
 Probleme und erwerben ein grundlegendes Verständnis für die Anwendung in Spielen,
 Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
-# Überblick Modulinhalte
+## Überblick Modulinhalte
 
 1.  Problemlösen
     -   Zustände, Aktionen, Problemraum
@@ -45,7 +47,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
         Unifikation, Resolution~~
     -   ~~Ausblick: Anwendung in Prolog~~
 
-# Team
+## Team
 
 -   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 -   [Carsten
@@ -54,7 +56,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 -   [Halit Canap Demir](https://people.tau.edu.tr/people.show/halit.demir/de) (TDU)
 -   [Seza Nihan Bekarlar](https://people.tau.edu.tr/people.show/nihan.bekarlar/de) (TDU)
 
-# Kursformat (TDU)
+## Kursformat (TDU)
 
 ![](admin/images/fahrplan.png){width="80%"}
 
@@ -68,7 +70,7 @@ Durchführung der Vorlesung als *Flipped Classroom*: Sitzungen per Zoom, Übunge
 Google Meet. (Zugangsdaten siehe [Google
 Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 
-# Fahrplan (TDU)
+## Fahrplan (TDU)
 
 | Woche  | Thema      | Vorlesung: Selbststudium (Vorbereitung)                                                                                                                                                                                        | Vorlesung: Gemeinsame Sitzung                                                                                       | Übung                                                   | [AI Connect](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/16)                                                          |
 |:-------|:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,7 +91,7 @@ Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 | 22.12. | Train&Test | [Training & Testing](lecture/nn/nn07-training-testing.md)                                                                                                                                                                      | [Performanzanalyse](lecture/nn/nn08-testing.md)                                                                     | [Blatt: Backpropagation](homework/sheet-nn-backprop.md) |                                                                                                                                                            |
 | 29.12. | PV         |                                                                                                                                                                                                                                | Rückblick (*Zoom*) \| [Prüfungsvorbereitung TDU](admin/exams-tdu.md)                                                |                                                         |                                                                                                                                                            |
 
-# Prüfungsform, Note und Credits (TDU)
+## Prüfungsform, Note und Credits (TDU)
 
 | Prüfung         | Gewicht                       |
 |:----------------|-------------------------------|
@@ -104,7 +106,7 @@ hinzugefügt.
 Für die Vergabe von Übungspunkten ist eine **erfolgreiche Teilnahme an der Übung**
 erforderlich. **Für Details siehe [Prüfung & Noten @ TDU](admin/exams-tdu.md)**.
 
-# Materialien
+## Materialien
 
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/)
     (*AIMA*). Russell, S. und Norvig, P., Pearson, 2021. ISBN

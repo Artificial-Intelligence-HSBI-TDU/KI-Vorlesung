@@ -3,6 +3,8 @@ no_beamer: true
 title: "HSBI: IFM 3.2: Grundlagen der KI (Winter 2025/26)"
 ---
 
+# Syllabus HSBI
+
 ![](https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg){width="60%"}
 
 [["künstliche
@@ -10,7 +12,7 @@ intelligenz"](https://pixabay.com/de/illustrations/k%c3%bcnstliche-intelligenz-n
 by [Gerd Altmann (geralt)](https://pixabay.com/de/users/geralt-9301/) on Pixabay.com
 ([Pixabay License](https://pixabay.com/de/service/license/))]{.credits}
 
-# Kursbeschreibung
+## Kursbeschreibung
 
 Ausgehend von den Fragen "Was ist *Intelligenz*?" und "Was ist *künstliche*
 Intelligenz?" werden wir uns in diesem Modul mit **verschiedenen Teilgebieten der
@@ -21,7 +23,7 @@ der Veranstaltung einen **Methoden-Baukasten** zur Lösung unterschiedlichster
 Probleme und erwerben ein grundlegendes Verständnis für die Anwendung in Spielen,
 Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
-# Überblick Modulinhalte
+## Überblick Modulinhalte
 
 1.  Problemlösen
     -   Zustände, Aktionen, Problemraum
@@ -45,14 +47,14 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
         Unifikation, Resolution~~
     -   ~~Ausblick: Anwendung in Prolog~~
 
-# Team
+## Team
 
 -   [Carsten
     Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
     (HSBI, Sprechstunde nach Vereinbarung)
 -   [Canan Yıldız](http://people.tau.edu.tr/people.show/cananyildiz/de) (TDU)
 
-# Kursformat (HSBI)
+## Kursformat (HSBI)
 
 ![](admin/images/fahrplan.png){width="80%"}
 
@@ -67,7 +69,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 Durchführung der Vorlesung als *Flipped Classroom*. Alle Online-Sitzungen per Zoom.
 Zugangsdaten siehe [ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1555856).
 
-# Fahrplan (HSBI)
+## Fahrplan (HSBI)
 
 Hier finden Sie einen abonnierbaren [Google
 Kalender](https://calendar.google.com/calendar/ical/552fdc6c19e64eda7b36b2d16a88bf4b7e593af2c520afbe1aeeb0bb4f43107d%40group.calendar.google.com/public/basic.ics)
@@ -96,7 +98,7 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 | 12.01.   | NB          | [Wahrscheinlichkeitstheorie](lecture/naivebayes/nb1-probability.md) \| [Naive Bayes](lecture/naivebayes/nb2-naivebayes.md)                                                                                                     | [Textklassifikation mit NB](lecture/naivebayes/nb3-nb-text.md)                                                                                                                                 | [Blatt: Backprop](homework/sheet-nn-backprop.md)     |                                                                                                                                                            |
 | 19.01.   | PV          | [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md)                                                                                                                                                                               | Rückblick (*Zoom*)                                                                                                                                                                             | [Blatt: Naive Bayes](homework/sheet-nb.md)           |                                                                                                                                                            |
 
-# Prüfungsform, Note und Credits (HSBI)
+## Prüfungsform, Note und Credits (HSBI)
 
 **(Digitale) Klausur plus Studienleistung (Portfolio)**, 5 ECTS
 
@@ -156,7 +158,7 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
 :::
 
-# Materialien
+## Materialien
 
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/)
     (*AIMA*). Russell, S. und Norvig, P., Pearson, 2021. ISBN
