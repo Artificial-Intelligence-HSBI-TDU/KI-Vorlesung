@@ -38,6 +38,8 @@ local.yaml
 build
 deps.mk
 book.md
+book_hsbi.md
+book_tdu.md
 _sidebar.md
 
 

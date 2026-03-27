@@ -22,7 +22,12 @@ jobs:
         run: make update_tooling
 
       - name: Build materials
-        run: make handout
+        run: |
+          make docsify
+          make clean
+          make pdf ROOT_DOC=readme_tdu.md BOOK_SRC=book_tdu.md
+          make clean
+          make pdf ROOT_DOC=readme_hsbi.md BOOK_SRC=book_hsbi.md
 
       - name: Publish materials
         run: make publish_orphan
