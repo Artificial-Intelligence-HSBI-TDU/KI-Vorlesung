@@ -192,7 +192,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 ::: notes
 |  | **Branch-and-Bound** | **Best-First** | **A\*** |
-|:-------------|:----------------------|:-----------------------|:-----------------------|
+|:--------------|:----------------------|:-----------------------|:-----------------------|
 | Kosten | $f(n) = g(n)$ | $f(n) = h(n)$ | $f(n) = g(n) + h(n)$ |
 | Vollständigkeit | ja[^3] | nein[^4] | ja |
 | Optimalität | ja | nein | ja |

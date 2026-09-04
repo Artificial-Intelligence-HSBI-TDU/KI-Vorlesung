@@ -74,24 +74,24 @@ Abgabe der Übungsblätter jeweils **Montag bis 09:00 Uhr** im
 [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797). Vorstellung der Lösung
 im jeweiligen Praktikum in der Abgabewoche.
 
-| Woche vom | Vorlesung (Mo) | Praktikum (Mo/Mi/Do) |
-|:------|:-------------------------------------|:--------------------------------|
-| 06.10. | [Orga](readme_hsbi.md) \|\| [Einführung KI & Problemlösen](lecture/intro/readme.md) |  |
-| 13.10. | [Suche (Search)](lecture/searching/readme.md) |  |
-| 20.10. | [Gradientensuche](lecture/searching/search6-gradient.md) & [Simulated Annealing](lecture/searching/search7-annealing.md) \|\| [Evolutionäre Algorithmen (EA)](lecture/ea/readme.md) |  |
-| 27.10. | [Optimale Spiele (Games)](lecture/games/readme.md) |  |
-| 03.11. | [Entscheidungsbäume (DTL)](lecture/dtl/readme.md) |  |
-| 10.11. | [Constraints (CSP)](lecture/csp/readme.md) |  |
-| 17.11. | [Perzeptron](lecture/nn/nn01-perceptron.md) |  |
-| 24.11. | [Lineare Regression und Gradientenabstieg](lecture/nn/nn02-linear-regression.md) |  |
-| 01.12. | [Logistische Regression](lecture/nn/nn03-logistic-regression.md) |  |
-| 08.12. | [Overfitting und Regularisierung](lecture/nn/nn04-overfitting.md) \|\| [Multilayer Perceptron (MLP)](lecture/nn/nn05-mlp.md) |  |
-| 15.12. | [Backpropagation](lecture/nn/nn06-backprop.md) |  |
-| *22.12.* | ***Weihnachtspause*** |  |
-| *29.12.* | ***Weihnachtspause*** |  |
-| 05.01. | [Training & Testing](lecture/nn/nn07-training-testing.md) \| [Performanzanalyse](lecture/nn/nn08-testing.md) |  |
-| 12.01. | [Naive Bayes (NB)](lecture/naivebayes/readme.md) |  |
-| 19.01. | [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md) \| Rückblick |  |
+| Monat | Woche vom | Vorlesung (Mo) | Praktikum (Mo/Mi/Do) |
+|-----|:----------|:------------------------------------|:-------------------------------|
+| Oktober | 12\. ... | [Orga](readme_hsbi.md) \|\| [Einführung KI & Problemlösen](lecture/intro/readme.md) |  |
+|  | 19\. ... | [Suche (Search)](lecture/searching/readme.md) |  |
+|  | 26\. ... | [Gradientensuche](lecture/searching/search6-gradient.md) & [Simulated Annealing](lecture/searching/search7-annealing.md) \|\| [Evolutionäre Algorithmen (EA)](lecture/ea/readme.md) |  |
+| November | 02\. ... | [Optimale Spiele (Games)](lecture/games/readme.md) |  |
+|  | 09\. ... | [Entscheidungsbäume (DTL)](lecture/dtl/readme.md) |  |
+|  | 16\. ... | [Constraints (CSP)](lecture/csp/readme.md) |  |
+|  | 23\. ... | [Perzeptron](lecture/nn/nn01-perceptron.md) |  |
+| Dezember | 30\. ... | [Lineare Regression und Gradientenabstieg](lecture/nn/nn02-linear-regression.md) |  |
+|  | 07\. ... | [Logistische Regression](lecture/nn/nn03-logistic-regression.md) |  |
+|  | 14\. ... | [Overfitting und Regularisierung](lecture/nn/nn04-overfitting.md) \|\| [Multilayer Perceptron (MLP)](lecture/nn/nn05-mlp.md) |  |
+|  | *21. ...* | ***Weihnachtspause*** |  |
+|  | *28. ...* | ***Weihnachtspause*** |  |
+| Januar | 04\. ... | [Backpropagation](lecture/nn/nn06-backprop.md) |  |
+|  | 11\. ... | [Training & Testing](lecture/nn/nn07-training-testing.md) \| [Performanzanalyse](lecture/nn/nn08-testing.md) |  |
+|  | 18\. ... | [Naive Bayes (NB)](lecture/naivebayes/readme.md) |  |
+|  | 25\. ... | [Prüfungsvorbereitung HSBI](admin/exams-hsbi.md) \| Rückblick |  |
 
 ## Prüfungsform, Note und Credits (HSBI)
 
