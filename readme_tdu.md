@@ -1,6 +1,6 @@
 ---
 no_beamer: true
-title: "TDU: INF701: Künstliche Intelligenz (Winter 2025/26)"
+title: "TDU: INF701: Künstliche Intelligenz (Winter 2026/27)"
 ---
 
 # Syllabus TDU
