@@ -70,10 +70,6 @@ Alle Sitzungen online per Zoom (**Zugangsdaten siehe
 
 ## Fahrplan (HSBI)
 
-Hier finden Sie einen abonnierbaren [Google
-Kalender](https://calendar.google.com/calendar/ical/552fdc6c19e64eda7b36b2d16a88bf4b7e593af2c520afbe1aeeb0bb4f43107d%40group.calendar.google.com/public/basic.ics)
-mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
-
 Abgabe der Übungsblätter jeweils **Montag bis 10:00 Uhr** im
 [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797). Vorstellung der Lösung
 im jeweiligen Praktikum in der Abgabewoche.
