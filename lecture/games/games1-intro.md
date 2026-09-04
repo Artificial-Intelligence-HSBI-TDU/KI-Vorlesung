@@ -24,8 +24,8 @@ anschauen).
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Backgammon_lg.png/960px-Backgammon_lg.png){width="60%"}
 
-[[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png)
-by [Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
+[[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png) by
+[Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
 ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 ::: notes
@@ -73,7 +73,7 @@ Zug?!**
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
-    [[@Russell2021, pp. 193-196]]{.credits nolist=true}
+    [[@Russell2021, pp. 193-196]]{.credits nolist="true"}
 
 # Eigenschaften guter Spielalgorithmen
 

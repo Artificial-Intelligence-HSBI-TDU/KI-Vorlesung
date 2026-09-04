@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Search: Suche mit A*"
+title: "Search: Suche mit A\\*"
 ---
 
 ::: tldr
@@ -29,7 +29,7 @@ dass A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 :::
 
 ::: notes
-=\> **Problemlösen == Suche im Graphen**
+=\> **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip
@@ -192,7 +192,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 ::: notes
 |  | **Branch-and-Bound** | **Best-First** | **A\*** |
-|:------------|:----------------------|:-----------------------|:-----------------------|
+|:-------------|:----------------------|:-----------------------|:-----------------------|
 | Kosten | $f(n) = g(n)$ | $f(n) = h(n)$ | $f(n) = g(n) + h(n)$ |
 | Vollständigkeit | ja[^3] | nein[^4] | ja |
 | Optimalität | ja | nein | ja |

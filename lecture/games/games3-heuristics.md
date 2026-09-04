@@ -30,13 +30,14 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 # Wenn die Zeit nicht reicht: Suchtiefe begrenzen
 
 -   Einführung neuer Funktionen:
+
     1.  `Cutoff-Test` statt `Terminal-Test`
 
         Beispielsweise bei erreichter Tiefe oder Zeitüberschreitung
 
     \smallskip
 
-    2.  `Eval` statt `Utility`
+    2\. `Eval` statt `Utility`
 
         Bewertung der erreichten Position (statt nur Bewertung des Endzustandes)
 
@@ -129,8 +130,8 @@ der Mitspieler günstiger ist.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Backgammon_lg.png/960px-Backgammon_lg.png){width="60%"}
 
-[[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png)
-by [Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
+[[Backgammon lg.png](https://commons.wikimedia.org/wiki/File:Backgammon_lg.png) by
+[Ptkfgs](https://commons.wikimedia.org/wiki/User:Ptkfgs) on Wikimedia Commons
 ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
 Backgammon: Was ist in dieser Situation der optimale Zug?

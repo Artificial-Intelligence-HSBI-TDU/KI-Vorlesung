@@ -179,7 +179,7 @@ Für Schach immer noch zu aufwändig ...
     -   ca. 700.000 Spielsituationen (von Experten bewertet)
     -   Endspiel-Datenbank: alle Spiele mit 5 Steinen, viele mit 6 Steinen
 
-[[@Russell2014, p. 185]]{.credits nolist=true}
+[[@Russell2014, p. 185]]{.credits nolist="true"}
 
 # Beispiel AlphaGo (Google, 2016)
 
@@ -195,7 +195,8 @@ Für Schach immer noch zu aufwändig ...
         -   Züge mit Monte-Carlo-Baumsuche ausgewählt
 
 [[@Silver2016], siehe auch
-[deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.credits nolist=true}
+[deepmind.com/research/alphago/](https://deepmind.com/research/case-studies/alphago-the-story-so-far)]{.credits
+nolist="true"}
 
 # Wrap-Up
 
@@ -218,12 +219,11 @@ Für Schach immer noch zu aufwändig ...
 :::
 
 ::: outcomes
--   k3: Ich  kann Alpha-Beta-Pruning implementieren und anwenden
+-   k3: Ich kann Alpha-Beta-Pruning implementieren und anwenden
 -   k2: Ich kann die Anwendung verschiedener von Minimax her bekannter
     Optimierungsmöglichkeiten auf Alpha-Beta-Pruning erklären: Sortierung der
     Nachfolger, Suchtiefe beschränken (Übergang zu Bewertungsfunktion),
     Spielzug-Bewertung über Spieldatenbanken
-
 :::
 
 ::: quizzes
@@ -241,20 +241,22 @@ verloren. Zu Beginn ist Weiß am Zug.
 
 1.  Spielbaum
 
-    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils die
-    Zahl der genommenen und der verbleibenden Hölzer an.
+    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils
+    die Zahl der genommenen und der verbleibenden Hölzer an.
 
-    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben, steht
-    an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler am Zug ist.
+    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben,
+    steht an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler
+    am Zug ist.
 
 2.  Minimax
 
-    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus an.
-    Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1, falls
-    Schwarz gewonnen hat.
+    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus
+    an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1,
+    falls Schwarz gewonnen hat.
 
 3.  Alpha-Beta-Pruning
 
-    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder weniger
-    oder gleich viele Spielzüge wie mit Minimax entwickelt? Begründen Sie Ihre Antwort.
+    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder
+    weniger oder gleich viele Spielzüge wie mit Minimax entwickelt? Begründen Sie
+    Ihre Antwort.
 :::

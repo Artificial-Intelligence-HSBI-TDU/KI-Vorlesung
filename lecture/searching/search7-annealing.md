@@ -133,20 +133,24 @@ Domain](https://en.wikipedia.org/wiki/Public_domain))]{.credits}
 :::
 
 -   Wahrscheinlichkeit zum Akzeptieren einer Verschlechterung: `math.exp(dE/temp)`
+
 -   Wenn $dE$ negativ ist, wird `math.exp(dE/temp)` ausgewertet
+
 -   Wenn $dE$ negativ, dann gilt (Umformung):
 
     $$\exp\left(\text{dE}/\text{temp}\right) = \exp\left(-\frac{|\text{dE}|}{\text{temp}}\right) = \frac{1}{\exp\left(\frac{|\text{dE}|}{\text{temp}}\right)}$$
 
 -   Betrachtung von $\exp(a)$ bzw. $e^a$:
+
     -   $a<0$: geht gegen 0
     -   $a=0$: 1
     -   $a>0$: steil (exponentiell) gegen Unendlich ...
 
 -   Damit ergibt sich für $dE$ (nur negativer Fall!) und $\text{temp}$:
+
     -   Temperatur $\text{temp}$ hoch: $a = \frac{|\text{dE}|}{\text{temp}}$ ist
-        positiv und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h.
-        die Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
+        positiv und klein (nahe Null), d.h. $\exp(a)$ nahe 1 (oder größer), d.h. die
+        Wahrscheinlichkeit $1/\exp(a)$ ist nahe 1 (oder kleiner)
     -   Temperatur $\text{temp}$ wird kleiner und geht gegen Null:
         $a = \frac{|\text{dE}|}{\text{temp}}$ ist positiv und wird größer, d.h.
         $\exp(a)$ geht schnell gegen Unendlich, d.h. die Wahrscheinlichkeit
@@ -217,20 +221,24 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
     (ILIAS)](https://www.hsbi.de/elearning/goto.php?target=tst_1106602&client_id=FH-Bielefeld)
 :::
 
-
 ::: challenges
 **Team-Planung**
 
-Sie haben 12 Personen mit Rollen/Skills und paarweisen Synergiewerten (positiv = gut, negativ = Konflikt).
-Es gibt die Rollen/Skills "Frontend" (FE), "Backend" (BE), "Fullstack" (FS) sowie "User Experience" (UX).
-Für die Synergie-Werte überlegen Sie sich einige passende Beispiele, etwa "Person A und B kommen gut miteinander aus" o.ä.
+Sie haben 12 Personen mit Rollen/Skills und paarweisen Synergiewerten (positiv =
+gut, negativ = Konflikt). Es gibt die Rollen/Skills "Frontend" (FE), "Backend" (BE),
+"Fullstack" (FS) sowie "User Experience" (UX). Für die Synergie-Werte überlegen Sie
+sich einige passende Beispiele, etwa "Person A und B kommen gut miteinander aus"
+o.ä.
 
 Bilden Sie 3 Teams zu je 4 Personen, so dass
+
 -   die Summe der Synergien innerhalb der Teams maximiert wird,
--   pro Team mindestens je 1x FE, 1x BE, 1x FS vorhanden ist (harte oder weiche Nebenbedingung),
+-   pro Team mindestens je 1x FE, 1x BE, 1x FS vorhanden ist (harte oder weiche
+    Nebenbedingung),
 -   optional: UX in einem Team bringt Bonus.
 
 Es gibt exakt 12 Personen, darunter jeweils 3 FE, 3 BE, 3 FS, 3 UX.
 
-Modellieren Sie dieses Problem geeignet, damit Sie es mit Simulated Annealing lösen können.
+Modellieren Sie dieses Problem geeignet, damit Sie es mit Simulated Annealing lösen
+können.
 :::

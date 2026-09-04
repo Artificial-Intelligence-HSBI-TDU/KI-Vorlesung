@@ -33,7 +33,8 @@ mit vernünftigen Erwartungen.
 
 # Was ist (künstliche) Intelligenz?
 
-![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%" web_width="60%"}
+![](https://live.staticflickr.com/2889/10151827605_911e35be10_c_d.jpg){width="80%"
+web_width="60%"}
 
 [[AvB - RoboCup 2013 -
 Eindhoven](https://www.flickr.com/photos/80267257@N05/10151827605) by
@@ -140,7 +141,7 @@ als intelligent zu betrachten! Bezieht sich vor allem auf "*Denken*"!
 >
 > `\hfill`{=tex} -- Elaine Rich ("Artificial Intelligence", McGraw-Hill, 1983)
 
-[nach [@Ertel2025, pp. 1-3]]{.credits nolist=true}
+[nach [@Ertel2025, pp. 1-3]]{.credits nolist="true"}
 
 ::: notes
 Dazu gehört auch
@@ -164,7 +165,8 @@ Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom 13. Jun
 Änderung der Verordnungen (EG) Nr. 300/2008, (EU) Nr. 167/2013, (EU) Nr. 168/2013,
 (EU) 2018/858, (EU) 2018/1139 und (EU) 2019/2144 sowie der Richtlinien 2014/90/EU,
 (EU) 2016/797 und (EU) 2020/1828 (Verordnung über künstliche Intelligenz) (Text von
-Bedeutung für den EWR)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)).
+Bedeutung für den
+EWR)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689)).
 
 Dort finden Sie unter Artikel 3 "Begriffsbestimmungen" unter Absatz 1 eine
 Begriffsdefinition. Ein "KI-System" wird darin als ein maschinengestütztes System
@@ -175,7 +177,7 @@ mit der physischen oder digitalen Umwelt interagieren können.
 
 [[VERORDNUNG (EU) 2024/1689 DES EUROPÄISCHEN PARLAMENTS UND DES
 RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689), Art. 3
-Abs. 1]{.credits nolist=true}
+Abs. 1]{.credits nolist="true"}
 
 Interessant ist, dass dabei nicht explizit auf Softwaresysteme eingegangen wird.
 Später im Text finden sich Hinweise, dass sich ein KI-System vermutlich als Software
@@ -196,7 +198,8 @@ RATES](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689).
 -   Wann verhält sich eine Maschine intelligent?
 :::
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%" web_width="20%"}
+![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png){width="40%"
+web_width="20%"}
 
 [[Turing Test version
 3.png](https://commons.wikimedia.org/wiki/File:Turing_Test_version_3.png) by

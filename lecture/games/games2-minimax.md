@@ -214,8 +214,8 @@ verloren. Zu Beginn ist Weiß am Zug.
 2.  Minimax
 
     Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus
-    an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit
-    -1, falls Schwarz gewonnen hat.
+    an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1,
+    falls Schwarz gewonnen hat.
 
 3.  Optimaler Zug
 

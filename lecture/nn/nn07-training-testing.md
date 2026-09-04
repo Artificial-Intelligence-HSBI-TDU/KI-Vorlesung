@@ -154,7 +154,6 @@ $E_{test}$ : Erfolg in Endprüfung.
         $$E_{CV}(m) := \frac{1}{k} \sum_{i=1}^{k} e_i = \frac{1}{k} \sum_{i=1}^{k} E_{val}(h_m^{*(i)})$$
 
     ![Abbildung 4 - Kreuzvalidierung](images/val4.png){width="80%"}
-
 -   Bemerkung: Die Kreuzvalidierung wird nur bei der Modellauswahl eingesetzt: es
     liefert verlässlichere Näherungen für $E_{out}$ und führt daher zu besseren
     Entscheidungen. Das zuletzt ausgewählte Modell wird danach wie gewohnt auf den

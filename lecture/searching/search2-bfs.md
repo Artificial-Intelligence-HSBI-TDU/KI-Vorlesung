@@ -25,7 +25,7 @@ ebenenweise entwickelt.
 :::
 
 ::: notes
-=\> **Problemlösen == Suche im Graphen**
+=\> **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip

@@ -148,11 +148,13 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
     -   Zuweisung, Lösung, ...
 
 ::: readings
-Lesen Sie in [@Russell2021] bitte den Abschnitt 5.1 "Defining Constraint Satisfaction Problems".
+Lesen Sie in [@Russell2021] bitte den Abschnitt 5.1 "Defining Constraint
+Satisfaction Problems".
 :::
 
 ::: outcomes
--   k2: Ich kann die Definitionen im Zusammenhang mit Constraints und CSP erklären: Variable, Domäne, Constraint, Arität, CSP, Zuweisung
+-   k2: Ich kann die Definitionen im Zusammenhang mit Constraints und CSP erklären:
+    Variable, Domäne, Constraint, Arität, CSP, Zuweisung
 -   k3: Ich kann Probleme als CSP formulieren
 :::
 

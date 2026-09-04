@@ -51,7 +51,7 @@ Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen
 :::
 
 ::: notes
-=\> **Problemlösen == Suche im Graphen**
+=\> **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip

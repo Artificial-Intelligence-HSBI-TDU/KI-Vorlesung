@@ -149,7 +149,7 @@ def ARC_Reduce(csp, x, y):
 ```
 
 [AC-3 Algorithmus: Eigener Code basierend auf einer Idee nach [@Russell2021, p. 171,
-fig. 5.3]]{.credits nolist=true}
+fig. 5.3]]{.credits nolist="true"}
 
 ::: notes
 *Anmerkung*: Die Queue in AC-3 ist wie eine (mathematische) Menge zu betrachten:
@@ -192,7 +192,8 @@ Lesen Sie in [@Russell2021] bitte den Abschnitt 5.2 "Constraint Propagation".
 ::: outcomes
 -   k2: Ich kann "Forward Checking" (FC) erklären
 -   k2: Ich kann die Erweiterung von FC auf alle Kanten erklären (Kantenkonsistenz)
--   k2: Ich kann an einem Beispiel erklären, dass Kantenkonsistenz nicht globale Konsistenz bedeutet
+-   k2: Ich kann an einem Beispiel erklären, dass Kantenkonsistenz nicht globale
+    Konsistenz bedeutet
 -   k3: Ich kann den AC-3 Algorithmus anwenden
 :::
 

@@ -1,7 +1,7 @@
 ---
 author: Carsten Gips (HSBI)
 no_beamer: true
-title: "Prüfungsvorbereitung (HSBI)"
+title: Prüfungsvorbereitung (HSBI)
 ---
 
 ::: tldr

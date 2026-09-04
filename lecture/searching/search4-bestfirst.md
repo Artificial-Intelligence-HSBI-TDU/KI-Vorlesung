@@ -23,7 +23,7 @@ die geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.
 :::
 
 ::: notes
-=\> **Problemlösen == Suche im Graphen**
+=\> **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip

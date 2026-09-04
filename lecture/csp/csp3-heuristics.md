@@ -136,7 +136,8 @@ Lesen Sie in [@Russell2021] bitte den Abschnitt 5.3 "Backtracking Search for CSP
 :::
 
 ::: outcomes
--   k3: Ich kann die BT-Suche mit verschiedenen Heuristiken verbessern: MRV, Gradheuristik, LCV
+-   k3: Ich kann die BT-Suche mit verschiedenen Heuristiken verbessern: MRV,
+    Gradheuristik, LCV
 :::
 
 ::: quizzes
@@ -147,7 +148,8 @@ Lesen Sie in [@Russell2021] bitte den Abschnitt 5.3 "Backtracking Search for CSP
 ::: challenges
 **Problem 1**
 
-Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch $\langle
+Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
+$\langle
 \lbrace v_1, v_2, v_3, v_4 \rbrace, \lbrace D_{v_1} = D_{v_2} = D_{v_3} = D_{v_4} = D \rbrace,
 \lbrace c_1, c_2, c_3, c_4 \rbrace \rangle$
 

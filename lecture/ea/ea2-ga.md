@@ -201,11 +201,13 @@ Die SR liegt im Intervall $[0, 1]$.
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_fail.png){width="80%" web_width="60%"}
+![](images/typischerLauf_ritterIII_mG500M15L100_fail.png){width="80%"
+web_width="60%"}
 :::
 
 ::: {.column width="50%"}
-![](images/typischerLauf_ritterIII_mG500M15L100_success.png){width="80%" web_width="60%"}
+![](images/typischerLauf_ritterIII_mG500M15L100_success.png){width="80%"
+web_width="60%"}
 :::
 :::::
 

@@ -88,8 +88,8 @@ Abbildung 1 und Abbildung 2 zeigen die
 [Höhenlinien](https://de.wikipedia.org/wiki/H%C3%B6henlinie) ([Contour
 Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
 
-![Abbildung 1](images/contour_plot_a.png){width="40%"}
-![Abbildung 2](images/contour_plot_b.png){width="40%"}
+![Abbildung 1](images/contour_plot_a.png){width="40%"} ![Abbildung
+2](images/contour_plot_b.png){width="40%"}
 
 -   Erklären Sie, welcher der beiden Fälle nachteilhaft für den Gradientenabstieg
     Algorithmus ist. Wo liegt der Nachteil? Wie kann die Merkmalskalierung dem
@@ -98,6 +98,7 @@ Lines](https://en.wikipedia.org/wiki/Contour_line)) von zwei Kostenfunktionen.
     dem Bereich $[100, 300] \times [0, 2]$, wie sich Standardisierung, Min-Max
     Skalierung und Normalisierung auf die Daten auswirken. Vergleichen Sie dazu die
     jeweiligen Streudiagramme (scatterplots). Sie können hierzu das folgende
-    [**Jupyter Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb)
+    [**Jupyter
+    Notebook**](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung/blob/master/lecture/nn/files/Feature_Scaling_Starter.ipynb)
     als Startpunkt benutzen.
 :::

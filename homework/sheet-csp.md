@@ -62,9 +62,9 @@ mit
 -   $c_4=\left((v_3,v_4), \lbrace (x,y) \in D^2 | x \ne y \rbrace\right)$.
 
 1.  Zeichnen Sie den Constraint-Graph
-2.  Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand der
-    Queue und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen
-    $D_i$, für jede Iteration des Algorithmus an.
+2.  Wenden Sie den AC-3-Algorithmus auf das CSP an. Geben Sie den Zustand der Queue
+    und das Ergebnis von `ARC_Reduce`, d.h. den Ergebniszustand des aktuellen $D_i$,
+    für jede Iteration des Algorithmus an.
 
 *Thema*: Handsimulation des AC-3-Algorithmus
 
@@ -73,8 +73,8 @@ mit
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
-1.  Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die
-    Wertebereiche der Variablen vor und nach dem Erzeugen der Kantenkonsistenz an.
+1.  Erzeugen Sie Kantenkonsistenz in $\alpha$. Geben Sie hierzu die Wertebereiche
+    der Variablen vor und nach dem Erzeugen der Kantenkonsistenz an.
 
     *Hinweis*: Sie dürfen annehmen, dass der Wertebereich von Variablen mit bereits
     zugewiesenen Werten nur aus dem zugewiesenen Wert besteht, während unbelegte
@@ -82,8 +82,8 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
     *Hinweis*: Sie müssen zur Lösung dieser Teilaufgabe nicht den AC-3 nutze.
 
-2.  Führen Sie Forward-Checking in $\alpha$ aus. Vergleichen Sie das Ergebnis
-    mit (1).
+2.  Führen Sie Forward-Checking in $\alpha$ aus. Vergleichen Sie das Ergebnis mit
+    (1).
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 

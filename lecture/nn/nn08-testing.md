@@ -32,7 +32,8 @@ title: "NN08: Performanzanalyse"
     die in Position $(i,j)$ die Anzahl der Klasse-$j$-Beispiele enthält, die als
     Klasse-$i$ vorhergesagt wurden.
 
-![Abbildung 1 - Wahrheitsmatrix bei binärer Klassifizierung](images/nn8-1.png){width="80%"}
+![Abbildung 1 - Wahrheitsmatrix bei binärer
+Klassifizierung](images/nn8-1.png){width="80%"}
 
 ### Treffergenauigkeit (engl. Accuracy)
 
@@ -100,6 +101,6 @@ title: "NN08: Performanzanalyse"
 -   k2: Ich kann den Begriff F_1-Score (Harmonisches Mittel) erklären
 -   k3: Ich kann Precision und Recall berechnen und deuten
 -   k3: Ich kann den F_1-Score berechnen und deuten
--   k3: Ich kann die Performanzmetriken bei der Evaluierung und Auswahl von
-    Modellen einsetzen
+-   k3: Ich kann die Performanzmetriken bei der Evaluierung und Auswahl von Modellen
+    einsetzen
 :::

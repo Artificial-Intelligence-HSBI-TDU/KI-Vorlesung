@@ -42,8 +42,8 @@ def BT_Search(assignment, csp):
     return failure
 ```
 
-[Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2021, p. 176,
-fig. 5.5]]{.credits nolist=true}
+[Backtracking-Search: Eigener Code basierend auf einer Idee nach [@Russell2021,
+p. 176, fig. 5.5]]{.credits nolist="true"}
 
 ::: notes
 Hierbei handelt es sich um eine etwas angepasste Tiefensuche: Starte mit leerem
