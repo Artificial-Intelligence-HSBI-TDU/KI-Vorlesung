@@ -70,7 +70,7 @@ Alle Sitzungen online per Zoom (**Zugangsdaten siehe
 
 ## Fahrplan (HSBI)
 
-Abgabe der Übungsblätter jeweils **Montag bis 10:00 Uhr** im
+Abgabe der Übungsblätter jeweils **Montag bis 09:00 Uhr** im
 [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797). Vorstellung der Lösung
 im jeweiligen Praktikum in der Abgabewoche.
 
