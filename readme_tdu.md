@@ -73,24 +73,24 @@ Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 
 ## Fahrplan (TDU)
 
-| Woche | Thema | Vorlesung: Selbststudium (Vorbereitung) | Vorlesung: Gemeinsame Sitzung | Übung | [AI Connect](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/16) |
-|:-------|:-------|:-----------------------|:----------------|:----------|:------------------|
-| 15.09. | Orga | [Einführung KI](lecture/intro/intro1-overview.md) | [Orga](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/blob/master/readme_tdu.md) (*Zoom*) |  |  |
-| 22.09. | CSP | [Einführung Constraints](lecture/csp/csp1-intro.md) \| [Lösen von diskreten CSP](lecture/csp/csp2-backtrackingsearch.md) \| [CSP und Heuristiken](lecture/csp/csp3-heuristics.md) | [Kantenkonsistenz und AC-3](lecture/csp/csp4-ac3.md) \| [Min-Conflicts Heuristik](lecture/csp/csp5-minconflicts.md) |  |  |
-| 29.09. | NB | [Wahrscheinlichkeitstheorie](lecture/naivebayes/nb1-probability.md) \| [Naive Bayes](lecture/naivebayes/nb2-naivebayes.md) | [Textklassifikation mit NB](lecture/naivebayes/nb3-nb-text.md) | [Blatt: CSP](homework/sheet-csp.md) |  |
-| 06.10. | Intro | [Problemlösen](lecture/intro/intro2-problemsolving.md) | **ab 10:45**: [Einführung Jupyter-Notebooks](lecture/intro/intro3-jupyternotebooks.md) | [Blatt: Naive Bayes](homework/sheet-nb.md) |  |
-| 13.10. | Search | [Tiefensuche](lecture/searching/search1-dfs.md) \| [Breitensuche](lecture/searching/search2-bfs.md) \| [Branch-and-Bound](lecture/searching/search3-branchandbound.md) \| [Best First](lecture/searching/search4-bestfirst.md) | [A-Stern](lecture/searching/search5-astar.md) |  |  |
-| 20.10. | EA | [Gradientensuche](lecture/searching/search6-gradient.md) \| [Simulated Annealing](lecture/searching/search7-annealing.md) \|\| [Intro EA/GA](lecture/ea/ea1-intro.md) | [Genetische Algorithmen](lecture/ea/ea2-ga.md) | [Blatt: Suche](homework/sheet-search.md) |  |
-| 27.10. | Games | [Optimale Spiele](lecture/games/games1-intro.md) \| [Games mit Minimax](lecture/games/games2-minimax.md) \| [Minimax und Heuristiken](lecture/games/games3-heuristics.md) | [Alpha-Beta-Pruning](lecture/games/games4-alphabeta.md) | [Blatt: EA/GA](homework/sheet-ea.md) |  |
-| 03.11. | DTL | [Machine Learning 101](lecture/dtl/dtl1-mlbasics.md) \| [CAL2](lecture/dtl/dtl2-cal2.md) \| [Pruning](lecture/dtl/dtl3-pruning.md) \| [CAL3](lecture/dtl/dtl4-cal3.md) | [Entropie](lecture/dtl/dtl5-entropy.md) \| [ID3 und C4.5](lecture/dtl/dtl6-id3.md) | [Blatt: Games](homework/sheet-games.md) |  |
-| 10.11. | ZP |  | **Zwischenprüfung** |  |  |
-| 17.11. | Perzeptron | [Perzeptron](lecture/nn/nn01-perceptron.md) | Perzeptron Lernalgorithmus Beispiel | [Blatt: DTL](homework/sheet-dtl.md) |  |
-| 24.11. | Lin. Regr. | [Lineare Regression und Gradientenabstieg](lecture/nn/nn02-linear-regression.md) | Gradientenabstieg Beispiel | [Blatt: Perzeptron](homework/sheet-nn-perceptron.md) |  |
-| 01.12. | Log. Regr. | [Logistische Regression](lecture/nn/nn03-logistic-regression.md) | **ab 11:00**: Logistische Regression Beispiel |  | **Mo, 01.12., 10:00 Uhr: Kick-Off und Team-Building** [Warm-up Task](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/20) |
-| 08.12. | MLP | [Overfitting und Regularisierung](lecture/nn/nn04-overfitting.md) \|\| [Multilayer Perceptron (MLP)](lecture/nn/nn05-mlp.md) | **ab 11:00**: MLP Beispiel | [Blatt: Regression](homework/sheet-nn-regression.md) | **Mo, 08.12., 10:00 Uhr: Project Launch** |
-| 15.12. | Backprop | [Backpropagation](lecture/nn/nn06-backprop.md) | Backpropagation Beispiel | [Blatt: MLP](homework/sheet-nn-mlp.md) | **Fr, 19.12., 12:30 Uhr: Team-Präsentationen** |
-| 22.12. | Train&Test | [Training & Testing](lecture/nn/nn07-training-testing.md) | [Performanzanalyse](lecture/nn/nn08-testing.md) | [Blatt: Backpropagation](homework/sheet-nn-backprop.md) |  |
-| 29.12. | PV |  | Rückblick (*Zoom*) \| [Prüfungsvorbereitung TDU](admin/exams-tdu.md) |  |  |
+| Woche | Thema | Vorlesung | Übung |
+|:----------------|:----------------|:------------------------------|:--------------------|
+| 14.09. | Orga | [Orga](readme_tdu.md) \| [Einführung KI](lecture/intro/intro1-overview.md) |  |
+| 21.09. | CSP | [Einführung Constraints](lecture/csp/csp1-intro.md) \| [Lösen von diskreten CSP](lecture/csp/csp2-backtrackingsearch.md) \| [CSP und Heuristiken](lecture/csp/csp3-heuristics.md) \| [Kantenkonsistenz und AC-3](lecture/csp/csp4-ac3.md) \| [Min-Conflicts Heuristik](lecture/csp/csp5-minconflicts.md) |  |
+| 28.09. | NB | [Wahrscheinlichkeitstheorie](lecture/naivebayes/nb1-probability.md) \| [Naive Bayes](lecture/naivebayes/nb2-naivebayes.md) \| [Textklassifikation mit NB](lecture/naivebayes/nb3-nb-text.md) | [Blatt: CSP](homework/sheet-csp.md) |
+| 05.10. | DTL | [Machine Learning 101](lecture/dtl/dtl1-mlbasics.md) \| [CAL2](lecture/dtl/dtl2-cal2.md) \| [Pruning](lecture/dtl/dtl3-pruning.md) \| [CAL3](lecture/dtl/dtl4-cal3.md) \| [Entropie](lecture/dtl/dtl5-entropy.md) \| [ID3 und C4.5](lecture/dtl/dtl6-id3.md) \| [Random Forest](lecture/dtl/dtl7-randomforest.md) | [Blatt: Naive Bayes](homework/sheet-nb.md) |
+| 12.10. | EA | **ab 11:15**: [Intro EA/GA](lecture/ea/ea1-intro.md) \| [Genetische Algorithmen](lecture/ea/ea2-ga.md) | [Blatt: DTL](homework/sheet-dtl.md) |
+| 19.10. | Search | [Problemlösen](lecture/intro/intro2-problemsolving.md) \| [Tiefensuche](lecture/searching/search1-dfs.md) \| [Breitensuche](lecture/searching/search2-bfs.md) \| [Branch-and-Bound](lecture/searching/search3-branchandbound.md) \| [Best First](lecture/searching/search4-bestfirst.md) \| [A-Stern](lecture/searching/search5-astar.md) | [Blatt: EA/GA](homework/sheet-ea.md) |
+| 26.10. | Games | [Optimale Spiele](lecture/games/games1-intro.md) \| [Games mit Minimax](lecture/games/games2-minimax.md) \| [Minimax und Heuristiken](lecture/games/games3-heuristics.md) \| [Alpha-Beta-Pruning](lecture/games/games4-alphabeta.md) | [Blatt: Suche](homework/sheet-search.md) |
+| 02.11. | ZP | **Zwischenprüfung** |  |
+| 09.11. | Perzeptron | [Perzeptron](lecture/nn/nn01-perceptron.md) | [Blatt: Games](homework/sheet-games.md) |
+| 16.11. | Regression | [Lineare Regression und Gradientenabstieg](lecture/nn/nn02-linear-regression.md) \| [Logistische Regression](lecture/nn/nn03-logistic-regression.md) | [Blatt: Perzeptron](homework/sheet-nn-perceptron.md) |
+| 23.11. | MLP | [Multilayer Perceptron (MLP)](lecture/nn/nn05-mlp.md) \| [Backpropagation](lecture/nn/nn06-backprop.md) | [Blatt: Regression](homework/sheet-nn-regression.md) |
+| 30.11. | Train&Test | [Overfitting und Regularisierung](lecture/nn/nn04-overfitting.md) \| [Training & Testing](lecture/nn/nn07-training-testing.md) \| [Performanzanalyse](lecture/nn/nn08-testing.md) | [Blatt: MLP](homework/sheet-nn-mlp.md) |
+| 07.12. | RNN | [RNN](lecture/nn/nn11-rnn.md) | [Blatt: Backpropagation](homework/sheet-nn-backprop.md) |
+| 14.12. | Transformer | [Transformer](lecture/nn/nn12-transformer.md) | [Blatt: TODO]() |
+| 21.12. | \- | \- | \- |
+| 28.12. | PV | Rückblick \| [Prüfungsvorbereitung TDU](admin/exams-tdu.md) |  |
 
 ## Prüfungsform, Note und Credits (TDU)
 
