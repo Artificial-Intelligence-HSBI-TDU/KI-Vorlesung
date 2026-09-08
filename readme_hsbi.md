@@ -156,4 +156,9 @@ im jeweiligen Praktikum in der Abgabewoche.
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/)
     (*AIMA*). Russell, S. und Norvig, P., Pearson, 2021. ISBN
     [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
-2.  TODO Gerome
+2.  ["Hands-On Machine Learning with Scikit-Learn, Keras, and
+    TensorFlow"](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781098125967/).
+    Géron, A., O'Reilly, 2023. ISBN
+    [978-1-098-12597-4](https://fhb-bielefeld.digibib.net/openurl?isbn=978-1-098-12597-4).
+    [Online](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781098125967/)
+    über die [O'Reilly-Lernplattform](https://www.oreilly.com/library-access/).
