@@ -1,4 +1,3 @@
-*   [Syllabus HSBI](readme_hsbi.md)
-*   [Syllabus TDU](readme_tdu.md)
-*   [Skript](lecture/readme.md)
-*   [Hausaufgaben](homework/readme.md)
+*   [Fahrplan TDU](readme_tdu.md?id=kursformat-tdu)
+*   [Fahrplan HSBI](readme_hsbi.md?id=kursformat-hsbi)
+*   [Github](https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W26)
