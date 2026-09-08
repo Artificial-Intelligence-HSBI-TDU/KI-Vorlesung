@@ -103,7 +103,4 @@ Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 1.  ["**Artificial Intelligence: A Modern Approach**"](http://aima.cs.berkeley.edu/)
     (*AIMA*). Russell, S. und Norvig, P., Pearson, 2021. ISBN
     [978-0134610993](https://fhb-bielefeld.digibib.net/openurl?isbn=978-0134610993).
-2.  "Grundkurs Künstliche Intelligenz". Ertel, W., Springer, 2025. ISBN
-    [978-3-658-44955-1](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-658-44955-1).
-    DOI [10.1007/978-3-658-44955-1](https://doi.org/10.1007/978-3-658-44955-1).
-4. TODO Gerome
+2.  TODO Gerome
