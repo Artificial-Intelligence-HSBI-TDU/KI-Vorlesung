@@ -5,7 +5,7 @@ points: 10 Punkte
 title: "Übungsblatt: Entscheidungsbäume (Decision Tree Learner DTL)"
 ---
 
-# Bonus: Starke vs. Schwache KI (2P)
+# Starke vs. Schwache KI (1P)
 
 Recherchieren Sie und diskutieren Sie folgende Punkte:
 
@@ -20,7 +20,7 @@ Recherchieren Sie und diskutieren Sie folgende Punkte:
 
 *Thema*: Schwache vs. starke KI, Auswirkungen und Nutzen
 
-# DTL.01: Entscheidungsbäume mit CAL3 und ID3 (6P)
+# DTL.01: Entscheidungsbäume mit ID3 (6P)
 
 Es ist wieder Wahlkampf: Zwei Kandidaten O und M bewerben sich um die Kanzlerschaft.
 Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
@@ -35,29 +35,8 @@ Die folgende Tabelle zeigt die Präferenzen von sieben Wählern.
 | 6   | $< 35$   | hoch      | Bachelor | O        |
 | 7   | $< 35$   | niedrig   | Abitur   | M        |
 
-Trainieren Sie nacheinander mit den Verfahren CAL3 (3P) und ID3 (3P) auf der obigen
-Trainingsmenge je einen Entscheidungsbaum. Nutzen Sie für CAL3 dabei die Schwellen
-$S_1=4$ und $S_2=0.7$.
-
-Sie können dafür eine Handsimulation anwenden oder die Algorithmen implementieren.
-Sie können gern auch die Java-Klassen im Paket
-[`aima.core.learning`](https://github.com/aimacode/aima-java/blob/AIMA3e/aima-core/src/main/java/aima/core/learning/learners/DecisionTreeLearner.java)
-bzw. die Python-Klassen in
-[`learning.py`](https://github.com/aimacode/aima-python/blob/master/learning.py) als
-Ausgangspunkt nutzen.[^1]
-
-# DTL.02: Pruning (1P)
-
-Vereinfachen Sie schrittweise den Baum
-
-$$x_3(x_2(x_1(C,A), x_1(B,A)), x_1(x_2(C,B), A))$$
-
-so weit wie möglich.
-
-Nutzen Sie die linearisierte Schreibweise. Geben Sie die jeweils verwendete Regel
-an.
-
-*Thema*: Anwendung der Transformations- und Pruning-Regeln
+Trainieren Sie nacheinander mit dem Verfahren ID3 auf der obigen Trainingsmenge je
+einen Entscheidungsbaum. Nutzen Sie dafür eine Handsimulation.
 
 # DTL.03: Machine Learning mit Weka (3P)
 
@@ -69,7 +48,7 @@ herunter und machen Sie sich mit der beiliegenden Dokumentation vertraut.
 Laden Sie sich die Beispieldatensätze "Zoo" (`zoo.csv`) und "Restaurant"
 (`restaurant.csv`) aus dem AIMA-Repository
 ([github.com/aimacode/aima-data](https://github.com/aimacode/aima-data))
-herunter.[^2] Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien
+herunter.[^1] Zum Laden der Beispieldatensätze in Weka müssen die `.csv`-Dateien
 eine Kopfzeile mit den Namen der Attribute haben. Passen Sie die Dateien
 entsprechend an und laden Sie diese im Reiter "Pre-Process" mit "Open file ...".
 
@@ -116,8 +95,5 @@ enthält, und dieses Paket nachinstallieren.
 
 *Thema*: Kennenlernen von Weka
 
-[^1]: Im Python-Code tauchen immer wieder "TODO"-Marker auf - bitte mit Vorsicht
-    genießen!
-
-[^2]: Zum Zoo-Datensatz gibt es die Erklärung direkt im Repo, für den
+[^1]: Zum Zoo-Datensatz gibt es die Erklärung direkt im Repo, für den
     Restaurant-Datensatz finden Sie die Erklärung im AIMA (Buch).
