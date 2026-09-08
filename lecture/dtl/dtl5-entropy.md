@@ -23,7 +23,7 @@ kleinsten ist.
 # Wie Attribute wählen?
 
 ::: notes
-## Erinnerung: CAL2/CAL3
+## Erinnerung: CAL2
 
 -   Zyklische Iteration durch die Trainingsmenge
 -   Ausschließlich aktuelles Objekt betrachtet

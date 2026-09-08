@@ -25,7 +25,7 @@ mehrwertige Attribute erreicht werden, dies führt zum Algorithmus **C4.5**.
 
 # Wie Attribute wählen?
 
-Erinnerung: CAL2/CAL3
+Erinnerung: CAL2
 
 -   Zyklische Iteration durch die Trainingsmenge
 -   Ausschließlich aktuelles Objekt betrachtet
