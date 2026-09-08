@@ -64,7 +64,8 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 | (Zoom)                       | (Zoom)                      | (Google Meet)          |
 
 Durchführung der Vorlesung als *Flipped Classroom*: Sitzungen per Zoom, Übungen per
-Google Meet. (Zugangsdaten siehe [Google Classroom](https://classroom.google.com/c/ODc4MjIwMTIyMzY1))
+Google Meet. (Zugangsdaten siehe [Google
+Classroom](https://classroom.google.com/c/ODc4MjIwMTIyMzY1))
 
 ## Fahrplan (TDU)
 
