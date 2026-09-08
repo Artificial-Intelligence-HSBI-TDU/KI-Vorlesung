@@ -34,7 +34,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
     -   Constraints: Backtracking, Heuristiken, Propagation, AC-3
 2.  Maschinelles Lernen
     -   Merkmalsvektor, Trainingsmenge, Trainingsfehler, Generalisierung
-    -   Entscheidungsbäume: CAL2, CAL3, ID3, C4.5
+    -   Entscheidungsbäume: CAL2, ID3/C4.5, Random Forest
     -   Neuronale Netze
         -   Perzeptron, Lernregel
         -   Feedforward Multilayer Perzeptron (MLP), Backpropagation, Trainings-
