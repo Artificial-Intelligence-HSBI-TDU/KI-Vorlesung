@@ -106,7 +106,4 @@ Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 2.  "Grundkurs Künstliche Intelligenz". Ertel, W., Springer, 2025. ISBN
     [978-3-658-44955-1](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-658-44955-1).
     DOI [10.1007/978-3-658-44955-1](https://doi.org/10.1007/978-3-658-44955-1).
-3.  "An Introduction to Machine Learning". Kubat, M., Springer, 2017. ISBN
-    [978-3-319-63913-0](https://fhb-bielefeld.digibib.net/openurl?isbn=978-3-319-63913-0).
-    DOI [10.1007/978-3-319-63913-0](https://doi.org/10.1007/978-3-319-63913-0).
 4. TODO Gerome
