@@ -75,7 +75,7 @@ Abgabe der Übungsblätter jeweils **Montag bis 09:00 Uhr** im
 im jeweiligen Praktikum in der Abgabewoche.
 
 | Monat | Woche vom | Vorlesung (Mo) | Praktikum (Mo/Mi/Do) |
-|-----|:----------|:------------------------------------|:-------------------------------|
+|--------------|:--------------|:---------------------------|:---------------------------|
 | Oktober | 12\. ... | [Orga](readme_hsbi.md) \|\| [Einführung KI & Problemlösen](lecture/intro/readme.md) |  |
 |  | 19\. ... | [Suche (Search)](lecture/searching/readme.md) |  |
 |  | 26\. ... | [Gradientensuche](lecture/searching/search6-gradient.md) & [Simulated Annealing](lecture/searching/search7-annealing.md) \|\| [Evolutionäre Algorithmen (EA)](lecture/ea/readme.md) |  |

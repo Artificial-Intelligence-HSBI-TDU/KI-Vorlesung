@@ -74,7 +74,7 @@ Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
 ## Fahrplan (TDU)
 
 | Woche | Thema | Vorlesung | Übung |
-|:----------------|:----------------|:------------------------------|:--------------------|
+|:----------------|:----------------|:----------------------------|:--------------------|
 | 14.09. | Orga | [Orga](readme_tdu.md) \| [Einführung KI](lecture/intro/intro1-overview.md) |  |
 | 21.09. | CSP | [Einführung Constraints](lecture/csp/csp1-intro.md) \| [Lösen von diskreten CSP](lecture/csp/csp2-backtrackingsearch.md) \| [CSP und Heuristiken](lecture/csp/csp3-heuristics.md) \| [Kantenkonsistenz und AC-3](lecture/csp/csp4-ac3.md) \| [Min-Conflicts Heuristik](lecture/csp/csp5-minconflicts.md) |  |
 | 28.09. | NB | [Wahrscheinlichkeitstheorie](lecture/naivebayes/nb1-probability.md) \| [Naive Bayes](lecture/naivebayes/nb2-naivebayes.md) \| [Textklassifikation mit NB](lecture/naivebayes/nb3-nb-text.md) | [Blatt: CSP](homework/sheet-csp.md) |
