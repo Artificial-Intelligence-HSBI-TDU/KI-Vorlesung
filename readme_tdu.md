@@ -58,15 +58,13 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 
 ![](admin/images/fahrplan.png){width="80%"}
 
-| Vorlesung (2 SWS) bis 25.10. | Vorlesung (2 SWS) ab 26.10. | Übung (2 SWS)              |
-|:-----------------------------|:----------------------------|:---------------------------|
-| Mo, 10:00 - 11:30 Uhr (TR)   | Mo, 11:00 - 12:30 Uhr (TR)  | G1: Di, 15:30 - 17:30 (TR) |
-| (Zoom)                       | (Zoom)                      | G2: Do, 08:00 - 10:00 (TR) |
-|                              |                             | (Google Meet)              |
+| Vorlesung (2 SWS) bis 25.10. | Vorlesung (2 SWS) ab 26.10. | Übung (2 SWS)          |
+|:-----------------------------|:----------------------------|:-----------------------|
+| Mo, 10:00 - 11:30 Uhr (TR)   | Mo, 11:00 - 12:30 Uhr (TR)  | Mo, 13:30 - 15:30 (TR) |
+| (Zoom)                       | (Zoom)                      | (Google Meet)          |
 
 Durchführung der Vorlesung als *Flipped Classroom*: Sitzungen per Zoom, Übungen per
-Google Meet. (Zugangsdaten siehe [Google
-Classroom](https://classroom.google.com/c/NzE4Mzk0NDE5ODEz?cjc=fhzfku3))
+Google Meet. (Zugangsdaten siehe [Google Classroom](https://classroom.google.com/c/ODc4MjIwMTIyMzY1))
 
 ## Fahrplan (TDU)
 
