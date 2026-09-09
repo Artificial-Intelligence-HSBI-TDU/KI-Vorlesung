@@ -63,7 +63,7 @@ Heuristiken einsetzt.
 
 Ausgangszustand:
 
-![](images/map_graph.png){width="75%"}
+![](images/map_graph.png){width="75%" web_width="65%"}
 
 ::: slides
 # Beispiel (cnt.)
@@ -71,7 +71,7 @@ Ausgangszustand:
 
 Schritt 1: "Würfeln" [(zufällige vollständige Belegung)]{.notes}
 
-![](images/min_conflicts1.png){width="50%"}
+![](images/min_conflicts1.png){width="50%" web_width="40%"}
 
 **Problem**: Konflikt in Knoten B und C.
 
@@ -84,7 +84,7 @@ Schritt 2: "Schütteln"
 -   Auswahl von Knoten B
 -   Auswahl einer anderen Farbe (grün - Anzahl der verbleibenden Konflikte = 0)
 
-![](images/min_conflicts2.png){width="50%"}
+![](images/min_conflicts2.png){width="50%" web_width="40%"}
 
 **Lösung erreicht.**
 
