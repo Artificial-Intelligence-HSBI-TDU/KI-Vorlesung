@@ -25,7 +25,7 @@ Eine Lösung für ein CSP ist eine vollständige und konsistente Belegung.
 
 # Motivation: Einfärben von Landkarten
 
-![](images/map.png){width="50%"}
+![](images/map.png){width="50%" web_width="35%"}
 
 ::: notes
 Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe
