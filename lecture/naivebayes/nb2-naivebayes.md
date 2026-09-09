@@ -300,11 +300,13 @@ Die nötigen Marginalisierungen aus den Trainingsdaten für diese Beobachtung si
     $P(x_2=1 \mid 1) = 0.30 + 0.05 = 0.35$
 
 Anwendung der Naive Bayes Klassifikation (mit Annahme bedingt unabhängige Merkmale):
-Wir nutzen $h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$ und setzen unsere
-beiden Merkmale ein:
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1 \mid h) P(x_2 \mid h)$.
+Wir nutzen
+
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$$
+
+und setzen unsere beiden Merkmale ein:
+
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1 \mid h) P(x_2 \mid h)$$.
 
 Damit bekommen wir folgende Entscheidung:
 
@@ -314,8 +316,8 @@ Damit bekommen wir folgende Entscheidung:
 
 Da die Merkmale nicht unabhängig sind, darf die Produktannahme nicht verwendet
 werden, sondern wir müssten eigentlich den Term $P(x_1, x_2 \mid h)$ nutzen:
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$.
+
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$$.
 
 Aus den gegebenen Daten haben wir (einfach oben ablesen):
 
@@ -323,8 +325,8 @@ Aus den gegebenen Daten haben wir (einfach oben ablesen):
 -   $P(x_1=1, x_2=1 \mid 1) = 0.05$
 
 Eingesetzt in die Formel
-$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid x_1, x_2)
-= \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$:
+
+$$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h) P(x_1, x_2 \mid h)$$:
 
 -   $H=0: 0.5 * 0.20 = 0.10$
 -   $H=1: 0.5 * 0.05 = 0.025$
