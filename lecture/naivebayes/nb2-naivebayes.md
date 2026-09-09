@@ -40,7 +40,7 @@ sich einige Schwierigkeiten:
 
 Oft nimmt man zusätzlich an, dass für alle Hypothesen (Klassen) $h$ der Prior $P(h)$
 gleich ist. Dann kann man diesen Faktor ebenfalls aus der Berechnung entfernen.
-Dieses Verfahren nennt man auch "**Maximum Likelihood**".
+Dieses Verfahren nennt man auch **Maximum Likelihood**.
 
 Der NB-Klassifikator wird gern für die Textklassifikation eingesetzt. Hier muss man
 einem Text ein Label zuordnen. In einer Vorverarbeitung wird zunächst eine Menge der
