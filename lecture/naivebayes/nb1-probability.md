@@ -25,11 +25,11 @@ Daraus kann man die **Bayes-Regel** ableiten: $P(A \mid B) = P(B \mid A)P(A)/P(B
 
 Dabei nennt man
 
--   $P(A)$ **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** (die
+-   $P(A)$ **Prior** oder **A-priori-Wahrscheinlichkeit** (die
     Wahrscheinlichkeit für $A$ ohne weiteres Wissen),
--   $P(B \mid A)$ **"Likelihood"** (Wie wahrscheinlich ist das Auftreten von $B$,
+-   $P(B \mid A)$ **Likelihood** (Wie wahrscheinlich ist das Auftreten von $B$,
     gegeben $A$?),
--   $P(A \mid B)$ **"Posterior"** oder **"A-posteriori-Wahrscheinlichkeit"** (Wie
+-   $P(A \mid B)$ **Posterior** oder **A-posteriori-Wahrscheinlichkeit** (Wie
     wahrscheinlich ist $A$, wenn $B$ eingetreten ist?), und
 -   $P(B)$ ist ein Normierungsfaktor (Wie wahrscheinlich ist $B$ an sich?).
 :::
@@ -269,12 +269,12 @@ $$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$$
 \bigskip
 \bigskip
 
--   $P(A)$ nennt man **"Prior"** oder **"A-priori-Wahrscheinlichkeit"** [(Das ist
+-   $P(A)$ nennt man **Prior** oder **A-priori-Wahrscheinlichkeit** [(Das ist
     die Wahrscheinlichkeit für $A$ ohne weiteres Wissen)]{.notes}
--   $P(B \mid A)$ nennt man **"Likelihood"** [(Wie wahrscheinlich ist das Auftreten
+-   $P(B \mid A)$ nennt man **Likelihood** [(Wie wahrscheinlich ist das Auftreten
     von $B$, gegeben $A$?)]{.notes}
--   $P(A \mid B)$ nennt man **"Posterior"** oder
-    **"A-posteriori-Wahrscheinlichkeit"** [(Wie wahrscheinlich ist $A$, wenn $B$
+-   $P(A \mid B)$ nennt man **Posterior** oder
+    **A-posteriori-Wahrscheinlichkeit** [(Wie wahrscheinlich ist $A$, wenn $B$
     eingetreten ist?)]{.notes}
 -   $P(B)$ ist ein Normierungsfaktor
 
