@@ -6,10 +6,10 @@ title: Prüfung & Noten (TDU)
 
 # Notenzusammensetzung
 
-| Prüfung         | Gewicht                   |
-|:----------------|---------------------------|
-| Zwischenprüfung | **40 %**                  |
-| Endprüfung      | **60 %**                  |
+| Prüfung         | Gewicht  |
+|:----------------|----------|
+| Zwischenprüfung | **40 %** |
+| Endprüfung      | **60 %** |
 
 # Übungsablauf
 
