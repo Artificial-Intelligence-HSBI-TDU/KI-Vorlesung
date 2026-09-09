@@ -112,6 +112,10 @@ Sie diesen auf die beiden Test-Dokumente an.
 
 # Bayes'sches Lernen
 
+::: notes
+**Naive Bayes Klassifikator**/**MAP**:
+:::
+
 $$h_{MAP} = \mathop{\text{argmax}}_{h \in H} \: P(h \mid D_1, \ldots, D_n)
 = \mathop{\text{argmax}}_{h \in H} \: P(h) \prod_i P(D_i \mid h)$$
 
