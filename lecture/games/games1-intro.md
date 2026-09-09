@@ -40,9 +40,9 @@ Zug?!**
 \pause
 \bigskip
 
-=\> Mehrere **konkurrierende** Agenten an Suche beteiligt!
+$\to$ Mehrere **konkurrierende** Agenten an Suche beteiligt!
 
-=\> (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
+$\to$ (Re-) Aktion des Gegners unbekannt/nicht vorhersehbar.
 
 # Spiele und Umgebungen
 
@@ -53,7 +53,7 @@ Zug?!**
 
 \bigskip
 
-=\> Bis auf Roboterfußball in KI traditionell keine physischen Spiele!
+$\to$ Bis auf Roboterfußball in KI traditionell keine physischen Spiele!
 
 # Brettspiele sind interessant für KI
 
@@ -69,7 +69,7 @@ Zug?!**
     Beispiel **Schach**:
 
     -   Im Mittel 35 Aktionen (*branching factor*) von jeder Position
-    -   Oft mehr als 40 Züge pro Spieler =\> Suchbäume mit mehr als 80 Ebenen
+    -   Oft mehr als 40 Züge pro Spieler $\to$ Suchbäume mit mehr als 80 Ebenen
     -   $35^{80} \approx 10^{123}$ mögliche Knoten!
     -   (Aber "nur" rund $10^{40}$ *verschiedene* Zustände)
 
@@ -78,7 +78,7 @@ Zug?!**
 # Eigenschaften guter Spielalgorithmen
 
 -   Zeit begrenzt
-    -   Irgendeine gute Entscheidung treffen! =\> Bewertungsfunktion [(auch für
+    -   Irgendeine gute Entscheidung treffen! $\to$ Bewertungsfunktion [(auch für
         Zwischenzustände)]{.notes}
 
 \smallskip

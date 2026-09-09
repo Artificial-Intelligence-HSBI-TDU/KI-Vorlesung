@@ -25,7 +25,7 @@ ebenenweise entwickelt.
 :::
 
 ::: notes
-=\> **Problemlösen \== Suche im Graphen**
+$\to$ **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip
@@ -61,7 +61,7 @@ Varianten:
 
 \bigskip
 
-=\> Was passiert, wenn wir eine **Queue** einsetzen?
+$\to$ Was passiert, wenn wir eine **Queue** einsetzen?
 
 :::: notes
 ::: center
@@ -82,7 +82,7 @@ Varianten:
 -   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare
     Zustände
 
--   Suchalgorithmus mit **Queue** als Datenstruktur =\> **Breitensuche**
+-   Suchalgorithmus mit **Queue** als Datenstruktur $\to$ **Breitensuche**
 
     -   Zu betrachtender Knoten in Schritt 2 wird *vorn* aus der Queue genommen
     -   Expandierte Knoten werden in Schritt 2.a *hinten* in die Queue eingefügt
@@ -91,7 +91,7 @@ Varianten:
     Auswirkung: Suchbaum wird **ebenenweise** aufgebaut (deshalb "Breitensuche")
 
 -   Graph-Search: Markierte Knoten müssen geeignet gespeichert werden: separate
-    Datenstruktur =\> Aufwand!
+    Datenstruktur $\to$ Aufwand!
 
 # Konventionen für diese Lehrveranstaltung
 
@@ -165,7 +165,7 @@ d. längsten Pfades
 
 **Tiefensuche**: Annahme: längster Pfad (Tiefe) $m=1000$
 
-=\> Speicherbedarf **ca. 10 MB**
+$\to$ Speicherbedarf **ca. 10 MB**
 
 # Wrap-Up
 

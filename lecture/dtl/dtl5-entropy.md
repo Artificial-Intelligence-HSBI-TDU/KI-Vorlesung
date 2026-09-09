@@ -29,10 +29,10 @@ kleinsten ist.
 -   Ausschließlich aktuelles Objekt betrachtet
 -   Reihenfolge der "richtigen" Attributwahl bei Verzweigung unklar
 
-=\> Betrachte stattdessen die komplette Trainingsmenge!
+$\to$ Betrachte stattdessen die komplette Trainingsmenge!
 :::
 
-## Relevanz =\> Informationsgehalt
+## Relevanz $\to$ Informationsgehalt
 
 -   Shannon/Weaver (1949): **Entropie**
     -   Maß für die Unsicherheit einer Zufallsvariablen
@@ -49,13 +49,13 @@ kleinsten ist.
 
 \smallskip
 
-=\> Anzahl der Ja/Nein-Fragen, um zur gleichen Information zu kommen
+$\to$ Anzahl der Ja/Nein-Fragen, um zur gleichen Information zu kommen
 
 # Definition der Entropie $H(V)$ für Zufallsvariable $V$
 
 \bigskip
 
--   Zufallsvariable $V$ =\> mögliche Werte $v_k$
+-   Zufallsvariable $V$ $\to$ mögliche Werte $v_k$
 -   Wahrscheinlichkeit für $v_k$ sei $p_k = P(v_k)$
 
 $$H(V) = -\sum_k p_k \log_2 p_k$$
@@ -75,8 +75,8 @@ Hinweis: $\log_2 x = \frac{\log_{10} x}{\log_{10} 2} = \frac{\log x}{\log 2}$
 :::::
 
 ::: notes
--   Nur eine Klasse: $\log_2 1 = 0$ =\> $H(V) = 0$ Bit
--   Zwei Klassen, gleichwahrscheinlich: $\log_2 0.5 = -1$ =\> $H(V) = 1$ Bit
+-   Nur eine Klasse: $\log_2 1 = 0$ $\to$ $H(V) = 0$ Bit
+-   Zwei Klassen, gleichwahrscheinlich: $\log_2 0.5 = -1$ $\to$ $H(V) = 1$ Bit
 :::
 
 # Beispiele Entropie: faire Münze

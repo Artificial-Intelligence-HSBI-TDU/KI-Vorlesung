@@ -49,15 +49,15 @@ Mögliche Lösungen:
 -   Ball wird in Zustandsraum-Landschaft gesetzt.
 -   Folge:
     -   rollt steilsten Abstieg hinunter
-    -   rollt evtl. in Tal auf halber Höhe (lokales Minimum) =\> bleibt dort
+    -   rollt evtl. in Tal auf halber Höhe (lokales Minimum) $\to$ bleibt dort
         gefangen
 
 \bigskip
 \bigskip
 \pause
 
-=\> "**Schütteln** der Landschaft" -- Ball springt aus dem Tal und rollt in anderes
-Tal
+$\to$ "**Schütteln** der Landschaft" -- Ball springt aus dem Tal und rollt in
+anderes Tal
 
 \smallskip
 
@@ -73,16 +73,16 @@ werfen]{.ex}]{.slides}
 -   Metall erhitzen bis Atome frei beweglich
 -   Langsam abkühlen
 
-=\> stabiles Atomgitter mit minimalem Energiezustand
+$\to$ stabiles Atomgitter mit minimalem Energiezustand
 :::
 
 ::: notes
 # Übertragen der Idee
 
 -   Starkes "Schütteln" (hohe "Temperatur") am Anfang
--   Schrittweises "Abkühlen" =\> "Schütteln" im Laufe der Zeit verringern
+-   Schrittweises "Abkühlen" $\to$ "Schütteln" im Laufe der Zeit verringern
 
-=\> **Simulated Annealing**
+$\to$ **Simulated Annealing**
 :::
 
 # Pseudocode Simulated Annealing (Minimierungsproblem)
@@ -204,8 +204,8 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 
 -   Gradientenverfahren
     -   Analogie Bergsteigen: Gehe in Richtung des stärksten Anstiegs der
-        Kostenfunktion =\> **Hill-Climbing**
-    -   Achtung: Probleme mit lokalen Minima =\> **Simulated Annealing**
+        Kostenfunktion $\to$ **Hill-Climbing**
+    -   Achtung: Probleme mit lokalen Minima $\to$ **Simulated Annealing**
 
 ::: readings
 -   @Russell2021: Simulated Annealing: Abschnitt 4.1.2

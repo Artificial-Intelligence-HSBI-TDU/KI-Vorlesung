@@ -31,7 +31,7 @@ Eine Lösung für ein CSP ist eine vollständige und konsistente Belegung.
 Die Skizze soll eine Landkarte mit verschiedenen Ländern darstellen. Die Aufgabe
 lautet: Färbe jedes Land mit einer Farbe ein, um die Übersichtlichkeit zu erhöhen.
 Verwende dabei so wenig wie möglich unterschiedliche Farben. Aneinander grenzende
-Länder müssen unterschiedliche Farben bekommen (=\> *Constraint*).
+Länder müssen unterschiedliche Farben bekommen ($\to$ *Constraint*).
 :::
 
 # Einfärben von Landkarten: Formalisierung
@@ -109,18 +109,18 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
 -   **Präferenzen**: "soft constraints" `\newline`{=tex} Beispiel: "rot ist besser
     als grün"
 
-    Abbildung über Gewichtung =\> Constraint-Optimierungsproblem (COP)
+    Abbildung über Gewichtung $\to$ Constraint-Optimierungsproblem (COP)
 
 # Constraints -- Wertebereiche
 
--   **Endliche Domänen**: $d$ Werte =\> $O(d^n)$ mögliche Zuweisungen
+-   **Endliche Domänen**: $d$ Werte $\to$ $O(d^n)$ mögliche Zuweisungen
     `\newline`{=tex} (exponentiell in der Zahl der Variablen)
 
 \smallskip
 
--   **Unendliche Domänen**: reelle Zahlen, natürliche Zahlen `\newline`{=tex} =\>
+-   **Unendliche Domänen**: reelle Zahlen, natürliche Zahlen `\newline`{=tex} $\to$
     Keine Auflistung der erlaubten Wertekombinationen mehr möglich `\newline`{=tex}
-    =\> Übergang zu Gleichungen/Ungleichungen: $job_1+5<job_2$
+    $\to$ Übergang zu Gleichungen/Ungleichungen: $job_1+5<job_2$
     -   lineare Constraints
     -   nichtlineare Constraints
 

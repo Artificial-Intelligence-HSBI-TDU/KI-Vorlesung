@@ -37,11 +37,11 @@ verwendeten Test hinzu.
     (Statistikschwelle):
 
     -   Für **genau eine** Klasse gilt: $P(k | \tilde{x}) \ge S_2$: `\newline`{=tex}
-        =\> Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)
+        $\to$ Abschluss: Ersetze Vereinigungsklasse durch $k$ (für immer!)
 
         \smallskip
 
-    -   Für **alle** Klassen gilt: $P(k | \tilde{x}) < S_2$: `\newline`{=tex} =\>
+    -   Für **alle** Klassen gilt: $P(k | \tilde{x}) < S_2$: `\newline`{=tex} $\to$
         Differenzierung: Ersetze Vereinigungsklasse durch neuen Test:
         $\kappa \gets x_{t+1}(\ast, \ldots, \ast, /k1/, \ast, \ldots, \ast)$
 
@@ -83,13 +83,13 @@ Trainingsfehler: $1/5 = 0.2 < 1-S_2 = 1-0.7 = 0.3$
     -   $S_1$: Statistikschwelle, problemabhängig wählen
     -   $S_2$: $0.5 < S_2 \le 1.0$
     -   Klassifikationsfehler kleiner als $1-S_2$
-        -   kleiner Fehler =\> großer Baum
-        -   großer Fehler =\> kleiner Baum
+        -   kleiner Fehler $\to$ großer Baum
+        -   großer Fehler $\to$ kleiner Baum
 
 \smallskip
 
 -   **Abbruch**:
-    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} =\> Kein Fehler
+    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} $\to$ Kein Fehler
         in einem kompletten Durchlauf
     -   Alle Endknoten mit eindeutigen Klassensymbolen belegt
     -   Differenzierung nötig, aber alle Merkmale verbraucht

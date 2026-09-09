@@ -20,7 +20,7 @@ Bei Spielen mit Zufall (Würfelereignisse) kann man jedem Würfelereignis eine
 Wahrscheinlichkeit zuordnen und damit den jeweils erreichbaren `Max`- oder
 `Min`-Wert gewichten. Die Summe dieser gewichteten Bewertungen ist die Bewertung des
 entsprechenden "Chance"-Knotens, der dann in der darüberliegenden Ebene nach dem
-Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
+Minimax-Prinzip ausgewertet wird ($\to$ *Expectimax*).
 :::
 
 ::: youtube
@@ -52,7 +52,7 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 -   Mögliche Evaluierungskriterien:
     -   Materialwert: Bauer 1, Läufer/Springer 3, Turm 5, Dame 9
     -   Stellungsbewertung: Sicherheit des Königs, Stellung der Bauern
-    -   Daumenregeln: 3 Punkte Vorteil =\> sicherer Sieg
+    -   Daumenregeln: 3 Punkte Vorteil $\to$ sicherer Sieg
 
 \smallskip
 
@@ -66,12 +66,12 @@ Minimax-Prinzip ausgewertet wird (=\> *Expectimax*).
 
 -   **Alternativ**:
     -   Speicherung von Positionen plus Bewertung in **Datenbanken**
-        `\newline`{=tex} =\> Lookup mit $\mathop{\text{Eval}}(s)$ [(statt Berechnung
-        zur Laufzeit)]{.notes}
+        `\newline`{=tex} $\to$ Lookup mit $\mathop{\text{Eval}}(s)$ [(statt
+        Berechnung zur Laufzeit)]{.notes}
     -   Training von **ML-Modellen** (Eingabe: Position, Ausgabe: Bewertung)
-        `\newline`{=tex} =\> Lookup mit $\mathop{\text{Eval}}(s)$ [(statt Berechnung
-        zur Laufzeit also eine Art Klassifikation der aktuellen Position durch das
-        MLP, welches die gelernte Bewertung ausgibt)]{.notes}
+        `\newline`{=tex} $\to$ Lookup mit $\mathop{\text{Eval}}(s)$ [(statt
+        Berechnung zur Laufzeit also eine Art Klassifikation der aktuellen Position
+        durch das MLP, welches die gelernte Bewertung ausgibt)]{.notes}
 
 ::: notes
 Oft ist das vollständige Berechnen eines Zweiges im Suchbaum sehr zeitaufwändig und
@@ -148,7 +148,7 @@ Würfelergebnis repräsentieren zu können. Je möglichem Würfelergebnis $i$ gi
 einen Ausgang, an dem die Wahrscheinlichkeit $P(i)$ dieses Ausgangs annotiert wird.
 :::
 
-=\> Für Zufallsknoten **erwarteten** Minimax-Wert (*Expectimax*) nutzen
+$\to$ Für Zufallsknoten **erwarteten** Minimax-Wert (*Expectimax*) nutzen
 
 [[Tafelbeispiel]{.ex}]{.slides}
 

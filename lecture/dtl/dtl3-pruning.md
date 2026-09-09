@@ -33,7 +33,7 @@ Fehler gemacht hatte).
 \smallskip
 \pause
 
-$x_1$ ist bedingt irrelevant =\> Vereinfachung: $\alpha = x_2(A, B)$
+$x_1$ ist bedingt irrelevant $\to$ Vereinfachung: $\alpha = x_2(A, B)$
 
 \pause
 \bigskip
@@ -63,7 +63,7 @@ leere Weg ...
 \smallskip
 \pause
 
-$x_1$ ist bedingt redundant =\> Vereinfachung: $\alpha = x_2(A, B)$
+$x_1$ ist bedingt redundant $\to$ Vereinfachung: $\alpha = x_2(A, B)$
 
 \pause
 \bigskip

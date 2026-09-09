@@ -55,7 +55,7 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
 
 \bigskip
 
-=\> Lernen wichtige Eigenschaft lebender Wesen :-)
+$\to$ Lernen wichtige Eigenschaft lebender Wesen :-)
 :::
 
 [[Warum Lernen?]{.ex}]{.slides}
@@ -70,7 +70,7 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
     -   Lernen durch Beobachtung
     -   Vorgabe von Beispielen: Ein- und Ausgabewerte
 
-    =\> Regression, Klassifikation
+    $\to$ Regression, Klassifikation
 
 \bigskip
 
@@ -117,13 +117,13 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
 
 -   **Gegeben**: Eigenschaften eines Autos
 
-    =\> Eigenschaften: Ausprägungen der Merkmale
+    $\to$ Eigenschaften: Ausprägungen der Merkmale
 
 \bigskip
 
 -   **Gesucht**: Diagnose und Reparaturanleitung
 
-    =\> Hypothese über den Merkmalen (Funktion $\mathop{\text{h}}$)
+    $\to$ Hypothese über den Merkmalen (Funktion $\mathop{\text{h}}$)
 
 # Lernen durch Beobachten: Lernen einer Funktion $\mathop{\text{f}}$
 
@@ -143,7 +143,7 @@ Beispielen
 
 -   Aufgabe: Baue Hypothese $\mathop{\text{h}}$ auf, so dass
     $\mathop{\text{h}} \approx \mathop{\text{f}}$.
-    -   Benutze dazu Menge von Beispielen =\> **Trainingsdaten**.
+    -   Benutze dazu Menge von Beispielen $\to$ **Trainingsdaten**.
 
 \bigskip
 
@@ -237,13 +237,13 @@ $\mathop{\text{f}}(\mathbf{x})$
 
 \smallskip
 
--   Ausgabe: typischerweise Skalar (Funktionswert oder Klasse) `\newline`{=tex} =\>
-    Beispiel: Bewertung eines Spielstandes bei TicTacToe
+-   Ausgabe: typischerweise Skalar (Funktionswert oder Klasse) `\newline`{=tex}
+    $\to$ Beispiel: Bewertung eines Spielstandes bei TicTacToe
 
 \smallskip
 
 -   Eingabe: (Beschreibung des) Objekt(s) oder Situation, die zur Ausgabe gehört
-    `\newline`{=tex} =\> Beispiel: Spielstand bei TicTacToe
+    `\newline`{=tex} $\to$ Beispiel: Spielstand bei TicTacToe
 
 \bigskip
 \bigskip

@@ -303,7 +303,7 @@ berechnen.
 -   Eine von 10.000 Personen hat Arthrose
 -   Eine von 10 Personen hat ein steifes Gelenk
 
-=\> Ich habe ein steifes Gelenk. Habe ich Arthrose?
+$\to$ Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 \pause
 
@@ -321,7 +321,7 @@ erkrankt zu sein, bei nur 0.08%. Kein Grund zur Sorge in diesem Fall :-)
 
 \pause
 
-=\> Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also
+$\to$ Wie wahrscheinlich ist ein steifes Gelenk ohne Arthrose, also
 $P(S \mid \neg A$)?
 
 \pause
@@ -358,7 +358,7 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2025, Ex. 7.9, S. 135] an!
 
     \smallskip
 
-    =\> $P(A,B) = P(A \mid B)P(B) = P(A)P(B)$
+    $\to$ $P(A,B) = P(A \mid B)P(B) = P(A)P(B)$
 
 ::: notes
 Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):

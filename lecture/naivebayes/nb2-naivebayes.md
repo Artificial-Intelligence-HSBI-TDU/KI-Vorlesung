@@ -66,7 +66,7 @@ klassifizieren.
 
 \bigskip
 
-=\> Ich habe ein steifes Gelenk. Habe ich Arthrose?
+$\to$ Ich habe ein steifes Gelenk. Habe ich Arthrose?
 
 # Textklassifikation mit NB
 
@@ -181,7 +181,7 @@ die restlichen müssten aber auch beim "Training" berechnet werden!)
     h = gesund: P(gesund) * P(Nase=0 | gesund) * P(Husten=1 | gesund) * P(Haut=0 | gesund) * P(Fieber=1 | gesund) = 0.4*0.5*0*1*0              = 0
     h = krank:  P(krank)  * P(Nase=0 | krank)  * P(Husten=1 | krank)  * P(Haut=0 | krank)  * P(Fieber=1 | krank)  = 0.6*0.333*0.667*0.33*0.333 = 0.015
 
-=\> Klasse "krank" gewinnt (Wert für $P(\text{krank})$ ist der höchste der beiden
+$\to$ Klasse "krank" gewinnt (Wert für $P(\text{krank})$ ist der höchste der beiden
 Hypothesen) ...
 :::
 
@@ -227,7 +227,7 @@ Likelihood]{.ex}]{.slides}
 
 -   Unabhängigkeit der Attribute oft nicht gegeben
 
-    =\> $P(D_1, \ldots, D_n \mid H) \ne \prod_i P(D_i \mid H)$
+    $\to$ $P(D_1, \ldots, D_n \mid H) \ne \prod_i P(D_i \mid H)$
 
 -   A-posteriori-Wahrscheinlichkeiten oft unrealistisch nah an 1 oder 0
 
@@ -351,8 +351,8 @@ eine korrekte Klassifikation.
 # Laplace-Schätzer
 
 -   Problem: Attribut-Ausprägung für bestimmte Klasse nicht in Trainingsmenge:
-    -   =\> Bedingte Wahrscheinlichkeit ist 0
-    -   =\> Produkt gleich 0
+    -   $\to$ Bedingte Wahrscheinlichkeit ist 0
+    -   $\to$ Produkt gleich 0
 
 \bigskip
 
@@ -376,7 +376,7 @@ eine korrekte Klassifikation.
         $p_i = 1/\lvert D_i \rvert$ (Wahrscheinlichkeit für eine Attributausprägung
         ist 1/(Anzahl der Ausprägungen des Attributs))
 
-    =\> "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
+    $\to$ "virtuelle" Trainingsbeispiele ($m$ ist die Zahl der virtuellen
     Trainingsbeispiele)
 :::
 
@@ -408,12 +408,12 @@ eine korrekte Klassifikation.
 
 \bigskip
 
--   Annahme: Klassen uniform verteilt =\> $P(h_i) = P(h_j)$
+-   Annahme: Klassen uniform verteilt $\to$ $P(h_i) = P(h_j)$
 
     **Maximum Likelihood**
     $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \: \prod_i P(D_i \mid h)$$
 
-    =\> Maximiere die Likelihood der Daten
+    $\to$ Maximiere die Likelihood der Daten
 :::
 
 ::: notes
@@ -446,7 +446,7 @@ In Abhängigkeit von der Verteilung der $P(D_i \mid h)$ spricht man von
 # Wrap-Up
 
 -   Klassifikation mit Naive Bayes
-    -   Annahme von Unabhängigkeit =\> "Naive" Bayes Klassifikation
+    -   Annahme von Unabhängigkeit $\to$ "Naive" Bayes Klassifikation
     -   Schätzen der bedingten Wahrscheinlichkeiten aus den Trainingsdaten
     -   Klassifikation durch Nutzung der geschätzten Wahrscheinlichkeiten
     -   Hinweis auf Naivität der Annahme, dennoch sehr gute Erfolge in Praxis

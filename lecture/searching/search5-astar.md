@@ -29,7 +29,7 @@ dass A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 :::
 
 ::: notes
-=\> **Problemlösen \== Suche im Graphen**
+$\to$ **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip
@@ -42,7 +42,7 @@ dass A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 ::: notes
 -   $n \in S$ auf aktuellem Weg erreichter Knoten
 -   $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$
--   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel =\> $h(n)$ wird
+-   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel $\to$ $h(n)$ wird
     auch "heuristische Funktion" oder "Heuristik" genannt
 :::
 
@@ -116,7 +116,7 @@ zum selben (Zwischen-/End-) Knoten eingefügt werden soll.
 
 \medskip
 
-=\> Beispiel: Luftlinie als Abschätzung
+$\to$ Beispiel: Luftlinie als Abschätzung
 
 ::: notes
 **Hinweis**: Im der englischen Ausgabe des [@Russell2021] wird die **zulässige
@@ -149,7 +149,7 @@ Beweis siehe Übung :-)
 
 -   Übergang zur Graph-Search-Variante und Markierung von Knoten
 
-    =\> Achtung: Dann schärfere Anforderungen an Heuristik (Konsistenz)
+    $\to$ Achtung: Dann schärfere Anforderungen an Heuristik (Konsistenz)
 
 # A\*-Suche -- Anforderungen an Heuristik (Graph-Search)
 
@@ -168,7 +168,7 @@ Außerdem muss gelten:
 
 \medskip
 
-=\> Eine konsistente Heuristik ist gleichzeitig zulässig.
+$\to$ Eine konsistente Heuristik ist gleichzeitig zulässig.
 
 ::: notes
 **Hinweis**: Im der englischen Ausgabe des [@Russell2021] wird die **konsistente
@@ -204,7 +204,7 @@ Heuristik** auch "**consistent heuristic**" genannt.
 
 -   Informierte Suchverfahren
     -   Nutzen reale Pfadkosten und/oder Schätzungen der Restkosten
-    -   A\*: komplette Kostenfunktion $f(n) = g(n)+h(n)$ `\newline`{=tex} =\>
+    -   A\*: komplette Kostenfunktion $f(n) = g(n)+h(n)$ `\newline`{=tex} $\to$
         besondere Anforderungen an die Heuristik! [(Tree-Search: *zulässige*
         Heuristik; Graph-Search: *konsistente* Heuristik)]{.notes}
 

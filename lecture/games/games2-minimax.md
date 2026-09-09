@@ -43,13 +43,13 @@ wird dann im Spielbaum nach oben gereicht.
 
 -   Zieltest: Ist das Spiel vorbei?
 
-    =\> Startzustand und anwendbare Aktionen definieren den Zustandsraum.
+    $\to$ Startzustand und anwendbare Aktionen definieren den Zustandsraum.
 
 -   Nutzenfunktion: $\mathop{\text{UTILITY}}(s,p)$: Wert des Spiels für Spieler $p$
     im Spielzustand $s$
 
 -   Strategie: Spieler benötigen **Strategie**, um zu gewünschtem Endzustand zu
-    kommen *(unabhängig von den Entscheidungen des Gegenspielers)* =\> einfacher
+    kommen *(unabhängig von den Entscheidungen des Gegenspielers)* $\to$ einfacher
     Pfad von Start zu Ziel reicht nicht
 
 *Hinweis*: Nullsummenspiel! (Der Gewinn des einen Spielers ist der Verlust des
@@ -74,7 +74,7 @@ Strategie.
 
 1)  Erzeuge kompletten Suchbaum mit Tiefensuche
 2)  Wende Nutzenfunktion (*Utility*) auf jeden Endzustand an
-3)  Ausgehend von Endzuständen =\> Bewerte Vorgängerknoten:
+3)  Ausgehend von Endzuständen $\to$ Bewerte Vorgängerknoten:
     -   Knoten ist `Min`-Knoten: `\newline`{=tex} Nutzen ist das **Minimum** der
         Kindknoten
     -   Knoten ist `Max`-Knoten: `\newline`{=tex} Nutzen ist das **Maximum** der
@@ -158,7 +158,7 @@ def Minimax(state):
 
 -   maximale Tiefe des Spielbaums: $m$
 -   in jedem Zustand $b$ gültige Züge
--   =\> Zeitkomplexität $O(b^m)$
+-   $\to$ Zeitkomplexität $O(b^m)$
 
 \bigskip
 

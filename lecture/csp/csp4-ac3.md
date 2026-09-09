@@ -36,7 +36,7 @@ ausschließen. Man kann den AC-3 auch als Inferenzschritt in die BT-Suche einbet
 Zuweisung eines Wertes an Variable $X$:
 
 -   Passt zu aktueller Belegung
--   Berücksichtigt aber nicht **restliche** Constraints `\newline`{=tex} =\> macht
+-   Berücksichtigt aber nicht **restliche** Constraints `\newline`{=tex} $\to$ macht
     weitere Suche u.U. unmöglich/schwerer
 
 \bigskip
@@ -64,8 +64,8 @@ Nach Zuweisung eines Wertes an Variable $X$:
 ::: notes
 Beispiel:
 
-1.  Sei A auf rot gesetzt =\> entferne rot in B und C
-2.  Sei D auf grün gesetzt =\> entferne grün in B und C und E
+1.  Sei A auf rot gesetzt $\to$ entferne rot in B und C
+2.  Sei D auf grün gesetzt $\to$ entferne grün in B und C und E
 
 Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 :::
@@ -87,7 +87,7 @@ Problem: Für B und C bleibt nur noch blau; sind aber benachbart!
 
 \bigskip
 
--   Idee: Ausdehnen auf alle Kanten ... =\> Einschränken der Wertemengen
+-   Idee: Ausdehnen auf alle Kanten ... $\to$ Einschränken der Wertemengen
 
 # Definition Kantenkonsistenz (Arc Consistency)
 
@@ -119,7 +119,7 @@ $D_a=\lbrace 1,2,3 \rbrace$, $D_b=\lbrace 1,2 \rbrace$, $D_c=\lbrace 1,2 \rbrace
 $D_d=\lbrace 1,2 \rbrace$, $D_e=\lbrace 2,3 \rbrace$
 
 ::: center
-=\> Kantenkonsistenz ist nur **lokale** Konsistenz!
+$\to$ Kantenkonsistenz ist nur **lokale** Konsistenz!
 :::
 
 \bigskip

@@ -209,14 +209,14 @@ Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 ::: notes
 Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
 
--   *Wissensrepräsentation*: Speichern des gesammelten Wissens **=\>**
+-   *Wissensrepräsentation*: Speichern des gesammelten Wissens **$\to$**
     **Wissensbasierte Systeme**
 -   *Logisches Schließen*: Beantworten von Fragen mit Hilfe des vorhandenen Wissens
-    **=\>** **Logik, Resolution**
--   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld **=\>**
+    **$\to$** **Logik, Resolution**
+-   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld **$\to$**
     **Musteranalyse und Mustererkennung und Mustervorhersage**
 -   *Verarbeitung natürlicher Sprache*: Erfolgreiche Kommunikation, beispielsweise
-    in Englisch **=\>** **NLP**
+    in Englisch **$\to$** **NLP**
 
 "Totaler Turing-Test": zusätzlich **Computer Vision** (Erkennen von Objekten) und
 **Robotik** (Manipulation von Objekten)
@@ -305,7 +305,7 @@ Dank massiver Rechenleistung, riesigen Datenmengen und geeigneten Modellen (Deep
 Learning) kann diese Tradition aktuell große Erfolge vorzeigen.
 :::
 
-## Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? =\> Wie sollen wir denken?
+## Rationales Denken: Aristoteles: Was sind korrekte Argumente und Denkprozesse? $\to$ Wie sollen wir denken?
 
 Beispiel:
 

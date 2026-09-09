@@ -25,7 +25,7 @@ daraus ergebenden Folgezustände wird der Zustandsraum aufgebaut. Dabei ist zu
 beachten, dass Aktionen Vorbedingungen haben können, d.h. unter Umständen nicht auf
 alle Zustände angewendet werden können. Die entstehende Struktur (Zustandsraum) kann
 man formal als Graph repräsentieren: Die Zustände werden durch die Knoten und die
-Aktionen als (gerichtete) Kanten im Graph dargestellt (=\> Problemgraph).
+Aktionen als (gerichtete) Kanten im Graph dargestellt ($\to$ Problemgraph).
 
 Das Problemlösen entspricht nun einer Suche im Problemgraphen: Man sucht einen Weg
 von einem Startknoten zu einem Zielknoten, d.h. eine Folge von Aktionen, die den

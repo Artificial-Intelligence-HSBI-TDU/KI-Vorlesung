@@ -37,8 +37,8 @@ Bisher betrachtete Suchverfahren:
 
 \smallskip
 
-=\> Oft aber nur das **Ziel an sich** interessant! `\newline`{=tex} (Und nicht, wie
-man dort hin gelangt.)
+$\to$ Oft aber nur das **Ziel an sich** interessant! `\newline`{=tex} (Und nicht,
+wie man dort hin gelangt.)
 
 \bigskip
 
@@ -54,7 +54,7 @@ Beispiel: Stundenplan
 
 **Gradienten-Suche**: "Gehe in Richtung des steilsten Anstiegs der Zielfunktion."
 
-=\> Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)
+$\to$ Schrittweise Verbesserung des aktuellen Zustands (Lokale Suche)
 
 ::: notes
 -   Verschiedene Namen: "Hill-climbing", "Greedy local search"
@@ -98,7 +98,7 @@ Beispiel: Stundenplan
 Schauen Sie sich auch Abb. 4.3 auf Seite 130 im @Russell2021 an!
 
 **Hinweis**: Alle Damen stehen von Anfang an auf dem Brett und werden nur verschoben
-=\> "vollständige Zustandsformulierung"
+$\to$ "vollständige Zustandsformulierung"
 
 ## Eigenschaften 8-Damen-Problem ($n=8$)
 

@@ -16,14 +16,14 @@ TODO
 -   Entscheidungsbaum:
     -   verständlich, interpretierbar
     -   kann aber "sehr speziell" auf den Trainingsdatensatz passen
-    -   kleine Änderungen in den Daten -\> oft ganz anderer Baum
+    -   kleine Änderungen in den Daten $\to$ oft ganz anderer Baum
 -   Idee:
     -   Statt **einem** Baum viele **verschiedene** Bäume trainieren
     -   Jeder Baum trifft eine eigene Vorhersage
     -   Am Ende: **Mehrheitsentscheidung** (Klassifikation) bzw. **Mittelwert**
         (Regression)
 -   Intuition:
-    -   "Viele verschiedene Meinungen" kombinieren -\> robustere Entscheidung
+    -   "Viele verschiedene Meinungen" kombinieren $\to$ robustere Entscheidung
     -   Fehler einzelner Bäume können sich gegenseitig ausgleichen
 
 ::: notes
@@ -41,7 +41,7 @@ wenig anders und trifft eigene Entscheidungen; am Ende zählt die Mehrheit.
     -   gegebener Trainingsdatensatz $D$
 2.  **Viele Trainingsdatensätze durch Zufall (Bootstrapping)**
     -   Für jeden Baum $B_1, B_2, \dots, B_K$:
-        -   Ziehen Sie zufällig (mit Zurücklegen) Trainingsbeispiele aus $D$ -\>
+        -   Ziehen Sie zufällig (mit Zurücklegen) Trainingsbeispiele aus $D$ $\to$
             jeder Baum erhält eine leicht andere Stichprobe $D_k$
 3.  **Zufällige Merkmalsauswahl pro Split**
     -   Beim Training eines Baums:
@@ -85,8 +85,8 @@ Frage: Welche Klasse sagt der Random Forest voraus?
 **Baum 1**
 
 -   Wurzel: prüfe "Größe"
-    -   wenn groß -\> Klasse A
-    -   wenn klein -\> Klasse B
+    -   wenn groß $\to$ Klasse A
+    -   wenn klein $\to$ Klasse B
 -   Für unser Objekt (groß, hell): **Vorhersage = A**
 
 ------------------------------------------------------------------------------------
@@ -94,8 +94,8 @@ Frage: Welche Klasse sagt der Random Forest voraus?
 **Baum 2**
 
 -   Wurzel: prüfe "Farbe"
-    -   wenn hell -\> Klasse B
-    -   wenn dunkel -\> Klasse A
+    -   wenn hell $\to$ Klasse B
+    -   wenn dunkel $\to$ Klasse A
 -   Für unser Objekt (groß, hell): **Vorhersage = B**
 
 ------------------------------------------------------------------------------------
@@ -103,20 +103,20 @@ Frage: Welche Klasse sagt der Random Forest voraus?
 **Baum 3**
 
 -   Wurzel: prüfe "Größe"
-    -   wenn groß -\> gehe zu Knoten 2
-    -   wenn klein -\> Klasse B
+    -   wenn groß $\to$ gehe zu Knoten 2
+    -   wenn klein $\to$ Klasse B
 -   Knoten 2: prüfe "Farbe"
-    -   wenn hell -\> Klasse A
-    -   wenn dunkel -\> Klasse B
+    -   wenn hell $\to$ Klasse A
+    -   wenn dunkel $\to$ Klasse B
 -   Für unser Objekt (groß, hell): **Vorhersage = A**
 
 ------------------------------------------------------------------------------------
 
 **Mehrheitsentscheidung**
 
--   Baum 1 -\> A
--   Baum 2 -\> B
--   Baum 3 -\> A
+-   Baum 1 $\to$ A
+-   Baum 2 $\to$ B
+-   Baum 3 $\to$ A
 
 $$
 \text{Stimmen: } A = 2,\; B = 1 \Rightarrow \text{Random Forest sagt: Klasse A}
@@ -193,8 +193,8 @@ Baum bekommt eine Bootstrap-Stichprobe aus diesen 4 Beispielen.
 
 -   Beispiele: 1, 2, 3
 -   sinnvoller Split bei $x < 2.5$:
-    -   Links: $x = 1.0, 2.0$ -\> Klasse A, mittlerer $y \approx 1.25$
-    -   Rechts: $x = 3.0$ -\> Klasse B, mittlerer $y = 3.0$
+    -   Links: $x = 1.0, 2.0$ $\to$ Klasse A, mittlerer $y \approx 1.25$
+    -   Rechts: $x = 3.0$ $\to$ Klasse B, mittlerer $y = 3.0$
 
 Baum 1:
 
@@ -211,9 +211,9 @@ Baum 1:
 
 -   Beispiele: 2, 3, 4
 -   sinnvoller Split bei $x < 3.5$:
-    -   Links: $x = 2.0, 3.0$ -\> Klassen A & B gemischt, z. B. Mehrheit = B,
+    -   Links: $x = 2.0, 3.0$ $\to$ Klassen A & B gemischt, z. B. Mehrheit = B,
         mittlerer $y = (1.5 + 3.0)/2 = 2.25$
-    -   Rechts: $x = 4.0$ -\> Klasse B, $y = 4.0$
+    -   Rechts: $x = 4.0$ $\to$ Klasse B, $y = 4.0$
 
 Baum 2:
 
@@ -230,8 +230,8 @@ Baum 2:
 
 -   Beispiele: 1, 1, 4 (z. B. zweimal Beispiel 1 und einmal Beispiel 4 gezogen)
 -   sinnvoller Split bei $x < 2.5$:
-    -   Links: $x = 1.0, 1.0$ -\> Klasse A, mittlerer $y = 1.0$
-    -   Rechts: $x = 4.0$ -\> Klasse B, $y = 4.0$
+    -   Links: $x = 1.0, 1.0$ $\to$ Klasse A, mittlerer $y = 1.0$
+    -   Rechts: $x = 4.0$ $\to$ Klasse B, $y = 4.0$
 
 Baum 3:
 
@@ -247,13 +247,13 @@ Baum 3:
 **Einzelne Bäume:**
 
 -   Baum 1:
-    -   $x = 3.0 \geq 2.5$ -\> Rechts
+    -   $x = 3.0 \geq 2.5$ $\to$ Rechts
     -   Klasse = B, $y = 3.0$
 -   Baum 2:
-    -   $x = 3.0 < 3.5$ -\> Links
+    -   $x = 3.0 < 3.5$ $\to$ Links
     -   Klasse = B, $y \approx 2.25$
 -   Baum 3:
-    -   $x = 3.0 \geq 2.5$ -\> Rechts
+    -   $x = 3.0 \geq 2.5$ $\to$ Rechts
     -   Klasse = B, $y = 4.0$
 
 ## Random-Forest-Entscheidung

@@ -43,7 +43,7 @@ Datenbanken gespeicherten Positionen und Bewertungen abgleichen.
 
 \bigskip
 
-=\> **Minimax-Baum**: Verbesserungen möglich?
+$\to$ **Minimax-Baum**: Verbesserungen möglich?
 
 [[Tafelbeispiel: Baum und Verbesserungen]{.ex}]{.slides}
 
@@ -58,7 +58,7 @@ Minimax-Algorithmus mit zusätzlichen Informationen:
 \smallskip
 \pause
 
-=\> Beobachtungen:
+$\to$ Beobachtungen:
 
 1.  $\alpha$ für MAX-Knoten wird nie kleiner
 2.  $\beta$ für MIN-Knoten wird nie größer
@@ -140,7 +140,7 @@ Vergleichen Sie die Ergebnisse im Simulator mit den selbst berechneten Werten.
 
 2.  Sortierung der Nachfolger spielt große Rolle
 
-3.  Perfekte Sortierung: $O(b^{d/2})$ =\> Verdopplung der Suchtiefe möglich
+3.  Perfekte Sortierung: $O(b^{d/2})$ $\to$ Verdopplung der Suchtiefe möglich
 
 \bigskip
 
@@ -149,7 +149,7 @@ Für Schach immer noch zu aufwändig ...
 # Verbesserungen für Alpha-beta-Pruning
 
 -   "Killer-Move": Maximale Effizienz nur wenn **optimaler Zug immer zuerst**
-    [untersucht]{.notes} `\newline`{=tex} =\> Zu untersuchende Züge
+    [untersucht]{.notes} `\newline`{=tex} $\to$ Zu untersuchende Züge
     **sortieren/priorisieren**, zb. Schach:
     a)  Figuren schlagen
     b)  Drohen

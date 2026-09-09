@@ -31,7 +31,7 @@ Erinnerung: CAL2
 -   Ausschließlich aktuelles Objekt betrachtet
 -   Reihenfolge der "richtigen" Attributwahl bei Verzweigung unklar
 
-=\> Betrachte stattdessen die **komplette** Trainingsmenge!
+$\to$ Betrachte stattdessen die **komplette** Trainingsmenge!
 
 # Erinnerung Entropie: Maß für die Unsicherheit
 
@@ -58,7 +58,7 @@ Anzahl der nötigen Bits zur Darstellung der partitionierten Trainingsmenge **na
 Betrachtung von Attribut $A$ ...
 :::
 
-=\> Je kleiner $R(S,A)$, um so größer der Informationsgewinn
+$\to$ Je kleiner $R(S,A)$, um so größer der Informationsgewinn
 
 # Informationsgewinn: Kriterium zur Auswahl von Attributen
 
@@ -97,7 +97,7 @@ $$\begin{eqnarray}
 
 \bigskip
 
-Informationsgewinn für $x_2$ am höchsten =\> wähle $x_2$ als nächsten Test
+Informationsgewinn für $x_2$ am höchsten $\to$ wähle $x_2$ als nächsten Test
 
 # Entscheidungsbaumlerner ID3 (Quinlan, 1986)
 
@@ -147,9 +147,9 @@ Klassensymbol als "`A`" sein ...
 | 6   | 0     | 1     | 0     | A   |
 
 -   $x2$ höchsten Information Gain
--   $x2=0$ =\> Beispiele 1,2 =\> A
--   $x2=1$ =\> Beispiele 3,4,5,6 =\> Information Gain berechnen, weiter teilen und
-    verzweigen
+-   $x2=0$ $\to$ Beispiele 1,2 $\to$ A
+-   $x2=1$ $\to$ Beispiele 3,4,5,6 $\to$ Information Gain berechnen, weiter teilen
+    und verzweigen
 :::
 
 [[Tafelbeispiel Anfang ID3]{.ex}]{.slides}
@@ -168,7 +168,7 @@ Klassensymbol als "`A`" sein ...
 
 \bigskip
 
-=\> $\mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
+$\to$ $\mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
 
 ::: notes
 Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben
@@ -240,7 +240,7 @@ Hierzu drei lesenswerte Blog-Einträge:
 
 \bigskip
 
-=\> Normierung sorgt für fairen Vergleich der Attribute
+$\to$ Normierung sorgt für fairen Vergleich der Attribute
 
 ::: notes
 *Anmerkung*: Auch hier ist die Entropie natürlich kein $\mathop{\text{Gain}}(S, A)$.

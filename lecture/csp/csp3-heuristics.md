@@ -41,7 +41,7 @@ zu den Nachbarn auswerten.
     Variable)]{.notes}
 
     ::: notes
-    =\> reduziert den Verzweigungsgrad
+    $\to$ reduziert den Verzweigungsgrad
     :::
 
 [[Tafelbeispiel]{.ex}]{.slides}
@@ -49,9 +49,9 @@ zu den Nachbarn auswerten.
 ::: notes
 Beispiel:
 
-1.  Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) =\> wähle A
-2.  B und C haben nur noch zwei freie Werte =\> wähle B (oder C)
-3.  C hat nur noch einen Wert, D noch zwei, der Rest drei =\> wähle C
+1.  Freie Auswahl, alle haben gleich viele freie Werte (jeweils 3) $\to$ wähle A
+2.  B und C haben nur noch zwei freie Werte $\to$ wähle B (oder C)
+3.  C hat nur noch einen Wert, D noch zwei, der Rest drei $\to$ wähle C
 :::
 
 # VARIABLES: Gleichstand bei MRV
@@ -71,7 +71,7 @@ Beispiel:
     zugewiesene)]{.notes} Variablen
 
     ::: notes
-    =\> reduziert den Verzweigungsgrad in späteren Schritten
+    $\to$ reduziert den Verzweigungsgrad in späteren Schritten
     :::
 
 [[Tafelbeispiel]{.ex}]{.slides}
@@ -79,13 +79,13 @@ Beispiel:
 ::: notes
 Beispiel:
 
-1.  MRV: Alle haben gleich viele freie Werte (jeweils 3) =\> Gradheuristik: B, C und
-    D haben die meisten Verbindungen (Constraints) auf offene Variablen =\> wähle B
-    (oder C oder D)
-2.  MRV: A, C und D haben nur noch zwei freie Werte =\> Gradheuristik: C und D haben
-    je zwei Constraints auf noch offene Variablen =\> wähle C (oder D)
-3.  MRV: A und D haben beide nur noch einen Wert =\> Gradheuristik: D hat die
-    meisten Verbindungen (Constraints) auf offene Variablen =\> wähle D
+1.  MRV: Alle haben gleich viele freie Werte (jeweils 3) $\to$ Gradheuristik: B, C
+    und D haben die meisten Verbindungen (Constraints) auf offene Variablen $\to$
+    wähle B (oder C oder D)
+2.  MRV: A, C und D haben nur noch zwei freie Werte $\to$ Gradheuristik: C und D
+    haben je zwei Constraints auf noch offene Variablen $\to$ wähle C (oder D)
+3.  MRV: A und D haben beide nur noch einen Wert $\to$ Gradheuristik: D hat die
+    meisten Verbindungen (Constraints) auf offene Variablen $\to$ wähle D
 :::
 
 # VALUES: Werte-Sortierung, Welchen Wert soll ich ausprobieren?
@@ -103,7 +103,7 @@ Beispiel:
 -   Wähle Wert, der für verbleibende Variablen die wenigsten Werte ungültig macht
 
     ::: notes
-    =\> verringert die Wahrscheinlichkeit für Backtracking
+    $\to$ verringert die Wahrscheinlichkeit für Backtracking
     :::
 
 [[Tafelbeispiel]{.ex}]{.slides}
@@ -112,12 +112,12 @@ Beispiel:
 Beispiel:
 
 1.  Sei A gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
-    =\> freie Wahl des Wertes =\> wähle beispielsweise rot
+    $\to$ freie Wahl des Wertes $\to$ wähle beispielsweise rot
 2.  Sei B gewählt: Alle Werte machen in den anderen Variablen einen Wert ungültig
-    =\> freie Wahl des Wertes =\> wähle beispielsweise grün
+    $\to$ freie Wahl des Wertes $\to$ wähle beispielsweise grün
 3.  Sei D gewählt: Verbleibende Werte rot und blau
     -   Wahl von rot würde für C einen Wert übrig lassen (blau)
-    -   Wahl von blau würde für C **keinen** Wert übrig lassen =\> LCV: Wahl von
+    -   Wahl von blau würde für C **keinen** Wert übrig lassen $\to$ LCV: Wahl von
         rot!
 
 **Hinweis**: Diese Heuristik ist in der Praxis sehr aufwändig zu berechnen! Man

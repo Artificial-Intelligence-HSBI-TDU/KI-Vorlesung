@@ -51,7 +51,7 @@ Dabei sind die Durchgänge teilweise nur in einer Richtung zu benutzen
 :::
 
 ::: notes
-=\> **Problemlösen \== Suche im Graphen**
+$\to$ **Problemlösen \== Suche im Graphen**
 :::
 
 \bigskip
@@ -104,7 +104,7 @@ alphabetische Reihenfolge der Knoten (Orte).
 
 \bigskip
 
-=\> Was passiert, wenn wir einen **Stack** einsetzen?
+$\to$ Was passiert, wenn wir einen **Stack** einsetzen?
 
 :::: notes
 ::: center
@@ -126,7 +126,7 @@ alphabetische Reihenfolge der Knoten (Orte).
 -   Nachfolger eines Knotens: Alle von diesem Zustand durch Aktionen erreichbare
     Zustände
 
--   Suchalgorithmus mit **Stack** als Datenstruktur =\> **Tiefensuche**
+-   Suchalgorithmus mit **Stack** als Datenstruktur $\to$ **Tiefensuche**
 
     -   Zu betrachtender Knoten in Schritt 2 wird *oben* vom Stack genommen
     -   Expandierte Knoten werden in Schritt 2.a *oben* auf den Stack gelegt Dabei

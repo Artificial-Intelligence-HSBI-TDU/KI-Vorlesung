@@ -38,7 +38,7 @@ allen lokalen Suchverfahren vorkommen, dass sich der Algorithmus in lokalen Mini
 
 -   Binäre Lösungsrepräsentation (Bitstring):
     $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
-    -   String gliedert sich in $n$ Elemente (mit $n \le m$) `\newline`{=tex} =\>
+    -   String gliedert sich in $n$ Elemente (mit $n \le m$) `\newline`{=tex} $\to$
         jedes Segment entspricht einer Problemvariablen
     -   Dekodierungsfunktion $\Gamma : \{0,1\}^m \to \mathbb{R}^n$
 
@@ -73,7 +73,7 @@ allen lokalen Suchverfahren vorkommen, dass sich der Algorithmus in lokalen Mini
 -   Fitnessproportionale Selektion (*Roulette Wheel Selection*):`\newline`{=tex}
     Auswahlwahrscheinlichkeit für Individuum $\mathbf{g}_k$:
     $$p_{sel}(\mathbf{g}_k) = \frac{\Phi(\mathbf{g}_k)}{\sum_j \Phi(\mathbf{g}_j)}$$
-    =\> Voraussetzung: positive Fitnesswerte
+    $\to$ Voraussetzung: positive Fitnesswerte
 
 \bigskip
 
@@ -122,7 +122,7 @@ $p_{cross} \ge 0.6$)
             $$\mathbf{g}_d = (g_{b,1}, \dots, g_{b,i}, \; g_{a,{i+1}}, \dots, g_{a,m})$$
 
         ::: notes
-        =\> Trenne Eltern an gleicher Stelle auf, vertausche Bestandteile
+        $\to$ Trenne Eltern an gleicher Stelle auf, vertausche Bestandteile
         :::
 
 \smallskip
@@ -163,7 +163,7 @@ der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft "Rekombinatio
         \end{array}
         \right.$$
 
-        =\>$\chi_i$ gleichverteilte Zufallsvariable (Intervall $[0,1]$), für jedes
+        $\to$$\chi_i$ gleichverteilte Zufallsvariable (Intervall $[0,1]$), für jedes
         Bit $g_i$ neu bestimmen
 
 ::: notes

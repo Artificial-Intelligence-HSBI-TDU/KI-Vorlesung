@@ -58,7 +58,7 @@ License](https://unsplash.com/license))]{.credits}
 
 ::: notes
 Jedes Individuum kodiert ein Spielfeld mit einer konkreten Anordnung **aller**
-Königinnen =\> **Vollständige Zustandsbeschreibung**.
+Königinnen $\to$ **Vollständige Zustandsbeschreibung**.
 
 Dabei korrespondiert der Index in das Array des Individuums mit der jeweiligen
 Spalte des Spielfelds. Die Zahl an einer Arrayposition gibt dann an, in welcher

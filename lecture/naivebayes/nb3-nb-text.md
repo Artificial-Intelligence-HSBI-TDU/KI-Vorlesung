@@ -72,7 +72,7 @@ Sie diesen auf die Test-Dokumente an.
     Dabei am besten auch Zeichensetzung mit entfernen.
     :::
 
--   **Lemmatisierung**: "fraßen" -\> "fressen", "Wölfe" -\> "Wolf", ...
+-   **Lemmatisierung**: "fraßen" $\to$ "fressen", "Wölfe" $\to$ "Wolf", ...
 
     ::: notes
     Die Wörter werden auf ihre "Grundform" gebracht: gebeugte Verben durch den
@@ -288,10 +288,10 @@ Implementierungsdetail (rein mathematisch lässt sich das so nicht ablesen)!
 ::: notes
 **Beobachtungen**:
 
-1.  Viele kleine Faktoren ergeben ein immer kleineres Produkt =\> Logarithmus nutzen
-    und Übergang zu Summe statt Produkt!
+1.  Viele kleine Faktoren ergeben ein immer kleineres Produkt $\to$ Logarithmus
+    nutzen und Übergang zu Summe statt Produkt!
 2.  Im Trainingsdatensatz nicht vorhandene Terme bei einer Klasse führen zu einem
-    Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. =\>
+    Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. $\to$
     Laplace-Glättung einsetzen!
 3.  Im Testdatensatz nicht vorhandene Terme des Vokabulars werden automatisch
     ignoriert, da der *count* 0 ist und als Exponent verwendet den neutralen Faktor
@@ -481,8 +481,9 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 **Mapping**:
 
--   $P(\text{lecker} \mid \text{OK})$ =\> $P(\text{UNK} \mid \text{OK}) = 0.043$
--   $P(\text{lecker} \mid \text{SPAM})$ =\> $P(\text{UNK} \mid \text{SPAM}) = 0.077$
+-   $P(\text{lecker} \mid \text{OK})$ $\to$ $P(\text{UNK} \mid \text{OK}) = 0.043$
+-   $P(\text{lecker} \mid \text{SPAM})$ $\to$
+    $P(\text{UNK} \mid \text{SPAM}) = 0.077$
 
 ::: notes
 Mit dem UNK-Term kann man das Problem des Out-of-Vocabulary elegant lösen. Im
@@ -632,10 +633,10 @@ Entscheidung: OK
 ::: notes
 **Beobachtungen**:
 
-1.  Viele kleine Faktoren ergeben ein immer kleineres Produkt =\> Logarithmus nutzen
-    und Übergang zu Summe statt Produkt!
+1.  Viele kleine Faktoren ergeben ein immer kleineres Produkt $\to$ Logarithmus
+    nutzen und Übergang zu Summe statt Produkt!
 2.  Im Trainingsdatensatz nicht vorhandene Terme bei einer Klasse führen zu einem
-    Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. =\>
+    Faktor 0 (Zero-Frequency-Problem), wodurch der gesamte Score 0 wird. $\to$
     Laplace-Glättung einsetzen!
 3.  Im Testdatensatz nicht vorhandene Terme des Vokabulars werden automatisch
     korrekt mit $P(lw=0 \mid h)$ bzw. $(1 - P(lw=1 \mid h))$ berücksichtigt.

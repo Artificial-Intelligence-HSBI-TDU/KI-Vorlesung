@@ -151,8 +151,8 @@ Aufruf übergeben (müssen also Referenzen vom Typ `Baum` sein).
 
 -   Zyklischer Durchlauf durch Trainingsmenge
 -   Abbruch:
-    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} =\> Kein Fehler
-        in einem kompletten Durchlauf
+    -   Alle Trainingsobjekte richtig klassifiziert `\newline`{=tex} $\to$ Kein
+        Fehler in einem kompletten Durchlauf
     -   (Differenzierung nötig, aber alle Merkmale verbraucht)
     -   (Lernschrittzahl überschritten)
 
