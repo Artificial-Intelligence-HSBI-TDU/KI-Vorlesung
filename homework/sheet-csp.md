@@ -21,7 +21,7 @@ auf.
 
 *Thema*: Formulierung von Problemen als CSP
 
-# CSP.02: Framework für Constraint Satisfaction (3P)
+# CSP.02: Framework für Constraint Satisfaction (4P)
 
 Lösen Sie nun das obige Rätsel (aus CSP.01):
 
@@ -44,7 +44,7 @@ bzw. die Python-Klassen in
 [`csp.py`](https://github.com/aimacode/aima-python/blob/master/csp.py) als
 Ausgangspunkt nutzen.[^1]
 
-# CSP.03: Kantenkonsistenz mit AC-3 (1P)
+# CSP.03: Kantenkonsistenz mit AC-3 (2P)
 
 Sei $D=\lbrace 0, \ldots, 5 \rbrace$, und ein Constraintproblem definiert durch
 
@@ -68,7 +68,7 @@ mit
 
 *Thema*: Handsimulation des AC-3-Algorithmus
 
-# CSP.04: Forward Checking und Kantenkonsistenz (1P)
+# CSP.04: Forward Checking und Kantenkonsistenz (2P)
 
 Betrachten Sie erneut das CSP aus der vorigen Aufgabe und die Zuweisung
 $\alpha = \lbrace v_1 \to  2 \rbrace$.
@@ -87,7 +87,7 @@ $\alpha = \lbrace v_1 \to  2 \rbrace$.
 
 *Thema*: Kantenkonsistenz und Forward Checking verstehen
 
-# CSP.05: Planung von Indoor-Spielplätzen (3P)
+# Bonus: Planung von Indoor-Spielplätzen (3P)
 
 Sie sind für die Planung von Indoor-Spielplätzen zuständig.
 
