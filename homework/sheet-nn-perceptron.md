@@ -22,8 +22,10 @@ title: "Übungsblatt: Perzeptron"
 # NN.Perzeptron.02: Logische Funktionen als Perzeptron (2P)
 
 -   (1.5P) Das Perzeptron kann zur Ausführung zahlreicher logischer Funktionen
-    verwendet werden. Implementieren Sie die binären Logikfunktionen UND, ODER und
-    KOMPLEMENT und demonstrieren Sie Ihre Implementierung in der Übung/im Praktikum.
+    verwendet werden. Konstruieren Sie jeweils ein Perzeptron zur Realisierung der
+    binären Logikfunktionen UND, ODER und KOMPLEMENT und demonstrieren Sie die
+    Wirkung der Perzeptrone in der Übung/im Praktikum. (Hinweis: Sie brauchen/sollen
+    hier nichts implementieren oder trainieren!)
 -   (0.5P) Eine grundlegende Einschränkung des Perzeptrons besteht darin, dass es
     die EXKLUSIV-ODER-Funktion nicht implementieren kann. Erklären Sie den Grund für
     diese Einschränkung.
