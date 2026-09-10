@@ -8,7 +8,7 @@ title: "Übungsblatt: Overfitting & MLP"
 # NN.MLP.01: Perzeptron-Netze (2P)
 
 Konstruieren Sie ein Netz mit drei Perzeptrons, welches für zwei Eingabevariablen
-$x_1$ und $x_2$ die in der folgenden Abbildung blau-grau dargestellten Bereiche mit
+$x_1$ und $x_2$ die in der folgenden Abbildung gestrichelt markierten Bereiche mit
 +1 klassifiziert. Benutzen Sie die $\mathop{\text{sign}}$-Funktion als
 Aktivierungsfunktion.
 
