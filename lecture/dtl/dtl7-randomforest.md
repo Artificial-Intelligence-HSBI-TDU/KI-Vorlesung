@@ -16,7 +16,8 @@ interpretierbar.
 :::
 
 ::: youtube
--   [VL Random Forest](https://youtu.be/TODO)
+Vorlesung \[[YT](https://youtu.be/zSq6klBFIBw)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/dtl-random-forest/5a0cfd1f3b3a70bd5fb5025063920c74)\]
 :::
 
 # Vom einzelnen Baum zum Wald
