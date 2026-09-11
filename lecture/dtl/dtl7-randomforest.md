@@ -196,13 +196,12 @@ extrem komplexen Einzelbaum.
 
 -   Regression: $\hat{y}_{\text{reg}}(x) = \frac{1}{K} \sum_{k=1}^{K} T_k(x)$
 
-::::: notes
+:::: notes
 Wichtig ist: Keine Änderungen am Baum-Algorithmus selbst (z.B. C4.5/ID3). Die
 "Magie" kommt aus den zwei Zufallsquellen: zufällige Datenstichproben und zufällige
 Attributauswahl.
 
-::: tip
-Bei der Klassifikation erhält man die Klassenwahrscheinlichkeiten, indem man die
+Bei der Klassifikation erhält man die **Klassenwahrscheinlichkeiten**, indem man die
 Häufigkeiten der Klassen über alle Bäume ermittelt:
 
 $$
@@ -218,7 +217,6 @@ $$
 0, & \text{sonst}
 \end{cases}
 $$
-:::
 
 ::: tip
 Typische Hyperparameter (z.B. bei Scikit-Learn mit `RandomForestClassifier`):
@@ -228,7 +226,7 @@ Typische Hyperparameter (z.B. bei Scikit-Learn mit `RandomForestClassifier`):
     Gesamtattributen)
 -   Maximale Tiefe oder Blattanzahl pro Baum
 :::
-:::::
+::::
 
 ::: notes
 # Bias und Varianz und Grenzen von Entscheidungsbäumen / Random Forest
