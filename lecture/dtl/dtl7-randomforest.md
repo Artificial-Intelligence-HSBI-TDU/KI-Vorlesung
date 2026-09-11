@@ -265,8 +265,11 @@ eher hohem Bias und gleichzeitig reduzierter Varianz.
     -   Ein Random Forest mit 100 oder mehr Bäumen ist für Menschen praktisch nicht
         mehr "durchschaubar"
 -   Datenarten
-    -   Für tabellarische, strukturierte Daten sind Entscheidungsbäume und Random
-        Forests sehr gut geeignet
+    -   Für tabellarische, strukturierte Daten mit kategorialen Merkmalen (diskrete
+        Ausprägungen), insbesondere nominalen Merkmalen (keine natürliche
+        Reihenfolge, etwa Farben oder Städtenamen) und ordinalen Merkmalen (mit
+        natürlicher Reihenfolge, etwa Schulnoten), sind Entscheidungsbäume und
+        Random Forests sehr gut geeignet
     -   Für extrem hochdimensionale Eingaben (z.B. Text, Bilder) sind spezialisierte
         Modelle (lineare Modelle mit guter Regularisierung, CNNs, Transformer usw.)
         oft im Vorteil
