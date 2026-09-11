@@ -256,9 +256,12 @@ Attributen mit mehr Ausprägungen durch die Normierung in C4.5 aufgehoben wird.
 -   Verbesserung durch Normierung des *Information Gain*: **C4.5**
 
 ::: readings
--   @Ertel2025: Entscheidungsbäume: Abschnitt 8.4
--   @Russell2021: Entscheidungsbäume: Abschnitt 19.3
--   @Mitchell2010: ID3: Kapitel 3
+Sie können zum Thema Entscheidungsbäume und ID3 in @Russell2021 (Abschnitt 19.3)
+nachlesen.
+
+Insbesondere zu ID3 finden Sie gute Darstellungen in @Ertel2025 (Abschnitt 8.4) und
+@Mitchell2010 (Kapitel 3). Für weiterführende Informationen (Gini Impurity, CART,
+...) lesen Sie bitte Kapitel 6 "Decision Trees" im @Geron2023 nach.
 :::
 
 ::: outcomes
