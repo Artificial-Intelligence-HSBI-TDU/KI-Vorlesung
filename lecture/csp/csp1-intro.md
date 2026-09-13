@@ -20,7 +20,8 @@ Eine Lösung für ein CSP ist eine vollständige und konsistente Belegung.
 :::
 
 ::: youtube
--   [VL Intro CSP](https://youtu.be/eFyo4Xh59ns)
+Vorlesung \[[YT](https://youtu.be/QN4HIGkZrf4)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/gki-csp-einfhrung-constraints/7306e3fdcf536febe6451336c3d9974d)\]
 :::
 
 # Motivation: Einfärben von Landkarten
