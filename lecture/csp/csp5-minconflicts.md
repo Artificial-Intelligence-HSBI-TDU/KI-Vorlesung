@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "CSP: Min-Conflicts Heuristik"
+title: "CSP5: Min-Conflicts Heuristik"
 ---
 
 ::: tldr
@@ -22,7 +22,8 @@ entgegenzuwirken versucht.
 :::
 
 ::: youtube
--   [VL CSP, Min-Conflicts Heuristik](https://youtu.be/Z-Xk6oCBZJ0)
+Vorlesung \[[YT](https://youtu.be/7cDyzGb2vdA)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/gki-csp-min-conflicts-heuristik/f1c161f808b3c2134bfdcaf56f850055)\]
 :::
 
 # Problem bei BT-Suche
