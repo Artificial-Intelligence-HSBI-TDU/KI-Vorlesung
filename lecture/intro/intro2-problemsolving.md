@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Intro: Problemlösen"
+title: "Intro2: Problemlösen"
 ---
 
 ::: tldr
