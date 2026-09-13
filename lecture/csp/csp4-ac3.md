@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "CSP: Kantenkonsistenz und AC-3"
+title: "CSP4: Kantenkonsistenz und AC-3"
 ---
 
 ::: tldr
@@ -28,7 +28,8 @@ ausschließen. Man kann den AC-3 auch als Inferenzschritt in die BT-Suche einbet
 :::
 
 ::: youtube
--   [VL CSP, AC-3](https://youtu.be/TvF78iVDwKM)
+Vorlesung \[[YT](https://youtu.be/Dqy385gD9ng)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/-/699f3f73472d29977b095f9b25c1b03e)\]
 :::
 
 # Problem bei BT-Suche
