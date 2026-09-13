@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "CSP: Heuristiken"
+title: "CSP3: Heuristiken"
 ---
 
 ::: tldr
@@ -22,7 +22,8 @@ zu den Nachbarn auswerten.
 :::
 
 ::: youtube
--   [VL CSP, Heuristiken](https://youtu.be/pgXf0oV8lhE)
+Vorlesung \[[YT](https://youtu.be/GnN_TEZSZAI)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/gki-csp-heuristiken/6a55cf5ffae66db41c9243154c877863)\]
 :::
 
 # VARIABLES: Variablen-Sortierung, Welche Variable soll betrachtet werden?
