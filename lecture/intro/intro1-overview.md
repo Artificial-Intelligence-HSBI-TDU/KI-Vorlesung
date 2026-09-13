@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Intro: Was ist Künstliche Intelligenz?"
+title: "Intro1: Was ist Künstliche Intelligenz?"
 ---
 
 ::: tldr
@@ -24,11 +24,12 @@ Wenn man sich die Geschichte der KI anschaut, beobachtet man bei fast allen Them
 dass sie in der Vergangenheit eine Hype-Phase erlebt haben und dabei die oft stark
 überzogenen Erwartungen enttäuscht haben und danach meist nur wenig Beachtung
 erfuhren. Nach einer Weile kamen die Themen wieder "auf die Tagesordnung", diesmal
-mit vernünftigen Erwartungen.
+mit vernünftig(er)en Erwartungen.
 :::
 
 ::: youtube
--   [VL Einführung](https://youtu.be/oETxokgYdDk)
+Vorlesung \[[YT](https://youtu.be/gVSNCh2qYeo)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/gki-intro-was-ist-knstliche-intelligenz/1f35c67efaeecc87f4991b3d0c7b0bb0)\]
 :::
 
 # Was ist (künstliche) Intelligenz?
