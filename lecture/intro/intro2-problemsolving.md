@@ -52,7 +52,8 @@ Komplexität beurteilt werden.
 :::
 
 ::: youtube
--   [VL Problemlösen](https://youtu.be/IhUmUUzR9lQ)
+Vorlesung \[[YT](https://youtu.be/pJ1BrFUCDCw)\],
+\[[HSBI](https://www.hsbi.de/medienportal/video/intro-problemlsen/0db1f3f33cb61cef110141c2cadbb999)\]
 :::
 
 # Motivation: Roboter in einer Bibliothek
