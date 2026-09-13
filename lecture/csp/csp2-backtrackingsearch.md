@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "CSP2: Lösen von diskreten CSP"
+title: "CSP2: Lösen von diskreten CSP (Backtracking-Search)"
 ---
 
 ::: tldr
