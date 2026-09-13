@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "CSP: Lösen von diskreten CSP"
+title: "CSP2: Lösen von diskreten CSP"
 ---
 
 ::: tldr
@@ -12,7 +12,7 @@ wird schließlich rückgängig gemacht und durch die nächste Möglichkeit erset
 :::
 
 ::: youtube
--   [VL BT-Suche für CSP](https://youtu.be/DIY7F2ycyqA)
+Vorlesung [[YT](https://youtu.be/_ir_ZdBOQZE)], [[HSBI](https://www.hsbi.de/medienportal/video/gki-csp-lsen-von-diskreten-csp-backtrackingsearch/1efa1631c1ee389f376128e7313e0d8c)]
 :::
 
 # Einfärben von Landkarten als CSP
