@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Search: Suche mit Tiefensuche"
+title: "Search1: Suche mit Tiefensuche"
 ---
 
 ::: tldr
