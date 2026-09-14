@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "DTL: Random Forest"
+title: "DTL7: Random Forest"
 ---
 
 ::: tldr
