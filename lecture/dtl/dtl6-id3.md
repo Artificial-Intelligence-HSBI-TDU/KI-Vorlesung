@@ -20,7 +20,8 @@ mehrwertige Attribute erreicht werden, dies führt zum Algorithmus **C4.5**.
 :::
 
 ::: youtube
--   [VL ID3 und C4.5](https://youtu.be/Yo1cmeS6BK8)
+Vorlesung \[[YT](https://youtu.be/vgecv7zQxz8)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-dtl6-id3-und-c45/3ceb246a260bf013780433d0cc894bf5/251)\]
 :::
 
 # Wie Attribute wählen?
