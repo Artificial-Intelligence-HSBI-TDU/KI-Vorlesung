@@ -54,7 +54,8 @@ klassifizieren.
 :::
 
 ::: youtube
--   [VL Naive Bayes Klassifikation](https://youtu.be/qfX4zp1i-Co)
+Vorlesung \[[YT](https://youtu.be/VxyjFos1a6U)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-nb2-klassifikation-mit-naive-bayes/23ee01f5f394b551150cd571d4fe36ef/251)\]
 :::
 
 # Medizinische Diagnostik mit NB
