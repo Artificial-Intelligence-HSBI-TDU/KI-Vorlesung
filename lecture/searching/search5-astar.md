@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Search: Suche mit A\\*"
+title: "Search5: Suche mit A\\*"
 ---
 
 ::: tldr
