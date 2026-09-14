@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "DTL: Entropie"
+title: "DTL5: Entropie"
 ---
 
 ::: tldr
