@@ -31,7 +31,8 @@ ausgewählte Beispielobjekte (durch Merkmalsvektoren beschrieben) plus die Vorga
 :::
 
 ::: youtube
--   [VL Machine Learning 101](https://youtu.be/FliWEXQZhsw)
+Vorlesung \[[YT](https://youtu.be/pOdjQC01FSg)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-dtl1-machine-learning-101/9f569d13698d8d599721b92c3ee6f896/251)\]
 :::
 
 # Was ist Lernen?
