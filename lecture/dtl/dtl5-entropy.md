@@ -17,7 +17,8 @@ kleinsten ist.
 :::
 
 ::: youtube
--   [VL Entropie](https://youtu.be/4IZYA5EWO1k)
+Vorlesung \[[YT](https://youtu.be/0h22mnYZkjw)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-dtl5-entropie/6adab53586b8914a7c6ad72a87362fba/251)\]
 :::
 
 # Wie Attribute wählen?
