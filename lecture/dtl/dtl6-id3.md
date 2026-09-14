@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "DTL: ID3 und C4.5"
+title: "DTL6: ID3 und C4.5"
 ---
 
 ::: tldr
