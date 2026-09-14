@@ -35,7 +35,8 @@ Dabei nennt man
 :::
 
 ::: youtube
--   [VL Wahrscheinlichkeiten](https://youtu.be/p_Yy5rkl4CA)
+Vorlesung \[[YT](https://youtu.be/jBByXEKoOeA)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-nb1-wiederholung-wahrscheinlichkeitstheorie/8749cac85bb7021d2ec5c2ce75a32bc8/251)\]
 :::
 
 # Ereignisse und Wahrscheinlichkeit
