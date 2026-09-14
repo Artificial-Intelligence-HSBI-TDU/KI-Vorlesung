@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "NB: Wiederholung Wahrscheinlichkeitstheorie"
+title: "NB1: Wiederholung Wahrscheinlichkeitstheorie"
 ---
 
 ::: tldr
