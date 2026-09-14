@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Games: Minimax"
+title: "Games2: Minimax"
 ---
 
 ::: tldr
