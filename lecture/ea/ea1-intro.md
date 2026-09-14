@@ -14,7 +14,8 @@ möglichen Lösung werden können.
 :::
 
 ::: youtube
--   [VL Einführung Evolutionäre Algorithmen](https://youtu.be/pKdKcPLI7V4)
+Vorlesung \[[YT](https://youtu.be/NuU8vgkkq3w)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-ea1-einfhrung-evolutionre-algorithmen/db53883da4791076b61f5ab89ca0d74f/251)\]
 :::
 
 # Evolution sehr erfolgreich bei Anpassung
