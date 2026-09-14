@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "NB: Text-Klassifikation mit Naive Bayes"
+title: "NB3: Text-Klassifikation mit Naive Bayes"
 ---
 
 ::: tldr
