@@ -19,7 +19,8 @@ dass A\* in der Regel mit weniger Suchschritten als BnB auskommt.
 :::
 
 ::: youtube
--   [VL A\*](https://youtu.be/eMkEN-HtEs8)
+Vorlesung \[[YT](https://youtu.be/EMr09c_ACNg)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search5-suche-mit-a/6045dde7f32e31d19747320b988b00f5/251)\]
 :::
 
 # Hole das Buch
