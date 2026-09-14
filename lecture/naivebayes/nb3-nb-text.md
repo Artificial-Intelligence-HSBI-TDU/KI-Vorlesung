@@ -31,7 +31,8 @@ auf den UNK-Term abgebildet und die dafür berechneten Wahrscheinlichkeiten genu
 :::
 
 ::: youtube
--   [VL Text-Klassifikation mit Naive Bayes](https://youtu.be/Gkg-SGnl9nY)
+Vorlesung \[[YT](https://youtu.be/h12_CoLqcNY)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-nb3-text-klassifikation-mit-naive-bayes/5b99952a5479cfea41436399f55b0655/251)\]
 :::
 
 # Textklassifikation mit NB
