@@ -19,7 +19,8 @@ wird dann im Spielbaum nach oben gereicht.
 :::
 
 ::: youtube
--   [VL Minimax](https://youtu.be/aKtF__lMMsw)
+Vorlesung \[[YT](https://youtu.be/fFYIgsYEFjA)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-games2-minimax/29722a148c3716081a9e38de0d73bc50/251)\]
 :::
 
 # Spiele als Suchproblem: Minimax
