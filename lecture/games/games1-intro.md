@@ -17,7 +17,8 @@ anschauen).
 :::
 
 ::: youtube
--   [VL Einführung Optimale Spiele](https://youtu.be/wVYhbgtzxhs)
+Vorlesung \[[YT](https://youtu.be/OCiKEU2dBwo)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-games1-einfhrung-optimale-spiele/f08047806ea0148a2ddafeb4451da482/251)\]
 :::
 
 # Backgammon: Zwei Spieler, was ist der beste Zug?
