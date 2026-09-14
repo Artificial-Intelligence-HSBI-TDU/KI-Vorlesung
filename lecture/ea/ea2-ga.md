@@ -27,7 +27,8 @@ allen lokalen Suchverfahren vorkommen, dass sich der Algorithmus in lokalen Mini
 :::
 
 ::: youtube
--   [VL Modellierung mit EA/GA](https://youtu.be/Sd5AA6LIEOc)
+Vorlesung \[[YT](https://youtu.be/y5RmTiUg7f0)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-ea2-modellierung-mit-genetischen-algorithmen/8a046e3058e2297b9aba37948b8d7c21/251)\]
 :::
 
 # EA -- Allgemeiner Ablauf
