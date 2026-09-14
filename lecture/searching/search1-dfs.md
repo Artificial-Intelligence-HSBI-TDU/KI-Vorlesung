@@ -18,7 +18,8 @@ keine Nachfolger expandiert und oben auf den Stack gelegt werden.
 :::
 
 ::: youtube
--   [VL Tiefensuche](https://youtu.be/NzTugnuHSZ8)
+Vorlesung \[[YT](https://youtu.be/gOG-futM4YI)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search1-suche-mit-tiefensuche/72de14413b69d27dad8668a582c89895/251)\]
 :::
 
 # Hole das Buch
