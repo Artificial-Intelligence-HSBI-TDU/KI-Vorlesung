@@ -24,7 +24,8 @@ Minimax-Prinzip ausgewertet wird ($\to$ *Expectimax*).
 :::
 
 ::: youtube
--   [VL Heuristiken](https://youtu.be/rKqNqYBXuK8)
+Vorlesung \[[YT](https://youtu.be/ZsRCF1InkIQ)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-games3-heuristiken/3a2f20c11ede3a46c9175f731e6423eb/251)\]
 :::
 
 # Wenn die Zeit nicht reicht: Suchtiefe begrenzen
