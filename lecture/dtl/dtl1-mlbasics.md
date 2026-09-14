@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "DTL: Machine Learning 101"
+title: "DTL1: Machine Learning 101"
 ---
 
 ::: tldr
