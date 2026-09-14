@@ -14,7 +14,8 @@ stärksten Anstieg der Kostenfunktion auswählen. Dieses Verfahren nennt sich au
 :::
 
 ::: youtube
--   [VL Gradientensuche](https://youtu.be/TcTF9xdW3WU)
+Vorlesung \[[YT](https://youtu.be/Im7DEJysm5g)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search6-lokale-suche-gradientensuche/581592a4f22597d6979ddd3815c6c615/251)\]
 :::
 
 # Unterschiede in den Suchproblemen?
