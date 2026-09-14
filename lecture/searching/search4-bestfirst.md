@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Search: Suche mit Best First"
+title: "Search4: Suche mit Best First"
 ---
 
 ::: tldr
