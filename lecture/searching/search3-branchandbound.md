@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Search: Suche mit Branch-and-Bound"
+title: "Search3: Suche mit Branch-and-Bound"
 ---
 
 ::: tldr
