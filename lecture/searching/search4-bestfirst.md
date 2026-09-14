@@ -13,7 +13,8 @@ die geschätzten Restkosten eines Knotens zum Ziel berücksichtigt.
 :::
 
 ::: youtube
--   [VL Best First](https://youtu.be/dNyLOQuD_aI)
+Vorlesung \[[YT](https://youtu.be/9BW4-pkAoW0)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search4-suche-mit-best-first/74e701865aede980e5c24215832c4ccd/251)\]
 :::
 
 # Hole das Buch
