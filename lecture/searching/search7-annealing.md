@@ -21,7 +21,8 @@ man ein Festfressen in lokalen Minima vermeiden bzw. überwinden.
 :::
 
 ::: youtube
--   [VL Simulated Annealing](https://youtu.be/vPg7PWuY2bM)
+Vorlesung \[[YT](https://youtu.be/2htZFxUe3AQ)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search7-lokale-suche-simulated-annealing/27673a757a7c49f9b385d7913d8e46c2/251)\]
 :::
 
 # Motivation
