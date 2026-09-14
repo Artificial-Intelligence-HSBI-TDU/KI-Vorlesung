@@ -27,7 +27,8 @@ mit diskreten Attributen und disjunkten Klassen einen fehlerfreien Baum erzeugen
 :::
 
 ::: youtube
--   [VL CAL2](https://youtu.be/bR_QVYtPRx8)
+Vorlesung \[[YT](https://youtu.be/Gx0IuMYAkj8)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-dtl2-cal2/d5758802018a5a70f24bfd81ef9ac997/251)\]
 :::
 
 # Entscheidungsbäume: Klassifikation
