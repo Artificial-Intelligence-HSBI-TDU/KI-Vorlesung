@@ -15,7 +15,8 @@ ebenenweise entwickelt.
 :::
 
 ::: youtube
--   [VL Breitensuche](https://youtu.be/WLhXt6ZpyD8)
+Vorlesung \[[YT](https://youtu.be/sbBygyFS95E)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-search2-suche-mit-breitensuche/561f60dc2036b09bbd64b78542be40ea/251)\]
 :::
 
 # Hole das Buch
