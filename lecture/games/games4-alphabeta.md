@@ -31,7 +31,8 @@ Datenbanken gespeicherten Positionen und Bewertungen abgleichen.
 :::
 
 ::: youtube
--   [VL Alpha-Beta-Pruning](https://youtu.be/_Hq-GCl__bU)
+Vorlesung \[[YT](https://youtu.be/lYCudNU6v34)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/gki-games4-alpha-beta-pruning/457023dac3b8a6273befbd92c4b09bba/251)\]
 :::
 
 # Verbesserung Minimax-Algorithmus
