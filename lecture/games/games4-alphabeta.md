@@ -1,6 +1,6 @@
 ---
 author: Carsten Gips (HSBI)
-title: "Games: Alpha-Beta-Pruning"
+title: "Games4: Alpha-Beta-Pruning"
 ---
 
 ::: tldr
