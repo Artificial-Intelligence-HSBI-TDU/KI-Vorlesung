@@ -175,6 +175,12 @@ direkt nebeneinander gesetzt werden dürfen.
 Formulieren Sie das Platzierungsproblem als Constraint-Problem. Geben Sie Variablen,
 Domänen und Constraints an.
 
+<!--
+1. Variablen: P, G, J (Sitzplatz von Paul, George, John)
+2. Domänen: D(P) = D(G) = D(J) = {1,2,3}
+3. Constraints: P != G, P != J, G != J; |G-J| != 1
+-->
+
 **Problem 2**
 
 <!-- Formulierung n-Queens -->
