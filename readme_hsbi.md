@@ -101,10 +101,12 @@ Komponenten zusammen:
 1.  Erfolgreiche Bearbeitung von mind. **sechs Übungsblättern** inkl. fristgerechter
     Abgabe des zugehörigen **Post Mortems** (s.u.).
 
-Abgabe der Post Mortems: Spätestens eine Woche nach der Übung im
+Abgabe der Post Mortems: Spätestens bis Montag der Folgewoche 09:00 Uhr im
 [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1737956).
 
 ### **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
+
+Die Modul-Note ergibt sich aus der Leistung in der Klausur.
 
 Sie können die Prüfung in der ersten oder in der zweiten Prüfungsphase ablegen. In
 beiden Prüfungszeiträumen wird je eine digitale Klausur im B40 mit 90 Minuten Dauer
