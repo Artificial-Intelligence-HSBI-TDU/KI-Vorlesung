@@ -66,7 +66,7 @@ Navigation, Planung, smarten Assistenten, autonomen Fahrzeugen, ...
 |                            | G4: Do, 14:00 - 15:30 Uhr (DE) |
 
 Alle Sitzungen online per Zoom (**Zugangsdaten siehe
-[ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1634793)**).
+[ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1702067)**).
 
 ## Fahrplan (HSBI)
 
@@ -102,7 +102,7 @@ Komponenten zusammen:
     Abgabe des zugehörigen **Post Mortems** (s.u.).
 
 Abgabe der Post Mortems: Spätestens bis Montag der Folgewoche 09:00 Uhr im
-[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1737956).
+[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1739507).
 
 ### **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
 
@@ -142,7 +142,7 @@ angeboten. Die Note ergibt sich aus der Leistung in der Klausur.
     4.  **Reflexion**: Was haben Sie gelernt oder (besser) verstanden?
 
     Die Post Mortems geben Sie bitte pro Person bis spätestens zur jeweiligen
-    Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797) ab.
+    Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1739507) ab.
 
 ## Materialien
 
