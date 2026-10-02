@@ -70,10 +70,6 @@ Alle Sitzungen online per Zoom (**Zugangsdaten siehe
 
 ## Fahrplan (HSBI)
 
-Abgabe der Übungsblätter jeweils **Montag bis 09:00 Uhr** im
-[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797). Vorstellung der Lösung
-im jeweiligen Praktikum in der Abgabewoche.
-
 | Monat    | Woche vom | Thema       | Vorlesung (Mo)                                                                                                                                                                                                                                                                                                                            | Praktikum (Mo/Mi/Do)                             |
 |----------|:----------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
 | Oktober  | 12.10.    | Orga        | [Orga HSBI](readme_hsbi.md) \| [Einführung KI](lecture/intro/intro1-overview.md) \| [Einführung Jupyter Notebook](lecture/intro/intro3-jupyternotebooks.md)                                                                                                                                                                               | \-                                               |
@@ -97,59 +93,54 @@ im jeweiligen Praktikum in der Abgabewoche.
 
 **(Digitale) Klausur plus Studienleistung (Portfolio)**, 5 ECTS
 
--   **Studienleistung**: "Portfolio" - Kriterien je Person:
+### **Studienleistung**: "Portfolio
 
-    1.  Teilnahme an der Internationalen Projektwoche "AI Connect" mit aktiver
-        Beteiligung (Meeting 1: Team-Building/Kick-Off, Meeting 2: Project Launch,
-        Teamarbeit, Meeting 3: Team-Präsentationen (Vortrag/Video))
-    2.  Mind. fünf Übungsblätter erfolgreich bearbeitet
-    3.  Video-Vortrag zum erfolgreich bearbeiteten Mini-Projekt ("AI Connect") am
-        Fr, 19.12., ab 10:30 Uhr, a 2 Minuten (pro Team)
+Die Studienleistung ist eine unbenotete Leistung und setzt sich aus mehreren
+Komponenten zusammen:
 
-    Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
+1.  Erfolgreiche Bearbeitung von mind. **sechs Übungsblättern** inkl. fristgerechter
+    Abgabe des zugehörigen **Post Mortems** (s.u.).
 
--   **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
+Abgabe der Post Mortems: Spätestens eine Woche nach der Übung im
+[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1737956).
 
-::: {.details title="Hinweise"}
--   Die Bearbeitung der Leistungen erfolgt individuell (außer "AI Connect"
-    Projektwoche).
--   Für die "AI Connect" Projektwoche werden gemischte Teams aus den beteiligten
-    Hochschulen gebildet.
+### **Gesamtnote**: (Digitale) Klausur im B40 (90 Minuten)
+
+Sie können die Prüfung in der ersten oder in der zweiten Prüfungsphase ablegen. In
+beiden Prüfungszeiträumen wird je eine digitale Klausur im B40 mit 90 Minuten Dauer
+angeboten. Die Note ergibt sich aus der Leistung in der Klausur.
+
+### Hinweise
+
+-   Die Bearbeitung der Aufgaben erfolgt individuell.
+-   Im Praktikum beginnen wir gemeinsam mit der Bearbeitung der Übungsblätter und
+    diskutieren über Lösungsansätze. Die Lösung soll anschließend individuell
+    fertiggestellt werden und kann auf Wunsch im nächsten Praktikum von Ihnen
+    vorgestellt werden.
+-   "Erfolgreiche Bearbeitung" eines Blattes umfasst die Bearbeitung aller Aufgaben
+    des Blattes und die fristgerechte Abgabe des ausreichenden Post Mortems im
+    ILIAS. Die intensive Beschäftigung mit den Aufgaben muss erkennbar sein.
+-   Die Teilnahme am Praktikum ist freiwillig, wird aber deutlich empfohlen.
+-   Eine Bewertung einzelner Übungsblätter findet nicht statt.
 -   Die Post Mortems sind individuell zu erstellen und abzugeben.
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
     Anwesenheit/Beteiligung werden dokumentiert.
--   "Erfolgreiche Bearbeitung" eines Blattes umfasst Bearbeitung aller Aufgaben des
-    Blattes und fristgerechte Abgabe des ausreichenden Post Mortems im ILIAS. Die
-    intensive Beschäftigung mit den Aufgaben muss erkennbar sein.
 
 \smallskip
 
 -   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
-    jeweiligen Kriteriums bzw. die Teilnahme an den drei Meetings des "AI
-    Connect"-Mini-Projekts zurückblickend mit mind. 150 bis max. 400 Wörtern
-    (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie dabei
-    aussagekräftig und nachvollziehbar auf folgende Punkte ein:
+    jeweiligen Blattes zurückblickend mit mind. 150 bis max. 400 Wörtern (Nutzlast!
+    Überschriften und Links zählen nicht mit). Gehen Sie dabei aussagekräftig und
+    nachvollziehbar auf folgende Punkte ein:
 
-    1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
-        besprochen?
-    2.  Details: Kurze Beschreibung besonders interessanter Aspekte.
-    3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
+    1.  **Zusammenfassung**: Was wurde gemacht?
+    2.  **Details**: Kurze Beschreibung besonders interessanter Aspekte.
+    3.  **Reflexion**: Was war der schwierigste Teil? Wie haben Sie dieses Problem
         gelöst?
-    4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
-    5.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
-        Vortrag, ...).
-
-    Für die "AI Connect"-Meetings passen Sie bitte die Punkte (1) bis (4)
-    entsprechend inhaltlich an, (5) entfällt für die ersten beiden Meetings (für das
-    dritte Meeting (Team-Präsentation) geben Sie bitte einen Link zu Ihrem Repo mit
-    den Artefakten (Lösung, Vortrag, Video) an).
+    4.  **Reflexion**: Was haben Sie gelernt oder (besser) verstanden?
 
     Die Post Mortems geben Sie bitte pro Person bis spätestens zur jeweiligen
     Deadline im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582797) ab.
-
-    Siehe auch
-    https://github.com/Artificial-Intelligence-HSBI-TDU/KI-Vorlesung-W25/discussions/3.
-:::
 
 ## Materialien
 
