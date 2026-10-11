@@ -120,7 +120,7 @@ Siehe [A\*](search5-astar.md)
 ::: challenges
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
+![](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/500px-MapGermanyGraph.svg.png){width="60%"}
 
 [[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
