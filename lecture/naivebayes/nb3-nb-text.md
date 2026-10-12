@@ -215,9 +215,8 @@ Naive Bayes "trainieren"
     -   $P(\text{OK}) = 3/4 = 0.75$
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
-    -   $P(\text{sieben} \mid \text{OK})$ $= (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1)$
-        $= 6/15 = 0.40$
-    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2)/(2+1+1+1) = 2/5 = 0.40$
+    -   $P(\text{sieben} \mid \text{OK}) = (2+2+2)/(2+2+2+1+1+1+1+1+1+1+1+1) = 6/15 = 0.40$
+    -   $P(\text{sieben} \mid \text{SPAM}) = (2)/(2+1+1+1) = 2/5 = 0.40$
     -   $P(\text{zwerg} \mid \text{OK}) = 2/15 = 0.133$
     -   $P(\text{zwerg} \mid \text{SPAM}) = 0/5 = 0.00$
     -   $P(\text{fressen} \mid \text{OK}) = 2/15 = 0.133$
@@ -317,9 +316,9 @@ $$P(t \mid c) = \dfrac{\mathop{\text{count}}(t,c) + \alpha}{\sum_{v \in V} \math
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
     -   $P(\text{sieben} \mid \text{OK})$
-        $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7})$ $= 7/22 = 0.318$
+        $= (2+2+2+\mathbf{1})/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{7}) = 7/22 = 0.318$
         (vorher: 0.40)
-    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$
+    -   $P(\text{sieben} \mid \text{SPAM}) = (2+\mathbf{1})/(2+1+1+1+\mathbf{7})$
         $= 3/12 = 0.25$ (vorher: 0.40)
     -   $P(\text{zwerg} \mid \text{OK}) = (2+\mathbf{1})/(15+\mathbf{7}) = 0.136$
         (vorher: 0.133)
@@ -449,10 +448,9 @@ müssen entsprechend angepasst werden!
     -   $P(\text{SPAM}) = 1/4 = 0.25$
 -   Likelihood:
     -   $P(\text{sieben} \mid \text{OK})$
-        $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8})$ $= 7/23 = 0.304$ (vorher:
+        $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$ (vorher:
         0.318)
-    -   $P(\text{sieben} \mid \text{SPAM})$ $= (2+1)/(2+1+1+1+\mathbf{8})$
-        $= 3/13 = 0.231$ (vorher: 0.25)
+    -   $P(\text{sieben} \mid \text{SPAM}) = (2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$ (vorher: 0.25)
     -   ...
     -   $P(\text{UNK} \mid \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
     -   $P(\text{UNK} \mid \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$
@@ -482,9 +480,8 @@ T1: (sieben, zwerg, fressen, sieben, wolf, **lecker**)
 
 **Mapping**:
 
--   $P(\text{lecker} \mid \text{OK})$ $\to$ $P(\text{UNK} \mid \text{OK}) = 0.043$
--   $P(\text{lecker} \mid \text{SPAM})$ $\to$
-    $P(\text{UNK} \mid \text{SPAM}) = 0.077$
+-   $P(\text{lecker} \mid \text{OK}) \to P(\text{UNK} \mid \text{OK}) = 0.043$
+-   $P(\text{lecker} \mid \text{SPAM}) \to P(\text{UNK} \mid \text{SPAM}) = 0.077$
 
 ::: notes
 Mit dem UNK-Term kann man das Problem des Out-of-Vocabulary elegant lösen. Im
