@@ -166,11 +166,11 @@ def Minimax(state):
 Gedankenexperiment:
 
 -   erster Zug: $b$ Möglichkeiten,
--   zweiter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b \star b = b^2$,
+-   zweiter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow b \star b = b^2$,
 -   dritter Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$
     $b \star (b \star b) = b^3$,
 -   ...,
--   $m$. Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow$ $b^m$
+-   $m$. Zug: jeweils wieder $b$ Möglichkeiten $\rightarrow b^m$
 :::
 
 # Wrap-Up
