@@ -37,7 +37,7 @@ $\to$ **Problemlösen \== Suche im Graphen**
 ::: notes
 -   $n \in S$ auf aktuellem Weg erreichter Knoten
 -   $g(n)$ tatsächliche Kosten für Weg vom Start bis Knoten $n$
--   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel $\to$ $h(n)$ wird
+-   $h(n)$ geschätzte Restkosten für Weg von Knoten $n$ zum Ziel $\to h(n)$ wird
     auch "heuristische Funktion" oder "Heuristik" genannt
 :::
 
