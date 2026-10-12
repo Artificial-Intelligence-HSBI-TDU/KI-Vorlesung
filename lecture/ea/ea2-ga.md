@@ -164,7 +164,7 @@ der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft "Rekombinatio
         \end{array}
         \right.$$
 
-        $\to$$\chi_i$ gleichverteilte Zufallsvariable (Intervall $[0,1]$), für jedes
+        $\to \chi_i$ gleichverteilte Zufallsvariable (Intervall $[0,1]$), für jedes
         Bit $g_i$ neu bestimmen
 
 ::: notes
