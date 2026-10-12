@@ -205,19 +205,15 @@ Attributauswahl.
 Bei der Klassifikation erhält man die **Klassenwahrscheinlichkeiten**, indem man die
 Häufigkeiten der Klassen über alle Bäume ermittelt:
 
-$$
-p(C = c \mid x) \approx \frac{1}{K} \sum_{k=1}^{K} \mathbf{1}\big[ T_k(x) = c \big]
-$$
+$$p(C = c \mid x) \approx \frac{1}{K} \sum_{k=1}^{K} \mathbf{1}\big[ T_k(x) = c \big]$$
 
 Dabei ist $\mathbf{1}(A)$ wieder die Indikatorfunktion:
 
-$$
-\mathbf{1}[A] =
+$$\mathbf{1}[A] =
 \begin{cases}
 1, & \text{wenn } A \text{ wahr ist} \\
 0, & \text{sonst}
-\end{cases}
-$$
+\end{cases}$$
 
 ::: tip
 Typische Hyperparameter (z.B. bei Scikit-Learn mit `RandomForestClassifier`):

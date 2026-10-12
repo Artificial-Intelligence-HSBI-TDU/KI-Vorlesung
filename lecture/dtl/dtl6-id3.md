@@ -41,7 +41,7 @@ $\to$ Betrachte stattdessen die **komplette** Trainingsmenge!
 
 -   Mittlere Entropie nach Betrachtung von Attribut $A$
 
-    $$    R(S, A) = \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)$$
+    $$R(S, A) = \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)$$
 
 \bigskip
 
@@ -149,8 +149,8 @@ Klassensymbol als "`A`" sein ...
 
 -   $x2$ höchsten Information Gain
 -   $x2=0 \to$ Beispiele 1,2 $\to$ A
--   $x2=1 \to$ Beispiele 3,4,5,6 $\to$ Information Gain berechnen, weiter teilen
-    und verzweigen
+-   $x2=1 \to$ Beispiele 3,4,5,6 $\to$ Information Gain berechnen, weiter teilen und
+    verzweigen
 :::
 
 [[Tafelbeispiel Anfang ID3]{.ex}]{.slides}
@@ -187,7 +187,7 @@ größeren Anzahl an Ausprägungen rechnerisch bevorzugt würden.
 Normierter Informationsgewinn:
 $\mathop{\text{Gain}}(S, A) \cdot \mathop{\text{Normalisation}}(A)$
 
-$$    \mathop{\text{Normalisation}}(A) = \frac{1}{
+$$\mathop{\text{Normalisation}}(A) = \frac{1}{
         \sum_{v \in \mathop{\text{Values}}(A)} p_v \log_2 \frac{1}{p_v}
     }$$
 

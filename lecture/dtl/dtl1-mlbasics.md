@@ -286,7 +286,7 @@ hinaus für neue Daten aus der selben Datenquelle gute Vorhersagen macht.
 # Trainingsdaten -- Merkmalsvektoren
 
 **Generell**: Merkmalsvektor für Objekt $v$:
-$$    \mathbf{x}(v) = (x_1, x_2, \ldots, x_n)$$
+$$\mathbf{x}(v) = (x_1, x_2, \ldots, x_n)$$
 
 -   $n$ Merkmale (Attribute)
 -   Attribut $x_t$ hat $m_t$ mögliche Ausprägungen

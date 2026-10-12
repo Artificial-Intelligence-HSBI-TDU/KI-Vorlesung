@@ -450,7 +450,8 @@ müssen entsprechend angepasst werden!
     -   $P(\text{sieben} \mid \text{OK})$
         $= (2+2+2+1)/(2+2+2+1+1+1+1+1+1+1+1+1+\mathbf{8}) = 7/23 = 0.304$ (vorher:
         0.318)
-    -   $P(\text{sieben} \mid \text{SPAM}) = (2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$ (vorher: 0.25)
+    -   $P(\text{sieben} \mid \text{SPAM}) = (2+1)/(2+1+1+1+\mathbf{8}) = 3/13 = 0.231$
+        (vorher: 0.25)
     -   ...
     -   $P(\text{UNK} \mid \text{OK}) = (0+1)/(15+\mathbf{8}) = 0.043$
     -   $P(\text{UNK} \mid \text{SPAM}) = (0+1)/(5+\mathbf{8}) = 0.077$

@@ -187,7 +187,7 @@ $$\begin{eqnarray}
 
 \large
 
-$$    R(S, A) = \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)$$
+$$R(S, A) = \sum_{v \in \mathop{\text{Values}}(A)} \frac{|S_v|}{|S|} H(S_v)$$
 
 \normalsize
 

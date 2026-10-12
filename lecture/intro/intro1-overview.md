@@ -214,8 +214,8 @@ Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
     **Wissensbasierte Systeme**
 -   *Logisches Schließen*: Beantworten von Fragen mit Hilfe des vorhandenen Wissens
     $\to$ **Logik, Resolution**
--   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld $\to$
-    **Musteranalyse und Mustererkennung und Mustervorhersage**
+-   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld $\to$ **Musteranalyse
+    und Mustererkennung und Mustervorhersage**
 -   *Verarbeitung natürlicher Sprache*: Erfolgreiche Kommunikation, beispielsweise
     in Englisch $\to$ **NLP**
 
