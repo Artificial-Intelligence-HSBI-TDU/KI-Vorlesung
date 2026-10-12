@@ -210,14 +210,14 @@ Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 ::: notes
 Zum Bestehen des Turing-Tests ist (u.a.) erforderlich:
 
--   *Wissensrepräsentation*: Speichern des gesammelten Wissens **$\to$**
+-   *Wissensrepräsentation*: Speichern des gesammelten Wissens $\to$
     **Wissensbasierte Systeme**
 -   *Logisches Schließen*: Beantworten von Fragen mit Hilfe des vorhandenen Wissens
-    **$\to$** **Logik, Resolution**
--   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld **$\to$**
+    $\to$ **Logik, Resolution**
+-   *Maschinelles Lernen*: Anpassung an veränderliches Umfeld $\to$
     **Musteranalyse und Mustererkennung und Mustervorhersage**
 -   *Verarbeitung natürlicher Sprache*: Erfolgreiche Kommunikation, beispielsweise
-    in Englisch **$\to$** **NLP**
+    in Englisch $\to$ **NLP**
 
 "Totaler Turing-Test": zusätzlich **Computer Vision** (Erkennen von Objekten) und
 **Robotik** (Manipulation von Objekten)
