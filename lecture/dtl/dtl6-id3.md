@@ -148,8 +148,8 @@ Klassensymbol als "`A`" sein ...
 | 6   | 0     | 1     | 0     | A   |
 
 -   $x2$ höchsten Information Gain
--   $x2=0$ $\to$ Beispiele 1,2 $\to$ A
--   $x2=1$ $\to$ Beispiele 3,4,5,6 $\to$ Information Gain berechnen, weiter teilen
+-   $x2=0 \to$ Beispiele 1,2 $\to$ A
+-   $x2=1 \to$ Beispiele 3,4,5,6 $\to$ Information Gain berechnen, weiter teilen
     und verzweigen
 :::
 
@@ -169,7 +169,7 @@ Klassensymbol als "`A`" sein ...
 
 \bigskip
 
-$\to$ $\mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
+$\to \mathop{\text{Gain}}$ ist bei mehrwertigen Attributen höher
 
 ::: notes
 Damit würden Attribute bei der Wahl bevorzugt, nur weil sie mehr Ausprägungen haben
