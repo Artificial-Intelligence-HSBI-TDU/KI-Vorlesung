@@ -56,7 +56,7 @@ $\to$ Anzahl der Ja/Nein-Fragen, um zur gleichen Information zu kommen
 
 \bigskip
 
--   Zufallsvariable $V$ $\to$ mögliche Werte $v_k$
+-   Zufallsvariable $V \to$ mögliche Werte $v_k$
 -   Wahrscheinlichkeit für $v_k$ sei $p_k = P(v_k)$
 
 $$H(V) = -\sum_k p_k \log_2 p_k$$
@@ -76,8 +76,8 @@ Hinweis: $\log_2 x = \frac{\log_{10} x}{\log_{10} 2} = \frac{\log x}{\log 2}$
 :::::
 
 ::: notes
--   Nur eine Klasse: $\log_2 1 = 0$ $\to$ $H(V) = 0$ Bit
--   Zwei Klassen, gleichwahrscheinlich: $\log_2 0.5 = -1$ $\to$ $H(V) = 1$ Bit
+-   Nur eine Klasse: $\log_2 1 = 0 \to H(V) = 0$ Bit
+-   Zwei Klassen, gleichwahrscheinlich: $\log_2 0.5 = -1 \to H(V) = 1$ Bit
 :::
 
 # Beispiele Entropie: faire Münze
