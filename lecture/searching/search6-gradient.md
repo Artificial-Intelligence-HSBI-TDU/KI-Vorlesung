@@ -162,14 +162,14 @@ Lokale Suchverfahren: Nur das Ergebnis zählt!
 ::: challenges
 Betrachten Sie folgende Landkarte und Restwegschätzungen:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/476px-MapGermanyGraph.svg.png)
+![](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/MapGermanyGraph.svg/500px-MapGermanyGraph.svg.png){width="50%"}
 
-[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg){width="40%"}
+[[MapGermanyGraph.svg](https://commons.wikimedia.org/wiki/File:MapGermanyGraph.svg)
 by [Regnaron](https://de.wikipedia.org/wiki/Benutzer:Regnaron) and
 [Jahobr](https://commons.wikimedia.org/wiki/User:Jahobr) on Wikimedia Commons
 ([Public Domain](https://en.wikipedia.org/wiki/en:public_domain))]{.credits}
 
-![](images/challenge.png)
+![](images/challenge.png){width="50%"}
 
 Finden Sie mit der **Gradienten-Suche** jeweils einen Weg von Würzburg nach München.
 Vergleichen Sie das Ergebnis mit der Best-First-Suche.
