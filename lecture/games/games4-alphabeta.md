@@ -68,12 +68,12 @@ $\to$ Beobachtungen:
 
 # Pruning-Regeln
 
-1.  Schneide (unter) MIN-Knoten ab, deren $\beta$ $\le$ dem $\alpha$ des
+1.  Schneide (unter) MIN-Knoten ab, deren $\beta \le$ dem $\alpha$ des
     MAX-Vorgängers ist.
 
 \smallskip
 
-2.  Schneide (unter) MAX-Knoten ab, deren $\alpha$ $\ge$ dem $\beta$ des
+2.  Schneide (unter) MAX-Knoten ab, deren $\alpha \ge$ dem $\beta$ des
     MIN-Vorgängers ist.
 
 \bigskip
@@ -141,7 +141,7 @@ Vergleichen Sie die Ergebnisse im Simulator mit den selbst berechneten Werten.
 
 2.  Sortierung der Nachfolger spielt große Rolle
 
-3.  Perfekte Sortierung: $O(b^{d/2})$ $\to$ Verdopplung der Suchtiefe möglich
+3.  Perfekte Sortierung: $O(b^{d/2}) \to$ Verdopplung der Suchtiefe möglich
 
 \bigskip
 
