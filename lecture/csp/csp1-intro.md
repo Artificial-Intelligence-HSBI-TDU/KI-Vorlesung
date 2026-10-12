@@ -114,7 +114,7 @@ Constraint miteinander in Beziehung? (Also wie viele Parameter hat ein Constrain
 
 # Constraints -- Wertebereiche
 
--   **Endliche Domänen**: $d$ Werte $\to$ $O(d^n)$ mögliche Zuweisungen
+-   **Endliche Domänen**: $d$ Werte $\to O(d^n)$ mögliche Zuweisungen
     `\newline`{=tex} (exponentiell in der Zahl der Variablen)
 
 \smallskip
