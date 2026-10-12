@@ -359,7 +359,7 @@ Schauen Sie sich auch das Beispiel 7.9 in [@Ertel2025, Ex. 7.9, S. 135] an!
 
     \smallskip
 
-    $\to$ $P(A,B) = P(A \mid B)P(B) = P(A)P(B)$
+    $\to P(A,B) = P(A \mid B)P(B) = P(A)P(B)$
 
 ::: notes
 Dies kann man verallgemeinern (**bedingte Unabhängigkeit**):
