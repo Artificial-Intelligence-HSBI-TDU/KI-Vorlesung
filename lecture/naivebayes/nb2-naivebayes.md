@@ -228,7 +228,7 @@ Likelihood]{.ex}]{.slides}
 
 -   Unabhängigkeit der Attribute oft nicht gegeben
 
-    $\to$ $P(D_1, \ldots, D_n \mid H) \ne \prod_i P(D_i \mid H)$
+    $\to P(D_1, \ldots, D_n \mid H) \ne \prod_i P(D_i \mid H)$
 
 -   A-posteriori-Wahrscheinlichkeiten oft unrealistisch nah an 1 oder 0
 
@@ -404,7 +404,7 @@ eine korrekte Klassifikation.
 
 \bigskip
 
--   Annahme: Klassen uniform verteilt $\to$ $P(h_i) = P(h_j)$
+-   Annahme: Klassen uniform verteilt $\to P(h_i) = P(h_j)$
 
     **Maximum Likelihood**
     $$h_{ML} = \mathop{\text{argmax}}_{h \in H} \: \prod_i P(D_i \mid h)$$
