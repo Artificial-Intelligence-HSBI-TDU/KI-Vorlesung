@@ -114,6 +114,10 @@ angeboten. Die Note ergibt sich aus der Leistung in der Klausur.
 
 ### Hinweise
 
+-   Die Klausur und die Studienleistung sind zwei unabhängige Prüfungsleistungen und
+    werden separat im CAT angemeldet. Die Studienleistung schaltet die Credits für
+    das Modul frei, die Klausur ergibt die Modulnote. Die Studienleistung ist
+    **keine** Vorleistung für die Klausur.
 -   Die Bearbeitung der Aufgaben erfolgt individuell.
 -   Im Praktikum beginnen wir gemeinsam mit der Bearbeitung der Übungsblätter und
     diskutieren über Lösungsansätze. Die Lösung soll anschließend individuell
