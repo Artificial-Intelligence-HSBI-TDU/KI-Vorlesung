@@ -64,7 +64,7 @@ h(\mathbf{x})
 \end{aligned}$$
 
 -   Die **Ausgabe $\hat{y}$** des Modells ist somit eine Zahl aus der Menge
-    $\{1, -1\}$.
+    $\lbrace 1, -1 \rbrace$.
 -   $w_0, w_1, w_2, \ldots, w_n$ sind die Parameter des Modells, die es zu
     optimieren gilt.
 

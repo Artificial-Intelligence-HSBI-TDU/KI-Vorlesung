@@ -172,7 +172,7 @@ Ein Problem besteht aus:
 
 \bigskip
 
--   **Zieltest**: Funktion $\mathop{\text{goal}}: S \to \{0,1\}$
+-   **Zieltest**: Funktion $\mathop{\text{goal}}: S \to \lbrace 0,1 \rbrace$
 
 -   **Zielzustände**: Menge $S_E \subseteq S$ mit
     $\forall x \in S_E : \mathop{\text{goal}}(x)=1$

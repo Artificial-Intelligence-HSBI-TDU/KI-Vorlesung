@@ -38,10 +38,10 @@ Vorlesung \[[YT](https://youtu.be/y5RmTiUg7f0)\],
 # Kodierung Individuen
 
 -   Binäre Lösungsrepräsentation (Bitstring):
-    $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
+    $\mathbf{g} = (g_1, \dots, g_m) \in \lbrace 0,1 \rbrace^m$
     -   String gliedert sich in $n$ Elemente (mit $n \le m$) `\newline`{=tex} $\to$
         jedes Segment entspricht einer Problemvariablen
-    -   Dekodierungsfunktion $\Gamma : \{0,1\}^m \to \mathbb{R}^n$
+    -   Dekodierungsfunktion $\Gamma : \lbrace 0,1 \rbrace^m \to \mathbb{R}^n$
 
     ::: notes
     Alle relevanten Aspekte des Problems müssen in die Codierung einfließen!
@@ -157,7 +157,7 @@ der Werte beider Eltern, ... Bei ES heißt "Crossover" deshalb oft "Rekombinatio
 -   Für alle Individuen:
     -   Mutiere jedes Gen eines Individuums mit $p_{mut}$:
 
-        $$g_i^{(t+1)} = \left\{
+        $$g_i^{(t+1)} = \left\lbrace
         \begin{array}{rll}
             \neg & g_i^{(t)} & \text{ falls } \chi_i \le p_{mut}\\[5pt]
             & g_i^{(t)} & \text{ sonst }

@@ -198,13 +198,14 @@ für Entropien und Gains an und erklären Sie Ihr Vorgehen.
 
 Betrachten Sie das folgende Constraintproblem:
 
--   $\mathrm{C}_1 = \{(a,b) |   a \ne b\}$
--   $\mathrm{C}_2 = \{(b,c) |   b \ne c\}$
--   $\mathrm{C}_3 = \{(a,c) |   a = c\}$
+-   $\mathrm{C}_1 = \lbrace (a,b) |   a \ne b \rbrace$
+-   $\mathrm{C}_2 = \lbrace (b,c) |   b \ne c \rbrace$
+-   $\mathrm{C}_3 = \lbrace (a,c) |   a = c \rbrace$
 
 \smallskip
 
--   $D_a=D_b=D_c=\{1,2,3,4,5\}$, $D_d=\{1,2,5\}$, $D_e=\{1,3\}$
+-   $D_a = D_b = D_c = \lbrace 1,2,3,4,5 \rbrace$, $D_d = \lbrace 1,2,5 \rbrace$,
+    $D_e = \lbrace 1,3 \rbrace$
 
 \bigskip
 

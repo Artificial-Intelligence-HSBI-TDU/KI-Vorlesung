@@ -77,7 +77,7 @@ neue Anordnungen der Königinnen (zwei neue Spielfelder).
 1.  **Genetische Algorithmen** (GA)
     -   @holland1975 (@holland1992) und @goldberg1986
     -   Binäre Lösungsrepräsentation (Bitstring):
-        $\mathbf{g} = (g_1, \dots, g_m)\in \{ 0,1\}^m$
+        $\mathbf{g} = (g_1, \dots, g_m) \in \lbrace 0,1 \rbrace^m$
     -   Fitnessbasierte stochastische Selektion
     -   $\mu$ Eltern erzeugen $\mu$ Kinder
 
