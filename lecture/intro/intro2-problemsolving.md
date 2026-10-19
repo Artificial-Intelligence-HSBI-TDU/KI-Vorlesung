@@ -163,6 +163,8 @@ vermieden (je nach Sichtweise :-) ...
 Ein Problem besteht aus:
 :::
 
+-   **Menge von Zuständen**: $S$
+
 -   **Startzustände**: Menge $S_A \subset S$
 
 -   **Aktionen**: Menge von Funktionen $\mathop{\text{op}}: S \to S$
@@ -175,7 +177,8 @@ Ein Problem besteht aus:
 -   **Zieltest**: Funktion $\mathop{\text{goal}}: S \to \lbrace 0,1 \rbrace$
 
 -   **Zielzustände**: Menge $S_E \subseteq S$ mit
-    $\forall x \in S_E : \mathop{\text{goal}}(x)=1$
+    $\forall x \in S_E : \mathop{\text{goal}}(x) = 1$ (und
+    $\forall x \in S \setminus S_E : \mathop{\text{goal}}(x) = 0$)
 
 \bigskip
 
