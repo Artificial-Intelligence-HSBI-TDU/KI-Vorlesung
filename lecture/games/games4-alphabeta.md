@@ -271,7 +271,7 @@ Betrachten Sie den folgenden Spielbaum:
                   A (MIN)        B (MIN)
                   /    \         /    \
                 L1      L2     L3      L4
-               (1)     (2)    (0)     (3)
+               (1)      (2)   (0)      (3)
 
 1.  Führen Sie Minimax durch.
 2.  Führen Sie Alpha-Beta-Pruning durch.
