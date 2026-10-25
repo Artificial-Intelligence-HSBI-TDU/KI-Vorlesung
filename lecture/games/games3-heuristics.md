@@ -207,3 +207,24 @@ Nachfolger arbeiten.
 -   k3: Ich kann den Minimax-Algorithmus implementieren
 -   k3: Ich kann Tiefenbeschränkung und Bewertungsfunktion bei Minimax einsetzen
 :::
+
+::: challenges
+**Unvollständiger Spielbaum und Tiefenbeschränkung**
+
+Betrachten Sie einen Spielbaum bis Tiefe 3, wobei an manchen Stellen in Tiefe 2
+bereits abgebrochen und mit einem Eval-Wert bewertet wird:
+
+                            Wurzel (MAX)
+                        /                  \
+                 N1 (MIN)                  N2 (MIN)
+                 /      \                  /      \
+            N3(MAX)   N4(MAX)         N5(MAX)    N6(MAX)
+            /   \       |              |        /      \
+          L1    L2     E1             E2      L3        L4
+        (+1)   (-1)  (Eval=0.2)   (Eval=-0.5) (+1)    (+1)
+
+1.  Wenden Sie "Minimax mit Tiefenlimit" an.
+2.  Wie sähe das Ergebnis aus, wenn weiter gesucht werden könnte und sich E1/E2
+    anders "auflösen" würden? Welche Rolle spielt hier die Qualität der
+    Bewertungsfunktion?
+:::
