@@ -119,7 +119,7 @@ Initialer Aufruf von `Max-Value()` mit $\alpha = -\infty$ und $\beta = +\infty$
 **Achtung**: Es kursieren Varianten von diesem Algorithmus, bei denen auf die
 Hilfsvariable `v` verzichtet wird und stattdessen `alpha` bzw. `beta` direkt
 modifiziert werden und als Rückgabewert dienen. Das *kann* zu anderen oder falschen
-Ergebnissen führen! Sie können das in der Aufgabe auf Blatt 03 gut beobachten.
+Ergebnissen führen! Sie können das in der Übungsaufgabe gut beobachten.
 :::
 
 [[Tafelbeispiel Handsimulation]{.ex}]{.slides}
