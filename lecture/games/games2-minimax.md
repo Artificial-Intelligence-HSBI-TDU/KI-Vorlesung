@@ -234,8 +234,8 @@ Betrachten Sie den folgenden Spielbaum:
                /          |          \
              A(MIN)      B(MIN)      C(MIN)
             /    \       /   \       /    \
-          L1    L2     L3   L4     L5    L6
-         (+1)  (0)    (0)  (0)    (-1)  (+1)
+           L1    L2     L3   L4     L5    L6
+          (+1)  (0)    (0)  (0)    (-1)  (+1)
 
 1.  Führen Sie per Hand Minimax auf diesem Baum aus.
 2.  Was bedeutet das für die Interpretation von "optimaler Strategie"? Was bedeutet
@@ -250,8 +250,8 @@ Spieler angegeben sind:
                     /                 \
               X (MIN)                 Y (MIN)
               /     \                 /     \
-           L1       L2             L3       L4
-        (10, 0)   (5, 5)        (0, 10)   (6, 6)
+            L1       L2             L3       L4
+         (10, 0)   (5, 5)        (0, 10)   (6, 6)
 
 `(10, 0)` bedeutet dabei, dass Spieler MAX 10 Punkte gewinnt und Spier MIN 0 Punkte.
 
