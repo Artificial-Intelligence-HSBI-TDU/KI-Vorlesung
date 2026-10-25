@@ -288,16 +288,14 @@ def Max-Value(state, alpha, beta):
     if terminal(state): return Utility(state)
     for child in children(state):
         alpha = max(alpha, Min-Value(child, alpha, beta))
-        if alpha >= beta:
-            return alpha
-    return alpha  # ← alpha als Rückgabewert benutzt
+        if alpha >= beta: return alpha
+    return alpha
 
 def Min-Value(state, alpha, beta):
     if terminal(state): return Utility(state)
     for child in children(state):
         beta = min(beta, Max-Value(child, alpha, beta))
-        if beta <= alpha:
-            return beta
+        if beta <= alpha: return beta
     return beta
 ```
 
