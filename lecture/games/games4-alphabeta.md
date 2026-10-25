@@ -233,31 +233,84 @@ nolist="true"}
 :::
 
 ::: challenges
-**Optimale Spiele und MiniMax**
+**Pruning sichtbar machen - gleicher Baum, andere Reihenfolge**
 
-Auf einem Tisch liegen nebeneinander 5 Streichhölzer. Es gibt zwei Spieler - Weiß
-und Schwarz - die abwechselnd ein oder zwei Streichhölzer wegnehmen dürfen (es muss
-mind. ein Streichholz genommen werden). Wer das letzte Streichholz nehmen muss, hat
-verloren. Zu Beginn ist Weiß am Zug.
+Wir verwenden einen vollständigen Baum der Tiefe 3, Verzweigungsgrad 2:
 
-1.  Spielbaum
+                               W (MAX)
+                          /               \
+                      A (MIN)            B (MIN)
+                     /      \           /      \
+               C (MAX)     D(MAX)   E (MAX)   F(MAX)
+                / \         / \      / \       / \
+              L1  L2      L3  L4   L5  L6    L7  L8
+              3    5      6    9   1    2    0   -1
 
-    Zeichnen Sie den **kompletten** Spielbaum auf. Geben Sie an den Kanten jeweils
-    die Zahl der genommenen und der verbleibenden Hölzer an.
+1.  Geben Sie die Minimax-Bewertung an.
+2.  Führen Sie Alpha-Beta-Pruning durch. Wo würde der Algorithmus abschneiden?
+3.  Die Reihenfolge des Betrachtens der Kind-Bäume kann für Alpha-Beta-Pruning
+    wichtig sein. Geben Sie je eine Reihenfolge der Kindbäume C, D (unter A) und E,
+    F (unter B) an, wo
+    -   möglichst viel abgeschnitten werden kann
+    -   möglichst wenig abgeschnitten werden kann
+4.  Was bedeutet das für Implementierungen in echten Spielen?
+5.  Was bedeutet das beim frühen Abschneiden und Verwenden von Heuristiken?
 
-    *Beispiel*: Wenn in einem Zug ein Holz genommen wird und 3 Hölzer verbleiben,
-    steht an der entsprechenden Kante "1/3". Geben Sie jeweils an, welcher Spieler
-    am Zug ist.
+<!--
+möglichst gut: A: C, D; B: F, E
+möglichst schlecht: D, C; B: E, F
+"Killer-Moves": Zuerst Züge mit hohem heuristischem Eval ansehen
+-->
 
-2.  Minimax
+**Alpha-Beta vs. Minimax**
 
-    Geben Sie die Bewertung aller Spielzustände mit Hilfe des Minimax-Algorithmus
-    an. Bewerten Sie die Endzustände mit +1, wenn Spieler Weiß gewonnen hat, mit -1,
-    falls Schwarz gewonnen hat.
+Betrachten Sie den folgenden Spielbaum:
 
-3.  Alpha-Beta-Pruning
+                         W (MAX)
+                      /           \
+                  A (MIN)        B (MIN)
+                  /    \         /    \
+                L1      L2     L3      L4
+               (1)     (2)    (0)     (3)
 
-    Wenden Sie Alpha-Beta-Pruning auf den Spielbaum an. Werden damit mehr oder
-    weniger oder gleich viele Spielzüge wie mit Minimax entwickelt? Begründen Sie
-    Ihre Antwort.
+1.  Führen Sie Minimax durch.
+2.  Führen Sie Alpha-Beta-Pruning durch.
+3.  Erklären Sie das Ergebnis.
+
+**Alpha-Beta und fehlerhafte Implementierung**
+
+Im Netz kursieren Varianten des Alpha-Beta-Prunings, wo auf die Hilfsvariable `v`
+verzichtet wird und stattdessen direkt mit den Werten $\alpha$ und $\beta$ gerechnet
+wird. Dies sieht dann beispielsweise so aus:
+
+``` python
+def Max-Value(state, alpha, beta):
+    if terminal(state): return Utility(state)
+    for child in children(state):
+        alpha = max(alpha, Min-Value(child, alpha, beta))
+        if alpha >= beta:
+            return alpha
+    return alpha  # ← alpha als Rückgabewert benutzt
+
+def Min-Value(state, alpha, beta):
+    if terminal(state): return Utility(state)
+    for child in children(state):
+        beta = min(beta, Max-Value(child, alpha, beta))
+        if beta <= alpha:
+            return beta
+    return beta
+```
+
+Betrachten Sie nun den folgenden Spielbaum:
+
+                  W (MAX)
+               /          \
+           A (MIN)       B (MIN)
+           /    \        /    \
+         L1     L2     L3     L4
+        (5)     (6)   (4)     (7)
+
+Vergleichen Sie für diesen Spielbaum die in der Vorlesung besprochene
+Implementierung von Alpha-Beta-Pruning (siehe Skript/[@Russell2021]) und die
+fehlerhafte Variante aus dem Netz.
 :::
