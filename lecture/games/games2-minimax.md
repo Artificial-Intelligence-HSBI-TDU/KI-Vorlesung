@@ -253,7 +253,8 @@ Spieler angegeben sind:
             L1       L2             L3       L4
          (10, 0)   (5, 5)        (0, 10)   (6, 6)
 
-`(10, 0)` bedeutet dabei, dass Spieler MAX 10 Punkte gewinnt und Spier MIN 0 Punkte.
+`(10, 0)` bedeutet dabei, dass Spieler MAX 10 Punkte gewinnt und Spieler MIN 0
+Punkte.
 
 Wie verhält sich Minimax in diesem Szenario?
 :::
