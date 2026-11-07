@@ -70,6 +70,10 @@ h(\mathbf{x})
 
 ![Perzeptron Aufbau und Berechnung](images/perceptron-network.png){width="70%"}
 
+**Hinweis:**\
+Obwohl mathematisch $\text{sgn}(0) = 0$ gilt, setzen wir im Kontext der binären Klassifikation $\text{sgn}(0) = 1$, um ausschließlich die Ausgaben $-1$ und $1$ zu erhalten.
+
+
 ### Lineare Entscheidungsgrenze
 
 -   Das Perzeptron erzeugt eine **lineare Entscheidungsgrenze** im Merkmalraum, die
