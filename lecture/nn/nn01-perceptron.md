@@ -143,11 +143,9 @@ $$h(x) = u(\mathbf{w}^T \mathbf{x}) = \begin{cases}
 In diesem Fall lautet die Lernregel für die Gewichtsaktualisierung:
 $$\mathbf{w} \leftarrow \mathbf{w} + \alpha (y − \hat{y}) \mathbf{x}$$
 
-Beide Varianten führen zum selben Ergebnis:
-\
-Für $y = 1$ und $\hat{y} = 0$ gilt: $\mathbf{w} \leftarrow \mathbf{w} + \alpha \mathbf{x}$.
-\
-Für $y = 0$ und $\hat{y} = 1$ gilt: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \mathbf{x}$.
+**Hinweis:**\
+Diese Aktualisierungsformel kann sogar immer eingesetzt werden, unabhängig davon, ob die Klassen mit $\{0, 1\}$ oder mit $\{-1, 1\}$ kodiert sind.
+
 
 ::: outcomes
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
