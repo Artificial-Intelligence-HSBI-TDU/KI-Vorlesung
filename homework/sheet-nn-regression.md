@@ -75,4 +75,7 @@ als Startpunkt benutzen. Sie können alternativ auch eine andere Programmierspra
 und/oder einen anderen Datensatz (z.B. zufällig generierter Datensatz mittels Numpy
 and Scikit-Learn) verwenden.
 
+**Bemerkung:**
+Reale Daten enthalten fast immer Rauschen. Dadurch können Daten, die im Idealfall linear separierbar wären, diese Eigenschaft verlieren. Ein logistisches Regressionsmodell lässt sich trotzdem mit dem Gradientenabstiegsverfahren darauf trainieren. Das Training wird beendet, sobald eine festgelegte Anzahl an Iterationen erreicht ist oder die Kosten über mehrere Iterationen hinweg nicht mehr sinken.
+
 *Thema*: Verständnis und Implementierung Logistische Regression
