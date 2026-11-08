@@ -154,8 +154,8 @@ $$\mathbf{w} \leftarrow \mathbf{w} + \alpha (y - \hat{y}) \mathbf{x}$$
 **Hinweis:**
 
 Diese Aktualisierungsformel kann sogar immer eingesetzt werden, unabhängig davon, ob
-die Klassen mit $\leftbrace 0, 1 \rightbrace$ oder mit
-$\leftbrace -1, 1 \rightbrace$ kodiert sind.
+die Klassen mit $\lbrace 0, 1 \rbrace$ oder mit $\lbrace -1, 1 \rbrace$ kodiert
+sind.
 
 ::: outcomes
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
