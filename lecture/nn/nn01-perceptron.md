@@ -70,6 +70,10 @@ h(\mathbf{x})
 
 ![Perzeptron Aufbau und Berechnung](images/perceptron-network.png){width="70%"}
 
+**Hinweis:**\
+Obwohl mathematisch $\text{sgn}(0) = 0$ gilt, setzen wir im Kontext der binären Klassifikation $\text{sgn}(0) = 1$, um ausschließlich die Ausgaben $-1$ und $1$ zu erhalten.
+
+
 ### Lineare Entscheidungsgrenze
 
 -   Das Perzeptron erzeugt eine **lineare Entscheidungsgrenze** im Merkmalraum, die
@@ -122,16 +126,30 @@ $x_1x_2$, ...) und diese neuen Werte als zusätzliche Merkmale in den Vektor
 $\mathbf{x}$ aufgenommen werden. Die Hypothesenfunktion bleibt dabei weiterhin
 **linear in den Gewichten** $w_i$.
 
-Im Fall von zwei Merkmalen kann beispielsweise die folgende Hypothesenfunktion
-verwendet werden:
+Bei zwei Merkmalen ergibt sich durch die Aufnahme quadratischer Terme beispielsweise die folgende Hypothesenfunktion:
 
 $$h(\mathbf{x}) =\text{sgn}(w_0 + w_1x_1 + w_2x_2 + w_3x_1^2 + w_4x_2^2).$$
 
-Durch die Einbeziehung quadratischer Terme lassen sich nichtlineare
-Entscheidungsgrenzen modellieren, darunter insbesondere kreisförmige
-Entscheidungsgrenzen der Form
+Damit lassen sich kreisförmige Entscheidungsgrenzen darstellen, wie etwa \
+$x_1^2 + x_2^2 - 4 = 0$:
 
-$$-4 + x_1^2 + x_2^2 = 0.$$
+![Perzeptron Entscheidungsgrenze](images/perceptron-circ-boundary.png){width="50%"}
+
+## Alternative Notation
+
+In der Literatur wird die negative Klasse oft mit $0$ statt mit $-1$ kodiert und die Heaviside-Funktion (Einheitssprungfunktion, engl. **u**nit step function) als Aktivierungsfunktion verwendet:
+
+$$h(x) = u(\mathbf{w}^T \mathbf{x}) = \begin{cases}
+1, & \text{wenn } \mathbf{w}^T \mathbf{x} \ge 0, \\
+0, & \text{wenn } \mathbf{w}^T \mathbf{x} < 0
+\end{cases}$$
+
+In diesem Fall lautet die Lernregel für die Gewichtsaktualisierung:
+$$\mathbf{w} \leftarrow \mathbf{w} + \alpha (y − \hat{y}) \mathbf{x}$$
+
+**Hinweis:**\
+Diese Aktualisierungsformel kann sogar immer eingesetzt werden, unabhängig davon, ob die Klassen mit $\{0, 1\}$ oder mit $\{-1, 1\}$ kodiert sind.
+
 
 ::: outcomes
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
