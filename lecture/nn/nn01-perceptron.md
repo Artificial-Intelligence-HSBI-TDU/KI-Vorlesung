@@ -121,7 +121,7 @@ Die **Gewichtsaktualisierung** ist der Ort, wo das Lernen stattfindet.
 ## Nicht-Lineare Entscheidungsgrenze
 
 Um **nicht-lineare Entscheidungsgrenzen** zu ermöglichen, können die
-Originalmerkmale auf nicht-lineare Weise kombiniert (z. B. $x_1^2$,$x_2^2$,
+Originalmerkmale auf nicht-lineare Weise kombiniert (z.B. $x_1^2$, $x_2^2$,
 $x_1x_2$, ...) und diese neuen Werte als zusätzliche Merkmale in den Vektor
 $\mathbf{x}$ aufgenommen werden. Die Hypothesenfunktion bleibt dabei weiterhin
 **linear in den Gewichten** $w_i$.
