@@ -151,11 +151,13 @@ In diesem Fall lautet die Lernregel für die Gewichtsaktualisierung:
 
 $$\mathbf{w} \leftarrow \mathbf{w} + \alpha (y - \hat{y}) \mathbf{x}$$
 
+::: tip
 **Hinweis:**
 
 Diese Aktualisierungsformel kann sogar immer eingesetzt werden, unabhängig davon, ob
 die Klassen mit $\lbrace 0, 1 \rbrace$ oder mit $\lbrace -1, 1 \rbrace$ kodiert
 sind.
+:::
 
 ::: outcomes
 -   k2: Ich kann verschiedene Arten des maschinellen Lernens erklären
